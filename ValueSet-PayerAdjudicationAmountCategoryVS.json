@@ -1,0 +1,96 @@
+{
+  "resourceType": "ValueSet",
+  "id": "PayerAdjudicationAmountCategoryVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-PayerAdjudicationCategoryCS.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-submitted\">submitted</a></td><td>Submitted</td><td>Submitted</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-allowed\">allowed</a></td><td>Allowed</td><td>Allowed</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-deductible\">deductible</a></td><td>Deductible</td><td>Deductible</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-coins\">coins</a></td><td>coins</td><td>coins</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-copay\">copay</a></td><td>copay</td><td>copay</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-noncovered\">noncovered</a></td><td>noncovered</td><td>noncovered</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-priorpayerpaid\">priorpayerpaid</a></td><td>priorpayerpaid</td><td>priorpayerpaid</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-payment\">payment</a></td><td>payment</td><td>payment</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidbypatient\">paidbypatient</a></td><td>paid by patient</td><td>paid by patient</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtopatient\">paidtopatient</a></td><td>paid to patient</td><td>paid to patient</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtoprovider\">paidtoprovider</a></td><td>paid to provider</td><td>paid to provider</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-memberliability\">memberliability</a></td><td>member liability</td><td>member liability</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-discount\">discount</a></td><td>discount</td><td>discount</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-drugcost\">drugcost</a></td><td>drug cost</td><td>drugcost</td></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationAmountCategoryVS",
+  "version": "0.1.0",
+  "name": "PayerAdjudicationAmountCategoryVS",
+  "title": "Payer Adjudication Amount Category",
+  "status": "active",
+  "date": "2020-06-17T14:14:09+00:00",
+  "publisher": "HL7 Financial Management Working Group",
+  "contact": [
+    {
+      "name": "HL7 Financial Management Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
+          "system": "email",
+          "value": "fm@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "description": "This describes the various amount fields used when payers receive and adjudicate a claim.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS",
+        "concept": [
+          {
+            "code": "submitted",
+            "display": "Submitted"
+          },
+          {
+            "code": "allowed",
+            "display": "Allowed"
+          },
+          {
+            "code": "deductible",
+            "display": "Deductible"
+          },
+          {
+            "code": "coins",
+            "display": "coins"
+          },
+          {
+            "code": "copay",
+            "display": "copay"
+          },
+          {
+            "code": "noncovered",
+            "display": "noncovered"
+          },
+          {
+            "code": "priorpayerpaid",
+            "display": "priorpayerpaid"
+          },
+          {
+            "code": "payment",
+            "display": "payment"
+          },
+          {
+            "code": "paidbypatient",
+            "display": "paid by patient"
+          },
+          {
+            "code": "paidtopatient",
+            "display": "paid to patient"
+          },
+          {
+            "code": "paidtoprovider",
+            "display": "paid to provider"
+          },
+          {
+            "code": "memberliability",
+            "display": "member liability"
+          },
+          {
+            "code": "discount",
+            "display": "discount"
+          },
+          {
+            "code": "drugcost",
+            "display": "drug cost"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ClaimInformationCategoryCS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">billingnetworkcontractingstatus<a name=\"ClaimInformationCategoryCS-billingnetworkcontractingstatus\"> </a></td><td>billingnetworkcontractingstatus</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">attendingnetworkcontractingstatus<a name=\"ClaimInformationCategoryCS-attendingnetworkcontractingstatus\"> </a></td><td>attendingnetworkcontractingstatus</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">sitenetworkcontractingstatus<a name=\"ClaimInformationCategoryCS-sitenetworkcontractingstatus\"> </a></td><td>sitenetworkcontractingstatus</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">referringnetworkcontractingstatus<a name=\"ClaimInformationCategoryCS-referringnetworkcontractingstatus\"> </a></td><td>referringnetworkcontractingstatus</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">performingnetworkcontractingstatus<a name=\"ClaimInformationCategoryCS-performingnetworkcontractingstatus\"> </a></td><td>performingnetworkcontractingstatus</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">prescribingnetworkcontractingstatus<a name=\"ClaimInformationCategoryCS-prescribingnetworkcontractingstatus\"> </a></td><td>prescribingnetworkcontractingstatus</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">clmrecvddate<a name=\"ClaimInformationCategoryCS-clmrecvddate\"> </a></td><td>clmrecvddate</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">typeofservice<a name=\"ClaimInformationCategoryCS-typeofservice\"> </a></td><td>typeofservice</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">tob-typeoffacility<a name=\"ClaimInformationCategoryCS-tob-typeoffacility\"> </a></td><td>tob-typeoffacility</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">tob-billclassification<a name=\"ClaimInformationCategoryCS-tob-billclassification\"> </a></td><td>tob-billclassification</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">tob-frequency<a name=\"ClaimInformationCategoryCS-tob-frequency\"> </a></td><td>tob-frequency</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">admsrc<a name=\"ClaimInformationCategoryCS-admsrc\"> </a></td><td>admsrc</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">admtype<a name=\"ClaimInformationCategoryCS-admtype\"> </a></td><td>admtype</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">discharge-status<a name=\"ClaimInformationCategoryCS-discharge-status\"> </a></td><td>discharge-status</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">ms-drg<a name=\"ClaimInformationCategoryCS-ms-drg\"> </a></td><td>ms-drg</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">placeofservice<a name=\"ClaimInformationCategoryCS-placeofservice\"> </a></td><td>placeofservice</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">dayssupply<a name=\"ClaimInformationCategoryCS-dayssupply\"> </a></td><td>dayssupply</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">dawcode<a name=\"ClaimInformationCategoryCS-dawcode\"> </a></td><td>dawcode</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">refillnum<a name=\"ClaimInformationCategoryCS-refillnum\"> </a></td><td>refillnum</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">rxorigincode<a name=\"ClaimInformationCategoryCS-rxorigincode\"> </a></td><td>rxorigincode</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">brandgenericcode<a name=\"ClaimInformationCategoryCS-brandgenericcode\"> </a></td><td>brandgenericcode</td><td>Undefined</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "ClaimInformationCategoryCS"];
+  fhir:CodeSystem.title [ fhir:value "Claim Information Category"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2020-06-17T14:14:09+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Financial Management Working Group"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Financial Management Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/fm/index.cfm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Claim Information Category - Used as the discriminator for supportingInfo"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "billingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.display [ fhir:value "billingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "attendingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.display [ fhir:value "attendingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "sitenetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.display [ fhir:value "sitenetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "referringnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.display [ fhir:value "referringnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "performingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.display [ fhir:value "performingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "prescribingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.display [ fhir:value "prescribingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "clmrecvddate" ];
+     fhir:CodeSystem.concept.display [ fhir:value "clmrecvddate" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "typeofservice" ];
+     fhir:CodeSystem.concept.display [ fhir:value "typeofservice" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "tob-typeoffacility" ];
+     fhir:CodeSystem.concept.display [ fhir:value "tob-typeoffacility" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "tob-billclassification" ];
+     fhir:CodeSystem.concept.display [ fhir:value "tob-billclassification" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "tob-frequency" ];
+     fhir:CodeSystem.concept.display [ fhir:value "tob-frequency" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "admsrc" ];
+     fhir:CodeSystem.concept.display [ fhir:value "admsrc" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "admtype" ];
+     fhir:CodeSystem.concept.display [ fhir:value "admtype" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "discharge-status" ];
+     fhir:CodeSystem.concept.display [ fhir:value "discharge-status" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "ms-drg" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ms-drg" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "placeofservice" ];
+     fhir:CodeSystem.concept.display [ fhir:value "placeofservice" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "dayssupply" ];
+     fhir:CodeSystem.concept.display [ fhir:value "dayssupply" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "dawcode" ];
+     fhir:CodeSystem.concept.display [ fhir:value "dawcode" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "refillnum" ];
+     fhir:CodeSystem.concept.display [ fhir:value "refillnum" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "rxorigincode" ];
+     fhir:CodeSystem.concept.display [ fhir:value "rxorigincode" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "brandgenericcode" ];
+     fhir:CodeSystem.concept.display [ fhir:value "brandgenericcode" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/CodeSystem/ClaimInformationCategoryCS.ttl> .
+
+# -------------------------------------------------------------------------------------
+

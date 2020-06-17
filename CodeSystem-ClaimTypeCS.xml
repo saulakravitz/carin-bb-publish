@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ClaimTypeCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimTypeCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">institutional-inpatient<a name="ClaimTypeCS-institutional-inpatient"> </a></td><td>Institutional - Inpatient</td><td>Claims submitted by clinics, hospitals, skilled nursing facilities, and other institutions for inpatient services, including the use of equipment and supplies, laboratory services, radiology services, and other charges.  Inpatient claims are submitted for admissions for which there is an overnight stay. The claims data is based on submission standards adopted by the Department of Health and Human Services (CMS-1450).</td></tr><tr><td style="white-space:nowrap">institutional-outpatient<a name="ClaimTypeCS-institutional-outpatient"> </a></td><td>Institutional - Outpatient</td><td>Claims submitted by clinics, hospitals, skilled nursing facilities, and other institutions for outpatient services, including the use of equipment and supplies, laboratory services, radiology services, and other charges.  Outpatient claims are submitted for admissions for which there is not an overnight stay. The claims data is based on submission standards adopted by the Department of Health and Human Services (CMS-1450).</td></tr><tr><td style="white-space:nowrap">professional-nonclinician<a name="ClaimTypeCS-professional-nonclinician"> </a></td><td>Professional and Non-Clinician</td><td>Claims submitted by physicians, suppliers, and other non-institutional providers for inpatient, outpatient and non-institutional services.  The claims data is based on submission standards adopted by the Department of Health and Human Services (CMS-1500).  Claims with CPT (Current Procedural Terminology) codes represent physician services and claims with Level II HCPCS codes represent non-physician services like ambulance rides, wheelchairs, walkers, other durable medical equipment, and other medical services that are not identified by CPT/HCPCS Level I codes.</td></tr><tr><td style="white-space:nowrap">retail-pharmacy<a name="ClaimTypeCS-retail-pharmacy"> </a></td><td>Retail Pharmacy</td><td>Claims submitted by retail pharmacies.  The claims data is based on submission standards adopted by the Department of Health and Human  Services defined by NCPDP (National Council for Prescription Drug Program)</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimTypeCS"/>
+  <version value="0.1.0"/>
+  <name value="ClaimTypeCS"/>
+  <title value="Claim Types"/>
+  <status value="active"/>
+  <date value="2020-06-17T14:14:09+00:00"/>
+  <publisher value="HL7 Financial Management Working Group"/>
+  <contact>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Proposed replacement/update for http://hl7.org/fhir/ValueSet/claim-type and http://terminology.hl7.org/CodeSystem/claim-type"/>
+  <content value="complete"/>
+  <concept>
+    <code value="institutional-inpatient"/>
+    <display value="Institutional - Inpatient"/>
+    <definition value="Claims submitted by clinics, hospitals, skilled nursing facilities, and other institutions for inpatient services, including the use of equipment and supplies, laboratory services, radiology services, and other charges.  Inpatient claims are submitted for admissions for which there is an overnight stay. The claims data is based on submission standards adopted by the Department of Health and Human Services (CMS-1450)."/>
+  </concept>
+  <concept>
+    <code value="institutional-outpatient"/>
+    <display value="Institutional - Outpatient"/>
+    <definition value="Claims submitted by clinics, hospitals, skilled nursing facilities, and other institutions for outpatient services, including the use of equipment and supplies, laboratory services, radiology services, and other charges.  Outpatient claims are submitted for admissions for which there is not an overnight stay. The claims data is based on submission standards adopted by the Department of Health and Human Services (CMS-1450)."/>
+  </concept>
+  <concept>
+    <code value="professional-nonclinician"/>
+    <display value="Professional and Non-Clinician"/>
+    <definition value="Claims submitted by physicians, suppliers, and other non-institutional providers for inpatient, outpatient and non-institutional services.  The claims data is based on submission standards adopted by the Department of Health and Human Services (CMS-1500).  Claims with CPT (Current Procedural Terminology) codes represent physician services and claims with Level II HCPCS codes represent non-physician services like ambulance rides, wheelchairs, walkers, other durable medical equipment, and other medical services that are not identified by CPT/HCPCS Level I codes."/>
+  </concept>
+  <concept>
+    <code value="retail-pharmacy"/>
+    <display value="Retail Pharmacy"/>
+    <definition value="Claims submitted by retail pharmacies.  The claims data is based on submission standards adopted by the Department of Health and Human  Services defined by NCPDP (National Council for Prescription Drug Program)"/>
+  </concept>
+</CodeSystem>

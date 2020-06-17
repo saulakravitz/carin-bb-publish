@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ClaimInformationCategoryVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-ClaimInformationCategoryCS.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"/>
+  <version value="0.1.0"/>
+  <name value="ClaimInformationCategoryVS"/>
+  <title value="Claim Information Category"/>
+  <status value="active"/>
+  <date value="2020-06-17T14:14:09+00:00"/>
+  <publisher value="HL7 Financial Management Working Group"/>
+  <contact>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Claim Information Category - Used as the discriminator for supportingInfo"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS"/>
+    </include>
+  </compose>
+</ValueSet>
