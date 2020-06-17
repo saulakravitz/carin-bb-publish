@@ -39,8 +39,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"13"}
-    h3,h4,h5,h6{--heading-prefix:"13"}</style>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -88,24 +88,24 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="4d15327a-45a8-4486-bde5-2612d7d8d7a1">​</a><a href="index.html#Introduction">Introduction</a></li>
-     <li><a name="897d869a-8056-497c-801a-56c1250bd1f1">​</a><a href="index.html#Introduction#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="30b58624-8250-4b2c-888c-54792fb644f2">​</a><a href="index.html#guide-overview">Guide Overview</a></li>
+     <li><a name="e86cce91-20e8-49cd-9b48-393c60918736">​</a><a href="index.html#Introduction">Introduction</a></li>
+     <li><a name="a979f305-122f-4b69-93d0-b7d2e9b6c0a5">​</a><a href="index.html#Introduction#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="eb71daab-7169-486d-a4e2-9ff75c262ee6">​</a><a href="index.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="efe4de89-0e6a-47b3-aa6f-d241e30d22ef">​</a><a href="use_case.html">Terms and Concepts</a></li>
-       <li><a name="b7cb4543-8843-4fe9-acb9-9a00a0522aba">​</a><a href="use_case.html">Use Cases</a></li>
+       <li><a name="4de6a63e-4f0b-4964-bee4-d88209c2564c">​</a><a href="use_case.html">Terms and Concepts</a></li>
+       <li><a href="Use_Case.html">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-  <li><a name="043e9e6b-b04a-48ca-84e9-680aafeadf22">​</a><a href="index.html#Introduction">General Guidance</a></li>
-  <li><a name="6456e620-fedc-4947-a0bf-3ec24dd960d8">​</a><a href="cpcds.html">Common Payer Consumer Data Set (CPCDS)</a></li>
-   <li><a name="f6cf58b5-9beb-4a30-81d9-15699030eea5">​</a><a href="index.html#CARIN">Notes To Developers</a></li>
+  <li><a href="Guidance.html">General Guidance</a></li>
+  <li><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+   <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
      <li class="dropdown">
@@ -113,21 +113,21 @@
     <ul class="dropdown-menu">
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
-    <li><a name="4a150cda-0a26-4eb2-9103-6de41b5f1b39">​</a><a href="terminology.html">Terminology </a></li>
-    <li><a name="cda3d8cc-e4e2-4305-9868-2ea845ae65ad">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="6c9253a3-28dd-40bb-a5a9-2867efcb9fc5">​</a><a href="terminology.html">Terminology </a></li>
+    <li><a name="1f936ddf-8c11-4414-a41e-9d94f1c6524b">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Security<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-     <li><a name="627f77b2-5522-43cd-b881-0bfd13517a43">​</a><a href="security.html">Security</a></li>
+     <li><a name="45c0c6e2-193b-4465-838e-3f73f13922e2">​</a><a href="security.html">Security</a></li>
     </ul>
    </li>
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="4f6f4181-e587-4d64-ab70-cc07b7e54962">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="e31ac13f-fcc6-4da9-8546-817c48f91b22">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -177,24 +177,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <div xsi:schemalocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 
-<h3>"CPCDE Search Behavior"</h3>
-<p>
+<h3>Search Behavior</h3>
+
 The ExplanationOfBenefit (EOB) Resource is the focal Consumer-Directed Payer Data Exchange (CDPDE) Resource. Several Reference Resources are defined directly/indirectly from the EOB: Coverage, Patient, Organization (Payer ID), Practioner, Organization (Facility), PractionerRole, Location.
-</p>
-<p>
+
 The Coverage Reference Resource SHALL be returned with data that was effective as of the date of service of the claim; for example, the data will reflect the employer name in effect at that time. However, for other reference resources, if payers have the data as of the date of service that data SHALL be provided in the reference resource and they SHALL populate meta.lastUpdated with the date that the payer record for that resource was created. If payers do not have the data as of the date of service, they MAY provide their available data in the reference resource and they SHALL populate meta.lastUpdated with the date the data was updated.
-</p>
-<h3>RESTful Capabilities by Resource/Profile"</h3>
-<p>
-A server will always treat a search request as if a client indicated "_include=*" and SHALL return all EOB &amp; reference resources in the response bundle. Bundle.link.url (self) would show that "_include=*" was added by the server as an additional parameter. Bundle.total will count only EOB resources (this is a normal practice in FHIR to only count the searched resources and not the included / reference resources)ExplanationOfBenefit
-</p>
-<p>
-Supported Profiles: CARIN BB ExplanationOfBenefit Profile; CARIN BB ExplanationOfBenefit Inpatient Facility Profile; CARIN BB ExplanationOfBenefit Outpatient Facility Profile; CARIN BB ExplanationOfBenefit Pharmacy Profile; CARIN BB ExplanationOfBenefit Professional NonClinician Profile
-</p>
-<h3>Search Parameters"</h3>
-<p>
+
+<h3>RESTful Capabilities by Resource/Profile</h3>
+
+A server will always treat a search request as if a client indicated \"_include=*\" and SHALL return all EOB &amp; reference resources in the response bundle. Bundle.link.url (self) would show that "_include=*" was added by the server as an additional parameter. Bundle.total will count only EOB resources (this is a normal practice in FHIR to only count the searched resources and not the included / reference resources).
+
+<h4>Explanation of Benefit Profiles</h4>
+
+Supported Profiles: CARIN BB ExplanationOfBenefit Inpatient Facility Profile; CARIN BB ExplanationOfBenefit Outpatient Facility Profile; CARIN BB ExplanationOfBenefit Pharmacy Profile; CARIN BB ExplanationOfBenefit Professional NonClinician Profile
+
+<h5>Search Parameters"</h5>
+
 These search parameters are required (SHALL). The term EOB refers to the four non-abstract profiles of ExplanationOfBenefit defined in this implementation guide.
-</p>
+
 <table border="1" class="codes">
   <thead>
     <tr>
@@ -210,6 +210,9 @@ These search parameters are required (SHALL). The term EOB refers to the four no
       <td>
         <b>Description</b>
       </td>
+      <td>
+        <b>Notes</b>
+      </td>
         <td>
         <b>Example</b>
       </td>
@@ -217,55 +220,60 @@ These search parameters are required (SHALL). The term EOB refers to the four no
   </thead>
   <tbody>
     <tr>
-              <td><a name="3ed76334-1e70-415d-bd6b-1dcb5211d8ac">​</a><a href="SearchParameter-carinbb-_id.html">_id_</a></td>
+              <td><a name="32e33b2e-44f1-4932-9344-1f7e9a03ba8a">​</a><a href="SearchParameter-carinbb-_id.html">_id_</a></td>
               <td>EOB</td>
               <td>token</td>
               <td><p>_id</p>
 </td>
+              <td></td>
               <td><p>GET [base]/ExplanationOfBenefit?_id=[id]</p>
 </td>
             </tr>
             <tr>
-              <td><a name="4972ebf4-12d7-42bf-90e9-1bb78bb59db9">​</a><a href="SearchParameter-carinbb-patient.html">patient</a></td>
+              <td><a name="ac19cfd5-59ac-43c9-83fa-3181db4b7b65">​</a><a href="SearchParameter-carinbb-patient.html">patient</a></td>
               <td>EOB</td>
               <td>reference</td>
               <td><p>patient</p>
 </td>
+              <td></td>
               <td><p>GET [base]/ExplanationOfBenefit?patient=[patient]</p>
 </td>
             </tr>
             <tr>
-              <td><a name="ff72ef87-658e-4ecb-bbf8-95ad5a1140d7">​</a><a href="SearchParameter-carinbb-_lastUpdated_.html">_lastUpdated_</a></td>
+              <td><a name="e601ee2e-b105-4c4b-815b-cda57bde6bf7">​</a><a href="SearchParameter-carinbb-_lastUpdated_.html">_lastUpdated_</a></td>
               <td>EOB</td>
               <td>date</td>
               <td><p>_lastUpdated</p>
 </td>
+              <td>Only in combination with the patient search parameter.</td>
               <td><p>GET [base]/ExplanationOfBenefit?_lastUpdated=[prefix][date]</p>
-<ul>
-  <li>Shall only be supported in a combination with patient</li>
-</ul>
 </td>
             </tr>
                       <tr>
-              <td><a name="96d13d55-2a0c-47c2-95a0-fada5665dd39">​</a><a href="SearchParameter-carinbb-type.html">type</a></td>
+              <td><a name="ab0b7a7c-e09c-4616-8490-aae14109b4e5">​</a><a href="SearchParameter-carinbb-type.html">type</a></td>
               <td>EOB</td>
               <td>date</td>
-              <td><p><em>lastUpdated</em></p>
+              <td><p>type</p>
 </td>
-              <td><p>GET [base]/ExplanationOfBenefit?type=[system]|[code]</p>
-<ul>
-  <li>Shall only be supported in a combination with patient</li>
-</ul>
-
-             </td>
+              <td>Only in combination with the patient search parameter.</td>
+              <td><table>
+  <tbody>
+    <tr>
+      <td>GET [base]/ExplanationOfBenefit?type=[system]</td>
+      <td>[code]</td>
+    </tr>
+  </tbody>
+</table>
+</td>
             </tr>
-                                  <tr>
-              <td><a name="7f352e0b-18ae-463b-b94d-12bc3f26d1cf">​</a><a href="SearchParameter-carinbb-identifier.html">identifier</a></td>
+            <tr>
+              <td><a name="53d875ae-9bc9-4f89-90d9-0f2583c523db">​</a><a href="SearchParameter-carinbb-identifier.html">identifier</a></td>
               <td>EOB</td>
               <td>token</td>
               <td><p>identifier</p>
 </td>
-              <td><table>
+               &lt;td.&lt;/td&gt;
+               <td><table>
   <tbody>
     <tr>
       <td>GET [base]/ExplanationOfBenefit?identifier=[system]</td>
@@ -273,24 +281,25 @@ These search parameters are required (SHALL). The term EOB refers to the four no
     </tr>
   </tbody>
 </table>
-
-             </td>
+</td>
             </tr>
-                                  <tr>
-              <td><a name="3234f6df-ae2e-4f92-aee2-bd5481befc80">​</a><a href="SearchParameter-carinbb-service-date.html">type</a></td>
+            <tr>
+              <td><a name="3d1c5729-8fda-4f4c-9ea6-376584ed43d8">​</a><a href="SearchParameter-carinbb-service-date.html">type</a></td>
               <td>EOB</td>
               <td>date</td>
               <td><p>service-date</p>
 </td>
-              <td><p>GET [base]/ExplanationOfBenefit?service-date=[prefix][date]</p>
-<ul>
-  <li>Shall only be supported in a combination with patient</li>
-</ul>
-
-             </td>
+               <td>Only in combination with the patient search parameter.</td>
+               <td><p>GET [base]/ExplanationOfBenefit?service-date=[prefix][date]</p>
+ </td>
             </tr>
            </tbody>
 </table>
+
+<h4>Other Profiles</h4>
+No search capabilities are defined for the other profiles defined in the Implementation Guide.  
+<h3>Search for Servers Requiring Status </h3>
+<h3>Searching Multiple Members</h3>
 </div>
 
 
@@ -314,7 +323,7 @@ These search parameters are required (SHALL). The term EOB refers to the four no
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 17, 2020 14:40+0000">2020-06-17</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 17, 2020 23:21+0000">2020-06-17</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
