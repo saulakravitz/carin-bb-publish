@@ -88,16 +88,16 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="7f7c8016-87cd-4cd6-8196-71b56b6657dc">​</a><a href="index.html#Introduction">Introduction</a></li>
-     <li><a name="b0aa125c-2b05-47e3-868a-8f65289bdded">​</a><a href="index.html#Introduction#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="c5b89d65-730e-4d6b-ab21-adad52f31342">​</a><a href="index.html#guide-overview">Guide Overview</a></li>
+     <li><a name="7c9d5e46-c15d-4f14-ae79-81166d5b261c">​</a><a href="index.html#Introduction">Introduction</a></li>
+     <li><a name="f91a6942-9dda-4455-bb63-e6192ffe234b">​</a><a href="index.html#Introduction#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="f5e61c6f-9c30-45f1-8a20-1973045f3fe7">​</a><a href="index.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="a69e6146-c983-496c-b5da-61d8aa5a3b3d">​</a><a href="use_case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="0bad867b-6624-4eeb-930c-04d592b63664">​</a><a href="use_case.html#use-cases">Use Cases</a></li>
+       <li><a name="8019f584-d5b5-4f96-95ec-4f1480aa09c5">​</a><a href="use_case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="9ffeedb4-43b1-4379-8a92-4166e917b6d7">​</a><a href="use_case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="24b4f028-4b8e-42e8-88ee-239ce9d2b017">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="f41b5bd1-3ec4-49a4-bdf0-21b32c2edd0b">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -127,7 +127,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="c034fe0c-ab55-4728-a5a1-e9110d635ce9">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="ab112eb2-2a42-4cf0-90f2-e7495d68d94d">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -455,7 +455,6 @@
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>The insurer requires this identifier on correspondance and claims (digital and otherwise).</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -465,7 +464,6 @@
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-CARIN-BB-Patient.html" title="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient">CARINBBPatient</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>This is the party who receives treatment for which the costs are reimbursed under the coverage.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -485,7 +483,7 @@
   <tr><td>Definition</td><td><p>The relationship of beneficiary (patient) to the subscriber.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The relationship between the Subscriber and the Beneficiary (insured/covered party/patient).<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-subscriber-relationship.html">SubscriberRelationshipCodes</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="4ec717fb-94b6-4dd0-8426-ae1a7197324d">​</a>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-subscriber-relationship">http://hl7.org/fhir/R4/valueset-subscriber-relationship</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>To determine relationship between the patient and the subscriber to determine coordination of benefits.</p>
 </td></tr>
@@ -1152,7 +1150,7 @@ For selfpay it may provide multiple paying persons and/or organizations.</p>
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 03:47+0000">2020-06-18</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 05:04+0000">2020-06-18</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

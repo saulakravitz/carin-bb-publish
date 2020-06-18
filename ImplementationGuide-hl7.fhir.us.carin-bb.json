@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-06-18T03:47:51+00:00",
+  "date": "2020-06-18T05:04:51+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -810,6 +810,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-FDANDCNCPDPCompoundCodeVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/FDANDCNCPDPCompoundCodeVS"
+        },
+        "name": "FDA NDC NCPDP Compound Code",
+        "description": "NCPDP field # 407-D7 (National Drug Code (NDC)) or NCPDP field # 406-D6 (Compound Code)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-FDANationalDrugCodeVS.html"
           }
         ],
@@ -957,6 +975,24 @@
         },
         "name": "NCPDP Prescription Origin Code",
         "description": "http://www.ncpdp.org/prescription-origin-code",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-NCPDPRejectCodeVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/NCPDPRejectCodeVS"
+        },
+        "name": "NCPDP Reject Code",
+        "description": "http://www.ncpdp.org/reject-code",
         "exampleBoolean": false
       },
       {
@@ -1160,6 +1196,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-PayerProviderRoleVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/PayerProviderRoleVS"
+        },
+        "name": "Payer Provider Role",
+        "description": "Payer Provider Role",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-PresentOnAdmissionDiagnosisTypeVS.html"
           }
         ],
@@ -1220,23 +1274,6 @@
           "reference": "ValueSet/TypeOfFacilityVS"
         },
         "name": "Type of Facility",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-TypeOfServiceVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/TypeOfServiceVS"
-        },
-        "name": "Type Of Service",
         "exampleBoolean": false
       },
       {

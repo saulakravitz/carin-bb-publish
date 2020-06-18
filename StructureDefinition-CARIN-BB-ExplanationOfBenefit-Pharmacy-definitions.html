@@ -88,16 +88,16 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="82529a46-f495-4ce0-996a-e425d660089e">​</a><a href="index.html#Introduction">Introduction</a></li>
-     <li><a name="337ba680-2adf-4b77-94cc-47647d117298">​</a><a href="index.html#Introduction#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="8a8a9965-75a6-4159-ade0-955684497e1f">​</a><a href="index.html#guide-overview">Guide Overview</a></li>
+     <li><a name="3e956bd0-edf2-4270-869c-d9033f57b241">​</a><a href="index.html#Introduction">Introduction</a></li>
+     <li><a name="8a651d02-878a-4801-813e-8457e3dd2332">​</a><a href="index.html#Introduction#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="b8114efa-3fe5-4875-a729-67bff0e51905">​</a><a href="index.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="05bfe140-2fe5-4f4a-a9a7-36c13b6674bc">​</a><a href="use_case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="20d31c98-944b-47b5-baf7-3af559062cde">​</a><a href="use_case.html#use-cases">Use Cases</a></li>
+       <li><a name="d76c95cb-b1a5-4295-aab4-68f61815dcd5">​</a><a href="use_case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="207886a8-ea83-4661-8446-248eb2f02a00">​</a><a href="use_case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="23699302-8aec-4fc3-a558-7363d565af9a">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="05342697-04b4-4fa3-a603-62f77315e7e9">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -127,7 +127,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="01f40992-8346-497e-810e-fde715ca18b8">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="b59c9205-7d7d-4ed9-b213-ed5fe46e1341">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -3618,7 +3618,7 @@
   <tr><td>Definition</td><td><p>When the value is a group code then this item collects a set of related claim details, otherwise this contains the product, service, drug or other billing code for the item.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-FDANationalDrugCodeVS.html">FDA National Drug Code (NDC)</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-FDANDCNCPDPCompoundCodeVS.html">FDA NDC NCPDP Compound Code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Necessary to state what was provided or done.</p>
 </td></tr>
@@ -4094,7 +4094,7 @@
   <tr><td>Definition</td><td><p>A code supporting the understanding of the adjudication result and explaining variance from expected amount.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-AdjudicationDenialReasonVS.html">Adjudication Denial Reason</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-NCPDPRejectCodeVS.html">NCPDP Reject Code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>To support understanding of variance from adjudication expectations.</p>
 </td></tr>
@@ -5964,7 +5964,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 03:47+0000">2020-06-18</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 05:04+0000">2020-06-18</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

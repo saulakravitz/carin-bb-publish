@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/carin-bb/ValueSet/TypeOfServiceVS> a fhir:ValueSet;
+<http://hl7.org/fhir/us/carin-bb/ValueSet/PayerProviderRoleVS> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "TypeOfServiceVS"];
+  fhir:Resource.id [ fhir:value "PayerProviderRoleVS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-PayerProviderRoleCS.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerProviderRoleCS</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/TypeOfServiceVS"];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerProviderRoleVS"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
-  fhir:ValueSet.name [ fhir:value "TypeOfServiceVS"];
-  fhir:ValueSet.title [ fhir:value "Type Of Service"];
+  fhir:ValueSet.name [ fhir:value "PayerProviderRoleVS"];
+  fhir:ValueSet.title [ fhir:value "Payer Provider Role"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-06-18T03:47:51+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-06-18T05:04:51+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -31,13 +31,20 @@
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Payer Provider Role"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerProviderRoleCS" ]
+     ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/carin-bb/ValueSet/TypeOfServiceVS.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/carin-bb/ValueSet/PayerProviderRoleVS.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/carin-bb/ValueSet/TypeOfServiceVS.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/ValueSet/PayerProviderRoleVS.ttl> .
 
 # -------------------------------------------------------------------------------------
 
