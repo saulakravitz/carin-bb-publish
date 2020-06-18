@@ -993,12 +993,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:ExplanationOfBenefit/f:item</sch:title>
-    <sch:rule context="f:ExplanationOfBenefit/f:item">
-      <sch:assert test="count(f:revenue) &lt;= 0">revenue: maximum cardinality of 'revenue' is 0</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>ExplanationOfBenefit.item</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:item">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -1218,12 +1212,8 @@
   <sch:pattern>
     <sch:title>f:ExplanationOfBenefit/f:item/f:adjudication</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:item/f:adjudication">
-      <sch:assert test="count(f:reason) &lt;= 0">reason: maximum cardinality of 'reason' is 0</sch:assert>
       <sch:assert test="count(f:amount) &gt;= 1">amount: minimum cardinality of 'amount' is 1</sch:assert>
-      <sch:assert test="count(f:value) &lt;= 0">value: maximum cardinality of 'value' is 0</sch:assert>
       <sch:assert test="count(f:reason) &gt;= 1">reason: minimum cardinality of 'reason' is 1</sch:assert>
-      <sch:assert test="count(f:amount) &lt;= 0">amount: maximum cardinality of 'amount' is 0</sch:assert>
-      <sch:assert test="count(f:value) &lt;= 0">value: maximum cardinality of 'value' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

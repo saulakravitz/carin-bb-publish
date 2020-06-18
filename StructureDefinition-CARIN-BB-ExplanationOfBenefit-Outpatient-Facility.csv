@@ -404,10 +404,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.code","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/ProviderNetworkStatusVS","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,0,"Y","","","date {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,1,"Y","","","date {[]} {[]}
 Period {[]} {[]}","When it occurred","The date when or period to which this information refers.","","","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.timing[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,0,"Y","","","boolean {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,1,"Y","","","boolean {[]} {[]}
 string {[]} {[]}Quantity {[]} {[]}Attachment {[]} {[]}Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}","Data to be provided","Additional data or information such as resources, documents, images etc. including references to the data or the actual inclusion of the data.","Could be used to provide references to other resources, document. For example, could contain a PDF in an Attachment of the Police Report for an Accident.","To convey the data content to be provided when the information is more than a simple code or period.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.reason","","","",0,1,"","","","Coding {[]} {[]}
@@ -472,10 +472,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.code","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/ProviderNetworkStatusVS","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,0,"Y","","","date {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,1,"Y","","","date {[]} {[]}
 Period {[]} {[]}","When it occurred","The date when or period to which this information refers.","","","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.timing[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,0,"Y","","","boolean {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,1,"Y","","","boolean {[]} {[]}
 string {[]} {[]}Quantity {[]} {[]}Attachment {[]} {[]}Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}","Data to be provided","Additional data or information such as resources, documents, images etc. including references to the data or the actual inclusion of the data.","Could be used to provide references to other resources, document. For example, could contain a PDF in an Attachment of the Police Report for an Accident.","To convey the data content to be provided when the information is more than a simple code or period.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.reason","","","",0,1,"","","","Coding {[]} {[]}
@@ -543,7 +543,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.timing[x]","","","",1,1,"Y","","","date {[]} {[]}
 ","When it occurred","The date when or period to which this information refers.","","","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.timing[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,0,"Y","","","boolean {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,1,"Y","","","boolean {[]} {[]}
 string {[]} {[]}Quantity {[]} {[]}Attachment {[]} {[]}Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}","Data to be provided","Additional data or information such as resources, documents, images etc. including references to the data or the actual inclusion of the data.","Could be used to provide references to other resources, document. For example, could contain a PDF in an Attachment of the Police Report for an Accident.","To convey the data content to be provided when the information is more than a simple code or period.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.reason","","","",0,1,"","","","Coding {[]} {[]}
@@ -608,10 +608,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCTypeOfBillVS","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,0,"Y","","","date {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,1,"Y","","","date {[]} {[]}
 Period {[]} {[]}","When it occurred","The date when or period to which this information refers.","","","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.timing[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,0,"Y","","","boolean {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,1,"Y","","","boolean {[]} {[]}
 string {[]} {[]}Quantity {[]} {[]}Attachment {[]} {[]}Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}","Data to be provided","Additional data or information such as resources, documents, images etc. including references to the data or the actual inclusion of the data.","Could be used to provide references to other resources, document. For example, could contain a PDF in an Attachment of the Police Report for an Accident.","To convey the data content to be provided when the information is more than a simple code or period.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.reason","","","",0,1,"","","","Coding {[]} {[]}
@@ -676,10 +676,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCPointOfOriginVS","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,0,"Y","","","date {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,1,"Y","","","date {[]} {[]}
 Period {[]} {[]}","When it occurred","The date when or period to which this information refers.","","","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.timing[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,0,"Y","","","boolean {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,1,"Y","","","boolean {[]} {[]}
 string {[]} {[]}Quantity {[]} {[]}Attachment {[]} {[]}Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}","Data to be provided","Additional data or information such as resources, documents, images etc. including references to the data or the actual inclusion of the data.","Could be used to provide references to other resources, document. For example, could contain a PDF in an Attachment of the Police Report for an Accident.","To convey the data content to be provided when the information is more than a simple code or period.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.reason","","","",0,1,"","","","Coding {[]} {[]}
@@ -744,10 +744,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCPriorityOfAdmissionnVS","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,0,"Y","","","date {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,1,"Y","","","date {[]} {[]}
 Period {[]} {[]}","When it occurred","The date when or period to which this information refers.","","","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.timing[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,0,"Y","","","boolean {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,1,"Y","","","boolean {[]} {[]}
 string {[]} {[]}Quantity {[]} {[]}Attachment {[]} {[]}Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}","Data to be provided","Additional data or information such as resources, documents, images etc. including references to the data or the actual inclusion of the data.","Could be used to provide references to other resources, document. For example, could contain a PDF in an Attachment of the Police Report for an Accident.","To convey the data content to be provided when the information is more than a simple code or period.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.reason","","","",0,1,"","","","Coding {[]} {[]}
@@ -812,10 +812,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCPatientDischargeStatusVS","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,0,"Y","","","date {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,1,"Y","","","date {[]} {[]}
 Period {[]} {[]}","When it occurred","The date when or period to which this information refers.","","","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.timing[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,0,"Y","","","boolean {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,1,"Y","","","boolean {[]} {[]}
 string {[]} {[]}Quantity {[]} {[]}Attachment {[]} {[]}Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}","Data to be provided","Additional data or information such as resources, documents, images etc. including references to the data or the actual inclusion of the data.","Could be used to provide references to other resources, document. For example, could contain a PDF in an Attachment of the Police Report for an Accident.","To convey the data content to be provided when the information is more than a simple code or period.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.reason","","","",0,1,"","","","Coding {[]} {[]}
@@ -1106,13 +1106,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.item.adjudication.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Type of adjudication information","A code to indicate the information type of this adjudication record. Information types may include: the value submitted, maximum values or percentages allowed or payable under the plan, amounts that the patient is responsible for in-aggregate or pertaining to this item, amounts paid by other coverages, and the benefit payable for this item.","For example, codes indicating: Co-Pay, deductible, eligible, benefit, tax, etc.","Needed to enable understanding of the context of the other information in the adjudication.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/AdjustmentAmountCategoryVS","",,,,"ExplanationOfBenefit.item.adjudication.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.item.adjudication.reason","","","",0,0,"","","","CodeableConcept {[]} {[]}
+"ExplanationOfBenefit.item.adjudication.reason","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Explanation of adjudication outcome","A code supporting the understanding of the adjudication result and explaining variance from expected amount.","For example, may indicate that the funds for this benefit type have been exhausted.","To support understanding of variance from adjudication expectations.","","","","","","","",,"example","Adjudication reason codes.","http://hl7.org/fhir/ValueSet/adjudication-reason","",,,,"ExplanationOfBenefit.item.adjudication.reason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.item.adjudication.amount","","","",1,1,"","","","Money {[]} {[]}
 ","Monetary amount","Monetary amount associated with the category.","For example, amount submitted, eligible amount, co-payment, and benefit payable.","Most adjuciation categories convey a monetary amount.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.adjudication.amount",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.item.adjudication.value","","","",0,0,"","","","decimal {[]} {[]}
+"ExplanationOfBenefit.item.adjudication.value","","","",0,1,"","","","decimal {[]} {[]}
 ","Non-monitary value","A non-monetary value associated with the category. Mutually exclusive to the amount element above.","For example: eligible percentage or co-payment percentage.","Some adjudication categories convey a percentage or a fixed value.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.adjudication.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.item.adjudication","denialreason","","",0,1,"Y","","","BackboneElement {[]} {[]}
@@ -1171,10 +1171,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.item.adjudication.reason","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Explanation of adjudication outcome","A code supporting the understanding of the adjudication result and explaining variance from expected amount.","For example, may indicate that the funds for this benefit type have been exhausted.","To support understanding of variance from adjudication expectations.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationDenialReasonVS","",,,,"ExplanationOfBenefit.item.adjudication.reason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.item.adjudication.amount","","","",0,0,"","","","Money {[]} {[]}
+"ExplanationOfBenefit.item.adjudication.amount","","","",0,1,"","","","Money {[]} {[]}
 ","Monetary amount","Monetary amount associated with the category.","For example, amount submitted, eligible amount, co-payment, and benefit payable.","Most adjuciation categories convey a monetary amount.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.adjudication.amount",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.item.adjudication.value","","","",0,0,"","","","decimal {[]} {[]}
+"ExplanationOfBenefit.item.adjudication.value","","","",0,1,"","","","decimal {[]} {[]}
 ","Non-monitary value","A non-monetary value associated with the category. Mutually exclusive to the amount element above.","For example: eligible percentage or co-payment percentage.","Some adjudication categories convey a percentage or a fixed value.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.adjudication.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.item.adjudication","allowedunits","","",0,1,"Y","","","BackboneElement {[]} {[]}
@@ -1230,10 +1230,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.item.adjudication.category.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
-"ExplanationOfBenefit.item.adjudication.reason","","","",0,0,"","","","CodeableConcept {[]} {[]}
+"ExplanationOfBenefit.item.adjudication.reason","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Explanation of adjudication outcome","A code supporting the understanding of the adjudication result and explaining variance from expected amount.","For example, may indicate that the funds for this benefit type have been exhausted.","To support understanding of variance from adjudication expectations.","","","","","","","",,"example","Adjudication reason codes.","http://hl7.org/fhir/ValueSet/adjudication-reason","",,,,"ExplanationOfBenefit.item.adjudication.reason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.item.adjudication.amount","","","",0,0,"","","","Money {[]} {[]}
+"ExplanationOfBenefit.item.adjudication.amount","","","",0,1,"","","","Money {[]} {[]}
 ","Monetary amount","Monetary amount associated with the category.","For example, amount submitted, eligible amount, co-payment, and benefit payable.","Most adjuciation categories convey a monetary amount.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.adjudication.amount",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.item.adjudication.value","","","",0,1,"","","","decimal {[]} {[]}
@@ -1537,13 +1537,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.adjudication.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Type of adjudication information","A code to indicate the information type of this adjudication record. Information types may include: the value submitted, maximum values or percentages allowed or payable under the plan, amounts that the patient is responsible for in-aggregate or pertaining to this item, amounts paid by other coverages, and the benefit payable for this item.","For example, codes indicating: Co-Pay, deductible, eligible, benefit, tax, etc.","Needed to enable understanding of the context of the other information in the adjudication.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/AdjustmentAmountCategoryVS","",,,,"ExplanationOfBenefit.item.adjudication.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.adjudication.reason","","","",0,0,"","","","CodeableConcept {[]} {[]}
+"ExplanationOfBenefit.adjudication.reason","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Explanation of adjudication outcome","A code supporting the understanding of the adjudication result and explaining variance from expected amount.","For example, may indicate that the funds for this benefit type have been exhausted.","To support understanding of variance from adjudication expectations.","","","","","","","",,"example","Adjudication reason codes.","http://hl7.org/fhir/ValueSet/adjudication-reason","",,,,"ExplanationOfBenefit.item.adjudication.reason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.adjudication.amount","","","",1,1,"","","","Money {[]} {[]}
 ","Monetary amount","Monetary amount associated with the category.","For example, amount submitted, eligible amount, co-payment, and benefit payable.","Most adjuciation categories convey a monetary amount.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.adjudication.amount",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.adjudication.value","","","",0,0,"","","","decimal {[]} {[]}
+"ExplanationOfBenefit.adjudication.value","","","",0,1,"","","","decimal {[]} {[]}
 ","Non-monitary value","A non-monetary value associated with the category. Mutually exclusive to the amount element above.","For example: eligible percentage or co-payment percentage.","Some adjudication categories convey a percentage or a fixed value.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.adjudication.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.adjudication","denialreason","","",0,1,"Y","","","BackboneElement {[]} {[]}
@@ -1602,10 +1602,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.adjudication.reason","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Explanation of adjudication outcome","A code supporting the understanding of the adjudication result and explaining variance from expected amount.","For example, may indicate that the funds for this benefit type have been exhausted.","To support understanding of variance from adjudication expectations.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationDenialReasonVS","",,,,"ExplanationOfBenefit.item.adjudication.reason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.adjudication.amount","","","",0,0,"","","","Money {[]} {[]}
+"ExplanationOfBenefit.adjudication.amount","","","",0,1,"","","","Money {[]} {[]}
 ","Monetary amount","Monetary amount associated with the category.","For example, amount submitted, eligible amount, co-payment, and benefit payable.","Most adjuciation categories convey a monetary amount.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.adjudication.amount",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.adjudication.value","","","",0,0,"","","","decimal {[]} {[]}
+"ExplanationOfBenefit.adjudication.value","","","",0,1,"","","","decimal {[]} {[]}
 ","Non-monitary value","A non-monetary value associated with the category. Mutually exclusive to the amount element above.","For example: eligible percentage or co-payment percentage.","Some adjudication categories convey a percentage or a fixed value.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.adjudication.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.adjudication","inoutnetwork","","",1,1,"Y","","","BackboneElement {[]} {[]}

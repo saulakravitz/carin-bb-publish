@@ -897,7 +897,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.item.informationSequence","","","",0,*,"","","","positiveInt {[]} {[]}
 ","Applicable exception and supporting information","Exceptions, special conditions and supporting information applicable for this service or product.","","Need to reference the supporting information items that relate directly to this product or service.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.informationSequence",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.item.revenue","","","",0,0,"","","","CodeableConcept {[]} {[]}
+"ExplanationOfBenefit.item.revenue","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Revenue or cost center code","The type of revenue or cost center providing the product and/or service.","","Needed in the processing of institutional claims.","","","","","","","",,"example","Codes for the revenue or cost centers supplying the service and/or products.","http://hl7.org/fhir/ValueSet/ex-revenue-center","",,,,"ExplanationOfBenefit.item.revenue",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.item.category","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -992,13 +992,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.item.adjudication.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Type of adjudication information","A code to indicate the information type of this adjudication record. Information types may include: the value submitted, maximum values or percentages allowed or payable under the plan, amounts that the patient is responsible for in-aggregate or pertaining to this item, amounts paid by other coverages, and the benefit payable for this item.","For example, codes indicating: Co-Pay, deductible, eligible, benefit, tax, etc.","Needed to enable understanding of the context of the other information in the adjudication.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimAdjudicationCategoryVS","",,,,"ExplanationOfBenefit.item.adjudication.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.item.adjudication.reason","","","",0,0,"","","","CodeableConcept {[]} {[]}
+"ExplanationOfBenefit.item.adjudication.reason","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Explanation of adjudication outcome","A code supporting the understanding of the adjudication result and explaining variance from expected amount.","For example, may indicate that the funds for this benefit type have been exhausted.","To support understanding of variance from adjudication expectations.","","","","","","","",,"example","Adjudication reason codes.","http://hl7.org/fhir/ValueSet/adjudication-reason","",,,,"ExplanationOfBenefit.item.adjudication.reason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.item.adjudication.amount","","","",1,1,"","","","Money {[]} {[]}
 ","Monetary amount","Monetary amount associated with the category.","For example, amount submitted, eligible amount, co-payment, and benefit payable.","Most adjuciation categories convey a monetary amount.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.adjudication.amount",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.item.adjudication.value","","","",0,0,"","","","decimal {[]} {[]}
+"ExplanationOfBenefit.item.adjudication.value","","","",0,1,"","","","decimal {[]} {[]}
 ","Non-monitary value","A non-monetary value associated with the category. Mutually exclusive to the amount element above.","For example: eligible percentage or co-payment percentage.","Some adjudication categories convey a percentage or a fixed value.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.adjudication.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.item.adjudication","denialreason","","",0,1,"Y","","","BackboneElement {[]} {[]}
@@ -1057,10 +1057,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.item.adjudication.reason","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Explanation of adjudication outcome","A code supporting the understanding of the adjudication result and explaining variance from expected amount.","For example, may indicate that the funds for this benefit type have been exhausted.","To support understanding of variance from adjudication expectations.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationDenialReasonVS","",,,,"ExplanationOfBenefit.item.adjudication.reason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.item.adjudication.amount","","","",0,0,"","","","Money {[]} {[]}
+"ExplanationOfBenefit.item.adjudication.amount","","","",0,1,"","","","Money {[]} {[]}
 ","Monetary amount","Monetary amount associated with the category.","For example, amount submitted, eligible amount, co-payment, and benefit payable.","Most adjuciation categories convey a monetary amount.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.adjudication.amount",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.item.adjudication.value","","","",0,0,"","","","decimal {[]} {[]}
+"ExplanationOfBenefit.item.adjudication.value","","","",0,1,"","","","decimal {[]} {[]}
 ","Non-monitary value","A non-monetary value associated with the category. Mutually exclusive to the amount element above.","For example: eligible percentage or co-payment percentage.","Some adjudication categories convey a percentage or a fixed value.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.adjudication.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.item.adjudication","inoutnetwork","","",1,1,"Y","","","BackboneElement {[]} {[]}
