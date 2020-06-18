@@ -88,16 +88,16 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="da1f3f72-0e89-496a-bfa8-58ef0fa9ccae">​</a><a href="index.html#Introduction">Introduction</a></li>
-     <li><a name="5441874a-3f0d-487f-a4a6-d2a934a81854">​</a><a href="index.html#Introduction#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="977eaaf9-4647-40f2-8afa-c044372b82e7">​</a><a href="index.html#guide-overview">Guide Overview</a></li>
+     <li><a name="695f8c13-cc2f-4216-890f-2ea7e115912c">​</a><a href="index.html#Introduction">Introduction</a></li>
+     <li><a name="a2549454-af33-41f9-ae48-9530fbd04e5e">​</a><a href="index.html#Introduction#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="6138704f-0129-4d06-b95c-b082787661ac">​</a><a href="index.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="6fe16a44-433a-43b9-b1f8-c852609e7088">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="41200efa-803d-47da-bf3f-d8d654e0bdab">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="bb45d395-5980-43d1-9fdc-69c07a680c70">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="cdaeab6e-5b85-4d25-86f6-475593a48f0e">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="9702cab5-3655-4119-aa76-de0a785a78b3">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="43bbbb70-2e5e-486d-85b8-d197f81d91c0">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -127,7 +127,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="09805286-0544-48b2-90d2-fec8641c00d7">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="142e6c2b-06b0-4615-80e3-152ec744e943">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -177,7 +177,51 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <div xsi:schemalocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 
+<h3>Code Systems Requiring Licenses </h3>
 
+<h4>Access to Licensed Code Systems</h4>
+
+This HL7 specification contains and references intellectual property owned by third parties ("Third Party IP"). Implementers and testers of this specification SHALL abide by the license requirements for each terminology content artifact utilized within a functioning implementation. Terminology licenses SHALL be obtained from the Third Party IP owner for each code system and/or other specified artifact used. It is the sole responsibility of each organization deploying or testing this specification to ensure their implementations comply with licensing requirements of each Third Party IP.
+
+### Licensed Industry Standard Code Systems
+
+This IG includes value set bindings to industry standard codes that reference Code Systems which require implementers to purchase a license before the coded concepts can be used. HL7 presently addresses similar license requirements for LOINC and SNOMED CT codes, which although are not used by this IG, are required for other IGs. The following information summarizes the set of licensed Code Systems required by this IG and provides links to the information about where to go to purchase a license.
+
+* CPT (Current Procedural Terminology) Procedure Codes and Modifiers: The CPT procedure and modifier codes are owned by the American Medical Association. [http://www.ama-assn.org/go/cpt](http://www.ama-assn.org/go/cpt).
+
+* CARC (Claim Adjustment Reason Codes) Codes: CARC Codes are owned by X12. [http://www.x12.org/codes/claim-adjustment-reason-codes/](http://www.x12.org/codes/claim-adjustment-reason-codes/).
+
+* NUBC (National Uniform Billing Committee) Codes: The NUBC secretariat is the American Hospital Association. [https://www.nubc.org](https://www.nubc.org).
+
+* NCPDP (National Council for Prescription Drug Program): Retail Pharmacy data standards are defined by the NCPDP. [https://www.ncpdp.org](https://www.ncpdp.org).
+
+<h3>Code Systems Not Requiring Licenses </h3>
+
+This IG includes value set bindings to industry standard codes that are available for use without licenses. An example is the [ICD-10](http://www.icd10data.com/icd10pcs) procedure codes ICD-10-PCS codes which are defined in [US Core Procedure Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure). (However, the US Core Procedure Profile cannot be used by this IG as it includes LOINC and SNOMED CT codes, which are not are not defined by HHS for claims submissions). The following information summarizes the set of Code Systems required by this IG that are available for use and provides links to the location of the information.
+
+* ICD-CM Diagnosis Codes: International Statistical Classification of Diseases and Related Health Problems (ICD). This IG will use version 10. The ICD-10-CM code set is maintained by the National Center for Health Statistics (NCHS) of the Centers for Disease Control and Prevention (CDC) for use in the United States. It is based on ICD-10, which was developed by the World Health Organization (WHO) and is used internationally a medical classification. [https://www.icd10data.com/ICD10CM/Codes](https://www.icd10data.com/ICD10CM/Codes)
+
+  
+
+* ICD-Procedure Codes (ICD-PCS): The ICD-10-PCS code set is owned by CMS. [http://www.ama-assn.org/go/cpt]( http://www.ama-assn.org/go/cpt).
+
+  
+
+* DRG (Diagnosis Related Group): The DRGs are payment categories that are used to classify patients for the purpose of reimbursing hospitals for each case in a given category with a fixed fee regardless of the actual costs incurred. All versions of the DRG (MS-DRG, AP-DRG, etc.) are owned by CMS. MS-DRGs are used for the Medicare population. [https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software.html](https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software.html).
+
+  
+
+* HCPCS (Healthcare Common Procedure Coding System) Level II Procedure and Modifier Codes: HCPCS codes primarily include non-physician products, supplies, and procedures not included in CPT. They are owned by CMS and are available for use. [https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS-Items/2020-HCPCS-Record-Layout](https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS-Items/2020-HCPCS-Record-Layout).
+
+  
+
+* NDC (National Drug Codes): The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code. [http://hl7.org/fhir/sid/ndc.html](https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS-Items/2020-HCPCS-Record-Layout).
+
+  
+
+* RARC (Remittance Advice Remark Codes) Codes: The RARC codes are owned by CMS. [http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes](http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes).
+
+  
 <h3>Value Sets defined as part of this Implementation Guide.  </h3>
 <table border="1" class="valuesets local">
   <thead>
@@ -196,297 +240,193 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <tbody> 
 <tr>
         <td><a href="ValueSet-AdjudicationDenialReasonVS.html">Adjudication Denial Reason</a></td>
-        <td><p>Adjudication Denial Reason X12CARCCMSRARC.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Adjudication Denial Reason X12CARCCMSRARC.</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-AdjudicationValueCodesVS.html">Adjudication Value Codes</a></td>
-        <td><p>Adjudication Value Codes.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Adjudication Value Codes.</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-AdjustmentAmountCategoryVS.html">Adjustment Amount Category</a></td>
-        <td><p>Adjustment Amount Category.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Adjustment Amount Category.</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-BenefitPaymentStatusCategoryVS.html">Benefit Payment Status Category.</a></td>
-        <td><p>Benefit Payment Status Category</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Benefit Payment Status Category</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-BenefitPaymentStatusVS.html">Benefit Payment Status</a></td>
-        <td><p>Benefit Payment Status</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Benefit Payment Status</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-CPTHCPCSModifierCodeVS.html">CPT and HCPCS Modifier Codes</a></td>
-        <td><p>CPT and HCPCS Modifier Codes.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>CPT and HCPCS Modifier Codes.</td>
+        <td>Requires License.</td>
     </tr>
 <tr>
         <td><a href="ValueSet-CPTHCPCSProcedureCodeVS.html">CPT and HCPCS Procedure Codes</a></td>
-        <td><p>CPT and HCPCS Procedure Codes.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>CPT and HCPCS Procedure Codes.</td>
+        <td>Requires License.</td>
     </tr>
 <tr>
         <td><a href="ValueSet-ClaimAdjudicationCategoryVS.html">Claim Adjustment Category</a></td>
-        <td><p>Claim Adjustment Category.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Claim Adjustment Category.</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-ClaimInformationCategoryVS.html">Claim Information Category</a></td>
-        <td><p>Claim Information Category.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Claim Information Category.</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-ClaimPayeeTypeCodeVS.html">Claim Payee Type</a></td>
-        <td><p>Claim Payee Typ.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Claim Payee Typ.</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-ClaimPaymentStatusCodeVS.html">Claim Payment Status Codes</a></td>
-        <td><p>Claim Payment Status Codes.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Claim Payment Status Codes.</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-ClaimTypeVS.html">Claim Type</a></td>
-        <td><p>Claim Type.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Claim Type.</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-DiagnosisTypeFacilityVS.html">Diagnosis Type - Facility</a></td>
-        <td><p>Diagnosis Type - Facility</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Diagnosis Type - Facility</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-DiagnosisTypeProfessionalNonClinicianVS.html">Diagnosis Type - Non-Clinician</a></td>
-        <td><p>Diagnosis Type - Non-Clinician.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Diagnosis Type - Non-Clinician.</td>
+        <td>.</td>
     </tr>
 <tr>
         <td><a href="ValueSet-FDANationalDrugCodeVS.html">FDA National Drug Code (NDC)</a></td>
-        <td><p>FDA National Drug Code (NDC)</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>FDA National Drug Code (NDC)</td>
+        <td></td>
     </tr>
     <tr>
         <td><a href="ValueSet-FDANDCNCPDPCompoundCodeVS.html">FDA NDC and NCPDP Compound Codes</a></td>
-        <td><p>FDA NDC and NCPDP Compound Codes.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>FDA NDC and NCPDP Compound Codes.</td>
+        <td>Requires License.</td>
     </tr>
 <tr>
         <td><a href="ValueSet-ICD10CMVS.html">ICD-10-CM</a></td>
-        <td><p>ICD-10-CM</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>ICD-10-CM</td>
+        <td>Requires License.</td>
     </tr>
 <tr>
         <td><a href="ValueSet-ICD10PCSVS.html">ICD-10-PCS</a></td>
-        <td><p>ICD-10-PC</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>ICD-10-PC</td>
+        <td>Requires License.</td>
     </tr>
 <tr>
         <td><a href="ValueSet-IdentifierTypeVS.html">Identifier Type</a></td>
-        <td><p>Identifier Type.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Identifier Type.</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-MSDRGVS.html">MS-DRG</a></td>
-        <td><p>MS-DRG</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>MS-DRG</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-NCPDPBrandGenericCodeVS.html">NCPDP Brand Generic Code</a></td>
-        <td><p>NCPDP Brand Generic Code</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>NCPDP Brand Generic Code</td>
+        <td>Requires License.</td>
     </tr>
 <tr>
         <td><a href="ValueSet-NCPDPDispensedAsWrittenVS.html">NCPDP Dispensed as Written</a></td>
-        <td><p>NCPDP Dispensed as Written</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>NCPDP Dispensed as Written</td>
+        <td>Requires License</td>
     </tr>
 <tr>
         <td><a href="ValueSet-NCPDPPrescriptionOriginCodeVS.html">NCPDP Prescription Origin</a></td>
-        <td><p>NCPDP Prescription Origin.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>NCPDP Prescription Origin.</td>
+        <td>Requires License</td>
     </tr>
     <tr>
         <td><a href="ValueSet-NCPDPRejectCodeVS.html">NCPDP Reject Code</a></td>
-        <td><p>NCPDP Reject Code</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>NCPDP Reject Code</td>
+        <td>Requires License</td>
     </tr>
 <tr>
         <td><a href="ValueSet-NUBCPatientDischargeStatusVS.html">NUBC Patient Discharge Status</a></td>
-        <td><p>NUBC Patient Discharge Status</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>NUBC Patient Discharge Status</td>
+        <td>Requires License</td>
     </tr>
 <tr>
         <td><a href="ValueSet-NUBCPointOfOriginVS.html">NUBC Point Of Origin</a></td>
-        <td><p>NUBC Point Of Origin</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>NUBC Point Of Origin</td>
+        <td>Requires License</td>
     </tr>
 <tr>
         <td><a href="ValueSet-NUBCPresentOnAdmissionVS.html">NUBC Present On Admission</a></td>
-        <td><p>NUBC Present On Admission</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>NUBC Present On Admission</td>
+        <td>Requires License</td>
     </tr>
 <tr>
         <td><a href="ValueSet-NUBCPriorityOfAdmissionnVS.html">NUBC Priority of Admission</a></td>
-        <td><p>NUBC Priority of Admission.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>NUBC Priority of Admission.</td>
+        <td>Requires License</td>
     </tr>
 <tr>
         <td><a href="ValueSet-NUBCRevenueCodeVS.html">NUBC Revenue Code</a></td>
-        <td><p>NUBC Revenue Code.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>NUBC Revenue Code.</td>
+        <td>Requires License</td>
     </tr>
 <tr>
         <td><a href="ValueSet-NUBCTypeOfBillVS.html">NUBC Type of Bill</a></td>
-        <td><p>NUBC Type of Bill</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>NUBC Type of Bill</td>
+        <td>Update Licensing restrictions.</td>
     </tr>
 <tr>
         <td><a href="ValueSet-PayerAdjudicationAmountCategoryVS.html">Payer Adjudication Category</a></td>
-        <td><p>Payer Adjudication Category.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Payer Adjudication Category.</td>
+        <td>.</td>
     </tr>
 <tr>
         <td><a href="ValueSet-PayerProviderRoleVS.html">Payer Provider Role </a></td>
-        <td><p>Payer  Provider Role</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Payer  Provider Role</td>
+        <td></td>
     </tr>
     <tr>
-        <td><a name="7446adda-1d13-4cda-a4ca-35593885a235">​</a><a href="ValueSet-PayerInpatientFacilityProviderRoleVS.html">Payer Inpatient Facility Provider Role </a></td>
-        <td><p>Payer Inpatient Facility Provider Role</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td><a name="29d4f2a0-79b9-4c56-b5c7-8d3dda41a91d">​</a><a href="ValueSet-PayerInpatientFacilityProviderRoleVS.html">Payer Inpatient Facility Provider Role </a></td>
+        <td>Payer Inpatient Facility Provider Role</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-PayerOutpatientFacilityProviderRoleVS.html">Payer Outpatient Facility Provider Role</a></td>
-        <td><p>Payer Outpatient Facility Provider Role.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Payer Outpatient Facility Provider Role.</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-PayerPharmacyProviderRoleVS.html">Payer Pharmacy Provider Role</a></td>
-        <td><p>Payer Pharmacy Provider Role</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Payer Pharmacy Provider Role</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-PayerProfessionalAndNonClinicianProviderRoleVS.html">Payer Professional Non-Clinician Provider Role</a></td>
-        <td><p>Payer Professional Non-Clinician Provider Role</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Payer Professional Non-Clinician Provider Role</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-PresentOnAdmissionDiagnosisTypeVS.html">Present On Admission Diagnosis</a></td>
-        <td><p>Present On Admission Diagnosis.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Present On Admission Diagnosis.</td>
+        <td></td>
     </tr>
 <tr>
         <td><a href="ValueSet-ProviderNetworkStatusVS.html">Provider Network Status</a></td>
-        <td><p>Provider Network Status.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
-    </tr>
-<tr>
-        <td><a name="9699e6eb-a61f-43a0-a255-d460fd8fcc01">​</a><a href="ValueSet-TypeOfBillClassificationVS.html">Type of Bill Classification.html</a></td>
-        <td><p>Type of Bill Classification</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
-    </tr>
-<tr>
-        <td><a name="8ddb5338-ac0b-4aff-883d-b319fedf4391">​</a><a href="ValueSet-TypeOfBillFrequencyVS.html">Type of Bill Frequency</a></td>
-        <td><p>Type of Bill Frequency.</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
-    </tr>
-<tr>
-        <td><a name="db6ced65-ce25-4300-a9b3-2dcc81478cc7">​</a><a href="ValueSet-TypeOfFacilityVS.html">Type of Facility</a></td>
-        <td><p>Type of Facility</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
-    </tr>
-<tr>
-        <td><a name="301985e3-f2ff-40dc-9cfa-cb0379d7402e">​</a><a href="ValueSet-TypeOfServiceVS.html">Type of Service</a></td>
-        <td><p>Type of Service</p>
-</td>
-        <td><p>Update Licensing restrictions.</p>
-</td>
+        <td>Provider Network Status.</td>
+        <td></td>
     </tr>
   </tbody>
 </table>
@@ -506,36 +446,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <tbody> 
        <tr>
         <td><a href="CodeSystem-ClaimAdjudicationCategoryCS.html">Claim Adjudication Category Codes</a></td>
-        <td><p>Claim Adjudication Category Codes.</p>
-</td>
+        <td>Claim Adjudication Category Codes.</td>
       </tr>
       <tr>
         <td><a href="CodeSystem-PayerAdjudicationCategoryCS.html">Payer Adjudication Categories</a></td>
-        <td><p>Payer Adudication Categories.</p>
-</td>
+        <td>Payer Adudication Categories.</td>
       </tr>
       <tr>
-        <td><a name="7694ce58-6340-488b-a610-6626154e71f8">​</a><a href="CodeSystem-ClaimInformationCategoryCS">Claim Information Category</a></td>
-        <td><p>Claim Information Category</p>
-</td>
+        <td><a name="4de5d0d7-999f-4876-988e-97e76b64d9f8">​</a><a href="CodeSystem-ClaimInformationCategoryCS">Claim Information Category</a></td>
+        <td>Claim Information Category</td>
       </tr>
       <tr>
         <td><a href="CodeSystem-PayerDiagnosisTypeCS.html">Payer Diagnosis Types (additional)</a></td>
-        <td><p>Payer Diagnosis Types</p>
-</td>
+        <td>Payer Diagnosis Types</td>
       </tr>
       <tr>
         <td><a href="CodeSystem-ClaimTypeCS.html">Claim Types</a></td>
-        <td><p>Claim Types</p>
-</td>
+        <td>Claim Types</td>
       </tr>
       <tr>
         <td><a href="CodeSystem-PayerProviderRoleCS.html">Provider Roles</a></td>
-        <td><p>Provider Roles</p>
-</td>
+        <td>Provider Roles</td>
       </tr>
   </tbody>
 </table>
+
+<h3>Externally Published CodeSystems. </h3>
+
+| CodeSystem | Description |
+|----------------|---------------|
+|ICD-10-CM           |ICD-10-CM         |
+|ICD-10-PCS          |ICD-10-PCS  |
 </div>
 
 
@@ -559,7 +500,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 17:08+0000">2020-06-18</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 21:38+0000">2020-06-18</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
