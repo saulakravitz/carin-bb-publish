@@ -88,16 +88,16 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="86d61402-a5fb-4edf-8734-d63ca34466b9">​</a><a href="index.html#Introduction">Introduction</a></li>
-     <li><a name="972cee41-3c65-4513-a8ef-1838771a6920">​</a><a href="index.html#Introduction#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="b29b4043-b7ec-43b1-b496-43b4245710cc">​</a><a href="index.html#guide-overview">Guide Overview</a></li>
+     <li><a name="496b62af-34be-4922-81b4-d0a06692c142">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="6f818351-9953-40fa-8666-5a8f0e537224">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="e8ea668d-e23d-42c8-b1d8-f31fe1d1e999">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="9c0c8159-7806-4b3b-b444-aa58c447e790">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="945a4c34-efc6-48cb-b8f8-5ae28b7c83ab">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="5862a8a3-b71b-47ba-a525-e0eaabe790a6">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="930153b4-d406-4021-bbec-69684e9ad614">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
@@ -114,20 +114,21 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="3b97ce39-d9e1-494f-a8fa-b84aa68e91be">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="2e82abf3-76fe-448b-a177-2f67aaef143a">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Security<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-     <li><a href="Authorization_Authentication_and_Registration.html">Security</a></li>
+     <li><a href="Authorization_Authentication_and_Registration.html">Authentication and Authorization</a></li>
+      <li><a href="Authorization_Authentication_and_Registration.html">SMARTonFHIR App Launch</a></li>
     </ul>
    </li>
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="bbae04aa-75a7-4060-ab27-5e58a52df833">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="b4e19022-3e4f-4c66-a37f-26684a054b80">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -227,7 +228,7 @@
 
   <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><ul><li>Include these codes as defined in <a href="CodeSystem-PayerProviderRoleCS.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerProviderRoleCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-PayerProviderRoleCS.html#PayerProviderRoleCS-pcp">pcp</a></td><td>Primary Care Provider</td><td>Primary Care Provider</td></tr><tr><td><a href="CodeSystem-PayerProviderRoleCS.html#PayerProviderRoleCS-performing">performing</a></td><td>Performing Provider</td><td>Performing Provider</td></tr><tr><td><a name="ca816bac-df01-43af-9568-8c6dc35abe66">​</a><a href="CodeSystem-PayerProviderRoleCS.html#PayerProviderRoleCS-referring">referring</a></td><td>Referring Provider</td><td></td></tr></table></li></ul></div>
+<div><ul><li>Include these codes as defined in <a href="CodeSystem-PayerProviderRoleCS.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerProviderRoleCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-PayerProviderRoleCS.html#PayerProviderRoleCS-pcp">pcp</a></td><td>Primary Care Provider</td><td>Primary Care Provider</td></tr><tr><td><a href="CodeSystem-PayerProviderRoleCS.html#PayerProviderRoleCS-performing">performing</a></td><td>Performing Provider</td><td>Performing Provider</td></tr><tr><td><a name="9faae2ba-ccbc-4e80-9523-1073d39bc6c0">​</a><a href="CodeSystem-PayerProviderRoleCS.html#PayerProviderRoleCS-referring">referring</a></td><td>Referring Provider</td><td></td></tr></table></li></ul></div>
 
   <p>&nbsp;</p>
   <a name="expansion"> </a>
@@ -295,7 +296,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 21:38+0000">2020-06-18</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 23:13+0000">2020-06-18</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
