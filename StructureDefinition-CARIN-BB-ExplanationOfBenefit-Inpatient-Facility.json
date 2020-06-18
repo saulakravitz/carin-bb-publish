@@ -10,7 +10,7 @@
   "name": "CARINBBExplanationOfBenefitInpatientFacility",
   "title": "CARIN BB ExplanationOfBenefit Inpatient Facility",
   "status": "active",
-  "date": "2020-06-18T05:04:51+00:00",
+  "date": "2020-06-18T05:49:39+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -3033,8 +3033,15 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/RelatedClaimVS"
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "RelatedClaimRelationship"
+            }
+          ],
+          "strength": "example",
+          "description": "Relationship of this claim to a related Claim.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/related-claim-relationship"
         }
       },
       {
@@ -4291,7 +4298,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"
+          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"
         }
       },
       {
@@ -4899,7 +4906,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"
+          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"
         }
       },
       {
@@ -5828,7 +5835,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"
+          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"
         }
       },
       {
@@ -6757,7 +6764,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"
+          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"
         }
       },
       {
@@ -7686,7 +7693,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"
+          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"
         }
       },
       {
@@ -8619,7 +8626,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"
+          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"
         }
       },
       {
@@ -9548,7 +9555,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"
+          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"
         }
       },
       {
@@ -10477,7 +10484,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"
+          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"
         }
       },
       {
@@ -11406,7 +11413,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"
+          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"
         }
       },
       {
@@ -12335,7 +12342,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"
+          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"
         }
       },
       {
@@ -23650,7 +23657,7 @@
         "isSummary": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationAmountCategoryVS"
+          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationAmountCategoryVS"
         }
       },
       {

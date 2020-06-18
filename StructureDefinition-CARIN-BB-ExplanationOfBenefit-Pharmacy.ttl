@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "CARINBBExplanationOfBenefitPharmacy"];
   fhir:StructureDefinition.title [ fhir:value "CARIN BB ExplanationOfBenefit Pharmacy"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-06-18T05:04:51+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-06-18T05:49:39+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3168,10 +3168,16 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
-         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "RelatedClaimRelationship" ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "Relationship of this claim to a related Claim." ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/RelatedClaimVS";
-           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/RelatedClaimVS>
+           fhir:value "http://hl7.org/fhir/ValueSet/related-claim-relationship";
+           fhir:link <http://hl7.org/fhir/ValueSet/related-claim-relationship>
          ]
        ]
      ], [
@@ -4519,8 +4525,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS";
-           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS>
          ]
        ]
      ], [
@@ -5159,8 +5165,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS";
-           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS>
          ]
        ]
      ], [
@@ -6123,8 +6129,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS";
-           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS>
          ]
        ]
      ], [
@@ -7087,8 +7093,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS";
-           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS>
          ]
        ]
      ], [
@@ -8051,8 +8057,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS";
-           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS>
          ]
        ]
      ], [
@@ -9021,8 +9027,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS";
-           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS>
          ]
        ]
      ], [
@@ -9985,8 +9991,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS";
-           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS>
          ]
        ]
      ], [
@@ -10955,8 +10961,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS";
-           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS>
          ]
        ]
      ], [
@@ -11925,8 +11931,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS";
-           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS>
          ]
        ]
      ], [
@@ -23047,8 +23053,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationAmountCategoryVS";
-           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationAmountCategoryVS>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationAmountCategoryVS";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationAmountCategoryVS>
          ]
        ]
      ], [

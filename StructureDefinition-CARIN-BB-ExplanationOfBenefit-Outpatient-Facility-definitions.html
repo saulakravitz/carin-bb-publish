@@ -88,16 +88,16 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="58fe5068-1bc4-4a78-8b24-85bf0ad64b0f">​</a><a href="index.html#Introduction">Introduction</a></li>
-     <li><a name="a59de5a9-8e0e-4631-85a1-55ffe4144766">​</a><a href="index.html#Introduction#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="2780acd5-25db-441b-ad54-15360d499368">​</a><a href="index.html#guide-overview">Guide Overview</a></li>
+     <li><a name="f9727087-ea3a-4e32-a9e4-3e4851d2bc60">​</a><a href="index.html#Introduction">Introduction</a></li>
+     <li><a name="5e80db81-17e2-44cb-9991-c809b257df7a">​</a><a href="index.html#Introduction#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="37099d3e-7a07-4df3-a918-ca49ccfcd917">​</a><a href="index.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="dc23eb7c-e22b-4447-b001-f606d6b5c02c">​</a><a href="use_case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="ed5e2ea2-4251-411f-aecb-78a6895089c1">​</a><a href="use_case.html#use-cases">Use Cases</a></li>
+       <li><a name="ac0dfc0c-eacc-4287-953b-6f1812fe2bbe">​</a><a href="use_case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="2f8709e8-8e47-419e-9fe8-090b10ac9c73">​</a><a href="use_case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="4f3a16d7-af1f-4d70-9a8e-14a9958864b7">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="673ba9bc-12e4-428d-9ecd-fcb226f468a3">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -127,7 +127,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="af76b010-8b3a-4a54-8807-fb37aa5560a6">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="ac717e45-3a84-49af-b430-34d205d2c9e7">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -878,7 +878,7 @@
   <tr><td>Definition</td><td><p>A code to convey how the claims are related.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-RelatedClaimVS.html">Related Claim</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Relationship of this claim to a related Claim.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-related-claim-relationship.html">ExampleRelatedClaimRelationshipCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Some insurers need a declaration of the type of relationship.</p>
 </td></tr>
@@ -1207,7 +1207,7 @@
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-InformationCategoryVS.html">Information Categories</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategoryVS.html">Claim Information Category</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
@@ -1356,7 +1356,7 @@
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-InformationCategoryVS.html">Information Categories</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategoryVS.html">Claim Information Category</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
@@ -1572,7 +1572,7 @@
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-InformationCategoryVS.html">Information Categories</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategoryVS.html">Claim Information Category</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
@@ -1788,7 +1788,7 @@
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-InformationCategoryVS.html">Information Categories</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategoryVS.html">Claim Information Category</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
@@ -2004,7 +2004,7 @@
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-InformationCategoryVS.html">Information Categories</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategoryVS.html">Claim Information Category</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
@@ -2220,7 +2220,7 @@
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-InformationCategoryVS.html">Information Categories</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategoryVS.html">Claim Information Category</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
@@ -2436,7 +2436,7 @@
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-InformationCategoryVS.html">Information Categories</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategoryVS.html">Claim Information Category</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
@@ -2652,7 +2652,7 @@
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-InformationCategoryVS.html">Information Categories</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategoryVS.html">Claim Information Category</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
@@ -5479,7 +5479,7 @@
   <tr><td>Definition</td><td><p>A code to indicate the information type of this adjudication record. Information types may include: the value submitted, maximum values or percentages allowed or payable under the plan, amounts that the patient is responsible for in aggregate or pertaining to this item, amounts paid by other coverages, and the benefit payable for this item.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-AdjudicationAmountCategoryVS.html">Adjudication Amount Category</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-PayerAdjudicationAmountCategoryVS.html">Payer Adjudication Amount Category</a>; other codes may be used where these codes are not suitable</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Needed to convey the type of total provided.</p>
 </td></tr>
@@ -5937,7 +5937,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 05:04+0000">2020-06-18</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 05:49+0000">2020-06-18</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

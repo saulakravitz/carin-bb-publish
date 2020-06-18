@@ -89,7 +89,7 @@
   <name value="CARINBBExplanationOfBenefitPharmacy"/>
   <title value="CARIN BB ExplanationOfBenefit Pharmacy"/>
   <status value="active"/>
-  <date value="2020-06-18T05:04:51+00:00"/>
+  <date value="2020-06-18T05:49:39+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -2544,8 +2544,12 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <binding>
-        <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/RelatedClaimVS"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="RelatedClaimRelationship"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Relationship of this claim to a related Claim."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/related-claim-relationship"/>
       </binding>
     </element>
     <element id="ExplanationOfBenefit.related.reference">
@@ -3562,7 +3566,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"/>
+        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"/>
       </binding>
     </element>
     <element id="ExplanationOfBenefit.supportingInfo.category.id">
@@ -4058,7 +4062,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"/>
+        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"/>
       </binding>
     </element>
     <element id="ExplanationOfBenefit.supportingInfo:billingnetworkcontractingstatus.category.id">
@@ -4819,7 +4823,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"/>
+        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"/>
       </binding>
     </element>
     <element id="ExplanationOfBenefit.supportingInfo:brandgenericcode.category.id">
@@ -5580,7 +5584,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"/>
+        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"/>
       </binding>
     </element>
     <element id="ExplanationOfBenefit.supportingInfo:rxoriginCode.category.id">
@@ -6341,7 +6345,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"/>
+        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"/>
       </binding>
     </element>
     <element id="ExplanationOfBenefit.supportingInfo:refillNum.category.id">
@@ -7106,7 +7110,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"/>
+        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"/>
       </binding>
     </element>
     <element id="ExplanationOfBenefit.supportingInfo:dawcode.category.id">
@@ -7867,7 +7871,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"/>
+        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"/>
       </binding>
     </element>
     <element id="ExplanationOfBenefit.supportingInfo:clmrecvddate.category.id">
@@ -8632,7 +8636,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"/>
+        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"/>
       </binding>
     </element>
     <element id="ExplanationOfBenefit.supportingInfo:dayssupply.category.id">
@@ -9397,7 +9401,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/InformationCategoryVS"/>
+        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS"/>
       </binding>
     </element>
     <element id="ExplanationOfBenefit.supportingInfo:dispensingstatus.category.id">
@@ -17966,7 +17970,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationAmountCategoryVS"/>
+        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationAmountCategoryVS"/>
       </binding>
     </element>
     <element id="ExplanationOfBenefit.total.amount">
