@@ -1,18 +1,18 @@
 ﻿CARINConsumerDirectedPayerDataExchange : Validation Results
 =========================================
 
-err = 45, warn = 85, info = 2
+err = 48, warn = 85, info = 2
 IG Publisher Version: v1.0.100-SNAPSHOT
-Generated Fri Jun 19 14:20:04 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.0 (canonical = http://hl7.org/fhir/us/carin-bb)
+Generated Fri Jun 19 15:23:41 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.0 (canonical = http://hl7.org/fhir/us/carin-bb)
 
  Build Errors : 2415 / 14
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb : 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-Coverage : 3 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-ExplanationOfBenefit : 1 / 2
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-ExplanationOfBenefit-Inpatient-Facility : 2 / 4
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-ExplanationOfBenefit-Outpatient-Facility : 2 / 4
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-ExplanationOfBenefit-Inpatient-Facility : 4 / 4
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-ExplanationOfBenefit-Outpatient-Facility : 4 / 4
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-ExplanationOfBenefit-Pharmacy : 3 / 2
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-ExplanationOfBenefit-Professional-NonClinician : 5 / 2
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-ExplanationOfBenefit-Professional-NonClinician : 4 / 2
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-Location : 1 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-Organization : 1 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-Patient : 1 / 1
@@ -2515,6 +2515,8 @@ WARNING: StructureDefinition/CARIN-BB-ExplanationOfBenefit: StructureDefinition.
 WARNING: StructureDefinition/CARIN-BB-ExplanationOfBenefit: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: StructureDefinition.jurisdiction: The resource must declare it's jurisdiction to match the package id (hl7.fhir.us.carin-bb, jurisdiction = urn:iso:std:iso:3166#US)
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-ExplanationOfBenefit-Inpatient-Facility.json ==
+ERROR: CARIN BB ExplanationOfBenefit Inpatient Facility.adjudication.ExplanationOfBenefit.item.adjudication.category: Binding http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationPayerValueCodesVS is not a subset of binding http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimAdjudicationCategoryVS
+ERROR: CARIN BB ExplanationOfBenefit Inpatient Facility.adjudication.ExplanationOfBenefit.adjudication.category: Binding http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationPayerValueCodesVS is not a subset of binding http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimAdjudicationCategoryVS
 ERROR: CARIN BB ExplanationOfBenefit Inpatient Facility.ExplanationOfBenefit.payment.type: Binding http://hl7.org/fhir/us/carin-bb/ValueSet/BenefitPaymentStatusVS is not a subset of binding http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimPaymentStatusCodeVS
 WARNING: StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility: StructureDefinition.snapshot.element[30].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility: StructureDefinition.snapshot.element[231].short: value should not start or finish with whitespace
@@ -2522,6 +2524,8 @@ WARNING: StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility: S
 ERROR: StructureDefinition.jurisdiction: The resource must declare it's jurisdiction to match the package id (hl7.fhir.us.carin-bb, jurisdiction = urn:iso:std:iso:3166#US)
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility'): The Implementation Guide contains no examples for this profile
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-ExplanationOfBenefit-Outpatient-Facility.json ==
+ERROR: CARIN BB ExplanationOfBenefit Outpatient Facility.adjudication.ExplanationOfBenefit.item.adjudication.category: Binding http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationPayerValueCodesVS is not a subset of binding http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimAdjudicationCategoryVS
+ERROR: CARIN BB ExplanationOfBenefit Outpatient Facility.adjudication.ExplanationOfBenefit.adjudication.category: Binding http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationPayerValueCodesVS is not a subset of binding http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimAdjudicationCategoryVS
 ERROR: CARIN BB ExplanationOfBenefit Outpatient Facility.ExplanationOfBenefit.payment.type: Binding http://hl7.org/fhir/us/carin-bb/ValueSet/BenefitPaymentStatusVS is not a subset of binding http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimPaymentStatusCodeVS
 WARNING: StructureDefinition/CARIN-BB-ExplanationOfBenefit-Outpatient-Facility: StructureDefinition.snapshot.element[30].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: StructureDefinition/CARIN-BB-ExplanationOfBenefit-Outpatient-Facility: StructureDefinition.snapshot.element[210].short: value should not start or finish with whitespace
@@ -2536,7 +2540,6 @@ ERROR: StructureDefinition.jurisdiction: The resource must declare it's jurisdic
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy'): The Implementation Guide contains no examples for this profile
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-ExplanationOfBenefit-Professional-NonClinician.json ==
 ERROR: CARIN BB ExplanationOfBenefit Professional NonClinician.adjudication.ExplanationOfBenefit.item.adjudication.category: Binding http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationPayerValueCodesVS is not a subset of binding http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimAdjudicationCategoryVS
-ERROR: CARIN BB ExplanationOfBenefit Professional NonClinician.adjudication.ExplanationOfBenefit.adjudication.category: Binding http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationPayerValueCodesVS is not a subset of binding http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimAdjudicationCategoryVS
 WARNING: StructureDefinition/CARIN-BB-ExplanationOfBenefit-Professional-NonClinician: StructureDefinition.snapshot.element[30].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: StructureDefinition/CARIN-BB-ExplanationOfBenefit-Professional-NonClinician: StructureDefinition.snapshot.element[102].pattern.ofType(uri): URL value "http://hl7.org/fhir/us/carin/CodeSystem/carin-bb-claiminformationcategory" does not resolve
 ERROR: StructureDefinition/CARIN-BB-ExplanationOfBenefit-Professional-NonClinician: StructureDefinition.differential.element[10].pattern.ofType(uri): URL value "http://hl7.org/fhir/us/carin/CodeSystem/carin-bb-claiminformationcategory" does not resolve
