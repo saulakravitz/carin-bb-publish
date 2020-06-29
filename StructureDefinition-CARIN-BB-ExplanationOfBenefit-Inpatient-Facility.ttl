@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "CARINBBExplanationOfBenefitInpatientFacility"];
   fhir:StructureDefinition.title [ fhir:value "CARIN BB ExplanationOfBenefit Inpatient Facility"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-06-29T17:03:07+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-06-29T17:55:32+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -14404,12 +14404,6 @@
          fhir:Extension.valueString [ fhir:value "Insurance" ]
        ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.insurance" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "pattern" ]
-         ]
-       ];
        fhir:ElementDefinition.short [ fhir:value "Patient insurance information" ];
        fhir:ElementDefinition.definition [ fhir:value "Financial instruments for reimbursement for the health care products and services specified on the claim." ];
        fhir:ElementDefinition.comment [ fhir:value "All insurance coverages for the patient which may be applicable for reimbursement, of the products and services listed in the claim, are typically provided in the claim to allow insurers to confirm the ordering of the insurance coverages relative to local 'coordination of benefit' rules. One coverage (and only one) with 'focal=true' is to be used in the adjudication of this claim. Coverages appearing before the focal Coverage in the list, and where 'Coverage.subrogation=false', should provide a reference to the ClaimResponse containing the adjudication results of the prior claim." ];
@@ -14447,6 +14441,259 @@
        ]
      ], [
        fhir:index 314;
+       fhir:Element.id [ fhir:value "ExplanationOfBenefit.insurance.id" ];
+       fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.insurance.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "string" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 315;
+       fhir:Element.id [ fhir:value "ExplanationOfBenefit.insurance.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.insurance.extension" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 316;
+       fhir:Element.id [ fhir:value "ExplanationOfBenefit.insurance.modifierExtension" ];
+       fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.insurance.modifierExtension" ];
+       fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ], [
+         fhir:value "modifiers";
+         fhir:index 2
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BackboneElement.modifierExtension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifierReason [ fhir:value "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 317;
+       fhir:Element.id [ fhir:value "ExplanationOfBenefit.insurance.focal" ];
+       fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.insurance.focal" ];
+       fhir:ElementDefinition.short [ fhir:value "Coverage to be used for adjudication" ];
+       fhir:ElementDefinition.definition [ fhir:value "A flag to indicate that this Coverage is to be used for adjudication of this claim when set to true." ];
+       fhir:ElementDefinition.comment [ fhir:value "A patient may (will) have multiple insurance policies which provide reimbursement for healthcare services and products. For example, a person may also be covered by their spouse's policy and both appear in the list (and may be from the same insurer). This flag will be set to true for only one of the listed policies and that policy will be used for adjudicating this claim. Other claims would be created to request adjudication against the other listed policies." ];
+       fhir:ElementDefinition.requirements [ fhir:value "To identify which coverage in the list is being used to adjudicate this claim." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ExplanationOfBenefit.insurance.focal" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 318;
+       fhir:Element.id [ fhir:value "ExplanationOfBenefit.insurance.coverage" ];
+       fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.insurance.coverage" ];
+       fhir:ElementDefinition.short [ fhir:value "Insurance information" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reference to the insurance card level information contained in the Coverage resource. The coverage issuing insurer will use these details to locate the patient's actual coverage within the insurer's information system." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Required to allow the adjudicator to locate the correct policy and history within their information system." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ExplanationOfBenefit.insurance.coverage" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 319;
+       fhir:Element.id [ fhir:value "ExplanationOfBenefit.insurance.preAuthRef" ];
+       fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.insurance.preAuthRef" ];
+       fhir:ElementDefinition.short [ fhir:value "Prior authorization reference number" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reference numbers previously provided by the insurer to the provider to be quoted on subsequent claims containing services or products related to the prior authorization." ];
+       fhir:ElementDefinition.comment [ fhir:value "This value is an alphanumeric string that may be provided over the phone, via text, via paper, or within a ClaimResponse resource and is not a FHIR Identifier." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Providers must quote previously issued authorization reference numbers in order to obtain adjudication as previously advised on the Preauthorization." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ExplanationOfBenefit.insurance.preAuthRef" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 320;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.accident" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -14483,7 +14730,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 315;
+       fhir:index 321;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.accident.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.accident.id" ];
        fhir:ElementDefinition.representation [
@@ -14516,7 +14763,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 316;
+       fhir:index 322;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.accident.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.accident.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -14571,7 +14818,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 317;
+       fhir:index 323;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.accident.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.accident.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -14631,7 +14878,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 318;
+       fhir:index 324;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.accident.date" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.accident.date" ];
        fhir:ElementDefinition.short [ fhir:value "When the incident occurred" ];
@@ -14664,7 +14911,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 319;
+       fhir:index 325;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.accident.type" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.accident.type" ];
        fhir:ElementDefinition.short [ fhir:value "The nature of the accident" ];
@@ -14709,7 +14956,7 @@
          ]
        ]
      ], [
-       fhir:index 320;
+       fhir:index 326;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.accident.location[x]" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.accident.location[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Where the event occurred" ];
@@ -14749,7 +14996,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 321;
+       fhir:index 327;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -14787,7 +15034,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 322;
+       fhir:index 328;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.id" ];
        fhir:ElementDefinition.representation [
@@ -14820,7 +15067,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 323;
+       fhir:index 329;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -14875,7 +15122,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 324;
+       fhir:index 330;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -14935,7 +15182,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 325;
+       fhir:index 331;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.sequence" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.sequence" ];
        fhir:ElementDefinition.short [ fhir:value "Item instance identifier" ];
@@ -14967,7 +15214,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 326;
+       fhir:index 332;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.careTeamSequence" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.careTeamSequence" ];
        fhir:ElementDefinition.short [ fhir:value "Applicable care team members" ];
@@ -14999,7 +15246,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 327;
+       fhir:index 333;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.diagnosisSequence" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.diagnosisSequence" ];
        fhir:ElementDefinition.short [ fhir:value "Applicable diagnoses" ];
@@ -15031,7 +15278,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 328;
+       fhir:index 334;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.procedureSequence" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.procedureSequence" ];
        fhir:ElementDefinition.short [ fhir:value "Applicable procedures" ];
@@ -15063,7 +15310,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 329;
+       fhir:index 335;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.informationSequence" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.informationSequence" ];
        fhir:ElementDefinition.short [ fhir:value "Applicable exception and supporting information" ];
@@ -15095,7 +15342,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 330;
+       fhir:index 336;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.revenue" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.revenue" ];
        fhir:ElementDefinition.short [ fhir:value "Revenue or cost center code" ];
@@ -15134,7 +15381,7 @@
          ]
        ]
      ], [
-       fhir:index 331;
+       fhir:index 337;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.category" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.category" ];
        fhir:ElementDefinition.short [ fhir:value "Benefit classification" ];
@@ -15180,7 +15427,7 @@
          ]
        ]
      ], [
-       fhir:index 332;
+       fhir:index 338;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.productOrService" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.productOrService" ];
        fhir:ElementDefinition.short [ fhir:value "Billing, service, product, or drug code" ];
@@ -15230,7 +15477,7 @@
          ]
        ]
      ], [
-       fhir:index 333;
+       fhir:index 339;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.modifier" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.modifier" ];
        fhir:ElementDefinition.short [ fhir:value "Product or service billing modifiers" ];
@@ -15270,7 +15517,7 @@
          ]
        ]
      ], [
-       fhir:index 334;
+       fhir:index 340;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.programCode" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.programCode" ];
        fhir:ElementDefinition.short [ fhir:value "Program the product or service is provided under" ];
@@ -15316,7 +15563,7 @@
          ]
        ]
      ], [
-       fhir:index 335;
+       fhir:index 341;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.serviced[x]" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.serviced[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Date or dates of service or product delivery" ];
@@ -15356,7 +15603,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.done[x]" ]
        ]
      ], [
-       fhir:index 336;
+       fhir:index 342;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.location[x]" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.location[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Place of service or where product was supplied" ];
@@ -15417,7 +15664,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.where[x]" ]
        ]
      ], [
-       fhir:index 337;
+       fhir:index 343;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.quantity" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.quantity" ];
        fhir:ElementDefinition.short [ fhir:value "Count of products or services" ];
@@ -15454,7 +15701,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 338;
+       fhir:index 344;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.unitPrice" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.unitPrice" ];
        fhir:ElementDefinition.short [ fhir:value "Fee, charge or cost per item" ];
@@ -15486,7 +15733,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 339;
+       fhir:index 345;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.factor" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.factor" ];
        fhir:ElementDefinition.short [ fhir:value "Price scaling factor" ];
@@ -15519,7 +15766,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 340;
+       fhir:index 346;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.net" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.net" ];
        fhir:ElementDefinition.short [ fhir:value "Total item cost" ];
@@ -15552,7 +15799,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 341;
+       fhir:index 347;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.udi" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.udi" ];
        fhir:ElementDefinition.short [ fhir:value "Unique device identifier" ];
@@ -15589,7 +15836,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 342;
+       fhir:index 348;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.bodySite" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.bodySite" ];
        fhir:ElementDefinition.short [ fhir:value "Anatomical location" ];
@@ -15635,7 +15882,7 @@
          ]
        ]
      ], [
-       fhir:index 343;
+       fhir:index 349;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.subSite" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.subSite" ];
        fhir:ElementDefinition.short [ fhir:value "Anatomical sub-location" ];
@@ -15680,7 +15927,7 @@
          ]
        ]
      ], [
-       fhir:index 344;
+       fhir:index 350;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.encounter" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.encounter" ];
        fhir:ElementDefinition.short [ fhir:value "Encounters related to this billed item" ];
@@ -15717,7 +15964,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 345;
+       fhir:index 351;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.noteNumber" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.noteNumber" ];
        fhir:ElementDefinition.short [ fhir:value "Applicable note numbers" ];
@@ -15749,7 +15996,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 346;
+       fhir:index 352;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -15797,7 +16044,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 347;
+       fhir:index 353;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.id" ];
        fhir:ElementDefinition.representation [
@@ -15830,7 +16077,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 348;
+       fhir:index 354;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -15885,7 +16132,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 349;
+       fhir:index 355;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -15945,7 +16192,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 350;
+       fhir:index 356;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication.category" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category" ];
        fhir:ElementDefinition.short [ fhir:value "Type of adjudication information" ];
@@ -15986,7 +16233,7 @@
          ]
        ]
      ], [
-       fhir:index 351;
+       fhir:index 357;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication.reason" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.reason" ];
        fhir:ElementDefinition.short [ fhir:value "Explanation of adjudication outcome" ];
@@ -16032,7 +16279,7 @@
          ]
        ]
      ], [
-       fhir:index 352;
+       fhir:index 358;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication.amount" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.amount" ];
        fhir:ElementDefinition.short [ fhir:value "Monetary amount" ];
@@ -16065,7 +16312,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 353;
+       fhir:index 359;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication.value" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.value" ];
        fhir:ElementDefinition.short [ fhir:value "Non-monitary value" ];
@@ -16098,7 +16345,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 354;
+       fhir:index 360;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:adjudicationamounttype" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -16137,7 +16384,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 355;
+       fhir:index 361;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:adjudicationamounttype.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.id" ];
        fhir:ElementDefinition.representation [
@@ -16170,7 +16417,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 356;
+       fhir:index 362;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:adjudicationamounttype.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -16225,7 +16472,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 357;
+       fhir:index 363;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:adjudicationamounttype.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -16285,7 +16532,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 358;
+       fhir:index 364;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:adjudicationamounttype.category" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category" ];
        fhir:ElementDefinition.short [ fhir:value "Type of adjudication information" ];
@@ -16326,7 +16573,7 @@
          ]
        ]
      ], [
-       fhir:index 359;
+       fhir:index 365;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:adjudicationamounttype.reason" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.reason" ];
        fhir:ElementDefinition.short [ fhir:value "Explanation of adjudication outcome" ];
@@ -16372,7 +16619,7 @@
          ]
        ]
      ], [
-       fhir:index 360;
+       fhir:index 366;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:adjudicationamounttype.amount" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.amount" ];
        fhir:ElementDefinition.short [ fhir:value "Monetary amount" ];
@@ -16405,7 +16652,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 361;
+       fhir:index 367;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:adjudicationamounttype.value" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.value" ];
        fhir:ElementDefinition.short [ fhir:value "Non-monitary value" ];
@@ -16438,7 +16685,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 362;
+       fhir:index 368;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -16477,7 +16724,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 363;
+       fhir:index 369;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.id" ];
        fhir:ElementDefinition.representation [
@@ -16510,7 +16757,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 364;
+       fhir:index 370;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -16565,7 +16812,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 365;
+       fhir:index 371;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -16625,7 +16872,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 366;
+       fhir:index 372;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.category" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category" ];
        fhir:ElementDefinition.short [ fhir:value "Type of adjudication information" ];
@@ -16666,7 +16913,7 @@
          ]
        ]
      ], [
-       fhir:index 367;
+       fhir:index 373;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.category.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.id" ];
        fhir:ElementDefinition.representation [
@@ -16699,7 +16946,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 368;
+       fhir:index 374;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.category.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.extension" ];
        fhir:ElementDefinition.slicing [
@@ -16763,7 +17010,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 369;
+       fhir:index 375;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.category.coding" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -16809,7 +17056,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 370;
+       fhir:index 376;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.category.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -16842,7 +17089,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 371;
+       fhir:index 377;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.category.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -16906,7 +17153,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 372;
+       fhir:index 378;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.category.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -16952,7 +17199,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 373;
+       fhir:index 379;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.category.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -16997,7 +17244,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 374;
+       fhir:index 380;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.category.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -17043,7 +17290,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 375;
+       fhir:index 381;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.category.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -17093,7 +17340,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 376;
+       fhir:index 382;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.category.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -17139,7 +17386,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 377;
+       fhir:index 383;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.category.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -17190,7 +17437,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 378;
+       fhir:index 384;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.reason" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.reason" ];
        fhir:ElementDefinition.short [ fhir:value "Explanation of adjudication outcome" ];
@@ -17230,7 +17477,7 @@
          ]
        ]
      ], [
-       fhir:index 379;
+       fhir:index 385;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.amount" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.amount" ];
        fhir:ElementDefinition.short [ fhir:value "Monetary amount" ];
@@ -17263,7 +17510,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 380;
+       fhir:index 386;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:denialreason.value" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.value" ];
        fhir:ElementDefinition.short [ fhir:value "Non-monitary value" ];
@@ -17296,7 +17543,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 381;
+       fhir:index 387;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -17335,7 +17582,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 382;
+       fhir:index 388;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.id" ];
        fhir:ElementDefinition.representation [
@@ -17368,7 +17615,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 383;
+       fhir:index 389;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -17423,7 +17670,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 384;
+       fhir:index 390;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -17483,7 +17730,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 385;
+       fhir:index 391;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.category" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category" ];
        fhir:ElementDefinition.short [ fhir:value "Type of adjudication information" ];
@@ -17524,7 +17771,7 @@
          ]
        ]
      ], [
-       fhir:index 386;
+       fhir:index 392;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.category.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.id" ];
        fhir:ElementDefinition.representation [
@@ -17557,7 +17804,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 387;
+       fhir:index 393;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.category.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.extension" ];
        fhir:ElementDefinition.slicing [
@@ -17621,7 +17868,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 388;
+       fhir:index 394;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.category.coding" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -17667,7 +17914,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 389;
+       fhir:index 395;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.category.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -17700,7 +17947,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 390;
+       fhir:index 396;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.category.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -17764,7 +18011,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 391;
+       fhir:index 397;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.category.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -17810,7 +18057,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 392;
+       fhir:index 398;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.category.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -17855,7 +18102,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 393;
+       fhir:index 399;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.category.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -17901,7 +18148,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 394;
+       fhir:index 400;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.category.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -17951,7 +18198,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 395;
+       fhir:index 401;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.category.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.category.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -17997,7 +18244,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 396;
+       fhir:index 402;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.category.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -18048,7 +18295,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 397;
+       fhir:index 403;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.reason" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.reason" ];
        fhir:ElementDefinition.short [ fhir:value "Explanation of adjudication outcome" ];
@@ -18094,7 +18341,7 @@
          ]
        ]
      ], [
-       fhir:index 398;
+       fhir:index 404;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.amount" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.amount" ];
        fhir:ElementDefinition.short [ fhir:value "Monetary amount" ];
@@ -18127,7 +18374,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 399;
+       fhir:index 405;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.adjudication:allowedunits.value" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.adjudication.value" ];
        fhir:ElementDefinition.short [ fhir:value "Non-monitary value" ];
@@ -18160,7 +18407,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 400;
+       fhir:index 406;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -18196,7 +18443,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 401;
+       fhir:index 407;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.id" ];
        fhir:ElementDefinition.representation [
@@ -18229,7 +18476,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 402;
+       fhir:index 408;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -18284,7 +18531,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 403;
+       fhir:index 409;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -18344,7 +18591,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 404;
+       fhir:index 410;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.sequence" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.sequence" ];
        fhir:ElementDefinition.short [ fhir:value "Product or service provided" ];
@@ -18376,7 +18623,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 405;
+       fhir:index 411;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.revenue" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.revenue" ];
        fhir:ElementDefinition.short [ fhir:value "Revenue or cost center code" ];
@@ -18421,7 +18668,7 @@
          ]
        ]
      ], [
-       fhir:index 406;
+       fhir:index 412;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.category" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.category" ];
        fhir:ElementDefinition.short [ fhir:value "Benefit classification" ];
@@ -18467,7 +18714,7 @@
          ]
        ]
      ], [
-       fhir:index 407;
+       fhir:index 413;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.productOrService" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.productOrService" ];
        fhir:ElementDefinition.short [ fhir:value "Billing, service, product, or drug code" ];
@@ -18523,7 +18770,7 @@
          ]
        ]
      ], [
-       fhir:index 408;
+       fhir:index 414;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.modifier" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.modifier" ];
        fhir:ElementDefinition.short [ fhir:value "Service/Product billing modifiers" ];
@@ -18569,7 +18816,7 @@
          ]
        ]
      ], [
-       fhir:index 409;
+       fhir:index 415;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.programCode" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.programCode" ];
        fhir:ElementDefinition.short [ fhir:value "Program the product or service is provided under" ];
@@ -18615,7 +18862,7 @@
          ]
        ]
      ], [
-       fhir:index 410;
+       fhir:index 416;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.quantity" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.quantity" ];
        fhir:ElementDefinition.short [ fhir:value "Count of products or services" ];
@@ -18652,7 +18899,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 411;
+       fhir:index 417;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.unitPrice" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.unitPrice" ];
        fhir:ElementDefinition.short [ fhir:value "Fee, charge or cost per item" ];
@@ -18684,7 +18931,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 412;
+       fhir:index 418;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.factor" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.factor" ];
        fhir:ElementDefinition.short [ fhir:value "Price scaling factor" ];
@@ -18717,7 +18964,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 413;
+       fhir:index 419;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.net" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.net" ];
        fhir:ElementDefinition.short [ fhir:value "Total item cost" ];
@@ -18750,7 +18997,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 414;
+       fhir:index 420;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.udi" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.udi" ];
        fhir:ElementDefinition.short [ fhir:value "Unique device identifier" ];
@@ -18787,7 +19034,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 415;
+       fhir:index 421;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.noteNumber" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.noteNumber" ];
        fhir:ElementDefinition.short [ fhir:value "Applicable note numbers" ];
@@ -18819,7 +19066,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 416;
+       fhir:index 422;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.adjudication" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.adjudication" ];
        fhir:ElementDefinition.short [ fhir:value "Detail level adjudication details" ];
@@ -18847,7 +19094,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 417;
+       fhir:index 423;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -18883,7 +19130,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 418;
+       fhir:index 424;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.id" ];
        fhir:ElementDefinition.representation [
@@ -18916,7 +19163,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 419;
+       fhir:index 425;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -18971,7 +19218,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 420;
+       fhir:index 426;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -19031,7 +19278,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 421;
+       fhir:index 427;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.sequence" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.sequence" ];
        fhir:ElementDefinition.short [ fhir:value "Product or service provided" ];
@@ -19063,7 +19310,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 422;
+       fhir:index 428;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.revenue" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.revenue" ];
        fhir:ElementDefinition.short [ fhir:value "Revenue or cost center code" ];
@@ -19108,7 +19355,7 @@
          ]
        ]
      ], [
-       fhir:index 423;
+       fhir:index 429;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.category" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.category" ];
        fhir:ElementDefinition.short [ fhir:value "Benefit classification" ];
@@ -19154,7 +19401,7 @@
          ]
        ]
      ], [
-       fhir:index 424;
+       fhir:index 430;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.productOrService" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.productOrService" ];
        fhir:ElementDefinition.short [ fhir:value "Billing, service, product, or drug code" ];
@@ -19210,7 +19457,7 @@
          ]
        ]
      ], [
-       fhir:index 425;
+       fhir:index 431;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.modifier" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.modifier" ];
        fhir:ElementDefinition.short [ fhir:value "Service/Product billing modifiers" ];
@@ -19256,7 +19503,7 @@
          ]
        ]
      ], [
-       fhir:index 426;
+       fhir:index 432;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.programCode" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.programCode" ];
        fhir:ElementDefinition.short [ fhir:value "Program the product or service is provided under" ];
@@ -19302,7 +19549,7 @@
          ]
        ]
      ], [
-       fhir:index 427;
+       fhir:index 433;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.quantity" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.quantity" ];
        fhir:ElementDefinition.short [ fhir:value "Count of products or services" ];
@@ -19339,7 +19586,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 428;
+       fhir:index 434;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.unitPrice" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.unitPrice" ];
        fhir:ElementDefinition.short [ fhir:value "Fee, charge or cost per item" ];
@@ -19371,7 +19618,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 429;
+       fhir:index 435;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.factor" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.factor" ];
        fhir:ElementDefinition.short [ fhir:value "Price scaling factor" ];
@@ -19404,7 +19651,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 430;
+       fhir:index 436;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.net" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.net" ];
        fhir:ElementDefinition.short [ fhir:value "Total item cost" ];
@@ -19437,7 +19684,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 431;
+       fhir:index 437;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.udi" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.udi" ];
        fhir:ElementDefinition.short [ fhir:value "Unique device identifier" ];
@@ -19474,7 +19721,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 432;
+       fhir:index 438;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.noteNumber" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.noteNumber" ];
        fhir:ElementDefinition.short [ fhir:value "Applicable note numbers" ];
@@ -19506,7 +19753,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 433;
+       fhir:index 439;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.adjudication" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.item.detail.subDetail.adjudication" ];
        fhir:ElementDefinition.short [ fhir:value "Subdetail level adjudication details" ];
@@ -19534,7 +19781,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 434;
+       fhir:index 440;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -19575,7 +19822,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 435;
+       fhir:index 441;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.id" ];
        fhir:ElementDefinition.representation [
@@ -19608,7 +19855,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 436;
+       fhir:index 442;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -19663,7 +19910,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 437;
+       fhir:index 443;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -19723,7 +19970,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 438;
+       fhir:index 444;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.itemSequence" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.itemSequence" ];
        fhir:ElementDefinition.short [ fhir:value "Item sequence number" ];
@@ -19755,7 +20002,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 439;
+       fhir:index 445;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detailSequence" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detailSequence" ];
        fhir:ElementDefinition.short [ fhir:value "Detail sequence number" ];
@@ -19787,7 +20034,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 440;
+       fhir:index 446;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.subDetailSequence" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.subDetailSequence" ];
        fhir:ElementDefinition.short [ fhir:value "Subdetail sequence number" ];
@@ -19819,7 +20066,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 441;
+       fhir:index 447;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.provider" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.provider" ];
        fhir:ElementDefinition.short [ fhir:value "Authorized providers" ];
@@ -19869,7 +20116,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.source" ]
        ]
      ], [
-       fhir:index 442;
+       fhir:index 448;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.productOrService" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.productOrService" ];
        fhir:ElementDefinition.short [ fhir:value "Billing, service, product, or drug code" ];
@@ -19925,7 +20172,7 @@
          ]
        ]
      ], [
-       fhir:index 443;
+       fhir:index 449;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.modifier" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.modifier" ];
        fhir:ElementDefinition.short [ fhir:value "Service/Product billing modifiers" ];
@@ -19971,7 +20218,7 @@
          ]
        ]
      ], [
-       fhir:index 444;
+       fhir:index 450;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.programCode" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.programCode" ];
        fhir:ElementDefinition.short [ fhir:value "Program the product or service is provided under" ];
@@ -20017,7 +20264,7 @@
          ]
        ]
      ], [
-       fhir:index 445;
+       fhir:index 451;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.serviced[x]" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.serviced[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Date or dates of service or product delivery" ];
@@ -20057,7 +20304,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.done[x]" ]
        ]
      ], [
-       fhir:index 446;
+       fhir:index 452;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.location[x]" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.location[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Place of service or where product was supplied" ];
@@ -20118,7 +20365,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.where[x]" ]
        ]
      ], [
-       fhir:index 447;
+       fhir:index 453;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.quantity" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.quantity" ];
        fhir:ElementDefinition.short [ fhir:value "Count of products or services" ];
@@ -20155,7 +20402,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 448;
+       fhir:index 454;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.unitPrice" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.unitPrice" ];
        fhir:ElementDefinition.short [ fhir:value "Fee, charge or cost per item" ];
@@ -20187,7 +20434,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 449;
+       fhir:index 455;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.factor" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.factor" ];
        fhir:ElementDefinition.short [ fhir:value "Price scaling factor" ];
@@ -20220,7 +20467,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 450;
+       fhir:index 456;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.net" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.net" ];
        fhir:ElementDefinition.short [ fhir:value "Total item cost" ];
@@ -20253,7 +20500,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 451;
+       fhir:index 457;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.bodySite" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.bodySite" ];
        fhir:ElementDefinition.short [ fhir:value "Anatomical location" ];
@@ -20299,7 +20546,7 @@
          ]
        ]
      ], [
-       fhir:index 452;
+       fhir:index 458;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.subSite" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.subSite" ];
        fhir:ElementDefinition.short [ fhir:value "Anatomical sub-location" ];
@@ -20344,7 +20591,7 @@
          ]
        ]
      ], [
-       fhir:index 453;
+       fhir:index 459;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.noteNumber" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.noteNumber" ];
        fhir:ElementDefinition.short [ fhir:value "Applicable note numbers" ];
@@ -20376,7 +20623,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 454;
+       fhir:index 460;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.adjudication" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.adjudication" ];
        fhir:ElementDefinition.short [ fhir:value "Added items adjudication" ];
@@ -20404,7 +20651,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 455;
+       fhir:index 461;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -20444,7 +20691,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 456;
+       fhir:index 462;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.id" ];
        fhir:ElementDefinition.representation [
@@ -20477,7 +20724,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 457;
+       fhir:index 463;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -20532,7 +20779,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 458;
+       fhir:index 464;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -20592,7 +20839,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 459;
+       fhir:index 465;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.productOrService" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.productOrService" ];
        fhir:ElementDefinition.short [ fhir:value "Billing, service, product, or drug code" ];
@@ -20648,7 +20895,7 @@
          ]
        ]
      ], [
-       fhir:index 460;
+       fhir:index 466;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.modifier" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.modifier" ];
        fhir:ElementDefinition.short [ fhir:value "Service/Product billing modifiers" ];
@@ -20694,7 +20941,7 @@
          ]
        ]
      ], [
-       fhir:index 461;
+       fhir:index 467;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.quantity" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.quantity" ];
        fhir:ElementDefinition.short [ fhir:value "Count of products or services" ];
@@ -20731,7 +20978,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 462;
+       fhir:index 468;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.unitPrice" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.unitPrice" ];
        fhir:ElementDefinition.short [ fhir:value "Fee, charge or cost per item" ];
@@ -20763,7 +21010,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 463;
+       fhir:index 469;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.factor" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.factor" ];
        fhir:ElementDefinition.short [ fhir:value "Price scaling factor" ];
@@ -20796,7 +21043,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 464;
+       fhir:index 470;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.net" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.net" ];
        fhir:ElementDefinition.short [ fhir:value "Total item cost" ];
@@ -20829,7 +21076,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 465;
+       fhir:index 471;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.noteNumber" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.noteNumber" ];
        fhir:ElementDefinition.short [ fhir:value "Applicable note numbers" ];
@@ -20861,7 +21108,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 466;
+       fhir:index 472;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.adjudication" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.adjudication" ];
        fhir:ElementDefinition.short [ fhir:value "Added items adjudication" ];
@@ -20889,7 +21136,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 467;
+       fhir:index 473;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -20929,7 +21176,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 468;
+       fhir:index 474;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.id" ];
        fhir:ElementDefinition.representation [
@@ -20962,7 +21209,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 469;
+       fhir:index 475;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -21017,7 +21264,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 470;
+       fhir:index 476;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -21077,7 +21324,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 471;
+       fhir:index 477;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.productOrService" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.productOrService" ];
        fhir:ElementDefinition.short [ fhir:value "Billing, service, product, or drug code" ];
@@ -21133,7 +21380,7 @@
          ]
        ]
      ], [
-       fhir:index 472;
+       fhir:index 478;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.modifier" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.modifier" ];
        fhir:ElementDefinition.short [ fhir:value "Service/Product billing modifiers" ];
@@ -21179,7 +21426,7 @@
          ]
        ]
      ], [
-       fhir:index 473;
+       fhir:index 479;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.quantity" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.quantity" ];
        fhir:ElementDefinition.short [ fhir:value "Count of products or services" ];
@@ -21216,7 +21463,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 474;
+       fhir:index 480;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.unitPrice" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.unitPrice" ];
        fhir:ElementDefinition.short [ fhir:value "Fee, charge or cost per item" ];
@@ -21248,7 +21495,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 475;
+       fhir:index 481;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.factor" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.factor" ];
        fhir:ElementDefinition.short [ fhir:value "Price scaling factor" ];
@@ -21281,7 +21528,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 476;
+       fhir:index 482;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.net" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.net" ];
        fhir:ElementDefinition.short [ fhir:value "Total item cost" ];
@@ -21314,7 +21561,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 477;
+       fhir:index 483;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.noteNumber" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.noteNumber" ];
        fhir:ElementDefinition.short [ fhir:value "Applicable note numbers" ];
@@ -21346,7 +21593,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 478;
+       fhir:index 484;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.adjudication" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.addItem.detail.subDetail.adjudication" ];
        fhir:ElementDefinition.short [ fhir:value "Added items adjudication" ];
@@ -21374,7 +21621,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 479;
+       fhir:index 485;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication" ];
        fhir:ElementDefinition.slicing [
@@ -21417,7 +21664,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 480;
+       fhir:index 486;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.id" ];
        fhir:ElementDefinition.representation [
@@ -21450,7 +21697,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 481;
+       fhir:index 487;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -21505,7 +21752,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 482;
+       fhir:index 488;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -21565,7 +21812,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 483;
+       fhir:index 489;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication.category" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category" ];
        fhir:ElementDefinition.short [ fhir:value "Type of adjudication information" ];
@@ -21606,7 +21853,7 @@
          ]
        ]
      ], [
-       fhir:index 484;
+       fhir:index 490;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication.reason" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.reason" ];
        fhir:ElementDefinition.short [ fhir:value "Explanation of adjudication outcome" ];
@@ -21652,7 +21899,7 @@
          ]
        ]
      ], [
-       fhir:index 485;
+       fhir:index 491;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication.amount" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.amount" ];
        fhir:ElementDefinition.short [ fhir:value "Monetary amount" ];
@@ -21685,7 +21932,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 486;
+       fhir:index 492;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication.value" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.value" ];
        fhir:ElementDefinition.short [ fhir:value "Non-monitary value" ];
@@ -21718,7 +21965,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 487;
+       fhir:index 493;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:adjudicationamounttype" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication" ];
        fhir:ElementDefinition.sliceName [ fhir:value "adjudicationamounttype" ];
@@ -21752,7 +21999,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 488;
+       fhir:index 494;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:adjudicationamounttype.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.id" ];
        fhir:ElementDefinition.representation [
@@ -21785,7 +22032,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 489;
+       fhir:index 495;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:adjudicationamounttype.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -21840,7 +22087,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 490;
+       fhir:index 496;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:adjudicationamounttype.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -21900,7 +22147,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 491;
+       fhir:index 497;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:adjudicationamounttype.category" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category" ];
        fhir:ElementDefinition.short [ fhir:value "Type of adjudication information" ];
@@ -21941,7 +22188,7 @@
          ]
        ]
      ], [
-       fhir:index 492;
+       fhir:index 498;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:adjudicationamounttype.reason" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.reason" ];
        fhir:ElementDefinition.short [ fhir:value "Explanation of adjudication outcome" ];
@@ -21987,7 +22234,7 @@
          ]
        ]
      ], [
-       fhir:index 493;
+       fhir:index 499;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:adjudicationamounttype.amount" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.amount" ];
        fhir:ElementDefinition.short [ fhir:value "Monetary amount" ];
@@ -22020,7 +22267,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 494;
+       fhir:index 500;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:adjudicationamounttype.value" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.value" ];
        fhir:ElementDefinition.short [ fhir:value "Non-monitary value" ];
@@ -22053,7 +22300,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 495;
+       fhir:index 501;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication" ];
        fhir:ElementDefinition.sliceName [ fhir:value "denialreason" ];
@@ -22087,7 +22334,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 496;
+       fhir:index 502;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.id" ];
        fhir:ElementDefinition.representation [
@@ -22120,7 +22367,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 497;
+       fhir:index 503;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -22175,7 +22422,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 498;
+       fhir:index 504;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -22235,7 +22482,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 499;
+       fhir:index 505;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.category" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category" ];
        fhir:ElementDefinition.short [ fhir:value "Type of adjudication information" ];
@@ -22276,7 +22523,7 @@
          ]
        ]
      ], [
-       fhir:index 500;
+       fhir:index 506;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.category.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.id" ];
        fhir:ElementDefinition.representation [
@@ -22309,7 +22556,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 501;
+       fhir:index 507;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.category.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.extension" ];
        fhir:ElementDefinition.slicing [
@@ -22373,7 +22620,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 502;
+       fhir:index 508;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.category.coding" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -22419,7 +22666,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 503;
+       fhir:index 509;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.category.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -22452,7 +22699,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 504;
+       fhir:index 510;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.category.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -22516,7 +22763,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 505;
+       fhir:index 511;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.category.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -22562,7 +22809,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 506;
+       fhir:index 512;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.category.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -22607,7 +22854,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 507;
+       fhir:index 513;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.category.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -22653,7 +22900,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 508;
+       fhir:index 514;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.category.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -22703,7 +22950,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 509;
+       fhir:index 515;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.category.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -22749,7 +22996,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 510;
+       fhir:index 516;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.category.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -22800,7 +23047,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 511;
+       fhir:index 517;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.reason" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.reason" ];
        fhir:ElementDefinition.short [ fhir:value "Explanation of adjudication outcome" ];
@@ -22840,7 +23087,7 @@
          ]
        ]
      ], [
-       fhir:index 512;
+       fhir:index 518;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.amount" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.amount" ];
        fhir:ElementDefinition.short [ fhir:value "Monetary amount" ];
@@ -22873,7 +23120,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 513;
+       fhir:index 519;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:denialreason.value" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.value" ];
        fhir:ElementDefinition.short [ fhir:value "Non-monitary value" ];
@@ -22906,7 +23153,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 514;
+       fhir:index 520;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication" ];
        fhir:ElementDefinition.sliceName [ fhir:value "inoutnetwork" ];
@@ -22940,7 +23187,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 515;
+       fhir:index 521;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.id" ];
        fhir:ElementDefinition.representation [
@@ -22973,7 +23220,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 516;
+       fhir:index 522;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -23028,7 +23275,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 517;
+       fhir:index 523;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -23088,7 +23335,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 518;
+       fhir:index 524;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.category" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category" ];
        fhir:ElementDefinition.short [ fhir:value "Type of adjudication information" ];
@@ -23129,7 +23376,7 @@
          ]
        ]
      ], [
-       fhir:index 519;
+       fhir:index 525;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.category.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.id" ];
        fhir:ElementDefinition.representation [
@@ -23162,7 +23409,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 520;
+       fhir:index 526;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.category.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.extension" ];
        fhir:ElementDefinition.slicing [
@@ -23226,7 +23473,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 521;
+       fhir:index 527;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.category.coding" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -23272,7 +23519,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 522;
+       fhir:index 528;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.category.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -23305,7 +23552,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 523;
+       fhir:index 529;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.category.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -23369,7 +23616,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 524;
+       fhir:index 530;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.category.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -23415,7 +23662,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 525;
+       fhir:index 531;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.category.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -23460,7 +23707,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 526;
+       fhir:index 532;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.category.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -23506,7 +23753,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 527;
+       fhir:index 533;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.category.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -23556,7 +23803,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 528;
+       fhir:index 534;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.category.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.category.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -23602,7 +23849,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 529;
+       fhir:index 535;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.category.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -23653,7 +23900,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 530;
+       fhir:index 536;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.reason" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.reason" ];
        fhir:ElementDefinition.short [ fhir:value "Explanation of adjudication outcome" ];
@@ -23699,7 +23946,7 @@
          ]
        ]
      ], [
-       fhir:index 531;
+       fhir:index 537;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.amount" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.amount" ];
        fhir:ElementDefinition.short [ fhir:value "Monetary amount" ];
@@ -23732,7 +23979,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 532;
+       fhir:index 538;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.adjudication:inoutnetwork.value" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.adjudication.value" ];
        fhir:ElementDefinition.short [ fhir:value "Non-monitary value" ];
@@ -23765,7 +24012,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 533;
+       fhir:index 539;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.total" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -23807,7 +24054,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 534;
+       fhir:index 540;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.total.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.total.id" ];
        fhir:ElementDefinition.representation [
@@ -23840,7 +24087,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 535;
+       fhir:index 541;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.total.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.total.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -23895,7 +24142,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 536;
+       fhir:index 542;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.total.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.total.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -23955,7 +24202,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 537;
+       fhir:index 543;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.total.category" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.total.category" ];
        fhir:ElementDefinition.short [ fhir:value "Type of adjudication information" ];
@@ -23995,7 +24242,7 @@
          ]
        ]
      ], [
-       fhir:index 538;
+       fhir:index 544;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.total.amount" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.total.amount" ];
        fhir:ElementDefinition.short [ fhir:value "Financial total for the category" ];
@@ -24027,7 +24274,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 539;
+       fhir:index 545;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.payment" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -24069,7 +24316,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 540;
+       fhir:index 546;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.payment.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.payment.id" ];
        fhir:ElementDefinition.representation [
@@ -24102,7 +24349,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 541;
+       fhir:index 547;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.payment.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.payment.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -24157,7 +24404,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 542;
+       fhir:index 548;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.payment.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.payment.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -24217,7 +24464,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 543;
+       fhir:index 549;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.payment.type" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.payment.type" ];
        fhir:ElementDefinition.short [ fhir:value "Partial or complete payment" ];
@@ -24256,7 +24503,7 @@
          ]
        ]
      ], [
-       fhir:index 544;
+       fhir:index 550;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.payment.adjustment" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.payment.adjustment" ];
        fhir:ElementDefinition.short [ fhir:value "Payment adjustment for non-claim issues" ];
@@ -24289,7 +24536,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 545;
+       fhir:index 551;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.payment.adjustmentReason" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.payment.adjustmentReason" ];
        fhir:ElementDefinition.short [ fhir:value "Explanation for the variance" ];
@@ -24328,7 +24575,7 @@
          ]
        ]
      ], [
-       fhir:index 546;
+       fhir:index 552;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.payment.date" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.payment.date" ];
        fhir:ElementDefinition.short [ fhir:value "Expected date of payment" ];
@@ -24360,7 +24607,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 547;
+       fhir:index 553;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.payment.amount" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.payment.amount" ];
        fhir:ElementDefinition.short [ fhir:value "Payable amount after adjustment" ];
@@ -24392,7 +24639,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 548;
+       fhir:index 554;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.payment.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.payment.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "Business identifier for the payment" ];
@@ -24425,7 +24672,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 549;
+       fhir:index 555;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.formCode" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.formCode" ];
        fhir:ElementDefinition.short [ fhir:value "Printed form identifier" ];
@@ -24475,7 +24722,7 @@
          ]
        ]
      ], [
-       fhir:index 550;
+       fhir:index 556;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.form" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.form" ];
        fhir:ElementDefinition.short [ fhir:value "Printed reference or actual form" ];
@@ -24508,7 +24755,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 551;
+       fhir:index 557;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.processNote" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -24545,7 +24792,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 552;
+       fhir:index 558;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.processNote.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.processNote.id" ];
        fhir:ElementDefinition.representation [
@@ -24578,7 +24825,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 553;
+       fhir:index 559;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.processNote.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.processNote.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -24633,7 +24880,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 554;
+       fhir:index 560;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.processNote.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.processNote.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -24693,7 +24940,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 555;
+       fhir:index 561;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.processNote.number" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.processNote.number" ];
        fhir:ElementDefinition.short [ fhir:value "Note instance identifier" ];
@@ -24725,7 +24972,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 556;
+       fhir:index 562;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.processNote.type" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.processNote.type" ];
        fhir:ElementDefinition.short [ fhir:value "display | print | printoper" ];
@@ -24774,7 +25021,7 @@
          ]
        ]
      ], [
-       fhir:index 557;
+       fhir:index 563;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.processNote.text" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.processNote.text" ];
        fhir:ElementDefinition.short [ fhir:value "Note explanatory text" ];
@@ -24806,7 +25053,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 558;
+       fhir:index 564;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.processNote.language" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.processNote.language" ];
        fhir:ElementDefinition.short [ fhir:value "Language of the text" ];
@@ -24863,7 +25110,7 @@
          ]
        ]
      ], [
-       fhir:index 559;
+       fhir:index 565;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitPeriod" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitPeriod" ];
        fhir:ElementDefinition.short [ fhir:value "When the benefits are applicable" ];
@@ -24896,7 +25143,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 560;
+       fhir:index 566;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -24932,7 +25179,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 561;
+       fhir:index 567;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.id" ];
        fhir:ElementDefinition.representation [
@@ -24965,7 +25212,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 562;
+       fhir:index 568;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -25020,7 +25267,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 563;
+       fhir:index 569;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -25080,7 +25327,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 564;
+       fhir:index 570;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.category" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.category" ];
        fhir:ElementDefinition.short [ fhir:value "Benefit classification" ];
@@ -25126,7 +25373,7 @@
          ]
        ]
      ], [
-       fhir:index 565;
+       fhir:index 571;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.excluded" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.excluded" ];
        fhir:ElementDefinition.short [ fhir:value "Excluded from the plan" ];
@@ -25158,7 +25405,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 566;
+       fhir:index 572;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.name" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.name" ];
        fhir:ElementDefinition.short [ fhir:value "Short name for the benefit" ];
@@ -25191,7 +25438,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 567;
+       fhir:index 573;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.description" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.description" ];
        fhir:ElementDefinition.short [ fhir:value "Description of the benefit or services covered" ];
@@ -25224,7 +25471,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 568;
+       fhir:index 574;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.network" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.network" ];
        fhir:ElementDefinition.short [ fhir:value "In or out of network" ];
@@ -25269,7 +25516,7 @@
          ]
        ]
      ], [
-       fhir:index 569;
+       fhir:index 575;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.unit" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.unit" ];
        fhir:ElementDefinition.short [ fhir:value "Individual or family" ];
@@ -25314,7 +25561,7 @@
          ]
        ]
      ], [
-       fhir:index 570;
+       fhir:index 576;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.term" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.term" ];
        fhir:ElementDefinition.short [ fhir:value "Annual or lifetime" ];
@@ -25359,7 +25606,7 @@
          ]
        ]
      ], [
-       fhir:index 571;
+       fhir:index 577;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.financial" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -25395,7 +25642,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 572;
+       fhir:index 578;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.financial.id" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.financial.id" ];
        fhir:ElementDefinition.representation [
@@ -25428,7 +25675,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 573;
+       fhir:index 579;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.financial.extension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.financial.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -25483,7 +25730,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 574;
+       fhir:index 580;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.financial.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.financial.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -25543,7 +25790,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 575;
+       fhir:index 581;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.financial.type" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.financial.type" ];
        fhir:ElementDefinition.short [ fhir:value "Benefit classification" ];
@@ -25589,7 +25836,7 @@
          ]
        ]
      ], [
-       fhir:index 576;
+       fhir:index 582;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.financial.allowed[x]" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.financial.allowed[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Benefits allowed" ];
@@ -25627,7 +25874,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 577;
+       fhir:index 583;
        fhir:Element.id [ fhir:value "ExplanationOfBenefit.benefitBalance.financial.used[x]" ];
        fhir:ElementDefinition.path [ fhir:value "ExplanationOfBenefit.benefitBalance.financial.used[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Benefits used" ];
