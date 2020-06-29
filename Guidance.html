@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="d492e69f-7090-4f6f-9774-aae982c44bfd">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="0fdcdc95-c9c4-4df7-8833-3c475023cc03">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="f038f793-25df-4a8b-ad0c-91991a0edf22">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="622a0e74-58b1-404d-b358-705c079a0854">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="e0042317-037e-4966-8ec8-d336ef87cdcf">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="42abcffa-cbfe-45fe-8732-360020e44af3">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="0d147db1-1d8d-4de3-bc4c-b5fc49095636">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="61f23cf7-2cda-487c-9b42-02e7d9d571d2">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="a5d36be5-9227-4dca-9310-e0ed62600d25">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="74d6d3e5-ddbd-4eaa-b4e7-d2d43f8e11c6">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a name="5a2d5de2-3d91-4415-b601-126789504057">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="43186d91-7ae2-42fb-90dd-9109f11643b8">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="4d1b70fc-4f1b-41a7-81ed-7a299258b8d1">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="9b9a9c2b-afb5-4539-9533-43ba9f305b82">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -128,7 +128,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="d93dd97e-aa25-4874-80ec-1208208b4800">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="a844bae2-0eaf-4517-9c78-48b53d98d09a">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -202,6 +202,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>Health Plan API actors <strong>SHALL</strong> be capable of populating all data elements as part of the query results as specified by the CARINBlueButtonHealthPlanAPICapabilityStatement.</li>
   <li>Consumer App actors <strong>SHALL</strong> be capable of processing resource instances containing the data elements without generating an error or causing the application to fail.</li>
+  <li>Consumer App actors <strong>SHALL</strong> be capable of displaying the data elements for human use.</li>
+  <li>Consumer App actors <strong>SHOULD</strong> be capable of storing the information for other purposes.</li>
   <li>In situations where information on a particular data element is not present and the reason for absence is unknown, Health Plan API actors <strong>SHALL NOT</strong> include the data elements in the resource instance returned as part of the query results.</li>
   <li>When querying Health Plan API actors, Consumer App actors <strong>SHALL</strong> interpret missing data elements within resource instances as data not present in the Health Plan API actors system.</li>
   <li>In situations where information on a particular data element is missing and the Health Plan API actor knows the precise reason for the absence of data, Health Plan API actors <strong>SHALL</strong> send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or use the dataAbsentReason extension.</li>
@@ -286,7 +288,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 22:38+0000">2020-06-29</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 22:39+0000">2020-06-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
