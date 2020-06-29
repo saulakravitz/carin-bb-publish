@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="18d40648-1cde-483f-9903-a992c973e6f6">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="3055ac15-0756-4411-be87-2083518fd480">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="e02f8bf5-411c-4928-a129-201a16a20aec">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="b96a2e04-f164-42d3-a99e-d5e10080fd65">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="5b716eb3-dcf8-4855-927c-42036672128b">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="27164e45-3141-40cd-862b-537615add9c2">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="294feab3-c042-44c9-b297-805714028b82">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="e9b9cde0-0195-4680-97d7-031541a4b77b">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="4a11d79e-63be-42d0-99dc-d461ede5bdfa">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="adf0e45d-b550-4f24-a35e-6b1b2370ad0f">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a name="9886a632-9f6b-4b0d-b674-c23bdbbcde26">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="6cf92540-9933-4c2c-b4ef-efed44e38570">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="72de81e1-2ae1-4426-992b-51b7d9da6568">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="e02008c6-34dc-4414-a8ae-354a871b7d4b">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -128,7 +128,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="ff60e9e2-a3d6-4808-9be2-0e6649b5498c">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="f8be7df3-2381-4b43-8a29-096b1d1d5ab8">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -216,7 +216,6 @@ These $assemble-eob operation SHALL support the following parameters:
               <td>0..1</td>
               <td>Logical id for the ExplanationOfBenefit resource.</td>
               <td>(none))</td>
-              <td>(none)</td>
     </tr>
      <tr>
               <td>patient</td>
@@ -224,7 +223,6 @@ These $assemble-eob operation SHALL support the following parameters:
               <td>1..1</td>
               <td>Required.  The id of the patient resource located on the server on which this operation is executed. If there is no match, an empty Bundle is returned</td>
               <td>(none))</td>
-              <td>(none)</td>
     </tr>
     <tr>
               <td>_since</td>
@@ -232,7 +230,6 @@ These $assemble-eob operation SHALL support the following parameters:
               <td>0..1</td>
               <td>ExplanationOfBenefit resources updated after this period will be included in the response. The intent of this parameter is to allow a client to request only records that have changed since the last request.</td>
               <td>(none))</td>
-              <td>(none)</td>
     </tr>
     <tr>
               <td>type</td>
@@ -240,7 +237,6 @@ These $assemble-eob operation SHALL support the following parameters:
               <td>0..1</td>
               <td>The type of the ExplanationOfBenefit, e.g. institutional, pharmacy, professional</td>
               <td>(none))</td>
-              <td>(none)</td>
     </tr>
         <tr>
               <td>identifier</td>
@@ -248,7 +244,6 @@ These $assemble-eob operation SHALL support the following parameters:
               <td>0..1</td>
               <td>Claim Number / Business Identifier of the ExplanationOfBenefit resource.</td>
               <td>(none))</td>
-              <td>(none)</td>
     </tr>
     <tr>
               <td>service-date</td>
@@ -256,7 +251,6 @@ These $assemble-eob operation SHALL support the following parameters:
               <td>0..1</td>
               <td>Date of the service for the ExplanationOfBenefit.</td>
               <td>(none))</td>
-              <td>(none)</td>
     </tr>
 </tbody>
 </table>
@@ -288,7 +282,7 @@ No search capabilities are defined for the other profiles defined in the Impleme
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 22:40+0000">2020-06-29</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 23:11+0000">2020-06-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
