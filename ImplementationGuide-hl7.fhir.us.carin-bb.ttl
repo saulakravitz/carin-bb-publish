@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CARINConsumerDirectedPayerDataExchange"];
   fhir:ImplementationGuide.title [ fhir:value "CARIN Consumer Directed Payer Data Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-06-29T21:12:48+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-29T21:53:57+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1304,126 +1304,18 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "SearchParameter-carin-bb-searchparameter-coverage-patient.html" ]
+         fhir:Extension.valueUri [ fhir:value "OperationDefinition-CARIN-BB-Assemble-ExplanationOfBenefit.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-coverage-patient>;
-         fhir:Reference.reference [ fhir:value "SearchParameter/carin-bb-searchparameter-coverage-patient" ]
+         fhir:link <http://hl7.org/fhir/us/carin-bb/OperationDefinition/CARIN-BB-Assemble-ExplanationOfBenefit>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/CARIN-BB-Assemble-ExplanationOfBenefit" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CARINBlueButton_Coverage_Patient_SearchParameter" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Retrieve coverages for a patient" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 57;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "SearchParameter-carin-bb-searchparameter-explanationofbenefit-created.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-explanationofbenefit-created>;
-         fhir:Reference.reference [ fhir:value "SearchParameter/carin-bb-searchparameter-explanationofbenefit-created" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CARINBlueButton_ExplanationOfBenefit_Created_SearchParameter" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The creation date for the EOB" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 58;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "SearchParameter-carin-bb-searchparameter-explanationofbenefit-identifier.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-explanationofbenefit-identifier>;
-         fhir:Reference.reference [ fhir:value "SearchParameter/carin-bb-searchparameter-explanationofbenefit-identifier" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CARINBlueButton_ExplanationOfBenefit_Identifier_SearchParameter" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The business/claim identifier of the Explanation of Benefit" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 59;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "SearchParameter-carin-bb-searchparameter-explanationofbenefit-insurer.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-explanationofbenefit-insurer>;
-         fhir:Reference.reference [ fhir:value "SearchParameter/carin-bb-searchparameter-explanationofbenefit-insurer" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CARINBlueButton_ExplanationOfBenefit_Insurer_SearchParameter" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The party responsible for the claim" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 60;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "SearchParameter-carin-bb-searchparameter-explanationofbenefit-patient.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-explanationofbenefit-patient>;
-         fhir:Reference.reference [ fhir:value "SearchParameter/carin-bb-searchparameter-explanationofbenefit-patient" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CARINBlueButton_ExplanationOfBenefit_Patient_SearchParameter" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The reference to the patient" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 61;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "SearchParameter-carin-bb-searchparameter-explanationofbenefit-service-date.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-explanationofbenefit-service-date>;
-         fhir:Reference.reference [ fhir:value "SearchParameter/carin-bb-searchparameter-explanationofbenefit-service-date" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CARINBlueButton_ExplanationOfBenefit_ServiceDate_SearchParameter" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Date of the service for the EOB" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 62;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "SearchParameter-carin-bb-searchparameter-explanationofbenefit-type.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-explanationofbenefit-type>;
-         fhir:Reference.reference [ fhir:value "SearchParameter/carin-bb-searchparameter-explanationofbenefit-type" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CARINBlueButton_ExplanationOfBenefit_Type_SearchParameter" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The type of the ExplanationOfBenefit" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CARIN BB Assemble EOB" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This operation is used to return ExplanationOfBenefit resources related to a patient along with all the reference resources. \n\n The operation takes the optional input parameters: \n  - patient id\n  - start date\n  - end date\n  - document type \n\n and returns a [Bundle](http://hl7.org/fhir/bundle.html) of type \"searchset\" containing [CARIN BB ExplanationOfBenefit and reference resources](https://build.fhir.org/ig/HL7/carin-bb/profiles.html) for the patient. The principle intended use for this operation is to provide a patient with access to their available ExplanationOfBenefit information." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
@@ -1649,19 +1541,7 @@
 
 <http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb-capabilitystatement-healthplan-api> a fhir:us .
 
-<http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-coverage-patient> a fhir:us .
-
-<http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-explanationofbenefit-created> a fhir:us .
-
-<http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-explanationofbenefit-identifier> a fhir:us .
-
-<http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-explanationofbenefit-insurer> a fhir:us .
-
-<http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-explanationofbenefit-patient> a fhir:us .
-
-<http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-explanationofbenefit-service-date> a fhir:us .
-
-<http://hl7.org/fhir/us/carin-bb/SearchParameter/carin-bb-searchparameter-explanationofbenefit-type> a fhir:us .
+<http://hl7.org/fhir/us/carin-bb/OperationDefinition/CARIN-BB-Assemble-ExplanationOfBenefit> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

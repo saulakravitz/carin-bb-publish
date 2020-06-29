@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.US.CARIN-BB\CARINBlueButton_ExplanationOfBenefit_ServiceDate_SearchParameter - JSON Representation - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.CARIN-BB\CARIN BB Assemble EOB - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,8 +39,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"11.62"}
-    h3,h4,h5,h6{--heading-prefix:"11.62"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.3"}
+    h3,h4,h5,h6{--heading-prefix:"11.3"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="2668b887-2417-4e8d-a045-450c62944f2e">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="90bee577-db30-49a1-a330-059e5bc68d52">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="33b843e3-3528-4367-89f3-90c81f7704a8">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="75fb6ad0-ecf5-4f53-83ef-3e97367233c3">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="6571496e-318f-4b35-979a-827780345805">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="3ce4ea2a-3a00-4e40-ba04-a4459200f1c0">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="36b5b259-9de1-4a5b-9fdc-af0df32056a1">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="40075b67-c0f1-4984-944d-4d4d2b9f6663">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="0eb91659-6be3-4bff-8c1b-7413c3ce106c">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="e0691351-90ca-465f-9d10-d5398951aad4">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a name="354f8e81-88fd-4938-b219-9aa7f237840a">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="ac0a9a7d-a538-493d-9988-a30dd9bede39">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="dc4a996e-03cb-454e-8cf8-f2ee65631b45">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="5991de18-b9e5-44c3-9505-0b8c83f0d090">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -128,7 +128,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="d651b4a2-7736-47c9-9901-c4dcdfd13d9f">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="e5f89512-5fd1-4418-965b-3e467461867e">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -149,7 +149,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>CARINBlueButton_ExplanationOfBenefit_ServiceDate_SearchParameter</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>CARIN BB Assemble EOB</b></li>
         </ul>  
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -158,9 +158,10 @@
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-<div style="counter-reset: section 8" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
+  
 
 
 
@@ -168,28 +169,28 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="SearchParameter-carin-bb-searchparameter-explanationofbenefit-service-date.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="SearchParameter-carin-bb-searchparameter-explanationofbenefit-service-date.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li class="active">
-      <a href="#">JSON</a>
+      <a href="OperationDefinition-CARIN-BB-Assemble-ExplanationOfBenefit.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="SearchParameter-carin-bb-searchparameter-explanationofbenefit-service-date.ttl.html">TTL</a>
+      <a href="OperationDefinition-CARIN-BB-Assemble-ExplanationOfBenefit.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="OperationDefinition-CARIN-BB-Assemble-ExplanationOfBenefit.ttl.html">TTL</a>
     </li>
   
 
@@ -198,91 +199,40 @@
 </ul>
 
 
-<a name="root"> </a>
+  <a name="root"> </a>
 
 
-<h2 id="root">: CARINBlueButton_ExplanationOfBenefit_ServiceDate_SearchParameter - JSON Representation</h2>
+  <h2 id="root">OperationDefinition: CARIN BB Assemble EOB</h2>
 
-<p><a href="SearchParameter-carin-bb-searchparameter-explanationofbenefit-service-date.json" no-download="true">Raw json</a> | <a download="null" href="SearchParameter-carin-bb-searchparameter-explanationofbenefit-service-date.json">Download</a></p>
+
+  
+
 
     <!-- insert intro if present -->
   
 
 
 
-  <pre class="json">
-{
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">resourceType</a>" : "SearchParameter",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.id">id</a>" : "carin-bb-searchparameter-explanationofbenefit-service-date",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.meta">meta</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a>" : "1",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2020-03-31T06:41:13.000+00:00"
-  },
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2&gt;SearchParameter: CARINBlueButton_ExplanationOfBenefit_ServiceDate_SearchParameter&lt;/h2&gt;&lt;p&gt;&lt;b&gt; description&lt;/b&gt; : Date of the service for the EOB\n         &lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-  },
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.extension">extension</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "trial-use"
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">url</a>" : "http://hl7.org/fhir/us/carin/SearchParameter/carin-bb-searchparameter-explanationofbenefit-service-date",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">version</a>" : "0.1.0",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">name</a>" : "CARINBlueButton_ExplanationOfBenefit_ServiceDate_SearchParameter",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">date</a>" : "2020-03-31T09:48:45+00:00",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">publisher</a>" : "HL7 Financial Management Working Group",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "HL7 Financial Management Working Group",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://www.hl7.org/Special/committees/fm/index.cfm"
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "fm@lists.HL7.org"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.description">description</a>" : "Date of the service for the EOB",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.jurisdiction">jurisdiction</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "US",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "United States of America"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.code">code</a>" : "service-date",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.base">base</a>" : [
-    "ExplanationOfBenefit"
-  ],
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">type</a>" : "date",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">expression</a>" : "ExplanationOfBenefit.billablePeriod | ExplanationOfBenefit.serviced as Date |  ExplanationOfBenefit.serviced as Period",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.xpath">xpath</a>" : "f:ExplanationOfBenefit/f:billablePeriod | f:ExplanationOfBenefit/f:serviced/f:servicedDate | f:ExplanationOfBenefit/f:serviced/f:servicedPeriod",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.xpathUsage">xpathUsage</a>" : "normal",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.comparator">comparator</a>" : [
-    "eq",
-    "ne",
-    "gt",
-    "ge",
-    "lt",
-    "le",
-    "sa",
-    "eb",
-    "ap"
-  ]
-}</pre>
-
+  <div><h2>CARINBBAssembleEOB</h2><p>OPERATION: CARINBBAssembleEOB</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/us/carin-bb/OperationDefinition/assemble-eob</pre><div><p>This operation is used to return ExplanationOfBenefit resources related to a patient along with all the reference resources.</p>
+<p>The operation takes the optional input parameters:</p>
+<ul>
+<li>patient id</li>
+<li>start date</li>
+<li>end date</li>
+<li>document type</li>
+</ul>
+<p>and returns a <a href="http://hl7.org/fhir/bundle.html">Bundle</a> of type "searchset" containing <a href="https://build.fhir.org/ig/HL7/carin-bb/profiles.html">CARIN BB ExplanationOfBenefit and reference resources</a> for the patient. The principle intended use for this operation is to provide a patient with access to their available ExplanationOfBenefit information.</p>
+</div><p>URL: [base]/ExplanationOfBenefit/$assemble-eob</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>patient</td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td><td></td><td><div><p>The id of the patient resource located on the server on which this operation is executed.  If there is no match, an empty Bundle is returned</p>
+</div></td></tr><tr><td>IN</td><td>_since</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a></td><td></td><td><div><p>ExplanationOfBenefit resources updated after this period will be included in the response. The intent of this parameter is to allow a client to request only records that have changed since the last request.</p>
+</div></td></tr><tr><td>IN</td><td>type</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td><a href="http://hl7.org/fhir/R4/valueset-claim-type.html">http://hl7.org/fhir/ValueSet/claim-type</a> (Required)</td><td><div><p>The type of the ExplanationOfBenefit, e.g. inpatient, outpatient, pharmacy, etc.</p>
+</div></td></tr><tr><td>IN</td><td>service-date</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td></td><td><div><p>Date of the service for the ExplanationOfBenefit.</p>
+</div></td></tr><tr><td>IN</td><td>identifier</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td></td><td><div><p>Claim Number / Business Identifier of the ExplanationOfBenefit resource.</p>
+</div></td></tr><tr><td>IN</td><td>_id</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td><td></td><td><div><p>Logical id for the ExplanationOfBenefit resource.</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td></td><td><div><p>The bundle type is "searchset"containing <a href="https://build.fhir.org/ig/HL7/carin-bb/profiles.html">CARIN BB ExplanationOfBenefit and reference resources</a></p>
+</div></td></tr></table><div><ul>
+<li>The server is responsible for determining the reference resources to return as <a href="http://hl7.org/fhir/R4/search.html#revinclude">included</a> resources rather than the client specifying which ones. This frees the client from needing to determine what it could or should ask for. Rhe server SHALL return all the reference resources within the return bundle along with the ExplanationOfBenefitn resources. The server's CapabilityStatement should document this behavior.</li>
+</ul>
+</div></div>
 
     <!-- insert notes if present -->
   
@@ -309,7 +259,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 21:12+0000">2020-06-29</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 21:53+0000">2020-06-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

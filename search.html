@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="0f8ea504-92d5-4cef-8690-16ac76486a9b">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="1e2a9fd5-9de8-4881-bc50-12e1810288a6">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="ade9b9ac-fc15-4372-9e34-60e603949232">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="a65cc28d-da95-4ef7-a79d-2e4eea6a8844">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="c9e9048a-b35a-4478-80aa-d64a72ecc8d6">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="22f1ddb1-4e70-434a-a14d-159c28d1a33e">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="1fd169c3-47e3-4306-a713-72765352ff22">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="223e1a5b-cee6-4ddd-ad57-d32149511b5f">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="75dc88b4-6b29-4564-9709-cbe2c3e76447">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="c0ee7b65-f4da-463e-b858-fa1b1d7cc433">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a name="6a177847-52b6-43e5-b2aa-8030936e0eac">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="b4658728-55b7-4a9f-be53-5f663abd42e4">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="c2b0c2ef-7799-4265-8716-45c3634f5daa">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="65078832-1674-4c45-b3fe-75eb8898f5d5">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -128,7 +128,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="dca98978-0a09-46b8-8ade-f8830f80033c">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="3c4e0cb2-6d10-4d2a-83b0-44fce5572839">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -180,13 +180,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3>Search Behavior</h3>
 
-The ExplanationOfBenefit (EOB) Resource is the focal Consumer-Directed Payer Data Exchange (CDPDE) Resource. Several Reference Resources are defined directly/indirectly from the EOB: Coverage, Patient, Organization (Payer ID), Practioner, Organization (Facility), PractionerRole, Location.
+The EOB Resource is the focal Consumer-Directed Payer Data Exchange (CDPDE) Resource. Several Reference Resources are defined directly/indirectly from the EOB: Coverage, Patient, Organization (Payer ID), Practioner, Organization (Facility), PractionerRole, Location.
 
-The Coverage Reference Resource SHALL be returned with data that was effective as of the date of service of the claim; for example, the data will reflect the employer name in effect at that time. However, for other reference resources, if payers have the data as of the date of service that data SHALL be provided in the reference resource and they SHALL populate meta.lastUpdated with the date that the payer record for that resource was created. If payers do not have the data as of the date of service, they MAY provide their available data in the reference resource and they SHALL populate meta.lastUpdated with the date the data was updated.
+The Coverage Reference Resource SHALL be returned with data that was effective as of the date of service of the claim; for example, the data will reflect the employer name in effect at that time. However, for other reference resources, if payers have the data as of the date of service that data SHALL be provided in the reference resource and they SHALL populate meta.lastUpdated with the date that the payer record for that resource was created. If payers do not have the data as of the date of service, they SHALL provide their available data in the reference resource and they SHALL populate meta.lastUpdated with the date the data was updated.
 
 <h3>RESTful Capabilities by Resource/Profile</h3>
 
-A server will always treat a search request as if a client indicated \"_include=*\" and SHALL return all EOB &amp; reference resources in the response bundle. Bundle.link.url (self) would show that "_include=*" was added by the server as an additional parameter. Bundle.total will count only EOB resources (this is a normal practice in FHIR to only count the searched resources and not the included / reference resources).
+A server will support an "$assemble-eob" operation which will return all patient's EOB resources matching the search request along with all the reference resources in the response bundle. Bundle.total will show a count of the EOB.
 
 <h4>Explanation of Benefit Profiles</h4>
 
@@ -221,7 +221,7 @@ These search parameters are required (SHALL). The term EOB refers to the four no
   </thead>
   <tbody>
     <tr>
-              <td><a name="dd90058d-c53a-45bc-bce1-aa3c55a6cb0c">​</a><a href="SearchParameter-carinbb-_id.html">_id</a></td>
+              <td><a name="0ca653ae-9229-4bef-a5df-78df0738aea2">​</a><a href="SearchParameter-carinbb-_id.html">_id</a></td>
               <td>EOB</td>
               <td>token</td>
               <td><p>_id</p>
@@ -231,7 +231,7 @@ These search parameters are required (SHALL). The term EOB refers to the four no
 </td>
             </tr>
             <tr>
-              <td><a name="eee16ea7-227a-42f5-89a1-c4ce4d8f5f90">​</a><a href="SearchParameter-carinbb-patient.html">patient</a></td>
+              <td><a name="1e7de88e-9850-4ca4-95fe-66c3647479db">​</a><a href="SearchParameter-carinbb-patient.html">patient</a></td>
               <td>EOB</td>
               <td>reference</td>
               <td><p>patient</p>
@@ -241,7 +241,7 @@ These search parameters are required (SHALL). The term EOB refers to the four no
 </td>
             </tr>
             <tr>
-              <td><a name="67c4dc0d-e6b6-439b-a07e-83a8ceddf6c7">​</a><a href="SearchParameter-carinbb-_lastUpdated_.html">_lastUpdated</a></td>
+              <td><a name="3b5a18b8-4522-4559-b477-5b05ec3c5d05">​</a><a href="SearchParameter-carinbb-_lastUpdated_.html">_lastUpdated</a></td>
               <td>EOB</td>
               <td>date</td>
               <td><p>_lastUpdated</p>
@@ -251,7 +251,7 @@ These search parameters are required (SHALL). The term EOB refers to the four no
 </td>
             </tr>
                       <tr>
-              <td><a name="355e6a17-7d67-4fde-92ff-661c45cf5846">​</a><a href="SearchParameter-carinbb-type.html">type</a></td>
+              <td><a name="384c64c2-1407-4bef-9351-28243cb5d352">​</a><a href="SearchParameter-carinbb-type.html">type</a></td>
               <td>EOB</td>
               <td>date</td>
               <td><p>type</p>
@@ -268,7 +268,7 @@ These search parameters are required (SHALL). The term EOB refers to the four no
 </td>
             </tr>
             <tr>
-              <td><a name="85ca5098-8959-48c8-9f6f-aeb3c5d65c00">​</a><a href="SearchParameter-carinbb-identifier.html">identifier</a></td>
+              <td><a name="365c552b-f66b-41e9-8379-1d56cb1118e8">​</a><a href="SearchParameter-carinbb-identifier.html">identifier</a></td>
               <td>EOB</td>
               <td>token</td>
               <td><p>identifier</p>
@@ -285,7 +285,7 @@ These search parameters are required (SHALL). The term EOB refers to the four no
 </td>
             </tr>
             <tr>
-              <td><a name="4bf04b96-ba48-4320-b61f-5e121f47fdd4">​</a><a href="SearchParameter-carinbb-service-date.html">type</a></td>
+              <td><a name="fa388dd0-83ff-449c-a914-2895e152ec3b">​</a><a href="SearchParameter-carinbb-service-date.html">type</a></td>
               <td>EOB</td>
               <td>date</td>
               <td><p>service-date</p>
@@ -329,7 +329,7 @@ No search capabilities are defined for the other profiles defined in the Impleme
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 21:12+0000">2020-06-29</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 21:53+0000">2020-06-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

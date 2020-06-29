@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="57cc8e1a-0f8c-46e0-9620-4ab4db5baf32">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="4a940c08-2a57-486d-8018-4e1c2627f050">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="dbd993cb-089c-4cc3-a582-187e69819ca7">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="d14bb345-721e-4a7e-b338-452e864d819d">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="534deb35-9e60-45f9-a3f2-9955233bc1d1">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="17476765-b4eb-481c-b253-40ecaa249145">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="73063d47-a668-4588-9a6b-3c3067c9a3e8">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="43ba9423-8541-43ef-9593-961dd01d9a0f">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="89a0647f-a12a-4866-964a-949bc3e02510">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="2830f2f7-13d6-47f4-b4eb-dc60b48c6616">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a name="c5eb6734-eb06-44f9-8370-83b287877bbc">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="b9d1e89e-c0f2-4b6f-8128-08cdacbcede5">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="bf5429fb-992a-442e-a779-1b9987edfca0">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="150aaf03-17c3-4522-a6f2-40c895890b61">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -128,7 +128,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="108b2e74-3649-4dc4-91ec-7379d4a0fdec">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="188639de-3daf-4435-9ede-88b662faa9d4">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -176,19 +176,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Structures: Abstract Profiles</a>
+         <a href="#2">Behavior: Operation Definitions</a>
       </li>
       <li>
-         <a href="#3">Structures: Resource Profiles</a>
+         <a href="#3">Structures: Abstract Profiles</a>
       </li>
       <li>
-         <a href="#4">Terminology: Value Sets</a>
+         <a href="#4">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#5">Terminology: Code Systems</a>
+         <a href="#5">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#6">Other</a>
+         <a href="#6">Terminology: Code Systems</a>
       </li>
    </ul>
 </div>
@@ -217,6 +217,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="2"> </a>
+   <h3>Behavior: Operation Definitions </h3>
+   <p>These are custom operations that can be supported by and/or invoked by systems complying with this implementation guide</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="OperationDefinition-CARIN-BB-Assemble-ExplanationOfBenefit.html" title="OperationDefinition/CARIN-BB-Assemble-ExplanationOfBenefit">CARIN BB Assemble EOB</a>
+               </td>
+               <td>This operation is used to return ExplanationOfBenefit resources related to a patient along with all the reference resources. 
+
+ The operation takes the optional input parameters: 
+  - patient id
+  - start date
+  - end date
+  - document type 
+
+ and returns a [Bundle](http://hl7.org/fhir/bundle.html) of type "searchset" containing [CARIN BB ExplanationOfBenefit and reference resources](https://build.fhir.org/ig/HL7/carin-bb/profiles.html) for the patient. The principle intended use for this operation is to provide a patient with access to their available ExplanationOfBenefit information.</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
    <h3>Structures: Abstract Profiles </h3>
    <p>These are profiles on resources or data types that describe patterns used by other profiles, but can't be instantiated directly.  I.e. instances can conform to profiles *based* on these abstract profiles, but don't declare conformance to the abstract profiles themselves.</p>
    <p>
@@ -233,7 +257,7 @@ All EOB instances should be from one of the four non-abstract EOB profiles defin
          </tbody>
       </table>
    </p>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>These define constraints on FHIR resources that need to be complied with by conformant implementations</p>
    <p>
@@ -307,7 +331,7 @@ The claims data is based on the professional claim form 1500, submission standar
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>These define sets of codes used by systems conforming with this implementation guide</p>
    <p>
@@ -545,7 +569,7 @@ The claims data is based on the professional claim form 1500, submission standar
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>These define new code systems used by systems conforming with this implementation guide</p>
    <p>
@@ -585,58 +609,6 @@ The claims data is based on the professional claim form 1500, submission standar
          </tbody>
       </table>
    </p>
-   <a name="6"> </a>
-   <h3>Other </h3>
-   <p>These are resources that are used within this implementation guide that don't fit into one of the other categories</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-carin-bb-searchparameter-coverage-patient.html" title="SearchParameter/carin-bb-searchparameter-coverage-patient">CARINBlueButton_Coverage_Patient_SearchParameter</a>
-               </td>
-               <td>Retrieve coverages for a patient</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-carin-bb-searchparameter-explanationofbenefit-created.html" title="SearchParameter/carin-bb-searchparameter-explanationofbenefit-created">CARINBlueButton_ExplanationOfBenefit_Created_SearchParameter</a>
-               </td>
-               <td>The creation date for the EOB</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-carin-bb-searchparameter-explanationofbenefit-identifier.html" title="SearchParameter/carin-bb-searchparameter-explanationofbenefit-identifier">CARINBlueButton_ExplanationOfBenefit_Identifier_SearchParameter</a>
-               </td>
-               <td>The business/claim identifier of the Explanation of Benefit</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-carin-bb-searchparameter-explanationofbenefit-insurer.html" title="SearchParameter/carin-bb-searchparameter-explanationofbenefit-insurer">CARINBlueButton_ExplanationOfBenefit_Insurer_SearchParameter</a>
-               </td>
-               <td>The party responsible for the claim</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-carin-bb-searchparameter-explanationofbenefit-patient.html" title="SearchParameter/carin-bb-searchparameter-explanationofbenefit-patient">CARINBlueButton_ExplanationOfBenefit_Patient_SearchParameter</a>
-               </td>
-               <td>The reference to the patient</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-carin-bb-searchparameter-explanationofbenefit-service-date.html" title="SearchParameter/carin-bb-searchparameter-explanationofbenefit-service-date">CARINBlueButton_ExplanationOfBenefit_ServiceDate_SearchParameter</a>
-               </td>
-               <td>Date of the service for the EOB</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-carin-bb-searchparameter-explanationofbenefit-type.html" title="SearchParameter/carin-bb-searchparameter-explanationofbenefit-type">CARINBlueButton_ExplanationOfBenefit_Type_SearchParameter</a>
-               </td>
-               <td>The type of the ExplanationOfBenefit</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
 </div>
 
 </div>
@@ -659,7 +631,7 @@ The claims data is based on the professional claim form 1500, submission standar
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 21:12+0000">2020-06-29</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 21:53+0000">2020-06-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
