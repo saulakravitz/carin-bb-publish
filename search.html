@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="a65cc28d-da95-4ef7-a79d-2e4eea6a8844">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="c9e9048a-b35a-4478-80aa-d64a72ecc8d6">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="22f1ddb1-4e70-434a-a14d-159c28d1a33e">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="2198fe93-fe57-499d-b909-6a42050967a6">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="bff22f8f-a0d3-4bae-97f1-5b4c44789144">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="c41af029-4c3d-4320-9261-18d97ffd4578">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="75dc88b4-6b29-4564-9709-cbe2c3e76447">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="c0ee7b65-f4da-463e-b858-fa1b1d7cc433">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="64afc41b-6cb3-4dcd-9ec7-c70f987ec13c">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="8f486658-6e46-4476-94e6-d87a4d8e8656">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a name="b4658728-55b7-4a9f-be53-5f663abd42e4">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="a9ae7dff-b50a-44c5-8dc3-95a2f0b2c441">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="65078832-1674-4c45-b3fe-75eb8898f5d5">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="ce607712-85f9-4b93-ab2c-96d7b6106b85">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -128,7 +128,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="3c4e0cb2-6d10-4d2a-83b0-44fce5572839">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="aa30fb2d-2306-46dd-af59-2c4c4e4d563f">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -186,27 +186,20 @@ The Coverage Reference Resource SHALL be returned with data that was effective a
 
 <h3>RESTful Capabilities by Resource/Profile</h3>
 
-A server will support an "$assemble-eob" operation which will return all patient's EOB resources matching the search request along with all the reference resources in the response bundle. Bundle.total will show a count of the EOB.
+A server will support an <a href="OperationDefinition-CARIN-BB-Assemble-ExplanationOfBenefit.html">$assemble-eob"<a> operation which will return a bundle including all  ExplanationOfBenefits resources from the four supported profiles  matching the search request along with all the reference resources in the response bundle. Bundle.total will show a count of the EOB instances returned.
 
-<h4>Explanation of Benefit Profiles</h4>
-
-Supported Profiles: CARIN BB ExplanationOfBenefit Inpatient Facility Profile; CARIN BB ExplanationOfBenefit Outpatient Facility Profile; CARIN BB ExplanationOfBenefit Pharmacy Profile; CARIN BB ExplanationOfBenefit Professional NonClinician Profile
-
-<h5>Search Parameters"</h5>
-
-These search parameters are required (SHALL). The term EOB refers to the four non-abstract profiles of ExplanationOfBenefit defined in this implementation guide.
-
-<table border="1" class="codes">
-  <thead>
+These $assemble-eob operation SHALL support the following parameters:
+<table>
+ <thead>
     <tr>
       <td>
-        <b>Name</b>
-      </td>
-      <td>
-        <b>Base Resources</b>
+        <b>Parameter Name</b>
       </td>
       <td>
         <b>Type</b>
+      </td>
+      <td>
+        <b>Cardinality</b>
       </td>
       <td>
         <b>Description</b>
@@ -214,100 +207,68 @@ These search parameters are required (SHALL). The term EOB refers to the four no
       <td>
         <b>Notes</b>
       </td>
-        <td>
-        <b>Example</b>
-      </td>
     </tr>
   </thead>
-  <tbody>
+ <tbody>
     <tr>
-              <td><a name="0ca653ae-9229-4bef-a5df-78df0738aea2">​</a><a href="SearchParameter-carinbb-_id.html">_id</a></td>
-              <td>EOB</td>
-              <td>token</td>
-              <td><p>_id</p>
-</td>
-              <td>none</td>
-              <td><p>GET [base]/ExplanationOfBenefit?_id=[id]</p>
-</td>
-            </tr>
-            <tr>
-              <td><a name="1e7de88e-9850-4ca4-95fe-66c3647479db">​</a><a href="SearchParameter-carinbb-patient.html">patient</a></td>
-              <td>EOB</td>
-              <td>reference</td>
-              <td><p>patient</p>
-</td>
-              <td></td>
-              <td><p>GET [base]/ExplanationOfBenefit?patient=[patient]</p>
-</td>
-            </tr>
-            <tr>
-              <td><a name="3b5a18b8-4522-4559-b477-5b05ec3c5d05">​</a><a href="SearchParameter-carinbb-_lastUpdated_.html">_lastUpdated</a></td>
-              <td>EOB</td>
-              <td>date</td>
-              <td><p>_lastUpdated</p>
-</td>
-              <td>Only in combination with the patient search parameter.</td>
-              <td><p>GET [base]/ExplanationOfBenefit?_lastUpdated=[prefix][date]</p>
-</td>
-            </tr>
-                      <tr>
-              <td><a name="384c64c2-1407-4bef-9351-28243cb5d352">​</a><a href="SearchParameter-carinbb-type.html">type</a></td>
-              <td>EOB</td>
-              <td>date</td>
-              <td><p>type</p>
-</td>
-              <td>Only in combination with the patient search parameter.</td>
-              <td><table>
-  <tbody>
-    <tr>
-      <td>GET [base]/ExplanationOfBenefit?type=[system]</td>
-      <td>[code]</td>
+              <td>_id</td>
+              <td>id</td>
+              <td>0..1</td>
+              <td>Logical id for the ExplanationOfBenefit resource.</td>
+              <td>(none))</td>
+              <td>(none)</td>
     </tr>
-  </tbody>
-</table>
-</td>
-            </tr>
-            <tr>
-              <td><a name="365c552b-f66b-41e9-8379-1d56cb1118e8">​</a><a href="SearchParameter-carinbb-identifier.html">identifier</a></td>
-              <td>EOB</td>
-              <td>token</td>
-              <td><p>identifier</p>
-</td>
-               <td>none</td>
-               <td><table>
-  <tbody>
-    <tr>
-      <td>GET [base]/ExplanationOfBenefit?identifier=[system]</td>
-      <td>[value]</td>
+     <tr>
+              <td>patient</td>
+              <td>id</td>
+              <td>1..1</td>
+              <td>Required.  The id of the patient resource located on the server on which this operation is executed. If there is no match, an empty Bundle is returned</td>
+              <td>(none))</td>
+              <td>(none)</td>
     </tr>
-  </tbody>
-</table>
-</td>
-            </tr>
-            <tr>
-              <td><a name="fa388dd0-83ff-449c-a914-2895e152ec3b">​</a><a href="SearchParameter-carinbb-service-date.html">type</a></td>
-              <td>EOB</td>
+    <tr>
+              <td>_since</td>
+              <td>instant</td>
+              <td>0..1</td>
+              <td>ExplanationOfBenefit resources updated after this period will be included in the response. The intent of this parameter is to allow a client to request only records that have changed since the last request.</td>
+              <td>(none))</td>
+              <td>(none)</td>
+    </tr>
+    <tr>
+              <td>type</td>
+              <td>CodeableConcept</td>
+              <td>0..1</td>
+              <td>The type of the ExplanationOfBenefit, e.g. institutional, pharmacy, professional</td>
+              <td>(none))</td>
+              <td>(none)</td>
+    </tr>
+        <tr>
+              <td>identifier</td>
+              <td>Identifier</td>
+              <td>0..1</td>
+              <td>Claim Number / Business Identifier of the ExplanationOfBenefit resource.</td>
+              <td>(none))</td>
+              <td>(none)</td>
+    </tr>
+    <tr>
+              <td>service-date</td>
               <td>date</td>
-              <td><p>service-date</p>
-</td>
-               <td>Only in combination with the patient search parameter.</td>
-               <td><p>GET [base]/ExplanationOfBenefit?service-date=[prefix][date]</p>
- </td>
-            </tr>
-           </tbody>
+              <td>0..1</td>
+              <td>Date of the service for the ExplanationOfBenefit.</td>
+              <td>(none))</td>
+              <td>(none)</td>
+    </tr>
+</tbody>
 </table>
-The rationale for requiring specification of a patient for searches not constrained by _id or identifier  is as follows:
-<ul>
-<li>Search by _id or identifer returns at most a single unique EOB.  A patient parameter is redundant, but is allowed.</li>
-<li>Search by type or date (lastUpdated or service-date) must be constrained by a patient to reduce computationial burden, and provide an additional layer of security if a server validates this parameter against the token before processing the request</li>
-</ul>
 
 <h4>Other Profiles</h4>
 No search capabilities are defined for the other profiles defined in the Implementation Guide.  
 <h3>Search for Servers Requiring Status </h3>
 <h3>Searching Multiple Members</h3>
-</div>
+&lt;/div&gt;
 
+  
+</a></a></div>
 
 </div>
         </div>    <!-- /inner-wrapper -->
@@ -329,7 +290,7 @@ No search capabilities are defined for the other profiles defined in the Impleme
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 21:53+0000">2020-06-29</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 22:30+0000">2020-06-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
