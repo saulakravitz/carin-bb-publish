@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CARINConsumerDirectedPayerDataExchange"];
   fhir:ImplementationGuide.title [ fhir:value "CARIN Consumer Directed Payer Data Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-06-29T17:55:32+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-29T20:57:48+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -541,6 +541,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/AdjudicationValueCodesVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Benefit Payment Status Category" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Benefit Payment Status Category" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 14;
@@ -576,6 +577,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/BenefitPaymentStatusCategoryVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Benefit Payment Status Category" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Benefit Payment Status Category" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 16;
@@ -611,6 +613,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/CPTHCPCSModifierCodeVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMA CPT and CMS HCPCS Modifier Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AMA CPT and CMS HCPCS Modifier Codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 18;
@@ -628,6 +631,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/CPTHCPCSProcedureCodeVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMA CPT and CMS HCPCS Procedure Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AMA CPT and CMS HCPCS Procedure Codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 19;
@@ -789,6 +793,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/ICD10CMVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ICD-10-CM Diagnosis Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ICD-10-CM Diagnosis Codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 28;
@@ -805,7 +810,8 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/ICD10PCSVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/ICD10PCSVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ICD-1-PCS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ICD-10-PCS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ICD-10-PCS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 29;
@@ -823,6 +829,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/IdentifierTypeVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identifier Type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "IdentifierType" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 30;
@@ -840,6 +847,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/MSDRGVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MS-DRG" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MS-DRG" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 31;
@@ -929,6 +937,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/NUBCPatientDischargeStatusVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NUBC Patient Discharge Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NUBC Patient Discharge Status" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 36;
@@ -946,6 +955,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/NUBCPointOfOriginVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NUBC Point of Origin of Admission" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NUBC Point of Origin of Admission" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 37;
@@ -963,6 +973,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/NUBCPresentOnAdmissionVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NUBC Present On Admission" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NUBC Present On Admission" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 38;
@@ -980,6 +991,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/NUBCPriorityOfAdmissionnVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NUBC Priority of Admission" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NUBC Priority of Admission" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 39;
@@ -997,6 +1009,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/NUBCRevenueCodeVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NUBC Revenue Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NUBC Revenue Code" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 40;
