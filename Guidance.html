@@ -39,8 +39,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"11"}
-    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="432f32dd-002c-4564-9669-decbc6f0a169">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="b2208cdf-8f69-4693-a988-5484e90a8c7f">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="98e6ecc0-b3d5-459c-aca5-dbee78fdbd26">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="5c770cda-02ab-43a3-9f51-a11edc8f0287">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="208d8806-ab0e-47e9-8263-43b45e26dbc5">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="18aac9d8-80ed-4269-bcf7-da3d6e4f8ac9">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="9848f919-6069-4c64-b445-938a52e3d8fa">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="200a7b69-fb5b-41f3-ae8a-d013b00d53ec">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="b2d1fd91-4e30-4060-bd9f-75cb68601309">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="5e0645de-883e-4485-b447-f4880bf5ad44">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="e4920f3f-bc81-437e-924b-adf16a48f577">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="261e57fa-f355-487b-b1cc-4ec227f67c1a">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="3f205eec-c42e-451b-a64a-01d155d4c8a6">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -128,7 +128,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="c21ac863-f59a-4a7b-a526-eebc3e1f9772">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="20f0b274-e306-48bd-a217-9dc2f55041da">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -193,13 +193,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h2 id="must-support">Must Support</h2>
 <p>For profiles defined in other IGs, the meaning of Must Support is established in the defining IG.</p>
 
+<p>Note that the Must Support requirements for this IG are modeled after the US Core implementation guide, with the requirements for CARIN Server APIs modeled on those for US Core Responders, and the requirements for CARIN Consumer Apps modeled on those for US Core Requestors.</p>
+
 <p>For profiles defined in this IG, Must Support means the following:</p>
 
-<p>When querying and reading CARIN BB Profiles, <em>Must Support</em> on any profile data element <strong>SHALL</strong> be interpreted as follows:</p>
+<p>The CARIN BB’s interpretation of Must Support and Missing Data is aligned with US Core IG must support.  When querying and reading CARIN BB Profiles, <em>Must Support</em> on any profile data element <strong>SHALL</strong> be interpreted as follows:</p>
 
 <ul>
   <li>Health Plan API actors <strong>SHALL</strong> be capable of populating all data elements as part of the query results as specified by the CARINBlueButtonHealthPlanAPICapabilityStatement.</li>
-  <li>Consumer App actors <strong>SHALL</strong> be capable of processing resource instances containing the data elements without generating an error or causing the application to fail. In other words, Consumer App actors <strong>SHOULD</strong> be capable of displaying the data elements for human use or storing the information for other purposes.</li>
+  <li>Consumer App actors <strong>SHALL</strong> be capable of processing resource instances containing the data elements without generating an error or causing the application to fail.</li>
   <li>In situations where information on a particular data element is not present and the reason for absence is unknown, Health Plan API actors <strong>SHALL NOT</strong> include the data elements in the resource instance returned as part of the query results.</li>
   <li>When querying Health Plan API actors, Consumer App actors <strong>SHALL</strong> interpret missing data elements within resource instances as data not present in the Health Plan API actors system.</li>
   <li>In situations where information on a particular data element is missing and the Health Plan API actor knows the precise reason for the absence of data, Health Plan API actors <strong>SHALL</strong> send the reason for the missing information using values (such as nullFlavors) from the value set where they exist or use the dataAbsentReason extension.</li>
@@ -284,7 +286,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 21, 2020 16:21+0000">2020-06-21</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 17:03+0000">2020-06-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

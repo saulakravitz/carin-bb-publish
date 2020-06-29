@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
@@ -39,8 +39,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"14.4"}
-    h3,h4,h5,h6{--heading-prefix:"14.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.4"}
+    h3,h4,h5,h6{--heading-prefix:"11.4"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="dd37ffaf-758a-4921-bcdd-b0214d323815">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="a9370730-f9fc-4d3e-83f9-43bbce061370">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="cbb72d59-2d64-4fb8-8e31-831870d81f65">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="5cdf3f2d-39b6-4e0e-b6cc-32f6e0898864">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="1e620750-594c-43bf-89fe-589686bbabca">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="8f71dbb2-8b58-46bb-a1ca-9f1a63ee6031">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="98fb919c-ec23-4abd-b3d0-364c47bef9c8">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="d6223c4e-373c-4476-a65d-67512fdcf092">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="c6d283f2-d146-4222-b098-e78c69f426f6">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="cc89852b-1a0a-4400-94f5-52cd0d7860b7">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="176d8a20-5e0b-4a97-821a-10b83f0e2193">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="5e393cc9-609d-4d37-9114-5ee6170f418e">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="e2ebb77f-50ff-4919-95c4-107803a20bfc">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -128,7 +128,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="05a12aed-7f75-4dee-86a6-2c04fbfd39c4">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="dabffac1-0ad5-47b2-8a4b-ad44a42be3cb">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -169,6 +169,7 @@
 
 
 
+
 <ul class="nav nav-tabs">
 
   <li>
@@ -191,6 +192,7 @@
 
 
 
+
   
     
       <li>
@@ -198,6 +200,7 @@
       </li>
     
   
+
 
 
 
@@ -224,13 +227,11 @@
 
 </ul>
 
-  <a name="root"> </a>
 
-
-
+<a name="root"> </a>
 <h2 id="root">Resource Profile: CARINBBCoverage - Detailed Descriptions</h2>
 
-<p>Definitions for the CARIN-BB-Coverage Profile.</p>
+<p>Definitions for the CARIN-BB-Coverage resource profile.</p>
 
     <!-- insert intro if present -->
   
@@ -290,6 +291,7 @@
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a <a href="http://hl7.org/fhir/R4/http.html#read">read</a> interaction.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -460,6 +462,7 @@
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>The insurer requires this identifier on correspondance and claims (digital and otherwise).</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -469,6 +472,7 @@
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-CARIN-BB-Patient.html" title="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient">CARINBBPatient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>This is the party who receives treatment for which the costs are reimbursed under the coverage.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -488,8 +492,9 @@
   <tr><td>Definition</td><td><p>The relationship of beneficiary (patient) to the subscriber.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="ab1d3768-2894-4850-97ea-e01205e64f3e">​</a>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-subscriber-relationship">http://hl7.org/fhir/R4/valueset-subscriber-relationship</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-subscriber-relationship.html">SubscriberRelationshipCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>To determine relationship between the patient and the subscriber to determine coordination of benefits.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Typically, an individual uses policies which are theirs (relationship='self') before policies owned by others.</p>
@@ -1155,7 +1160,7 @@ For selfpay it may provide multiple paying persons and/or organizations.</p>
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 21, 2020 16:21+0000">2020-06-21</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 29, 2020 17:03+0000">2020-06-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
