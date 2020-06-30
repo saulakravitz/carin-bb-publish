@@ -16,9 +16,9 @@
 </div></td></tr><tr><td>IN</td><td>_since</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a></td><td/><td><div><p>ExplanationOfBenefit resources updated after this period will be included in the response. The intent of this parameter is to allow a client to request only records that have changed since the last request.</p>
 </div></td></tr><tr><td>IN</td><td>type</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td><a href="http://hl7.org/fhir/R4/valueset-claim-type.html">http://hl7.org/fhir/ValueSet/claim-type</a> (Required)</td><td><div><p>The type of the ExplanationOfBenefit, e.g. instituional, professional,  pharmacy, etc.</p>
 </div></td></tr><tr><td>IN</td><td>service-date</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td/><td><div><p>Date of the service for the ExplanationOfBenefit.</p>
-</div></td></tr><tr><td>IN</td><td>identifier</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Claim Number / Business Identifier of the ExplanationOfBenefit resource.</p>
+</div></td></tr><tr><td>IN</td><td>identifier</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Payer Claim Number / Business Identifier of the ExplanationOfBenefit resource.</p>
 </div></td></tr><tr><td>IN</td><td>_id</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td><td/><td><div><p>Logical id for the ExplanationOfBenefit resource.</p>
-</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td/><td><div><p>The bundle type is &quot;searchset&quot;containing <a href="https://build.fhir.org/ig/HL7/carin-bb/profiles.html">CARIN BB ExplanationOfBenefit and reference resources</a></p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td/><td><div><p>The bundle type is &quot;searchset&quot;containing <a href="https://build.fhir.org/ig/HL7/carin-bb/profiles.html">CARIN BB ExplanationOfBenefit and reference resources</a>. The bundle total will reflect the number of ExplanationOfBenefit instances returned.</p>
 </div></td></tr></table><div><ul>
 <li>The server is responsible for determining the reference resources to return as <a href="http://hl7.org/fhir/R4/search.html#revinclude">included</a> resources rather than the client specifying which ones. This frees the client from needing to determine what it could or should ask for. Rhe server SHALL return all the reference resources within the return bundle along with the ExplanationOfBenefitn resources. The server's CapabilityStatement should document this behavior.</li>
 </ul>
@@ -98,7 +98,7 @@
     <use value="in"/>
     <min value="0"/>
     <max value="1"/>
-    <documentation value="Claim Number / Business Identifier of the ExplanationOfBenefit resource."/>
+    <documentation value="Payer Claim Number / Business Identifier of the ExplanationOfBenefit resource."/>
     <type value="Identifier"/>
   </parameter>
   <parameter>
@@ -114,7 +114,7 @@
     <use value="out"/>
     <min value="1"/>
     <max value="1"/>
-    <documentation value="The bundle type is &quot;searchset&quot;containing [CARIN BB ExplanationOfBenefit and reference resources](https://build.fhir.org/ig/HL7/carin-bb/profiles.html)"/>
+    <documentation value="The bundle type is &quot;searchset&quot;containing [CARIN BB ExplanationOfBenefit and reference resources](https://build.fhir.org/ig/HL7/carin-bb/profiles.html). The bundle total will reflect the number of ExplanationOfBenefit instances returned."/>
     <type value="Bundle"/>
   </parameter>
 </OperationDefinition>
