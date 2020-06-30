@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "PayerDiagnosisTypeCS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">principal<a name=\"PayerDiagnosisTypeCS-principal\"> </a></td><td>principal</td><td>principal</td></tr><tr><td style=\"white-space:nowrap\">secondary<a name=\"PayerDiagnosisTypeCS-secondary\"> </a></td><td>secondary</td><td>secondary</td></tr><tr><td style=\"white-space:nowrap\">external-cause-of-injury<a name=\"PayerDiagnosisTypeCS-external-cause-of-injury\"> </a></td><td>external-cause-of-injury</td><td>external-cause-of-injury</td></tr><tr><td style=\"white-space:nowrap\">patient-reason-for-visit<a name=\"PayerDiagnosisTypeCS-patient-reason-for-visit\"> </a></td><td>patient-reason-for-visit</td><td>patient-reason-for-visit</td></tr><tr><td style=\"white-space:nowrap\">first-listed<a name=\"PayerDiagnosisTypeCS-first-listed\"> </a></td><td>first-listed</td><td>first-listed</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">principal<a name=\"PayerDiagnosisTypeCS-principal\"> </a></td><td>principal</td><td>principal</td></tr><tr><td style=\"white-space:nowrap\">secondary<a name=\"PayerDiagnosisTypeCS-secondary\"> </a></td><td>secondary</td><td>secondary</td></tr><tr><td style=\"white-space:nowrap\">external-cause-of-injury<a name=\"PayerDiagnosisTypeCS-external-cause-of-injury\"> </a></td><td>external-cause-of-injury</td><td>external-cause-of-injury</td></tr><tr><td style=\"white-space:nowrap\">patient-reason-for-visit<a name=\"PayerDiagnosisTypeCS-patient-reason-for-visit\"> </a></td><td>patient-reason-for-visit</td><td>patient-reason-for-visit</td></tr><tr><td style=\"white-space:nowrap\">first-listed<a name=\"PayerDiagnosisTypeCS-first-listed\"> </a></td><td>first-listed</td><td>first-listed</td></tr><tr><td style=\"white-space:nowrap\">admitting<a name=\"PayerDiagnosisTypeCS-admitting\"> </a></td><td>admitting</td><td>admitting</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "PayerDiagnosisTypeCS"];
   fhir:CodeSystem.title [ fhir:value "Payer Diagnosis Type"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-06-30T17:51:54+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-06-30T20:13:27+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -59,6 +59,11 @@
      fhir:CodeSystem.concept.code [ fhir:value "first-listed" ];
      fhir:CodeSystem.concept.display [ fhir:value "first-listed" ];
      fhir:CodeSystem.concept.definition [ fhir:value "first-listed" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "admitting" ];
+     fhir:CodeSystem.concept.display [ fhir:value "admitting" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "admitting" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

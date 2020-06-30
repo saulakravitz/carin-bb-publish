@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-06-30T17:51:54+00:00"/>
+  <date value="2020-06-30T20:13:27+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -521,34 +521,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-DiagnosisTypeFacilityVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/DiagnosisTypeFacilityVS"/>
-      </reference>
-      <name value="Diagnosis Type -- Facility"/>
-      <description value="Indicates if the facility diagnosis is principal, secondary, an external cause of injury, a patient reason for visit, or first-listed"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-DiagnosisTypeProfessionalNonClinicianVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/DiagnosisTypeProfessionalNonClinicianVS"/>
-      </reference>
-      <name value="Diagnosis Type -- Professional and Non-Clinician"/>
-      <description value="Indicates if the professional and non-clinician diagnosis is principal, secondary, or first-listed"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-FDANDCNCPDPCompoundCodeVS.html"/>
       </extension>
       <reference>
@@ -815,6 +787,20 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-PayerInpatientfacilitydiagnosistype.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PayerInpatientfacilitydiagnosistype"/>
+      </reference>
+      <name value="Payer Inpatient Facility Diagnosis Type"/>
+      <description value="Payer Inpatient Facility Diagnosis Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-PayerOutpatientFacilityProviderRoleVS.html"/>
       </extension>
       <reference>
@@ -822,6 +808,20 @@
       </reference>
       <name value="Payer - Outpatient Facility Provider Role"/>
       <description value="Indicates the role of the provider providing the care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-PayerOutpatientfacilitydiagnosistype.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PayerOutpatientfacilitydiagnosistype"/>
+      </reference>
+      <name value="Payer Outpatient Facility Diagnosis Type"/>
+      <description value="Payer Outpatient Facility Diagnosis Type"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -857,13 +857,13 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerProviderRoleVS.html"/>
+        <valueUri value="ValueSet-PayerProfessionalandnoncliniciandiagnosistype.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PayerProviderRoleVS"/>
+        <reference value="ValueSet/PayerProfessionalandnoncliniciandiagnosistype"/>
       </reference>
-      <name value="Payer Provider Role"/>
-      <description value="Payer Provider Role"/>
+      <name value="Diagnosis Type -- Professional and Non-Clinician"/>
+      <description value="Indicates if the professional and non-clinician diagnosis is principal, secondary, or first-listed"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -871,13 +871,13 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PresentOnAdmissionDiagnosisTypeVS.html"/>
+        <valueUri value="ValueSet-PayerProviderRoleVS.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PresentOnAdmissionDiagnosisTypeVS"/>
+        <reference value="ValueSet/PayerProviderRoleVS"/>
       </reference>
-      <name value="Present-on-admission Diagnosis Type"/>
-      <description value="Indicates if the Present on Admission Code applies to the Primary or secondary diagnosis"/>
+      <name value="Payer Provider Role"/>
+      <description value="Payer Provider Role"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

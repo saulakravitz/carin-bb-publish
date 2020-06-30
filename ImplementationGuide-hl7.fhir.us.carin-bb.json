@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-06-30T17:51:54+00:00",
+  "date": "2020-06-30T20:13:27+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -727,42 +727,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-DiagnosisTypeFacilityVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/DiagnosisTypeFacilityVS"
-        },
-        "name": "Diagnosis Type -- Facility",
-        "description": "Indicates if the facility diagnosis is principal, secondary, an external cause of injury, a patient reason for visit, or first-listed",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-DiagnosisTypeProfessionalNonClinicianVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/DiagnosisTypeProfessionalNonClinicianVS"
-        },
-        "name": "Diagnosis Type -- Professional and Non-Clinician",
-        "description": "Indicates if the professional and non-clinician diagnosis is principal, secondary, or first-listed",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-FDANDCNCPDPCompoundCodeVS.html"
           }
         ],
@@ -1105,6 +1069,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-PayerInpatientfacilitydiagnosistype.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/PayerInpatientfacilitydiagnosistype"
+        },
+        "name": "Payer Inpatient Facility Diagnosis Type",
+        "description": "Payer Inpatient Facility Diagnosis Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-PayerOutpatientFacilityProviderRoleVS.html"
           }
         ],
@@ -1113,6 +1095,24 @@
         },
         "name": "Payer - Outpatient Facility Provider Role",
         "description": "Indicates the role of the provider providing the care.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-PayerOutpatientfacilitydiagnosistype.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/PayerOutpatientfacilitydiagnosistype"
+        },
+        "name": "Payer Outpatient Facility Diagnosis Type",
+        "description": "Payer Outpatient Facility Diagnosis Type",
         "exampleBoolean": false
       },
       {
@@ -1159,14 +1159,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerProviderRoleVS.html"
+            "valueUri": "ValueSet-PayerProfessionalandnoncliniciandiagnosistype.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/PayerProviderRoleVS"
+          "reference": "ValueSet/PayerProfessionalandnoncliniciandiagnosistype"
         },
-        "name": "Payer Provider Role",
-        "description": "Payer Provider Role",
+        "name": "Diagnosis Type -- Professional and Non-Clinician",
+        "description": "Indicates if the professional and non-clinician diagnosis is principal, secondary, or first-listed",
         "exampleBoolean": false
       },
       {
@@ -1177,14 +1177,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PresentOnAdmissionDiagnosisTypeVS.html"
+            "valueUri": "ValueSet-PayerProviderRoleVS.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/PresentOnAdmissionDiagnosisTypeVS"
+          "reference": "ValueSet/PayerProviderRoleVS"
         },
-        "name": "Present-on-admission Diagnosis Type",
-        "description": "Indicates if the Present on Admission Code applies to the Primary or secondary diagnosis",
+        "name": "Payer Provider Role",
+        "description": "Payer Provider Role",
         "exampleBoolean": false
       },
       {
