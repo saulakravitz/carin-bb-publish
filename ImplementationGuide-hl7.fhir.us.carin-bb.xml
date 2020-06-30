@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-06-29T23:11:33+00:00"/>
+  <date value="2020-06-30T17:01:42+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -605,20 +605,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-IdentifierTypeVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/IdentifierTypeVS"/>
-      </reference>
-      <name value="Identifier Type"/>
-      <description value="IdentifierType"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-MSDRGVS.html"/>
       </extension>
       <reference>
@@ -773,6 +759,34 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-OrganizationIdentifierTypeVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OrganizationIdentifierTypeVS"/>
+      </reference>
+      <name value="Organization Identifier Type"/>
+      <description value="Organization  Identifier Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-PatientIdentifierTypeVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PatientIdentifierTypeVS"/>
+      </reference>
+      <name value="Patient Identifier Type"/>
+      <description value="Patient Identifier Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-PayerAdjudicationAmountCategoryVS.html"/>
       </extension>
       <reference>
@@ -913,6 +927,20 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-IdentifierTypeCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/IdentifierTypeCS"/>
+      </reference>
+      <name value="Identifier Type"/>
+      <description value="Identifier Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-PayerAdjudicationCategoryCS.html"/>
       </extension>
       <reference>
@@ -983,12 +1011,12 @@
         <valueString value="OperationDefinition"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="OperationDefinition-CARIN-BB-Assemble-ExplanationOfBenefit.html"/>
+        <valueUri value="OperationDefinition-Assemble-ExplanationOfBenefit.html"/>
       </extension>
       <reference>
-        <reference value="OperationDefinition/CARIN-BB-Assemble-ExplanationOfBenefit"/>
+        <reference value="OperationDefinition/Assemble-ExplanationOfBenefit"/>
       </reference>
-      <name value="CARIN BB Assemble EOB"/>
+      <name value="Assemble ExplanationOfBenefit"/>
       <description value="This operation is used to return ExplanationOfBenefit resources related to a patient along with all the reference resources. &#xA;&#xA; The operation takes the optional input parameters: &#xA;  - patient id&#xA;  - start date&#xA;  - end date&#xA;  - document type &#xA;&#xA; and returns a [Bundle](http://hl7.org/fhir/bundle.html) of type &quot;searchset&quot; containing [CARIN BB ExplanationOfBenefit and reference resources](https://build.fhir.org/ig/HL7/carin-bb/profiles.html) for the patient. The principle intended use for this operation is to provide a patient with access to their available ExplanationOfBenefit information."/>
       <exampleBoolean value="false"/>
     </resource>

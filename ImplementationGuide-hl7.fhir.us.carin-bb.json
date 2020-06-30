@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-06-29T23:11:33+00:00",
+  "date": "2020-06-30T17:01:42+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -835,24 +835,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-IdentifierTypeVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/IdentifierTypeVS"
-        },
-        "name": "Identifier Type",
-        "description": "IdentifierType",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-MSDRGVS.html"
           }
         ],
@@ -1051,6 +1033,42 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-OrganizationIdentifierTypeVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/OrganizationIdentifierTypeVS"
+        },
+        "name": "Organization Identifier Type",
+        "description": "Organization  Identifier Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-PatientIdentifierTypeVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/PatientIdentifierTypeVS"
+        },
+        "name": "Patient Identifier Type",
+        "description": "Patient Identifier Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-PayerAdjudicationAmountCategoryVS.html"
           }
         ],
@@ -1231,6 +1249,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-IdentifierTypeCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/IdentifierTypeCS"
+        },
+        "name": "Identifier Type",
+        "description": "Identifier Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-PayerAdjudicationCategoryCS.html"
           }
         ],
@@ -1321,13 +1357,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "OperationDefinition-CARIN-BB-Assemble-ExplanationOfBenefit.html"
+            "valueUri": "OperationDefinition-Assemble-ExplanationOfBenefit.html"
           }
         ],
         "reference": {
-          "reference": "OperationDefinition/CARIN-BB-Assemble-ExplanationOfBenefit"
+          "reference": "OperationDefinition/Assemble-ExplanationOfBenefit"
         },
-        "name": "CARIN BB Assemble EOB",
+        "name": "Assemble ExplanationOfBenefit",
         "description": "This operation is used to return ExplanationOfBenefit resources related to a patient along with all the reference resources. \n\n The operation takes the optional input parameters: \n  - patient id\n  - start date\n  - end date\n  - document type \n\n and returns a [Bundle](http://hl7.org/fhir/bundle.html) of type \"searchset\" containing [CARIN BB ExplanationOfBenefit and reference resources](https://build.fhir.org/ig/HL7/carin-bb/profiles.html) for the patient. The principle intended use for this operation is to provide a patient with access to their available ExplanationOfBenefit information.",
         "exampleBoolean": false
       }

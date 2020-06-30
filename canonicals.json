@@ -14,6 +14,13 @@
     "name": "ClaimInformationCategoryCS"
   },
   {
+    "url": "http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS",
+    "id": "IdentifierTypeCS",
+    "type": "CodeSystem",
+    "version": "0.1.0",
+    "name": "IdentifierTypeCS"
+  },
+  {
     "url": "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS",
     "id": "PayerAdjudicationCategoryCS",
     "type": "CodeSystem",
@@ -43,10 +50,10 @@
   },
   {
     "url": "http://hl7.org/fhir/us/carin-bb/OperationDefinition/assemble-eob",
-    "id": "CARIN-BB-Assemble-ExplanationOfBenefit",
+    "id": "Assemble-ExplanationOfBenefit",
     "type": "OperationDefinition",
     "version": "0.1.0",
-    "name": "CARINBBAssembleEOB"
+    "name": "AssembleExplanationOfBenefit"
   },
   {
     "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage",
@@ -252,13 +259,6 @@
     "name": "ICD10PCSVS"
   },
   {
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/IdentifierTypeVS",
-    "id": "IdentifierTypeVS",
-    "type": "ValueSet",
-    "version": "0.1.0",
-    "name": "IdentifierTypeVS"
-  },
-  {
     "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/MSDRGVS",
     "id": "MSDRGVS",
     "type": "ValueSet",
@@ -334,6 +334,20 @@
     "type": "ValueSet",
     "version": "0.1.0",
     "name": "NUBCTypeOfBillVS"
+  },
+  {
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/OrganizationIdentifierTypeVS",
+    "id": "OrganizationIdentifierTypeVS",
+    "type": "ValueSet",
+    "version": "0.1.0",
+    "name": "OrganizationIdentifierTypeVS"
+  },
+  {
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/PatientIdentifierTypeVS",
+    "id": "PatientIdentifierTypeVS",
+    "type": "ValueSet",
+    "version": "0.1.0",
+    "name": "PatientIdentifierTypeVS"
   },
   {
     "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationAmountCategoryVS",
