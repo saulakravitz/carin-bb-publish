@@ -14,7 +14,7 @@
 <p>and returns a <a href="http://hl7.org/fhir/bundle.html">Bundle</a> of type &quot;searchset&quot; containing <a href="https://build.fhir.org/ig/HL7/carin-bb/profiles.html">CARIN BB ExplanationOfBenefit and reference resources</a> for the patient. The principle intended use for this operation is to provide a patient with access to their available ExplanationOfBenefit information.</p>
 </div><p>URL: [base]/ExplanationOfBenefit/$assemble-eob</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>patient</td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td><td/><td><div><p>The id of the patient resource located on the server on which this operation is executed.  If there is no match, an empty Bundle is returned</p>
 </div></td></tr><tr><td>IN</td><td>_since</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a></td><td/><td><div><p>ExplanationOfBenefit resources updated after this period will be included in the response. The intent of this parameter is to allow a client to request only records that have changed since the last request.</p>
-</div></td></tr><tr><td>IN</td><td>type</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td><a href="http://hl7.org/fhir/R4/valueset-claim-type.html">http://hl7.org/fhir/ValueSet/claim-type</a> (Required)</td><td><div><p>The type of the ExplanationOfBenefit, e.g. inpatient, outpatient, pharmacy, etc.</p>
+</div></td></tr><tr><td>IN</td><td>type</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td><a href="http://hl7.org/fhir/R4/valueset-claim-type.html">http://hl7.org/fhir/ValueSet/claim-type</a> (Required)</td><td><div><p>The type of the ExplanationOfBenefit, e.g. instituional, professional,  pharmacy, etc.</p>
 </div></td></tr><tr><td>IN</td><td>service-date</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td/><td><div><p>Date of the service for the ExplanationOfBenefit.</p>
 </div></td></tr><tr><td>IN</td><td>identifier</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Claim Number / Business Identifier of the ExplanationOfBenefit resource.</p>
 </div></td></tr><tr><td>IN</td><td>_id</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td><td/><td><div><p>Logical id for the ExplanationOfBenefit resource.</p>
@@ -78,7 +78,7 @@
     <use value="in"/>
     <min value="0"/>
     <max value="1"/>
-    <documentation value="The type of the ExplanationOfBenefit, e.g. inpatient, outpatient, pharmacy, etc."/>
+    <documentation value="The type of the ExplanationOfBenefit, e.g. instituional, professional,  pharmacy, etc."/>
     <type value="CodeableConcept"/>
     <binding>
       <strength value="required"/>

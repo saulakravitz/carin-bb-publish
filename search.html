@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="3ddd20ff-156c-435c-b598-c769e04d54dc">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="75202a55-407e-42d7-ab23-f92cbc17b3a6">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="b2319c67-c246-430c-a01e-e4895af1ec9d">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="f6064466-222a-4ba0-bff4-5354fd835a87">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="ef8cfe70-4bc2-41bd-9b11-c98cdcc330b4">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="a4e01f4e-114a-4a05-a6a8-7a0d290b8728">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="20b9de4e-9a2e-4136-ae11-dd42b5fb78c6">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="09d775d3-3b62-46b2-a0eb-a4c8605b11fd">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="2c387f10-13dd-4e37-97c0-62cc0e0b94b0">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="3e2861ac-b899-429f-acb7-e2a3c56b57df">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a name="0e671b24-4f32-4091-a94a-f6126bc2b67c">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="c19ca6ac-7d7a-4310-97a8-654d2e2ea363">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="70a10a26-97e1-461b-9669-902322d722b6">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="cc104f4c-e67b-4d17-ac5a-8c25f8d1df56">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -128,7 +128,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="2282d08e-814c-4e25-8366-4ef451e61874">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="be5f7189-253a-4ba7-a51d-2f989a816c21">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -176,7 +176,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
   <!-- search.md -->
 
-<div xsi:schemalocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd"><a name="948405a4-d8f9-4fa3-ab40-f7de3271b3f4">​</a>
+<div xsi:schemalocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 
 <h3>Search Behavior</h3>
 
@@ -186,7 +186,7 @@ The Coverage Reference Resource SHALL be returned with data that was effective a
 
 <h3>RESTful Capabilities by Resource/Profile</h3>
 
-A server will support an <a href="OperationDefinition-CARIN-BB-Assemble-ExplanationOfBenefit.html">$assemble-eob"</a> operation which will return a bundle including all  ExplanationOfBenefits resources from the four supported profiles  matching the search request along with all the reference resources in the response bundle. Bundle.total will show a count of the EOB instances returned.
+A server will support an <a href="OperationDefinition-Assemble-ExplanationOfBenefit.html">$assemble-eob"</a> operation which will return a bundle including all  ExplanationOfBenefits resources from the four supported profiles  matching the search request along with all the reference resources in the response bundle. Bundle.total will show a count of the EOB instances returned.
 
 These $assemble-eob operation SHALL support the following parameters:
 <table border="1" class="codesytems local">
@@ -282,7 +282,7 @@ No search capabilities are defined for the other profiles defined in the Impleme
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 30, 2020 17:01+0000">2020-06-30</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 30, 2020 17:40+0000">2020-06-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
