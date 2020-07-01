@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BenefitPaymentStatusCategoryVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-ClaimAdjudicationCategoryCS.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-innetworkbenefitpaymentstatus">innetworkbenefitpaymentstatus</a></td><td>in network benefit payment status</td><td>Undefined</td></tr><tr><td><a href="CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-outofnetworkbenefitpaymentstatus">outofnetworkbenefitpaymentstatus</a></td><td>out of network benefit payment status</td><td>Undefined</td></tr><tr><td><a href="CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-otherbenefitpaymentstatus">otherbenefitpaymentstatus</a></td><td>other benefit payment status</td><td>Undefined</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/BenefitPaymentStatusCategoryVS"/>
+  <version value="0.1.0"/>
+  <name value="BenefitPaymentStatusCategoryVS"/>
+  <title value="Benefit Payment Status Category"/>
+  <status value="active"/>
+  <date value="2020-07-01T21:42:39+00:00"/>
+  <publisher value="HL7 Financial Management Working Group"/>
+  <contact>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Benefit Payment Status Category"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS"/>
+      <concept>
+        <code value="innetworkbenefitpaymentstatus"/>
+        <display value="in network benefit payment status"/>
+      </concept>
+      <concept>
+        <code value="outofnetworkbenefitpaymentstatus"/>
+        <display value="out of network benefit payment status"/>
+      </concept>
+      <concept>
+        <code value="otherbenefitpaymentstatus"/>
+        <display value="other benefit payment status"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

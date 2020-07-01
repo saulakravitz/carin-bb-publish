@@ -1,0 +1,107 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationAmountCategoryVS> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PayerAdjudicationAmountCategoryVS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-PayerAdjudicationCategoryCS.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-submitted\">submitted</a></td><td>Submitted</td><td>The total submitted amount for the claim or group or line item.</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-allowed\">allowed</a></td><td>Allowed</td><td>Allowed</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-deductible\">deductible</a></td><td>Deductible</td><td>Amount deducted from the eligible amount prior to adjudication.</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-coins\">coins</a></td><td>coins</td><td/></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-copay\">copay</a></td><td>copay</td><td>Patient Co-Payment</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-noncovered\">noncovered</a></td><td>noncovered</td><td>The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-priorpayerpaid\">priorpayerpaid</a></td><td>priorpayerpaid</td><td>The reduction in the payment amount to reflect the carrier as a secondary payor.</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-payment\">payment</a></td><td>payment</td><td>payment</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidbypatient\">paidbypatient</a></td><td>paid by patient</td><td>The amount paid by the patient at the point of service.</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtopatient\">paidtopatient</a></td><td>paid to patient</td><td>paid to patient</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtoprovider\">paidtoprovider</a></td><td>paid to provider</td><td>The amount paid to the provider.</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-memberliability\">memberliability</a></td><td>member liability</td><td>The amount of the member's liability.</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-discount\">discount</a></td><td>discount</td><td>The amount of the discount</td></tr><tr><td><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-drugcost\">drugcost</a></td><td>drug cost</td><td>Price paid for the drug excluding mfr or other discounts.  It typically is the sum of the following components: ingredient cost, dispensing fee, sales tax, and vaccine administration</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationAmountCategoryVS"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "PayerAdjudicationAmountCategoryVS"];
+  fhir:ValueSet.title [ fhir:value "Payer Adjudication Amount Category"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2020-07-01T21:42:39+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Financial Management Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/fm/index.cfm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "This describes the various amount fields used when payers receive and adjudicate a claim."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "submitted" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Submitted" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "allowed" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allowed" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "deductible" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Deductible" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "coins" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "coins" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "copay" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "copay" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "noncovered" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "noncovered" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "priorpayerpaid" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "priorpayerpaid" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "payment" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "payment" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "paidbypatient" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "paid by patient" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "paidtopatient" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "paid to patient" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "paidtoprovider" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "paid to provider" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "memberliability" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "member liability" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "discount" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "discount" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "drugcost" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "drug cost" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationAmountCategoryVS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/ValueSet/PayerAdjudicationAmountCategoryVS.ttl> .
+
+# -------------------------------------------------------------------------------------
+
