@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="carin-bb-searchparameter-explanationofbenefit-created"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2019-12-16T06:41:13.000+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SearchParameter: CARINBlueButton_ExplanationOfBenefit_Created_SearchParameter</h2><p><b> description</b> : The creation date for the EOB
+         </p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/carin/SearchParameter/carin-bb-searchparameter-explanationofbenefit-created"/>
+  <version value="0.1.0"/>
+  <name value="CARINBlueButton_ExplanationOfBenefit_Created_SearchParameter"/>
+  <derivedFrom value="http://hl7.org/fhir/SearchParameter/ExplanationOfBenefit-created"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-12-01T09:48:45+00:00"/>
+  <publisher value="HL7 Financial Management Working Group"/>
+  <contact>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="The creation date for the EOB"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <code value="created"/>
+  <base value="ExplanationOfBenefit"/>
+  <type value="date"/>
+  <expression value="explanationofbenefit.created"/>
+  <xpath value="f:explanationofbenefit/f:created"/>
+  <xpathUsage value="normal"/>
+  <comparator value="eq"/>
+  <comparator value="ne"/>
+  <comparator value="gt"/>
+  <comparator value="ge"/>
+  <comparator value="lt"/>
+  <comparator value="le"/>
+  <comparator value="sa"/>
+  <comparator value="eb"/>
+  <comparator value="ap"/>
+</SearchParameter>

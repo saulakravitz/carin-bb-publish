@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-06-30T20:24:02+00:00"/>
+  <date value="2020-07-01T20:11:54+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -792,7 +792,7 @@
       <reference>
         <reference value="ValueSet/PayerInpatientfacilitydiagnosistype"/>
       </reference>
-      <name value="Payer Inpatient Facility Diagnosis Type"/>
+      <name value="Diagnosis Type -- Inpatient Facility"/>
       <description value="Payer Inpatient Facility Diagnosis Type"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -820,7 +820,7 @@
       <reference>
         <reference value="ValueSet/PayerOutpatientfacilitydiagnosistype"/>
       </reference>
-      <name value="Payer Outpatient Facility Diagnosis Type"/>
+      <name value="Diagnosis Type -- Outpatient Facility"/>
       <description value="Payer Outpatient Facility Diagnosis Type"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -863,7 +863,7 @@
         <reference value="ValueSet/PayerProfessionalandnoncliniciandiagnosistype"/>
       </reference>
       <name value="Diagnosis Type -- Professional and Non-Clinician"/>
-      <description value="Indicates if the professional and non-clinician diagnosis is principal, secondary, or first-listed"/>
+      <description value="Payer Professional and Non-Clinician Diagnosis Type"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1008,16 +1008,100 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="OperationDefinition"/>
+        <valueString value="SearchParameter"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="OperationDefinition-Assemble-ExplanationOfBenefit.html"/>
+        <valueUri value="SearchParameter-carin-bb-searchparameter-coverage-patient.html"/>
       </extension>
       <reference>
-        <reference value="OperationDefinition/Assemble-ExplanationOfBenefit"/>
+        <reference value="SearchParameter/carin-bb-searchparameter-coverage-patient"/>
       </reference>
-      <name value="Assemble ExplanationOfBenefit"/>
-      <description value="This operation is used to return ExplanationOfBenefit resources related to a patient along with all the reference resources. &#xA;&#xA; The operation takes the optional input parameters: &#xA;  - patient id&#xA;  - start date&#xA;  - end date&#xA;  - document type &#xA;&#xA; and returns a [Bundle](http://hl7.org/fhir/bundle.html) of type &quot;searchset&quot; containing [CARIN BB ExplanationOfBenefit and reference resources](https://build.fhir.org/ig/HL7/carin-bb/profiles.html) for the patient. The principle intended use for this operation is to provide a patient with access to their available ExplanationOfBenefit information."/>
+      <name value="CARINBlueButton_Coverage_Patient_SearchParameter"/>
+      <description value="Retrieve coverages for a patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-carin-bb-searchparameter-explanationofbenefit-created.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/carin-bb-searchparameter-explanationofbenefit-created"/>
+      </reference>
+      <name value="CARINBlueButton_ExplanationOfBenefit_Created_SearchParameter"/>
+      <description value="The creation date for the EOB"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-carin-bb-searchparameter-explanationofbenefit-identifier.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/carin-bb-searchparameter-explanationofbenefit-identifier"/>
+      </reference>
+      <name value="CARINBlueButton_ExplanationOfBenefit_Identifier_SearchParameter"/>
+      <description value="The business/claim identifier of the Explanation of Benefit"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-carin-bb-searchparameter-explanationofbenefit-insurer.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/carin-bb-searchparameter-explanationofbenefit-insurer"/>
+      </reference>
+      <name value="CARINBlueButton_ExplanationOfBenefit_Insurer_SearchParameter"/>
+      <description value="The party responsible for the claim"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-carin-bb-searchparameter-explanationofbenefit-patient.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/carin-bb-searchparameter-explanationofbenefit-patient"/>
+      </reference>
+      <name value="CARINBlueButton_ExplanationOfBenefit_Patient_SearchParameter"/>
+      <description value="The reference to the patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-carin-bb-searchparameter-explanationofbenefit-service-date.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/carin-bb-searchparameter-explanationofbenefit-service-date"/>
+      </reference>
+      <name value="CARINBlueButton_ExplanationOfBenefit_ServiceDate_SearchParameter"/>
+      <description value="Date of the service for the EOB"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-carin-bb-searchparameter-explanationofbenefit-type.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/carin-bb-searchparameter-explanationofbenefit-type"/>
+      </reference>
+      <name value="CARINBlueButton_ExplanationOfBenefit_Type_SearchParameter"/>
+      <description value="The type of the ExplanationOfBenefit"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
