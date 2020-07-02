@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CARINConsumerDirectedPayerDataExchange"];
   fhir:ImplementationGuide.title [ fhir:value "CARIN Consumer Directed Payer Data Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-07-01T21:42:39+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-07-02T18:15:55+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -757,7 +757,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/ICD10CMVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ICD-10-CM Diagnosis Codes" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ICD-10-CM Diagnosis Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ICD-10-CM Diagnosis Codes.  ***We need ALL Codes, inactive and inactive.   Current binding is to active codes only***" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 26;
@@ -1207,7 +1207,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/ClaimAdjudicationCategoryCS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Claim Adjudication Category" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for EOB.item.adjudication.category" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for EOB.item.adjudication.category and total.category" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 51;
