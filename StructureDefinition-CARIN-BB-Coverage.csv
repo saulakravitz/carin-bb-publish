@@ -91,7 +91,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 For selfpay it may provide multiple paying persons and/or organizations.","Need to identify the issuer to target for claim processing and for coordination of benefit processing.","","","","","","","",,,,,"",,,,"Coverage.payor",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.author","A05","IN1-3","C.30"
 "Coverage.class","","","",2,*,"Y","","","BackboneElement {[]} {[]}
-","Additional coverage classifications","A suite of underwriter specific classifiers.","For example may be used to identify a class of coverage or employer group, Policy, Plan.","The codes provided on the health card which identify or confirm the specific policy for the insurer.","","","","","","","",,,,,"","value:type.coding.code}
+","Additional coverage classifications","A suite of underwriter specific classifiers.","For example may be used to identify a class of coverage or employer group, Policy, Plan.","The codes provided on the health card which identify or confirm the specific policy for the insurer.","","","","","","","",,,,,"","pattern:$this}
 ","Slice based on value pattern",,"open","Coverage.class",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Coverage.class.id","","","",0,1,"","","","string {[]} {[]}
@@ -156,7 +156,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Coverage.class.type.coding.version","","","",0,1,"","","Y","string {[]} {[]}
 ","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./codeSystemVersion","C*E.7"
-"Coverage.class.type.coding.code","","","",1,1,"","","Y","code {[]} {[]}
+"Coverage.class.type.coding.code","","","",0,1,"","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""group""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./code","C*E.1"
 "Coverage.class.type.coding.display","","","",0,1,"","","Y","string {[]} {[]}
@@ -215,7 +215,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Coverage.class.type.coding.version","","","",0,1,"","","Y","string {[]} {[]}
 ","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./codeSystemVersion","C*E.7"
-"Coverage.class.type.coding.code","","","",1,1,"","","Y","code {[]} {[]}
+"Coverage.class.type.coding.code","","","",0,1,"","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""plan""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./code","C*E.1"
 "Coverage.class.type.coding.display","","","",0,1,"","","Y","string {[]} {[]}

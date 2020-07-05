@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-07-02T22:04:33+00:00",
+  "date": "2020-07-05T19:26:28+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -662,7 +662,7 @@
           "reference": "ValueSet/ClaimAdjudicationCategoryVS"
         },
         "name": "Claim Adjudication Category",
-        "description": "Values for EOB.item.adjudication.category",
+        "description": "Values for EOB.item.adjudication.category, as per Igor",
         "exampleBoolean": false
       },
       {
@@ -1249,6 +1249,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-CoverageClassCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/CoverageClassCS"
+        },
+        "name": "Coverage Class",
+        "description": "Coverage Class",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-IdentifierTypeCS.html"
           }
         ],
@@ -1519,6 +1537,10 @@
       {
         "code": "path-resource",
         "value": "input/testing"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/history"
       },
       {
         "code": "path-pages",
