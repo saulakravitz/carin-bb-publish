@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="fb20b43c-ef24-4194-8c81-25dc844991c3">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="110d6641-1044-40e0-ad3e-731c90ede5de">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="eeeae964-c244-4eb7-9748-881f361210ff">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="d3473d82-ba86-4f56-ae64-7d1b8e05cadb">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="9ee45ea9-0b0c-46fe-9bcf-22705e76d706">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="aa087207-c187-48c4-b498-488d8bc267f0">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="869c14c4-752a-4a67-81bf-f93aec1e326f">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="17af06a9-d397-4ad4-a380-2c05feaf29d5">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="483da01f-7845-46c9-a5eb-7f7c2971f743">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="dac49963-fc03-4ab4-998c-6f74acf20aa0">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a name="912c7a5b-ac87-434a-843f-c6467715cdf9">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="c2309b35-c838-49df-ba36-65427473d2fc">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="c44223cb-00be-472a-886b-0ba4dc41afe9">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="cd95121e-1739-4ea7-8004-db7f84725465">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -128,7 +128,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="56e7ec3f-ade3-40f4-a62c-29994d48decd">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="b39b7416-27d6-4df2-b49a-2d791d74b877">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -2513,6 +2513,7 @@
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>ICD10 Diagnostic codes.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-icd-10.html">ICD-10Codes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Provides health context for the evaluation of the products and/or services.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -2522,11 +2523,10 @@
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>diagnosisCodeableConcept</td></tr>
   <tr><td>Definition</td><td><p>The nature of illness or problem in a coded form or as a reference to an external defined Condition.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ICD10CMVS.html">ICD-10-CM Diagnosis Codes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Provides health context for the evaluation of the products and/or services.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -2651,7 +2651,7 @@
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>procedureCodeableConcept</td></tr>
   <tr><td>Definition</td><td><p>The code or reference to a Procedure resource which identifies the clinical intervention performed.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ICD10PCSVS.html">ICD-10-PCS</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
@@ -5002,7 +5002,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 5, 2020 19:26+0000">2020-07-05</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 5, 2020 19:57+0000">2020-07-05</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
