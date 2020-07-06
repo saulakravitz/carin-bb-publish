@@ -127,10 +127,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.type","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","Category or discipline","The category of claim, e.g. oral, pharmacy, vision, institutional, professional.","The majority of jurisdictions use: oral, pharmacy, vision, professional and institutional, or variants on those terms, as the general styles of claims. The valueset is extensible to accommodate other jurisdictional requirements.","Claim type determine the general sets of business rules applied for information requirements and adjudication.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/ValueSet/claim-type""/>
+    <system value=""http://terminology.hl7.org/CodeSystem/claim-type""/>
     <code value=""#pharmacy""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/ValueSet/claim-type","",,,,"ExplanationOfBenefit.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","http://terminology.hl7.org/CodeSystem/claim-type","",,,,"ExplanationOfBenefit.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","FiveWs.class"
 "ExplanationOfBenefit.subType","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","More granular claim type","A finer grained suite of claim type codes which may convey additional information such as Inpatient vs Outpatient and/or a specialty service.","This may contain the local bill type codes such as the US UB-04 bill type code.","Some jurisdictions need a finer grained claim type for routing and adjudication.","","","","","","","",,"example","A more granular claim typecode.","http://hl7.org/fhir/ValueSet/claim-subtype","",,,,"ExplanationOfBenefit.subType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -365,7 +365,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS""/>
-    <code value=""brandGenericCode""/>
+    <code value=""brandgenericcode""/>
   </coding>
 </valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -403,7 +403,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS""/>
-    <code value=""rxOriginCode""/>
+    <code value=""rxorigincode""/>
   </coding>
 </valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -479,7 +479,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS""/>
-    <code value=""dawCode""/>
+    <code value=""dawcode""/>
   </coding>
 </valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -555,7 +555,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS""/>
-    <code value=""daysSupply""/>
+    <code value=""dayssupply""/>
   </coding>
 </valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategoryVS","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
