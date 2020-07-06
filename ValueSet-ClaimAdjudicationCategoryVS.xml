@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="ClaimAdjudicationCategoryVS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-AdjudicationPayerValueCodesVS.html">http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationPayerValueCodesVS</a></li><li>Import all the codes that are contained in <a href="ValueSet-BenefitPaymentStatusVS.html">http://hl7.org/fhir/us/carin-bb/ValueSet/BenefitPaymentStatusVS</a></li><li>Include these codes as defined in <a href="CodeSystem-ClaimAdjudicationCategoryCS.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-denialreason">denialreason</a></td><td>payment denial reason</td><td>Undefined</td></tr><tr><td><a href="CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-allowedunits">allowedunits</a></td><td>allowed units</td><td>Undefined</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-PayerAdjudicationValueCodesVS.html">http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationValueCodesVS</a></li><li>Import all the codes that are contained in <a href="ValueSet-BenefitPaymentStatusVS.html">http://hl7.org/fhir/us/carin-bb/ValueSet/BenefitPaymentStatusVS</a></li><li>Include these codes as defined in <a href="CodeSystem-ClaimAdjudicationCategoryCS.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-denialreason">denialreason</a></td><td>payment denial reason</td><td>Undefined</td></tr><tr><td><a href="CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-allowedunits">allowedunits</a></td><td>allowed units</td><td>Undefined</td></tr></table></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimAdjudicationCategoryVS"/>
   <version value="0.1.0"/>
   <name value="ClaimAdjudicationCategoryVS"/>
   <title value="Claim Adjudication Category"/>
   <status value="active"/>
-  <date value="2020-07-06T17:02:23+00:00"/>
+  <date value="2020-07-06T17:13:09+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -26,7 +26,7 @@
   <description value="Values for EOB.item.adjudication.category, as per Igor"/>
   <compose>
     <include>
-      <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationPayerValueCodesVS"/>
+      <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationValueCodesVS"/>
     </include>
     <include>
       <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/BenefitPaymentStatusVS"/>

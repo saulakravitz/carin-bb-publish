@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-07-06T17:02:23+00:00"/>
+  <date value="2020-07-06T17:13:09+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -360,20 +360,6 @@
       </reference>
       <name value="Adjudication Denial Reason"/>
       <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-AdjudicationPayerValueCodesVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/AdjudicationPayerValueCodesVS"/>
-      </reference>
-      <name value="Payer Adjudication Value Codes"/>
-      <description value="As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -766,6 +752,20 @@
       </reference>
       <name value="Payer Adjudication Amount Category"/>
       <description value="This describes the various amount fields used when payers receive and adjudicate a claim."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-PayerAdjudicationValueCodesVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PayerAdjudicationValueCodesVS"/>
+      </reference>
+      <name value="Payer Adjudication Value Codes"/>
+      <description value="As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

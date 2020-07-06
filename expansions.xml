@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2616cb77-702c-4961-aa78-62a7c3c15138"/>
+  <id value="dc15a333-e0b0-453f-b160-be05cab1382f"/>
   <meta>
-    <lastUpdated value="2020-07-06T17:02:23.260+00:00"/>
+    <lastUpdated value="2020-07-06T17:13:09.445+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -35,7 +35,7 @@
         <name value="AdjudicationDenialReasonVS"/>
         <title value="Adjudication Denial Reason"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -50,285 +50,12 @@
         </contact>
         <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
         <expansion>
-          <identifier value="urn:uuid:040ae1dc-6ec8-4674-9814-a6831bbd7e0b"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:32f61777-a20b-40b3-b976-a288b4c94e33"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationPayerValueCodesVS"/>
-    <resource>
-      <ValueSet>
-        <id value="AdjudicationPayerValueCodesVS"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 14 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>
-                  <a href="http://hl7.org/fhir/R4/codesystem-adjudication.html">Adjudication Value Codes v4.0.1 (CodeSystem)</a>
-                </li>
-                <li>
-                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html">Payer Adjudication Category v0.1.0 (CodeSystem)</a>
-                </li>
-              </ul>
-            </div>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-adjudication-submitted"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-submitted">submitted</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/adjudication</td>
-                <td>Submitted Amount</td>
-                <td>The total submitted amount for the claim or group or line item.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-adjudication-copay"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-copay">copay</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/adjudication</td>
-                <td>CoPay</td>
-                <td>Patient Co-Payment</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-adjudication-eligible"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-eligible">eligible</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/adjudication</td>
-                <td>Eligible Amount</td>
-                <td>Amount of the change which is considered for adjudication.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-adjudication-deductible"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-deductible">deductible</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/adjudication</td>
-                <td>Deductible</td>
-                <td>Amount deducted from the eligible amount prior to adjudication.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-adjudication-benefit"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-benefit">benefit</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/adjudication</td>
-                <td>Benefit Amount</td>
-                <td>Amount payable under the coverage</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-coinsurance"> </a>
-                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-coinsurance">coinsurance</a>
-                </td>
-                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
-                <td>Coinsurance</td>
-                <td>The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-noncovered"> </a>
-                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-noncovered">noncovered</a>
-                </td>
-                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
-                <td>Noncovered</td>
-                <td>The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-priorpayerpaid"> </a>
-                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-priorpayerpaid">priorpayerpaid</a>
-                </td>
-                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
-                <td>Prior payer paid</td>
-                <td>The reduction in the payment amount to reflect the carrier as a secondary payor.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidbypatient"> </a>
-                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidbypatient">paidbypatient</a>
-                </td>
-                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
-                <td>Paid by patient</td>
-                <td>The amount paid by the patient at the point of service.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidtopatient"> </a>
-                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtopatient">paidtopatient</a>
-                </td>
-                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
-                <td>Paid to patient</td>
-                <td>paid to patient</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidtoprovider"> </a>
-                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtoprovider">paidtoprovider</a>
-                </td>
-                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
-                <td>Paid to provider</td>
-                <td>The amount paid to the provider.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-memberliability"> </a>
-                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-memberliability">memberliability</a>
-                </td>
-                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
-                <td>Member liability</td>
-                <td>The amount of the member&#39;s liability.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-discount"> </a>
-                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-discount">discount</a>
-                </td>
-                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
-                <td>Discount</td>
-                <td>The amount of the discount</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-drugcost"> </a>
-                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-drugcost">drugcost</a>
-                </td>
-                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
-                <td>Drug cost</td>
-                <td>Price paid for the drug excluding mfr or other discounts.  It typically is the sum of the following components: ingredient cost, dispensing fee, sales tax, and vaccine administration</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationPayerValueCodesVS"/>
-        <version value="0.1.0"/>
-        <name value="AdjudicationPayerValueCodesVS"/>
-        <title value="Payer Adjudication Value Codes"/>
-        <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
-        <publisher value="HL7 Financial Management Working Group"/>
-        <contact>
-          <name value="HL7 Financial Management Working Group"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="fm@lists.HL7.org"/>
-          </telecom>
-        </contact>
-        <description value="As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem"/>
-        <expansion>
-          <identifier value="urn:uuid:58dfa661-8263-44d3-be73-65a6c19ba041"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
-          <total value="14"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/adjudication|4.0.1"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
-            <code value="submitted"/>
-            <display value="Submitted Amount"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
-            <code value="copay"/>
-            <display value="CoPay"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
-            <code value="eligible"/>
-            <display value="Eligible Amount"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
-            <code value="deductible"/>
-            <display value="Deductible"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
-            <code value="benefit"/>
-            <display value="Benefit Amount"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
-            <code value="coinsurance"/>
-            <display value="Coinsurance"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
-            <code value="noncovered"/>
-            <display value="Noncovered"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
-            <code value="priorpayerpaid"/>
-            <display value="Prior payer paid"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
-            <code value="paidbypatient"/>
-            <display value="Paid by patient"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
-            <code value="paidtopatient"/>
-            <display value="Paid to patient"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
-            <code value="paidtoprovider"/>
-            <display value="Paid to provider"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
-            <code value="memberliability"/>
-            <display value="Member liability"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
-            <code value="discount"/>
-            <display value="Discount"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
-            <code value="drugcost"/>
-            <display value="Drug cost"/>
-          </contains>
         </expansion>
       </ValueSet>
     </resource>
@@ -394,7 +121,7 @@
         <name value="AdjudicationValueCodesVS"/>
         <title value="Benefit Payment Status Category"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -409,8 +136,8 @@
         </contact>
         <description value="Benefit Payment Status Category"/>
         <expansion>
-          <identifier value="urn:uuid:beaa6195-f782-475d-a0b8-510a8a9b7300"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:d64fec83-5dbc-4332-b68e-d477fec99d8b"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -548,7 +275,7 @@
         <name value="AdjustmentAmountCategoryVS"/>
         <title value="Adjustment Amount Category"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -563,8 +290,8 @@
         </contact>
         <description value="Describes the various amount fields used when submitting and adjudicating a claim."/>
         <expansion>
-          <identifier value="urn:uuid:d2265087-8379-48de-99b8-c72b4ddab5cc"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:0bed6d9d-43c6-4aec-95a8-7e8442c7d633"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -684,7 +411,7 @@
         <name value="BenefitPaymentStatusCategoryVS"/>
         <title value="Benefit Payment Status Category"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -699,8 +426,8 @@
         </contact>
         <description value="Benefit Payment Status Category"/>
         <expansion>
-          <identifier value="urn:uuid:60303a34-9676-4301-9596-c641f7a7f4d4"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:5aa70cbb-4b49-412b-8102-f1ad972c8beb"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -790,7 +517,7 @@
         <name value="BenefitPaymentStatusVS"/>
         <title value="Benefit Payment Status"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -805,8 +532,8 @@
         </contact>
         <description value="Indicates the in network or out of network payment status of the claim."/>
         <expansion>
-          <identifier value="urn:uuid:f006443d-3536-46b9-9c6a-4f1eb918e832"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:dc07a299-0c1e-4907-a85a-061c77eccb71"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -864,7 +591,7 @@
         <name value="AdjudicationDenialReasonVS"/>
         <title value="Adjudication Denial Reason"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -879,8 +606,8 @@
         </contact>
         <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
         <expansion>
-          <identifier value="urn:uuid:040ae1dc-6ec8-4674-9814-a6831bbd7e0b"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:32f61777-a20b-40b3-b976-a288b4c94e33"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -918,7 +645,7 @@
         <name value="AdjudicationDenialReasonVS"/>
         <title value="Adjudication Denial Reason"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -933,8 +660,8 @@
         </contact>
         <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
         <expansion>
-          <identifier value="urn:uuid:040ae1dc-6ec8-4674-9814-a6831bbd7e0b"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:32f61777-a20b-40b3-b976-a288b4c94e33"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -959,13 +686,13 @@
                   <a href="http://hl7.org/fhir/R4/codesystem-adjudication.html">Adjudication Value Codes v4.0.1 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="ValueSet-AdjudicationPayerValueCodesVS.html">Payer Adjudication Value Codes v0.1.0 (ValueSet)</a>
-                </li>
-                <li>
                   <a href="CodeSystem-PayerAdjudicationCategoryCS.html">Payer Adjudication Category v0.1.0 (CodeSystem)</a>
                 </li>
                 <li>
                   <a href="CodeSystem-ClaimAdjudicationCategoryCS.html">Claim Adjudication Category v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="ValueSet-PayerAdjudicationValueCodesVS.html">Payer Adjudication Value Codes v0.1.0 (ValueSet)</a>
                 </li>
                 <li>
                   <a href="ValueSet-BenefitPaymentStatusVS.html">Benefit Payment Status v0.1.0 (ValueSet)</a>
@@ -1166,7 +893,7 @@
         <name value="ClaimAdjudicationCategoryVS"/>
         <title value="Claim Adjudication Category"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1181,8 +908,8 @@
         </contact>
         <description value="Values for EOB.item.adjudication.category, as per Igor"/>
         <expansion>
-          <identifier value="urn:uuid:980cfba1-4f44-4c1f-82c9-33ee99f298dc"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:e5960b0d-fb98-4665-a8c2-38b2502a8cb2"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <total value="19"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1190,7 +917,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationPayerValueCodesVS|0.1.0"/>
+            <valueUri value="http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationValueCodesVS|0.1.0"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -1512,7 +1239,7 @@
         <name value="ClaimInformationCategoryVS"/>
         <title value="Claim Information Category"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1527,8 +1254,8 @@
         </contact>
         <description value="Claim Information Category - Used as the discriminator for supportingInfo"/>
         <expansion>
-          <identifier value="urn:uuid:f03ed094-e104-4fbc-bc0a-155ed00af07e"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:6090389e-a253-4ea1-9453-8b141f7a23e6"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1708,7 +1435,7 @@
         <name value="ClaimPayeeTypeCodeVS"/>
         <title value="Claim Payee Type Code"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1723,8 +1450,8 @@
         </contact>
         <description value="Identifies recipient of benefits payable; i.e., provider or subscriber."/>
         <expansion>
-          <identifier value="urn:uuid:df720f26-7297-4dba-88f2-cd276df20cd8"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:0acfd431-7ea9-4106-b817-c2cdf73f5c81"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1806,7 +1533,7 @@
         <name value="ClaimPaymentStatusCodeVS"/>
         <title value="Claim Payment Status Code"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1821,8 +1548,8 @@
         </contact>
         <description value="Indicates whether the claim / item was paid or denied."/>
         <expansion>
-          <identifier value="urn:uuid:45826495-a96a-45ee-bcd6-8588d669252f"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:b095faf5-dcf3-460f-a149-c26b4ab120ff"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1875,7 +1602,7 @@
         <name value="AdjudicationDenialReasonVS"/>
         <title value="Adjudication Denial Reason"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1890,8 +1617,8 @@
         </contact>
         <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
         <expansion>
-          <identifier value="urn:uuid:040ae1dc-6ec8-4674-9814-a6831bbd7e0b"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:32f61777-a20b-40b3-b976-a288b4c94e33"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1929,7 +1656,7 @@
         <name value="AdjudicationDenialReasonVS"/>
         <title value="Adjudication Denial Reason"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1944,8 +1671,8 @@
         </contact>
         <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
         <expansion>
-          <identifier value="urn:uuid:040ae1dc-6ec8-4674-9814-a6831bbd7e0b"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:32f61777-a20b-40b3-b976-a288b4c94e33"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1983,7 +1710,7 @@
         <name value="AdjudicationDenialReasonVS"/>
         <title value="Adjudication Denial Reason"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1998,8 +1725,8 @@
         </contact>
         <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
         <expansion>
-          <identifier value="urn:uuid:040ae1dc-6ec8-4674-9814-a6831bbd7e0b"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:32f61777-a20b-40b3-b976-a288b4c94e33"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2037,7 +1764,7 @@
         <name value="AdjudicationDenialReasonVS"/>
         <title value="Adjudication Denial Reason"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2052,8 +1779,8 @@
         </contact>
         <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
         <expansion>
-          <identifier value="urn:uuid:040ae1dc-6ec8-4674-9814-a6831bbd7e0b"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:32f61777-a20b-40b3-b976-a288b4c94e33"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2091,7 +1818,7 @@
         <name value="AdjudicationDenialReasonVS"/>
         <title value="Adjudication Denial Reason"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2106,8 +1833,8 @@
         </contact>
         <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
         <expansion>
-          <identifier value="urn:uuid:040ae1dc-6ec8-4674-9814-a6831bbd7e0b"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:32f61777-a20b-40b3-b976-a288b4c94e33"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2145,7 +1872,7 @@
         <name value="AdjudicationDenialReasonVS"/>
         <title value="Adjudication Denial Reason"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2160,8 +1887,8 @@
         </contact>
         <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
         <expansion>
-          <identifier value="urn:uuid:040ae1dc-6ec8-4674-9814-a6831bbd7e0b"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:32f61777-a20b-40b3-b976-a288b4c94e33"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2199,7 +1926,7 @@
         <name value="AdjudicationDenialReasonVS"/>
         <title value="Adjudication Denial Reason"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2214,8 +1941,8 @@
         </contact>
         <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
         <expansion>
-          <identifier value="urn:uuid:040ae1dc-6ec8-4674-9814-a6831bbd7e0b"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:32f61777-a20b-40b3-b976-a288b4c94e33"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2253,7 +1980,7 @@
         <name value="AdjudicationDenialReasonVS"/>
         <title value="Adjudication Denial Reason"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2268,8 +1995,8 @@
         </contact>
         <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
         <expansion>
-          <identifier value="urn:uuid:040ae1dc-6ec8-4674-9814-a6831bbd7e0b"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:32f61777-a20b-40b3-b976-a288b4c94e33"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2307,7 +2034,7 @@
         <name value="AdjudicationDenialReasonVS"/>
         <title value="Adjudication Denial Reason"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2322,8 +2049,8 @@
         </contact>
         <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
         <expansion>
-          <identifier value="urn:uuid:040ae1dc-6ec8-4674-9814-a6831bbd7e0b"/>
-          <timestamp value="2020-07-06T17:02:57+00:00"/>
+          <identifier value="urn:uuid:32f61777-a20b-40b3-b976-a288b4c94e33"/>
+          <timestamp value="2020-07-06T17:13:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2393,7 +2120,7 @@
         <name value="OrganizationIdentifierTypeVS"/>
         <title value="Organization Identifier Type"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2408,8 +2135,8 @@
         </contact>
         <description value="Organization  Identifier Type"/>
         <expansion>
-          <identifier value="urn:uuid:271eebda-8ab2-4456-8667-5d4f1419d261"/>
-          <timestamp value="2020-07-06T17:03:00+00:00"/>
+          <identifier value="urn:uuid:672bf70e-4457-45fe-85bb-8de648723b50"/>
+          <timestamp value="2020-07-06T17:13:51+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2507,7 +2234,7 @@
         <name value="PatientIdentifierTypeVS"/>
         <title value="Patient Identifier Type"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2522,8 +2249,8 @@
         </contact>
         <description value="Patient Identifier Type"/>
         <expansion>
-          <identifier value="urn:uuid:a23ea5db-5043-4461-84c4-f7c28aa5c514"/>
-          <timestamp value="2020-07-06T17:03:00+00:00"/>
+          <identifier value="urn:uuid:95dd9a64-509a-4c1e-b5ac-b2e001654e36"/>
+          <timestamp value="2020-07-06T17:13:51+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2666,7 +2393,7 @@
         <name value="PayerAdjudicationAmountCategoryVS"/>
         <title value="Payer Adjudication Amount Category"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2681,8 +2408,8 @@
         </contact>
         <description value="This describes the various amount fields used when payers receive and adjudicate a claim."/>
         <expansion>
-          <identifier value="urn:uuid:5eaca8b8-b391-451c-9661-740c1bff67ef"/>
-          <timestamp value="2020-07-06T17:03:00+00:00"/>
+          <identifier value="urn:uuid:b7619f03-36f2-44a5-8429-cd5fadb08791"/>
+          <timestamp value="2020-07-06T17:13:51+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2736,6 +2463,279 @@
             <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS"/>
             <code value="patientpayamount"/>
             <display value="patient pay amount"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationValueCodesVS"/>
+    <resource>
+      <ValueSet>
+        <id value="PayerAdjudicationValueCodesVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 14 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="http://hl7.org/fhir/R4/codesystem-adjudication.html">Adjudication Value Codes v4.0.1 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html">Payer Adjudication Category v0.1.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-adjudication-submitted"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-submitted">submitted</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/adjudication</td>
+                <td>Submitted Amount</td>
+                <td>The total submitted amount for the claim or group or line item.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-adjudication-copay"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-copay">copay</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/adjudication</td>
+                <td>CoPay</td>
+                <td>Patient Co-Payment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-adjudication-eligible"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-eligible">eligible</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/adjudication</td>
+                <td>Eligible Amount</td>
+                <td>Amount of the change which is considered for adjudication.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-adjudication-deductible"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-deductible">deductible</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/adjudication</td>
+                <td>Deductible</td>
+                <td>Amount deducted from the eligible amount prior to adjudication.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-adjudication-benefit"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-benefit">benefit</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/adjudication</td>
+                <td>Benefit Amount</td>
+                <td>Amount payable under the coverage</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-coinsurance"> </a>
+                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-coinsurance">coinsurance</a>
+                </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
+                <td>Coinsurance</td>
+                <td>The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-noncovered"> </a>
+                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-noncovered">noncovered</a>
+                </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
+                <td>Noncovered</td>
+                <td>The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-priorpayerpaid"> </a>
+                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-priorpayerpaid">priorpayerpaid</a>
+                </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
+                <td>Prior payer paid</td>
+                <td>The reduction in the payment amount to reflect the carrier as a secondary payor.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidbypatient"> </a>
+                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidbypatient">paidbypatient</a>
+                </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
+                <td>Paid by patient</td>
+                <td>The amount paid by the patient at the point of service.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidtopatient"> </a>
+                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtopatient">paidtopatient</a>
+                </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
+                <td>Paid to patient</td>
+                <td>paid to patient</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidtoprovider"> </a>
+                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtoprovider">paidtoprovider</a>
+                </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
+                <td>Paid to provider</td>
+                <td>The amount paid to the provider.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-memberliability"> </a>
+                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-memberliability">memberliability</a>
+                </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
+                <td>Member liability</td>
+                <td>The amount of the member&#39;s liability.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-discount"> </a>
+                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-discount">discount</a>
+                </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
+                <td>Discount</td>
+                <td>The amount of the discount</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-drugcost"> </a>
+                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-drugcost">drugcost</a>
+                </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td>
+                <td>Drug cost</td>
+                <td>Price paid for the drug excluding mfr or other discounts.  It typically is the sum of the following components: ingredient cost, dispensing fee, sales tax, and vaccine administration</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationValueCodesVS"/>
+        <version value="0.1.0"/>
+        <name value="PayerAdjudicationValueCodesVS"/>
+        <title value="Payer Adjudication Value Codes"/>
+        <status value="active"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
+        <publisher value="HL7 Financial Management Working Group"/>
+        <contact>
+          <name value="HL7 Financial Management Working Group"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="fm@lists.HL7.org"/>
+          </telecom>
+        </contact>
+        <description value="As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem"/>
+        <expansion>
+          <identifier value="urn:uuid:500b955d-588b-4a81-9a07-f77e9d40ddfb"/>
+          <timestamp value="2020-07-06T17:13:51+00:00"/>
+          <total value="14"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/adjudication|4.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+            <code value="submitted"/>
+            <display value="Submitted Amount"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+            <code value="copay"/>
+            <display value="CoPay"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+            <code value="eligible"/>
+            <display value="Eligible Amount"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+            <code value="deductible"/>
+            <display value="Deductible"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+            <code value="benefit"/>
+            <display value="Benefit Amount"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
+            <code value="coinsurance"/>
+            <display value="Coinsurance"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
+            <code value="noncovered"/>
+            <display value="Noncovered"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
+            <code value="priorpayerpaid"/>
+            <display value="Prior payer paid"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
+            <code value="paidbypatient"/>
+            <display value="Paid by patient"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
+            <code value="paidtopatient"/>
+            <display value="Paid to patient"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
+            <code value="paidtoprovider"/>
+            <display value="Paid to provider"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
+            <code value="memberliability"/>
+            <display value="Member liability"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
+            <code value="discount"/>
+            <display value="Discount"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
+            <code value="drugcost"/>
+            <display value="Drug cost"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2810,7 +2810,7 @@
         <name value="PayerInpatientFacilityProviderRoleVSProviderRoleVS"/>
         <title value="Payer - Inpatient Facility Provider Role"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2825,8 +2825,8 @@
         </contact>
         <description value="Indicates the role of the provider providing the care."/>
         <expansion>
-          <identifier value="urn:uuid:761d90af-fe6a-4369-906b-39bd848a2a2d"/>
-          <timestamp value="2020-07-06T17:03:00+00:00"/>
+          <identifier value="urn:uuid:a5876486-81a1-45e1-9534-c18c17ec2649"/>
+          <timestamp value="2020-07-06T17:13:51+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2921,7 +2921,7 @@
         <name value="PayerOutpatientFacilityProviderRoleVS"/>
         <title value="Payer - Outpatient Facility Provider Role"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2936,8 +2936,8 @@
         </contact>
         <description value="Indicates the role of the provider providing the care."/>
         <expansion>
-          <identifier value="urn:uuid:386c2787-7670-46bc-a9a3-016b1d5f9980"/>
-          <timestamp value="2020-07-06T17:03:00+00:00"/>
+          <identifier value="urn:uuid:78e3d87a-3e71-48df-b9b9-1bad5183414c"/>
+          <timestamp value="2020-07-06T17:13:51+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3043,7 +3043,7 @@
         <name value="PayerOutpatientfacilitydiagnosistype"/>
         <title value="Diagnosis Type -- Outpatient Facility"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -3058,8 +3058,8 @@
         </contact>
         <description value="Payer Outpatient Facility Diagnosis Type"/>
         <expansion>
-          <identifier value="urn:uuid:c0483d80-7f54-405c-a451-7c85af0b1a7c"/>
-          <timestamp value="2020-07-06T17:03:00+00:00"/>
+          <identifier value="urn:uuid:cee968f0-6e2a-4d3f-9826-0dfdd3f560cc"/>
+          <timestamp value="2020-07-06T17:13:51+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3151,7 +3151,7 @@
         <name value="PayerPharmacyProviderRoleVS"/>
         <title value="Payer - Pharmacy Provider Role"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -3166,8 +3166,8 @@
         </contact>
         <description value="Indicates the role of the provider providing the care."/>
         <expansion>
-          <identifier value="urn:uuid:ea77d5ef-c34c-4b51-97f1-f3b7195e25d9"/>
-          <timestamp value="2020-07-06T17:03:00+00:00"/>
+          <identifier value="urn:uuid:4ec44076-78cc-4831-916e-a618884a5666"/>
+          <timestamp value="2020-07-06T17:13:51+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3260,7 +3260,7 @@
         <name value="PayerProfessionalAndNonClinicianProviderRoleVS"/>
         <title value="Payer - Professional and Non-Clinician Provider Role"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -3275,8 +3275,8 @@
         </contact>
         <description value="Indicates the role of the provider providing the care."/>
         <expansion>
-          <identifier value="urn:uuid:13725a53-5f5d-4746-94b4-faf616b0bafb"/>
-          <timestamp value="2020-07-06T17:03:00+00:00"/>
+          <identifier value="urn:uuid:0b3a3052-3bef-4596-8e3b-a59fe2f3bb0e"/>
+          <timestamp value="2020-07-06T17:13:51+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3371,7 +3371,7 @@
         <name value="PayerProfessionalandnoncliniciandiagnosistype"/>
         <title value="Diagnosis Type -- Professional and Non-Clinician"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -3386,8 +3386,8 @@
         </contact>
         <description value="Payer Professional and Non-Clinician Diagnosis Type"/>
         <expansion>
-          <identifier value="urn:uuid:ef36ef2e-48e7-4ae1-9a24-254837fd5876"/>
-          <timestamp value="2020-07-06T17:03:00+00:00"/>
+          <identifier value="urn:uuid:246a7451-f870-4288-b2e7-9a3640269cab"/>
+          <timestamp value="2020-07-06T17:13:51+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3501,7 +3501,7 @@
         <name value="PayerProviderRoleVS"/>
         <title value="Payer Provider Role"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -3516,8 +3516,8 @@
         </contact>
         <description value="Payer Provider Role"/>
         <expansion>
-          <identifier value="urn:uuid:a8ffe4bb-0688-4b76-b2e6-1f02bdbc9316"/>
-          <timestamp value="2020-07-06T17:03:00+00:00"/>
+          <identifier value="urn:uuid:d4b67d50-8b94-4e36-b03e-b8c001dfd15e"/>
+          <timestamp value="2020-07-06T17:13:51+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3614,7 +3614,7 @@
         <name value="ProviderNetworkStatusVS"/>
         <title value="Provider Network Status"/>
         <status value="active"/>
-        <date value="2020-07-06T17:02:23+00:00"/>
+        <date value="2020-07-06T17:13:09+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -3629,8 +3629,8 @@
         </contact>
         <description value="Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission."/>
         <expansion>
-          <identifier value="urn:uuid:6bfaf693-ddb3-4388-a3d9-3823d1ed5615"/>
-          <timestamp value="2020-07-06T17:03:00+00:00"/>
+          <identifier value="urn:uuid:ceddad6c-fef0-452d-83a8-a14ba525840b"/>
+          <timestamp value="2020-07-06T17:13:51+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
