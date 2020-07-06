@@ -91,7 +91,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 For selfpay it may provide multiple paying persons and/or organizations.","Need to identify the issuer to target for claim processing and for coordination of benefit processing.","","","","","","","",,,,,"",,,,"Coverage.payor",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.author","A05","IN1-3","C.30"
 "Coverage.class","","","",2,*,"Y","","","BackboneElement {[]} {[]}
-","Additional coverage classifications","A suite of underwriter specific classifiers.","For example may be used to identify a class of coverage or employer group, Policy, Plan.","The codes provided on the health card which identify or confirm the specific policy for the insurer.","","","","","","","",,,,,"","pattern:$this}
+","Additional coverage classifications","A suite of underwriter specific classifiers.","For example may be used to identify a class of coverage or employer group, Policy, Plan.","The codes provided on the health card which identify or confirm the specific policy for the insurer.","","","","","","","",,,,,"","pattern:type}
 ","Slice based on value pattern",,"open","Coverage.class",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Coverage.class.id","","","",0,1,"","","","string {[]} {[]}

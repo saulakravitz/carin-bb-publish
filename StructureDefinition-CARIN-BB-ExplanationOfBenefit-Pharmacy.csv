@@ -272,8 +272,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Practitioner credential or specialization","The qualification of the practitioner which is applicable for this service.","","Need to specify which qualification a provider is delivering the product or service under.","","","","","","","",,"example","Provider professional qualifications.","http://hl7.org/fhir/ValueSet/provider-qualification","",,,,"ExplanationOfBenefit.careTeam.qualification",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo","","","",0,*,"Y","","","BackboneElement {[]} {[]}
-","Supporting information","Additional information codes regarding exceptions, special considerations, the condition, situation, prior or concurrent issues.","Often there are multiple jurisdiction specific valuesets which are required.","Typically these information codes are required to support the services rendered or the adjudication of the services rendered.","","","","","","","",,,,,"","pattern:$path}
-","Slice based on $this pattern",,"open","ExplanationOfBenefit.supportingInfo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Supporting information","Additional information codes regarding exceptions, special considerations, the condition, situation, prior or concurrent issues.","Often there are multiple jurisdiction specific valuesets which are required.","Typically these information codes are required to support the services rendered or the adjudication of the services rendered.","","","","","","","",,,,,"","pattern:category}
+","Slice based on $value pattern",,"open","ExplanationOfBenefit.supportingInfo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -804,7 +804,7 @@ Address {[]} {[]}Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDef
 ","Applicable note numbers","The numbers associated with notes below which apply to the adjudication of this item.","","Provides a condensed manner for associating human readable descriptive explanations for adjudications on the line item.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.noteNumber",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.item.adjudication","","","",0,*,"Y","","","BackboneElement {[]} {[]}
-","Adjudication details","If this item is a group then the values here are a summary of the adjudication of the detail items. If this item is a simple product or service then this is the result of the adjudication of this item.","","The adjudication results conveys the insurer's assessment of the item provided in the claim under the terms of the patient's insurance coverage.","","","","","","","",,,,,"","pattern:$this}
+","Adjudication details","If this item is a group then the values here are a summary of the adjudication of the detail items. If this item is a simple product or service then this is the result of the adjudication of this item.","","The adjudication results conveys the insurer's assessment of the item provided in the claim under the terms of the patient's insurance coverage.","","","","","","","",,,,,"","pattern:category}
 ","Slice based on $this pattern",,"closed","ExplanationOfBenefit.item.adjudication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.item.adjudication.id","","","",0,1,"","","","string {[]} {[]}
@@ -1175,7 +1175,7 @@ Bill CodeService Code","",1,1,"","","","CodeableConcept {[]} {[]}
 "ExplanationOfBenefit.addItem.detail.subDetail.adjudication","","","",0,*,"","","","","Added items adjudication","The adjudication results.","","","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.addItem.detail.subDetail.adjudication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.adjudication","","","",1,*,"Y","","","BackboneElement {[]} {[]}
-","Header-level adjudication","The adjudication results which are presented at the header level rather than at the line-item or add-item levels.","","Some insurers will receive line-items but provide the adjudication only at a summary or header-level.","","","","","","","",,,,,"","pattern:$this}
+","Header-level adjudication","The adjudication results which are presented at the header level rather than at the line-item or add-item levels.","","Some insurers will receive line-items but provide the adjudication only at a summary or header-level.","","","","","","","",,,,,"","pattern:category}
 ","Slice based on $this vpattern",,"closed","ExplanationOfBenefit.adjudication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.adjudication.id","","","",0,1,"","","","string {[]} {[]}
