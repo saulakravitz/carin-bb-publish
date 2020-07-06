@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "NUBCPatientDischargeStatusVS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>https://www.nubc.org/patient-discharge</code></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCPatientDischargeStatusVS"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "NUBCPatientDischargeStatusVS"];
   fhir:ValueSet.title [ fhir:value "NUBC Patient Discharge Status"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-07-05T19:57:42+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-07-06T17:02:23+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,7 +32,13 @@
        fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "NUBC Patient Discharge Status"] .
+  fhir:ValueSet.description [ fhir:value "NUBC Patient Discharge Status"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.nubc.org/patient-discharge" ]
+     ]
+  ] .
 
 # - ontology header ------------------------------------------------------------
 

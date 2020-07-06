@@ -3,14 +3,14 @@
   "id": "NUBCPatientDischargeStatusVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>https://www.nubc.org/patient-discharge</code></li></ul></div>"
   },
   "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCPatientDischargeStatusVS",
   "version": "0.1.0",
   "name": "NUBCPatientDischargeStatusVS",
   "title": "NUBC Patient Discharge Status",
   "status": "active",
-  "date": "2020-07-05T19:57:42+00:00",
+  "date": "2020-07-06T17:02:23+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -27,5 +27,12 @@
       ]
     }
   ],
-  "description": "NUBC Patient Discharge Status"
+  "description": "NUBC Patient Discharge Status",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.nubc.org/patient-discharge"
+      }
+    ]
+  }
 }
