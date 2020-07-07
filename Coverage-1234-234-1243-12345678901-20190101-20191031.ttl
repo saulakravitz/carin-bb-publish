@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Coverage/1234-234-1243-12345678901-20190101-20191031> a fhir:Coverage;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "1234-234-1243-12345678901-20190101-20191031"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "en-US"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>id</b>: 1234-234-1243-12345678901-20190101-20191031</p><p><b>meta</b>: </p><p><b>language</b>: en-US</p><p><b>identifier</b>: Member ID = 1234-234-1243-12345678901</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/coverage-selfpay HIP}\">health insurance plan policy</span></p><p><b>policyHolder</b>: <a href=\"Patient-1234-234-1243-12345678901.html\">Generated Summary: id: 1234-234-1243-12345678901; language: en-US; Member ID = 1234-234-1243-12345678901, Medical Record Number = 1234-234-1243-12345678901m, Unique Member ID = 1234-234-1243-12345678901u, Patient Account Number = 1234-234-1243-12345678901a; active; Johnny Example1 ; ph: (301)666-1212; gender: male; birthDate: 1986-01-01; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}\">unknown</span></a></p><p><b>subscriber</b>: <a href=\"Patient-1234-234-1243-12345678901.html\">Generated Summary: id: 1234-234-1243-12345678901; language: en-US; Member ID = 1234-234-1243-12345678901, Medical Record Number = 1234-234-1243-12345678901m, Unique Member ID = 1234-234-1243-12345678901u, Patient Account Number = 1234-234-1243-12345678901a; active; Johnny Example1 ; ph: (301)666-1212; gender: male; birthDate: 1986-01-01; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}\">unknown</span></a></p><p><b>subscriberId</b>: 12345678901</p><p><b>beneficiary</b>: <a href=\"Patient-1234-234-1243-12345678901.html\">Generated Summary: id: 1234-234-1243-12345678901; language: en-US; Member ID = 1234-234-1243-12345678901, Medical Record Number = 1234-234-1243-12345678901m, Unique Member ID = 1234-234-1243-12345678901u, Patient Account Number = 1234-234-1243-12345678901a; active; Johnny Example1 ; ph: (301)666-1212; gender: male; birthDate: 1986-01-01; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}\">unknown</span></a></p><p><b>dependent</b>: 01</p><p><b>relationship</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span></p><p><b>period</b>: Jan 1, 2019, 12:00:00 AM --&gt; Oct 31, 2019, 12:00:00 AM</p><p><b>payor</b>: <a href=\"Organization/Payer1\">Organization/Payer1</a></p><blockquote><p><b>class</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/coverage-class group}\">An employee group</span></p><p><b>value</b>: 021890</p><p><b>name</b>: Acme Corporation</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/coverage-class subgroup}\">A subgroup of an employee group</span></p><p><b>value</b>: 300</p><p><b>name</b>: ACME HSA PPO 1500</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/coverage-class plan}\">Plan</span></p><p><b>value</b>: XYZ123</p><p><b>name</b>: XYZ123-UPMC CONSUMER ADVA</p></blockquote><p><b>network</b>: XYZ123-UPMC CONSUMER ADVA</p></div>"
+  ];
+  fhir:Coverage.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS" ];
+         fhir:Coding.code [ fhir:value "mb" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://www.xxxhealthplan.com/fhir/memberidentifier" ];
+     fhir:Identifier.value [ fhir:value "1234-234-1243-12345678901" ]
+  ];
+  fhir:Coverage.status [ fhir:value "active"];
+  fhir:Coverage.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/coverage-selfpay" ];
+       fhir:Coding.code [ fhir:value "HIP" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "health insurance plan policy" ]
+  ];
+  fhir:Coverage.policyHolder [
+     fhir:link <http://hl7.org/fhir/us/carin-bb/Patient/1234-234-1243-12345678901>;
+     fhir:Reference.reference [ fhir:value "Patient/1234-234-1243-12345678901" ]
+  ];
+  fhir:Coverage.subscriber [
+     fhir:link <http://hl7.org/fhir/us/carin-bb/Patient/1234-234-1243-12345678901>;
+     fhir:Reference.reference [ fhir:value "Patient/1234-234-1243-12345678901" ]
+  ];
+  fhir:Coverage.subscriberId [ fhir:value "12345678901"];
+  fhir:Coverage.beneficiary [
+     fhir:link <http://hl7.org/fhir/us/carin-bb/Patient/1234-234-1243-12345678901>;
+     fhir:Reference.reference [ fhir:value "Patient/1234-234-1243-12345678901" ]
+  ];
+  fhir:Coverage.dependent [ fhir:value "01"];
+  fhir:Coverage.relationship [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/subscriber-relationship" ];
+       fhir:Coding.code [ fhir:value "self" ]
+     ]
+  ];
+  fhir:Coverage.period [
+     fhir:Period.start [ fhir:value "2019-01-01T00:00:00+00:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2019-10-31T00:00:00+00:00"^^xsd:dateTime ]
+  ];
+  fhir:Coverage.payor [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/us/carin-bb/Organization/Payer1>;
+     fhir:Reference.reference [ fhir:value "Organization/Payer1" ]
+  ];
+  fhir:Coverage.class [
+     fhir:index 0;
+     fhir:Coverage.class.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/coverage-class" ];
+         fhir:Coding.code [ fhir:value "group" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "An employee group" ]
+     ];
+     fhir:Coverage.class.value [ fhir:value "021890" ];
+     fhir:Coverage.class.name [ fhir:value "Acme Corporation" ]
+  ], [
+     fhir:index 1;
+     fhir:Coverage.class.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/coverage-class" ];
+         fhir:Coding.code [ fhir:value "subgroup" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "A subgroup of an employee group" ]
+     ];
+     fhir:Coverage.class.value [ fhir:value "300" ];
+     fhir:Coverage.class.name [ fhir:value "ACME HSA PPO 1500" ]
+  ], [
+     fhir:index 2;
+     fhir:Coverage.class.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/coverage-class" ];
+         fhir:Coding.code [ fhir:value "plan" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Plan" ]
+     ];
+     fhir:Coverage.class.value [ fhir:value "XYZ123" ];
+     fhir:Coverage.class.name [ fhir:value "XYZ123-UPMC CONSUMER ADVA" ]
+  ];
+  fhir:Coverage.network [ fhir:value "XYZ123-UPMC CONSUMER ADVA"] .
+
+<http://hl7.org/fhir/us/carin-bb/Patient/1234-234-1243-12345678901> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Organization/Payer1> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Coverage/1234-234-1243-12345678901-20190101-20191031.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/Coverage/1234-234-1243-12345678901-20190101-20191031.ttl> .
+
+# -------------------------------------------------------------------------------------
+

@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-07-07T15:11:31+00:00",
+  "date": "2020-07-07T21:09:03+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -979,24 +979,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-OrganizationIdentifierTypeVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/OrganizationIdentifierTypeVS"
-        },
-        "name": "Organization Identifier Type",
-        "description": "Organization  Identifier Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-PatientIdentifierTypeVS.html"
           }
         ],
@@ -1312,6 +1294,60 @@
         "name": "Payer Provider Role",
         "description": "Payer Provider Role",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-1234-234-1243-12345678901.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/1234-234-1243-12345678901"
+        },
+        "name": "CarinBBPatientExample1",
+        "description": "Patient Example1",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Coverage-1234-234-1243-12345678901-20190101-20191031.html"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/1234-234-1243-12345678901-20190101-20191031"
+        },
+        "name": "CarinBBCoverageExample1",
+        "description": "Coverage Example1",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExplanationOfBenefit"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ExplanationOfBenefit-1234-234-1243-12345678901-20190101-20191031.html"
+          }
+        ],
+        "reference": {
+          "reference": "ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031"
+        },
+        "name": "CarinBBInpatientEOBExample1",
+        "description": "EOB Inpatient Example1",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility"
       },
       {
         "extension": [
