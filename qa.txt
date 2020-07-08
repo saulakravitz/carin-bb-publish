@@ -1,14 +1,14 @@
 ﻿CARINConsumerDirectedPayerDataExchange : Validation Results
 =========================================
 
-err = 46, warn = 64, info = 3
+err = 45, warn = 64, info = 3
 IG Publisher Version: v1.1.2 Out of date - current version is v1.0.101-SNAPSHOT
-Generated Tue Jul 07 21:10:34 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.0 (canonical = http://hl7.org/fhir/us/carin-bb)
+Generated Wed Jul 08 13:50:15 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.0 (canonical = http://hl7.org/fhir/us/carin-bb)
 
  Build Errors : 3134 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb : 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Coverage-1234-234-1243-12345678901-20190101-20191031 : 2 / 1
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-1234-234-1243-12345678901-20190101-20191031 : 5 / 1
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-1234-234-1243-12345678901-20190101-20191031 : 4 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Patient-1234-234-1243-12345678901 : 0 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-Coverage : 1 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-ExplanationOfBenefit : 1 / 0
@@ -3223,7 +3223,6 @@ ERROR: ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031: Explana
 ERROR: ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031: ExplanationOfBenefit.provider: Unable to resolve resource "Organization/1"
 ERROR: ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept): None of the codes provided are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/ICD10CMVS (http://hl7.org/fhir/us/carin-bb/ValueSet/ICD10CMVS), and a code from this value set is required) (codes = http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A)
 ERROR: ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept).coding[0]: Code "S06.0x1A" not found; The code "S06.0x1A" is not valid in the system http://hl7.org/fhir/sid/icd-10-cm; The code provided (http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A) is not  valid in the value set All codes known to the system for "http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A"
-ERROR: ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031: ExplanationOfBenefit.adjudication[0].category: None of the codes provided are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/BenefitPaymentStatusVS (http://hl7.org/fhir/us/carin-bb/ValueSet/BenefitPaymentStatusVS), and a code from this value set is required) (codes = http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS#inoutnetwork)
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Patient-1234-234-1243-12345678901.json ==
 INFORMATION: Patient/1234-234-1243-12345678901: Patient: Validate resource against profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-Coverage.json ==
