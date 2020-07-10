@@ -2,7 +2,16 @@
   "package": "hl7.fhir.us.carin-bb",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/AdjudicationType",
+      "title": "Adjudication Type",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    }
+  ],
   "profiles": {
     "Coverage": [
       {
@@ -107,6 +116,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/carin-bb/StructureDefinition/AdjudicationType": [
+      "ExplanationOfBenefit.adjudication"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
       "Patient"

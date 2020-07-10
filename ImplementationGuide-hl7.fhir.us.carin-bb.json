@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-07-08T13:48:54+00:00",
+  "date": "2020-07-10T04:04:46+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -507,6 +507,24 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-AdjudicationType.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/AdjudicationType"
+        },
+        "name": "Adjudication Type",
+        "description": "An extension to provide a human-readable description of an organization.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           },
           {
@@ -519,6 +537,24 @@
         },
         "name": "Adjudication Denial Reason",
         "description": "Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-AdjudicationSlideCodesVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/AdjudicationSlideCodesVS"
+        },
+        "name": "Adjudication Slice Codes",
+        "description": "Codes used to discriminate slices of adjudication and item.adjudication",
         "exampleBoolean": false
       },
       {
@@ -1185,6 +1221,24 @@
         },
         "name": "Provider Network Status",
         "description": "Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-AdjudicationSliceCodesCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/AdjudicationSliceCodesCS"
+        },
+        "name": "Adjudication Slice Codes",
+        "description": "Codes used to discriminate slices of adjudication and item.adjudication",
         "exampleBoolean": false
       },
       {

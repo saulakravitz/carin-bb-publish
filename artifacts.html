@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="48c77557-951e-4fce-91f2-f9d66f1f2fb8">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="af5c6b70-1e0d-4a06-a44a-c1fedfd216de">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="bb8e79aa-a01b-46b6-92b5-bb2c22c7ce87">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="d69c82e9-9da4-409b-a2db-f84785ed13eb">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="b77304cc-8f26-425c-bc62-78ad7b4c62e8">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="8e889cfb-d8fe-47ab-a2c1-748fb64edb91">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="4771f5d5-3560-4103-b680-dfefcf0dcfc8">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="573d28b8-74d0-4b8f-82b9-237fd3a955f1">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="e9433e05-8a35-4065-a56e-92831256d2bf">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="1c93ef20-d6f7-4a22-a763-73a67ef16eae">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a name="6356f1cb-a43d-4208-bb84-296f7a863086">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="9a0fdea7-1cc6-4635-ae20-d0637d08c8ff">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="079935c1-dde2-4a2c-80fa-07e191e23df8">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="e1ddfb69-12fe-4483-b0e4-2ee2222f5970">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -128,7 +128,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="7a42b5ca-5a95-42ec-8b2e-1c26caea62fb">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="fd3055bb-0457-4809-954f-2ecb7d359dd2">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -182,16 +182,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Terminology: Value Sets</a>
+         <a href="#4">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#5">Terminology: Code Systems</a>
+         <a href="#5">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#6">Example: Example Instances</a>
+         <a href="#6">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#7">Other</a>
+         <a href="#7">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#8">Other</a>
       </li>
    </ul>
 </div>
@@ -311,6 +314,22 @@ The claims data is based on the professional claim form 1500, submission standar
       </table>
    </p>
    <a name="4"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>These define constraints on FHIR data types that need to be complied with by conformant implementations</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-AdjudicationType.html" title="StructureDefinition/AdjudicationType">Adjudication Type</a>
+               </td>
+               <td>An extension to provide a human-readable description of an organization.</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>These define sets of codes used by systems conforming with this implementation guide</p>
    <p>
@@ -322,6 +341,12 @@ The claims data is based on the professional claim form 1500, submission standar
                   <a href="ValueSet-AdjudicationDenialReasonVS.html" title="ValueSet/AdjudicationDenialReasonVS">Adjudication Denial Reason</a>
                </td>
                <td>Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-AdjudicationSlideCodesVS.html" title="ValueSet/AdjudicationSlideCodesVS">Adjudication Slice Codes</a>
+               </td>
+               <td>Codes used to discriminate slices of adjudication and item.adjudication</td>
             </tr>
             <tr>
                <td style="column-width:30%">
@@ -548,13 +573,19 @@ The claims data is based on the professional claim form 1500, submission standar
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>These define new code systems used by systems conforming with this implementation guide</p>
    <p>
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-AdjudicationSliceCodesCS.html" title="CodeSystem/AdjudicationSliceCodesCS">Adjudication Slice Codes</a>
+               </td>
+               <td>Codes used to discriminate slices of adjudication and item.adjudication</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CodeSystem-ClaimAdjudicationCategoryCS.html" title="CodeSystem/ClaimAdjudicationCategoryCS">Claim Adjudication Category</a>
@@ -594,7 +625,7 @@ The claims data is based on the professional claim form 1500, submission standar
          </tbody>
       </table>
    </p>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Example: Example Instances </h3>
    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
    <p>
@@ -622,7 +653,7 @@ The claims data is based on the professional claim form 1500, submission standar
          </tbody>
       </table>
    </p>
-   <a name="7"> </a>
+   <a name="8"> </a>
    <h3>Other </h3>
    <p>These are resources that are used within this implementation guide that don't fit into one of the other categories</p>
    <p>
@@ -678,7 +709,7 @@ The claims data is based on the professional claim form 1500, submission standar
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 8, 2020 13:48+0000">2020-07-08</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 10, 2020 04:04+0000">2020-07-10</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
