@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="0f474035-34e8-42a0-a9ca-10e7ec985e1d">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="b7f1401f-033b-4213-a2ee-9f6f408495bb">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="6af7068f-e009-42ac-8c33-a4b582ed7228">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="3b751ed2-c8ab-4fd0-8d7f-5661cc1291ad">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="12a98b86-976d-43d0-a8f4-28f912c8bb95">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="0a98c06a-6830-460d-855f-e7e2ebaca84d">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="1fe45708-f38a-4a02-bc4b-bd829b57ecc4">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="72b9b31c-02fc-401d-8d1d-4152d7604b37">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="60d0381d-cdd1-47ea-8ce2-50653e55a6c4">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="08198e85-7b24-4770-bf70-2621b3ec3f33">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a name="80d2aebb-392a-413a-af25-79202dcfd279">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="53dfaafa-b3c1-47e3-974e-724301619e72">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="02acc6e8-aed0-4fab-a3fe-31cbbd015b5d">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="922e90c6-2e0f-45c7-bb3d-3efe1b5626cd">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -128,7 +128,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="505dd6a5-79bc-4b45-aefe-0875e756b9da">​</a><a href="examples.html">Examples</a></li> 
+    <li><a name="5986fc7b-11bb-4aa5-bd42-ca9d4f5222e9">​</a><a href="examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -169,8 +169,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Common Payer Consumer Data Set</h2>
   
-  
-  
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 
 </div>
@@ -193,8 +201,8 @@ Additional EOB profiles for Vision and Dental benefits are planned for future ve
 <h3>Mapping Worksheet</h3>
 A Mapping Worksheet is included with this IG to aid implementers in understanding the data representation requirements of each EOB Profile and the referenced resources used by these profiles.
 
-​Download your local copy of the CPCDS to FHIR Profiles Mapping Excel worksheet from here.
-<a download="CARINMappingtoFHIR.xlsx" href="CARINMappingtoFHIR20191002copy.xlsx"> here </a>
+​Download your local copy of the CPCDS to FHIR Profiles Mapping Excel worksheet from
+<a download="CARINMappingtoFHIR.xlsx" href="CARINMappingtoFHIR20191002copy.xlsx"> here </a>.
 
 The following documentation describes the layout of the Mapping Worksheet and how to use it to
 understand the profiled data mappings to the FHIR resources.  The Data Element Index tab of the 
@@ -234,6 +242,7 @@ in Value Set Comments (Column K).
 </div>
 
 
+
 </div>
         </div>    <!-- /inner-wrapper -->
       </div>    <!-- /row -->
@@ -254,7 +263,7 @@ in Value Set Comments (Column K).
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 10, 2020 04:17+0000">2020-07-10</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jul 11, 2020 23:00+0000">2020-07-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

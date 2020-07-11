@@ -10,7 +10,7 @@
   "name": "CARINBBExplanationOfBenefitOutpatientFacility",
   "title": "CARIN BB ExplanationOfBenefit Outpatient Facility",
   "status": "active",
-  "date": "2020-07-10T04:17:57+00:00",
+  "date": "2020-07-11T23:00:09+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -8302,6 +8302,7 @@
         "path": "ExplanationOfBenefit.item",
         "short": "Product or service provided",
         "definition": "A claim line. Either a simple (a product or service) or a 'group' of details which can also be a simple items or groups of sub-details.",
+        "comment": "Put the definition here for item",
         "requirements": "The items to be processed for adjudication.",
         "min": 0,
         "max": "*",
@@ -8703,7 +8704,7 @@
         "path": "ExplanationOfBenefit.item.productOrService",
         "short": "Billing, service, product, or drug code",
         "definition": "When the value is a group code then this item collects a set of related claim details, otherwise this contains the product, service, drug or other billing code for the item.",
-        "comment": "If this is an actual service or product line, i.e. not a Group, then use code to indicate the Professional Service or Product supplied (e.g. CTP, HCPCS, USCLS, ICD10, NCPDP, DIN, RxNorm, ACHI, CCI). If a grouping item then use a group code to indicate the type of thing being grouped e.g. 'glasses' or 'compound'.",
+        "comment": "Put the definition here for item.productOrService here",
         "requirements": "Necessary to state what was provided or done.",
         "alias": [
           "Drug Code",
@@ -17053,7 +17054,8 @@
       },
       {
         "id": "ExplanationOfBenefit.item",
-        "path": "ExplanationOfBenefit.item"
+        "path": "ExplanationOfBenefit.item",
+        "comment": "Put the definition here for item"
       },
       {
         "id": "ExplanationOfBenefit.item.revenue",
@@ -17066,6 +17068,7 @@
       {
         "id": "ExplanationOfBenefit.item.productOrService",
         "path": "ExplanationOfBenefit.item.productOrService",
+        "comment": "Put the definition here for item.productOrService here",
         "binding": {
           "strength": "required",
           "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/CPTHCPCSProcedureCodeVS"
