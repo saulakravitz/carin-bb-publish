@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="9a0bf340-c3e1-47b6-a68a-592dc66290a7">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="64243527-47fd-48e1-8392-fd700f89453a">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="2e889342-8250-464e-9c56-471f6943dd64">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="1b885d65-e299-4d45-b9b9-029a7923e3ee">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="96eca87f-a0d4-4fc5-9afe-b9cd49c372f8">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="9e58fef6-7121-43ff-a705-6511e1324f96">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="bb30476c-86fa-412f-86ab-9410316c506c">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="4cdcc0a3-e249-4d1b-a8d6-55f37f4d953f">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="674170ad-5b94-4d61-acf5-b388638cda8c">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="3c5aa351-77f3-43cd-94d1-31f7a3d9979f">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a name="427d39a4-ab71-44f3-aa10-1951922e2591">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="8b6203b7-080c-4a33-882f-de96abf09d8d">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="9de5ebd7-ffb6-4fc2-841d-8fc81dbb0ac8">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -341,7 +341,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="CARINBBExplanationOfBenefitInpatientFacility"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="CARIN BB ExplanationOfBenefit Inpatient Facility"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2020-07-13T19:48:36+00:00"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2020-07-13T21:47:27+00:00"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 Financial Management Working Group"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 Financial Management Working Group"/&gt;
@@ -3533,6 +3533,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://hl7.org/fhir/StructureDefinition/Organization"/&gt;
       &lt;/type&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.pattern[x]">patternReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="  CarinBBPractitioner"/&gt;
+      &lt;/patternReference&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="ele-1"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="error"/&gt;
@@ -17419,7 +17422,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 13, 2020 19:48+0000">2020-07-13</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 13, 2020 21:47+0000">2020-07-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

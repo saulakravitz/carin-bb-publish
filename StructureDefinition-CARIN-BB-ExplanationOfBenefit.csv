@@ -255,7 +255,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Order of care team","A number to uniquely identify care team entries.","","Necessary to maintain the order of the care team and provide a mechanism to link individuals to claim details.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.careTeam.sequence",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.careTeam.provider","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
-","Practitioner or organization","Member of the team who provided the product or service.","","Often a regulatory requirement to specify the responsible provider.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.careTeam.provider",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Practitioner or organization","Member of the team who provided the product or service.","","Often a regulatory requirement to specify the responsible provider.","","","","<valueReference xmlns=""http://hl7.org/fhir"">
+  <reference value=""  CarinBBPractitioner""/>
+</valueReference>","","","",,,,,"",,,,"ExplanationOfBenefit.careTeam.provider",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.actor"
 "ExplanationOfBenefit.careTeam.responsible","","","",0,1,"Y","","","boolean {[]} {[]}
 ","Indicator of the lead practitioner","The party who is billing and/or responsible for the claimed products or services.","Responsible might not be required when there is only a single provider listed.","When multiple parties are present it is required to distinguish the lead or responsible individual.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.careTeam.responsible",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

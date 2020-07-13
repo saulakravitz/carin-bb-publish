@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "CARINBBExplanationOfBenefitPharmacy"];
   fhir:StructureDefinition.title [ fhir:value "CARIN BB ExplanationOfBenefit Pharmacy"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-07-13T19:48:36+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-07-13T21:47:27+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3617,6 +3617,9 @@
            fhir:index 2;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
          ]
+       ];
+       fhir:ElementDefinition.patternReference [
+         fhir:Reference.reference [ fhir:value "  CarinBBPractitioner" ]
        ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
