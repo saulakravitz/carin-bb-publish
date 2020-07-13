@@ -1,14 +1,14 @@
 ﻿CARINConsumerDirectedPayerDataExchange : Validation Results
 =========================================
 
-err = 51, warn = 66, info = 4
+err = 50, warn = 66, info = 3
 IG Publisher Version: v1.1.2 Out of date - current version is ?pub-ver-1?
-Generated Mon Jul 13 13:59:29 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.0 (canonical = http://hl7.org/fhir/us/carin-bb)
+Generated Mon Jul 13 15:02:44 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.0 (canonical = http://hl7.org/fhir/us/carin-bb)
 
  Build Errors : 3270 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb : 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Coverage-1234-234-1243-12345678901-20190101-20191031 : 2 / 1
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-1234-234-1243-12345678901-20190101-20191031 : 5 / 2
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-1234-234-1243-12345678901-20190101-20191031 : 4 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Patient-1234-234-1243-12345678901 : 0 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/extensions/StructureDefinition-AdjudicationType : 1 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-Coverage : 5 / 0
@@ -3357,8 +3357,6 @@ ERROR: Coverage/1234-234-1243-12345678901-20190101-20191031: Coverage.type.codin
 ERROR: Coverage/1234-234-1243-12345678901-20190101-20191031: Coverage.payor[0]: Unable to resolve resource "Organization/Payer1"
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-1234-234-1243-12345678901-20190101-20191031.json ==
 INFORMATION: ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031: ExplanationOfBenefit: Validate resource against profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility
-ERROR: ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031: ExplanationOfBenefit.adjudication[0]: Internal error: Unable to resolve discriminator in definitions: valueCodeableConcept
-INFORMATION: ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031: ExplanationOfBenefit: Profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility, Element 'ExplanationOfBenefit.adjudication[inoutnetwork]'": Unable to check minimum required (1) due to lack of slicing validation
 WARNING: ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031: ExplanationOfBenefit.type: ValueSet http://terminology.hl7.org/CodeSystem/claim-type not found by validator
 ERROR: ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031: ExplanationOfBenefit.insurer: Unable to resolve resource "Organization/1"
 ERROR: ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031: ExplanationOfBenefit.provider: Unable to resolve resource "Organization/1"
