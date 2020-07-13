@@ -91,7 +91,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 For selfpay it may provide multiple paying persons and/or organizations.","Need to identify the issuer to target for claim processing and for coordination of benefit processing.","","","","","","","",,,,,"",,,,"Coverage.payor",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.author","A05","IN1-3","C.30"
 "Coverage.class","","","",2,*,"Y","","","BackboneElement {[]} {[]}
-","Additional coverage classifications","A suite of underwriter specific classifiers.","For example may be used to identify a class of coverage or employer group, Policy, Plan.","The codes provided on the health card which identify or confirm the specific policy for the insurer.","","","","","","","",,,,,"","pattern:$this}
+","Additional coverage classifications","A suite of underwriter specific classifiers.","For example may be used to identify a class of coverage or employer group, Policy, Plan.","The codes provided on the health card which identify or confirm the specific policy for the insurer.","","","","","","","",,,,,"","pattern:type}
 ","Slice based on value pattern",,"open","Coverage.class",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Coverage.class.id","","","",0,1,"","","","string {[]} {[]}
@@ -115,15 +115,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Coverage.class.name","","","",0,1,"Y","","Y","string {[]} {[]}
 ","Human readable description of the type and value","A short description for the class.","","Used to provide a meaningful description in correspondence to the patient.","","","","","","","",,,,,"",,,,"Coverage.class.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C11 (Division,Section)","IN1-8","C.31"
-"Coverage.class","Group","","",1,1,"","","","BackboneElement {[]} {[]}
-","Additional coverage classifications","A suite of underwriter specific classifiers.","For example may be used to identify a class of coverage or employer group, Policy, Plan.","The codes provided on the health card which identify or confirm the specific policy for the insurer.","","","","<valueIdentifier xmlns=""http://hl7.org/fhir"">
-  <type>
-    <coding>
-      <system value=""http://terminology.hl7.org/CodeSystem/coverage-class""/>
-      <code value=""group""/>
-    </coding>
-  </type>
-</valueIdentifier>","","","",,,,,"",,,,"Coverage.class",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Coverage.class","group","","",1,1,"","","","BackboneElement {[]} {[]}
+","Additional coverage classifications","A suite of underwriter specific classifiers.","For example may be used to identify a class of coverage or employer group, Policy, Plan.","The codes provided on the health card which identify or confirm the specific policy for the insurer.","","","","","","","",,,,,"",,,,"Coverage.class",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Coverage.class.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -138,7 +131,12 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Coverage.class.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Type of class such as 'group' or 'plan'","The type of classification for which an insurer-specific class label or number and optional name is provided, for example may be used to identify a class of coverage or employer group, Policy, Plan.","","The insurer issued label for a specific health card value.","","","","","","","",,"extensible","The policy classifications, eg. Group, Plan, Class, etc.","http://hl7.org/fhir/ValueSet/coverage-class","",,,,"Coverage.class.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Type of class such as 'group' or 'plan'","The type of classification for which an insurer-specific class label or number and optional name is provided, for example may be used to identify a class of coverage or employer group, Policy, Plan.","","The insurer issued label for a specific health card value.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/coverage-class""/>
+    <code value=""group""/>
+  </coding>
+</valueCodeableConcept>","","","",,"extensible","The policy classifications, eg. Group, Plan, Class, etc.","http://hl7.org/fhir/ValueSet/coverage-class","",,,,"Coverage.class.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Coverage.class.value","","","",1,1,"","","Y","string {[]} {[]}
 ","Value associated with the type","The alphanumeric string value associated with the insurer issued label.","For example, the Group or Plan number.","The insurer issued label and value are necessary to identify the specific policy.","","","","","","","",,,,,"",,,,"Coverage.class.value",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -146,15 +144,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Coverage.class.name","","","",0,1,"","","Y","string {[]} {[]}
 ","Human readable description of the type and value","A short description for the class.","","Used to provide a meaningful description in correspondence to the patient.","","","","","","","",,,,,"",,,,"Coverage.class.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C11 (Division,Section)","IN1-8","C.31"
-"Coverage.class","Plan","","",1,1,"","","","BackboneElement {[]} {[]}
-","Additional coverage classifications","A suite of underwriter specific classifiers.","For example may be used to identify a class of coverage or employer group, Policy, Plan.","The codes provided on the health card which identify or confirm the specific policy for the insurer.","","","","<valueIdentifier xmlns=""http://hl7.org/fhir"">
-  <type>
-    <coding>
-      <system value=""http://terminology.hl7.org/CodeSystem/coverage-class""/>
-      <code value=""plan""/>
-    </coding>
-  </type>
-</valueIdentifier>","","","",,,,,"",,,,"Coverage.class",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Coverage.class","plan","","",1,1,"","","","BackboneElement {[]} {[]}
+","Additional coverage classifications","A suite of underwriter specific classifiers.","For example may be used to identify a class of coverage or employer group, Policy, Plan.","The codes provided on the health card which identify or confirm the specific policy for the insurer.","","","","","","","",,,,,"",,,,"Coverage.class",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Coverage.class.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -169,7 +160,12 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Coverage.class.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Type of class such as 'group' or 'plan'","The type of classification for which an insurer-specific class label or number and optional name is provided, for example may be used to identify a class of coverage or employer group, Policy, Plan.","","The insurer issued label for a specific health card value.","","","","","","","",,"extensible","The policy classifications, eg. Group, Plan, Class, etc.","http://hl7.org/fhir/ValueSet/coverage-class","",,,,"Coverage.class.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Type of class such as 'group' or 'plan'","The type of classification for which an insurer-specific class label or number and optional name is provided, for example may be used to identify a class of coverage or employer group, Policy, Plan.","","The insurer issued label for a specific health card value.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/coverage-class""/>
+    <code value=""plan""/>
+  </coding>
+</valueCodeableConcept>","","","",,"extensible","The policy classifications, eg. Group, Plan, Class, etc.","http://hl7.org/fhir/ValueSet/coverage-class","",,,,"Coverage.class.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Coverage.class.value","","","",1,1,"","","Y","string {[]} {[]}
 ","Value associated with the type","The alphanumeric string value associated with the insurer issued label.","For example, the Group or Plan number.","The insurer issued label and value are necessary to identify the specific policy.","","","","","","","",,,,,"",,,,"Coverage.class.value",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

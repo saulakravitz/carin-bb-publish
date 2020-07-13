@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-07-13T15:01:22+00:00",
+  "date": "2020-07-13T18:17:14+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -1353,35 +1353,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-1234-234-1243-12345678901.html"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/1234-234-1243-12345678901"
-        },
-        "name": "CarinBBPatientExample1",
-        "description": "Patient Example1",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Coverage"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Coverage-1234-234-1243-12345678901-20190101-20191031.html"
+            "valueUri": "Coverage-Coverage1.html"
           }
         ],
         "reference": {
-          "reference": "Coverage/1234-234-1243-12345678901-20190101-20191031"
+          "reference": "Coverage/Coverage1"
         },
-        "name": "CarinBBCoverageExample1",
+        "name": "Coverage1",
         "description": "Coverage Example1",
         "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage"
       },
@@ -1393,15 +1375,69 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-1234-234-1243-12345678901-20190101-20191031.html"
+            "valueUri": "ExplanationOfBenefit-EOBInpatient1.html"
           }
         ],
         "reference": {
-          "reference": "ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031"
+          "reference": "ExplanationOfBenefit/EOBInpatient1"
         },
-        "name": "CarinBBInpatientEOBExample1",
+        "name": "EOBInpatient1",
         "description": "EOB Inpatient Example1",
         "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-OrganizationPayer1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/OrganizationPayer1"
+        },
+        "name": "OrganizationPayer1",
+        "description": "Payer1",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-OrganizationProvider1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/OrganizationProvider1"
+        },
+        "name": "OrganizationProvider1",
+        "description": "Provider 1",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-Patient1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/Patient1"
+        },
+        "name": "Patient1",
+        "description": "Patient Example1",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient"
       },
       {
         "extension": [
@@ -1570,6 +1606,11 @@
         {
           "nameUrl": "Terminology.html",
           "title": "Terminology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Examples.html",
+          "title": "Examples",
           "generation": "markdown"
         }
       ]

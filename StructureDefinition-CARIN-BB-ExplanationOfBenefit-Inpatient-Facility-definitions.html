@@ -39,8 +39,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"12.5"}
-    h3,h4,h5,h6{--heading-prefix:"12.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.5"}
+    h3,h4,h5,h6{--heading-prefix:"13.5"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="f668106c-b370-4896-a758-994ae76a3b99">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="a0df9fae-107d-41bb-b79c-b4fb363c267e">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="dd7f32de-90d4-4c1b-9c23-2a616a775a87">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="7c70db97-c0de-4b90-af58-f0c584a77982">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="ec21ca05-381e-4767-a53e-7ee92dfb17b5">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="34290573-77ac-403f-844b-0ad5a4c4981f">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="bede5231-53d4-4079-96c5-557edc6b7c83">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="3b762248-cdef-40d3-8037-dbaf1c7a5648">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="4e922a28-d41a-4eed-8276-b8eab474eadb">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="457f95ac-463d-4d25-b56f-0460e4338d1d">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a name="d8d33c31-ee9c-4b3e-8504-b6d6296bb385">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="98880ddc-fb54-47ae-8f3b-2159376ec9fe">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="5d4b1c8c-adc7-429c-910b-350decf9f3b4">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="5cc78b7a-71d4-450a-aa1b-4182b07f392f">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -128,7 +128,7 @@
         <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-    <li><a name="4ba6f46f-0a2c-4657-9269-640143761512">​</a><a href="examples.html">Examples</a></li> 
+    <li><a href="Examples.html">Examples</a></li> 
     </ul>
    </li>
         <li class="dropdown">
@@ -603,7 +603,7 @@
   <tr><td>Definition</td><td><p>The category of claim, e.g. oral, pharmacy, vision, institutional, professional.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/CodeSystem/claim-type">http://terminology.hl7.org/CodeSystem/claim-type</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-claim-type.html">ClaimTypeCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Claim type determine the general sets of business rules applied for information requirements and adjudication.</p>
@@ -4978,7 +4978,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 13, 2020 15:01+0000">2020-07-13</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 13, 2020 18:17+0000">2020-07-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

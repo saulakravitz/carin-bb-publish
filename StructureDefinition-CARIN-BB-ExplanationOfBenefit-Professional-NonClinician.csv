@@ -130,7 +130,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://terminology.hl7.org/CodeSystem/claim-type""/>
     <code value=""professional""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","http://terminology.hl7.org/CodeSystem/claim-type","",,,,"ExplanationOfBenefit.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/ValueSet/claim-type","",,,,"ExplanationOfBenefit.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","FiveWs.class"
 "ExplanationOfBenefit.subType","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","More granular claim type","A finer grained suite of claim type codes which may convey additional information such as Inpatient vs Outpatient and/or a specialty service.","This may contain the local bill type codes such as the US UB-04 bill type code.","Some jurisdictions need a finer grained claim type for routing and adjudication.","","","","","","","",,"example","A more granular claim typecode.","http://hl7.org/fhir/ValueSet/claim-subtype","",,,,"ExplanationOfBenefit.subType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

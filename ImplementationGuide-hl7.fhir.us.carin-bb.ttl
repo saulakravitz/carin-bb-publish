@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CARINConsumerDirectedPayerDataExchange"];
   fhir:ImplementationGuide.title [ fhir:value "CARIN Consumer Directed Payer Data Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-07-13T15:01:22+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-07-13T18:17:14+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1340,45 +1340,24 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Patient" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Patient-1234-234-1243-12345678901.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/Patient/1234-234-1243-12345678901>;
-         fhir:Reference.reference [ fhir:value "Patient/1234-234-1243-12345678901" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CarinBBPatientExample1" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Example1" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient";
-         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient>
-       ]
-     ], [
-       fhir:index 59;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Coverage" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Coverage-1234-234-1243-12345678901-20190101-20191031.html" ]
+         fhir:Extension.valueUri [ fhir:value "Coverage-Coverage1.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/Coverage/1234-234-1243-12345678901-20190101-20191031>;
-         fhir:Reference.reference [ fhir:value "Coverage/1234-234-1243-12345678901-20190101-20191031" ]
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Coverage/Coverage1>;
+         fhir:Reference.reference [ fhir:value "Coverage/Coverage1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CarinBBCoverageExample1" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Coverage1" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Coverage Example1" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage";
          fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage>
        ]
      ], [
-       fhir:index 60;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1386,20 +1365,83 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ExplanationOfBenefit-1234-234-1243-12345678901-20190101-20191031.html" ]
+         fhir:Extension.valueUri [ fhir:value "ExplanationOfBenefit-EOBInpatient1.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031>;
-         fhir:Reference.reference [ fhir:value "ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031" ]
+         fhir:link <http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/EOBInpatient1>;
+         fhir:Reference.reference [ fhir:value "ExplanationOfBenefit/EOBInpatient1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CarinBBInpatientEOBExample1" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EOBInpatient1" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "EOB Inpatient Example1" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility";
          fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility>
        ]
      ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-OrganizationPayer1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Organization/OrganizationPayer1>;
+         fhir:Reference.reference [ fhir:value "Organization/OrganizationPayer1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OrganizationPayer1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Payer1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization";
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization>
+       ]
+     ], [
        fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-OrganizationProvider1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Organization/OrganizationProvider1>;
+         fhir:Reference.reference [ fhir:value "Organization/OrganizationProvider1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OrganizationProvider1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Provider 1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization";
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization>
+       ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Patient-Patient1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Patient/Patient1>;
+         fhir:Reference.reference [ fhir:value "Patient/Patient1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Example1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient";
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient>
+       ]
+     ], [
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1417,7 +1459,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Section describes the expected capabilities of the Consumer-Directed Payer Data Exchange Consumer App which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Consumer-Directed Payer Data Exchange Servers are defined in the [Conformance Requirements for Server](carin-bb-capabilitystatement-healthplan-api.html). Consumer-Directed Payer Data Exchange Consumer Apps have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 62;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1435,7 +1477,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Section describes the expected capabilities of the Consumer-Directed Payer Data Exchange Server actor which is responsible for providing responses to the queries submitted by the Consumer-Directed Payer Data Exchange Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Consumer-Directed Payer Data Exchange Servers are defined." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 63;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1453,7 +1495,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The business/claim identifier of the Explanation of Benefit" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 64;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1471,7 +1513,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The reference to the patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 65;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1489,7 +1531,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Date of the service for the EOB" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 66;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1565,6 +1607,11 @@
          fhir:index 10;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Terminology.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminology" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 11;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Examples.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Examples" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];
@@ -1743,11 +1790,15 @@
 
 <http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerProviderRoleCS> a fhir:us .
 
-<http://hl7.org/fhir/us/carin-bb/Patient/1234-234-1243-12345678901> a fhir:us .
+<http://hl7.org/fhir/us/carin-bb/Coverage/Coverage1> a fhir:us .
 
-<http://hl7.org/fhir/us/carin-bb/Coverage/1234-234-1243-12345678901-20190101-20191031> a fhir:us .
+<http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/EOBInpatient1> a fhir:us .
 
-<http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/1234-234-1243-12345678901-20190101-20191031> a fhir:us .
+<http://hl7.org/fhir/us/carin-bb/Organization/OrganizationPayer1> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Organization/OrganizationProvider1> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Patient/Patient1> a fhir:us .
 
 <http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb-capabilitystatement-consumer-app> a fhir:us .
 
