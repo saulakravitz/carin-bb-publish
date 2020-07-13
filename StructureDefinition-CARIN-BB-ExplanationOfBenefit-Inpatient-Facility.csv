@@ -1230,8 +1230,7 @@ Bill CodeService Code","",1,1,"","","","CodeableConcept {[]} {[]}
 "ExplanationOfBenefit.addItem.detail.subDetail.adjudication","","","",0,*,"","","","","Added items adjudication","The adjudication results.","","","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.addItem.detail.subDetail.adjudication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.adjudication","","","",1,*,"Y","","","BackboneElement {[]} {[]}
-","Header-level adjudication","The adjudication results which are presented at the header level rather than at the line-item or add-item levels.","","Some insurers will receive line-items but provide the adjudication only at a summary or header-level.","","","","","","","",,,,,"","pattern:extension(http://hl7.org/fhir/us/carin-bb/StructureDefinition/AdjudicationType
-)}
+","Header-level adjudication","The adjudication results which are presented at the header level rather than at the line-item or add-item levels.","","Some insurers will receive line-items but provide the adjudication only at a summary or header-level.","","","","","","","",,,,,"","value:extension('http://hl7.org/fhir/us/carin-bb/StructureDefinition/AdjudicationType').valueCodeableConcept}
 ","Slice based on value pattern",,"closed","ExplanationOfBenefit.adjudication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.adjudication.id","","","",0,1,"","","","string {[]} {[]}
