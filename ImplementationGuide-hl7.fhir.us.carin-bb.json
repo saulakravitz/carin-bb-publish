@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-07-13T18:52:07+00:00",
+  "date": "2020-07-13T19:48:36+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -1069,24 +1069,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerInpatientFacilityProviderRoleVSProviderRoleVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PayerInpatientFacilityProviderRoleVSProviderRoleVS"
-        },
-        "name": "Payer - Inpatient Facility Provider Role",
-        "description": "Indicates the role of the provider providing the care.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-PayerInpatientfacilitydiagnosistype.html"
           }
         ],
@@ -1105,13 +1087,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerOutpatientFacilityProviderRoleVS.html"
+            "valueUri": "ValueSet-PayerInstitutionalProviderRoleVS.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/PayerOutpatientFacilityProviderRoleVS"
+          "reference": "ValueSet/PayerInstitutionalProviderRoleVS"
         },
-        "name": "Payer - Outpatient Facility Provider Role",
+        "name": "Payer - Inpatient Facility Provider Role",
         "description": "Indicates the role of the provider providing the care.",
         "exampleBoolean": false
       },

@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.US.CARIN-BB\Payer - Outpatient Facility Provider Role - JSON Representation - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.CARIN-BB\Payer - Inpatient Facility Provider Role - Change History - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,8 +39,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"13.47"}
-    h3,h4,h5,h6{--heading-prefix:"13.47"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.46"}
+    h3,h4,h5,h6{--heading-prefix:"13.46"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -88,23 +88,23 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="72eb0275-832d-471d-9e06-e808ab298885">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="305df1a3-c8b4-4a20-8628-2b87a31487e5">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="55f42ae7-b504-475f-9124-2e9594adae09">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="c5d3d637-92db-4572-b40e-8d31b19a074c">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="438d4180-ee1a-40d5-b231-1a752b7aab6d">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="dd822907-6e5a-4c73-9370-efb9003395ef">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="ffddded4-b13c-49ea-9f06-84ddf71c7dda">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="6d263990-ef6c-498c-ab6a-afd6353e5e7f">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="d8d5456e-2a9d-4152-a4bc-3068b31a06a8">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="c97ac4d8-54cb-4bcb-a6d3-5a0233af7ff9">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
   <li><a href="Guidance.html">General Guidance</a></li>
-  <li><a name="5858b92b-3b13-4ef9-85d3-488732468fae">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
+  <li><a name="d3a3fedb-8add-477a-a1dd-73b23f733182">​</a><a href="Common_Payer_Consumer_Data_Set.html">CPCDS</a></li>
    <li><a href="Notes_To_Developers.html">Notes To Developers</a></li>
     </ul>
   </li>
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="a92178ce-8c61-4ac3-8965-f0e6735b3592">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="61bdc83d-f81e-449a-9b04-db8e7eab7ad3">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -149,7 +149,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Payer - Outpatient Facility Provider Role</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Payer - Inpatient Facility Provider Role</b></li>
         </ul>  
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -158,9 +158,10 @@
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-<div style="counter-reset: section 8" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
+<div style="counter-reset: section 10" class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
 
 
 
@@ -169,27 +170,27 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="ValueSet-PayerOutpatientFacilityProviderRoleVS.html">Narrative Content</a>
+    <a href="ValueSet-PayerInstitutionalProviderRoleVS.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="ValueSet-PayerOutpatientFacilityProviderRoleVS.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li class="active">
-      <a href="#">JSON</a>
+      <a href="ValueSet-PayerInstitutionalProviderRoleVS.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-PayerOutpatientFacilityProviderRoleVS.ttl.html">TTL</a>
+      <a href="ValueSet-PayerInstitutionalProviderRoleVS.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-PayerInstitutionalProviderRoleVS.ttl.html">TTL</a>
     </li>
   
 
@@ -198,79 +199,14 @@
 </ul>
 
 
-<a name="root"> </a>
+  <a name="root"> </a>
+  <h2 id="root">: PayerInstitutionalProviderRoleVS - Change History</h2>
+  <p>History of changes for PayerInstitutionalProviderRoleVS .</p>
 
-
-<h2 id="root">: Payer - Outpatient Facility Provider Role - JSON Representation</h2>
-
-<p><a href="ValueSet-PayerOutpatientFacilityProviderRoleVS.json" no-download="true">Raw json</a> | <a download="null" href="ValueSet-PayerOutpatientFacilityProviderRoleVS.json">Download</a></p>
-
-    <!-- insert intro if present -->
   
-
-
-
-  <pre class="json">
-{
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "PayerOutpatientFacilityProviderRoleVS",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\"CodeSystem-PayerProviderRoleCS.html\"&gt;&lt;code&gt;http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerProviderRoleCS&lt;/code&gt;&lt;/a&gt;&lt;table class=\"none\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-PayerProviderRoleCS.html#PayerProviderRoleCS-pcp\"&gt;pcp&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Primary Care Provider&lt;/td&gt;&lt;td&gt;Primary Care Provider&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-PayerProviderRoleCS.html#PayerProviderRoleCS-performing\"&gt;performing&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Performing Provider&lt;/td&gt;&lt;td&gt;Performing Provider&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-PayerProviderRoleCS.html#PayerProviderRoleCS-referring\"&gt;referring&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Referring Provider&lt;/td&gt;&lt;td&gt;Referring Provider&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-  },
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerOutpatientFacilityProviderRoleVS",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.0",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "PayerOutpatientFacilityProviderRoleVS",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Payer - Outpatient Facility Provider Role",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-07-13T18:52:07+00:00",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "HL7 Financial Management Working Group",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "HL7 Financial Management Working Group",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://www.hl7.org/Special/committees/fm/index.cfm"
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "fm@lists.HL7.org"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "Indicates the role of the provider providing the care.",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
-    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
-      {
-        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerProviderRoleCS",
-        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "pcp",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Primary Care Provider"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "performing",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Performing Provider"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "referring",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Referring Provider"
-          }
-        ]
-      }
-    ]
-  }
-}</pre>
-
-
-    <!-- insert notes if present -->
-  
-
-
 
 </div>
+
         </div>    <!-- /inner-wrapper -->
       </div>    <!-- /row -->
     </div>    <!-- /container -->
@@ -278,6 +214,29 @@
 
   <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -290,7 +249,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 13, 2020 18:52+0000">2020-07-13</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 13, 2020 19:48+0000">2020-07-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
