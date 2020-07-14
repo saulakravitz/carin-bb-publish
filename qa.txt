@@ -1,14 +1,14 @@
 ﻿CARINConsumerDirectedPayerDataExchange : Validation Results
 =========================================
 
-err = 48, warn = 69, info = 3
+err = 50, warn = 69, info = 3
 IG Publisher Version: v1.1.2 Out of date - current version is ?pub-ver-1?
-Generated Mon Jul 13 21:48:44 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.0 (canonical = http://hl7.org/fhir/us/carin-bb)
+Generated Tue Jul 14 13:18:31 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.0 (canonical = http://hl7.org/fhir/us/carin-bb)
 
  Build Errors : 2479 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb : 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Coverage-Coverage1 : 0 / 1
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBInpatient1 : 2 / 0
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBInpatient1 : 4 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Organization-OrganizationPayer1 : 0 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Organization-OrganizationProvider1 : 0 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Patient-Patient1 : 0 / 0
@@ -2565,6 +2565,8 @@ INFORMATION: Coverage/Coverage1: Coverage: Validate resource against profile htt
 INFORMATION: Coverage/Coverage1: Coverage.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBInpatient1.json ==
 INFORMATION: ExplanationOfBenefit/EOBInpatient1: ExplanationOfBenefit: Validate resource against profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility
+ERROR: ExplanationOfBenefit/EOBInpatient1: ExplanationOfBenefit: EOB-inst-careTeam-practitioner: Institutional EOB:  Careteam roles refer to a practitioner [(ExplanationOfBenefit.careTeam.role.coding.code in ('attending' | 'pcp' | 'referring' | 'supervising')) implies ExplanationOfBenefit.careTeam.provider.reference.resolve().conformsTo('http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Practitioner')]
+ERROR: ExplanationOfBenefit/EOBInpatient1: ExplanationOfBenefit: EOB-inst-careTeam-organization: Institutional EOB:  Careteam roles refer to a practitioner [(ExplanationOfBenefit.careTeam.role.coding.code = 'performing') implies ExplanationOfBenefit.careTeam.provider.reference.resolve().conformsTo('http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization')]
 ERROR: ExplanationOfBenefit/EOBInpatient1: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept): None of the codes provided are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/ICD10CMVS (http://hl7.org/fhir/us/carin-bb/ValueSet/ICD10CMVS), and a code from this value set is required) (codes = http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A)
 ERROR: ExplanationOfBenefit/EOBInpatient1: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept).coding[0]: Code "S06.0x1A" not found; The code "S06.0x1A" is not valid in the system http://hl7.org/fhir/sid/icd-10-cm; The code provided (http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A) is not  valid in the value set All codes known to the system for "http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A"
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Organization-OrganizationPayer1.json ==
