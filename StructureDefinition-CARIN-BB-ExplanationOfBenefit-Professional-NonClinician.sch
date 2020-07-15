@@ -857,6 +857,7 @@
     <sch:title>ExplanationOfBenefit.item.location[x] 1</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:item/f:location[x]">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -987,7 +988,6 @@
   <sch:pattern>
     <sch:title>f:ExplanationOfBenefit/f:item/f:adjudication</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:item/f:adjudication">
-      <sch:assert test="count(f:amount) &gt;= 1">amount: minimum cardinality of 'amount' is 1</sch:assert>
       <sch:assert test="count(f:reason) &gt;= 1">reason: minimum cardinality of 'reason' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

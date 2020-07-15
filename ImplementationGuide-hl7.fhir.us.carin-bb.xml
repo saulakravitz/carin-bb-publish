@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-07-14T13:16:56+00:00"/>
+  <date value="2020-07-15T01:38:42+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -444,6 +444,20 @@
       </reference>
       <name value="Benefit Payment Status"/>
       <description value="Indicates the in network or out of network payment status of the claim."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-CMSPlaceOfServiceVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CMSPlaceOfServiceVS"/>
+      </reference>
+      <name value="CMS Place of Service"/>
+      <description value="https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .  The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.   The code set is owned by CMS and is available for use."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -906,6 +920,20 @@
       </reference>
       <name value="Adjudication Slice Codes"/>
       <description value="Codes used to discriminate slices of adjudication and item.adjudication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-CMSPlaceOfServiceCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CMSPlaceOfServiceCS"/>
+      </reference>
+      <name value="CMS Place of Service"/>
+      <description value="https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .   &#xA;The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.  &#xA;The code set is owned by CMS and is available for use."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

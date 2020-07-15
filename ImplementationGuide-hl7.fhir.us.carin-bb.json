@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-07-14T13:16:56+00:00",
+  "date": "2020-07-15T01:38:42+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -637,6 +637,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-CMSPlaceOfServiceVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/CMSPlaceOfServiceVS"
+        },
+        "name": "CMS Place of Service",
+        "description": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .  The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.   The code set is owned by CMS and is available for use.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-CPTHCPCSModifierCodeVS.html"
           }
         ],
@@ -1221,6 +1239,24 @@
         },
         "name": "Adjudication Slice Codes",
         "description": "Codes used to discriminate slices of adjudication and item.adjudication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-CMSPlaceOfServiceCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/CMSPlaceOfServiceCS"
+        },
+        "name": "CMS Place of Service",
+        "description": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .   \nThe link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.  \nThe code set is owned by CMS and is available for use.",
         "exampleBoolean": false
       },
       {
