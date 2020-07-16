@@ -88,16 +88,16 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="9c3f23ef-1757-41ff-8778-871adb99a524">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="e46e9c7a-91f6-4d95-8afc-afa51ef4880d">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="ffcca0b7-391c-4c51-800a-b8181d38d43a">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="0cb199c4-2ad7-41f2-9955-8ae443ef5709">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="e8cbe94c-00cc-4c00-bc85-172f8a95e89b">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="b2c5f811-2749-4aa7-a013-755e6d6a2d49">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="593011e7-4c88-49c1-9a19-0aa8d09ae850">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="15ed3b33-452b-495a-afc7-df8e1914ddd9">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="54e67d4e-606d-4940-a40f-1d7564605658">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="8ba8dbc1-7eb4-4f98-b915-261f275ec6d2">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="0a295971-39ca-4777-ba69-0c153c21fb63">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="2e7568b5-401b-4dbf-85ad-ebece7165457">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -1577,7 +1577,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-NUBCTypeOfBillVS.html">NUBC Type of Bill</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="164eab6e-10d2-4abd-8812-bda141b33735">​</a>The codes SHALL be taken from <a href="nubc-type-of-bill.html">nubc-type-of-bill</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to identify the kind of additional information.</p>
@@ -1689,7 +1689,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-NUBCPointOfOriginVS.html">NUBC Point of Origin of Admission</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="63e0c866-1de8-4791-8b24-d895e328058d">​</a>The codes SHALL be taken from <a href="nubc-admission-source.html">nubc-admission-source</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to identify the kind of additional information.</p>
@@ -2410,7 +2410,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The type of revenue or cost center providing the product and/or service.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-NUBCRevenueCodeVS.html">NUBC Revenue Code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="b20175dd-a4b2-4ba0-8643-08ab8682ef16">​</a>The codes SHALL be taken from <a href="nubc-service-line-revenue.html">nubc-service-line-revenue</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Needed in the processing of institutional claims.</p>
 </td></tr>
@@ -4587,7 +4587,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 15, 2020 01:55+0000">2020-07-15</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 16, 2020 02:41+0000">2020-07-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
