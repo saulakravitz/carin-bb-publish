@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-07-16T13:42:16+00:00"/>
+  <date value="2020-07-16T18:58:16+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -493,20 +493,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-ClaimPayeeTypeCode.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ClaimPayeeTypeCode"/>
-      </reference>
-      <name value="Claim Payee Type Code"/>
-      <description value="Identifies recipient of benefits payable; i.e., provider or subscriber."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-ClaimPaymentStatusCode.html"/>
       </extension>
       <reference>
@@ -815,20 +801,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerProviderRole.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/PayerProviderRole"/>
-      </reference>
-      <name value="Payer Provider Role"/>
-      <description value="Payer Provider Role"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-ProviderNetworkStatus.html"/>
       </extension>
       <reference>
@@ -850,20 +822,6 @@
       </reference>
       <name value="Adjudication Slice Codes"/>
       <description value="Codes used to discriminate slices of adjudication and item.adjudication"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-CMSPlaceOfServiceCS.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CMSPlaceOfServiceCS"/>
-      </reference>
-      <name value="CMS Place of Service"/>
-      <description value="https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .   &#xA;The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.  &#xA;The code set is owned by CMS and is available for use."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -88,16 +88,16 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="377726ac-6f45-49e8-9e85-32ca98ab3133">​</a><a href="index.html#description">Introduction</a></li>
-     <li><a name="d7412419-62ca-48ed-80be-44920f0dc032">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="468aba51-902d-4424-a050-7b77dbd042aa">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
+     <li><a name="e939914d-d445-441a-ae6e-1846a15d8bd6">​</a><a href="index.html#description">Introduction</a></li>
+     <li><a name="91a7109b-3a0e-499d-92c7-4c84cb8e0c97">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="e25dcb3d-97b9-4a3a-b2c3-8458f1bdbcf6">​</a><a href="Background.html#guide-overview">Guide Overview</a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="3504d6bb-a563-4564-b528-84d260e974f2">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="35f6c030-e683-4c61-b7ed-ec63facbea61">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
+       <li><a name="76819c66-2c95-41eb-8899-4996a676bcd8">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="9151eaec-92ee-4cbc-9946-b9df690a4c4d">​</a><a href="Use_Case.html#use-cases">Use Cases</a></li>
     </ul>
    </li>
     <li class="dropdown">
@@ -114,7 +114,7 @@
      <li><a href="profiles.html">Profiles</a></li>
     <li><a href="search.html">Search Behavior and Parameters</a></li>
     <li><a href="Terminology.html">Terminology </a></li>
-    <li><a name="e1c64d4b-d723-4c75-9625-2116e07b01f3">​</a><a href="capability.html">Capability Statements</a></li>
+    <li><a name="220481e6-f44b-4c2c-ae29-8ed8c45a1a61">​</a><a href="capability.html">Capability Statements</a></li>
     </ul>
    </li>
      
@@ -867,7 +867,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>Type of Party to be reimbursed: Subscriber, provider, other.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimPayeeTypeCode.html">Claim Payee Type Code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-payeetype.html">Claim Payee Type Codes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to know who should receive payment with the most common situations being the Provider (assignment of benefits) or the Subscriber.</p>
@@ -878,7 +878,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>Reference to the individual or organization to whom any payment will be made.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-CARIN-BB-PractitionerRole.html" title="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-PractitionerRole">CARINBBPractitionerRole</a> | <a href="StructureDefinition-CARIN-BB-Patient.html" title="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient">CARINBBPatient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-CARIN-BB-Organization.html" title="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization">CARINBBOrganization</a> | <a href="StructureDefinition-CARIN-BB-Patient.html" title="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient">CARINBBPatient</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to provide demographics if the payee is not 'subscriber' nor 'provider'.</p>
 </td></tr>
@@ -4126,7 +4126,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 16, 2020 13:42+0000">2020-07-16</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 16, 2020 18:58+0000">2020-07-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

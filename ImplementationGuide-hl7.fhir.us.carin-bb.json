@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-07-16T13:42:16+00:00",
+  "date": "2020-07-16T18:58:16+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -691,24 +691,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-ClaimPayeeTypeCode.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/ClaimPayeeTypeCode"
-        },
-        "name": "Claim Payee Type Code",
-        "description": "Identifies recipient of benefits payable; i.e., provider or subscriber.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-ClaimPaymentStatusCode.html"
           }
         ],
@@ -1105,24 +1087,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerProviderRole.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PayerProviderRole"
-        },
-        "name": "Payer Provider Role",
-        "description": "Payer Provider Role",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-ProviderNetworkStatus.html"
           }
         ],
@@ -1149,24 +1113,6 @@
         },
         "name": "Adjudication Slice Codes",
         "description": "Codes used to discriminate slices of adjudication and item.adjudication",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-CMSPlaceOfServiceCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/CMSPlaceOfServiceCS"
-        },
-        "name": "CMS Place of Service",
-        "description": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .   \nThe link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.  \nThe code set is owned by CMS and is available for use.",
         "exampleBoolean": false
       },
       {

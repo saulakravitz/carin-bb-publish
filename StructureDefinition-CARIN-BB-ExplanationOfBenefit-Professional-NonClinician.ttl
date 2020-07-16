@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "CARINBBExplanationOfBenefitProfessionalNonClinician"];
   fhir:StructureDefinition.title [ fhir:value "CARIN BB ExplanationOfBenefit Professional NonClinician"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-07-16T13:42:16+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-07-16T18:58:16+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3030,8 +3030,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimPayeeTypeCode";
-           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimPayeeTypeCode>
+           fhir:value "http://hl7.org/fhir/ValueSet/payeetype";
+           fhir:link <http://hl7.org/fhir/ValueSet/payeetype>
          ]
        ]
      ], [
@@ -3053,9 +3053,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-PractitionerRole";
+           fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-PractitionerRole>
+           fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization>
          ], [
            fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient";
            fhir:index 1;
