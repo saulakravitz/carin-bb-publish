@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/ImplementationGuide/hl7.fhir.us.carin-bb"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-07-16T02:41:43+00:00"/>
+  <date value="2020-07-16T13:42:16+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -367,10 +367,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-AdjudicationDenialReasonVS.html"/>
+        <valueUri value="ValueSet-AdjudicationDenialReason.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/AdjudicationDenialReasonVS"/>
+        <reference value="ValueSet/AdjudicationDenialReason"/>
       </reference>
       <name value="Adjudication Denial Reason"/>
       <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
@@ -381,10 +381,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-AdjudicationSlideCodesVS.html"/>
+        <valueUri value="ValueSet-AdjudicationSlideCodes.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/AdjudicationSlideCodesVS"/>
+        <reference value="ValueSet/AdjudicationSlideCodes"/>
       </reference>
       <name value="Adjudication Slice Codes"/>
       <description value="Codes used to discriminate slices of adjudication and item.adjudication"/>
@@ -395,10 +395,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-AdjudicationValueCodesVS.html"/>
+        <valueUri value="ValueSet-AdjudicationValueCodes.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/AdjudicationValueCodesVS"/>
+        <reference value="ValueSet/AdjudicationValueCodes"/>
       </reference>
       <name value="Benefit Payment Status Category"/>
       <description value="Benefit Payment Status Category"/>
@@ -409,10 +409,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-BenefitPaymentStatusVS.html"/>
+        <valueUri value="ValueSet-BenefitPaymentStatus.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/BenefitPaymentStatusVS"/>
+        <reference value="ValueSet/BenefitPaymentStatus"/>
       </reference>
       <name value="Benefit Payment Status"/>
       <description value="Indicates the in network or out of network payment status of the claim."/>
@@ -423,10 +423,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-CMSPlaceOfServiceVS.html"/>
+        <valueUri value="ValueSet-CMSPlaceOfService.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/CMSPlaceOfServiceVS"/>
+        <reference value="ValueSet/CMSPlaceOfService"/>
       </reference>
       <name value="CMS Place of Service"/>
       <description value="https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .  The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.   The code set is owned by CMS and is available for use."/>
@@ -437,10 +437,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-CPTHCPCSModifierCodeVS.html"/>
+        <valueUri value="ValueSet-CPTHCPCSModifierCode.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/CPTHCPCSModifierCodeVS"/>
+        <reference value="ValueSet/CPTHCPCSModifierCode"/>
       </reference>
       <name value="AMA CPT and CMS HCPCS Modifier Codes"/>
       <description value="AMA CPT and CMS HCPCS Modifier Codes"/>
@@ -451,10 +451,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-CPTHCPCSProcedureCodeVS.html"/>
+        <valueUri value="ValueSet-CPTHCPCSProcedureCode.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/CPTHCPCSProcedureCodeVS"/>
+        <reference value="ValueSet/CPTHCPCSProcedureCode"/>
       </reference>
       <name value="AMA CPT and CMS HCPCS Procedure Codes"/>
       <description value="AMA CPT and CMS HCPCS Procedure Codes"/>
@@ -465,10 +465,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-ClaimAdjudicationCategoryVS.html"/>
+        <valueUri value="ValueSet-ClaimAdjudicationCategory.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ClaimAdjudicationCategoryVS"/>
+        <reference value="ValueSet/ClaimAdjudicationCategory"/>
       </reference>
       <name value="Claim Adjudication Category"/>
       <description value="Values for EOB.item.adjudication.category, as per Igor"/>
@@ -479,10 +479,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-ClaimInformationCategoryVS.html"/>
+        <valueUri value="ValueSet-ClaimInformationCategory.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ClaimInformationCategoryVS"/>
+        <reference value="ValueSet/ClaimInformationCategory"/>
       </reference>
       <name value="Claim Information Category"/>
       <description value="Claim Information Category - Used as the discriminator for supportingInfo"/>
@@ -493,10 +493,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-ClaimPayeeTypeCodeVS.html"/>
+        <valueUri value="ValueSet-ClaimPayeeTypeCode.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ClaimPayeeTypeCodeVS"/>
+        <reference value="ValueSet/ClaimPayeeTypeCode"/>
       </reference>
       <name value="Claim Payee Type Code"/>
       <description value="Identifies recipient of benefits payable; i.e., provider or subscriber."/>
@@ -507,10 +507,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-ClaimPaymentStatusCodeVS.html"/>
+        <valueUri value="ValueSet-ClaimPaymentStatusCode.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ClaimPaymentStatusCodeVS"/>
+        <reference value="ValueSet/ClaimPaymentStatusCode"/>
       </reference>
       <name value="Claim Payment Status Code"/>
       <description value="Indicates whether the claim / item was paid or denied."/>
@@ -521,10 +521,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-FDANDCNCPDPCompoundCodeVS.html"/>
+        <valueUri value="ValueSet-FDANDCNCPDPCompoundCode.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/FDANDCNCPDPCompoundCodeVS"/>
+        <reference value="ValueSet/FDANDCNCPDPCompoundCode"/>
       </reference>
       <name value="FDA NDC NCPDP Compound Code"/>
       <description value="NCPDP field # 407-D7 (National Drug Code (NDC)) or NCPDP field # 406-D6 (Compound Code)"/>
@@ -535,10 +535,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-FDANationalDrugCodeVS.html"/>
+        <valueUri value="ValueSet-FDANationalDrugCode.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/FDANationalDrugCodeVS"/>
+        <reference value="ValueSet/FDANationalDrugCode"/>
       </reference>
       <name value="FDA National Drug Code (NDC)"/>
       <description value="FDA National Drug Code (NDC)"/>
@@ -549,10 +549,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-ICD10CMVS.html"/>
+        <valueUri value="ValueSet-ICD10CM.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ICD10CMVS"/>
+        <reference value="ValueSet/ICD10CM"/>
       </reference>
       <name value="ICD-10-CM Diagnosis Codes"/>
       <description value="ICD-10-CM Diagnosis Codes.  ***We need ALL Codes, inactive and inactive.   Current binding is to active codes only***"/>
@@ -563,10 +563,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-ICD10PCSVS.html"/>
+        <valueUri value="ValueSet-ICD10PCS.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ICD10PCSVS"/>
+        <reference value="ValueSet/ICD10PCS"/>
       </reference>
       <name value="ICD-10-PCS"/>
       <description value="ICD-10-PCS"/>
@@ -577,10 +577,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-MSDRGVS.html"/>
+        <valueUri value="ValueSet-MSDRG.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/MSDRGVS"/>
+        <reference value="ValueSet/MSDRG"/>
       </reference>
       <name value="MS-DRG"/>
       <description value="MS-DRG"/>
@@ -591,10 +591,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-NCPDPBrandGenericCodeVS.html"/>
+        <valueUri value="ValueSet-NCPDPBrandGenericCode.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/NCPDPBrandGenericCodeVS"/>
+        <reference value="ValueSet/NCPDPBrandGenericCode"/>
       </reference>
       <name value="NCPDP Brand Generic Code"/>
       <description value="http://www.ncpdp.org/brand-generic-code"/>
@@ -605,10 +605,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-NCPDPDispensedAsWrittenVS.html"/>
+        <valueUri value="ValueSet-NCPDPDispensedAsWritten.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/NCPDPDispensedAsWrittenVS"/>
+        <reference value="ValueSet/NCPDPDispensedAsWritten"/>
       </reference>
       <name value="NCPDP Dispensed As Written (DAW)"/>
       <description value="http://www.ncpdp.org/dispensed-as-written-or-product-selection-code"/>
@@ -619,10 +619,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-NCPDPPrescriptionOriginCodeVS.html"/>
+        <valueUri value="ValueSet-NCPDPPrescriptionOriginCode.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/NCPDPPrescriptionOriginCodeVS"/>
+        <reference value="ValueSet/NCPDPPrescriptionOriginCode"/>
       </reference>
       <name value="NCPDP Prescription Origin Code"/>
       <description value="http://www.ncpdp.org/prescription-origin-code"/>
@@ -633,10 +633,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-NCPDPRejectCodeVS.html"/>
+        <valueUri value="ValueSet-NCPDPRejectCode.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/NCPDPRejectCodeVS"/>
+        <reference value="ValueSet/NCPDPRejectCode"/>
       </reference>
       <name value="NCPDP Reject Code"/>
       <description value="http://www.ncpdp.org/reject-code"/>
@@ -647,10 +647,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-NUBCPatientDischargeStatusVS.html"/>
+        <valueUri value="ValueSet-NUBCPatientDischargeStatus.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/NUBCPatientDischargeStatusVS"/>
+        <reference value="ValueSet/NUBCPatientDischargeStatus"/>
       </reference>
       <name value="NUBC Patient Discharge Status"/>
       <description value="NUBC Patient Discharge Status"/>
@@ -661,10 +661,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-NUBCPresentOnAdmissionVS.html"/>
+        <valueUri value="ValueSet-NUBCPresentOnAdmission.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/NUBCPresentOnAdmissionVS"/>
+        <reference value="ValueSet/NUBCPresentOnAdmission"/>
       </reference>
       <name value="NUBC Present On Admission"/>
       <description value="NUBC Present On Admission"/>
@@ -675,10 +675,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-NUBCPriorityOfAdmissionnVS.html"/>
+        <valueUri value="ValueSet-NUBCPriorityOfAdmissionn.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/NUBCPriorityOfAdmissionnVS"/>
+        <reference value="ValueSet/NUBCPriorityOfAdmissionn"/>
       </reference>
       <name value="NUBC Priority of Admission"/>
       <description value="NUBC Priority of Admission"/>
@@ -689,10 +689,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PatientIdentifierTypeVS.html"/>
+        <valueUri value="ValueSet-PatientIdentifierType.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PatientIdentifierTypeVS"/>
+        <reference value="ValueSet/PatientIdentifierType"/>
       </reference>
       <name value="Patient Identifier Type"/>
       <description value="Patient Identifier Type"/>
@@ -703,10 +703,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerAdjudicationAmountCategoryVS.html"/>
+        <valueUri value="ValueSet-PayerAdjudicationAmountCategory.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PayerAdjudicationAmountCategoryVS"/>
+        <reference value="ValueSet/PayerAdjudicationAmountCategory"/>
       </reference>
       <name value="Payer Adjudication Amount Category"/>
       <description value="This describes the various amount fields used when payers receive and adjudicate a claim."/>
@@ -717,10 +717,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerAdjudicationValueCodesVS.html"/>
+        <valueUri value="ValueSet-PayerAdjudicationValueCodes.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PayerAdjudicationValueCodesVS"/>
+        <reference value="ValueSet/PayerAdjudicationValueCodes"/>
       </reference>
       <name value="Payer Adjudication Value Codes"/>
       <description value="As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem"/>
@@ -745,10 +745,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerInstitutionalProviderRoleVS.html"/>
+        <valueUri value="ValueSet-PayerInstitutionalProviderRole.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PayerInstitutionalProviderRoleVS"/>
+        <reference value="ValueSet/PayerInstitutionalProviderRole"/>
       </reference>
       <name value="Payer - Inpatient Facility Provider Role"/>
       <description value="Indicates the role of the provider providing the care."/>
@@ -773,10 +773,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerPharmacyProviderRoleVS.html"/>
+        <valueUri value="ValueSet-PayerPharmacyProviderRole.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PayerPharmacyProviderRoleVS"/>
+        <reference value="ValueSet/PayerPharmacyProviderRole"/>
       </reference>
       <name value="Payer - Pharmacy Provider Role"/>
       <description value="Indicates the role of the provider providing the care."/>
@@ -787,10 +787,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerProfessionalAndNonClinicianProviderRoleVS.html"/>
+        <valueUri value="ValueSet-PayerProfessionalAndNonClinicianProviderRole.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PayerProfessionalAndNonClinicianProviderRoleVS"/>
+        <reference value="ValueSet/PayerProfessionalAndNonClinicianProviderRole"/>
       </reference>
       <name value="Payer - Professional and Non-Clinician Provider Role"/>
       <description value="Indicates the role of the provider providing the care."/>
@@ -815,10 +815,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerProviderRoleVS.html"/>
+        <valueUri value="ValueSet-PayerProviderRole.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PayerProviderRoleVS"/>
+        <reference value="ValueSet/PayerProviderRole"/>
       </reference>
       <name value="Payer Provider Role"/>
       <description value="Payer Provider Role"/>
@@ -829,10 +829,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-ProviderNetworkStatusVS.html"/>
+        <valueUri value="ValueSet-ProviderNetworkStatus.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ProviderNetworkStatusVS"/>
+        <reference value="ValueSet/ProviderNetworkStatus"/>
       </reference>
       <name value="Provider Network Status"/>
       <description value="Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission."/>

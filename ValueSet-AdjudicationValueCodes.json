@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "AdjudicationValueCodes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-ClaimAdjudicationCategoryCS.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-submittedamount\">submittedamount</a></td><td>submitted amount</td><td>Undefined</td></tr><tr><td><a href=\"CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-allowedamount\">allowedamount</a></td><td>allowed amount</td><td>Undefined</td></tr><tr><td><a href=\"CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-deductibleamount\">deductibleamount</a></td><td>deductible amount</td><td>Undefined</td></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationValueCodes",
+  "version": "0.2.0",
+  "name": "AdjudicationValueCodes",
+  "title": "Benefit Payment Status Category",
+  "status": "active",
+  "date": "2020-07-16T13:42:16+00:00",
+  "publisher": "HL7 Financial Management Working Group",
+  "contact": [
+    {
+      "name": "HL7 Financial Management Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
+          "system": "email",
+          "value": "fm@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Benefit Payment Status Category",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS",
+        "concept": [
+          {
+            "code": "submittedamount",
+            "display": "submitted amount"
+          },
+          {
+            "code": "allowedamount",
+            "display": "allowed amount"
+          },
+          {
+            "code": "deductibleamount",
+            "display": "deductible amount"
+          }
+        ]
+      }
+    ]
+  }
+}
