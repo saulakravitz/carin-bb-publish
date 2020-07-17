@@ -87,16 +87,16 @@
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="2a0878e1-16c9-4d41-939e-5ffe7b1994b9">​</a><a href="index.html#description">Introduction          </a></li>
-     <li><a name="7dde1193-91b0-450c-bc9d-fd8e83ced4b7">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="05e4b487-7cd5-4877-be4e-a2248766119f">​</a><a href="Background.html#guide-overview">Guide Overview       </a></li>
+     <li><a name="01815ac4-383f-440a-bab9-07afc92c1bf0">​</a><a href="index.html#description">Introduction          </a></li>
+     <li><a name="0791352e-3605-4e09-b1fd-0aa1758e1cea">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="9754333d-d77d-43c1-90ef-734359183730">​</a><a href="Background.html#guide-overview">Guide Overview       </a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="4838e9c9-0b2a-4c42-bfb0-b64e069308b3">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="7dc3f5bd-0e0f-41e8-ae64-144b5acf1c70">​</a><a href="Use_Case.html#use-cases">Use Cases            </a></li>
+       <li><a name="d699cbb8-360a-4977-a316-057e70a8c327">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="10189277-034f-42eb-a0d7-914dc5efeac6">​</a><a href="Use_Case.html#use-cases">Use Cases            </a></li>
     </ul>
    </li>
     <li class="dropdown">
@@ -183,6 +183,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div xsi:schemalocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 
 <h3>Search Behavior</h3>
+
+<b>Warning:  Under Construction.   Will be updated in version 0.3 </b>
+
 The EOB Resource is the focal Consumer-Directed Payer Data Exchange (CDPDE) Resource. Several Reference Resources are defined directly/indirectly from the EOB: Coverage, Patient, Organization (Payer ID), Practioner, Organization (Facility), PractionerRole, Location.
 
 The Coverage Reference Resource SHALL be returned with data that was effective as of the date of service of the claim; for example, the data will reflect the employer name in effect at that time. However, for other reference resources, payers MAY decide to provide either the data that was in effect as of the date of service or the current data. All reference resources within the EOB will have meta.lastUpdated flagged as must support. Payers SHALL provide the last time the data was updated or the date of creation in the payers system of record, whichever comes last. Apps will use the meta.lastUpdated values to determine if the reference resources are as of the current date or date of service.
@@ -416,7 +419,7 @@ Servers SHALL support the following _includes on the EOB Profiles:
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 17, 2020 17:10+0000">2020-07-17</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 17, 2020 17:41+0000">2020-07-17</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
