@@ -59,7 +59,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.2.0 - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.2.1 - STU1</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -87,16 +87,15 @@
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="ad768b71-6e62-4296-9199-3312849d0591">​</a><a href="index.html#description">Introduction          </a></li>
-     <li><a name="e88ed9c5-a0c6-4e47-8d2b-4a3349732af0">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="cb76dd33-60af-4edc-aec9-6e93ae767f7c">​</a><a href="Background.html#guide-overview">Guide Overview       </a></li>
+     <li><a name="a37ea1f9-8d4d-491e-8f8e-7b8b34916392">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="2d80f53b-42f8-4c7b-9bbb-183c746457b2">​</a><a href="Background.html#guide-overview">Guide Overview    </a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="2ca882d7-cd2b-4c1e-9a6d-80e19f6b2a07">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="ea4510cb-5273-4739-9e69-ec8b734d4d5c">​</a><a href="Use_Case.html#use-cases">Use Cases            </a></li>
+       <li><a name="1db6f8e0-6865-4836-8814-e3d0e22ac28e">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="dd5b88b6-9a99-4d06-8c57-26dbea6a2889">​</a><a href="Use_Case.html#use-cases">Use Cases         </a></li>
     </ul>
    </li>
     <li class="dropdown">
@@ -127,12 +126,9 @@
     <li>
     <a href="Examples.html">Examples</a>
     </li>
-        <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Downloads<b class="caret"> </b></a>
-    <ul class="dropdown-menu">
-    <li><a href="downloads.html">Downloads</a></li>  
-    </ul>
-   </li>
+    <li>
+    <a href="downloads.html">Downloads</a>
+    </li>
 </ul>
 
             </div>    <!-- /.nav-collapse -->
@@ -155,7 +151,8 @@
         <div class="row">
           <div class="inner-wrapper">
 <div style="counter-reset: section 9" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.2.0). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.2.1). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
 
 
 
@@ -222,11 +219,11 @@
      fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html\"&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/adjudication&lt;/code&gt;&lt;/a&gt;&lt;table class=\"none\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-submitted\"&gt;submitted&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Submitted Amount&lt;/td&gt;&lt;td&gt;The total submitted amount for the claim or group or line item.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-copay\"&gt;copay&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CoPay&lt;/td&gt;&lt;td&gt;Patient Co-Payment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-eligible\"&gt;eligible&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eligible Amount&lt;/td&gt;&lt;td&gt;Amount of the change which is considered for adjudication.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-deductible\"&gt;deductible&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deductible&lt;/td&gt;&lt;td&gt;Amount deducted from the eligible amount prior to adjudication.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-benefit\"&gt;benefit&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Benefit Amount&lt;/td&gt;&lt;td&gt;Amount payable under the coverage&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\"CodeSystem-PayerAdjudicationCategoryCS.html\"&gt;&lt;code&gt;http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS&lt;/code&gt;&lt;/a&gt;&lt;table class=\"none\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-coinsurance\"&gt;coinsurance&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Coinsurance&lt;/td&gt;&lt;td&gt;The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-noncovered\"&gt;noncovered&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Noncovered&lt;/td&gt;&lt;td&gt;The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-priorpayerpaid\"&gt;priorpayerpaid&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prior payer paid&lt;/td&gt;&lt;td&gt;The reduction in the payment amount to reflect the carrier as a secondary payor.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidbypatient\"&gt;paidbypatient&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Paid by patient&lt;/td&gt;&lt;td&gt;The amount paid by the patient at the point of service.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtopatient\"&gt;paidtopatient&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Paid to patient&lt;/td&gt;&lt;td&gt;paid to patient&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtoprovider\"&gt;paidtoprovider&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Paid to provider&lt;/td&gt;&lt;td&gt;The amount paid to the provider.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-memberliability\"&gt;memberliability&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Member liability&lt;/td&gt;&lt;td&gt;The amount of the member's liability.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-discount\"&gt;discount&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Discount&lt;/td&gt;&lt;td&gt;The amount of the discount&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-drugcost\"&gt;drugcost&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drug cost&lt;/td&gt;&lt;td&gt;Price paid for the drug excluding mfr or other discounts.  It typically is the sum of the following components: ingredient cost, dispensing fee, sales tax, and vaccine administration&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
   ];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationValueCodes"];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "0.2.0"];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "0.2.1"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "PayerAdjudicationValueCodes"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Payer Adjudication Value Codes"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "active"];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2020-07-17T18:09:33+00:00"^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2020-07-17T20:57:43+00:00"^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "HL7 Financial Management Working Group"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -321,7 +318,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 17, 2020 18:09+0000">2020-07-17</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 17, 2020 20:57+0000">2020-07-17</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

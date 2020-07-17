@@ -59,7 +59,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.2.0 - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.2.1 - STU1</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -87,16 +87,15 @@
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="d605ffbf-6941-43e0-b3d8-d445fb9e6838">​</a><a href="index.html#description">Introduction          </a></li>
-     <li><a name="741c4d4c-00c6-4182-aef7-9fae968c010a">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="08a68ca3-b47a-4ad6-b55e-eadd5dbcc272">​</a><a href="Background.html#guide-overview">Guide Overview       </a></li>
+     <li><a name="02955a43-00e3-4fe2-94a3-4d3ff1d3d6eb">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="1c387c3e-8aa8-48fc-b056-84de474f3c20">​</a><a href="Background.html#guide-overview">Guide Overview    </a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="be46cae6-199b-4c69-adad-6ab6218a2d54">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="2cce30db-0472-4f35-81c7-4191cd07bfc4">​</a><a href="Use_Case.html#use-cases">Use Cases            </a></li>
+       <li><a name="407a9c1f-66f1-4d41-bb1d-4206e6eaa46f">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="b488e958-58a0-4a21-a1dd-dbabbdf1d706">​</a><a href="Use_Case.html#use-cases">Use Cases         </a></li>
     </ul>
    </li>
     <li class="dropdown">
@@ -127,12 +126,9 @@
     <li>
     <a href="Examples.html">Examples</a>
     </li>
-        <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Downloads<b class="caret"> </b></a>
-    <ul class="dropdown-menu">
-    <li><a href="downloads.html">Downloads</a></li>  
-    </ul>
-   </li>
+    <li>
+    <a href="downloads.html">Downloads</a>
+    </li>
 </ul>
 
             </div>    <!-- /.nav-collapse -->
@@ -155,7 +151,8 @@
         <div class="row">
           <div class="inner-wrapper">
 <div style="counter-reset: section 9" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.2.0). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.2.1). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
 
 
 
@@ -226,7 +223,7 @@
      fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2 id=\"title\"&gt;CARIN BlueButton Consumer App CapabilityStatement&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide&lt;/li&gt;&lt;li&gt;FHIR Version: 4.0.1&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2019-12-04&lt;/li&gt;&lt;li&gt;Published by HL7 International and CARIN Alliance&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;p&gt;This Section describes the expected capabilities of the Consumer-Directed Payer Data Exchange Consumer App which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Consumer-Directed Payer Data Exchange Servers are defined in the \n                    &lt;a href=\"CapabilityStatement-carin-bb-capabilitystatement-healthplan-api.html\"&gt;Conformance Requirements for Server&lt;/a&gt;.Consumer-Directed Payer Data Exchange Consumer Apps have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.\n                &lt;/p&gt;&lt;/p&gt;&lt;h3 id=\"behavior\"&gt;FHIR RESTful Capabilities&lt;/h3&gt;&lt;p&gt;The Consumer-Directed Payer Data Exchange Consumer App \n                &lt;strong&gt;SHALL&lt;/strong&gt;:\n            &lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support fetching and querying of one or more CARIN Blue Button profile(s), using the supported RESTful interactions and search parameters declared in the US Core Server CapabilityStatement.&lt;/li&gt;&lt;/ol&gt;&lt;p id=\"security\"&gt;&lt;strong&gt;Security:&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;See the \n                    &lt;a href=\"Authorization,_Authentication,_and_Registration.html\"&gt;Authorization, Authentication, and Registration&lt;/a&gt; section for requirements and recommendations.\n                &lt;/li&gt;&lt;/ol&gt;&lt;hr/&gt;&lt;br/&gt;&lt;/div&gt;"
   ];
   <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">fhir:CapabilityStatement.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/us/carin/CapabilityStatement/carin-bb-capabilitystatement-consumer-app"];
-  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">fhir:CapabilityStatement.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "0.2.0"];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">fhir:CapabilityStatement.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "0.2.1"];
   <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.name">fhir:CapabilityStatement.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "CARIN_BlueButton_Consumer_App_CapabilityStatement"];
   <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">fhir:CapabilityStatement.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "CARIN BlueButton Consumer App CapabilityStatement"];
   <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">fhir:CapabilityStatement.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "active"];
@@ -424,7 +421,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 17, 2020 18:09+0000">2020-07-17</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 17, 2020 20:57+0000">2020-07-17</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
