@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-07-17T21:55:57+00:00"/>
+  <date value="2020-07-23T19:16:13+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -367,6 +367,20 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-AdjudicationCarinBBValueCodes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AdjudicationCarinBBValueCodes"/>
+      </reference>
+      <name value="Adjudication CARINBB Value Codes"/>
+      <description value="As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-AdjudicationDenialReason.html"/>
       </extension>
       <reference>
@@ -416,6 +430,62 @@
       </reference>
       <name value="Benefit Payment Status"/>
       <description value="Indicates the in network or out of network payment status of the claim."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-CARINBBInstitutionalClaimCareTeamRoleCodes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CARINBBInstitutionalClaimCareTeamRoleCodes"/>
+      </reference>
+      <name value="CARINBB Institutional Claim Care Team Roles"/>
+      <description value="Indicates the role of the provider providing the care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-CARINBBPharmacyClaimCareTeamRoleCodes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CARINBBPharmacyClaimCareTeamRoleCodes"/>
+      </reference>
+      <name value="CARINBB Pharmacy CareTeam Roles"/>
+      <description value="Indicates the role of the provider providing the care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes"/>
+      </reference>
+      <name value="CARINBB Professional and Non-Clinician CareTeam Roles"/>
+      <description value="Indicates the role of the provider providing the care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-CMSDRG.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CMSDRG"/>
+      </reference>
+      <name value="CMS-DRG"/>
+      <description value="CMS-DRG"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -563,20 +633,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-MSDRG.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MSDRG"/>
-      </reference>
-      <name value="MS-DRG"/>
-      <description value="MS-DRG"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-NCPDPBrandGenericCode.html"/>
       </extension>
       <reference>
@@ -703,20 +759,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerAdjudicationValueCodes.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/PayerAdjudicationValueCodes"/>
-      </reference>
-      <name value="Payer Adjudication Value Codes"/>
-      <description value="As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-PayerInpatientfacilitydiagnosistype.html"/>
       </extension>
       <reference>
@@ -724,20 +766,6 @@
       </reference>
       <name value="Diagnosis Type -- Inpatient Facility"/>
       <description value="Payer Inpatient Facility Diagnosis Type"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerInstitutionalProviderRole.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/PayerInstitutionalProviderRole"/>
-      </reference>
-      <name value="Payer - Inpatient Facility Provider Role"/>
-      <description value="Indicates the role of the provider providing the care."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -759,34 +787,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerPharmacyProviderRole.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/PayerPharmacyProviderRole"/>
-      </reference>
-      <name value="Payer - Pharmacy Provider Role"/>
-      <description value="Indicates the role of the provider providing the care."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerProfessionalAndNonClinicianProviderRole.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/PayerProfessionalAndNonClinicianProviderRole"/>
-      </reference>
-      <name value="Payer - Professional and Non-Clinician Provider Role"/>
-      <description value="Indicates the role of the provider providing the care."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-PayerProfessionalandnoncliniciandiagnosistype.html"/>
       </extension>
       <reference>
@@ -801,12 +801,12 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-ProviderNetworkStatus.html"/>
+        <valueUri value="ValueSet-PayerProviderContractingStatus.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ProviderNetworkStatus"/>
+        <reference value="ValueSet/PayerProviderContractingStatus"/>
       </reference>
-      <name value="Provider Network Status"/>
+      <name value="Provider Provider Contracting Status"/>
       <description value="Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -822,6 +822,20 @@
       </reference>
       <name value="Adjudication Slice Codes"/>
       <description value="Codes used to discriminate slices of adjudication and item.adjudication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-CareTeamRoleCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CareTeamRoleCS"/>
+      </reference>
+      <name value="Payer Provider Role"/>
+      <description value="Payer Provider Role"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -892,20 +906,6 @@
       </reference>
       <name value="Payer Diagnosis Type"/>
       <description value="Payer Diagnosis Type"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-PayerProviderRoleCS.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/PayerProviderRoleCS"/>
-      </reference>
-      <name value="Payer Provider Role"/>
-      <description value="Payer Provider Role"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

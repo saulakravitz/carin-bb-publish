@@ -87,15 +87,15 @@
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="c64ada39-ffb9-4591-bca9-472ec588ccdd">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="b36aaa23-304d-4a42-938a-e988d296f71c">​</a><a href="Background.html#guide-overview">Guide Overview    </a></li>
+     <li><a name="b524b674-ccb8-41d2-879e-d9414791b3cf">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="8f9d00a4-51e9-4360-a356-a61a9236b8a1">​</a><a href="Background.html#guide-overview">Guide Overview    </a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="fd0406d4-8072-4fd3-8e4e-7ab0c4011c94">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="6ee00a35-409c-45b6-b304-dc5148f50857">​</a><a href="Use_Case.html#use-cases">Use Cases         </a></li>
+       <li><a name="26a9690d-2826-4cfb-819e-97f0fda122c9">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="ab99bc46-8d1c-434f-9518-3f5dd0e86085">​</a><a href="Use_Case.html#use-cases">Use Cases         </a></li>
     </ul>
    </li>
     <li class="dropdown">
@@ -909,7 +909,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>Type of Party to be reimbursed: Subscriber, provider, other.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-payeetype.html">Claim Payee Type Codes</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>A code for the party to be reimbursed.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-payeetype.html">Claim Payee Type Codes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to know who should receive payment with the most common situations being the Provider (assignment of benefits) or the Subscriber.</p>
@@ -920,7 +920,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>Reference to the individual or organization to whom any payment will be made.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-CARIN-BB-Organization.html" title="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization">CARINBBOrganization</a> | <a href="StructureDefinition-CARIN-BB-Patient.html" title="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient">CARINBBPatient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-CARIN-BB-Organization.html" title="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization">CARINBBOrganization</a> | <a href="StructureDefinition-CARIN-BB-Patient.html" title="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient">CARINBBPatient</a> | <a href="StructureDefinition-CARIN-BB-Practitioner.html" title="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Practitioner">CARINBBPractitioner</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to provide demographics if the payee is not 'subscriber' nor 'provider'.</p>
 </td></tr>
@@ -1084,7 +1084,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The lead, assisting or supervising practitioner and their discipline if a multidisciplinary team.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-PayerInstitutionalProviderRole.html">Payer - Inpatient Facility Provider Role</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-CARINBBInstitutionalClaimCareTeamRoleCodes.html">CARINBB Institutional Claim Care Team Roles</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>When multiple parties are present it is required to distinguish the roles performed by each member.</p>
@@ -1158,9 +1158,8 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategory.html">Claim Information Category</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The valuset used for additional information category codes.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-claim-informationcategory.html">ClaimInformationCategoryCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
@@ -1269,9 +1268,8 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategory.html">Claim Information Category</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The valuset used for additional information category codes.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-claim-informationcategory.html">ClaimInformationCategoryCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
@@ -1283,7 +1281,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ProviderNetworkStatus.html">Provider Network Status</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-PayerProviderContractingStatus.html">Provider Provider Contracting Status</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to identify the kind of additional information.</p>
@@ -1381,9 +1379,8 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategory.html">Claim Information Category</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The valuset used for additional information category codes.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-claim-informationcategory.html">ClaimInformationCategoryCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
@@ -1395,7 +1392,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ProviderNetworkStatus.html">Provider Network Status</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-PayerProviderContractingStatus.html">Provider Provider Contracting Status</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to identify the kind of additional information.</p>
@@ -1493,9 +1490,8 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategory.html">Claim Information Category</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The valuset used for additional information category codes.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-claim-informationcategory.html">ClaimInformationCategoryCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
@@ -1507,7 +1503,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ProviderNetworkStatus.html">Provider Network Status</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-PayerProviderContractingStatus.html">Provider Provider Contracting Status</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to identify the kind of additional information.</p>
@@ -1605,9 +1601,8 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategory.html">Claim Information Category</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The valuset used for additional information category codes.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-claim-informationcategory.html">ClaimInformationCategoryCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
@@ -1619,7 +1614,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ProviderNetworkStatus.html">Provider Network Status</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-PayerProviderContractingStatus.html">Provider Provider Contracting Status</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to identify the kind of additional information.</p>
@@ -1717,9 +1712,8 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategory.html">Claim Information Category</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The valuset used for additional information category codes.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-claim-informationcategory.html">ClaimInformationCategoryCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
@@ -1829,9 +1823,8 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategory.html">Claim Information Category</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The valuset used for additional information category codes.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-claim-informationcategory.html">ClaimInformationCategoryCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
@@ -1843,7 +1836,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="eaf96f6b-f845-4f52-a077-6710b7412c28">​</a>The codes SHALL be taken from <a href="nubc-type-of-bill.html">nubc-type-of-bill</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="3eeaba44-889b-4d9e-be6a-c24b67e255f8">​</a>The codes SHALL be taken from <a href="nubc-type-of-bill.html">nubc-type-of-bill</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to identify the kind of additional information.</p>
@@ -1941,9 +1934,8 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategory.html">Claim Information Category</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The valuset used for additional information category codes.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-claim-informationcategory.html">ClaimInformationCategoryCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
@@ -1955,7 +1947,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="a8023325-2676-4159-a374-97e36e3a0ab2">​</a>The codes SHALL be taken from <a href="nubc-admission-source.html">nubc-admission-source</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="ed428842-e8bd-49f9-9a15-fd84bfb52734">​</a>The codes SHALL be taken from <a href="nubc-admission-source.html">nubc-admission-source</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to identify the kind of additional information.</p>
@@ -2053,9 +2045,8 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategory.html">Claim Information Category</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The valuset used for additional information category codes.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-claim-informationcategory.html">ClaimInformationCategoryCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
@@ -2165,9 +2156,8 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategory.html">Claim Information Category</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The valuset used for additional information category codes.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-claim-informationcategory.html">ClaimInformationCategoryCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
@@ -2277,9 +2267,8 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The general class of the information supplied: information; exception; accident, employment; onset, etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-ClaimInformationCategory.html">Claim Information Category</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The valuset used for additional information category codes.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-claim-informationcategory.html">ClaimInformationCategoryCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to group or associate information items with common characteristics. For example: admission information or prior treatments.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
@@ -2291,7 +2280,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-MSDRG.html">MS-DRG</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-CMSDRG.html">CMS-DRG</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to identify the kind of additional information.</p>
@@ -2788,7 +2777,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>The type of revenue or cost center providing the product and/or service.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="22ea1f46-f1b6-4065-9875-7f27d26d8749">​</a>The codes SHALL be taken from <a href="nubc-service-line-revenue.html">nubc-service-line-revenue</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="3812d269-32a5-4bd5-a328-c9410252fb5e">​</a>The codes SHALL be taken from <a href="nubc-service-line-revenue.html">nubc-service-line-revenue</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Needed in the processing of institutional claims.</p>
 </td></tr>
@@ -3084,7 +3073,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>A code to indicate the information type of this adjudication record. Information types may include: the value submitted, maximum values or percentages allowed or payable under the plan, amounts that the patient is responsible for in-aggregate or pertaining to this item, amounts paid by other coverages, and the benefit payable for this item.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-PayerAdjudicationValueCodes.html">Payer Adjudication Value Codes</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-AdjudicationCarinBBValueCodes.html">Adjudication CARINBB Value Codes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Needed to enable understanding of the context of the other information in the adjudication.</p>
@@ -4273,7 +4262,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
   <tr><td>Definition</td><td><p>A code to indicate the information type of this adjudication record. Information types may include: the value submitted, maximum values or percentages allowed or payable under the plan, amounts that the patient is responsible for in-aggregate or pertaining to this item, amounts paid by other coverages, and the benefit payable for this item.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-PayerAdjudicationValueCodes.html">Payer Adjudication Value Codes</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-AdjudicationCarinBBValueCodes.html">Adjudication CARINBB Value Codes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Needed to enable understanding of the context of the other information in the adjudication.</p>
 </td></tr>
@@ -5088,7 +5077,7 @@ ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 17, 2020 21:55+0000">2020-07-17</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 23, 2020 19:16+0000">2020-07-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

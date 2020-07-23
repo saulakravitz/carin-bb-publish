@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-07-17T21:55:57+00:00",
+  "date": "2020-07-23T19:16:13+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -529,6 +529,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-AdjudicationCarinBBValueCodes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/AdjudicationCarinBBValueCodes"
+        },
+        "name": "Adjudication CARINBB Value Codes",
+        "description": "As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-AdjudicationDenialReason.html"
           }
         ],
@@ -591,6 +609,78 @@
         },
         "name": "Benefit Payment Status",
         "description": "Indicates the in network or out of network payment status of the claim.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-CARINBBInstitutionalClaimCareTeamRoleCodes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/CARINBBInstitutionalClaimCareTeamRoleCodes"
+        },
+        "name": "CARINBB Institutional Claim Care Team Roles",
+        "description": "Indicates the role of the provider providing the care.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-CARINBBPharmacyClaimCareTeamRoleCodes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/CARINBBPharmacyClaimCareTeamRoleCodes"
+        },
+        "name": "CARINBB Pharmacy CareTeam Roles",
+        "description": "Indicates the role of the provider providing the care.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes"
+        },
+        "name": "CARINBB Professional and Non-Clinician CareTeam Roles",
+        "description": "Indicates the role of the provider providing the care.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-CMSDRG.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/CMSDRG"
+        },
+        "name": "CMS-DRG",
+        "description": "CMS-DRG",
         "exampleBoolean": false
       },
       {
@@ -781,24 +871,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-MSDRG.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/MSDRG"
-        },
-        "name": "MS-DRG",
-        "description": "MS-DRG",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-NCPDPBrandGenericCode.html"
           }
         ],
@@ -961,24 +1033,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerAdjudicationValueCodes.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PayerAdjudicationValueCodes"
-        },
-        "name": "Payer Adjudication Value Codes",
-        "description": "As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-PayerInpatientfacilitydiagnosistype.html"
           }
         ],
@@ -987,24 +1041,6 @@
         },
         "name": "Diagnosis Type -- Inpatient Facility",
         "description": "Payer Inpatient Facility Diagnosis Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerInstitutionalProviderRole.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PayerInstitutionalProviderRole"
-        },
-        "name": "Payer - Inpatient Facility Provider Role",
-        "description": "Indicates the role of the provider providing the care.",
         "exampleBoolean": false
       },
       {
@@ -1033,42 +1069,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerPharmacyProviderRole.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PayerPharmacyProviderRole"
-        },
-        "name": "Payer - Pharmacy Provider Role",
-        "description": "Indicates the role of the provider providing the care.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerProfessionalAndNonClinicianProviderRole.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PayerProfessionalAndNonClinicianProviderRole"
-        },
-        "name": "Payer - Professional and Non-Clinician Provider Role",
-        "description": "Indicates the role of the provider providing the care.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-PayerProfessionalandnoncliniciandiagnosistype.html"
           }
         ],
@@ -1087,13 +1087,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-ProviderNetworkStatus.html"
+            "valueUri": "ValueSet-PayerProviderContractingStatus.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/ProviderNetworkStatus"
+          "reference": "ValueSet/PayerProviderContractingStatus"
         },
-        "name": "Provider Network Status",
+        "name": "Provider Provider Contracting Status",
         "description": "Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.",
         "exampleBoolean": false
       },
@@ -1113,6 +1113,24 @@
         },
         "name": "Adjudication Slice Codes",
         "description": "Codes used to discriminate slices of adjudication and item.adjudication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-CareTeamRoleCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/CareTeamRoleCS"
+        },
+        "name": "Payer Provider Role",
+        "description": "Payer Provider Role",
         "exampleBoolean": false
       },
       {
@@ -1203,24 +1221,6 @@
         },
         "name": "Payer Diagnosis Type",
         "description": "Payer Diagnosis Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-PayerProviderRoleCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/PayerProviderRoleCS"
-        },
-        "name": "Payer Provider Role",
-        "description": "Payer Provider Role",
         "exampleBoolean": false
       },
       {

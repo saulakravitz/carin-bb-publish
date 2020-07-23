@@ -87,15 +87,15 @@
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-     <li><a name="3d218407-d8a1-4736-8d4a-58d3605f9bee">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
-      <li><a name="9762b9a0-0959-4652-af02-87bee5279d81">​</a><a href="Background.html#guide-overview">Guide Overview    </a></li>
+     <li><a name="00463446-8074-41e4-b55d-06562bc15888">​</a><a href="Background.html#the-carin-alliance">The CARIN Alliance</a></li>
+      <li><a name="58de580a-bc5f-43c4-94ce-b72ebab854cd">​</a><a href="Background.html#guide-overview">Guide Overview    </a></li>
     </ul>
   </li>
      <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-       <li><a name="f262e84c-6fed-41af-9c57-37c7ae0ed19e">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
-       <li><a name="b89e526e-bf3c-485c-baa7-aef2380e20f0">​</a><a href="Use_Case.html#use-cases">Use Cases         </a></li>
+       <li><a name="34b386aa-9183-4e54-9460-08e03869a7d2">​</a><a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a></li>
+       <li><a name="a20c185f-296f-4d48-8756-3a10e2eba95d">​</a><a href="Use_Case.html#use-cases">Use Cases         </a></li>
     </ul>
    </li>
     <li class="dropdown">
@@ -242,6 +242,10 @@ This IG includes value set bindings to code systems that are industry standard c
 <td>https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .  The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.   The code set is owned by CMS and is available for use.</td>
 </tr>
 <tr>
+<td><a href="ValueSet-CMSDRG.html">CMS-DRG</a></td>
+<td>CMS-DRG</td>
+</tr>
+<tr>
 <td><a href="ValueSet-ClaimAdjudicationCategory.html">Claim Adjudication Category</a></td>
 <td>Values for EOB.item.adjudication.category, as per Igor</td>
 </tr>
@@ -282,10 +286,6 @@ This IG includes value set bindings to code systems that are industry standard c
 <td>ICD-10-PCS</td>
 </tr>
 <tr>
-<td><a href="ValueSet-MSDRG.html">MS-DRG</a></td>
-<td>MS-DRG</td>
-</tr>
-<tr>
 <td><a href="ValueSet-NCPDPBrandGenericCode.html">NCPDP Brand Generic Code</a></td>
 <td>http://www.ncpdp.org/brand-generic-code</td>
 </tr>
@@ -318,15 +318,15 @@ This IG includes value set bindings to code systems that are industry standard c
 <td>Patient Identifier Type</td>
 </tr>
 <tr>
-<td><a href="ValueSet-PayerInstitutionalProviderRole.html">Payer - Inpatient Facility Provider Role</a></td>
+<td><a href="ValueSet-CARINBBInstitutionalClaimCareTeamRoleCodes.html">Payer - Inpatient Facility Provider Role</a></td>
 <td>Indicates the role of the provider providing the care.</td>
 </tr>
 <tr>
-<td><a href="ValueSet-PayerPharmacyProviderRole.html">Payer - Pharmacy Provider Role</a></td>
+<td><a href="ValueSet-CARINBBPharmacyClaimCareTeamRoleCodes.html">Payer - Pharmacy Provider Role</a></td>
 <td>Indicates the role of the provider providing the care.</td>
 </tr>
 <tr>
-<td><a href="ValueSet-PayerProfessionalAndNonClinicianProviderRole.html">Payer - Professional and Non-Clinician Provider Role</a></td>
+<td><a href="ValueSet-CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes.html">Payer - Professional and Non-Clinician Provider Role</a></td>
 <td>Indicates the role of the provider providing the care.</td>
 </tr>
 <tr>
@@ -334,11 +334,11 @@ This IG includes value set bindings to code systems that are industry standard c
 <td>This describes the various amount fields used when payers receive and adjudicate a claim.</td>
 </tr>
 <tr>
-<td><a href="ValueSet-PayerAdjudicationValueCodes.html">Payer Adjudication Value Codes</a></td>
+<td><a href="ValueSet-AdjudicationCarinBBValueCodes.html">Payer Adjudication Value Codes</a></td>
 <td>As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem</td>
 </tr>
 <tr>
-<td><a href="ValueSet-ProviderNetworkStatus.html">Provider Network Status</a></td>
+<td><a href="ValueSet-PayerProviderContractingStatus.html">Provider Network Status</a></td>
 <td>Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.</td>
 </tr>
   </tbody>
@@ -382,7 +382,7 @@ This IG includes value set bindings to code systems that are industry standard c
 <td>Payer Diagnosis Type</td>
 </tr>
 <tr>
-<td><a href="CodeSystem-PayerProviderRoleCS.html">Payer Provider Role</a></td>
+<td><a href="CodeSystem-CareTeamRoleCS.html">Payer Provider Role</a></td>
 <td>Payer Provider Role</td>
 </tr>
 </tbody>
@@ -416,7 +416,7 @@ This IG includes value set bindings to code systems that are industry standard c
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 17, 2020 21:55+0000">2020-07-17</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 23, 2020 19:16+0000">2020-07-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -7,6 +7,13 @@
     "name": "AdjudicationSliceCodesCS"
   },
   {
+    "id": "CareTeamRoleCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS",
+    "version": "0.2.1",
+    "name": "CareTeamRoleCS"
+  },
+  {
     "id": "ClaimAdjudicationCategoryCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS",
@@ -40,13 +47,6 @@
     "url": "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS",
     "version": "0.2.1",
     "name": "PayerDiagnosisTypeCS"
-  },
-  {
-    "id": "PayerProviderRoleCS",
-    "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerProviderRoleCS",
-    "version": "0.2.1",
-    "name": "PayerProviderRoleCS"
   },
   {
     "id": "hl7.fhir.us.carin-bb",
@@ -140,6 +140,13 @@
     "name": "CARINBBPractitionerRole"
   },
   {
+    "id": "AdjudicationCarinBBValueCodes",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationCarinBBValueCodes",
+    "version": "0.2.1",
+    "name": "AdjudicationCarinBBValueCodes"
+  },
+  {
     "id": "AdjudicationDenialReason",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationDenialReason",
@@ -166,6 +173,34 @@
     "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/BenefitPaymentStatus",
     "version": "0.2.1",
     "name": "BenefitPaymentStatus"
+  },
+  {
+    "id": "CARINBBInstitutionalClaimCareTeamRoleCodes",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/CARINBBInstitutionalClaimCareTeamRoleCodes",
+    "version": "0.2.1",
+    "name": "CARINBBInstitutionalClaimCareTeamRoleCodes"
+  },
+  {
+    "id": "CARINBBPharmacyClaimCareTeamRoleCodes",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/CARINBBPharmacyClaimCareTeamRoleCodes",
+    "version": "0.2.1",
+    "name": "CARINBBPharmacyClaimCareTeamRoleCodes"
+  },
+  {
+    "id": "CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes",
+    "version": "0.2.1",
+    "name": "CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes"
+  },
+  {
+    "id": "CMSDRG",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSDRG",
+    "version": "0.2.1",
+    "name": "CMSDRG"
   },
   {
     "id": "CMSPlaceOfService",
@@ -238,13 +273,6 @@
     "name": "ICD10PCS"
   },
   {
-    "id": "MSDRG",
-    "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/MSDRG",
-    "version": "0.2.1",
-    "name": "MSDRG"
-  },
-  {
     "id": "NCPDPBrandGenericCode",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPBrandGenericCode",
@@ -308,25 +336,11 @@
     "name": "PayerAdjudicationAmountCategory"
   },
   {
-    "id": "PayerAdjudicationValueCodes",
-    "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerAdjudicationValueCodes",
-    "version": "0.2.1",
-    "name": "PayerAdjudicationValueCodes"
-  },
-  {
     "id": "PayerInpatientfacilitydiagnosistype",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerInpatientfacilitydiagnosistype",
     "version": "0.2.1",
     "name": "PayerInpatientfacilitydiagnosistype"
-  },
-  {
-    "id": "PayerInstitutionalProviderRole",
-    "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerInstitutionalProviderRole",
-    "version": "0.2.1",
-    "name": "PayerInstitutionalProviderRole"
   },
   {
     "id": "PayerOutpatientfacilitydiagnosistype",
@@ -336,20 +350,6 @@
     "name": "PayerOutpatientfacilitydiagnosistype"
   },
   {
-    "id": "PayerPharmacyProviderRole",
-    "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerPharmacyProviderRole",
-    "version": "0.2.1",
-    "name": "PayerPharmacyProviderRole"
-  },
-  {
-    "id": "PayerProfessionalAndNonClinicianProviderRole",
-    "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerProfessionalAndNonClinicianProviderRole",
-    "version": "0.2.1",
-    "name": "PayerProfessionalAndNonClinicianProviderRole"
-  },
-  {
     "id": "PayerProfessionalandnoncliniciandiagnosistype",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerProfessionalandnoncliniciandiagnosistype",
@@ -357,11 +357,11 @@
     "name": "PayerProfessionalandnoncliniciandiagnosistype"
   },
   {
-    "id": "ProviderNetworkStatus",
+    "id": "PayerProviderContractingStatus",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/ProviderNetworkStatus",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerProviderContractingStatus",
     "version": "0.2.1",
-    "name": "ProviderNetworkStatus"
+    "name": "PayerProviderContractingStatus"
   },
   {
     "id": "carin-bb-capabilitystatement-consumer-app",
