@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "AdjudicationSlideCodes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-AdjudicationSliceCodesCS.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/AdjudicationSliceCodesCS</code></a></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationSlideCodes",
+  "version": "0.2.1",
+  "name": "AdjudicationSlideCodes",
+  "title": "Adjudication Slice Codes",
+  "status": "active",
+  "date": "2020-07-24T13:41:57+00:00",
+  "publisher": "HL7 Financial Management Working Group",
+  "contact": [
+    {
+      "name": "HL7 Financial Management Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
+          "system": "email",
+          "value": "fm@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Codes used to discriminate slices of adjudication and item.adjudication",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/AdjudicationSliceCodesCS"
+      }
+    ]
+  }
+}

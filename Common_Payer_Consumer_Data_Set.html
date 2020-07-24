@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7.FHIR.US.CARIN-BB\Common Payer Consumer Data Set - FHIR v4.0.1</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+     
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+  
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+  
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body>
+
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.2.1 - STU1</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+    
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+    
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">HOME 
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a name="d34713f3-ba07-471c-990c-b07eb417daf9">​</a>
+        <a href="index.html#Introduction">Introduction</a>
+      </li>
+      <li><a name="2a15a098-d9d1-41ef-8136-751607645b62">​</a>
+        <a href="index.html#Introduction#the-carin-alliance">The CARIN Alliance</a>
+      </li>
+      <li><a name="e4e92463-79df-4158-895e-16bad220a6b1">​</a>
+        <a href="index.html#guide-overview">Guide Overview</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a name="c762aec4-f076-479b-8e30-77dde4f56395">​</a>
+        <a href="use_case.html">Terms and Concepts</a>
+      </li>
+      <li><a name="bfb4c9b4-cafc-41b2-80e3-50d2e0128d99">​</a>
+        <a href="use_case.html">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a name="29784a42-714b-4ba3-b7cc-c27ee6598422">​</a>
+        <a href="index.html#Introduction">General Guidance</a>
+      </li>
+      <li><a name="2bd8a57a-d4f1-4ab7-88aa-5df078c1683c">​</a>
+        <a href="cpcds.html">Common Payer Consumer Data Set (CPCDS)</a>
+      </li>
+      <li><a name="2a895561-536b-4171-a9fa-6865801da8f8">​</a>
+        <a href="index.html#CARIN">Notes To Developers</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles.html">Profiles</a>
+      </li>
+      <li><a name="fcd9f7ae-4c43-43de-8b5a-9fcaa931a4e2">​</a>
+        <a href="searchParameters.html">Search Parameters</a>
+      </li>
+      <li><a name="f0df0750-0316-40f9-95bb-7ae5b46254c1">​</a>
+        <a href="terminology.html">Terminology </a>
+      </li>
+      <li><a name="be113c3d-a6d8-4bc5-b060-ce5d2a2b0036">​</a>
+        <a href="capability.html">Capability Statements</a>
+      </li>
+    </ul>
+  </li>
+  <li><a name="66c71da6-d71f-497b-a81d-19536251e592">​</a>
+    <a href="index.html#CARIN">Security</a>
+  </li>
+  <li><a name="cf1d1926-bb58-4930-8bd1-f864edf26270">​</a>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->  
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Common Payer Consumer Data Set</b></li>
+        </ul>  
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+    
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.2.1). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Common Payer Consumer Data Set</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+
+</div>
+  <!-- Common_Payer_Consumer_Data_Set.md -->
+<div xsi:schemalocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+The Common Payer Consumer Data Set (CPCDS) is a logical data set (similar to ONC 2015 Edition Common Clinical Data Set) that meets CMS Blue Button 2.0 API content
+
+The CPCDS data elements can be stored and queried as profiled FHIR resources.  They define key payer financial health data that <b>SHALL</b> be accessible and available to through standards-based APIs.  Data <b>SHALL</b> conform to specified profiles, vocabulary standards and code sets.  
+
+Download your local copy of the CPCDS Data Dictionary  <a download="CARIN Blue Button Framework.pdf" href="CPCDS Data Dictionary and Resource Mapping Tables 0615 2020.pdf"> here </a>. 
+
+<h3>Mapping from CPCDS to FHIR Resources</h3>
+Based on CPCDS, the mappings define the minimum mandatory elements, extensions and terminology requirements that must be present in the FHIR resource. Additional business rules are also specified. 
+<h3>Explanation of Benefits Resource Profiles Definition</h3>
+This implementation guide establishes a set of profiles for the Explanation of Benefit (EOB) resource and other referenced FHIR resources. As shown here, the data represented in each of the 4 concrete EOB profiles aligns with claim submission standards adopted by the US Department of Health and Human Services for a specific type of benefit.   The fifth EOB profile, not shown in this table, is a design artifact that includes data representation constraints common across all types of EOBs, and this profile should not be used for actual data instances. 
+
+Additional EOB profiles for Vision and Dental benefits are planned for future versions of this IG.
+<img src="EOBtypes.png" style="width:100%;height:auto;float:none;align:middle;"/>
+
+<h3>Mapping Worksheet</h3>
+A Mapping Worksheet is included with this IG to aid implementers in understanding the data representation requirements of each EOB Profile and the referenced resources used by these profiles.
+
+​Download your local copy of the CPCDS to FHIR Profiles Mapping Excel worksheet from
+<a download="CARINMappingtoFHIR.xlsx" href="CARINMappingtoFHIR20191002copy.xlsx"> here </a>.
+
+The following documentation describes the layout of the Mapping Worksheet and how to use it to
+understand the profiled data mappings to the FHIR resources.  The Data Element Index tab of the 
+Mapping Worksheet maps CPCDS CARIN BB data elements to specific FHIR Profiles and further shows the 
+relevant resource data element to where the CPCDS data element is represented. 
+
+<img src="guide1.png" style="width:100%;height:auto;float:none;align:middle;"/>
+
+The Rules tab provides additional background assumptions and the color coding key.  The Mapping
+Worksheet is designed to support filters that allow implementers to view the mapping information in
+a variety of ways. Filtering on the CPCDS Data Element Name (Column B) shows which FHIR Profiles
+include that data element.  Each tab maps the  CPCDS data elements to FHIR for each Profile.
+To map their data to CPCDS, payers may filter the MapID, column K, removing spaces and ‘removed
+from scope’  Many CPCDS data elements are not on all profiles.  To identify the CPCDS data elements
+applicable to a specific Profile,  payers may filter on the CARIN BB2.X FHIR Profile, column D,
+selecting the desired profile.
+
+Many CPCDS data elements are not on all profiles. Filtering on the FHIR Profile (Column D) shows all
+the CPCDS data elements required in a particular FHIR Profile.
+
+<img src="guide2.png" style="width:100%;height:auto;float:none;align:middle;"/>
+
+The other tabs in the Mapping Worksheet correspond to each of the FHIR Profiles defined in this IG.
+The profile related tabs map the FHIR resource being profiled to the CPCDS data elements to be
+represented in that resource. These tabs begin with a representation of the FHIR resource. The FHIR
+resource data elements needed to represent the CPCDS data elements identified with the relevant
+constraint information. The tab shows the data element constraints such as cardinality and value
+set binding requirements. These data mapping requirements are represented as constraints in the
+associated machine processible profiles included in the IG. By filtering one of these profile
+tabs using the data element MapID (Column K) a payer gets a view of the underlying FHIR
+resource, reduced to focusing on only the parts of the resource structure needed to represent
+the CPCDS data elements. Value Sets requirements for representing coded concepts are listed
+in Value Set Comments (Column K).
+
+<img src="guide3.png" style="width:100%;height:auto;float:none;align:middle;"/>
+
+</div>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 24, 2020 13:41+0000">2020-07-24</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/carin-bb/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
+                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change <img src="external.png" alt="external" style="vertical-align: baseline"/></a>
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

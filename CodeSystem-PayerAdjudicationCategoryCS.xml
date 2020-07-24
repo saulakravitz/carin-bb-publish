@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="PayerAdjudicationCategoryCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">in-network<a name="PayerAdjudicationCategoryCS-in-network"> </a></td><td>In-network</td><td>in-network</td></tr><tr><td style="white-space:nowrap">out-of-network<a name="PayerAdjudicationCategoryCS-out-of-network"> </a></td><td>Out-of-network</td><td>out-of-network</td></tr><tr><td style="white-space:nowrap">other<a name="PayerAdjudicationCategoryCS-other"> </a></td><td>Other</td><td>other</td></tr><tr><td style="white-space:nowrap">contracted<a name="PayerAdjudicationCategoryCS-contracted"> </a></td><td>Contracted</td><td>contracted</td></tr><tr><td style="white-space:nowrap">non-contracted<a name="PayerAdjudicationCategoryCS-non-contracted"> </a></td><td>Non-contracted</td><td>non-contracted</td></tr><tr><td style="white-space:nowrap">subscriber<a name="PayerAdjudicationCategoryCS-subscriber"> </a></td><td>Subscriber</td><td>subscriber</td></tr><tr><td style="white-space:nowrap">provider<a name="PayerAdjudicationCategoryCS-provider"> </a></td><td>Provider</td><td>provider</td></tr><tr><td style="white-space:nowrap">paid<a name="PayerAdjudicationCategoryCS-paid"> </a></td><td>Paid</td><td>paid</td></tr><tr><td style="white-space:nowrap">denied<a name="PayerAdjudicationCategoryCS-denied"> </a></td><td>Denied</td><td>denied</td></tr><tr><td style="white-space:nowrap">submitted<a name="PayerAdjudicationCategoryCS-submitted"> </a></td><td>Submitted</td><td>The total submitted amount for the claim or group or line item.</td></tr><tr><td style="white-space:nowrap">allowed<a name="PayerAdjudicationCategoryCS-allowed"> </a></td><td>Allowed</td><td>Allowed</td></tr><tr><td style="white-space:nowrap">deductible<a name="PayerAdjudicationCategoryCS-deductible"> </a></td><td>Deductible</td><td>Amount deducted from the eligible amount prior to adjudication.</td></tr><tr><td style="white-space:nowrap">coinsurance<a name="PayerAdjudicationCategoryCS-coinsurance"> </a></td><td>coinsurance</td><td>The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%.</td></tr><tr><td style="white-space:nowrap">copay<a name="PayerAdjudicationCategoryCS-copay"> </a></td><td>copay</td><td>Patient Co-Payment</td></tr><tr><td style="white-space:nowrap">noncovered<a name="PayerAdjudicationCategoryCS-noncovered"> </a></td><td>Noncovered</td><td>The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</td></tr><tr><td style="white-space:nowrap">priorpayerpaid<a name="PayerAdjudicationCategoryCS-priorpayerpaid"> </a></td><td>Prior payer paid</td><td>The reduction in the payment amount to reflect the carrier as a secondary payor.</td></tr><tr><td style="white-space:nowrap">payment<a name="PayerAdjudicationCategoryCS-payment"> </a></td><td>Payment</td><td>payment</td></tr><tr><td style="white-space:nowrap">paidbypatient<a name="PayerAdjudicationCategoryCS-paidbypatient"> </a></td><td>Paid by patient</td><td>The amount paid by the patient at the point of service.</td></tr><tr><td style="white-space:nowrap">paidtopatient<a name="PayerAdjudicationCategoryCS-paidtopatient"> </a></td><td>Paid to patient</td><td>paid to patient</td></tr><tr><td style="white-space:nowrap">paidtoprovider<a name="PayerAdjudicationCategoryCS-paidtoprovider"> </a></td><td>Paid to provider</td><td>The amount paid to the provider.</td></tr><tr><td style="white-space:nowrap">memberliability<a name="PayerAdjudicationCategoryCS-memberliability"> </a></td><td>Member liability</td><td>The amount of the member's liability.</td></tr><tr><td style="white-space:nowrap">discount<a name="PayerAdjudicationCategoryCS-discount"> </a></td><td>Discount</td><td>The amount of the discount</td></tr><tr><td style="white-space:nowrap">drugcost<a name="PayerAdjudicationCategoryCS-drugcost"> </a></td><td>Drug cost</td><td>Price paid for the drug excluding mfr or other discounts.  It typically is the sum of the following components: ingredient cost, dispensing fee, sales tax, and vaccine administration</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS"/>
+  <version value="0.2.1"/>
+  <name value="PayerAdjudicationCategoryCS"/>
+  <title value="Payer Adjudication Category"/>
+  <status value="active"/>
+  <date value="2020-07-24T13:41:57+00:00"/>
+  <publisher value="HL7 Financial Management Working Group"/>
+  <contact>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Payer Adjudication Category"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="23"/>
+  <concept>
+    <code value="in-network"/>
+    <display value="In-network"/>
+    <definition value="in-network"/>
+  </concept>
+  <concept>
+    <code value="out-of-network"/>
+    <display value="Out-of-network"/>
+    <definition value="out-of-network"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+    <definition value="other"/>
+  </concept>
+  <concept>
+    <code value="contracted"/>
+    <display value="Contracted"/>
+    <definition value="contracted"/>
+  </concept>
+  <concept>
+    <code value="non-contracted"/>
+    <display value="Non-contracted"/>
+    <definition value="non-contracted"/>
+  </concept>
+  <concept>
+    <code value="subscriber"/>
+    <display value="Subscriber"/>
+    <definition value="subscriber"/>
+  </concept>
+  <concept>
+    <code value="provider"/>
+    <display value="Provider"/>
+    <definition value="provider"/>
+  </concept>
+  <concept>
+    <code value="paid"/>
+    <display value="Paid"/>
+    <definition value="paid"/>
+  </concept>
+  <concept>
+    <code value="denied"/>
+    <display value="Denied"/>
+    <definition value="denied"/>
+  </concept>
+  <concept>
+    <code value="submitted"/>
+    <display value="Submitted"/>
+    <definition value="The total submitted amount for the claim or group or line item."/>
+  </concept>
+  <concept>
+    <code value="allowed"/>
+    <display value="Allowed"/>
+    <definition value="Allowed"/>
+  </concept>
+  <concept>
+    <code value="deductible"/>
+    <display value="Deductible"/>
+    <definition value="Amount deducted from the eligible amount prior to adjudication."/>
+  </concept>
+  <concept>
+    <code value="coinsurance"/>
+    <display value="coinsurance"/>
+    <definition value="The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%."/>
+  </concept>
+  <concept>
+    <code value="copay"/>
+    <display value="copay"/>
+    <definition value="Patient Co-Payment"/>
+  </concept>
+  <concept>
+    <code value="noncovered"/>
+    <display value="Noncovered"/>
+    <definition value="The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract."/>
+  </concept>
+  <concept>
+    <code value="priorpayerpaid"/>
+    <display value="Prior payer paid"/>
+    <definition value="The reduction in the payment amount to reflect the carrier as a secondary payor."/>
+  </concept>
+  <concept>
+    <code value="payment"/>
+    <display value="Payment"/>
+    <definition value="payment"/>
+  </concept>
+  <concept>
+    <code value="paidbypatient"/>
+    <display value="Paid by patient"/>
+    <definition value="The amount paid by the patient at the point of service."/>
+  </concept>
+  <concept>
+    <code value="paidtopatient"/>
+    <display value="Paid to patient"/>
+    <definition value="paid to patient"/>
+  </concept>
+  <concept>
+    <code value="paidtoprovider"/>
+    <display value="Paid to provider"/>
+    <definition value="The amount paid to the provider."/>
+  </concept>
+  <concept>
+    <code value="memberliability"/>
+    <display value="Member liability"/>
+    <definition value="The amount of the member&#39;s liability."/>
+  </concept>
+  <concept>
+    <code value="discount"/>
+    <display value="Discount"/>
+    <definition value="The amount of the discount"/>
+  </concept>
+  <concept>
+    <code value="drugcost"/>
+    <display value="Drug cost"/>
+    <definition value="Price paid for the drug excluding mfr or other discounts.  It typically is the sum of the following components: ingredient cost, dispensing fee, sales tax, and vaccine administration"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="explanationofbenefit-service-date"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-03-31T06:41:13.000+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>id</b>: explanationofbenefit-service-date</p><p><b>meta</b>: </p><p><b>url</b>: <a href="http://hl7.org/fhir/us/carin/SearchParameter/explanationofbenefit-service-date">http://hl7.org/fhir/us/carin/SearchParameter/explanationofbenefit-service-date</a></p><p><b>version</b>: 0.2.1</p><p><b>name</b>: ExplanationOfBenefit_ServiceDate</p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: Mar 31, 2020, 9:48:45 AM</p><p><b>publisher</b>: HL7 Financial Management Working Group</p><p><b>contact</b>: HL7 Financial Management Working Group: http://www.hl7.org/Special/committees/fm/index.cfm,fm@lists.HL7.org</p><p><b>description</b>: Date of the service for the EOB</p><p><b>jurisdiction</b>: <span title="Codes: {urn:iso:std:iso:3166 US}">United States of America</span></p><p><b>code</b>: service-date</p><p><b>base</b>: ExplanationOfBenefit</p><p><b>type</b>: date</p><p><b>expression</b>: ExplanationOfBenefit.billablePeriod | ExplanationOfBenefit.serviced as Date |  ExplanationOfBenefit.serviced as Period</p><p><b>xpath</b>: f:ExplanationOfBenefit/f:billablePeriod | f:ExplanationOfBenefit/f:serviced/f:servicedDate | f:ExplanationOfBenefit/f:serviced/f:servicedPeriod</p><p><b>xpathUsage</b>: normal</p><p><b>comparator</b>: eq, ne, gt, ge, lt, le, sa, eb, ap</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/carin/SearchParameter/explanationofbenefit-service-date"/>
+  <version value="0.2.1"/>
+  <name value="ExplanationOfBenefit_ServiceDate"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-03-31T09:48:45+00:00"/>
+  <publisher value="HL7 Financial Management Working Group"/>
+  <contact>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Date of the service for the EOB"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <code value="service-date"/>
+  <base value="ExplanationOfBenefit"/>
+  <type value="date"/>
+  <expression value="ExplanationOfBenefit.billablePeriod | ExplanationOfBenefit.serviced as Date |  ExplanationOfBenefit.serviced as Period"/>
+  <xpath value="f:ExplanationOfBenefit/f:billablePeriod | f:ExplanationOfBenefit/f:serviced/f:servicedDate | f:ExplanationOfBenefit/f:serviced/f:servicedPeriod"/>
+  <xpathUsage value="normal"/>
+  <comparator value="eq"/>
+  <comparator value="ne"/>
+  <comparator value="gt"/>
+  <comparator value="ge"/>
+  <comparator value="lt"/>
+  <comparator value="le"/>
+  <comparator value="sa"/>
+  <comparator value="eb"/>
+  <comparator value="ap"/>
+</SearchParameter>
