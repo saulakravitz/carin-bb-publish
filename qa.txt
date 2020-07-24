@@ -1,14 +1,14 @@
 ﻿CARINConsumerDirectedPayerDataExchange : Validation Results
 =========================================
 
-err = 76, warn = 18, info = 12
+err = 78, warn = 20, info = 9
 IG Publisher Version: v1.1.3 Out of date - current version is 1.1.3
-Generated Fri Jul 24 20:43:15 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.3.0 (canonical = http://hl7.org/fhir/us/carin-bb)
+Generated Fri Jul 24 21:19:44 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.3.0 (canonical = http://hl7.org/fhir/us/carin-bb)
 
  Build Errors : 1842 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb : 0 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Coverage-Coverage1 : 0 / 1
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-BBEobPharmacy : 10 / 15
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-BBEobPharmacy : 12 / 14
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBInpatient1 : 4 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBOutpatientFacility1 : 4 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBPharmacy1 : 4 / 1
@@ -1927,15 +1927,16 @@ INFORMATION: Coverage/Coverage1: Coverage.class[2]: This element does not match 
 INFORMATION: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit: Validate resource against profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy
 ERROR: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit: EOB-pharm-careTeam-practitioner: Pharmacy EOB:  Careteam roles refer to a practitioner [(ExplanationOfBenefit.careTeam.role.coding.code in ('pcp' or 'prescribing')) implies ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Practitioner)]
 ERROR: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit: EOB-pharm-careTeam-organization: Pharmacy EOB:  Careteam roles refer to a practitioner [(ExplanationOfBenefit.careTeam.role.coding.code = 'performing') implies ExplanationOfBenefit.careTeam.provider.reference.resolve().is(FHIR.Organization)]
-INFORMATION: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.supportingInfo[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy
-INFORMATION: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.supportingInfo[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy
-INFORMATION: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.supportingInfo[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy
 ERROR: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.patient: Unable to resolve resource "Patient/64"
 ERROR: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.insurer: Unable to resolve resource "Organization/9"
 ERROR: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.payee.party: Unable to resolve resource "Organization/2910"
 ERROR: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.claim: Unable to resolve resource "Claim/2912"
 ERROR: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.claimResponse: Unable to resolve resource "ClaimResponse/2913"
-WARNING: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.supportingInfo[0].code.coding[0]: Internal error: The display "24 HR carvedilol phosphate 20 MG Extended Release Oral Capsule [Coreg]" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}860518 - should be one of ["COREG CR 20 MG 24HR Extended Release Oral Capsule","24 HR Coreg 20 MG Extended Release Oral Capsule","Coreg CR 20 MG 24 HR Extended Release Oral Capsule"]
+WARNING: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.supportingInfo[0].code.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.supportingInfo[1].code: None of the codes provided are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPBrandGenericCode (http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPBrandGenericCode), and a code from this value set is required) (codes = null#generic)
+WARNING: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.supportingInfo[1].code.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.supportingInfo[3].code: None of the codes provided are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPDispensedAsWritten (http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPDispensedAsWritten), and a code from this value set is required) (codes = null#brandOnly)
+WARNING: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.supportingInfo[3].code.coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.item[0].category.coding[0]: Code System URI "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd" is unknown so the code cannot be validated
 ERROR: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.item[0].productOrService: None of the codes provided are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDCNCPDPCompoundCode (http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDCNCPDPCompoundCode), and a code from this value set is required) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#860518)
 WARNING: ExplanationOfBenefit/BBEobPharmacy: ExplanationOfBenefit.item[0].productOrService.coding[0]: Internal error: The display "24 HR carvedilol phosphate 20 MG Extended Release Oral Capsule [Coreg]" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}860518 - should be one of ["COREG CR 20 MG 24HR Extended Release Oral Capsule","24 HR Coreg 20 MG Extended Release Oral Capsule","Coreg CR 20 MG 24 HR Extended Release Oral Capsule"]
