@@ -90,14 +90,11 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="d7e4cea1-a300-46c1-9344-e12bd326e494">​</a>
-        <a href="index.html#Introduction">Introduction</a>
+      <li><a name="b030390e-6bb3-41ca-8ae7-6741cf840069">​</a>
+        <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="655e2284-5179-416d-95ba-0b4f8bcd7031">​</a>
-        <a href="index.html#Introduction#the-carin-alliance">The CARIN Alliance</a>
-      </li>
-      <li><a name="90973f95-a28f-4d15-866d-72111fbdb7c9">​</a>
-        <a href="index.html#guide-overview">Guide Overview</a>
+      <li><a name="ba16eb70-41a4-44c8-bc68-a0f90589faed">​</a>
+        <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
   </li>
@@ -106,11 +103,11 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="ae564092-708d-4f03-8daf-e4f2a0ad2cbd">​</a>
-        <a href="use_case.html">Terms and Concepts</a>
+      <li><a name="b2e7c8f9-1714-4daf-b1e7-25966f5f2c72">​</a>
+        <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="2dddf7f0-f417-4eba-93e7-28dd86af996a">​</a>
-        <a href="use_case.html">Use Cases</a>
+      <li><a name="596a6ce7-5c69-42ea-9b69-252873af13d3">​</a>
+        <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
   </li>
@@ -119,14 +116,14 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="46766a0d-7cbe-40c3-82db-6155a3646424">​</a>
-        <a href="index.html#Introduction">General Guidance</a>
+      <li>
+        <a href="Guidance.html">General Guidance</a>
       </li>
-      <li><a name="d8dd1918-f791-4cd1-91a7-1538972f1fbe">​</a>
-        <a href="cpcds.html">Common Payer Consumer Data Set (CPCDS)</a>
+      <li>
+        <a href="Common_Payer_Consumer_Data_Set.html">Common Payer Consumer Data Set (CPCDS)</a>
       </li>
-      <li><a name="e7201e9a-e4c8-4f58-ac56-15afc1734d15">​</a>
-        <a href="index.html#CARIN">Notes To Developers</a>
+      <li>
+        <a href="Notes_To_Developers.html">Notes To Developers</a>
       </li>
     </ul>
   </li>
@@ -138,22 +135,32 @@
       <li>
         <a href="profiles.html">Profiles</a>
       </li>
-      <li><a name="0a503391-d5e6-4709-bff5-67ca72b099cb">​</a>
-        <a href="searchParameters.html">Search Parameters</a>
+      <li>
+        <a href="search.html">Search Parameters</a>
       </li>
-      <li><a name="63a581de-3f47-4cda-9132-fef52d81c330">​</a>
-        <a href="terminology.html">Terminology </a>
+      <li>
+        <a href="Terminology.html">Terminology</a>
       </li>
-      <li><a name="b71d54e9-050e-4741-a6f8-3e14ec1f5a82">​</a>
-        <a href="capability.html">Capability Statements</a>
+      <li>
+        <a href="Capability.html">Capability Statements</a>
       </li>
     </ul>
   </li>
-  <li><a name="ed6d7d64-8bca-4489-ba96-b1fb3f3f837d">​</a>
-    <a href="index.html#CARIN">Security</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Security
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a name="0d4d6003-0c77-4c44-a0bd-092e3371c1c3">​</a>
+        <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/HL7/carin-bb/Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
+      </li>
+    </ul>
   </li>
-  <li><a name="76a498ea-9791-4b9e-ab25-d6178438c312">​</a>
-    <a href="examples.html">Examples</a>
+  <li>
+    <a href="Examples.html">Examples</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
@@ -271,7 +278,7 @@ Interoperability and Patient Access Final Rule</a> on patient access to health d
 <p>The SMART App IG also provides guidance on how to handle authentication. If the app needs to authenticate the identity of the end-user, it should include two OpenID Connect scopes: openid and fhirUser. When these scopes are requested, and the request is granted, the app will receive an id_token along with the access token. For details, see the description <a href="http://hl7.org/fhir/smart-app-launch/scopes-and-launch-context/index.html">here</a>.</p>
 
 <h4>PDEX</h4>
-<p><a name="0af2aeb1-4e40-4fa8-a96c-c44f842298de">​</a>CMS Guidance defines two sets of data be made available by payers in the Patient Access API: Claims and Encounter Data and Clinical data. They provide links to specific implementations guides for the Patient Access API to provide guidance. Use of these implementation guides is not required, but if used these guides will provide information payers can use to meet the requirements of the policies being finalized.
+<p><a name="7d0757e5-4da0-4c30-a29f-33df5c22f5b0">​</a>CMS Guidance defines two sets of data be made available by payers in the Patient Access API: Claims and Encounter Data and Clinical data. They provide links to specific implementations guides for the Patient Access API to provide guidance. Use of these implementation guides is not required, but if used these guides will provide information payers can use to meet the requirements of the policies being finalized.
 This IG defines how Claims and Encounter Data are to be provided; the DaVinci <a href="http://build.fhir.org/ig/HL7/davinci-epdx/">PDEX</a> (Payer Data Exchange) and <a href="http://hl7.org/fhir/us/core/STU3/index.html">US Core</a> Implementation Guides define how Clinical Data is to be provided.</p>
 <h4>RTPBC</h4>
 <p>Using the <a href="http://build.fhir.org/ig/HL7/carin-rtpbc">RTPBC</a> (Real Time Pharmacy Benefit Check), a patient can learn the cost and insurance coverage related to medications they’ve been prescribed.  A person would typically use the RTPBC prior to the dispensing of the prescription and the filing of the claim.  CARIIN BB provides the capability to access how pharmacy (and medical) benefits have been applied by the payer as a result of a claim filed by the pharmacy.</p>
@@ -313,7 +320,7 @@ This IG defines how Claims and Encounter Data are to be provided; the DaVinci <a
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 24, 2020 13:41+0000">2020-07-24</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 24, 2020 14:07+0000">2020-07-24</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
