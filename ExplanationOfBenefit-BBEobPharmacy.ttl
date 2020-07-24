@@ -1,0 +1,473 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/BBEobPharmacy> a fhir:ExplanationOfBenefit;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BBEobPharmacy"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2020-07-23T16:04:04.584-04:00"^^xsd:dateTime ];
+     fhir:Meta.source [ fhir:value "#2Htk0DNoUEbccjg0" ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: BBEobPharmacy</p><p><b>meta</b>: </p><p><b>identifier</b>: Claim Number = 7d0c2c7f-8049-445a-a283-41cf91d09a38 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claim-type pharmacy}\">PHARMACY</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient/64\">Alice Dominguez Gibson</a></p><p><b>billablePeriod</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2020, 8:40:00 PM</p><p><b>created</b>: Jan 18, 2019, 9:00:00 PM</p><p><b>insurer</b>: <a href=\"Organization/9\">SilverCaid</a></p><p><b>provider</b>: <span>Minute Pharmacy</span></p><h3>Payees</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Party</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/payeetype provider}\">Provider</span></td><td><a href=\"Organization/2910\">TrueScript Pharmacy</a></td></tr></table><p><b>claim</b>: <a href=\"Claim/2912\">Claim for Alice Dominguez Gibson</a></p><p><b>claimResponse</b>: <a href=\"ClaimResponse/2913\">Alice Dominguez Gibson ClaimResponse</a></p><p><b>outcome</b>: complete</p><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">Information</span></p><p><b>code</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 860518}\">24 HR carvedilol phosphate 20 MG Extended Release Oral Capsule [Coreg]</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">Information</span></p><p><b>code</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 104416}\">amLODIPine Besylate</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 3</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">Information</span></p><p><b>code</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 258337}\">Hydrochlorothiazide / Triamterene</span></p></blockquote><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>true</td><td><a href=\"Coverage-Coverage1.html\">Generated Summary: id: Coverage1; language: en-US; Member ID = 1234-234-1243-12345678901; status: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActCode HIP}\">health insurance plan policy</span>; subscriberId: 12345678901; dependent: 01; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span>; period: Jan 1, 2019, 12:00:00 AM --&gt; Oct 31, 2019, 12:00:00 AM; network: XYZ123-UPMC CONSUMER ADVA</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>informationSequence</b>: 1</p><p><b>category</b>: <span title=\"Codes: {https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd 1}\">Medical care</span></p><p><b>productOrService</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 860518}\">24 HR carvedilol phosphate 20 MG Extended Release Oral Capsule [Coreg]</span></p><p><b>serviced</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2019, 9:00:00 PM</p><p><b>location</b>: <span title=\"Codes: {https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd 49}\">Independent Clinic</span></p><p><b>quantity</b>: 30</p><p><b>unitPrice</b>: </p><p><b>net</b>: </p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS coinsurance}\">Beneficiary Coinsurance Amount</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS paidtoprovider}\">Paid to provider</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS allowed}\">Allowed</span></p><p><b>amount</b>: </p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>informationSequence</b>: 2</p><p><b>category</b>: <span title=\"Codes: {https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd 1}\">Medical care</span></p><p><b>productOrService</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 104416}\">amLODIPine Besylate</span></p><p><b>serviced</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2019, 9:00:00 PM</p><p><b>location</b>: <span title=\"Codes: {https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd 49}\">Independent Clinic</span></p><p><b>quantity</b>: 30</p><p><b>unitPrice</b>: </p><p><b>net</b>: </p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS coinsurance}\">Beneficiary Coinsurance Amount</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS paidtoprovider}\">Paid to provider</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS allowed}\">Allowed</span></p><p><b>amount</b>: </p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 3</p><p><b>informationSequence</b>: 3</p><p><b>category</b>: <span title=\"Codes: {https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd 1}\">Medical care</span></p><p><b>productOrService</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 258337}\">Hydrochlorothiazide / Triamterene</span></p><p><b>serviced</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2019, 9:00:00 PM</p><p><b>location</b>: <span title=\"Codes: {https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd 49}\">Independent Clinic</span></p><p><b>quantity</b>: 30</p><p><b>unitPrice</b>: </p><p><b>net</b>: </p></blockquote><h3>Adjudications</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Category</b></td></tr><tr><td>*</td><td></td><td><span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS in-network}\">In-network</span></td></tr></table><p><b style=\"color: maroon\">Exception generating Narrative: error reading display hint: ''360;620'</b></p></div>"
+  ];
+  fhir:ExplanationOfBenefit.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS" ];
+         fhir:Coding.code [ fhir:value "cn" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://bluebutton.cms.gov/resources/variables/clm_id" ];
+     fhir:Identifier.value [ fhir:value "7d0c2c7f-8049-445a-a283-41cf91d09a38" ]
+  ];
+  fhir:ExplanationOfBenefit.status [ fhir:value "active"];
+  fhir:ExplanationOfBenefit.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claim-type" ];
+       fhir:Coding.code [ fhir:value "pharmacy" ];
+       fhir:Coding.display [ fhir:value "PHARMACY" ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.use [ fhir:value "claim"];
+  fhir:ExplanationOfBenefit.patient [
+     fhir:link <http://hl7.org/fhir/us/carin-bb/Patient/64>;
+     fhir:Reference.reference [ fhir:value "Patient/64" ];
+     fhir:Reference.display [ fhir:value "Alice Dominguez Gibson" ]
+  ];
+  fhir:ExplanationOfBenefit.billablePeriod [
+     fhir:Period.start [ fhir:value "2019-01-18T15:40:00-05:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2020-01-18T15:40:00-05:00"^^xsd:dateTime ]
+  ];
+  fhir:ExplanationOfBenefit.created [ fhir:value "2019-01-18T16:00:00-05:00"^^xsd:dateTime];
+  fhir:ExplanationOfBenefit.insurer [
+     fhir:link <http://hl7.org/fhir/us/carin-bb/Organization/9>;
+     fhir:Reference.reference [ fhir:value "Organization/9" ];
+     fhir:Reference.display [ fhir:value "SilverCaid" ]
+  ];
+  fhir:ExplanationOfBenefit.provider [
+     fhir:Reference.display [ fhir:value "Minute Pharmacy" ]
+  ];
+  fhir:ExplanationOfBenefit.payee [
+     fhir:ExplanationOfBenefit.payee.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/payeetype" ];
+         fhir:Coding.code [ fhir:value "provider" ];
+         fhir:Coding.display [ fhir:value "Provider" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.payee.party [
+       fhir:link <http://hl7.org/fhir/us/carin-bb/Organization/2910>;
+       fhir:Reference.reference [ fhir:value "Organization/2910" ];
+       fhir:Reference.display [ fhir:value "TrueScript Pharmacy" ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.claim [
+     fhir:link <http://hl7.org/fhir/us/carin-bb/Claim/2912>;
+     fhir:Reference.reference [ fhir:value "Claim/2912" ];
+     fhir:Reference.display [ fhir:value "Claim for Alice Dominguez Gibson" ]
+  ];
+  fhir:ExplanationOfBenefit.claimResponse [
+     fhir:link <http://hl7.org/fhir/us/carin-bb/ClaimResponse/2913>;
+     fhir:Reference.reference [ fhir:value "ClaimResponse/2913" ];
+     fhir:Reference.display [ fhir:value "Alice Dominguez Gibson ClaimResponse" ]
+  ];
+  fhir:ExplanationOfBenefit.outcome [ fhir:value "complete"];
+  fhir:ExplanationOfBenefit.supportingInfo [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.supportingInfo.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claiminformationcategory" ];
+         fhir:Coding.code [ fhir:value "info" ];
+         fhir:Coding.display [ fhir:value "Information" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.supportingInfo.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "860518" ];
+         fhir:Coding.display [ fhir:value "24 HR carvedilol phosphate 20 MG Extended Release Oral Capsule [Coreg]" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ExplanationOfBenefit.supportingInfo.sequence [ fhir:value "2"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claiminformationcategory" ];
+         fhir:Coding.code [ fhir:value "info" ];
+         fhir:Coding.display [ fhir:value "Information" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.supportingInfo.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "104416" ];
+         fhir:Coding.display [ fhir:value "amLODIPine Besylate" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ExplanationOfBenefit.supportingInfo.sequence [ fhir:value "3"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claiminformationcategory" ];
+         fhir:Coding.code [ fhir:value "info" ];
+         fhir:Coding.display [ fhir:value "Information" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.supportingInfo.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "258337" ];
+         fhir:Coding.display [ fhir:value "Hydrochlorothiazide / Triamterene" ]
+       ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.insurance [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.insurance.focal [ fhir:value "true"^^xsd:boolean ];
+     fhir:ExplanationOfBenefit.insurance.coverage [
+       fhir:link <http://hl7.org/fhir/us/carin-bb/Coverage/Coverage1>;
+       fhir:Reference.reference [ fhir:value "Coverage/Coverage1" ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.item [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.item.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.item.informationSequence [
+       fhir:value "1"^^xsd:positiveInteger;
+       fhir:index 0
+     ];
+     fhir:ExplanationOfBenefit.item.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd" ];
+         fhir:Coding.code [ fhir:value "1" ];
+         fhir:Coding.display [ fhir:value "Medical care" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "860518" ];
+         fhir:Coding.display [ fhir:value "24 HR carvedilol phosphate 20 MG Extended Release Oral Capsule [Coreg]" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.servicedPeriod [
+       fhir:Period.start [ fhir:value "2019-01-18T15:40:00-05:00"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2019-01-18T16:00:00-05:00"^^xsd:dateTime ]
+     ];
+     fhir:ExplanationOfBenefit.item.locationCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd" ];
+         fhir:Coding.code [ fhir:value "49" ];
+         fhir:Coding.display [ fhir:value "Independent Clinic" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.quantity [
+       fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ]
+     ];
+     fhir:ExplanationOfBenefit.item.unitPrice [
+       fhir:Money.value [ fhir:value "81.86"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ];
+     fhir:ExplanationOfBenefit.item.net [
+       fhir:Money.value [ fhir:value "81.86"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ];
+     fhir:ExplanationOfBenefit.item.adjudication [
+       fhir:index 0;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS" ];
+           fhir:Coding.code [ fhir:value "coinsurance" ];
+           fhir:Coding.display [ fhir:value "Beneficiary Coinsurance Amount" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "81.86"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS" ];
+           fhir:Coding.code [ fhir:value "paidtoprovider" ];
+           fhir:Coding.display [ fhir:value "Paid to provider" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "submitted" ];
+           fhir:Coding.display [ fhir:value "Submitted" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "81.86"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS" ];
+           fhir:Coding.code [ fhir:value "allowed" ];
+           fhir:Coding.display [ fhir:value "Allowed" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "81.86"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ExplanationOfBenefit.item.sequence [ fhir:value "2"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.item.informationSequence [
+       fhir:value "2"^^xsd:positiveInteger;
+       fhir:index 0
+     ];
+     fhir:ExplanationOfBenefit.item.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd" ];
+         fhir:Coding.code [ fhir:value "1" ];
+         fhir:Coding.display [ fhir:value "Medical care" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "104416" ];
+         fhir:Coding.display [ fhir:value "amLODIPine Besylate" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.servicedPeriod [
+       fhir:Period.start [ fhir:value "2019-01-18T15:40:00-05:00"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2019-01-18T16:00:00-05:00"^^xsd:dateTime ]
+     ];
+     fhir:ExplanationOfBenefit.item.locationCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd" ];
+         fhir:Coding.code [ fhir:value "49" ];
+         fhir:Coding.display [ fhir:value "Independent Clinic" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.quantity [
+       fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ]
+     ];
+     fhir:ExplanationOfBenefit.item.unitPrice [
+       fhir:Money.value [ fhir:value "11.43"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ];
+     fhir:ExplanationOfBenefit.item.net [
+       fhir:Money.value [ fhir:value "11.43"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ];
+     fhir:ExplanationOfBenefit.item.adjudication [
+       fhir:index 0;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS" ];
+           fhir:Coding.code [ fhir:value "coinsurance" ];
+           fhir:Coding.display [ fhir:value "Beneficiary Coinsurance Amount" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "4.08"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS" ];
+           fhir:Coding.code [ fhir:value "paidtoprovider" ];
+           fhir:Coding.display [ fhir:value "Paid to provider" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "submitted" ];
+           fhir:Coding.display [ fhir:value "Submitted" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "4.08"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS" ];
+           fhir:Coding.code [ fhir:value "allowed" ];
+           fhir:Coding.display [ fhir:value "Allowed" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "4.08"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ExplanationOfBenefit.item.sequence [ fhir:value "3"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.item.informationSequence [
+       fhir:value "3"^^xsd:positiveInteger;
+       fhir:index 0
+     ];
+     fhir:ExplanationOfBenefit.item.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd" ];
+         fhir:Coding.code [ fhir:value "1" ];
+         fhir:Coding.display [ fhir:value "Medical care" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+         fhir:Coding.code [ fhir:value "258337" ];
+         fhir:Coding.display [ fhir:value "Hydrochlorothiazide / Triamterene" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.servicedPeriod [
+       fhir:Period.start [ fhir:value "2019-01-18T15:40:00-05:00"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2019-01-18T16:00:00-05:00"^^xsd:dateTime ]
+     ];
+     fhir:ExplanationOfBenefit.item.locationCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd" ];
+         fhir:Coding.code [ fhir:value "49" ];
+         fhir:Coding.display [ fhir:value "Independent Clinic" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.quantity [
+       fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ]
+     ];
+     fhir:ExplanationOfBenefit.item.unitPrice [
+       fhir:Money.value [ fhir:value "4.08"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ];
+     fhir:ExplanationOfBenefit.item.net [
+       fhir:Money.value [ fhir:value "4.08"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.adjudication [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/AdjudicationType" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/AdjudicationSliceCodesCS" ];
+           fhir:Coding.code [ fhir:value "inoutnetwork" ]
+         ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.adjudication.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS" ];
+         fhir:Coding.code [ fhir:value "in-network" ]
+       ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.total [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "submitted" ];
+         fhir:Coding.display [ fhir:value "Submitted Amount" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "97.37"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.payment [
+     fhir:ExplanationOfBenefit.payment.amount [
+       fhir:Money.value [ fhir:value "0"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/carin-bb/Patient/64> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Organization/9> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Organization/2910> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Claim/2912> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/ClaimResponse/2913> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Coverage/Coverage1> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/BBEobPharmacy.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/ExplanationOfBenefit/BBEobPharmacy.ttl> .
+
+# -------------------------------------------------------------------------------------
+

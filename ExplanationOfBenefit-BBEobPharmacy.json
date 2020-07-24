@@ -1,0 +1,473 @@
+{
+  "resourceType": "ExplanationOfBenefit",
+  "id": "BBEobPharmacy",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-07-23T16:04:04.584-04:00",
+    "source": "#2Htk0DNoUEbccjg0",
+    "profile": [
+      "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: BBEobPharmacy</p><p><b>meta</b>: </p><p><b>identifier</b>: Claim Number = 7d0c2c7f-8049-445a-a283-41cf91d09a38 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claim-type pharmacy}\">PHARMACY</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient/64\">Alice Dominguez Gibson</a></p><p><b>billablePeriod</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2020, 8:40:00 PM</p><p><b>created</b>: Jan 18, 2019, 9:00:00 PM</p><p><b>insurer</b>: <a href=\"Organization/9\">SilverCaid</a></p><p><b>provider</b>: <span>Minute Pharmacy</span></p><h3>Payees</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Party</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/payeetype provider}\">Provider</span></td><td><a href=\"Organization/2910\">TrueScript Pharmacy</a></td></tr></table><p><b>claim</b>: <a href=\"Claim/2912\">Claim for Alice Dominguez Gibson</a></p><p><b>claimResponse</b>: <a href=\"ClaimResponse/2913\">Alice Dominguez Gibson ClaimResponse</a></p><p><b>outcome</b>: complete</p><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">Information</span></p><p><b>code</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 860518}\">24 HR carvedilol phosphate 20 MG Extended Release Oral Capsule [Coreg]</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">Information</span></p><p><b>code</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 104416}\">amLODIPine Besylate</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 3</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">Information</span></p><p><b>code</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 258337}\">Hydrochlorothiazide / Triamterene</span></p></blockquote><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>true</td><td><a href=\"Coverage-Coverage1.html\">Generated Summary: id: Coverage1; language: en-US; Member ID = 1234-234-1243-12345678901; status: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActCode HIP}\">health insurance plan policy</span>; subscriberId: 12345678901; dependent: 01; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span>; period: Jan 1, 2019, 12:00:00 AM --&gt; Oct 31, 2019, 12:00:00 AM; network: XYZ123-UPMC CONSUMER ADVA</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>informationSequence</b>: 1</p><p><b>category</b>: <span title=\"Codes: {https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd 1}\">Medical care</span></p><p><b>productOrService</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 860518}\">24 HR carvedilol phosphate 20 MG Extended Release Oral Capsule [Coreg]</span></p><p><b>serviced</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2019, 9:00:00 PM</p><p><b>location</b>: <span title=\"Codes: {https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd 49}\">Independent Clinic</span></p><p><b>quantity</b>: 30</p><p><b>unitPrice</b>: </p><p><b>net</b>: </p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS coinsurance}\">Beneficiary Coinsurance Amount</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS paidtoprovider}\">Paid to provider</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS allowed}\">Allowed</span></p><p><b>amount</b>: </p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>informationSequence</b>: 2</p><p><b>category</b>: <span title=\"Codes: {https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd 1}\">Medical care</span></p><p><b>productOrService</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 104416}\">amLODIPine Besylate</span></p><p><b>serviced</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2019, 9:00:00 PM</p><p><b>location</b>: <span title=\"Codes: {https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd 49}\">Independent Clinic</span></p><p><b>quantity</b>: 30</p><p><b>unitPrice</b>: </p><p><b>net</b>: </p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS coinsurance}\">Beneficiary Coinsurance Amount</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS paidtoprovider}\">Paid to provider</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS allowed}\">Allowed</span></p><p><b>amount</b>: </p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 3</p><p><b>informationSequence</b>: 3</p><p><b>category</b>: <span title=\"Codes: {https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd 1}\">Medical care</span></p><p><b>productOrService</b>: <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 258337}\">Hydrochlorothiazide / Triamterene</span></p><p><b>serviced</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2019, 9:00:00 PM</p><p><b>location</b>: <span title=\"Codes: {https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd 49}\">Independent Clinic</span></p><p><b>quantity</b>: 30</p><p><b>unitPrice</b>: </p><p><b>net</b>: </p></blockquote><h3>Adjudications</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Category</b></td></tr><tr><td>*</td><td></td><td><span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS in-network}\">In-network</span></td></tr></table><p><b style=\"color: maroon\">Exception generating Narrative: error reading display hint: ''360;620'</b></p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS",
+            "code": "cn"
+          }
+        ]
+      },
+      "system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+      "value": "7d0c2c7f-8049-445a-a283-41cf91d09a38"
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "pharmacy",
+        "display": "PHARMACY"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/64",
+    "display": "Alice Dominguez Gibson"
+  },
+  "billablePeriod": {
+    "start": "2019-01-18T15:40:00-05:00",
+    "end": "2020-01-18T15:40:00-05:00"
+  },
+  "created": "2019-01-18T16:00:00-05:00",
+  "insurer": {
+    "reference": "Organization/9",
+    "display": "SilverCaid"
+  },
+  "provider": {
+    "display": "Minute Pharmacy"
+  },
+  "payee": {
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/payeetype",
+          "code": "provider",
+          "display": "Provider"
+        }
+      ]
+    },
+    "party": {
+      "reference": "Organization/2910",
+      "display": "TrueScript Pharmacy"
+    }
+  },
+  "claim": {
+    "reference": "Claim/2912",
+    "display": "Claim for Alice Dominguez Gibson"
+  },
+  "claimResponse": {
+    "reference": "ClaimResponse/2913",
+    "display": "Alice Dominguez Gibson ClaimResponse"
+  },
+  "outcome": "complete",
+  "supportingInfo": [
+    {
+      "sequence": 1,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "info",
+            "display": "Information"
+          }
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "860518",
+            "display": "24 HR carvedilol phosphate 20 MG Extended Release Oral Capsule [Coreg]"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 2,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "info",
+            "display": "Information"
+          }
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "104416",
+            "display": "amLODIPine Besylate"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 3,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "info",
+            "display": "Information"
+          }
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "258337",
+            "display": "Hydrochlorothiazide / Triamterene"
+          }
+        ]
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "focal": true,
+      "coverage": {
+        "reference": "Coverage/Coverage1"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "informationSequence": [
+        1
+      ],
+      "category": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+            "code": "1",
+            "display": "Medical care"
+          }
+        ]
+      },
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "860518",
+            "display": "24 HR carvedilol phosphate 20 MG Extended Release Oral Capsule [Coreg]"
+          }
+        ]
+      },
+      "servicedPeriod": {
+        "start": "2019-01-18T15:40:00-05:00",
+        "end": "2019-01-18T16:00:00-05:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd",
+            "code": "49",
+            "display": "Independent Clinic"
+          }
+        ]
+      },
+      "quantity": {
+        "value": 30
+      },
+      "unitPrice": {
+        "value": 81.86,
+        "currency": "USD"
+      },
+      "net": {
+        "value": 81.86,
+        "currency": "USD"
+      },
+      "adjudication": [
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS",
+                "code": "coinsurance",
+                "display": "Beneficiary Coinsurance Amount"
+              }
+            ]
+          },
+          "amount": {
+            "value": 81.86,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS",
+                "code": "paidtoprovider",
+                "display": "Paid to provider"
+              }
+            ]
+          },
+          "amount": {
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                "code": "submitted",
+                "display": "Submitted"
+              }
+            ]
+          },
+          "amount": {
+            "value": 81.86,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS",
+                "code": "allowed",
+                "display": "Allowed"
+              }
+            ]
+          },
+          "amount": {
+            "value": 81.86,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "informationSequence": [
+        2
+      ],
+      "category": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+            "code": "1",
+            "display": "Medical care"
+          }
+        ]
+      },
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "104416",
+            "display": "amLODIPine Besylate"
+          }
+        ]
+      },
+      "servicedPeriod": {
+        "start": "2019-01-18T15:40:00-05:00",
+        "end": "2019-01-18T16:00:00-05:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd",
+            "code": "49",
+            "display": "Independent Clinic"
+          }
+        ]
+      },
+      "quantity": {
+        "value": 30
+      },
+      "unitPrice": {
+        "value": 11.43,
+        "currency": "USD"
+      },
+      "net": {
+        "value": 11.43,
+        "currency": "USD"
+      },
+      "adjudication": [
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS",
+                "code": "coinsurance",
+                "display": "Beneficiary Coinsurance Amount"
+              }
+            ]
+          },
+          "amount": {
+            "value": 4.08,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS",
+                "code": "paidtoprovider",
+                "display": "Paid to provider"
+              }
+            ]
+          },
+          "amount": {
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                "code": "submitted",
+                "display": "Submitted"
+              }
+            ]
+          },
+          "amount": {
+            "value": 4.08,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS",
+                "code": "allowed",
+                "display": "Allowed"
+              }
+            ]
+          },
+          "amount": {
+            "value": 4.08,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "sequence": 3,
+      "informationSequence": [
+        3
+      ],
+      "category": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+            "code": "1",
+            "display": "Medical care"
+          }
+        ]
+      },
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "258337",
+            "display": "Hydrochlorothiazide / Triamterene"
+          }
+        ]
+      },
+      "servicedPeriod": {
+        "start": "2019-01-18T15:40:00-05:00",
+        "end": "2019-01-18T16:00:00-05:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd",
+            "code": "49",
+            "display": "Independent Clinic"
+          }
+        ]
+      },
+      "quantity": {
+        "value": 30
+      },
+      "unitPrice": {
+        "value": 4.08,
+        "currency": "USD"
+      },
+      "net": {
+        "value": 4.08,
+        "currency": "USD"
+      }
+    }
+  ],
+  "adjudication": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/AdjudicationType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/AdjudicationSliceCodesCS",
+                "code": "inoutnetwork"
+              }
+            ]
+          }
+        }
+      ],
+      "category": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS",
+            "code": "in-network"
+          }
+        ]
+      }
+    }
+  ],
+  "total": [
+    {
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+            "code": "submitted",
+            "display": "Submitted Amount"
+          }
+        ]
+      },
+      "amount": {
+        "value": 97.37,
+        "currency": "USD"
+      }
+    }
+  ],
+  "payment": {
+    "amount": {
+      "value": 0,
+      "currency": "USD"
+    }
+  }
+}
