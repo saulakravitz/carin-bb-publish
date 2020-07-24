@@ -59,7 +59,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.2.1 - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.3.0 - STU1</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="f83199f5-eafd-4d60-bb72-a4506d0444ed">​</a>
+      <li><a name="12e1dd18-ee9d-4e32-b816-fe868193bb26">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="73cd83a2-b530-417d-951e-087123decb09">​</a>
+      <li><a name="4d262d36-4d49-4f1b-9cb6-1b2ef4a43004">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="563911ee-23da-4a3b-a255-f2eed1e0ac0c">​</a>
+      <li><a name="cf2e63be-19db-4ca2-a9e7-b4a300d628a0">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="fa2324ad-ef72-4027-adec-911b1afb06ad">​</a>
+      <li><a name="3f2eec9b-875d-44bf-90de-31a55727783f">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="d58bc681-fb5e-4153-8990-df7c333be7f7">​</a>
+      <li><a name="ce4e1a20-d738-41db-9696-4336ee1b2745">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -193,7 +193,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.2.1). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.3.0). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Terminology</h2>
   
 
@@ -257,6 +257,10 @@ This IG includes value set bindings to code systems that are industry standard c
 <td>AMA CPT and CMS HCPCS Procedure Codes</td>
 </tr>
 <tr>
+<td><a href="ValueSet-AdjudicationCarinBBValueCodes.html">Adjudication CARINBB Value Codes</a></td>
+<td>As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem</td>
+</tr>
+<tr>
 <td><a href="ValueSet-AdjudicationDenialReason.html">Adjudication Denial Reason</a></td>
 <td>Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC</td>
 </tr>
@@ -271,6 +275,18 @@ This IG includes value set bindings to code systems that are industry standard c
 <tr>
 <td><a href="ValueSet-AdjudicationValueCodes.html">Benefit Payment Status Category</a></td>
 <td>Benefit Payment Status Category</td>
+</tr>
+<tr>
+<td><a href="ValueSet-CARINBBInstitutionalClaimCareTeamRoleCodes.html">CARINBB Institutional Claim Care Team Roles</a></td>
+<td>Indicates the role of the provider providing the care.</td>
+</tr>
+<tr>
+<td><a href="ValueSet-CARINBBPharmacyClaimCareTeamRoleCodes.html">CARINBB Pharmacy CareTeam Roles</a></td>
+<td>Indicates the role of the provider providing the care.</td>
+</tr>
+<tr>
+<td><a href="ValueSet-CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes.html">CARINBB Professional and Non-Clinician CareTeam Roles</a></td>
+<td>Indicates the role of the provider providing the care.</td>
 </tr>
 <tr>
 <td><a href="ValueSet-CMSPlaceOfService.html">CMS Place of Service</a></td>
@@ -353,27 +369,11 @@ This IG includes value set bindings to code systems that are industry standard c
 <td>Patient Identifier Type</td>
 </tr>
 <tr>
-<td><a href="ValueSet-CARINBBInstitutionalClaimCareTeamRoleCodes.html">Payer - Inpatient Facility Provider Role</a></td>
-<td>Indicates the role of the provider providing the care.</td>
-</tr>
-<tr>
-<td><a href="ValueSet-CARINBBPharmacyClaimCareTeamRoleCodes.html">Payer - Pharmacy Provider Role</a></td>
-<td>Indicates the role of the provider providing the care.</td>
-</tr>
-<tr>
-<td><a href="ValueSet-CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes.html">Payer - Professional and Non-Clinician Provider Role</a></td>
-<td>Indicates the role of the provider providing the care.</td>
-</tr>
-<tr>
 <td><a href="ValueSet-PayerAdjudicationAmountCategory.html">Payer Adjudication Amount Category</a></td>
 <td>This describes the various amount fields used when payers receive and adjudicate a claim.</td>
 </tr>
 <tr>
-<td><a href="ValueSet-AdjudicationCarinBBValueCodes.html">Payer Adjudication Value Codes</a></td>
-<td>As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem</td>
-</tr>
-<tr>
-<td><a href="ValueSet-PayerProviderContractingStatus.html">Provider Network Status</a></td>
+<td><a href="ValueSet-PayerProviderContractingStatus.html">Provider Provider Contracting Status</a></td>
 <td>Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.</td>
 </tr>
   </tbody>
@@ -422,10 +422,6 @@ This IG includes value set bindings to code systems that are industry standard c
 </tr>
 </tbody>
 </table>
-
-<h3>Externally Published CodeSystems. </h3>
-
-
 </div>
 
 
@@ -451,7 +447,7 @@ This IG includes value set bindings to code systems that are industry standard c
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.2.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 24, 2020 14:07+0000">2020-07-24</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 24, 2020 18:40+0000">2020-07-24</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
