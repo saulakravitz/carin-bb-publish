@@ -4,16 +4,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>HL7.FHIR.US.CARIN-BB\BBEobPharmacy - FHIR v4.0.1</title>
-  
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
     <link rel="stylesheet" href="fhir.css"/>
-     
+
       <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
-  
+
       <!-- Project extras -->
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
@@ -29,7 +29,7 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif] -->
-  
+
       <!-- Favicons -->
     <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
@@ -37,10 +37,10 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
 
-    <style type="text/css">h2{--heading-prefix:"14.54"}
-    h3,h4,h5,h6{--heading-prefix:"14.54"}</style>
+    <style type="text/css">h2{--heading-prefix:"14.55"}
+    h3,h4,h5,h6{--heading-prefix:"14.55"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -63,12 +63,12 @@
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
-    
+
     <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">    <!-- container -->
           <!-- HEADER CONTENT -->
-    
+
         <nav class="navbar navbar-inverse">
             <!-- status-bar -->
           <div class="container">
@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="1d77bddd-beca-414e-87bc-71f23b13ebe4">​</a>
+      <li><a name="1920c1b7-c117-4c0c-a05d-e2b97b15d5d0">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="fbb25ced-4a54-4671-b41e-0af5a944d300">​</a>
+      <li><a name="e8f99df8-ad12-4d2a-9b1a-390c1646f855">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="22df2fb5-76d5-4abd-8a7d-c0b0be48ba41">​</a>
+      <li><a name="0e7341b0-d6e2-412e-8b86-891c40d00816">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="d560dec0-2da2-4a61-8903-74816930d452">​</a>
+      <li><a name="503bd142-87a5-4748-9334-811efd86854f">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="3a61fb2a-61ee-45b6-868f-c4a88676967c">​</a>
+      <li><a name="fb611ddf-981d-4311-866a-0d6718541bdb">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -174,17 +174,18 @@
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->  
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>BBEobPharmacy</b></li>
-        </ul>  
+        </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
-    
-    <div id="segment-content" class="segment">    <!-- segment-content -->
+
+    <div id="segment-content">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.3.2). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
@@ -239,7 +240,7 @@
 
 
 
-  <div><p><b>Generated Narrative</b></p><p><b>id</b>: BBEobPharmacy</p><p><b>meta</b>: </p><p><b>identifier</b>: Claim Number = 7d0c2c7f-8049-445a-a283-41cf91d09a38 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/claim-type pharmacy}">PHARMACY</span></p><p><b>use</b>: claim</p><p><a name="893b10e8-58ec-4639-99b6-7b5309cc0bd8">​</a><b>patient</b>: <a href="Patient/64">Alice Dominguez Gibson</a></p><p><b>billablePeriod</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2020, 8:40:00 PM</p><p><b>created</b>: Jan 18, 2019, 9:00:00 PM</p><p><a name="ce088027-e01f-4228-913b-4ea230e4f307">​</a><b>insurer</b>: <a href="Organization/9">SilverCaid</a></p><p><b>provider</b>: <span>Minute Pharmacy</span></p><h3>Payees</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Party</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/payeetype provider}">Provider</span></td><td><a name="d1f448e7-7cc4-4935-8604-16d4dc95d8c2">​</a><a href="Organization/2910">TrueScript Pharmacy</a></td></tr></table><p><a name="590f7c39-4e77-4a36-b87a-1447e25c9c5a">​</a><b>claim</b>: <a href="Claim/2912">Claim for Alice Dominguez Gibson</a></p><p><a name="f52da446-1563-421e-9a26-f30bb420fc59">​</a><b>claimResponse</b>: <a href="ClaimResponse/2913">Alice Dominguez Gibson ClaimResponse</a></p><p><b>outcome</b>: complete</p><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS billingnetworkcontractingstatus}">billingnetworkcontractingstatus</span></p><p><b>code</b>: <span title="Codes: ">contracted</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS brandgenericcode}">brandgenericcode</span></p><p><b>code</b>: <span title="Codes: ">generic</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 3</p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS refillnum}">refillnum</span></p><p><b>value</b>: 10</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 4</p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS dawcode}">dawcode</span></p><p><b>code</b>: <span title="Codes: ">brandOnly</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 5</p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS clmrecvddate}">clmrecvddate</span></p><p><b>timing</b>: 2019-01-18</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 6</p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS dayssupply}">dayssupply</span></p><p><b>value</b>: 30</p></blockquote><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>true</td><td><a href="Coverage-Coverage1.html">Generated Summary: id: Coverage1; language: en-US; Member ID = 1234-234-1243-12345678901; status: active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ActCode HIP}">health insurance plan policy</span>; subscriberId: 12345678901; dependent: 01; <span title="Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}">Self</span>; period: Jan 1, 2019, 12:00:00 AM --&gt; Oct 31, 2019, 12:00:00 AM; network: XYZ123-UPMC CONSUMER ADVA</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>informationSequence</b>: 1</p><p><b>category</b>: <span title="Codes: {https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd 1}">Medical care</span></p><p><b>productOrService</b>: <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 860518}">24 HR carvedilol phosphate 20 MG Extended Release Oral Capsule [Coreg]</span></p><p><b>serviced</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2019, 9:00:00 PM</p><p><b>location</b>: <span title="Codes: {https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd 49}">Independent Clinic</span></p><p><b>quantity</b>: 30</p><p><b>unitPrice</b>: </p><p><b>net</b>: </p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS coinsurance}">Beneficiary Coinsurance Amount</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS paidtoprovider}">Paid to provider</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}">Submitted</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS allowed}">Allowed</span></p><p><b>amount</b>: </p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>informationSequence</b>: 2</p><p><b>category</b>: <span title="Codes: {https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd 1}">Medical care</span></p><p><b>productOrService</b>: <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 104416}">amLODIPine Besylate</span></p><p><b>serviced</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2019, 9:00:00 PM</p><p><b>location</b>: <span title="Codes: {https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd 49}">Independent Clinic</span></p><p><b>quantity</b>: 30</p><p><b>unitPrice</b>: </p><p><b>net</b>: </p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS coinsurance}">Beneficiary Coinsurance Amount</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS paidtoprovider}">Paid to provider</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}">Submitted</span></p><p><b>amount</b>: </p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 3</p><p><b>informationSequence</b>: 3</p><p><b>category</b>: <span title="Codes: {https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd 1}">Medical care</span></p><p><b>productOrService</b>: <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 258337}">Hydrochlorothiazide / Triamterene</span></p><p><b>serviced</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2019, 9:00:00 PM</p><p><b>location</b>: <span title="Codes: {https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd 49}">Independent Clinic</span></p><p><b>quantity</b>: 30</p><p><b>unitPrice</b>: </p><p><b>net</b>: </p></blockquote><h3>Adjudications</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Category</b></td></tr><tr><td>*</td><td></td><td><span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS in-network}">In-network</span></td></tr></table><h3>Totals</h3><table class="grid"><tr><td>-</td><td><b>Category</b></td><td><b>Amount</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}">Submitted Amount</span></td><td></td></tr></table><h3>Payments</h3><table class="grid"><tr><td>-</td><td><b>Amount</b></td></tr><tr><td>*</td><td></td></tr></table></div>
+  <div><p><b>Generated Narrative</b></p><p><b>id</b>: BBEobPharmacy</p><p><b>meta</b>: </p><p><b>identifier</b>: Claim Number = 7d0c2c7f-8049-445a-a283-41cf91d09a38 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/claim-type pharmacy}">PHARMACY</span></p><p><b>use</b>: claim</p><p><a name="180eec9e-2d17-4364-9340-57edacebf2b7">​</a><b>patient</b>: <a href="Patient/64">Alice Dominguez Gibson</a></p><p><b>billablePeriod</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2020, 8:40:00 PM</p><p><b>created</b>: Jan 18, 2019, 9:00:00 PM</p><p><a name="6ae89d14-f003-4ab4-a5a0-e100bbd512af">​</a><b>insurer</b>: <a href="Organization/9">SilverCaid</a></p><p><b>provider</b>: <span>Minute Pharmacy</span></p><h3>Payees</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Party</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/payeetype provider}">Provider</span></td><td><a name="2fa7e3ec-cfe8-4b8c-88f7-0376056f0395">​</a><a href="Organization/2910">TrueScript Pharmacy</a></td></tr></table><p><a name="a79115ba-095a-49c5-b0e3-4ffe735f8740">​</a><b>claim</b>: <a href="Claim/2912">Claim for Alice Dominguez Gibson</a></p><p><a name="e8025653-dc23-4493-a840-35a9602858a7">​</a><b>claimResponse</b>: <a href="ClaimResponse/2913">Alice Dominguez Gibson ClaimResponse</a></p><p><b>outcome</b>: complete</p><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS billingnetworkcontractingstatus}">billingnetworkcontractingstatus</span></p><p><b>code</b>: <span title="Codes: ">contracted</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS brandgenericcode}">brandgenericcode</span></p><p><b>code</b>: <span title="Codes: ">generic</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 3</p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS refillnum}">refillnum</span></p><p><b>value</b>: 10</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 4</p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS dawcode}">dawcode</span></p><p><b>code</b>: <span title="Codes: ">brandOnly</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 5</p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS clmrecvddate}">clmrecvddate</span></p><p><b>timing</b>: 2019-01-18</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 6</p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS dayssupply}">dayssupply</span></p><p><b>value</b>: 30</p></blockquote><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>true</td><td><a href="Coverage-Coverage1.html">Generated Summary: id: Coverage1; language: en-US; Member ID = 1234-234-1243-12345678901; status: active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ActCode HIP}">health insurance plan policy</span>; subscriberId: 12345678901; dependent: 01; <span title="Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}">Self</span>; period: Jan 1, 2019, 12:00:00 AM --&gt; Oct 31, 2019, 12:00:00 AM; network: XYZ123-UPMC CONSUMER ADVA</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>informationSequence</b>: 1</p><p><b>category</b>: <span title="Codes: {https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd 1}">Medical care</span></p><p><b>productOrService</b>: <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 860518}">24 HR carvedilol phosphate 20 MG Extended Release Oral Capsule [Coreg]</span></p><p><b>serviced</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2019, 9:00:00 PM</p><p><b>location</b>: <span title="Codes: {https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd 49}">Independent Clinic</span></p><p><b>quantity</b>: 30</p><p><b>unitPrice</b>: </p><p><b>net</b>: </p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS coinsurance}">Beneficiary Coinsurance Amount</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS paidtoprovider}">Paid to provider</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}">Submitted</span></p><p><b>amount</b>: </p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>informationSequence</b>: 2</p><p><b>category</b>: <span title="Codes: {https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd 1}">Medical care</span></p><p><b>productOrService</b>: <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 104416}">amLODIPine Besylate</span></p><p><b>serviced</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2019, 9:00:00 PM</p><p><b>location</b>: <span title="Codes: {https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd 49}">Independent Clinic</span></p><p><b>quantity</b>: 30</p><p><b>unitPrice</b>: </p><p><b>net</b>: </p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS coinsurance}">Beneficiary Coinsurance Amount</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS paidtoprovider}">Paid to provider</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}">Submitted</span></p><p><b>amount</b>: </p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 3</p><p><b>informationSequence</b>: 3</p><p><b>category</b>: <span title="Codes: {https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd 1}">Medical care</span></p><p><b>productOrService</b>: <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 258337}">Hydrochlorothiazide / Triamterene</span></p><p><b>serviced</b>: Jan 18, 2019, 8:40:00 PM --&gt; Jan 18, 2019, 9:00:00 PM</p><p><b>location</b>: <span title="Codes: {https://bluebutton.cms.gov/resources/variables/line_place_of_srvc_cd 49}">Independent Clinic</span></p><p><b>quantity</b>: 30</p><p><b>unitPrice</b>: </p><p><b>net</b>: </p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS coinsurance}">Beneficiary Coinsurance Amount</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS paidtoprovider}">Paid to provider</span></p><p><b>amount</b>: </p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}">Submitted</span></p><p><b>amount</b>: </p></blockquote></blockquote><h3>Adjudications</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Category</b></td></tr><tr><td>*</td><td></td><td><span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS in-network}">In-network</span></td></tr></table><h3>Totals</h3><table class="grid"><tr><td>-</td><td><b>Category</b></td><td><b>Amount</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}">Submitted Amount</span></td><td></td></tr></table><h3>Payments</h3><table class="grid"><tr><td>-</td><td><b>Amount</b></td></tr><tr><td>*</td><td></td></tr></table></div>
 
     <!-- insert notes if present -->
   
@@ -266,7 +267,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 27, 2020 17:56+0000">2020-07-27</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 27, 2020 20:19+0000">2020-07-27</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

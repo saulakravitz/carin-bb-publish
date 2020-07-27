@@ -4,16 +4,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>HL7.FHIR.US.CARIN-BB\CARIN BlueButton Consumer App CapabilityStatement - FHIR v4.0.1</title>
-  
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
     <link rel="stylesheet" href="fhir.css"/>
-     
+
       <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
-  
+
       <!-- Project extras -->
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
@@ -29,7 +29,7 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif] -->
-  
+
       <!-- Favicons -->
     <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
@@ -37,7 +37,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
 
     <style type="text/css">h2{--heading-prefix:"14.1"}
     h3,h4,h5,h6{--heading-prefix:"14.1"}</style>
@@ -63,12 +63,12 @@
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
-    
+
     <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">    <!-- container -->
           <!-- HEADER CONTENT -->
-    
+
         <nav class="navbar navbar-inverse">
             <!-- status-bar -->
           <div class="container">
@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="f5376910-0a08-43aa-8ae8-0d78b75c8e60">​</a>
+      <li><a name="4063fc21-3c99-40a0-bc87-2993cb7dc851">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="14bcc05a-2215-4b19-8dc5-157b3a9b6876">​</a>
+      <li><a name="6ce95137-ed56-4a13-b697-7baef09ab784">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="b450960c-7438-499f-8010-1c8429fda68b">​</a>
+      <li><a name="4011b75a-2a2e-456a-93db-dde9b47f310e">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="b5905812-fa97-448d-b929-81773ae4bf53">​</a>
+      <li><a name="7ac557b1-60ec-4f4e-b977-e22585044399">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="371be1a7-3a01-4fe4-9593-8bdbe22d810b">​</a>
+      <li><a name="881c0498-4703-43c9-9077-d3ab71fd7c5f">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -174,17 +174,18 @@
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->  
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>CARIN BlueButton Consumer App CapabilityStatement</b></li>
-        </ul>  
+        </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
-    
-    <div id="segment-content" class="segment">    <!-- segment-content -->
+
+    <div id="segment-content">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.3.2). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
@@ -249,7 +250,7 @@
                     <a href="CapabilityStatement-carin-bb-capabilitystatement-healthplan-api.html">Conformance Requirements for Server</a>.Consumer-Directed Payer Data Exchange Consumer Apps have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.
                 </p></p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The Consumer-Directed Payer Data Exchange Consumer App 
                 <strong>SHALL</strong>:
-            </p><ol><li>Support fetching and querying of one or more CARIN Blue Button profile(s), using the supported RESTful interactions and search parameters declared in the US Core Server CapabilityStatement.</li></ol><p id="security"><strong>Security:</strong></p><ol><li><a name="d6eb6df0-e87d-4c86-a285-f4a4ad8cf2c8">​</a>See the 
+            </p><ol><li>Support fetching and querying of one or more CARIN Blue Button profile(s), using the supported RESTful interactions and search parameters declared in the US Core Server CapabilityStatement.</li></ol><p id="security"><strong>Security:</strong></p><ol><li><a name="bbb4cfa4-44dc-437c-aa7d-5c93fbaca57b">​</a>See the 
                     <a href="Authorization,_Authentication,_and_Registration.html">Authorization, Authentication, and Registration</a> section for requirements and recommendations.
                 </li></ol><hr/><br/></div>
 
@@ -278,7 +279,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 27, 2020 17:56+0000">2020-07-27</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 27, 2020 20:19+0000">2020-07-27</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
