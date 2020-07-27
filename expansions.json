@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "4e06ece0-776f-416c-9d98-12f1f62d2bd3",
+  "id" : "fe9258f0-b90b-4a60-8a90-68c7b97c27d2",
   "meta" : {
-    "lastUpdated" : "2020-07-27T13:09:27.349+00:00"
+    "lastUpdated" : "2020-07-27T17:56:04.350+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,14 +12,14 @@
       "id" : "ClaimAdjudicationCategory",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 19 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"ValueSet-BenefitPaymentStatus.html\">Benefit Payment Status v0.3.2 (ValueSet)</a></li><li><a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html\">Adjudication Value Codes v4.0.1 (CodeSystem)</a></li><li><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html\">Payer Adjudication Category v0.3.2 (CodeSystem)</a></li><li><a href=\"ValueSet-AdjudicationCarinBBValueCodes.html\">Adjudication CARINBB Value Codes v0.3.2 (ValueSet)</a></li><li><a href=\"CodeSystem-ClaimAdjudicationCategoryCS.html\">Claim Adjudication Category v0.3.2 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-submitted\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-submitted\">submitted</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Submitted Amount</td><td>The total submitted amount for the claim or group or line item.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-copay\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-copay\">copay</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>CoPay</td><td>Patient Co-Payment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-eligible\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-eligible\">eligible</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Eligible Amount</td><td>Amount of the change which is considered for adjudication.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-deductible\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-deductible\">deductible</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Deductible</td><td>Amount deducted from the eligible amount prior to adjudication.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-benefit\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-benefit\">benefit</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Benefit Amount</td><td>Amount payable under the coverage</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-coinsurance\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-coinsurance\">coinsurance</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Coinsurance</td><td>The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-noncovered\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-noncovered\">noncovered</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Noncovered</td><td>The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-priorpayerpaid\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-priorpayerpaid\">priorpayerpaid</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Prior payer paid</td><td>The reduction in the payment amount to reflect the carrier as a secondary payor.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidbypatient\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidbypatient\">paidbypatient</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Paid by patient</td><td>The amount paid by the patient at the point of service.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidtopatient\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtopatient\">paidtopatient</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Paid to patient</td><td>paid to patient</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidtoprovider\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtoprovider\">paidtoprovider</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Paid to provider</td><td>The amount paid to the provider.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-memberliability\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-memberliability\">memberliability</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Member liability</td><td>The amount of the member's liability.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-discount\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-discount\">discount</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Discount</td><td>The amount of the discount</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-drugcost\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-drugcost\">drugcost</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Drug cost</td><td>Price paid for the drug excluding mfr or other discounts.  It typically is the sum of the following components: ingredient cost, dispensing fee, sales tax, and vaccine administration</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-in-network\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-in-network\">in-network</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>in-network</td><td>in-network</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-out-of-network\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-out-of-network\">out-of-network</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>out-of-network</td><td>out-of-network</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-other\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-other\">other</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>other</td><td>other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimAdjudicationCategoryCS-denialreason\"> </a><a href=\"CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-denialreason\">denialreason</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS</td><td>payment denial reason</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimAdjudicationCategoryCS-allowedunits\"> </a><a href=\"CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-allowedunits\">allowedunits</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS</td><td>allowed units</td><td>Undefined</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 19 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"ValueSet-BenefitPaymentStatus.html\">Benefit Payment Status v0.3.2 (ValueSet)</a></li><li><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-adjudication.html\">Adjudication Value Codes v4.2.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html\">Payer Adjudication Category v0.3.2 (CodeSystem)</a></li><li><a href=\"ValueSet-AdjudicationCarinBBValueCodes.html\">Adjudication CARINBB Value Codes v0.3.2 (ValueSet)</a></li><li><a href=\"CodeSystem-ClaimAdjudicationCategoryCS.html\">Claim Adjudication Category v0.3.2 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-submitted\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-adjudication.html#adjudication-submitted\">submitted</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Submitted Amount</td><td>The total submitted amount for the claim or group or line item.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-copay\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-adjudication.html#adjudication-copay\">copay</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>CoPay</td><td>Patient Co-Payment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-eligible\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-adjudication.html#adjudication-eligible\">eligible</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Eligible Amount</td><td>Amount of the change which is considered for adjudication.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-deductible\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-adjudication.html#adjudication-deductible\">deductible</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Deductible</td><td>Amount deducted from the eligible amount prior to adjudication.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-benefit\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-adjudication.html#adjudication-benefit\">benefit</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Benefit Amount</td><td>Amount payable under the coverage</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-coinsurance\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-coinsurance\">coinsurance</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Coinsurance</td><td>The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-noncovered\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-noncovered\">noncovered</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Noncovered</td><td>The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-priorpayerpaid\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-priorpayerpaid\">priorpayerpaid</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Prior payer paid</td><td>The reduction in the payment amount to reflect the carrier as a secondary payor.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidbypatient\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidbypatient\">paidbypatient</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Paid by patient</td><td>The amount paid by the patient at the point of service.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidtopatient\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtopatient\">paidtopatient</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Paid to patient</td><td>paid to patient</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidtoprovider\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtoprovider\">paidtoprovider</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Paid to provider</td><td>The amount paid to the provider.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-memberliability\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-memberliability\">memberliability</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Member liability</td><td>The amount of the member's liability.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-discount\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-discount\">discount</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Discount</td><td>The amount of the discount</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-drugcost\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-drugcost\">drugcost</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Drug cost</td><td>Price paid for the drug excluding mfr or other discounts.  It typically is the sum of the following components: ingredient cost, dispensing fee, sales tax, and vaccine administration</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-in-network\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-in-network\">in-network</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>in-network</td><td>in-network</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-out-of-network\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-out-of-network\">out-of-network</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>out-of-network</td><td>out-of-network</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-other\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-other\">other</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>other</td><td>other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimAdjudicationCategoryCS-denialreason\"> </a><a href=\"CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-denialreason\">denialreason</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS</td><td>payment denial reason</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimAdjudicationCategoryCS-allowedunits\"> </a><a href=\"CodeSystem-ClaimAdjudicationCategoryCS.html#ClaimAdjudicationCategoryCS-allowedunits\">allowedunits</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS</td><td>allowed units</td><td>Undefined</td></tr></table></div>"
       },
       "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimAdjudicationCategory",
       "version" : "0.3.2",
       "name" : "ClaimAdjudicationCategory",
       "title" : "Claim Adjudication Category",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -40,8 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:43aaf174-9bb1-42f4-a390-b278178cf783",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:66f3cf0f-25fc-4067-95b3-cb3ae17378eb",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "total" : 19,
         "parameter" : [{
           "name" : "excludeNested",
@@ -53,7 +53,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://terminology.hl7.org/CodeSystem/adjudication|4.0.1"
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/adjudication|4.2.0"
         },
         {
           "name" : "version",
@@ -179,7 +179,7 @@
       "name" : "PayerProfessionalandnoncliniciandiagnosistype",
       "title" : "Diagnosis Type -- Professional and Non-Clinician",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -200,8 +200,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:63a2540e-246c-4c19-bad4-cca7224d6a49",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:67e0f9ae-8555-4704-a615-870ea5a7391b",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -243,7 +243,7 @@
       "name" : "PayerProviderContractingStatus",
       "title" : "Provider Provider Contracting Status",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -264,8 +264,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c6784735-60fc-41b2-b3c9-b58bea0de993",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:87aad505-6b74-469a-930d-b0c88575af36",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -302,7 +302,7 @@
       "name" : "CPTHCPCSProcedureCode",
       "title" : "AMA CPT and CMS HCPCS Procedure Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -323,8 +323,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceebd624-59ee-4a4a-9354-cb83a253464d",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:e1577fc2-d795-4a63-b0da-1f649f8f4ddc",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -346,7 +346,7 @@
       "name" : "AdjudicationValueCodes",
       "title" : "Benefit Payment Status Category",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -367,8 +367,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:aa2b6010-d347-4842-8d80-a9ecf28de124",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:ce959331-6c09-4422-a26d-c8af05987a91",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -410,7 +410,7 @@
       "name" : "CPTHCPCSProcedureCode",
       "title" : "AMA CPT and CMS HCPCS Procedure Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -431,8 +431,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceebd624-59ee-4a4a-9354-cb83a253464d",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:e1577fc2-d795-4a63-b0da-1f649f8f4ddc",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -454,7 +454,7 @@
       "name" : "PayerAdjudicationAmountCategory",
       "title" : "Payer Adjudication Amount Category",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -475,8 +475,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3bb75cc9-5e3a-43a2-9aaa-60648300fa7b",
-        "timestamp" : "2020-07-27T13:10:06+00:00",
+        "identifier" : "urn:uuid:b8753271-de0e-4362-983d-769ad91572dd",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -541,14 +541,14 @@
       "id" : "CARINBBInstitutionalClaimCareTeamRoleCodes",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-CareTeamRoleCS.html\">Payer Provider Role v0.3.2 (CodeSystem)</a></li><li><a href=\"http://hl7.org/fhir/R4/codesystem-claim-careteamrole.html\">Claim Care Team Role Codes v4.0.1 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-claimcareteamrole-supervisor\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-claim-careteamrole.html#claim-careteamrole-supervisor\">supervisor</a></td><td>http://terminology.hl7.org/CodeSystem/claimcareteamrole</td><td>Supervising Provider</td><td>Supervising care provider.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-claimcareteamrole-primary\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-claim-careteamrole.html#claim-careteamrole-primary\">primary</a></td><td>http://terminology.hl7.org/CodeSystem/claimcareteamrole</td><td>Primary provider.</td><td>The primary care provider.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-attending\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-attending\">attending</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Attending Provider</td><td>Attending Provider</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-performing\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-performing\">performing</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Performing Provider</td><td>Performing Provider</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-referring\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-referring\">referring</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Referring Provider</td><td>Referring Provider</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-site\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-site\">site</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Site Provider</td><td>Site Provider</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-prescribing\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-prescribing\">prescribing</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Prescribing Provider</td><td>Prescribing Provider</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-CareTeamRoleCS.html\">Payer Provider Role v0.3.2 (CodeSystem)</a></li><li><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-claimcareteamrole.html\">Claim Care Team Role Codes v4.2.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-claimcareteamrole-supervisor\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-claimcareteamrole.html#claimcareteamrole-supervisor\">supervisor</a></td><td>http://terminology.hl7.org/CodeSystem/claimcareteamrole</td><td>Supervising Provider</td><td>Supervising care provider.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-claimcareteamrole-primary\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-claimcareteamrole.html#claimcareteamrole-primary\">primary</a></td><td>http://terminology.hl7.org/CodeSystem/claimcareteamrole</td><td>Primary provider.</td><td>The primary care provider.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-attending\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-attending\">attending</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Attending Provider</td><td>Attending Provider</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-performing\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-performing\">performing</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Performing Provider</td><td>Performing Provider</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-referring\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-referring\">referring</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Referring Provider</td><td>Referring Provider</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-site\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-site\">site</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Site Provider</td><td>Site Provider</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-prescribing\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-prescribing\">prescribing</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Prescribing Provider</td><td>Prescribing Provider</td></tr></table></div>"
       },
       "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/CARINBBInstitutionalClaimCareTeamRoleCodes",
       "version" : "0.3.2",
       "name" : "CARINBBInstitutionalClaimCareTeamRoleCodes",
       "title" : "CARINBB Institutional Claim Care Team Roles",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -569,8 +569,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:efefda03-3dbc-4678-9a2c-c8e021818324",
-        "timestamp" : "2020-07-27T13:10:06+00:00",
+        "identifier" : "urn:uuid:7c432839-331b-497e-b0bb-1d98dab726ed",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -578,7 +578,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://terminology.hl7.org/CodeSystem/claimcareteamrole|4.0.1"
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/claimcareteamrole|4.2.0"
         },
         {
           "name" : "version",
@@ -636,7 +636,7 @@
       "name" : "CPTHCPCSProcedureCode",
       "title" : "AMA CPT and CMS HCPCS Procedure Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -657,8 +657,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceebd624-59ee-4a4a-9354-cb83a253464d",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:e1577fc2-d795-4a63-b0da-1f649f8f4ddc",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -680,7 +680,7 @@
       "name" : "BenefitPaymentStatus",
       "title" : "Benefit Payment Status",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -701,8 +701,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:743f6ea8-927a-43f4-999c-e529c02b21fa",
-        "timestamp" : "2020-07-27T13:10:06+00:00",
+        "identifier" : "urn:uuid:3d88ae04-9108-4211-8943-7e51e1ae603c",
+        "timestamp" : "2020-07-27T17:56:45+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -744,7 +744,7 @@
       "name" : "CPTHCPCSProcedureCode",
       "title" : "AMA CPT and CMS HCPCS Procedure Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -765,8 +765,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceebd624-59ee-4a4a-9354-cb83a253464d",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:e1577fc2-d795-4a63-b0da-1f649f8f4ddc",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -788,7 +788,7 @@
       "name" : "ClaimPaymentStatusCode",
       "title" : "Claim Payment Status Code",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -809,8 +809,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:90c58d1e-041f-4bfc-8ecc-080abe472e24",
-        "timestamp" : "2020-07-27T13:10:06+00:00",
+        "identifier" : "urn:uuid:3ede953a-fe5d-4ae7-985e-0d568c5d8665",
+        "timestamp" : "2020-07-27T17:56:45+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -847,7 +847,7 @@
       "name" : "CPTHCPCSProcedureCode",
       "title" : "AMA CPT and CMS HCPCS Procedure Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -868,8 +868,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceebd624-59ee-4a4a-9354-cb83a253464d",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:e1577fc2-d795-4a63-b0da-1f649f8f4ddc",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -891,7 +891,7 @@
       "name" : "CPTHCPCSProcedureCode",
       "title" : "AMA CPT and CMS HCPCS Procedure Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -912,8 +912,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceebd624-59ee-4a4a-9354-cb83a253464d",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:e1577fc2-d795-4a63-b0da-1f649f8f4ddc",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -935,7 +935,7 @@
       "name" : "CPTHCPCSProcedureCode",
       "title" : "AMA CPT and CMS HCPCS Procedure Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -956,8 +956,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceebd624-59ee-4a4a-9354-cb83a253464d",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:e1577fc2-d795-4a63-b0da-1f649f8f4ddc",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -979,7 +979,7 @@
       "name" : "CPTHCPCSProcedureCode",
       "title" : "AMA CPT and CMS HCPCS Procedure Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1000,8 +1000,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceebd624-59ee-4a4a-9354-cb83a253464d",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:e1577fc2-d795-4a63-b0da-1f649f8f4ddc",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -1023,7 +1023,7 @@
       "name" : "CPTHCPCSProcedureCode",
       "title" : "AMA CPT and CMS HCPCS Procedure Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1044,8 +1044,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceebd624-59ee-4a4a-9354-cb83a253464d",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:e1577fc2-d795-4a63-b0da-1f649f8f4ddc",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -1060,14 +1060,14 @@
       "id" : "AdjudicationCarinBBValueCodes",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 14 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html\">Adjudication Value Codes v4.0.1 (CodeSystem)</a></li><li><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html\">Payer Adjudication Category v0.3.2 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-submitted\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-submitted\">submitted</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Submitted Amount</td><td>The total submitted amount for the claim or group or line item.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-copay\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-copay\">copay</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>CoPay</td><td>Patient Co-Payment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-eligible\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-eligible\">eligible</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Eligible Amount</td><td>Amount of the change which is considered for adjudication.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-deductible\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-deductible\">deductible</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Deductible</td><td>Amount deducted from the eligible amount prior to adjudication.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-benefit\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-adjudication.html#adjudication-benefit\">benefit</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Benefit Amount</td><td>Amount payable under the coverage</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-coinsurance\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-coinsurance\">coinsurance</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Coinsurance</td><td>The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-noncovered\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-noncovered\">noncovered</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Noncovered</td><td>The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-priorpayerpaid\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-priorpayerpaid\">priorpayerpaid</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Prior payer paid</td><td>The reduction in the payment amount to reflect the carrier as a secondary payor.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidbypatient\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidbypatient\">paidbypatient</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Paid by patient</td><td>The amount paid by the patient at the point of service.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidtopatient\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtopatient\">paidtopatient</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Paid to patient</td><td>paid to patient</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidtoprovider\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtoprovider\">paidtoprovider</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Paid to provider</td><td>The amount paid to the provider.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-memberliability\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-memberliability\">memberliability</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Member liability</td><td>The amount of the member's liability.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-discount\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-discount\">discount</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Discount</td><td>The amount of the discount</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-drugcost\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-drugcost\">drugcost</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Drug cost</td><td>Price paid for the drug excluding mfr or other discounts.  It typically is the sum of the following components: ingredient cost, dispensing fee, sales tax, and vaccine administration</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 14 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-adjudication.html\">Adjudication Value Codes v4.2.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html\">Payer Adjudication Category v0.3.2 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-submitted\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-adjudication.html#adjudication-submitted\">submitted</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Submitted Amount</td><td>The total submitted amount for the claim or group or line item.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-copay\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-adjudication.html#adjudication-copay\">copay</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>CoPay</td><td>Patient Co-Payment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-eligible\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-adjudication.html#adjudication-eligible\">eligible</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Eligible Amount</td><td>Amount of the change which is considered for adjudication.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-deductible\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-adjudication.html#adjudication-deductible\">deductible</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Deductible</td><td>Amount deducted from the eligible amount prior to adjudication.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-adjudication-benefit\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-adjudication.html#adjudication-benefit\">benefit</a></td><td>http://terminology.hl7.org/CodeSystem/adjudication</td><td>Benefit Amount</td><td>Amount payable under the coverage</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-coinsurance\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-coinsurance\">coinsurance</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Coinsurance</td><td>The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-noncovered\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-noncovered\">noncovered</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Noncovered</td><td>The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-priorpayerpaid\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-priorpayerpaid\">priorpayerpaid</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Prior payer paid</td><td>The reduction in the payment amount to reflect the carrier as a secondary payor.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidbypatient\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidbypatient\">paidbypatient</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Paid by patient</td><td>The amount paid by the patient at the point of service.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidtopatient\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtopatient\">paidtopatient</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Paid to patient</td><td>paid to patient</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-paidtoprovider\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-paidtoprovider\">paidtoprovider</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Paid to provider</td><td>The amount paid to the provider.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-memberliability\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-memberliability\">memberliability</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Member liability</td><td>The amount of the member's liability.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-discount\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-discount\">discount</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Discount</td><td>The amount of the discount</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerAdjudicationCategoryCS-drugcost\"> </a><a href=\"CodeSystem-PayerAdjudicationCategoryCS.html#PayerAdjudicationCategoryCS-drugcost\">drugcost</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerAdjudicationCategoryCS</td><td>Drug cost</td><td>Price paid for the drug excluding mfr or other discounts.  It typically is the sum of the following components: ingredient cost, dispensing fee, sales tax, and vaccine administration</td></tr></table></div>"
       },
       "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/AdjudicationCarinBBValueCodes",
       "version" : "0.3.2",
       "name" : "AdjudicationCarinBBValueCodes",
       "title" : "Adjudication CARINBB Value Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1088,8 +1088,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:31ebbaa5-8269-4351-9fb9-97d3f27449a3",
-        "timestamp" : "2020-07-27T13:10:06+00:00",
+        "identifier" : "urn:uuid:5a6bd741-659b-46da-83ae-154636815751",
+        "timestamp" : "2020-07-27T17:56:45+00:00",
         "total" : 14,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1097,7 +1097,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://terminology.hl7.org/CodeSystem/adjudication|4.0.1"
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/adjudication|4.2.0"
         },
         {
           "name" : "version",
@@ -1190,7 +1190,7 @@
       "name" : "AdjudicationSlideCodes",
       "title" : "Adjudication Slice Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1211,8 +1211,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:04645226-82e2-459e-8b13-39c80baded83",
-        "timestamp" : "2020-07-27T13:10:06+00:00",
+        "identifier" : "urn:uuid:cf66419a-a63f-4f1d-8f7d-883debf54040",
+        "timestamp" : "2020-07-27T17:56:45+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1259,7 +1259,7 @@
       "name" : "PatientIdentifierType",
       "title" : "Patient Identifier Type",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1280,8 +1280,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:45ed40e7-1895-4439-a5f2-8d7234d865ae",
-        "timestamp" : "2020-07-27T13:10:06+00:00",
+        "identifier" : "urn:uuid:d5aefc81-968d-4963-b68d-e6457010284d",
+        "timestamp" : "2020-07-27T17:56:45+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1328,7 +1328,7 @@
       "name" : "CPTHCPCSProcedureCode",
       "title" : "AMA CPT and CMS HCPCS Procedure Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1349,11 +1349,84 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceebd624-59ee-4a4a-9354-cb83a253464d",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:e1577fc2-d795-4a63-b0da-1f649f8f4ddc",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerInpatientfacilitydiagnosistype",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "PayerInpatientfacilitydiagnosistype",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-PayerDiagnosisTypeCS.html\">Payer Diagnosis Type v0.3.2 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-PayerDiagnosisTypeCS.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerDiagnosisTypeCS-principal\"> </a><a href=\"CodeSystem-PayerDiagnosisTypeCS.html#PayerDiagnosisTypeCS-principal\">principal</a></td><td>principal</td><td>principal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerDiagnosisTypeCS-secondary\"> </a><a href=\"CodeSystem-PayerDiagnosisTypeCS.html#PayerDiagnosisTypeCS-secondary\">secondary</a></td><td>secondary</td><td>secondary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerDiagnosisTypeCS-external-cause-of-injury\"> </a><a href=\"CodeSystem-PayerDiagnosisTypeCS.html#PayerDiagnosisTypeCS-external-cause-of-injury\">external-cause-of-injury</a></td><td>external-cause-of-injury</td><td>external-cause-of-injury</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerDiagnosisTypeCS-first-listed\"> </a><a href=\"CodeSystem-PayerDiagnosisTypeCS.html#PayerDiagnosisTypeCS-first-listed\">first-listed</a></td><td>first-listed</td><td>first-listed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-PayerDiagnosisTypeCS-admitting\"> </a><a href=\"CodeSystem-PayerDiagnosisTypeCS.html#PayerDiagnosisTypeCS-admitting\">admitting</a></td><td/><td/></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerInpatientfacilitydiagnosistype",
+      "version" : "0.3.2",
+      "name" : "PayerInpatientfacilitydiagnosistype",
+      "title" : "Diagnosis Type -- Inpatient Facility",
+      "status" : "active",
+      "date" : "2020-07-27T17:56:04+00:00",
+      "publisher" : "HL7 Financial Management Working Group",
+      "contact" : [{
+        "name" : "HL7 Financial Management Working Group",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
+          "system" : "email",
+          "value" : "fm@lists.HL7.org"
+        }]
+      }],
+      "description" : "Payer Inpatient Facility Diagnosis Type",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f8777486-10d0-4f3a-872f-601923af0a77",
+        "timestamp" : "2020-07-27T17:56:45+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS|0.3.2"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS",
+          "code" : "principal",
+          "display" : "principal"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS",
+          "code" : "secondary",
+          "display" : "secondary"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS",
+          "code" : "external-cause-of-injury",
+          "display" : "external-cause-of-injury"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS",
+          "code" : "first-listed",
+          "display" : "first-listed"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS",
+          "code" : "admitting"
         }]
       }
     }
@@ -1372,7 +1445,7 @@
       "name" : "CPTHCPCSProcedureCode",
       "title" : "AMA CPT and CMS HCPCS Procedure Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1393,8 +1466,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceebd624-59ee-4a4a-9354-cb83a253464d",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:e1577fc2-d795-4a63-b0da-1f649f8f4ddc",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -1416,7 +1489,7 @@
       "name" : "PayerOutpatientfacilitydiagnosistype",
       "title" : "Diagnosis Type -- Outpatient Facility",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1437,8 +1510,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b61677a7-f9b7-4fa6-91b5-dc3c003d5d4b",
-        "timestamp" : "2020-07-27T13:10:07+00:00",
+        "identifier" : "urn:uuid:d13ed78e-c9ee-4892-ba76-b6e9d7970f9b",
+        "timestamp" : "2020-07-27T17:56:45+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1490,7 +1563,7 @@
       "name" : "ClaimInformationCategory",
       "title" : "Claim Information Category",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1511,8 +1584,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:aeda3126-551e-4818-a3eb-443ae83c8e14",
-        "timestamp" : "2020-07-27T13:10:07+00:00",
+        "identifier" : "urn:uuid:985f2c30-0f63-4f88-bfcf-1d1b6ebb5710",
+        "timestamp" : "2020-07-27T17:56:45+00:00",
         "total" : 23,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1654,7 +1727,7 @@
       "name" : "CARINBBPharmacyClaimCareTeamRoleCodes",
       "title" : "CARINBB Pharmacy CareTeam Roles",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1675,8 +1748,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:48145a37-805f-4530-9583-da8eb6d9a6fd",
-        "timestamp" : "2020-07-27T13:10:07+00:00",
+        "identifier" : "urn:uuid:20c08016-706e-4aa0-8b88-1706c25cd70a",
+        "timestamp" : "2020-07-27T17:56:45+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1711,14 +1784,14 @@
       "id" : "CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-CareTeamRoleCS.html\">Payer Provider Role v0.3.2 (CodeSystem)</a></li><li><a href=\"http://hl7.org/fhir/R4/codesystem-claim-careteamrole.html\">Claim Care Team Role Codes v4.0.1 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-claimcareteamrole-primary\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-claim-careteamrole.html#claim-careteamrole-primary\">primary</a></td><td>http://terminology.hl7.org/CodeSystem/claimcareteamrole</td><td>Primary provider.</td><td>The primary care provider.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-performing\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-performing\">performing</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Performing Provider</td><td>Performing Provider</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-referring\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-referring\">referring</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Referring Provider</td><td>Referring Provider</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-CareTeamRoleCS.html\">Payer Provider Role v0.3.2 (CodeSystem)</a></li><li><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-claimcareteamrole.html\">Claim Care Team Role Codes v4.2.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-claimcareteamrole-primary\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-claimcareteamrole.html#claimcareteamrole-primary\">primary</a></td><td>http://terminology.hl7.org/CodeSystem/claimcareteamrole</td><td>Primary provider.</td><td>The primary care provider.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-performing\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-performing\">performing</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Performing Provider</td><td>Performing Provider</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-CareTeamRoleCS-referring\"> </a><a href=\"CodeSystem-CareTeamRoleCS.html#CareTeamRoleCS-referring\">referring</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/CareTeamRoleCS</td><td>Referring Provider</td><td>Referring Provider</td></tr></table></div>"
       },
       "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes",
       "version" : "0.3.2",
       "name" : "CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes",
       "title" : "CARINBB Professional and Non-Clinician CareTeam Roles",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1739,8 +1812,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6ef747c5-315b-42b6-9c52-129f0e286730",
-        "timestamp" : "2020-07-27T13:10:07+00:00",
+        "identifier" : "urn:uuid:f2fc7e7d-fc9b-4b66-8950-4d82f9713527",
+        "timestamp" : "2020-07-27T17:56:45+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1748,7 +1821,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://terminology.hl7.org/CodeSystem/claimcareteamrole|4.0.1"
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/claimcareteamrole|4.2.0"
         },
         {
           "name" : "version",
@@ -1786,7 +1859,7 @@
       "name" : "CPTHCPCSProcedureCode",
       "title" : "AMA CPT and CMS HCPCS Procedure Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1807,8 +1880,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceebd624-59ee-4a4a-9354-cb83a253464d",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:e1577fc2-d795-4a63-b0da-1f649f8f4ddc",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -1830,7 +1903,7 @@
       "name" : "CPTHCPCSProcedureCode",
       "title" : "AMA CPT and CMS HCPCS Procedure Codes",
       "status" : "active",
-      "date" : "2020-07-27T13:09:27+00:00",
+      "date" : "2020-07-27T17:56:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1851,8 +1924,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceebd624-59ee-4a4a-9354-cb83a253464d",
-        "timestamp" : "2020-07-27T13:10:05+00:00",
+        "identifier" : "urn:uuid:e1577fc2-d795-4a63-b0da-1f649f8f4ddc",
+        "timestamp" : "2020-07-27T17:56:44+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
