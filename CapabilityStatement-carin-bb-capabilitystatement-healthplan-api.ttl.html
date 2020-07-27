@@ -59,7 +59,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.3.1 - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.3.2 - STU1</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="c88797a7-06e9-474e-8d8b-cbb7369f45af">​</a>
+      <li><a name="a0fd84d5-33b0-43eb-b87f-8c5b6013acdc">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="98b3de3b-8752-4597-b7f2-a598802918b7">​</a>
+      <li><a name="ff302a37-e73e-423b-b56a-889384487c39">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="10eb3e6a-e5a3-4f80-8d8b-da13fdebf152">​</a>
+      <li><a name="13078bf6-954f-4174-96c8-77ff9ed6b58c">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="a11c1dff-d682-4c2e-8716-866d287ba8bd">​</a>
+      <li><a name="96d10251-5bbf-4b29-b4ed-46cf700d2326">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="07377472-4e33-4338-ab61-d311a5052b90">​</a>
+      <li><a name="d5a04d0d-34a1-49a9-a222-eb8dbccf8b9e">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -186,7 +186,7 @@
         <div class="row">
           <div class="inner-wrapper">
 <div style="counter-reset: section 9" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.3.1). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.3.2). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
 
 
@@ -258,7 +258,7 @@
      fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2 id=\"title\"&gt;Consumer-Directed Payer Data Exchange Server CapabilityStatement&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide&lt;/li&gt;&lt;li&gt;FHIR Version: 4.0.1&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2019-12-04&lt;/li&gt;&lt;li&gt;Published by HL7 International and CARIN Alliance&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;p&gt;This Section describes the expected capabilities of the Consumer-Directed Payer Data Exchange Server actor which is responsible for providing responses to the queries submitted by the Consumer-Directed Payer Data Exchange Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Consumer-Directed Payer Data Exchange Servers are defined.&lt;/p&gt;&lt;/p&gt;&lt;h3 id=\"behavior\"&gt;FHIR RESTful Capabilities&lt;/h3&gt;&lt;p&gt;The Consumer-Directed Payer Data Exchange Server \n                &lt;strong&gt;SHALL&lt;/strong&gt;:\n            &lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support the CARIN Blue Button Patient and ExplanationOfBenefit resource profiles.&lt;/li&gt;&lt;li&gt;Support additional resource profiles from the list of CARIN Blue Button Profiles.&lt;/li&gt;&lt;li&gt;Implement the RESTful behavior according to the FHIR specification.&lt;/li&gt;&lt;li&gt;Return the following response classes:\n      \n                    &lt;ul&gt;&lt;li&gt;(Status 400): invalid parameter&lt;/li&gt;&lt;li&gt;(Status 401/4xx): unauthorized request&lt;/li&gt;&lt;li&gt;(Status 403): insufficient scope&lt;/li&gt;&lt;li&gt;(Status 404): unknown resource&lt;/li&gt;&lt;li&gt;(Status 410): deleted resource.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Support json source formats for all Consumer-Directed Payer Data Exchange interactions.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;The Consumer-Directed Payer Data Exchange Server \n                &lt;strong&gt;SHOULD&lt;/strong&gt;:\n            &lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support xml source formats for all Consumer-Directed Payer Data Exchange interactions.&lt;/li&gt;&lt;li&gt;Identify the CARIN Blue Button profiles supported as part of the FHIR \n                    &lt;code&gt;meta.profile&lt;/code&gt; attribute for each instance.\n                &lt;/li&gt;&lt;/ol&gt;&lt;p id=\"security\"&gt;&lt;strong&gt;Security:&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;See the \n                    &lt;a href=\"Authorization,_Authentication,_and_Registration.html\"&gt;Authorization, Authentication, and Registration&lt;/a&gt; section for requirements and recommendations.\n                &lt;/li&gt;&lt;li&gt;A server \n                    &lt;strong&gt;SHALL&lt;/strong&gt; reject any unauthorized requests by returning an \n                    &lt;code&gt;HTTP 401&lt;/code&gt; unauthorized response code.\n                &lt;/li&gt;&lt;/ol&gt;&lt;hr/&gt;&lt;br/&gt;&lt;/div&gt;"
   ];
   <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">fhir:CapabilityStatement.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/us/carin/CapabilityStatement/carin-bb-capabilitystatement-healthplan-api"];
-  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">fhir:CapabilityStatement.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "0.3.1"];
+  <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">fhir:CapabilityStatement.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "0.3.2"];
   <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.name">fhir:CapabilityStatement.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "CARINBlueButton_HealthPlan_API_CapabilityStatement"];
   <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">fhir:CapabilityStatement.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Consumer-Directed Payer Data Exchange HealthPlan API CapabilityStatement"];
   <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">fhir:CapabilityStatement.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "active"];
@@ -485,7 +485,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 26, 2020 20:42+0000">2020-07-26</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 27, 2020 13:09+0000">2020-07-27</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
