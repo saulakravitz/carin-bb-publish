@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-07-27T20:27:29+00:00",
+  "date": "2020-07-28T23:29:38+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -1056,6 +1056,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-PayerDiagnosisPresentOnAdmissionDiagnosisType.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/PayerDiagnosisPresentOnAdmissionDiagnosisType"
+        },
+        "name": "Payer Diagnosis Present On Admission Diagnosis Type",
+        "description": "Payer Diagnosis Present On Admission Diagnosis Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-PayerInpatientfacilitydiagnosistype.html"
           }
         ],
@@ -1245,186 +1263,6 @@
         "name": "Payer Diagnosis Type",
         "description": "Payer Diagnosis Type",
         "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-BBEobOutpatientFacility.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/BBEobOutpatientFacility"
-        },
-        "name": "BBEobOutpatientFacility",
-        "description": "BBEoB from Jeff",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Outpatient-Facility"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-BBEobPharmacy.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/BBEobPharmacy"
-        },
-        "name": "BBEobPharmacy",
-        "description": "BBEoB from Jeff",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Coverage"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Coverage-Coverage1.html"
-          }
-        ],
-        "reference": {
-          "reference": "Coverage/Coverage1"
-        },
-        "name": "Coverage1",
-        "description": "Coverage Example1",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-EOBInpatient1.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/EOBInpatient1"
-        },
-        "name": "EOBInpatient1",
-        "description": "EOB Inpatient Example1",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-EOBOutpatientFacility1.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/EOBOutpatientFacility1"
-        },
-        "name": "EOBOutpatientFacility1",
-        "description": "EOB Outpatient Example1",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Outpatient-Facility"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-EOBPharmacy1.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/EOBPharmacy1"
-        },
-        "name": "EOBPharmacy1",
-        "description": "EOB PHarmacy Example1",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-EOBProfessional1.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/EOBProfessional1"
-        },
-        "name": "EOBProfessional1",
-        "description": "EOB Professional  Example1",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Professional-NonClinician"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Organization-OrganizationPayer1.html"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/OrganizationPayer1"
-        },
-        "name": "OrganizationPayer1",
-        "description": "Payer1",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Organization-OrganizationProvider1.html"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/OrganizationProvider1"
-        },
-        "name": "OrganizationProvider1",
-        "description": "Provider 1",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-Patient1.html"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/Patient1"
-        },
-        "name": "Patient1",
-        "description": "Patient Example1",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient"
       },
       {
         "extension": [

@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-07-27T20:27:29+00:00"/>
+  <date value="2020-07-28T23:29:38+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -773,6 +773,20 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-PayerDiagnosisPresentOnAdmissionDiagnosisType.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PayerDiagnosisPresentOnAdmissionDiagnosisType"/>
+      </reference>
+      <name value="Payer Diagnosis Present On Admission Diagnosis Type"/>
+      <description value="Payer Diagnosis Present On Admission Diagnosis Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-PayerInpatientfacilitydiagnosistype.html"/>
       </extension>
       <reference>
@@ -921,146 +935,6 @@
       <name value="Payer Diagnosis Type"/>
       <description value="Payer Diagnosis Type"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExplanationOfBenefit"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ExplanationOfBenefit-BBEobOutpatientFacility.html"/>
-      </extension>
-      <reference>
-        <reference value="ExplanationOfBenefit/BBEobOutpatientFacility"/>
-      </reference>
-      <name value="BBEobOutpatientFacility"/>
-      <description value="BBEoB from Jeff"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Outpatient-Facility"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExplanationOfBenefit"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ExplanationOfBenefit-BBEobPharmacy.html"/>
-      </extension>
-      <reference>
-        <reference value="ExplanationOfBenefit/BBEobPharmacy"/>
-      </reference>
-      <name value="BBEobPharmacy"/>
-      <description value="BBEoB from Jeff"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Coverage"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Coverage-Coverage1.html"/>
-      </extension>
-      <reference>
-        <reference value="Coverage/Coverage1"/>
-      </reference>
-      <name value="Coverage1"/>
-      <description value="Coverage Example1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExplanationOfBenefit"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ExplanationOfBenefit-EOBInpatient1.html"/>
-      </extension>
-      <reference>
-        <reference value="ExplanationOfBenefit/EOBInpatient1"/>
-      </reference>
-      <name value="EOBInpatient1"/>
-      <description value="EOB Inpatient Example1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExplanationOfBenefit"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ExplanationOfBenefit-EOBOutpatientFacility1.html"/>
-      </extension>
-      <reference>
-        <reference value="ExplanationOfBenefit/EOBOutpatientFacility1"/>
-      </reference>
-      <name value="EOBOutpatientFacility1"/>
-      <description value="EOB Outpatient Example1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Outpatient-Facility"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExplanationOfBenefit"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ExplanationOfBenefit-EOBPharmacy1.html"/>
-      </extension>
-      <reference>
-        <reference value="ExplanationOfBenefit/EOBPharmacy1"/>
-      </reference>
-      <name value="EOBPharmacy1"/>
-      <description value="EOB PHarmacy Example1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExplanationOfBenefit"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ExplanationOfBenefit-EOBProfessional1.html"/>
-      </extension>
-      <reference>
-        <reference value="ExplanationOfBenefit/EOBProfessional1"/>
-      </reference>
-      <name value="EOBProfessional1"/>
-      <description value="EOB Professional  Example1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Professional-NonClinician"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Organization-OrganizationPayer1.html"/>
-      </extension>
-      <reference>
-        <reference value="Organization/OrganizationPayer1"/>
-      </reference>
-      <name value="OrganizationPayer1"/>
-      <description value="Payer1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Organization-OrganizationProvider1.html"/>
-      </extension>
-      <reference>
-        <reference value="Organization/OrganizationProvider1"/>
-      </reference>
-      <name value="OrganizationProvider1"/>
-      <description value="Provider 1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Patient-Patient1.html"/>
-      </extension>
-      <reference>
-        <reference value="Patient/Patient1"/>
-      </reference>
-      <name value="Patient1"/>
-      <description value="Patient Example1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
