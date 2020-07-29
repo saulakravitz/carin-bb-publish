@@ -1,9 +1,9 @@
 ﻿CARINConsumerDirectedPayerDataExchange : Validation Results
 =========================================
 
-err = 49, warn = 23, info = 1
+err = 49, warn = 19, info = 1
 IG Publisher Version: 1.1.5
-Generated Wed Jul 29 22:21:53 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.3.2 (canonical = http://hl7.org/fhir/us/carin-bb)
+Generated Wed Jul 29 22:28:04 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.3.2 (canonical = http://hl7.org/fhir/us/carin-bb)
 
  Build Errors : 1738 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb : 0 / 1
@@ -19,7 +19,7 @@ Generated Wed Jul 29 22:21:53 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-Patient : 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-Practitioner : 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-CARIN-BB-PractitionerRole : 0 / 1
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/CapabilityStatement-carin-bb : 18 / 5
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/CapabilityStatement-carin-bb : 18 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/SearchParameter-explanationofbenefit-identifier : 0 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/SearchParameter-explanationofbenefit-patient : 0 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/SearchParameter-explanationofbenefit-service-date : 0 / 0
@@ -1877,10 +1877,6 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/carin-bb/Struct
 INFORMATION: CapabilityStatement/carin-bb: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 ERROR: CapabilityStatement/carin-bb: CapabilityStatement.implementationGuide[0]: URL value "http://hl7.org/fhir/us/carin-bb/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net" does not resolve
 ERROR: CapabilityStatement/carin-bb: CapabilityStatement.rest[0].resource[1].supportedProfile[1]: URL value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-outpatient-Facility" does not resolve
-WARNING: CapabilityStatement/carin-bb: CapabilityStatement.rest[0].resource[1].searchInclude[1]: value should not start or finish with whitespace
-WARNING: CapabilityStatement/carin-bb: CapabilityStatement.rest[0].resource[1].searchInclude[2]: value should not start or finish with whitespace
-WARNING: CapabilityStatement/carin-bb: CapabilityStatement.rest[0].resource[1].searchInclude[3]: value should not start or finish with whitespace
-WARNING: CapabilityStatement/carin-bb: CapabilityStatement.rest[0].resource[1].searchInclude[4]: value should not start or finish with whitespace
 ERROR: CapabilityStatement/carin-bb: CapabilityStatement.rest[0].resource[1].searchParam[0].definition: URL value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-id" does not resolve
 ERROR: CapabilityStatement/carin-bb: CapabilityStatement.rest[0].resource[1].searchParam[1].definition: URL value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-patient" does not resolve
 ERROR: CapabilityStatement/carin-bb: CapabilityStatement.rest[0].resource[1].searchParam[2].definition: URL value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-lastUpdated" does not resolve
