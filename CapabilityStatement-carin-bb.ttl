@@ -1,0 +1,552 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb> a fhir:CapabilityStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "carin-bb"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2 id=\"title\">Carin Bb CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-07-29</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p><p>This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors.</p></p><h3 id=\"behavior\">FHIR RESTful Capabilities</h3><p>The Carin-bb  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:\n<ul><li>(Status 400): invalid parameter</li><li>(Status 401/4xx): unauthorized request</li><li>(Status 403): insufficient scope</li><li>(Status 404): unknown resource</li><li>(Status 410): deleted resource.</li></ul>\n</li><li>Support json source formats for all Plan-Net interactions.</li><li>Identify the Plan-Net  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li></ol><p>The Plan-Net  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all Plan-Net  interactions.</li></ol><p id=\"security\"><strong>Security:</strong></p><ol><li>See the <a href=\"security.html\">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><p><strong>Summary of System Wide Interactions</strong></p><li><strong>MAY</strong> support the	<code>transaction</code> interaction.</li><li><strong>MAY</strong> support the	<code>batch</code> interaction.</li><li><strong>MAY</strong> support the	<code>search-system</code> interaction.</li><li><strong>MAY</strong> support the	<code>history-system</code> interaction.</li><h3 id=\"resource--details\" class=\"no_toc\">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class=\"grid\"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href=\"#coverage\">Coverage</a></td><td><a href=\"StructureDefinition-CARIN-BB-Coverage.html\">CARIN-BB-Coverage</a></td><td>\n							\n						</td><td>\n							\n						</td><td>\n              \n            </td><td>\n							\n						</td></tr><tr><td><a href=\"#explanationofbenefit\">ExplanationOfBenefit</a></td><td><a href=\"StructureDefinition-CARIN-BB-ExplanationOfBenefit-Inpatient-Facility.html\">CARIN-BB-ExplanationOfBenefit-Inpatient-Facility</a>, \n\n						<a href=\"http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-outpatient-Facility\">CARIN-BB-ExplanationOfBenefit-Outpatient-Facility</a>, \n\n						<a href=\"StructureDefinition-CARIN-BB-ExplanationOfBenefit-Pharmacy.html\">CARIN-BB-ExplanationOfBenefit-Pharmacy</a>, \n\n						<a href=\"StructureDefinition-CARIN-BB-ExplanationOfBenefit-Professional-NonClinician.html\">CARIN-BB-ExplanationOfBenefit-Professional-NonClinician</a></td><td>\n							\n							_id, patient, _lastUpdated, type, identifier, service-date, provider, care-team, insurer, location, coverage\n							\n							\n							\n						</td><td>\n							ExplanationOfBenefit:provider,  ExplanationOfBenefit:care-team,  ExplanationOfBenefit:coverage,  ExplanationOfBenefit:location,  ExplanationOfBenefit:insurer\n						</td><td>\n              \n            </td><td>\n							\n						</td></tr><tr><td><a href=\"#organization\">Organization</a></td><td><a href=\"StructureDefinition-CARIN-BB-Organization.html\">CARIN-BB-Organization</a></td><td>\n							\n						</td><td>\n							\n						</td><td>\n              \n            </td><td>\n							\n						</td></tr><tr><td><a href=\"#patient\">Patient</a></td><td><a href=\"StructureDefinition-CARIN-BB-Patient.html\">CARIN-BB-Patient</a></td><td>\n							\n						</td><td>\n							\n						</td><td>\n              \n            </td><td>\n							\n						</td></tr><tr><td><a href=\"#practitioner\">Practitioner</a></td><td><a href=\"StructureDefinition-CARIN-BB-Practitioner.html\">CARIN-BB-Practitioner</a></td><td>\n							\n						</td><td>\n							\n						</td><td>\n              \n            </td><td>\n							\n						</td></tr><tr><td><a href=\"#practitionerrole\">PractitionerRole</a></td><td><a href=\"StructureDefinition-CARIN-BB-PractitionerRole.html\">CARIN-BB-PractitionerRole</a></td><td>\n							\n						</td><td>\n							\n						</td><td>\n              \n            </td><td>\n							\n						</td></tr></tbody></table><br/><h4 id=\"coverage\" class=\"no_toc\">Coverage</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:\n				\n											<a href=\"StructureDefinition-CARIN-BB-Coverage.html\">CARIN-BB-Coverage</a>\n				\n				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n																							<code>search-type</code>, \n																							<code>read</code>.</li><li><strong>SHOULD</strong> support \n																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n					A Server <strong>SHALL</strong> be capable of returning a Coverage resource using:\n					<br/>\n						<code class=\"highlighter-rouge\">GET [base]/Coverage/[id]</code>\n				</li><br/>  <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id=\"explanationofbenefit\" class=\"no_toc\">ExplanationOfBenefit</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:\n				\n											<a href=\"StructureDefinition-CARIN-BB-ExplanationOfBenefit-Inpatient-Facility.html\">CARIN-BB-ExplanationOfBenefit-Inpatient-Facility</a>, \n				\n											<a href=\"http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-outpatient-Facility\">CARIN-BB-ExplanationOfBenefit-Outpatient-Facility</a>, \n				\n											<a href=\"StructureDefinition-CARIN-BB-ExplanationOfBenefit-Pharmacy.html\">CARIN-BB-ExplanationOfBenefit-Pharmacy</a>, \n				\n											<a href=\"StructureDefinition-CARIN-BB-ExplanationOfBenefit-Professional-NonClinician.html\">CARIN-BB-ExplanationOfBenefit-Professional-NonClinician</a>\n				\n				</p><p>Resource Specific Documentation:</p><blockquote><p>HealthcareService documentation is here</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n																							<code>search-type</code>, \n																							<code>read</code>.</li><li><strong>SHOULD</strong> support \n																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n					A Server <strong>SHALL</strong> be capable of returning a ExplanationOfBenefit resource using:\n					<br/>\n						<code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit/[id]</code>\n				</li><br/>  <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><li>\n					A Server <strong>SHOULD</strong> be capable of supporting the following _includes:\n					<br/>\n					\n						ExplanationOfBenefit:provider - <code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include=ExplanationOfBenefit:provider</code><br/>\n					\n						 ExplanationOfBenefit:care-team - <code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include= ExplanationOfBenefit:care-team</code><br/>\n					\n						 ExplanationOfBenefit:coverage - <code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include= ExplanationOfBenefit:coverage</code><br/>\n					\n						 ExplanationOfBenefit:location - <code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include= ExplanationOfBenefit:location</code><br/>\n					\n						 ExplanationOfBenefit:insurer - <code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include= ExplanationOfBenefit:insurer</code><br/>\n					\n				</li><br/>  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href=\"null\">_id</a></td><td>\n							token\n						</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"SearchParameter-explanationofbenefit-patient.html\">patient</a></td><td>\n							reference\n						</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?patient=[patient]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"null\">_lastUpdated</a></td><td>\n							date\n						</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?_lastUpdated=[_lastUpdated]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"SearchParameter-explanationofbenefit-type.html\">type</a></td><td>\n							token\n						</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?type=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"SearchParameter-explanationofbenefit-identifier.html\">identifier</a></td><td>\n							token\n						</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?identifier=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"SearchParameter-explanationofbenefit-service-date.html\">service-date</a></td><td>\n							date\n						</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?service-date=[service-date]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"null\">provider</a></td><td>\n							reference\n						</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?provider=[provider]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"null\">care-team</a></td><td>\n							reference\n						</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?care-team=[care-team]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"null\">insurer</a></td><td>\n							reference\n						</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?insurer=[insurer]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"null\">location</a></td><td>\n							reference\n						</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?location=[location]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href=\"null\">coverage</a></td><td>\n							reference\n						</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?coverage=[coverage]</code></td></tr></tbody></table><hr/><h4 id=\"organization\" class=\"no_toc\">Organization</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:\n				\n											<a href=\"StructureDefinition-CARIN-BB-Organization.html\">CARIN-BB-Organization</a>\n				\n				</p><p>Resource Specific Documentation:</p><blockquote><p>Organization documentation is here</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n																							<code>search-type</code>, \n																							<code>read</code>.</li><li><strong>SHOULD</strong> support \n																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n					A Server <strong>SHALL</strong> be capable of returning a Organization resource using:\n					<br/>\n						<code class=\"highlighter-rouge\">GET [base]/Organization/[id]</code>\n				</li><br/>  <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id=\"patient\" class=\"no_toc\">Patient</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:\n				\n											<a href=\"StructureDefinition-CARIN-BB-Patient.html\">CARIN-BB-Patient</a>\n				\n				</p><p>Resource Specific Documentation:</p><blockquote><p>OrganizationAffiliation documentation is here</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n																							<code>search-type</code>, \n																							<code>read</code>.</li><li><strong>SHOULD</strong> support \n																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n					A Server <strong>SHALL</strong> be capable of returning a Patient resource using:\n					<br/>\n						<code class=\"highlighter-rouge\">GET [base]/Patient/[id]</code>\n				</li><br/>  <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id=\"practitioner\" class=\"no_toc\">Practitioner</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:\n				\n											<a href=\"StructureDefinition-CARIN-BB-Practitioner.html\">CARIN-BB-Practitioner</a>\n				\n				</p><p>Resource Specific Documentation:</p><blockquote><p>InsurancePlan documentation is here</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n																							<code>search-type</code>, \n																							<code>read</code>.</li><li><strong>SHOULD</strong> support \n																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n					A Server <strong>SHALL</strong> be capable of returning a Practitioner resource using:\n					<br/>\n						<code class=\"highlighter-rouge\">GET [base]/Practitioner/[id]</code>\n				</li><br/>  <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id=\"practitionerrole\" class=\"no_toc\">PractitionerRole</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:\n				\n											<a href=\"StructureDefinition-CARIN-BB-PractitionerRole.html\">CARIN-BB-PractitionerRole</a>\n				\n				</p><p>Resource Specific Documentation:</p><blockquote><p>Location documentation is here</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support \n																							<code>search-type</code>, \n																							<code>read</code>.</li><li><strong>SHOULD</strong> support \n																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>\n					A Server <strong>SHALL</strong> be capable of returning a PractitionerRole resource using:\n					<br/>\n						<code class=\"highlighter-rouge\">GET [base]/PractitionerRole/[id]</code>\n				</li><br/>  <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><br/></div>"
+  ];
+  fhir:CapabilityStatement.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb"];
+  fhir:CapabilityStatement.version [ fhir:value "0.3.2"];
+  fhir:CapabilityStatement.name [ fhir:value "CarinBbCapabilityStatement"];
+  fhir:CapabilityStatement.title [ fhir:value "Carin Bb CapabilityStatement"];
+  fhir:CapabilityStatement.status [ fhir:value "active"];
+  fhir:CapabilityStatement.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CapabilityStatement.date [ fhir:value "2020-07-29"^^xsd:date];
+  fhir:CapabilityStatement.publisher [ fhir:value "HL7 Financial Management Working Group"];
+  fhir:CapabilityStatement.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Financial Management Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/fm/index.cfm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:CapabilityStatement.description [ fhir:value "This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors. "];
+  fhir:CapabilityStatement.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CapabilityStatement.kind [ fhir:value "requirements"];
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"];
+  fhir:CapabilityStatement.format [
+     fhir:value "xml";
+     fhir:index 0
+  ], [
+     fhir:value "json";
+     fhir:index 1
+  ];
+  fhir:CapabilityStatement.patchFormat [
+     fhir:value "application/json-patch+json";
+     fhir:index 0
+  ];
+  fhir:CapabilityStatement.implementationGuide [
+     fhir:value "http://hl7.org/fhir/us/carin-bb/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net";
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/us/carin-bb/ImplementationGuide/hl7.fhir.us.davinci-pdex-plan-net>
+  ];
+  fhir:CapabilityStatement.rest [
+     fhir:index 0;
+     fhir:CapabilityStatement.rest.mode [ fhir:value "server" ];
+     fhir:CapabilityStatement.rest.documentation [ fhir:value "The Carin-bb  Server **SHALL**:\n\n1. Support all profiles defined in this Implementation Guide..\n1.  Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n1. Support json source formats for all Plan-Net interactions.\n1. Identify the Plan-Net  profiles supported as part of the FHIR `meta.profile` attribute for each instance.\n\nThe Plan-Net  Server **SHOULD**:\n\n1. Support xml source formats for all Plan-Net  interactions.\n" ];
+     fhir:CapabilityStatement.rest.security [
+       fhir:CapabilityStatement.rest.security.description [ fhir:value "1. See the [General Security Considerations](security.html) section for requirements and recommendations.\n1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code." ]
+     ];
+     fhir:CapabilityStatement.rest.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+         fhir:Extension.valueCode [ fhir:value "SHALL" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Coverage" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage";
+         fhir:index 0;
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage>
+       ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHOULD" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "resolves";
+         fhir:index 0
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+         fhir:Extension.valueCode [ fhir:value "SHALL" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ExplanationOfBenefit" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility";
+         fhir:index 0;
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility>
+       ], [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-outpatient-Facility";
+         fhir:index 1;
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-outpatient-Facility>
+       ], [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy";
+         fhir:index 2;
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy>
+       ], [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Professional-NonClinician";
+         fhir:index 3;
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Professional-NonClinician>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "HealthcareService documentation is here" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHOULD" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "resolves";
+         fhir:index 0
+       ];
+       fhir:CapabilityStatement.rest.resource.searchInclude [
+         fhir:value "ExplanationOfBenefit:provider";
+         fhir:index 0
+       ], [
+         fhir:value " ExplanationOfBenefit:care-team";
+         fhir:index 1
+       ], [
+         fhir:value " ExplanationOfBenefit:coverage";
+         fhir:index 2
+       ], [
+         fhir:value " ExplanationOfBenefit:location";
+         fhir:index 3
+       ], [
+         fhir:value " ExplanationOfBenefit:insurer";
+         fhir:index 4
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-id";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-id>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "patient" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-patient";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-patient>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-lastUpdated";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-lastUpdated>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "type" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-type";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-type>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-identifier";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-identifier>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "service-date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-service-date";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-service-date>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ], [
+         fhir:index 6;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "provider" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-provider";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-provider>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 7;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "care-team" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-care-team";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-care-team>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 8;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "insurer" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-insurer";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-insurer>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 9;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "location" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-location";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-location>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 10;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "coverage" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-coverage";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-coverage>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+         fhir:Extension.valueCode [ fhir:value "SHALL" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Organization" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization";
+         fhir:index 0;
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Organization documentation is here" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHOULD" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "resolves";
+         fhir:index 0
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+         fhir:Extension.valueCode [ fhir:value "SHALL" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "required" ]
+         ];
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Patient" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient";
+         fhir:index 0;
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "OrganizationAffiliation documentation is here" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHOULD" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "resolves";
+         fhir:index 0
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+         fhir:Extension.valueCode [ fhir:value "SHALL" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Practitioner" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Practitioner";
+         fhir:index 0;
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Practitioner>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "InsurancePlan documentation is here" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHOULD" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "resolves";
+         fhir:index 0
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+         fhir:Extension.valueCode [ fhir:value "SHALL" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "PractitionerRole" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-PractitionerRole";
+         fhir:index 0;
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-PractitionerRole>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Location documentation is here" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHALL" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+           fhir:Extension.valueCode [ fhir:value "SHOULD" ]
+         ];
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "resolves";
+         fhir:index 0
+       ]
+     ];
+     fhir:CapabilityStatement.rest.interaction [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+         fhir:Extension.valueCode [ fhir:value "MAY" ]
+       ];
+       fhir:CapabilityStatement.rest.interaction.code [ fhir:value "transaction" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+         fhir:Extension.valueCode [ fhir:value "MAY" ]
+       ];
+       fhir:CapabilityStatement.rest.interaction.code [ fhir:value "batch" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+         fhir:Extension.valueCode [ fhir:value "MAY" ]
+       ];
+       fhir:CapabilityStatement.rest.interaction.code [ fhir:value "search-system" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+         fhir:Extension.valueCode [ fhir:value "MAY" ]
+       ];
+       fhir:CapabilityStatement.rest.interaction.code [ fhir:value "history-system" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/CapabilityStatement/carin-bb.ttl> .
+
+# -------------------------------------------------------------------------------------
+

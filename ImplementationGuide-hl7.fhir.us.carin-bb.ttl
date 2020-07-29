@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CARINConsumerDirectedPayerDataExchange"];
   fhir:ImplementationGuide.title [ fhir:value "CARIN Consumer Directed Payer Data Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-07-28T23:29:38+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-07-29T22:20:16+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1252,42 +1252,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-carin-bb-capabilitystatement-consumer-app.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb-capabilitystatement-consumer-app>;
-         fhir:Reference.reference [ fhir:value "CapabilityStatement/carin-bb-capabilitystatement-consumer-app" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CARIN BlueButton Consumer App CapabilityStatement" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Section describes the expected capabilities of the Consumer-Directed Payer Data Exchange Consumer App which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Consumer-Directed Payer Data Exchange Servers are defined in the [Conformance Requirements for Server](carin-bb-capabilitystatement-healthplan-api.html). Consumer-Directed Payer Data Exchange Consumer Apps have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 53;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-carin-bb-capabilitystatement-healthplan-api.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb-capabilitystatement-healthplan-api>;
-         fhir:Reference.reference [ fhir:value "CapabilityStatement/carin-bb-capabilitystatement-healthplan-api" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Consumer-Directed Payer Data Exchange HealthPlan API CapabilityStatement" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Section describes the expected capabilities of the Consumer-Directed Payer Data Exchange Server actor which is responsible for providing responses to the queries submitted by the Consumer-Directed Payer Data Exchange Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Consumer-Directed Payer Data Exchange Servers are defined." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 54;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ], [
          fhir:index 1;
@@ -1302,7 +1266,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The business/claim identifier of the Explanation of Benefit" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 55;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1320,7 +1284,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The reference to the patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 56;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1338,7 +1302,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Date of the service for the EOB" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 57;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1354,6 +1318,24 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExplanationOfBenefit_Type" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The type of the ExplanationOfBenefit" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-carin-bb.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/carin-bb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Carin Bb CapabilityStatement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors. " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
@@ -1590,10 +1572,6 @@
 
 <http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS> a fhir:us .
 
-<http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb-capabilitystatement-consumer-app> a fhir:us .
-
-<http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb-capabilitystatement-healthplan-api> a fhir:us .
-
 <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-identifier> a fhir:us .
 
 <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-patient> a fhir:us .
@@ -1601,6 +1579,8 @@
 <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-service-date> a fhir:us .
 
 <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-type> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

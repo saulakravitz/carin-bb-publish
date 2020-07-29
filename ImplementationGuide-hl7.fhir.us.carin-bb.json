@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-07-28T23:29:38+00:00",
+  "date": "2020-07-29T22:20:16+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -1268,42 +1268,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CapabilityStatement"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CapabilityStatement-carin-bb-capabilitystatement-consumer-app.html"
-          }
-        ],
-        "reference": {
-          "reference": "CapabilityStatement/carin-bb-capabilitystatement-consumer-app"
-        },
-        "name": "CARIN BlueButton Consumer App CapabilityStatement",
-        "description": "The Section describes the expected capabilities of the Consumer-Directed Payer Data Exchange Consumer App which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Consumer-Directed Payer Data Exchange Servers are defined in the [Conformance Requirements for Server](carin-bb-capabilitystatement-healthplan-api.html). Consumer-Directed Payer Data Exchange Consumer Apps have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CapabilityStatement"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CapabilityStatement-carin-bb-capabilitystatement-healthplan-api.html"
-          }
-        ],
-        "reference": {
-          "reference": "CapabilityStatement/carin-bb-capabilitystatement-healthplan-api"
-        },
-        "name": "Consumer-Directed Payer Data Exchange HealthPlan API CapabilityStatement",
-        "description": "This Section describes the expected capabilities of the Consumer-Directed Payer Data Exchange Server actor which is responsible for providing responses to the queries submitted by the Consumer-Directed Payer Data Exchange Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Consumer-Directed Payer Data Exchange Servers are defined.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "SearchParameter"
           },
           {
@@ -1370,6 +1334,24 @@
         },
         "name": "ExplanationOfBenefit_Type",
         "description": "The type of the ExplanationOfBenefit",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-carin-bb.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/carin-bb"
+        },
+        "name": "Carin Bb CapabilityStatement",
+        "description": "This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors. ",
         "exampleBoolean": false
       }
     ],
