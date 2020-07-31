@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-07-31T13:04:59+00:00"/>
+  <date value="2020-07-31T21:56:12+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -941,6 +941,47 @@
         <valueString value="SearchParameter"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-ExplanationOfBenefit-care-team.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ExplanationOfBenefit-care-team"/>
+      </reference>
+      <name value="ExplanationOfBenefit-care-team"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-ExplanationOfBenefit-coverage.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ExplanationOfBenefit-coverage"/>
+      </reference>
+      <name value="coverage"/>
+      <description value="The plan under which the claim was adjudicated"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-ExplanationOfBenefit-facility.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ExplanationOfBenefit-facility"/>
+      </reference>
+      <name value="facility"/>
+      <description value="Facility responsible for the goods and services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-explanationofbenefit-identifier.html"/>
       </extension>
       <reference>
@@ -955,6 +996,20 @@
         <valueString value="SearchParameter"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-explanationofbenefit-insurer.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/explanationofbenefit-insurer"/>
+      </reference>
+      <name value="CARINBlueButton_ExplanationOfBenefit_Insurer_SearchParameter"/>
+      <description value="The party responsible for the claim"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-explanationofbenefit-patient.html"/>
       </extension>
       <reference>
@@ -962,6 +1017,20 @@
       </reference>
       <name value="ExplanationOfBenefit_Patient"/>
       <description value="The reference to the patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-ExplanationOfBenefit-provider.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ExplanationOfBenefit-provider"/>
+      </reference>
+      <name value="provider"/>
+      <description value="The reference to the provider"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -990,6 +1059,34 @@
       </reference>
       <name value="ExplanationOfBenefit_Type"/>
       <description value="The type of the ExplanationOfBenefit"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-PractitionerRole-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/PractitionerRole-organization"/>
+      </reference>
+      <name value="organization"/>
+      <description value="The identity of the organization the practitioner represents / acts on behalf of"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-PractitionerRole-practitioner.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/PractitionerRole-practitioner"/>
+      </reference>
+      <name value="practitioner"/>
+      <description value="Practitioner that is able to provide the defined services for the organization"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

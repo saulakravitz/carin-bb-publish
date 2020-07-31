@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-07-31T13:04:59+00:00",
+  "date": "2020-07-31T21:56:12+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -1272,6 +1272,59 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "SearchParameter-ExplanationOfBenefit-care-team.html"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/ExplanationOfBenefit-care-team"
+        },
+        "name": "ExplanationOfBenefit-care-team",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "SearchParameter-ExplanationOfBenefit-coverage.html"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/ExplanationOfBenefit-coverage"
+        },
+        "name": "coverage",
+        "description": "The plan under which the claim was adjudicated",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "SearchParameter-ExplanationOfBenefit-facility.html"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/ExplanationOfBenefit-facility"
+        },
+        "name": "facility",
+        "description": "Facility responsible for the goods and services",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-explanationofbenefit-identifier.html"
           }
         ],
@@ -1290,6 +1343,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "SearchParameter-explanationofbenefit-insurer.html"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/explanationofbenefit-insurer"
+        },
+        "name": "CARINBlueButton_ExplanationOfBenefit_Insurer_SearchParameter",
+        "description": "The party responsible for the claim",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-explanationofbenefit-patient.html"
           }
         ],
@@ -1298,6 +1369,24 @@
         },
         "name": "ExplanationOfBenefit_Patient",
         "description": "The reference to the patient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "SearchParameter-ExplanationOfBenefit-provider.html"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/ExplanationOfBenefit-provider"
+        },
+        "name": "provider",
+        "description": "The reference to the provider",
         "exampleBoolean": false
       },
       {
@@ -1334,6 +1423,42 @@
         },
         "name": "ExplanationOfBenefit_Type",
         "description": "The type of the ExplanationOfBenefit",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "SearchParameter-PractitionerRole-organization.html"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/PractitionerRole-organization"
+        },
+        "name": "organization",
+        "description": "The identity of the organization the practitioner represents / acts on behalf of",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "SearchParameter-PractitionerRole-practitioner.html"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/PractitionerRole-practitioner"
+        },
+        "name": "practitioner",
+        "description": "Practitioner that is able to provide the defined services for the organization",
         "exampleBoolean": false
       },
       {

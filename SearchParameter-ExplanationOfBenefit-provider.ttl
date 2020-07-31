@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/SearchParameter/ExplanationOfBenefit-provider> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ExplanationOfBenefit-provider"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: ExplanationOfBenefit-provider</p><p><b>url</b>: <a href=\"http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-provider\">http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-provider</a></p><p><b>version</b>: 0.3.2</p><p><b>name</b>: provider</p><p><b>derivedFrom</b>: <a href=\"http://hl7.org/fhir/SearchParameter/ExplanationOfBenefit-provider\">http://hl7.org/fhir/SearchParameter/ExplanationOfBenefit-provider</a></p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Oct 31, 2019, 10:29:23 PM</p><p><b>publisher</b>: HL7 Financial Management Working Group</p><p><b>contact</b>: HL7 Financial Management Working Group: http://www.hl7.org/Special/committees/fm/index.cfm,fm@lists.HL7.org</p><p><b>description</b>: The reference to the provider</p><p><b>jurisdiction</b>: <span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></p><p><b>code</b>: provider</p><p><b>base</b>: ExplanationOfBenefit</p><p><b>type</b>: reference</p><p><b>expression</b>: ExplanationOfBenefit.provider</p><p><b>xpath</b>: f:ExplanationOfBenefit/f:provider</p><p><b>xpathUsage</b>: normal</p><p><b>target</b>: Practitioner, Organization, PractitionerRole</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ];
+     fhir:Extension.valueCode [ fhir:value "trial-use" ]
+  ];
+  fhir:SearchParameter.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-provider"];
+  fhir:SearchParameter.version [ fhir:value "0.3.2"];
+  fhir:SearchParameter.name [ fhir:value "provider"];
+  fhir:SearchParameter.derivedFrom [
+     fhir:value "http://hl7.org/fhir/SearchParameter/ExplanationOfBenefit-provider";
+     fhir:link <http://hl7.org/fhir/SearchParameter/ExplanationOfBenefit-provider>
+  ];
+  fhir:SearchParameter.status [ fhir:value "draft"];
+  fhir:SearchParameter.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:SearchParameter.date [ fhir:value "2019-11-01T09:29:23+11:00"^^xsd:dateTime];
+  fhir:SearchParameter.publisher [ fhir:value "HL7 Financial Management Working Group"];
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Financial Management Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/fm/index.cfm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:SearchParameter.description [ fhir:value "The reference to the provider"];
+  fhir:SearchParameter.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:SearchParameter.code [ fhir:value "provider"];
+  fhir:SearchParameter.base [
+     fhir:value "ExplanationOfBenefit";
+     fhir:index 0
+  ];
+  fhir:SearchParameter.type [ fhir:value "reference"];
+  fhir:SearchParameter.expression [ fhir:value "ExplanationOfBenefit.provider"];
+  fhir:SearchParameter.xpath [ fhir:value "f:ExplanationOfBenefit/f:provider"];
+  fhir:SearchParameter.xpathUsage [ fhir:value "normal"];
+  fhir:SearchParameter.target [
+     fhir:value "Practitioner";
+     fhir:index 0
+  ], [
+     fhir:value "Organization";
+     fhir:index 1
+  ], [
+     fhir:value "PractitionerRole";
+     fhir:index 2
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/SearchParameter/ExplanationOfBenefit-provider.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/SearchParameter/ExplanationOfBenefit-provider.ttl> .
+
+# -------------------------------------------------------------------------------------
+
