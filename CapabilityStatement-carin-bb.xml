@@ -3,9 +3,9 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="carin-bb"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Carin Bb CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-07-29</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p><p>This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors.</p></p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The Carin-bb  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Carin Bb CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-07-30</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p><p>This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors.</p></p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The Carin-bb  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
 <ul><li>(Status 400): invalid parameter</li><li>(Status 401/4xx): unauthorized request</li><li>(Status 403): insufficient scope</li><li>(Status 404): unknown resource</li><li>(Status 410): deleted resource.</li></ul>
-</li><li>Support json source formats for all Plan-Net interactions.</li><li>Identify the Plan-Net  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li></ol><p>The Plan-Net  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all Plan-Net  interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><p><strong>Summary of System Wide Interactions</strong></p><li><strong>MAY</strong> support the	<code>transaction</code> interaction.</li><li><strong>MAY</strong> support the	<code>batch</code> interaction.</li><li><strong>MAY</strong> support the	<code>search-system</code> interaction.</li><li><strong>MAY</strong> support the	<code>history-system</code> interaction.</li><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#coverage">Coverage</a></td><td><a href="StructureDefinition-CARIN-BB-Coverage.html">CARIN-BB-Coverage</a></td><td>
+</li><li>Support json source formats for all Plan-Net interactions.</li><li>Identify the Plan-Net  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li></ol><p>The Plan-Net  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all Plan-Net  interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><p><strong>Summary of System Wide Interactions</strong></p><li><strong/> support the	<code>transaction</code> interaction.</li><li><strong/> support the	<code>batch</code> interaction.</li><li><strong/> support the	<code>search-system</code> interaction.</li><li><strong/> support the	<code>history-system</code> interaction.</li><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#coverage">Coverage</a></td><td><a href="StructureDefinition-CARIN-BB-Coverage.html">CARIN-BB-Coverage</a></td><td>
 							
 						</td><td>
 							
@@ -21,7 +21,7 @@
 
 						<a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Professional-NonClinician.html">CARIN-BB-ExplanationOfBenefit-Professional-NonClinician</a></td><td>
 							
-							_id, patient, _lastUpdated, type, identifier, service-date, provider, care-team, insurer, location, coverage
+							_id, patient, _lastUpdated, type, identifier, service-date
 							
 							
 							
@@ -69,8 +69,7 @@
 				
 				</p><p>Resource Specific Documentation:</p><blockquote><p>Coverage MarkDown Documentation is here</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
-																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
-																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+																							<code>read</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
 					A Server <strong>SHALL</strong> be capable of returning a Coverage resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Coverage/[id]</code>
@@ -86,8 +85,7 @@
 				
 				</p><p>Resource Specific Documentation:</p><blockquote><p>ExplanationOfBeneffit MarkDown Documentation is here</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
-																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
-																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+																							<code>read</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
 					A Server <strong>SHALL</strong> be capable of returning a ExplanationOfBenefit resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/ExplanationOfBenefit/[id]</code>
@@ -117,17 +115,7 @@
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?identifier=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-explanationofbenefit-service-date.html">service-date</a></td><td>
 							date
-						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?service-date=[service-date]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="null">provider</a></td><td>
-							reference
-						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?provider=[provider]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="null">care-team</a></td><td>
-							reference
-						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?care-team=[care-team]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="null">insurer</a></td><td>
-							reference
-						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?insurer=[insurer]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="null">location</a></td><td>
-							reference
-						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?location=[location]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="null">coverage</a></td><td>
-							reference
-						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?coverage=[coverage]</code></td></tr></tbody></table><hr/><h4 id="organization" class="no_toc">Organization</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?service-date=[service-date]</code></td></tr></tbody></table><hr/><h4 id="organization" class="no_toc">Organization</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
 											<a href="StructureDefinition-CARIN-BB-Organization.html">CARIN-BB-Organization</a>
 				
@@ -179,7 +167,7 @@
   <title value="Carin Bb CapabilityStatement"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2020-07-29"/>
+  <date value="2020-07-30"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -230,12 +218,6 @@
         </extension>
         <code value="read"/>
       </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <code value="vread"/>
-      </interaction>
       <referencePolicy value="resolves"/>
     </resource>
     <resource>
@@ -259,12 +241,6 @@
           <valueCode value="SHALL"/>
         </extension>
         <code value="read"/>
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <code value="vread"/>
       </interaction>
       <referencePolicy value="resolves"/>
       <searchInclude value="ExplanationOfBenefit:provider"/>
@@ -319,46 +295,6 @@
         <name value="service-date"/>
         <definition value="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-service-date"/>
         <type value="date"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="provider"/>
-        <definition value="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-provider"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="care-team"/>
-        <definition value="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-care-team"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="insurer"/>
-        <definition value="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-insurer"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="location"/>
-        <definition value="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-location"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="coverage"/>
-        <definition value="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-coverage"/>
-        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
@@ -474,27 +410,19 @@
       <referencePolicy value="resolves"/>
     </resource>
     <interaction>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
-      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"/>
       <code value="transaction"/>
     </interaction>
     <interaction>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
-      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"/>
       <code value="batch"/>
     </interaction>
     <interaction>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
-      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"/>
       <code value="search-system"/>
     </interaction>
     <interaction>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
-      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"/>
       <code value="history-system"/>
     </interaction>
   </rest>

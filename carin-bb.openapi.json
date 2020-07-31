@@ -192,74 +192,6 @@
         ]
       }
     },
-    "/Coverage/{rid}/_history/{hid}": {
-      "summary": "Read a past version of resource instance of type Coverage",
-      "description": "Access a to specified previous version of a single resource of type Coverage",
-      "get": {
-        "summary": "Read a past state of the resource",
-        "operationId": "vreadCoverage",
-        "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "the resource being returned",
-            "headers": {
-              "ETag": {
-                "description": "Version from Resource.meta.version as a weak ETag for that version",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            },
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Coverage"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/Coverage.xsd"
-                }
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/rid"
-          },
-          {
-            "$ref": "#/components/parameters/hid"
-          },
-          {
-            "$ref": "#/components/parameters/summary"
-          },
-          {
-            "$ref": "#/components/parameters/format"
-          },
-          {
-            "$ref": "#/components/parameters/pretty"
-          },
-          {
-            "$ref": "#/components/parameters/elements"
-          }
-        ]
-      }
-    },
     "/ExplanationOfBenefit": {
       "summary": "manage the collection of resources of type ExplanationOfBenefit",
       "description": "Access to services to manage the collection of all resources of type ExplanationOfBenefit",
@@ -354,41 +286,6 @@
               "type": "string",
               "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
             }
-          },
-          {
-            "name": "provider",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "care-team",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "insurer",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "location",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "coverage",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ]
       }
@@ -442,74 +339,6 @@
         "parameters": [
           {
             "$ref": "#/components/parameters/rid"
-          },
-          {
-            "$ref": "#/components/parameters/summary"
-          },
-          {
-            "$ref": "#/components/parameters/format"
-          },
-          {
-            "$ref": "#/components/parameters/pretty"
-          },
-          {
-            "$ref": "#/components/parameters/elements"
-          }
-        ]
-      }
-    },
-    "/ExplanationOfBenefit/{rid}/_history/{hid}": {
-      "summary": "Read a past version of resource instance of type ExplanationOfBenefit",
-      "description": "Access a to specified previous version of a single resource of type ExplanationOfBenefit",
-      "get": {
-        "summary": "Read a past state of the resource",
-        "operationId": "vreadExplanationOfBenefit",
-        "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "the resource being returned",
-            "headers": {
-              "ETag": {
-                "description": "Version from Resource.meta.version as a weak ETag for that version",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            },
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/ExplanationOfBenefit"
-                }
-              },
-              "application/fhir+xml": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/ExplanationOfBenefit.xsd"
-                }
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/rid"
-          },
-          {
-            "$ref": "#/components/parameters/hid"
           },
           {
             "$ref": "#/components/parameters/summary"

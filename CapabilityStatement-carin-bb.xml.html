@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="c6d5decf-36b4-4a3d-ad83-c473f8e6efb9">​</a>
+      <li><a name="21f910a5-3326-4877-a1fc-eda4674ed5ea">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="43a905c6-85f4-4aae-b444-da15ea5a39f9">​</a>
+      <li><a name="37d949a1-39d4-40af-b2c1-ff58007a610f">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="43f036eb-5718-4b04-9689-03058b3ae3ba">​</a>
+      <li><a name="b1df0faa-e574-4c40-80f3-c1cfd6666e0f">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="9375d1c5-f12e-4f64-9954-dc9bd30cd24b">​</a>
+      <li><a name="e3f453b0-0d1c-44a0-abe6-5f41acefd0fa">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="f3b2607f-11ba-4f04-98c6-e954bf38b76f">​</a>
+      <li><a name="a0a525dd-cfb1-4dee-9fd2-b3213a0c44a4">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -245,9 +245,9 @@
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="carin-bb"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;h2 id="title"&gt;Carin Bb CapabilityStatement&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide Version: 1.0.0&lt;/li&gt;&lt;li&gt;FHIR Version: 4.0.1&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2020-07-29&lt;/li&gt;&lt;li&gt;Published by: HL7 Financial Management Working Group (FM WG)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;p&gt;This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors.&lt;/p&gt;&lt;/p&gt;&lt;h3 id="behavior"&gt;FHIR RESTful Capabilities&lt;/h3&gt;&lt;p&gt;The Carin-bb  Server &lt;strong&gt;SHALL&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support all profiles defined in this Implementation Guide..&lt;/li&gt;&lt;li&gt;Implement the RESTful behavior according to the FHIR specification.&lt;/li&gt;&lt;li&gt;Return the following response classes:
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;h2 id="title"&gt;Carin Bb CapabilityStatement&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide Version: 1.0.0&lt;/li&gt;&lt;li&gt;FHIR Version: 4.0.1&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2020-07-30&lt;/li&gt;&lt;li&gt;Published by: HL7 Financial Management Working Group (FM WG)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;p&gt;This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors.&lt;/p&gt;&lt;/p&gt;&lt;h3 id="behavior"&gt;FHIR RESTful Capabilities&lt;/h3&gt;&lt;p&gt;The Carin-bb  Server &lt;strong&gt;SHALL&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support all profiles defined in this Implementation Guide..&lt;/li&gt;&lt;li&gt;Implement the RESTful behavior according to the FHIR specification.&lt;/li&gt;&lt;li&gt;Return the following response classes:
 &lt;ul&gt;&lt;li&gt;(Status 400): invalid parameter&lt;/li&gt;&lt;li&gt;(Status 401/4xx): unauthorized request&lt;/li&gt;&lt;li&gt;(Status 403): insufficient scope&lt;/li&gt;&lt;li&gt;(Status 404): unknown resource&lt;/li&gt;&lt;li&gt;(Status 410): deleted resource.&lt;/li&gt;&lt;/ul&gt;
-&lt;/li&gt;&lt;li&gt;Support json source formats for all Plan-Net interactions.&lt;/li&gt;&lt;li&gt;Identify the Plan-Net  profiles supported as part of the FHIR &lt;code&gt;meta.profile&lt;/code&gt; attribute for each instance.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;The Plan-Net  Server &lt;strong&gt;SHOULD&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support xml source formats for all Plan-Net  interactions.&lt;/li&gt;&lt;/ol&gt;&lt;p id="security"&gt;&lt;strong&gt;Security:&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;See the &lt;a href="security.html"&gt;General Security Considerations&lt;/a&gt; section for requirements and recommendations.&lt;/li&gt;&lt;li&gt;A server &lt;strong&gt;SHALL&lt;/strong&gt; reject any unauthorized requests by returning an &lt;code&gt;HTTP 401&lt;/code&gt; unauthorized response code.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;Summary of System Wide Interactions&lt;/strong&gt;&lt;/p&gt;&lt;li&gt;&lt;strong&gt;MAY&lt;/strong&gt; support the	&lt;code&gt;transaction&lt;/code&gt; interaction.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;MAY&lt;/strong&gt; support the	&lt;code&gt;batch&lt;/code&gt; interaction.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;MAY&lt;/strong&gt; support the	&lt;code&gt;search-system&lt;/code&gt; interaction.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;MAY&lt;/strong&gt; support the	&lt;code&gt;history-system&lt;/code&gt; interaction.&lt;/li&gt;&lt;h3 id="resource--details" class="no_toc"&gt;RESTful Capabilities by Resource/Profile:&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Summary of Search Criteria&lt;/strong&gt;&lt;/p&gt;&lt;table class="grid"&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Supported Profiles&lt;/th&gt;&lt;th&gt;Supported Searches&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_includes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_revincludes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported Operations&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="#coverage"&gt;Coverage&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="StructureDefinition-CARIN-BB-Coverage.html"&gt;CARIN-BB-Coverage&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
+&lt;/li&gt;&lt;li&gt;Support json source formats for all Plan-Net interactions.&lt;/li&gt;&lt;li&gt;Identify the Plan-Net  profiles supported as part of the FHIR &lt;code&gt;meta.profile&lt;/code&gt; attribute for each instance.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;The Plan-Net  Server &lt;strong&gt;SHOULD&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support xml source formats for all Plan-Net  interactions.&lt;/li&gt;&lt;/ol&gt;&lt;p id="security"&gt;&lt;strong&gt;Security:&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;See the &lt;a href="security.html"&gt;General Security Considerations&lt;/a&gt; section for requirements and recommendations.&lt;/li&gt;&lt;li&gt;A server &lt;strong&gt;SHALL&lt;/strong&gt; reject any unauthorized requests by returning an &lt;code&gt;HTTP 401&lt;/code&gt; unauthorized response code.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;Summary of System Wide Interactions&lt;/strong&gt;&lt;/p&gt;&lt;li&gt;&lt;strong/&gt; support the	&lt;code&gt;transaction&lt;/code&gt; interaction.&lt;/li&gt;&lt;li&gt;&lt;strong/&gt; support the	&lt;code&gt;batch&lt;/code&gt; interaction.&lt;/li&gt;&lt;li&gt;&lt;strong/&gt; support the	&lt;code&gt;search-system&lt;/code&gt; interaction.&lt;/li&gt;&lt;li&gt;&lt;strong/&gt; support the	&lt;code&gt;history-system&lt;/code&gt; interaction.&lt;/li&gt;&lt;h3 id="resource--details" class="no_toc"&gt;RESTful Capabilities by Resource/Profile:&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Summary of Search Criteria&lt;/strong&gt;&lt;/p&gt;&lt;table class="grid"&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Supported Profiles&lt;/th&gt;&lt;th&gt;Supported Searches&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_includes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_revincludes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported Operations&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="#coverage"&gt;Coverage&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="StructureDefinition-CARIN-BB-Coverage.html"&gt;CARIN-BB-Coverage&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							
 						&lt;/td&gt;&lt;td&gt;
 							
@@ -263,7 +263,7 @@
 
 						&lt;a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Professional-NonClinician.html"&gt;CARIN-BB-ExplanationOfBenefit-Professional-NonClinician&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							
-							_id, patient, _lastUpdated, type, identifier, service-date, provider, care-team, insurer, location, coverage
+							_id, patient, _lastUpdated, type, identifier, service-date
 							
 							
 							
@@ -311,8 +311,7 @@
 				
 				&lt;/p&gt;&lt;p&gt;Resource Specific Documentation:&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;Coverage MarkDown Documentation is here&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;Reference Policy: &lt;code&gt;resolves&lt;/code&gt;&lt;/p&gt;&lt;p&gt;Profile Interaction Summary:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support 
 																							&lt;code&gt;search-type&lt;/code&gt;, 
-																							&lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;SHOULD&lt;/strong&gt; support 
-																							&lt;code&gt;vread&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fetch and Search Criteria:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;
+																							&lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fetch and Search Criteria:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;
 					A Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of returning a Coverage resource using:
 					&lt;br/&gt;
 						&lt;code class="highlighter-rouge"&gt;GET [base]/Coverage/[id]&lt;/code&gt;
@@ -328,8 +327,7 @@
 				
 				&lt;/p&gt;&lt;p&gt;Resource Specific Documentation:&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;ExplanationOfBeneffit MarkDown Documentation is here&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;Reference Policy: &lt;code&gt;resolves&lt;/code&gt;&lt;/p&gt;&lt;p&gt;Profile Interaction Summary:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;SHALL&lt;/strong&gt; support 
 																							&lt;code&gt;search-type&lt;/code&gt;, 
-																							&lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;SHOULD&lt;/strong&gt; support 
-																							&lt;code&gt;vread&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fetch and Search Criteria:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;
+																							&lt;code&gt;read&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fetch and Search Criteria:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;
 					A Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of returning a ExplanationOfBenefit resource using:
 					&lt;br/&gt;
 						&lt;code class="highlighter-rouge"&gt;GET [base]/ExplanationOfBenefit/[id]&lt;/code&gt;
@@ -359,17 +357,7 @@
 							token
 						&lt;/td&gt;&lt;td&gt;&lt;code class="highlighter-rouge"&gt;GET [base]/ExplanationOfBenefit?identifier=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="SearchParameter-explanationofbenefit-service-date.html"&gt;service-date&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							date
-						&lt;/td&gt;&lt;td&gt;&lt;code class="highlighter-rouge"&gt;GET [base]/ExplanationOfBenefit?service-date=[service-date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="null"&gt;provider&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
-							reference
-						&lt;/td&gt;&lt;td&gt;&lt;code class="highlighter-rouge"&gt;GET [base]/ExplanationOfBenefit?provider=[provider]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="null"&gt;care-team&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
-							reference
-						&lt;/td&gt;&lt;td&gt;&lt;code class="highlighter-rouge"&gt;GET [base]/ExplanationOfBenefit?care-team=[care-team]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="null"&gt;insurer&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
-							reference
-						&lt;/td&gt;&lt;td&gt;&lt;code class="highlighter-rouge"&gt;GET [base]/ExplanationOfBenefit?insurer=[insurer]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="null"&gt;location&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
-							reference
-						&lt;/td&gt;&lt;td&gt;&lt;code class="highlighter-rouge"&gt;GET [base]/ExplanationOfBenefit?location=[location]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="null"&gt;coverage&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
-							reference
-						&lt;/td&gt;&lt;td&gt;&lt;code class="highlighter-rouge"&gt;GET [base]/ExplanationOfBenefit?coverage=[coverage]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id="organization" class="no_toc"&gt;Organization&lt;/h4&gt;&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Supported Profiles:
+						&lt;/td&gt;&lt;td&gt;&lt;code class="highlighter-rouge"&gt;GET [base]/ExplanationOfBenefit?service-date=[service-date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id="organization" class="no_toc"&gt;Organization&lt;/h4&gt;&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Supported Profiles:
 				
 											&lt;a href="StructureDefinition-CARIN-BB-Organization.html"&gt;CARIN-BB-Organization&lt;/a&gt;
 				
@@ -421,7 +409,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Carin Bb CapabilityStatement"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="false"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2020-07-29"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2020-07-30"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 Financial Management Working Group"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 Financial Management Working Group"/&gt;
@@ -497,13 +485,6 @@ The Plan-Net  Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="read"/&gt;
       &lt;/interaction&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="SHOULD"/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="vread"/&gt;
-      &lt;/interaction&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">referencePolicy</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="resolves"/&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
@@ -535,13 +516,6 @@ The Plan-Net  Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="SHALL"/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="read"/&gt;
-      &lt;/interaction&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="SHOULD"/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="vread"/&gt;
       &lt;/interaction&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.referencePolicy">referencePolicy</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="resolves"/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ExplanationOfBenefit:provider"/&gt;
@@ -608,56 +582,6 @@ The Plan-Net  Server **SHOULD**:
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
                     <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-service-date"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="date"/&gt;
-      &lt;/searchParam&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="SHALL"/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="provider"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-provider"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="reference"/&gt;
-      &lt;/searchParam&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="SHALL"/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="care-team"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-care-team"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="reference"/&gt;
-      &lt;/searchParam&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="SHALL"/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="insurer"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-insurer"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="reference"/&gt;
-      &lt;/searchParam&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="SHALL"/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="location"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-location"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="reference"/&gt;
-      &lt;/searchParam&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="SHALL"/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="coverage"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-coverage"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="reference"/&gt;
       &lt;/searchParam&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
@@ -796,30 +720,22 @@ The Plan-Net  Server **SHOULD**:
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction">interaction</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="MAY"/&gt;
-      &lt;/extension&gt;
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="transaction"/&gt;
     &lt;/interaction&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction">interaction</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="MAY"/&gt;
-      &lt;/extension&gt;
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="batch"/&gt;
     &lt;/interaction&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction">interaction</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="MAY"/&gt;
-      &lt;/extension&gt;
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="search-system"/&gt;
     &lt;/interaction&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction">interaction</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="MAY"/&gt;
-      &lt;/extension&gt;
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="history-system"/&gt;
     &lt;/interaction&gt;
   &lt;/rest&gt;
@@ -851,21 +767,21 @@ The Plan-Net  Server **SHOULD**:
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 29, 2020 22:26+0000">2020-07-29</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 31, 2020 13:04+0000">2020-07-31</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
-                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/carin-bb/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
+                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/carin-bb/history.html" target="_blank">Version History  |
                  <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
                    <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change <img src="external.png" alt="external" style="vertical-align: baseline"/></a>
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change </a>
 
-          </span>
-        </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+          
+        
+          <!-- /inner-wrapper -->
+        <!-- /container -->
+      <!-- /segment-footer -->
   
   <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
     <div class="container">    <!-- container -->
@@ -884,5 +800,6 @@ anchors.add()</script>
   
     <!-- Analytics Below
   ================================================== -->
-  </body>
-</html>
+  
+
+</a></span></p></div></div></div></body></html>
