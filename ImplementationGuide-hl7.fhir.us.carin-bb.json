@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-07-31T21:56:12+00:00",
+  "date": "2020-08-02T20:03:56+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -1272,13 +1272,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "SearchParameter-ExplanationOfBenefit-care-team.html"
+            "valueUri": "SearchParameter-explanationofbenefit-care-team.html"
           }
         ],
         "reference": {
-          "reference": "SearchParameter/ExplanationOfBenefit-care-team"
+          "reference": "SearchParameter/explanationofbenefit-care-team"
         },
-        "name": "ExplanationOfBenefit-care-team",
+        "name": "ExplanationOfBenefit_Careteam",
+        "description": "Member of the CareTeam",
         "exampleBoolean": false
       },
       {
@@ -1289,13 +1290,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "SearchParameter-ExplanationOfBenefit-coverage.html"
+            "valueUri": "SearchParameter-explanationofbenefit-coverage.html"
           }
         ],
         "reference": {
-          "reference": "SearchParameter/ExplanationOfBenefit-coverage"
+          "reference": "SearchParameter/explanationofbenefit-coverage"
         },
-        "name": "coverage",
+        "name": "ExplanationOfBenefit_coverage",
         "description": "The plan under which the claim was adjudicated",
         "exampleBoolean": false
       },
@@ -1307,13 +1308,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "SearchParameter-ExplanationOfBenefit-facility.html"
+            "valueUri": "SearchParameter-explanationofbenefit-facility.html"
           }
         ],
         "reference": {
-          "reference": "SearchParameter/ExplanationOfBenefit-facility"
+          "reference": "SearchParameter/explanationofbenefit-facility"
         },
-        "name": "facility",
+        "name": "ExplanationOfBenefit_facility",
         "description": "Facility responsible for the goods and services",
         "exampleBoolean": false
       },
@@ -1379,11 +1380,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "SearchParameter-ExplanationOfBenefit-provider.html"
+            "valueUri": "SearchParameter-explanationofbenefit-provider.html"
           }
         ],
         "reference": {
-          "reference": "SearchParameter/ExplanationOfBenefit-provider"
+          "reference": "SearchParameter/explanationofbenefit-provider"
         },
         "name": "provider",
         "description": "The reference to the provider",
@@ -1433,11 +1434,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "SearchParameter-PractitionerRole-organization.html"
+            "valueUri": "SearchParameter-practitionerrole-organization.html"
           }
         ],
         "reference": {
-          "reference": "SearchParameter/PractitionerRole-organization"
+          "reference": "SearchParameter/practitionerrole-organization"
         },
         "name": "organization",
         "description": "The identity of the organization the practitioner represents / acts on behalf of",
@@ -1451,11 +1452,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "SearchParameter-PractitionerRole-practitioner.html"
+            "valueUri": "SearchParameter-practitionerrole-practitioner.html"
           }
         ],
         "reference": {
-          "reference": "SearchParameter/PractitionerRole-practitioner"
+          "reference": "SearchParameter/practitionerrole-practitioner"
         },
         "name": "practitioner",
         "description": "Practitioner that is able to provide the defined services for the organization",

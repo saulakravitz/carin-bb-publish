@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="4c617100-4e5c-4739-8e14-9b0844edc35d">​</a>
+      <li><a name="b3e1584a-0716-4d70-884c-e32b8c3cdb75">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="9df7c9d9-b0e1-4d91-8510-4d4ac0e41dbc">​</a>
+      <li><a name="10ed17d4-6181-4979-804e-52668a6a846a">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="f35694c4-9d0c-465e-98fe-366557760a36">​</a>
+      <li><a name="51b9b807-2eea-4150-8f1c-590be2179882">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="6f0a773a-83be-455f-a37d-d656763dd890">​</a>
+      <li><a name="fa7fbd98-87e3-4b8c-ba83-01a8e05a8c52">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="7a540374-0df1-4f63-996d-2e77b031954f">​</a>
+      <li><a name="cf339943-8b56-421e-b3c0-c77ef186612f">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -224,9 +224,7 @@ The Coverage Reference Resource SHALL be returned with data that was effective a
 
 <h3>RESTful Capabilities by Resource/Profile</h3>
 
-To fetch supporting Reference Resources, payers SHALL support _include for all resources referenced by an ExplanationOfBenefit as well as "_include=*", which would bring all referenced resources in the bundle. Client's ExplanationOfBenefit searches can use "_include=*", "_include" for specific reference resources or no "_include" at all (atomic calls) as best suits their use case. Payers SHALL also support resource reads by _id for all profiles defined by this implementation guide.
-
-Payers SHALL provide equivalency for “query via _id” (when a client requests data for the referenced resources using a separate call to each resource by its id) and “query via _include" (when a client requests data from all referenced resources to be bundled in one response with the EOB resources). Equivalency means that the same data SHALL be returned regardless whether the client uses “_id” or “_include”. Particularly, if a payer returns point in time versioned reference resources in response to a "_include" request", the same point in time versioned reference resources SHALL be returned in response to the atomic calls / reads for these reference resources).
+When an EOB references another resource (e.g., Patient or Practitioner), the reference may be versioned or versionless. Payers SHALL use versioned references whenever they maintain point-in-time data (data that was effective as of the date of service or date of admission on the claim), but MAY use versionless references when they do not maintain versioned data. Clients MAY request referenced resources as part of an EOB search (by supplying the _include parameter) or directly using read or vread. Payers SHALL support both approaches, and SHALL return the same content for referenced resources in either case.
 
 <h4>Explanation of Benefit Profiles</h4>
 
@@ -451,7 +449,7 @@ Servers SHALL support the following _includes on the EOB Profiles:
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 31, 2020 21:56+0000">2020-07-31</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 2, 2020 20:03+0000">2020-08-02</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
