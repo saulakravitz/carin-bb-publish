@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="1f114a39-1aec-41a4-a89a-6fb779e48c83">​</a>
+      <li><a name="5b19de02-68d5-4089-a3fe-7306032d3772">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="676aa365-dbd7-43a4-b661-cb96c1043a1a">​</a>
+      <li><a name="46005f58-1c05-468d-a039-986181b6f325">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="33a865ea-5a4e-4d18-a7c8-6d46b935a14c">​</a>
+      <li><a name="8b80d788-f641-4009-9c53-4424cad052d7">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="9d71f535-1665-4ce9-a241-3044c23be587">​</a>
+      <li><a name="a1cdede0-6863-4f79-8c37-b02c7ee3ec7f">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="bedc86d7-b0f9-4dd5-b9dc-5f46d9a83252">​</a>
+      <li><a name="0edda2ea-dbb2-4be8-8bec-72a57eeeb58b">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -207,32 +207,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
   <!-- search.md -->
 
 <div xsi:schemalocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
 
-<h3>Search Behavior</h3>
 
-<b>Warning:  Under Construction.   Will be updated in version 0.3 </b>
-
-The EOB Resource is the focal Consumer-Directed Payer Data Exchange (CDPDE) Resource. Several Reference Resources are defined directly/indirectly from the EOB: Coverage, Patient, Organization (Payer ID), Practioner, Organization (Facility), PractionerRole, Location.
-
-The Coverage Reference Resource SHALL be returned with data that was effective as of the date of service of the claim; for example, the data will reflect the employer name in effect at that time. However, for other reference resources, payers MAY decide to provide either the data that was in effect as of the date of service or the current data. All reference resources within the EOB will have meta.lastUpdated flagged as must support. Payers SHALL provide the last time the data was updated or the date of creation in the payers system of record, whichever comes last. Apps will use the meta.lastUpdated values to determine if the reference resources are as of the current date or date of service.
-
-<h3>RESTful Capabilities by Resource/Profile</h3>
-
-When an EOB references another resource (e.g., Patient or Practitioner), the reference may be versioned or versionless. Payers SHALL use versioned references whenever they maintain point-in-time data (data that was effective as of the date of service or date of admission on the claim), but MAY use versionless references when they do not maintain versioned data. Clients MAY request referenced resources as part of an EOB search (by supplying the _include parameter) or directly using read or vread. Payers SHALL support both approaches, and SHALL return the same content for referenced resources in either case.
-
-<h4>Explanation of Benefit Profiles</h4>
-
-Supported Profiles: CARIN BB ExplanationOfBenefit Inpatient Facility Profile; CARIN BB ExplanationOfBenefit Outpatient Facility Profile; CARIN BB ExplanationOfBenefit Pharmacy Profile; CARIN BB ExplanationOfBenefit Professional NonClinician Profile
 
 <h5>Summary of Search Critiera</h5>
 
-These search parameters are required (SHALL). The term EOB refers to the four non-abstract profiles of ExplanationOfBenefit defined in this implementation guide.
+These search parameters are required (SHALL). The term EOB refers to the  profiles of ExplanationOfBenefit defined in this implementation guide.  For full details, see the <a href="CapabilityStatement-carin-bb.html">capability statement</a>.
 
 <table border="1" class="codes">
   <thead>
@@ -421,11 +407,6 @@ Servers SHALL support the following _includes on the EOB Profiles:
   </table>
 </div>
 
-<h4>Profile Interaction Summary</h4>
-<p>For all profiles of Explanation of Benefit and the profile of Coverage defined in this IG,  servers SHALL support search-type and read queries.</p>
-
-<p>For profiles of Patient, Practitioner, PractitionerRole, Location, and Organization, servers SHOULD be capable of returning a versioned resource in response to a vread request using: GET [base]/[Resource]/[id]/_history/[vid]</p>
-
 
 
 
@@ -449,7 +430,7 @@ Servers SHALL support the following _includes on the EOB Profiles:
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2020 18:44+0000">2020-08-03</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2020 19:42+0000">2020-08-03</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
