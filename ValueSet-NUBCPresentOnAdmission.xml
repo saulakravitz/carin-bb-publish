@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="NUBCPresentOnAdmission"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul/></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v2-0895.html"><code>http://terminology.hl7.org/CodeSystem/v2-0895</code></a></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCPresentOnAdmission"/>
   <version value="0.3.2"/>
   <name value="NUBCPresentOnAdmission"/>
   <title value="NUBC Present On Admission"/>
   <status value="active"/>
-  <date value="2020-08-03T19:42:59+00:00"/>
+  <date value="2020-08-03T22:53:41+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -30,4 +30,9 @@
       <code value="US"/>
     </coding>
   </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0895"/>
+    </include>
+  </compose>
 </ValueSet>
