@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="fa7382a6-c41c-4777-af80-3b0d7eefbb1f">​</a>
+      <li><a name="eda6ae59-078d-4810-a6c8-269d72ed0790">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="906454c2-477f-4d62-8dc1-cb2e7c2f0a0f">​</a>
+      <li><a name="c99b107b-5d3e-4141-a2ce-1cb05e841741">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="3310c399-5cdb-4365-b431-680d9addb755">​</a>
+      <li><a name="a6b725cb-ef4c-4077-b82c-70564eefaddb">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="6813cd15-8dc7-46a4-8048-8c3091aeccfe">​</a>
+      <li><a name="4971a6f9-97d6-44ff-b0e3-d0d69105a41e">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="2e1d0fdd-f6e9-4ba5-a07b-c73788114c78">​</a>
+      <li><a name="2f172c75-deb9-4841-b59a-d58f575c53e7">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -204,22 +204,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Structures: Abstract Profiles</a>
+         <a href="#2">Behavior: Search Parameters</a>
       </li>
       <li>
-         <a href="#3">Structures: Resource Profiles</a>
+         <a href="#3">Structures: Abstract Profiles</a>
       </li>
       <li>
-         <a href="#4">Structures: Extension Definitions</a>
+         <a href="#4">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#5">Terminology: Value Sets</a>
+         <a href="#5">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#6">Terminology: Code Systems</a>
+         <a href="#6">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#7">Other</a>
+         <a href="#7">Terminology: Code Systems</a>
       </li>
    </ul>
 </div>
@@ -236,14 +236,114 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <td style="column-width:30%">
                   <a href="CapabilityStatement-carin-bb.html" title="CapabilityStatement/carin-bb">Carin Bb CapabilityStatement</a>
                </td>
-               <td>This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors. </td>
+               <td>
+<p>This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors.</p>
+</td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="2"> </a>
+   <h3>Behavior: Search Parameters </h3>
+   <p>These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources.</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-explanationofbenefit-care-team.html" title="SearchParameter/explanationofbenefit-care-team">ExplanationOfBenefit_Careteam</a>
+               </td>
+               <td>
+<p>Member of the CareTeam</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-explanationofbenefit-coverage.html" title="SearchParameter/explanationofbenefit-coverage">ExplanationOfBenefit_coverage</a>
+               </td>
+               <td>
+<p>The plan under which the claim was adjudicated</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-explanationofbenefit-facility.html" title="SearchParameter/explanationofbenefit-facility">ExplanationOfBenefit_facility</a>
+               </td>
+               <td>
+<p>Facility responsible for the goods and services</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-explanationofbenefit-identifier.html" title="SearchParameter/explanationofbenefit-identifier">ExplanationOfBenefit_Identifier</a>
+               </td>
+               <td>
+<p>The business/claim identifier of the Explanation of Benefit</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-explanationofbenefit-insurer.html" title="SearchParameter/explanationofbenefit-insurer">CARINBlueButton_ExplanationOfBenefit_Insurer_SearchParameter</a>
+               </td>
+               <td>
+<p>The party responsible for the claim</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-explanationofbenefit-patient.html" title="SearchParameter/explanationofbenefit-patient">ExplanationOfBenefit_Patient</a>
+               </td>
+               <td>
+<p>The reference to the patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-explanationofbenefit-provider.html" title="SearchParameter/explanationofbenefit-provider">provider</a>
+               </td>
+               <td>
+<p>The reference to the provider</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-explanationofbenefit-service-date.html" title="SearchParameter/explanationofbenefit-service-date">ExplanationOfBenefit_ServiceDate</a>
+               </td>
+               <td>
+<p>Date of the service for the EOB</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-explanationofbenefit-type.html" title="SearchParameter/explanationofbenefit-type">ExplanationOfBenefit_Type</a>
+               </td>
+               <td>
+<p>The type of the ExplanationOfBenefit</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-organization.html" title="SearchParameter/practitionerrole-organization">organization</a>
+               </td>
+               <td>
+<p>The identity of the organization the practitioner represents / acts on behalf of</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-practitionerrole-practitioner.html" title="SearchParameter/practitionerrole-practitioner">practitioner</a>
+               </td>
+               <td>
+<p>Practitioner that is able to provide the defined services for the organization</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
    <h3>Structures: Abstract Profiles </h3>
-   <p>These are profiles on resources or data types that describe patterns used by other profiles, but can't be instantiated directly.  I.e. instances can conform to profiles *based* on these abstract profiles, but don't declare conformance to the abstract profiles themselves.</p>
+   <p>These are profiles on resources or data types that describe patterns used by other profiles, but cannot be instantiated directly.  I.e. instances can conform to profiles *based* on these abstract profiles, but do not declare conformance to the abstract profiles themselves.</p>
    <p>
       <table class="grid">
          <col style="width:20%"/>
@@ -252,13 +352,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <td style="column-width:30%">
                   <a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit.html" title="StructureDefinition/CARIN-BB-ExplanationOfBenefit">CARIN BB Explanation Of Benefit</a>
                </td>
-               <td>Abstract parent profile that includes constraints that are common to the four specific ExplanationOfBenefit (EOB) profiles defined in this Implementation Guide.
-All EOB instances should be from one of the four non-abstract EOB profiles defined in this Implementation Guide:  Inpatient, Outpatient, Pharmacy, and Professional/NonClinician</td>
+               <td>
+<p>Abstract parent profile that includes constraints that are common to the four specific ExplanationOfBenefit (EOB) profiles defined in this Implementation Guide.
+All EOB instances should be from one of the four non-abstract EOB profiles defined in this Implementation Guide:  Inpatient, Outpatient, Pharmacy, and Professional/NonClinician</p>
+</td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>These define constraints on FHIR resources that need to be complied with by conformant implementations</p>
    <p>
@@ -269,70 +371,90 @@ All EOB instances should be from one of the four non-abstract EOB profiles defin
                <td style="column-width:30%">
                   <a href="StructureDefinition-CARIN-BB-Coverage.html" title="StructureDefinition/CARIN-BB-Coverage">CARIN BB Coverage</a>
                </td>
-               <td>CARIN Blue Button Coverage Profile.</td>
+               <td>
+<p>CARIN Blue Button Coverage Profile.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Inpatient-Facility.html" title="StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility">CARIN BB ExplanationOfBenefit Inpatient Facility</a>
                </td>
-               <td>The profile is used for Explanation of Benefits (EOBs) based on claims submitted by clinics, hospitals, skilled nursing facilities and other institutions for inpatient services, which may include the use of equipment and supplies, laboratory services, radiology services and other charges. Inpatient claims are submitted for services rendered at a facility as part of an overnight stay. 
-The claims data is based on the institutional claim format UB-04, submission standards adopted by the Department of Health and Human Services as form CMS-1450.</td>
+               <td>
+<p>The profile is used for Explanation of Benefits (EOBs) based on claims submitted by clinics, hospitals, skilled nursing facilities and other institutions for inpatient services, which may include the use of equipment and supplies, laboratory services, radiology services and other charges. Inpatient claims are submitted for services rendered at a facility as part of an overnight stay. 
+The claims data is based on the institutional claim format UB-04, submission standards adopted by the Department of Health and Human Services as form CMS-1450.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Outpatient-Facility.html" title="StructureDefinition/CARIN-BB-ExplanationOfBenefit-Outpatient-Facility">CARIN BB ExplanationOfBenefit Outpatient Facility</a>
                </td>
-               <td>This profile is used for Explanation of Benefits (EOBs) based on claims submitted by clinics, hospitals, skilled nursing facilities and other institutions for outpatient services, which may include including the use of equipment and supplies, laboratory services, radiology services and other charges. Outpatient claims are submitted for services rendered at a facility that are not part of an overnight stay. 
-The claims data is based on the institutional claim form UB-04, submission standards adopted by the Department of Health and Human Services as form CMS-1450.</td>
+               <td>
+<p>This profile is used for Explanation of Benefits (EOBs) based on claims submitted by clinics, hospitals, skilled nursing facilities and other institutions for outpatient services, which may include including the use of equipment and supplies, laboratory services, radiology services and other charges. Outpatient claims are submitted for services rendered at a facility that are not part of an overnight stay. 
+The claims data is based on the institutional claim form UB-04, submission standards adopted by the Department of Health and Human Services as form CMS-1450.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Pharmacy.html" title="StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy">CARIN BB ExplanationOfBenefit Pharmacy</a>
                </td>
-               <td>This profile is used for Explanation of Benefits (EOBs) based on claims submitted by retail pharmacies. 
-The claims data is based on submission standards adopted by the Department of Health and Human Services defined by NCPDP (National Council for Prescription Drug Program)</td>
+               <td>
+<p>This profile is used for Explanation of Benefits (EOBs) based on claims submitted by retail pharmacies. 
+The claims data is based on submission standards adopted by the Department of Health and Human Services defined by NCPDP (National Council for Prescription Drug Program)</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Professional-NonClinician.html" title="StructureDefinition/CARIN-BB-ExplanationOfBenefit-Professional-NonClinician">CARIN BB ExplanationOfBenefit Professional NonClinician</a>
                </td>
-               <td>This profile is used for Explanation of Benefits (EOBs) based on claims submitted by physicians, suppliers and other non-institutional providers for professional services. These services may be rendered in inpatient or outpatient, including office locations. 
-The claims data is based on the professional claim form 1500, submission standards adopted by the Department of Health and Human Services as form CMS-1500.</td>
+               <td>
+<p>This profile is used for Explanation of Benefits (EOBs) based on claims submitted by physicians, suppliers and other non-institutional providers for professional services. These services may be rendered in inpatient or outpatient, including office locations. 
+The claims data is based on the professional claim form 1500, submission standards adopted by the Department of Health and Human Services as form CMS-1500.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-CARIN-BB-Location.html" title="StructureDefinition/CARIN-BB-Location">CARIN BB Location</a>
                </td>
-               <td>CARIN Blue Button Location Profile.</td>
+               <td>
+<p>CARIN Blue Button Location Profile.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-CARIN-BB-Organization.html" title="StructureDefinition/CARIN-BB-Organization">CARIN BB Organization</a>
                </td>
-               <td>CARIN Blue Button Organization Profile.</td>
+               <td>
+<p>CARIN Blue Button Organization Profile.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-CARIN-BB-Patient.html" title="StructureDefinition/CARIN-BB-Patient">CARIN BB Patient</a>
                </td>
-               <td>CARIN Blue Button Patient Profile.</td>
+               <td>
+<p>CARIN Blue Button Patient Profile.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-CARIN-BB-Practitioner.html" title="StructureDefinition/CARIN-BB-Practitioner">CARIN BB Practitioner</a>
                </td>
-               <td>CARIN Blue Button Practitioner Profile.</td>
+               <td>
+<p>CARIN Blue Button Practitioner Profile.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-CARIN-BB-PractitionerRole.html" title="StructureDefinition/CARIN-BB-PractitionerRole">CARIN BB PractitionerRole</a>
                </td>
-               <td>CARIN Blue Button PractitionerRole Profile.</td>
+               <td>
+<p>CARIN Blue Button PractitionerRole Profile.</p>
+</td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>These define constraints on FHIR data types that need to be complied with by conformant implementations</p>
    <p>
@@ -343,12 +465,14 @@ The claims data is based on the professional claim form 1500, submission standar
                <td style="column-width:30%">
                   <a href="StructureDefinition-AdjudicationType.html" title="StructureDefinition/AdjudicationType">Adjudication Type</a>
                </td>
-               <td>An extension to provide a human-readable description of an organization.</td>
+               <td>
+<p>An extension to provide a human-readable description of an organization.</p>
+</td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>These define sets of codes used by systems conforming with this implementation guide</p>
    <p>
@@ -359,204 +483,270 @@ The claims data is based on the professional claim form 1500, submission standar
                <td style="column-width:30%">
                   <a href="ValueSet-AdjudicationCarinBBValueCodes.html" title="ValueSet/AdjudicationCarinBBValueCodes">Adjudication CARINBB Value Codes</a>
                </td>
-               <td>As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem</td>
+               <td>
+<p>As per Jira FHIR-26992… HL7 Requested to fix HL7 Adjudication codesystem</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-AdjudicationDenialReason.html" title="ValueSet/AdjudicationDenialReason">Adjudication Denial Reason</a>
                </td>
-               <td>Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC</td>
+               <td>
+<p>Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-AdjudicationSlideCodes.html" title="ValueSet/AdjudicationSlideCodes">Adjudication Slice Codes</a>
                </td>
-               <td>Codes used to discriminate slices of adjudication and item.adjudication</td>
+               <td>
+<p>Codes used to discriminate slices of adjudication and item.adjudication</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-AdjudicationValueCodes.html" title="ValueSet/AdjudicationValueCodes">Benefit Payment Status Category</a>
                </td>
-               <td>Benefit Payment Status Category</td>
+               <td>
+<p>Benefit Payment Status Category</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-BenefitPaymentStatus.html" title="ValueSet/BenefitPaymentStatus">Benefit Payment Status</a>
                </td>
-               <td>Indicates the in network or out of network payment status of the claim.</td>
+               <td>
+<p>Indicates the in network or out of network payment status of the claim.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-CARINBBInstitutionalClaimCareTeamRoleCodes.html" title="ValueSet/CARINBBInstitutionalClaimCareTeamRoleCodes">CARINBB Institutional Claim Care Team Roles</a>
                </td>
-               <td>Indicates the role of the provider providing the care.</td>
+               <td>
+<p>Indicates the role of the provider providing the care.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-CARINBBPharmacyClaimCareTeamRoleCodes.html" title="ValueSet/CARINBBPharmacyClaimCareTeamRoleCodes">CARINBB Pharmacy CareTeam Roles</a>
                </td>
-               <td>Indicates the role of the provider providing the care.</td>
+               <td>
+<p>Indicates the role of the provider providing the care.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes.html" title="ValueSet/CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes">CARINBB Professional and Non-Clinician CareTeam Roles</a>
                </td>
-               <td>Indicates the role of the provider providing the care.</td>
+               <td>
+<p>Indicates the role of the provider providing the care.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-CMSDRG.html" title="ValueSet/CMSDRG">CMS-DRG</a>
                </td>
-               <td>CMS-DRG</td>
+               <td>
+<p>CMS-DRG</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-CMSPlaceOfService.html" title="ValueSet/CMSPlaceOfService">CMS Place of Service</a>
                </td>
-               <td>https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .  The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.   The code set is owned by CMS and is available for use.</td>
+               <td>
+<p>https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .  The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.   The code set is owned by CMS and is available for use.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-CPTHCPCSModifierCode.html" title="ValueSet/CPTHCPCSModifierCode">AMA CPT and CMS HCPCS Modifier Codes</a>
                </td>
-               <td>AMA CPT and CMS HCPCS Modifier Codes</td>
+               <td>
+<p>AMA CPT and CMS HCPCS Modifier Codes</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-CPTHCPCSProcedureCode.html" title="ValueSet/CPTHCPCSProcedureCode">AMA CPT and CMS HCPCS Procedure Codes</a>
                </td>
-               <td>AMA CPT and CMS HCPCS Procedure Codes</td>
+               <td>
+<p>AMA CPT and CMS HCPCS Procedure Codes</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-ClaimAdjudicationCategory.html" title="ValueSet/ClaimAdjudicationCategory">Claim Adjudication Category</a>
                </td>
-               <td>Values for EOB.item.adjudication.category, as per Igor</td>
+               <td>
+<p>Values for EOB.item.adjudication.category, as per Igor</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-ClaimInformationCategory.html" title="ValueSet/ClaimInformationCategory">Claim Information Category</a>
                </td>
-               <td>Claim Information Category - Used as the discriminator for supportingInfo</td>
+               <td>
+<p>Claim Information Category - Used as the discriminator for supportingInfo</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-ClaimPaymentStatusCode.html" title="ValueSet/ClaimPaymentStatusCode">Claim Payment Status Code</a>
                </td>
-               <td>Indicates whether the claim / item was paid or denied.</td>
+               <td>
+<p>Indicates whether the claim / item was paid or denied.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-FDANDCNCPDPCompoundCode.html" title="ValueSet/FDANDCNCPDPCompoundCode">FDA NDC NCPDP Compound Code</a>
                </td>
-               <td>NCPDP field # 407-D7 (National Drug Code (NDC)) or NCPDP field # 406-D6 (Compound Code)</td>
+               <td>
+<p>NCPDP field # 407-D7 (National Drug Code (NDC)) or NCPDP field # 406-D6 (Compound Code)</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-FDANationalDrugCode.html" title="ValueSet/FDANationalDrugCode">FDA National Drug Code (NDC)</a>
                </td>
-               <td>FDA National Drug Code (NDC)</td>
+               <td>
+<p>FDA National Drug Code (NDC)</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-ICD10CM.html" title="ValueSet/ICD10CM">ICD-10-CM Diagnosis Codes</a>
                </td>
-               <td>ICD-10-CM Diagnosis Codes.  ***We need ALL Codes, inactive and inactive.   Current binding is to active codes only***</td>
+               <td>
+<p>ICD-10-CM Diagnosis Codes.  <strong><em>We need ALL Codes, inactive and inactive.   Current binding is to active codes only</em></strong></p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-ICD10PCS.html" title="ValueSet/ICD10PCS">ICD-10-PCS</a>
                </td>
-               <td>ICD-10-PCS</td>
+               <td>
+<p>ICD-10-PCS</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-NCPDPBrandGenericCode.html" title="ValueSet/NCPDPBrandGenericCode">NCPDP Brand Generic Code</a>
                </td>
-               <td>http://www.ncpdp.org/brand-generic-code</td>
+               <td>
+<p>http://www.ncpdp.org/brand-generic-code</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-NCPDPDispensedAsWritten.html" title="ValueSet/NCPDPDispensedAsWritten">NCPDP Dispensed As Written (DAW)</a>
                </td>
-               <td>http://www.ncpdp.org/dispensed-as-written-or-product-selection-code</td>
+               <td>
+<p>http://www.ncpdp.org/dispensed-as-written-or-product-selection-code</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-NCPDPPrescriptionOriginCode.html" title="ValueSet/NCPDPPrescriptionOriginCode">NCPDP Prescription Origin Code</a>
                </td>
-               <td>http://www.ncpdp.org/prescription-origin-code</td>
+               <td>
+<p>http://www.ncpdp.org/prescription-origin-code</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-NCPDPRejectCode.html" title="ValueSet/NCPDPRejectCode">NCPDP Reject Code</a>
                </td>
-               <td>http://www.ncpdp.org/reject-code</td>
+               <td>
+<p>http://www.ncpdp.org/reject-code</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-NUBCPatientDischargeStatus.html" title="ValueSet/NUBCPatientDischargeStatus">NUBC Patient Discharge Status</a>
                </td>
-               <td>NUBC Patient Discharge Status</td>
+               <td>
+<p>NUBC Patient Discharge Status</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-NUBCPresentOnAdmission.html" title="ValueSet/NUBCPresentOnAdmission">NUBC Present On Admission</a>
                </td>
-               <td>NUBC Present On Admission</td>
+               <td>
+<p>NUBC Present On Admission</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-NUBCPriorityOfAdmissionn.html" title="ValueSet/NUBCPriorityOfAdmissionn">NUBC Priority of Admission</a>
                </td>
-               <td>NUBC Priority of Admission</td>
+               <td>
+<p>NUBC Priority of Admission</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-PatientIdentifierType.html" title="ValueSet/PatientIdentifierType">Patient Identifier Type</a>
                </td>
-               <td>Patient Identifier Type</td>
+               <td>
+<p>Patient Identifier Type</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-PayerAdjudicationAmountCategory.html" title="ValueSet/PayerAdjudicationAmountCategory">Payer Adjudication Amount Category</a>
                </td>
-               <td>This describes the various amount fields used when payers receive and adjudicate a claim.</td>
+               <td>
+<p>This describes the various amount fields used when payers receive and adjudicate a claim.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-PayerDiagnosisPresentOnAdmissionDiagnosisType.html" title="ValueSet/PayerDiagnosisPresentOnAdmissionDiagnosisType">Payer Diagnosis Present On Admission Diagnosis Type</a>
                </td>
-               <td>Payer Diagnosis Present On Admission Diagnosis Type</td>
+               <td>
+<p>Payer Diagnosis Present On Admission Diagnosis Type</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-PayerInpatientfacilitydiagnosistype.html" title="ValueSet/PayerInpatientfacilitydiagnosistype">Diagnosis Type -- Inpatient Facility</a>
                </td>
-               <td>Payer Inpatient Facility Diagnosis Type</td>
+               <td>
+<p>Payer Inpatient Facility Diagnosis Type</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-PayerOutpatientfacilitydiagnosistype.html" title="ValueSet/PayerOutpatientfacilitydiagnosistype">Diagnosis Type -- Outpatient Facility</a>
                </td>
-               <td>Payer Outpatient Facility Diagnosis Type</td>
+               <td>
+<p>Payer Outpatient Facility Diagnosis Type</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-PayerProfessionalandnoncliniciandiagnosistype.html" title="ValueSet/PayerProfessionalandnoncliniciandiagnosistype">Diagnosis Type -- Professional and Non-Clinician</a>
                </td>
-               <td>Payer Professional and Non-Clinician Diagnosis Type</td>
+               <td>
+<p>Payer Professional and Non-Clinician Diagnosis Type</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-PayerProviderContractingStatus.html" title="ValueSet/PayerProviderContractingStatus">Provider Provider Contracting Status</a>
                </td>
-               <td>Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.</td>
+               <td>
+<p>Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.</p>
+</td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>These define new code systems used by systems conforming with this implementation guide</p>
    <p>
@@ -567,119 +757,57 @@ The claims data is based on the professional claim form 1500, submission standar
                <td style="column-width:30%">
                   <a href="CodeSystem-AdjudicationSliceCodesCS.html" title="CodeSystem/AdjudicationSliceCodesCS">Adjudication Slice Codes</a>
                </td>
-               <td>Codes used to discriminate slices of adjudication and item.adjudication</td>
+               <td>
+<p>Codes used to discriminate slices of adjudication and item.adjudication</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CodeSystem-CareTeamRoleCS.html" title="CodeSystem/CareTeamRoleCS">Payer Provider Role</a>
                </td>
-               <td>Payer Provider Role</td>
+               <td>
+<p>Payer Provider Role</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CodeSystem-ClaimAdjudicationCategoryCS.html" title="CodeSystem/ClaimAdjudicationCategoryCS">Claim Adjudication Category</a>
                </td>
-               <td>Values for EOB.item.adjudication.category and total.category</td>
+               <td>
+<p>Values for EOB.item.adjudication.category and total.category</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CodeSystem-ClaimInformationCategoryCS.html" title="CodeSystem/ClaimInformationCategoryCS">Claim Information Category</a>
                </td>
-               <td>Claim Information Category - Used as the discriminator for supportingInfo</td>
+               <td>
+<p>Claim Information Category - Used as the discriminator for supportingInfo</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CodeSystem-IdentifierTypeCS.html" title="CodeSystem/IdentifierTypeCS">Identifier Type</a>
                </td>
-               <td>Identifier Type</td>
+               <td>
+<p>Identifier Type</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CodeSystem-PayerAdjudicationCategoryCS.html" title="CodeSystem/PayerAdjudicationCategoryCS">Payer Adjudication Category</a>
                </td>
-               <td>Payer Adjudication Category</td>
+               <td>
+<p>Payer Adjudication Category</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CodeSystem-PayerDiagnosisTypeCS.html" title="CodeSystem/PayerDiagnosisTypeCS">Payer Diagnosis Type</a>
                </td>
-               <td>Payer Diagnosis Type</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="7"> </a>
-   <h3>Other </h3>
-   <p>These are resources that are used within this implementation guide that don't fit into one of the other categories</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-explanationofbenefit-care-team.html" title="SearchParameter/explanationofbenefit-care-team">ExplanationOfBenefit_Careteam</a>
-               </td>
-               <td>Member of the CareTeam</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-explanationofbenefit-coverage.html" title="SearchParameter/explanationofbenefit-coverage">ExplanationOfBenefit_coverage</a>
-               </td>
-               <td>The plan under which the claim was adjudicated</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-explanationofbenefit-facility.html" title="SearchParameter/explanationofbenefit-facility">ExplanationOfBenefit_facility</a>
-               </td>
-               <td>Facility responsible for the goods and services</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-explanationofbenefit-identifier.html" title="SearchParameter/explanationofbenefit-identifier">ExplanationOfBenefit_Identifier</a>
-               </td>
-               <td>The business/claim identifier of the Explanation of Benefit</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-explanationofbenefit-insurer.html" title="SearchParameter/explanationofbenefit-insurer">CARINBlueButton_ExplanationOfBenefit_Insurer_SearchParameter</a>
-               </td>
-               <td>The party responsible for the claim</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-explanationofbenefit-patient.html" title="SearchParameter/explanationofbenefit-patient">ExplanationOfBenefit_Patient</a>
-               </td>
-               <td>The reference to the patient</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-explanationofbenefit-provider.html" title="SearchParameter/explanationofbenefit-provider">provider</a>
-               </td>
-               <td>The reference to the provider</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-explanationofbenefit-service-date.html" title="SearchParameter/explanationofbenefit-service-date">ExplanationOfBenefit_ServiceDate</a>
-               </td>
-               <td>Date of the service for the EOB</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-explanationofbenefit-type.html" title="SearchParameter/explanationofbenefit-type">ExplanationOfBenefit_Type</a>
-               </td>
-               <td>The type of the ExplanationOfBenefit</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-organization.html" title="SearchParameter/practitionerrole-organization">organization</a>
-               </td>
-               <td>The identity of the organization the practitioner represents / acts on behalf of</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="SearchParameter-practitionerrole-practitioner.html" title="SearchParameter/practitionerrole-practitioner">practitioner</a>
-               </td>
-               <td>Practitioner that is able to provide the defined services for the organization</td>
+               <td>
+<p>Payer Diagnosis Type</p>
+</td>
             </tr>
          </tbody>
       </table>
@@ -706,7 +834,7 @@ The claims data is based on the professional claim form 1500, submission standar
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 2, 2020 20:03+0000">2020-08-02</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2020 18:44+0000">2020-08-03</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
