@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="bc5f5a1a-0878-4a9b-942a-420fd3522105">​</a>
+      <li><a name="5f2544c9-b75e-4d6b-8863-a20236fd0ca9">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="7b83c7d3-0416-49ab-851b-047337e6359d">​</a>
+      <li><a name="9e17fd94-94c7-4b8d-9c26-6d3629df6620">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="aa0bbd16-8bef-4013-b7d0-9bb08abe6706">​</a>
+      <li><a name="923059fe-bfd7-46e9-a71a-16710276d27e">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="56b30dab-2fb8-40c3-841a-66644b83e147">​</a>
+      <li><a name="833bce9f-1993-4391-8de5-72e7dad4e636">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="cc146568-2556-451d-a590-09d6fe92ddcc">​</a>
+      <li><a name="262ac347-5b26-4221-9ea8-f04e0f4a09e7">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -213,13 +213,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#4">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#5">Structures: Extension Definitions</a>
+         <a href="#5">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#6">Terminology: Value Sets</a>
+         <a href="#6">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#7">Terminology: Code Systems</a>
+         <a href="#7">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -447,24 +447,6 @@ The claims data is based on the professional claim form 1500, submission standar
       </table>
    </p>
    <a name="5"> </a>
-   <h3>Structures: Extension Definitions </h3>
-   <p>These define constraints on FHIR data types that need to be complied with by conformant implementations</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-AdjudicationType.html" title="StructureDefinition/AdjudicationType">Adjudication Type</a>
-               </td>
-               <td>
-<p>An extension to provide a human-readable description of an organization.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="6"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>These define sets of codes used by systems conforming with this implementation guide</p>
    <p>
@@ -501,14 +483,6 @@ The claims data is based on the professional claim form 1500, submission standar
                </td>
                <td>
 <p>Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-AdjudicationSlideCodes.html" title="ValueSet/AdjudicationSlideCodes">Adjudication Slice Codes</a>
-               </td>
-               <td>
-<p>Codes used to discriminate slices of adjudication and item.adjudication</p>
 </td>
             </tr>
             <tr>
@@ -738,21 +712,13 @@ The claims data is based on the professional claim form 1500, submission standar
          </tbody>
       </table>
    </p>
-   <a name="7"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>These define new code systems used by systems conforming with this implementation guide</p>
    <p>
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-AdjudicationSliceCodesCS.html" title="CodeSystem/AdjudicationSliceCodesCS">Adjudication Slice Codes</a>
-               </td>
-               <td>
-<p>Codes used to discriminate slices of adjudication and item.adjudication</p>
-</td>
-            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CodeSystem-CareTeamRoleCS.html" title="CodeSystem/CareTeamRoleCS">Payer Provider Role</a>
@@ -804,6 +770,96 @@ The claims data is based on the professional claim form 1500, submission standar
          </tbody>
       </table>
    </p>
+   <a name="7"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ExplanationOfBenefit-BBEobOutpatientFacility.html" title="ExplanationOfBenefit/BBEobOutpatientFacility">BBEobOutpatientFacility</a>
+               </td>
+               <td>
+<p>BBEoB from Jeff</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ExplanationOfBenefit-BBEobPharmacy.html" title="ExplanationOfBenefit/BBEobPharmacy">BBEobPharmacy</a>
+               </td>
+               <td>
+<p>BBEoB from Jeff</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Coverage-Coverage1.html" title="Coverage/Coverage1">Coverage1</a>
+               </td>
+               <td>
+<p>Coverage Example1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ExplanationOfBenefit-EOBInpatient1.html" title="ExplanationOfBenefit/EOBInpatient1">EOBInpatient1</a>
+               </td>
+               <td>
+<p>EOB Inpatient Example1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ExplanationOfBenefit-EOBOutpatientFacility1.html" title="ExplanationOfBenefit/EOBOutpatientFacility1">EOBOutpatientFacility1</a>
+               </td>
+               <td>
+<p>EOB Outpatient Example1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ExplanationOfBenefit-EOBPharmacy1.html" title="ExplanationOfBenefit/EOBPharmacy1">EOBPharmacy1</a>
+               </td>
+               <td>
+<p>EOB PHarmacy Example1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ExplanationOfBenefit-EOBProfessional1.html" title="ExplanationOfBenefit/EOBProfessional1">EOBProfessional1</a>
+               </td>
+               <td>
+<p>EOB Professional  Example1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-OrganizationPayer1.html" title="Organization/OrganizationPayer1">OrganizationPayer1</a>
+               </td>
+               <td>
+<p>Payer1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-OrganizationProvider1.html" title="Organization/OrganizationProvider1">OrganizationProvider1</a>
+               </td>
+               <td>
+<p>Provider 1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-Patient1.html" title="Patient/Patient1">Patient1</a>
+               </td>
+               <td>
+<p>Patient Example1</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
 </div>
 
 </div>
@@ -826,7 +882,7 @@ The claims data is based on the professional claim form 1500, submission standar
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 4, 2020 16:27+0000">2020-08-04</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 4, 2020 22:31+0000">2020-08-04</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
