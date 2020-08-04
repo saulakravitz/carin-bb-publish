@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-08-04T01:57:36+00:00"/>
+  <date value="2020-08-04T13:06:01+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -381,6 +381,34 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-AMACPTCMSHCPCSProcedureCodes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AMACPTCMSHCPCSProcedureCodes"/>
+      </reference>
+      <name value="AMA CPT and CMS HCPCS Procedure Codes"/>
+      <description value="AMA CPT and CMS HCPCS Procedure Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-AMACPTCMSHCPCSProcedureModifiers.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/AMACPTCMSHCPCSProcedureModifiers"/>
+      </reference>
+      <name value="AMA CPT and CMS HCPCS Modifier Codes"/>
+      <description value="AMA CPT and CMS HCPCS Modifier Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-AdjudicationCarinBBValueCodes.html"/>
       </extension>
       <reference>
@@ -514,34 +542,6 @@
       </reference>
       <name value="CMS Place of Service"/>
       <description value="https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .  The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.   The code set is owned by CMS and is available for use."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-CPTHCPCSModifierCode.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/CPTHCPCSModifierCode"/>
-      </reference>
-      <name value="AMA CPT and CMS HCPCS Modifier Codes"/>
-      <description value="AMA CPT and CMS HCPCS Modifier Codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-CPTHCPCSProcedureCode.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/CPTHCPCSProcedureCode"/>
-      </reference>
-      <name value="AMA CPT and CMS HCPCS Procedure Codes"/>
-      <description value="AMA CPT and CMS HCPCS Procedure Codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="AMACPTCMSHCPCSProcedureModifiers"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://www.ama-assn.org/go/cpt-modifiers</code></li><li>Include all codes defined in <code>http://www.cms.gov/hcpcs-level-II-modifiers</code></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/AMACPTCMSHCPCSProcedureModifiers"/>
+  <version value="0.3.2"/>
+  <name value="AMACPTCMSHCPCSProcedureModifiers"/>
+  <title value="AMA CPT and CMS HCPCS Modifier Codes"/>
+  <status value="active"/>
+  <date value="2020-08-04T13:06:01+00:00"/>
+  <publisher value="HL7 Financial Management Working Group"/>
+  <contact>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="AMA CPT and CMS HCPCS Modifier Codes"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://www.ama-assn.org/go/cpt-modifiers"/>
+    </include>
+    <include>
+      <system value="http://www.cms.gov/hcpcs-level-II-modifiers"/>
+    </include>
+  </compose>
+</ValueSet>

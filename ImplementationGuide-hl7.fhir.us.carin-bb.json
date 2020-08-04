@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-08-04T01:57:36+00:00",
+  "date": "2020-08-04T13:06:01+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -552,6 +552,42 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-AMACPTCMSHCPCSProcedureCodes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/AMACPTCMSHCPCSProcedureCodes"
+        },
+        "name": "AMA CPT and CMS HCPCS Procedure Codes",
+        "description": "AMA CPT and CMS HCPCS Procedure Codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-AMACPTCMSHCPCSProcedureModifiers.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/AMACPTCMSHCPCSProcedureModifiers"
+        },
+        "name": "AMA CPT and CMS HCPCS Modifier Codes",
+        "description": "AMA CPT and CMS HCPCS Modifier Codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-AdjudicationCarinBBValueCodes.html"
           }
         ],
@@ -722,42 +758,6 @@
         },
         "name": "CMS Place of Service",
         "description": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .  The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.   The code set is owned by CMS and is available for use.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-CPTHCPCSModifierCode.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/CPTHCPCSModifierCode"
-        },
-        "name": "AMA CPT and CMS HCPCS Modifier Codes",
-        "description": "AMA CPT and CMS HCPCS Modifier Codes",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-CPTHCPCSProcedureCode.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/CPTHCPCSProcedureCode"
-        },
-        "name": "AMA CPT and CMS HCPCS Procedure Codes",
-        "description": "AMA CPT and CMS HCPCS Procedure Codes",
         "exampleBoolean": false
       },
       {

@@ -1,16 +1,16 @@
 {
   "resourceType": "ValueSet",
-  "id": "CPTHCPCSModifierCode",
+  "id": "AMACPTCMSHCPCSProcedureModifiers",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://www.ama-assn.org/go/cpt-modifiers</code></li><li>Include all codes defined in <code>http://www.cms.gov/hcpcs-level-II-modifiers</code></li></ul></div>"
   },
-  "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/CPTHCPCSModifierCode",
+  "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/AMACPTCMSHCPCSProcedureModifiers",
   "version": "0.3.2",
-  "name": "CPTHCPCSModifierCode",
+  "name": "AMACPTCMSHCPCSProcedureModifiers",
   "title": "AMA CPT and CMS HCPCS Modifier Codes",
   "status": "active",
-  "date": "2020-08-04T01:57:36+00:00",
+  "date": "2020-08-04T13:06:01+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -37,5 +37,15 @@
         }
       ]
     }
-  ]
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt-modifiers"
+      },
+      {
+        "system": "http://www.cms.gov/hcpcs-level-II-modifiers"
+      }
+    ]
+  }
 }
