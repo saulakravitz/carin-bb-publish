@@ -62,7 +62,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Coverage.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","Identfies the status of the coverage information (default: active) (133 )","The status of the resource instance.","This element is labeled as a modifier because the status contains the code entered-in-error that marks the coverage as not currently valid.","Need to track the status of the resource as 'draft' resources may undergo further edits while 'active' resources are immutable and may only have their status changed to 'cancelled'.","","","","","","","",,"required","A code specifying the state of the resource instance.","http://hl7.org/fhir/ValueSet/fm-status|4.0.1","",,,,"Coverage.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.status","Act.status","FiveWs.status"
-"Coverage.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
+"Coverage.type","","","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","Identifies if the coverage is PPO, HMO, POS, etc.   (3 )","The type of coverage: social program, medical plan, accident coverage (workers compensation, auto), group health or payment by an individual or organization.","","The order of application of coverages is dependent on the types of coverage.","","","","","","","",,"preferred","The type of insurance: public health, worker compensation; private accident, auto, private health, etc.) or a direct payment by an individual or organization.","http://hl7.org/fhir/ValueSet/coverage-type","",,,,"Coverage.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.class","IN1-15"
 "Coverage.policyHolder","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
@@ -83,7 +83,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Coverage.relationship","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Relationship of the member to the person insured (subscriber). (72 )","The relationship of beneficiary (patient) to the subscriber.","Typically, an individual uses policies which are theirs (relationship='self') before policies owned by others.","To determine relationship between the patient and the subscriber to determine coordination of benefits.","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/subscriber-relationship","",,,,"Coverage.relationship",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C03"
-"Coverage.period","","","",0,1,"","","Y","Period {[]} {[]}
+"Coverage.period","","","",0,1,"Y","","Y","Period {[]} {[]}
 ","Date that the contract was terminated or coverage changed (75 )","Time period during which the coverage is in force. A missing start date indicates the start date isn't known, a missing end date means the coverage is continuing to be in force.","","Some insurers require the submission of the coverage term.","","","","","","","",,,,,"",,,,"Coverage.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]","Act.effectiveTime","FiveWs.done[x]","IN1-12 / IN1-13"
 "Coverage.payor","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization]]}
@@ -109,7 +109,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Coverage.class.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of class such as 'group' or 'plan'","The type of classification for which an insurer-specific class label or number and optional name is provided, for example may be used to identify a class of coverage or employer group, Policy, Plan.","","The insurer issued label for a specific health card value.","","","","","","","",,"extensible","The policy classifications, eg. Group, Plan, Class, etc.","http://hl7.org/fhir/ValueSet/coverage-class","",,,,"Coverage.class.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Coverage.class.value","","","",1,1,"","","Y","string {[]} {[]}
+"Coverage.class.value","","","",1,1,"Y","","Y","string {[]} {[]}
 ","Value associated with the type","The alphanumeric string value associated with the insurer issued label.","For example, the Group or Plan number.","The insurer issued label and value are necessary to identify the specific policy.","","","","","","","",,,,,"",,,,"Coverage.class.value",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C11 (Division,Section)","IN1-8","C.31"
 "Coverage.class.name","","","",0,1,"Y","","Y","string {[]} {[]}
