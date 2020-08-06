@@ -59,7 +59,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.3.2 - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.4.0 - STU1</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="50e5fffe-d650-4dea-b18f-c3471024022e">​</a>
+      <li><a name="92c18c2e-eaa6-4e37-9cad-4aaa38e4fad7">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="90079bf9-7ad4-4675-8696-a011c47c3fbd">​</a>
+      <li><a name="9465b4e5-dca3-4eb8-8a7c-8c5d21cda9f9">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="e78e8ce3-a9c7-44b4-b972-8304794f51ff">​</a>
+      <li><a name="0d496e69-44aa-4d06-bdcd-b86af6be0b5c">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="ca8876fb-fabd-4549-8e47-4a9091c7caf6">​</a>
+      <li><a name="59ba6616-35ff-4ce1-b195-f21b26172e39">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="ba3623ae-df47-41db-9129-cca16c5354c9">​</a>
+      <li><a name="edcfc2d4-37c0-440a-b70c-12740bef5597">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -187,7 +187,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.3.2). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.4.0). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
   
 
@@ -248,7 +248,7 @@
 
   <div><h2 id="title">Carin Bb CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-08-03</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p><p>This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors.</p></p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The Carin-bb  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
 <ul><li>(Status 400): invalid parameter</li><li>(Status 401/4xx): unauthorized request</li><li>(Status 403): insufficient scope</li><li>(Status 404): unknown resource</li><li>(Status 410): deleted resource.</li></ul>
-</li><li>Support json source formats for all Plan-Net interactions.</li><li>Identify the CARIN-BB  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li></ol><p>The Plan-Net  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all Plan-Net  interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li><a name="0f0c05ce-4962-4562-8244-48978254ee31">​</a>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><p><strong>Summary of System Wide Interactions</strong></p><li><strong>MAY</strong> support the	<code>transaction</code> interaction.</li><li><strong>MAY</strong> support the	<code>batch</code> interaction.</li><li><strong>MAY</strong> support the	<code>search-system</code> interaction.</li><li><strong>MAY</strong> support the	<code>history-system</code> interaction.</li><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#coverage">Coverage</a></td><td><a href="StructureDefinition-CARIN-BB-Coverage.html">CARIN-BB-Coverage</a></td><td>
+</li><li>Support json source formats for all Plan-Net interactions.</li><li>Identify the CARIN-BB  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li></ol><p>The Plan-Net  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all Plan-Net  interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li><a name="3c586e91-7552-454e-b3bb-b64e8dab0809">​</a>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><p><strong>Summary of System Wide Interactions</strong></p><li><strong>MAY</strong> support the	<code>transaction</code> interaction.</li><li><strong>MAY</strong> support the	<code>batch</code> interaction.</li><li><strong>MAY</strong> support the	<code>search-system</code> interaction.</li><li><strong>MAY</strong> support the	<code>history-system</code> interaction.</li><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#coverage">Coverage</a></td><td><a href="StructureDefinition-CARIN-BB-Coverage.html">CARIN-BB-Coverage</a></td><td>
 							
 							_id, _lastUpdated
 							
@@ -333,9 +333,9 @@
 					A Server <strong>SHALL</strong> be capable of returning a Coverage resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Coverage/[id]</code>
-				</li><br/>    <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a name="8625b6db-9237-4430-8b07-ee7f5532961b">​</a><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
+				</li><br/>    <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a name="d0904a9e-caf5-4420-8553-963d0f787574">​</a><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
 							token
-						</td><td><code class="highlighter-rouge">GET [base]/Coverage?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a name="414bf6b0-9dec-4f99-a6a8-e38657160baa">​</a><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
+						</td><td><code class="highlighter-rouge">GET [base]/Coverage?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a name="f9dc94ba-4535-41c3-afe8-b99358044148">​</a><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/Coverage?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="explanationofbenefit" class="no_toc">ExplanationOfBenefit</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
@@ -372,11 +372,11 @@
 					
 						ExplanationOfBenefit:* - <code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include=ExplanationOfBenefit:*</code><br/>
 					
-				</li><br/>    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a name="ea109d4e-abee-4788-866c-febf5c4da6ed">​</a><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
+				</li><br/>    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a name="9419d912-aa7a-4f35-9cfe-2cde48745d40">​</a><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-explanationofbenefit-patient.html">patient</a></td><td>
 							reference
-						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?patient=[patient]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a name="5749a8be-c3e9-4a79-9135-ef59b7d1045a">​</a><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
+						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?patient=[patient]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a name="b6aeb02e-225e-4b08-9179-1b1b90baa4a2">​</a><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?_lastUpdated=[_lastUpdated]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-explanationofbenefit-type.html">type</a></td><td>
 							token
@@ -398,9 +398,9 @@
 					A Server <strong>SHOULD</strong> be capable of returning a Organization resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Organization/[id]/_history/vid</code>
-				</li><br/>    <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a name="0b860191-4048-48d1-9b25-29c4febb8950">​</a><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
+				</li><br/>    <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a name="a4e316da-428a-4530-a99c-a2c6be25fd86">​</a><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
 							token
-						</td><td><code class="highlighter-rouge">GET [base]/Organization?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a name="a6df39ca-6174-46ba-9bdd-f91ea8240665">​</a><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
+						</td><td><code class="highlighter-rouge">GET [base]/Organization?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a name="00359155-055d-44a2-a415-541c6235e6ca">​</a><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/Organization?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="patient" class="no_toc">Patient</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
@@ -430,9 +430,9 @@
 					A Server <strong>SHOULD</strong> be capable of returning a Practitioner resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Practitioner/[id]/_history/vid</code>
-				</li><br/>    <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a name="2a524a32-f428-4f61-af7b-bbf717024e0e">​</a><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
+				</li><br/>    <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a name="335574d1-49f7-47b9-9641-49322df43195">​</a><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
 							token
-						</td><td><code class="highlighter-rouge">GET [base]/Practitioner?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a name="b497a11d-3e43-49cb-a77a-55e163be9c3b">​</a><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
+						</td><td><code class="highlighter-rouge">GET [base]/Practitioner?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a name="6dad3f0d-b69e-4cc0-aa4b-98e18580f264">​</a><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/Practitioner?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="practitionerrole" class="no_toc">PractitionerRole</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
@@ -458,9 +458,9 @@
 					
 						PractitionerRole:practitioner - <code class="highlighter-rouge">GET [base]/PractitionerRole?[parameter=value]&amp;_include=PractitionerRole:practitioner</code><br/>
 					
-				</li><br/>    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a name="3cdd0c9c-fdec-45b3-90d4-aeecf534b782">​</a><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
+				</li><br/>    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a name="8a56d18f-ed1f-458e-bef0-42e2e9d90f7c">​</a><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
 							token
-						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a name="92998eb3-d3b3-4d73-8998-480fcdb030e0">​</a><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
+						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a name="38d2b39d-23f5-4439-a133-396a7f697ec4">​</a><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><br/></div>
 
@@ -489,7 +489,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.3.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 5, 2020 20:45+0000">2020-08-05</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 6, 2020 13:32+0000">2020-08-06</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
