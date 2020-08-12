@@ -3,16 +3,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="carin-bb"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Carin Bb CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-08-03</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p><p>This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors.</p></p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The Carin-bb  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Carin Bb CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-08-11</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p><p>This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors.</p></p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The Carin-bb  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
 <ul><li>(Status 400): invalid parameter</li><li>(Status 401/4xx): unauthorized request</li><li>(Status 403): insufficient scope</li><li>(Status 404): unknown resource</li><li>(Status 410): deleted resource.</li></ul>
-</li><li>Support json source formats for all Plan-Net interactions.</li><li>Identify the CARIN-BB  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li></ol><p>The Plan-Net  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all Plan-Net  interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><p><strong>Summary of System Wide Interactions</strong></p><li><strong>MAY</strong> support the	<code>transaction</code> interaction.</li><li><strong>MAY</strong> support the	<code>batch</code> interaction.</li><li><strong>MAY</strong> support the	<code>search-system</code> interaction.</li><li><strong>MAY</strong> support the	<code>history-system</code> interaction.</li><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#coverage">Coverage</a></td><td><a href="StructureDefinition-CARIN-BB-Coverage.html">CARIN-BB-Coverage</a></td><td>
-							
-							_id, _lastUpdated
-							
-							
+</li><li>Support json source formats for all Carin-bbinteractions.</li><li>Identify the CARIN-BB  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li></ol><p>The Carin-bb  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all Carin-bb interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#coverage">Coverage</a></td><td><a href="StructureDefinition-CARIN-BB-Coverage.html">CARIN-BB-Coverage</a></td><td>
 							
 						</td><td>
-							
+							Coverage:payor
 						</td><td>
               
             </td><td>
@@ -32,16 +28,12 @@
 							
 							
 						</td><td>
-							ExplanationOfBenefit:provider, ExplanationOfBenefit:care-team, ExplanationOfBenefit:coverage, ExplanationOfBenefit:facility, ExplanationOfBenefit:insurer, ExplanationOfBenefit:*
+							ExplanationOfBenefit:provider, ExplanationOfBenefit:care-team, ExplanationOfBenefit:coverage, ExplanationOfBenefit:insurer, ExplanationOfBenefit:*
 						</td><td>
               
             </td><td>
 							
 						</td></tr><tr><td><a href="#organization">Organization</a></td><td><a href="StructureDefinition-CARIN-BB-Organization.html">CARIN-BB-Organization</a></td><td>
-							
-							_id, _lastUpdated
-							
-							
 							
 						</td><td>
 							
@@ -59,24 +51,8 @@
 							
 						</td></tr><tr><td><a href="#practitioner">Practitioner</a></td><td><a href="StructureDefinition-CARIN-BB-Practitioner.html">CARIN-BB-Practitioner</a></td><td>
 							
-							_id, _lastUpdated
-							
-							
-							
 						</td><td>
 							
-						</td><td>
-              
-            </td><td>
-							
-						</td></tr><tr><td><a href="#practitionerrole">PractitionerRole</a></td><td><a href="StructureDefinition-CARIN-BB-PractitionerRole.html">CARIN-BB-PractitionerRole</a></td><td>
-							
-							_id, _lastUpdated
-							
-							
-							
-						</td><td>
-							PractitionerRole:organization, PractitionerRole:practitioner
 						</td><td>
               
             </td><td>
@@ -85,16 +61,18 @@
 				
 											<a href="StructureDefinition-CARIN-BB-Coverage.html">CARIN-BB-Coverage</a>
 				
-				</p><p>Resource Specific Documentation:</p><blockquote><p>Coverage MarkDown Documentation is here</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>read</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
 					A Server <strong>SHALL</strong> be capable of returning a Coverage resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Coverage/[id]</code>
-				</li><br/>  <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
-							token
-						</td><td><code class="highlighter-rouge">GET [base]/Coverage?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
-							date
-						</td><td><code class="highlighter-rouge">GET [base]/Coverage?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="explanationofbenefit" class="no_toc">ExplanationOfBenefit</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				</li><br/>  <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _includes:
+					<br/>
+					
+						Coverage:payor - <code class="highlighter-rouge">GET [base]/Coverage?[parameter=value]&amp;_include=Coverage:payor</code><br/>
+					
+				</li><br/>  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="explanationofbenefit" class="no_toc">ExplanationOfBenefit</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
 											<a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit.html">CARIN-BB-ExplanationOfBenefit</a>, 
 				
@@ -106,7 +84,7 @@
 				
 											<a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Professional-NonClinician.html">CARIN-BB-ExplanationOfBenefit-Professional-NonClinician</a>
 				
-				</p><p>Resource Specific Documentation:</p><blockquote><p>The EOB Resource is the focal Consumer-Directed Payer Data Exchange (CDPDE) Resource. Several Reference Resources are defined directly/indirectly from the EOB: Coverage, Patient, Organization (Payer ID), Practioner, Organization (Facility), PractionerRole, Location.</p><p>The Coverage Reference Resource SHALL be returned with data that was effective as of the date of service of the claim; for example, the data will reflect the employer name in effect at that time. However, for other reference resources, payers MAY decide to provide either the data that was in effect as of the date of service or the current data. All reference resources within the EOB will have meta.lastUpdated flagged as must support. Payers SHALL provide the last time the data was updated or the date of creation in the payers system of record, whichever comes last. Apps will use the meta.lastUpdated values to determine if the reference resources are as of the current date or date of service.</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+				</p><p>Resource Specific Documentation:</p><blockquote><p>The EOB Resource is the focal Consumer-Directed Payer Data Exchange (CDPDE) Resource. Several Reference Resources are defined directly/indirectly from the EOB: Coverage, Patient, Organization (Payer ID), Practioner, Organization (Facility), PractionerRole, Location.</p><p>The Coverage Reference Resource SHALL be returned with data that was effective as of the date of service of the claim; for example, the data will reflect the employer name in effect at that time. However, for other reference resources, payers MAY decide to provide either the data that was in effect as of the date of service or the current data. All reference resources within the EOB will have meta.lastUpdated flagged as must support. Payers SHALL provide the last time the data was updated or the date of creation in the payers system of record, whichever comes last. Apps will use the meta.lastUpdated values to determine if the reference resources are as of the current date or date of service.</p><p>When an EOB references another resource (e.g., Patient or Practitioner), the reference may be versioned or versionless. Payers SHALL use versioned references whenever they maintain point-in-time data (data that was effective as of the date of service or date of admission on the claim), but MAY use versionless references when they do not maintain versioned data. Clients MAY request referenced resources as part of an EOB search (by supplying the _include parameter) or directly using read or vread. Payers SHALL support both approaches, and SHALL return the same content for referenced resources in either case.</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>read</code><sup>†</sup>.</li></ul><blockquote>read<sup>†</sup><p>Searches using service-date, _lastUpdated, or type require a patient search argument.</p>
 <p>_include:* SHALL be supported.</p>
 </blockquote><p>Fetch and Search Criteria:</p><ul><li>
@@ -123,17 +101,15 @@
 					
 						ExplanationOfBenefit:coverage - <code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include=ExplanationOfBenefit:coverage</code><br/>
 					
-						ExplanationOfBenefit:facility - <code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include=ExplanationOfBenefit:facility</code><br/>
-					
 						ExplanationOfBenefit:insurer - <code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include=ExplanationOfBenefit:insurer</code><br/>
 					
 						ExplanationOfBenefit:* - <code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include=ExplanationOfBenefit:*</code><br/>
 					
-				</li><br/>  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
+				</li><br/>  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_id</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-explanationofbenefit-patient.html">patient</a></td><td>
 							reference
-						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?patient=[patient]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
+						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?patient=[patient]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_lastUpdated</a></td><td>
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?_lastUpdated=[_lastUpdated]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-explanationofbenefit-type.html">type</a></td><td>
 							token
@@ -145,7 +121,7 @@
 				
 											<a href="StructureDefinition-CARIN-BB-Organization.html">CARIN-BB-Organization</a>
 				
-				</p><p>Resource Specific Documentation:</p><blockquote><p>Organization MarkDown Documentation is here</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
 																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
 					A Server <strong>SHALL</strong> be capable of returning a Organization resource using:
@@ -155,15 +131,11 @@
 					A Server <strong>SHOULD</strong> be capable of returning a Organization resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Organization/[id]/_history/vid</code>
-				</li><br/>  <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
-							token
-						</td><td><code class="highlighter-rouge">GET [base]/Organization?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
-							date
-						</td><td><code class="highlighter-rouge">GET [base]/Organization?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="patient" class="no_toc">Patient</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				</li><br/>  <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="patient" class="no_toc">Patient</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
 											<a href="StructureDefinition-CARIN-BB-Patient.html">CARIN-BB-Patient</a>
 				
-				</p><p>Resource Specific Documentation:</p><blockquote><p>Patient MarkDown Documentation is here</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
 																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
 					A Server <strong>SHALL</strong> be capable of returning a Patient resource using:
@@ -177,7 +149,7 @@
 				
 											<a href="StructureDefinition-CARIN-BB-Practitioner.html">CARIN-BB-Practitioner</a>
 				
-				</p><p>Resource Specific Documentation:</p><blockquote><p>Practitioner MarkDown Documentation is here</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
 																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
 					A Server <strong>SHALL</strong> be capable of returning a Practitioner resource using:
@@ -187,39 +159,7 @@
 					A Server <strong>SHOULD</strong> be capable of returning a Practitioner resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Practitioner/[id]/_history/vid</code>
-				</li><br/>  <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
-							token
-						</td><td><code class="highlighter-rouge">GET [base]/Practitioner?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
-							date
-						</td><td><code class="highlighter-rouge">GET [base]/Practitioner?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><h4 id="practitionerrole" class="no_toc">PractitionerRole</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
-				
-											<a href="StructureDefinition-CARIN-BB-PractitionerRole.html">CARIN-BB-PractitionerRole</a>
-				
-				</p><p>Resource Specific Documentation:</p><blockquote><p>PractitionerRole MarkDown Documentation is here</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
-																							<code>read</code><sup>†</sup>.</li><li><strong>SHOULD</strong> support 
-																							<code>vread</code><sup>†</sup>.</li></ul><blockquote>read<sup>†</sup><p>_include:iterate SHALL be supported for PractitionerRole:practitioner and PractitionerRole:organization</p>
-</blockquote><blockquote>vread<sup>†</sup><p>_include:iterate SHALL be supported for PractitionerRole:practitioner and PractitionerRole:organization</p>
-</blockquote><p>Fetch and Search Criteria:</p><ul><li>
-					A Server <strong>SHALL</strong> be capable of returning a PractitionerRole resource using:
-					<br/>
-						<code class="highlighter-rouge">GET [base]/PractitionerRole/[id]</code>
-				</li><br/><li>
-					A Server <strong>SHOULD</strong> be capable of returning a PractitionerRole resource using:
-					<br/>
-						<code class="highlighter-rouge">GET [base]/PractitionerRole/[id]/_history/vid</code>
-				</li><br/>  <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><li>
-					A Server <strong>SHOULD</strong> be capable of supporting the following _includes:
-					<br/>
-					
-						PractitionerRole:organization - <code class="highlighter-rouge">GET [base]/PractitionerRole?[parameter=value]&amp;_include=PractitionerRole:organization</code><br/>
-					
-						PractitionerRole:practitioner - <code class="highlighter-rouge">GET [base]/PractitionerRole?[parameter=value]&amp;_include=PractitionerRole:practitioner</code><br/>
-					
-				</li><br/>  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html ">_id</a></td><td>
-							token
-						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html ">_lastUpdated</a></td><td>
-							date
-						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?_lastUpdated=[_lastUpdated]</code></td></tr></tbody></table><hr/><br/></div>
+				</li><br/>  <!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet -->  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><br/></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb"/>
   <version value="0.4.0"/>
@@ -227,7 +167,7 @@
   <title value="Carin Bb CapabilityStatement"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2020-08-03"/>
+  <date value="2020-08-11"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -255,7 +195,7 @@
   <implementationGuide value="http://hl7.org/fhir/us/carin-bb/ImplementationGuide/hl7.fhir.us.carin-bb"/>
   <rest>
     <mode value="server"/>
-    <documentation value="The Carin-bb  Server **SHALL**:&#xA;&#xA;1. Support all profiles defined in this Implementation Guide..&#xA;1.  Implement the RESTful behavior according to the FHIR specification.&#xA;1. Return the following response classes:&#xA;   - (Status 400): invalid parameter&#xA;   - (Status 401/4xx): unauthorized request&#xA;   - (Status 403): insufficient scope&#xA;   - (Status 404): unknown resource&#xA;   - (Status 410): deleted resource.&#xA;1. Support json source formats for all Plan-Net interactions.&#xA;1. Identify the CARIN-BB  profiles supported as part of the FHIR `meta.profile` attribute for each instance.&#xA;&#xA;The Plan-Net  Server **SHOULD**:&#xA;&#xA;1. Support xml source formats for all Plan-Net  interactions.&#xA;"/>
+    <documentation value="The Carin-bb  Server **SHALL**:&#xA;&#xA;1. Support all profiles defined in this Implementation Guide..&#xA;1.  Implement the RESTful behavior according to the FHIR specification.&#xA;1. Return the following response classes:&#xA;   - (Status 400): invalid parameter&#xA;   - (Status 401/4xx): unauthorized request&#xA;   - (Status 403): insufficient scope&#xA;   - (Status 404): unknown resource&#xA;   - (Status 410): deleted resource.&#xA;1. Support json source formats for all Carin-bbinteractions.&#xA;1. Identify the CARIN-BB  profiles supported as part of the FHIR `meta.profile` attribute for each instance.&#xA;&#xA;The Carin-bb  Server **SHOULD**:&#xA;&#xA;1. Support xml source formats for all Carin-bb interactions.&#xA;"/>
     <security>
       <description value="1. See the [General Security Considerations](security.html) section for requirements and recommendations.&#xA;1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."/>
     </security>
@@ -265,7 +205,6 @@
       </extension>
       <type value="Coverage"/>
       <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage"/>
-      <documentation value="Coverage MarkDown Documentation is here"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -273,22 +212,7 @@
         <code value="read"/>
       </interaction>
       <referencePolicy value="resolves"/>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="_id"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/coverage-id"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="_lastUpdated"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/coverage-lastUpdated"/>
-        <type value="date"/>
-      </searchParam>
+      <searchInclude value="Coverage:payor"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -300,7 +224,7 @@
       <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Outpatient-Facility"/>
       <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy"/>
       <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Professional-NonClinician"/>
-      <documentation value="The EOB Resource is the focal Consumer-Directed Payer Data Exchange (CDPDE) Resource. Several Reference Resources are defined directly/indirectly from the EOB: Coverage, Patient, Organization (Payer ID), Practioner, Organization (Facility), PractionerRole, Location.&#xA;&#xA;The Coverage Reference Resource SHALL be returned with data that was effective as of the date of service of the claim; for example, the data will reflect the employer name in effect at that time. However, for other reference resources, payers MAY decide to provide either the data that was in effect as of the date of service or the current data. All reference resources within the EOB will have meta.lastUpdated flagged as must support. Payers SHALL provide the last time the data was updated or the date of creation in the payers system of record, whichever comes last. Apps will use the meta.lastUpdated values to determine if the reference resources are as of the current date or date of service."/>
+      <documentation value="The EOB Resource is the focal Consumer-Directed Payer Data Exchange (CDPDE) Resource. Several Reference Resources are defined directly/indirectly from the EOB: Coverage, Patient, Organization (Payer ID), Practioner, Organization (Facility), PractionerRole, Location.&#xA;&#xA;The Coverage Reference Resource SHALL be returned with data that was effective as of the date of service of the claim; for example, the data will reflect the employer name in effect at that time. However, for other reference resources, payers MAY decide to provide either the data that was in effect as of the date of service or the current data. All reference resources within the EOB will have meta.lastUpdated flagged as must support. Payers SHALL provide the last time the data was updated or the date of creation in the payers system of record, whichever comes last. Apps will use the meta.lastUpdated values to determine if the reference resources are as of the current date or date of service.&#xA;&#xA;When an EOB references another resource (e.g., Patient or Practitioner), the reference may be versioned or versionless. Payers SHALL use versioned references whenever they maintain point-in-time data (data that was effective as of the date of service or date of admission on the claim), but MAY use versionless references when they do not maintain versioned data. Clients MAY request referenced resources as part of an EOB search (by supplying the _include parameter) or directly using read or vread. Payers SHALL support both approaches, and SHALL return the same content for referenced resources in either case."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -312,7 +236,6 @@
       <searchInclude value="ExplanationOfBenefit:provider"/>
       <searchInclude value="ExplanationOfBenefit:care-team"/>
       <searchInclude value="ExplanationOfBenefit:coverage"/>
-      <searchInclude value="ExplanationOfBenefit:facility"/>
       <searchInclude value="ExplanationOfBenefit:insurer"/>
       <searchInclude value="ExplanationOfBenefit:*"/>
       <searchParam>
@@ -370,7 +293,6 @@
       </extension>
       <type value="Organization"/>
       <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization"/>
-      <documentation value="Organization MarkDown Documentation is here"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -384,22 +306,6 @@
         <code value="vread"/>
       </interaction>
       <referencePolicy value="resolves"/>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="_id"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/organization-id"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="_lastUpdated"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/organization-lastUpdated"/>
-        <type value="date"/>
-      </searchParam>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -407,7 +313,6 @@
       </extension>
       <type value="Patient"/>
       <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient"/>
-      <documentation value="Patient MarkDown Documentation is here"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -428,7 +333,6 @@
       </extension>
       <type value="Practitioner"/>
       <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Practitioner"/>
-      <documentation value="Practitioner MarkDown Documentation is here"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -442,87 +346,6 @@
         <code value="vread"/>
       </interaction>
       <referencePolicy value="resolves"/>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="_id"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/practitioner-id"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="_lastUpdated"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/practitioner-lastUpdated"/>
-        <type value="date"/>
-      </searchParam>
     </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHALL"/>
-      </extension>
-      <type value="PractitionerRole"/>
-      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-PractitionerRole"/>
-      <documentation value="PractitionerRole MarkDown Documentation is here"/>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <code value="read"/>
-        <documentation value="_include:iterate SHALL be supported for PractitionerRole:practitioner and PractitionerRole:organization"/>
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <code value="vread"/>
-        <documentation value="_include:iterate SHALL be supported for PractitionerRole:practitioner and PractitionerRole:organization"/>
-      </interaction>
-      <referencePolicy value="resolves"/>
-      <searchInclude value="PractitionerRole:organization"/>
-      <searchInclude value="PractitionerRole:practitioner"/>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="_id"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/practitionerrole-id"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="_lastUpdated"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/practitionerrole-lastUpdated"/>
-        <type value="date"/>
-      </searchParam>
-    </resource>
-    <interaction>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
-      </extension>
-      <code value="transaction"/>
-    </interaction>
-    <interaction>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
-      </extension>
-      <code value="batch"/>
-    </interaction>
-    <interaction>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
-      </extension>
-      <code value="search-system"/>
-    </interaction>
-    <interaction>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
-      </extension>
-      <code value="history-system"/>
-    </interaction>
   </rest>
 </CapabilityStatement>
