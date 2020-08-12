@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-08-12T01:55:39+00:00",
+  "date": "2020-08-12T01:57:38+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -1371,6 +1371,24 @@
         "name": "Patient1",
         "description": "Patient Example1",
         "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "SearchParameter-coverage-payor.html"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/coverage-payor"
+        },
+        "name": "payor",
+        "description": "The identity of the insurer or party paying for services",
+        "exampleBoolean": false
       },
       {
         "extension": [
