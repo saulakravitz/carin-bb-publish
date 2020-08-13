@@ -59,7 +59,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.4.0 - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.4.1 - STU1</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="16683b53-1da7-4cc4-ae79-0973340c0a8d">​</a>
+      <li><a name="3e97d4c0-788f-4164-9e2c-0f74e04a8bdf">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="e7429cd5-0cae-4ab8-9b0a-e3e4a124dbac">​</a>
+      <li><a name="1a6303eb-c920-4113-b619-af9c0345c051">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="ffff5fde-562b-4ace-951b-45ab28b9d705">​</a>
+      <li><a name="eda834f6-37f7-42d8-af38-215b6e1496fe">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="620d335a-23a1-494c-becb-052f95edfc68">​</a>
+      <li><a name="786e1e54-f168-4cb1-aa9f-9912c5d87667">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="334240cf-dfdf-416f-a934-0985a76ee212">​</a>
+      <li><a name="48e7d679-ccb2-43b7-820f-83dc7c4af228">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -194,7 +194,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.4.0). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.4.1). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Background</h2>
   
 
@@ -279,7 +279,7 @@ Interoperability and Patient Access Final Rule</a> on patient access to health d
 <p>The SMART App IG also provides guidance on how to handle authentication. If the app needs to authenticate the identity of the end-user, it should include two OpenID Connect scopes: openid and fhirUser. When these scopes are requested, and the request is granted, the app will receive an id_token along with the access token. For details, see the description <a href="http://hl7.org/fhir/smart-app-launch/scopes-and-launch-context/index.html">here</a>.</p>
 
 <h4>PDEX</h4>
-<p><a name="df935df0-d739-49b5-a868-938e3dbbef90">​</a>CMS Guidance defines two sets of data be made available by payers in the Patient Access API: Claims and Encounter Data and Clinical data. They provide links to specific implementations guides for the Patient Access API to provide guidance. Use of these implementation guides is not required, but if used these guides will provide information payers can use to meet the requirements of the policies being finalized.
+<p><a name="39955b67-3fff-4450-8fe6-97570f35abfa">​</a>CMS Guidance defines two sets of data be made available by payers in the Patient Access API: Claims and Encounter Data and Clinical data. They provide links to specific implementations guides for the Patient Access API to provide guidance. Use of these implementation guides is not required, but if used these guides will provide information payers can use to meet the requirements of the policies being finalized.
 This IG defines how Claims and Encounter Data are to be provided; the DaVinci <a href="http://build.fhir.org/ig/HL7/davinci-epdx/">PDEX</a> (Payer Data Exchange) and <a href="http://hl7.org/fhir/us/core/STU3/index.html">US Core</a> Implementation Guides define how Clinical Data is to be provided.</p>
 <h4>RTPBC</h4>
 <p>Using the <a href="http://build.fhir.org/ig/HL7/carin-rtpbc">RTPBC</a> (Real Time Pharmacy Benefit Check), a patient can learn the cost and insurance coverage related to medications they’ve been prescribed.  A person would typically use the RTPBC prior to the dispensing of the prescription and the filing of the claim.  CARIIN BB provides the capability to access how pharmacy (and medical) benefits have been applied by the payer as a result of a claim filed by the pharmacy.</p>
@@ -321,7 +321,7 @@ This IG defines how Claims and Encounter Data are to be provided; the DaVinci <a
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 13, 2020 22:09+0000">2020-08-13</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 13, 2020 22:14+0000">2020-08-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
