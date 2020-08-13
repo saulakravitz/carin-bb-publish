@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-08-13T18:04:47+00:00",
+  "date": "2020-08-13T18:54:48+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -1386,7 +1386,7 @@
         "reference": {
           "reference": "SearchParameter/coverage-payor"
         },
-        "name": "payor",
+        "name": "Coverage_Payor",
         "description": "The identity of the insurer or party paying for services",
         "exampleBoolean": false
       },
@@ -1422,7 +1422,7 @@
         "reference": {
           "reference": "SearchParameter/explanationofbenefit-coverage"
         },
-        "name": "ExplanationOfBenefit_coverage",
+        "name": "ExplanationOfBenefit_Coverage",
         "description": "The plan under which the claim was adjudicated",
         "exampleBoolean": false
       },
@@ -1458,7 +1458,7 @@
         "reference": {
           "reference": "SearchParameter/explanationofbenefit-insurer"
         },
-        "name": "CARINBlueButton_ExplanationOfBenefit_Insurer_SearchParameter",
+        "name": "ExplanationOfBenefit_Insurer",
         "description": "The party responsible for the claim",
         "exampleBoolean": false
       },
@@ -1494,7 +1494,7 @@
         "reference": {
           "reference": "SearchParameter/explanationofbenefit-provider"
         },
-        "name": "provider",
+        "name": "ExplanationOfBenefit_Provider",
         "description": "The reference to the provider",
         "exampleBoolean": false
       },
@@ -1548,7 +1548,7 @@
         "reference": {
           "reference": "SearchParameter/practitionerrole-organization"
         },
-        "name": "organization",
+        "name": "ExplanationOfBenefit_Organization",
         "description": "The identity of the organization the practitioner represents / acts on behalf of",
         "exampleBoolean": false
       },
@@ -1566,7 +1566,7 @@
         "reference": {
           "reference": "SearchParameter/practitionerrole-practitioner"
         },
-        "name": "practitioner",
+        "name": "ExplanationOfBenefit_Practitioner",
         "description": "Practitioner that is able to provide the defined services for the organization",
         "exampleBoolean": false
       },

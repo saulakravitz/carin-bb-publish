@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CARINConsumerDirectedPayerDataExchange"];
   fhir:ImplementationGuide.title [ fhir:value "CARIN Consumer Directed Payer Data Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-08-13T18:04:47+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-08-13T18:54:48+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1400,7 +1400,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/coverage-payor>;
          fhir:Reference.reference [ fhir:value "SearchParameter/coverage-payor" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "payor" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Coverage_Payor" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The identity of the insurer or party paying for services" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -1436,7 +1436,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-coverage>;
          fhir:Reference.reference [ fhir:value "SearchParameter/explanationofbenefit-coverage" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExplanationOfBenefit_coverage" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExplanationOfBenefit_Coverage" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The plan under which the claim was adjudicated" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -1472,7 +1472,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-insurer>;
          fhir:Reference.reference [ fhir:value "SearchParameter/explanationofbenefit-insurer" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CARINBlueButton_ExplanationOfBenefit_Insurer_SearchParameter" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExplanationOfBenefit_Insurer" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The party responsible for the claim" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -1508,7 +1508,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-provider>;
          fhir:Reference.reference [ fhir:value "SearchParameter/explanationofbenefit-provider" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "provider" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExplanationOfBenefit_Provider" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The reference to the provider" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -1562,7 +1562,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/practitionerrole-organization>;
          fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-organization" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "organization" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExplanationOfBenefit_Organization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The identity of the organization the practitioner represents / acts on behalf of" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -1580,7 +1580,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/SearchParameter/practitionerrole-practitioner>;
          fhir:Reference.reference [ fhir:value "SearchParameter/practitionerrole-practitioner" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExplanationOfBenefit_Practitioner" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Practitioner that is able to provide the defined services for the organization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
