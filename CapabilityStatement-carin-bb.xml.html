@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="c64f37b5-3ab3-435c-a972-6eb852b64790">​</a>
+      <li><a name="37e242f9-b978-443d-92be-3dd568e733b9">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="b26faf13-6ec0-44d1-a105-be8a323ec5ad">​</a>
+      <li><a name="fb136be8-683e-412b-a420-1b048b5a4331">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="5e103f8b-5730-4efd-9da2-afef778d473a">​</a>
+      <li><a name="3acedc1e-4d49-4b50-8c0e-f8649bfe4d0b">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="73831aff-118f-493d-b7bc-eb9384bcd931">​</a>
+      <li><a name="fef9dc41-b1c1-4679-b4d5-18a296dbdf79">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="7679ffb0-39e9-4794-8581-44dca06802c4">​</a>
+      <li><a name="f5d67dfd-c40a-4416-a0cf-f80087a8bc0d">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -245,9 +245,9 @@
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="carin-bb"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;h2 id="title"&gt;Carin Bb CapabilityStatement&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide Version: 1.0.0&lt;/li&gt;&lt;li&gt;FHIR Version: 4.0.1&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2020-08-11&lt;/li&gt;&lt;li&gt;Published by: HL7 Financial Management Working Group (FM WG)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;p&gt;This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors.&lt;/p&gt;&lt;/p&gt;&lt;h3 id="behavior"&gt;FHIR RESTful Capabilities&lt;/h3&gt;&lt;p&gt;The Carin-bb  Server &lt;strong&gt;SHALL&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support all profiles defined in this Implementation Guide..&lt;/li&gt;&lt;li&gt;Implement the RESTful behavior according to the FHIR specification.&lt;/li&gt;&lt;li&gt;Return the following response classes:
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;h2 id="title"&gt;Carin Bb CapabilityStatement&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide Version: 1.0.0&lt;/li&gt;&lt;li&gt;FHIR Version: 4.0.1&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2020-08-13&lt;/li&gt;&lt;li&gt;Published by: HL7 Financial Management Working Group (FM WG)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;p&gt;This Section describes the expected capabilities of the CARIN-BB Server actor which is responsible for providing responses to the queries submitted by the CARIN-BB Requestors.&lt;/p&gt;&lt;/p&gt;&lt;h3 id="behavior"&gt;FHIR RESTful Capabilities&lt;/h3&gt;&lt;p&gt;The CARIN-BB  Server &lt;strong&gt;SHALL&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support all profiles defined in this Implementation Guide..&lt;/li&gt;&lt;li&gt;Implement the RESTful behavior according to the FHIR specification.&lt;/li&gt;&lt;li&gt;Return the following response classes:
 &lt;ul&gt;&lt;li&gt;(Status 400): invalid parameter&lt;/li&gt;&lt;li&gt;(Status 401/4xx): unauthorized request&lt;/li&gt;&lt;li&gt;(Status 403): insufficient scope&lt;/li&gt;&lt;li&gt;(Status 404): unknown resource&lt;/li&gt;&lt;li&gt;(Status 410): deleted resource.&lt;/li&gt;&lt;/ul&gt;
-&lt;/li&gt;&lt;li&gt;Support json source formats for all Carin-bbinteractions.&lt;/li&gt;&lt;li&gt;Identify the CARIN-BB  profiles supported as part of the FHIR &lt;code&gt;meta.profile&lt;/code&gt; attribute for each instance.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;The Carin-bb  Server &lt;strong&gt;SHOULD&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support xml source formats for all Carin-bb interactions.&lt;/li&gt;&lt;/ol&gt;&lt;p id="security"&gt;&lt;strong&gt;Security:&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;See the &lt;a href="security.html"&gt;General Security Considerations&lt;/a&gt; section for requirements and recommendations.&lt;/li&gt;&lt;li&gt;A server &lt;strong&gt;SHALL&lt;/strong&gt; reject any unauthorized requests by returning an &lt;code&gt;HTTP 401&lt;/code&gt; unauthorized response code.&lt;/li&gt;&lt;/ol&gt;&lt;h3 id="resource--details" class="no_toc"&gt;RESTful Capabilities by Resource/Profile:&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Summary of Search Criteria&lt;/strong&gt;&lt;/p&gt;&lt;table class="grid"&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Supported Profiles&lt;/th&gt;&lt;th&gt;Supported Searches&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_includes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_revincludes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported Operations&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="#coverage"&gt;Coverage&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="StructureDefinition-CARIN-BB-Coverage.html"&gt;CARIN-BB-Coverage&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
+&lt;/li&gt;&lt;li&gt;Support json source formats for all CARIN-BB interactions.&lt;/li&gt;&lt;li&gt;Identify the CARIN-BB  profiles supported as part of the FHIR &lt;code&gt;meta.profile&lt;/code&gt; attribute for each instance.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;The CARIN-BB  Server &lt;strong&gt;SHOULD&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support xml source formats for all CARIN-BB interactions.&lt;/li&gt;&lt;/ol&gt;&lt;p id="security"&gt;&lt;strong&gt;Security:&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;See the &lt;a href="security.html"&gt;General Security Considerations&lt;/a&gt; section for requirements and recommendations.&lt;/li&gt;&lt;li&gt;A server &lt;strong&gt;SHALL&lt;/strong&gt; reject any unauthorized requests by returning an &lt;code&gt;HTTP 401&lt;/code&gt; unauthorized response code.&lt;/li&gt;&lt;/ol&gt;&lt;h3 id="resource--details" class="no_toc"&gt;RESTful Capabilities by Resource/Profile:&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Summary of Search Criteria&lt;/strong&gt;&lt;/p&gt;&lt;table class="grid"&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Supported Profiles&lt;/th&gt;&lt;th&gt;Supported Searches&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_includes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_revincludes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported Operations&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="#coverage"&gt;Coverage&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="StructureDefinition-CARIN-BB-Coverage.html"&gt;CARIN-BB-Coverage&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							
 						&lt;/td&gt;&lt;td&gt;
 							Coverage:payor
@@ -409,7 +409,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Carin Bb CapabilityStatement"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="false"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2020-08-11"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2020-08-13"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 Financial Management Working Group"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 Financial Management Working Group"/&gt;
@@ -423,7 +423,7 @@
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.description">description</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors. "/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="This Section describes the expected capabilities of the CARIN-BB Server actor which is responsible for providing responses to the queries submitted by the CARIN-BB Requestors. "/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.jurisdiction">jurisdiction</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="urn:iso:std:iso:3166"/&gt;
@@ -440,7 +440,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest">rest</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="server"/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.documentation">documentation</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="The Carin-bb  Server **SHALL**:
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="The CARIN-BB  Server **SHALL**:
 
 1. Support all profiles defined in this Implementation Guide..
 1.  Implement the RESTful behavior according to the FHIR specification.
@@ -450,12 +450,12 @@
    - (Status 403): insufficient scope
    - (Status 404): unknown resource
    - (Status 410): deleted resource.
-1. Support json source formats for all Carin-bbinteractions.
+1. Support json source formats for all CARIN-BB interactions.
 1. Identify the CARIN-BB  profiles supported as part of the FHIR `meta.profile` attribute for each instance.
 
-The Carin-bb  Server **SHOULD**:
+The CARIN-BB  Server **SHOULD**:
 
-1. Support xml source formats for all Carin-bb interactions.
+1. Support xml source formats for all CARIN-BB interactions.
 "/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security">security</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.description">description</a>
@@ -682,7 +682,7 @@ _include:* SHALL be supported.
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 13, 2020 18:54+0000">2020-08-13</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 13, 2020 22:09+0000">2020-08-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

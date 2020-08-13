@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-08-13T18:54:48+00:00",
+  "date": "2020-08-13T22:09:43+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -343,7 +343,7 @@
           "reference": "StructureDefinition/CARIN-BB-Coverage"
         },
         "name": "CARIN BB Coverage",
-        "description": "CARIN Blue Button Coverage Profile.",
+        "description": "Data that reflect a payer's coverage that was effective as of the date of service  or the date of admission of the claim will be added to the Coverage Profile overview.",
         "exampleBoolean": false
       },
       {
@@ -451,7 +451,7 @@
           "reference": "StructureDefinition/CARIN-BB-Organization"
         },
         "name": "CARIN BB Organization",
-        "description": "CARIN Blue Button Organization Profile.",
+        "description": "This profile builds upon the US Core Organization profile. It is used to convey a payer or provider organization may be updated to include service facility pending resolution of FHIR-26705.\n.",
         "exampleBoolean": false
       },
       {
@@ -469,7 +469,7 @@
           "reference": "StructureDefinition/CARIN-BB-Patient"
         },
         "name": "CARIN BB Patient",
-        "description": "CARIN Blue Button Patient Profile.",
+        "description": "This profile builds upon the US Core Organization profile. It is used to convey patient information about the patient who received the services described on the claim.",
         "exampleBoolean": false
       },
       {
@@ -487,25 +487,7 @@
           "reference": "StructureDefinition/CARIN-BB-Practitioner"
         },
         "name": "CARIN BB Practitioner",
-        "description": "CARIN Blue Button Practitioner Profile.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-CARIN-BB-PractitionerRole.html"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/CARIN-BB-PractitionerRole"
-        },
-        "name": "CARIN BB PractitionerRole",
-        "description": "CARIN Blue Button PractitionerRole Profile.",
+        "description": "This profile builds upon the US Core Organization profile. It is used to convey patient information about the patient who received the services described on the claim.",
         "exampleBoolean": false
       },
       {
@@ -560,24 +542,6 @@
         },
         "name": "Adjudication CARINBB Value Codes",
         "description": "As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-AdjudicationDenialReason.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/AdjudicationDenialReason"
-        },
-        "name": "Adjudication Denial Reason",
-        "description": "Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC",
         "exampleBoolean": false
       },
       {
@@ -966,6 +930,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-NUCCHealthcareProviderTaxonomy.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/NUCCHealthcareProviderTaxonomy"
+        },
+        "name": "NUCC Healthcare Provider Taxonomy",
+        "description": "NUCC Healthcare Provider Taxonomy",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-PatientIdentifierType.html"
           }
         ],
@@ -1020,11 +1002,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerInpatientfacilitydiagnosistype.html"
+            "valueUri": "ValueSet-PayerInpatientinstitutionaldiagnosistype.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/PayerInpatientfacilitydiagnosistype"
+          "reference": "ValueSet/PayerInpatientinstitutionaldiagnosistype"
         },
         "name": "Diagnosis Type -- Inpatient Facility",
         "description": "Payer Inpatient Facility Diagnosis Type",
@@ -1038,11 +1020,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerOutpatientfacilitydiagnosistype.html"
+            "valueUri": "ValueSet-PayerOutpatientinstitutionaldiagnosistype.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/PayerOutpatientfacilitydiagnosistype"
+          "reference": "ValueSet/PayerOutpatientinstitutionaldiagnosistype"
         },
         "name": "Diagnosis Type -- Outpatient Facility",
         "description": "Payer Outpatient Facility Diagnosis Type",
@@ -1082,6 +1064,24 @@
         },
         "name": "Provider Provider Contracting Status",
         "description": "Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-X12CARCCMSRARC.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/X12CARCCMSRARC"
+        },
+        "name": "Adjudication Denial Reason from X12 CARC and CMS RARC",
+        "description": "Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC",
         "exampleBoolean": false
       },
       {
@@ -1585,7 +1585,7 @@
           "reference": "CapabilityStatement/carin-bb"
         },
         "name": "Carin Bb CapabilityStatement",
-        "description": "This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors. ",
+        "description": "This Section describes the expected capabilities of the CARIN-BB Server actor which is responsible for providing responses to the queries submitted by the CARIN-BB Requestors. ",
         "exampleBoolean": false
       }
     ],

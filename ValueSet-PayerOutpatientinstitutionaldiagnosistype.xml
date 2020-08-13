@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PayerOutpatientinstitutionaldiagnosistype"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-PayerDiagnosisTypeCS.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/PayerOutpatientinstitutionaldiagnosistype"/>
+  <version value="0.4.0"/>
+  <name value="PayerOutpatientinstitutionaldiagnosistype"/>
+  <title value="Diagnosis Type -- Outpatient Facility"/>
+  <status value="active"/>
+  <date value="2020-08-13T22:09:43+00:00"/>
+  <publisher value="HL7 Financial Management Working Group"/>
+  <contact>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Payer Outpatient Facility Diagnosis Type"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="2990aebb-b166-4f73-a3fa-be41c3ffbe49">​</a>
+      <li><a name="e5dec35d-3743-4569-a599-1f187699f264">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="dbb0d5f8-c7bc-40d8-99f9-010ff53b206c">​</a>
+      <li><a name="e1cee8b8-5177-47d4-a427-dff3b5110b90">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="e8db9bd8-8c94-4462-a701-5f1e8858e6c3">​</a>
+      <li><a name="070750e8-6531-4302-9ff6-d93277387328">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="2439df7d-e51c-4127-a5ee-d50862136961">​</a>
+      <li><a name="d9e7d21d-7f0a-4b81-946a-9b2543e132b9">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="5ed99cfd-bb2e-4e0d-b271-5186033a2334">​</a>
+      <li><a name="cab2fe10-9ff8-4cca-9c07-8149792cc529">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -237,7 +237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="CapabilityStatement-carin-bb.html" title="CapabilityStatement/carin-bb">Carin Bb CapabilityStatement</a>
                </td>
                <td>
-<p>This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors.</p>
+<p>This Section describes the expected capabilities of the CARIN-BB Server actor which is responsible for providing responses to the queries submitted by the CARIN-BB Requestors.</p>
 </td>
             </tr>
          </tbody>
@@ -372,7 +372,7 @@ All EOB instances should be from one of the four non-abstract EOB profiles defin
                   <a href="StructureDefinition-CARIN-BB-Coverage.html" title="StructureDefinition/CARIN-BB-Coverage">CARIN BB Coverage</a>
                </td>
                <td>
-<p>CARIN Blue Button Coverage Profile.</p>
+<p>Data that reflect a payer’s coverage that was effective as of the date of service  or the date of admission of the claim will be added to the Coverage Profile overview.</p>
 </td>
             </tr>
             <tr>
@@ -416,7 +416,8 @@ The claims data is based on the professional claim form 1500, submission standar
                   <a href="StructureDefinition-CARIN-BB-Organization.html" title="StructureDefinition/CARIN-BB-Organization">CARIN BB Organization</a>
                </td>
                <td>
-<p>CARIN Blue Button Organization Profile.</p>
+<p>This profile builds upon the US Core Organization profile. It is used to convey a payer or provider organization may be updated to include service facility pending resolution of FHIR-26705.
+.</p>
 </td>
             </tr>
             <tr>
@@ -424,7 +425,7 @@ The claims data is based on the professional claim form 1500, submission standar
                   <a href="StructureDefinition-CARIN-BB-Patient.html" title="StructureDefinition/CARIN-BB-Patient">CARIN BB Patient</a>
                </td>
                <td>
-<p>CARIN Blue Button Patient Profile.</p>
+<p>This profile builds upon the US Core Organization profile. It is used to convey patient information about the patient who received the services described on the claim.</p>
 </td>
             </tr>
             <tr>
@@ -432,15 +433,7 @@ The claims data is based on the professional claim form 1500, submission standar
                   <a href="StructureDefinition-CARIN-BB-Practitioner.html" title="StructureDefinition/CARIN-BB-Practitioner">CARIN BB Practitioner</a>
                </td>
                <td>
-<p>CARIN Blue Button Practitioner Profile.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-CARIN-BB-PractitionerRole.html" title="StructureDefinition/CARIN-BB-PractitionerRole">CARIN BB PractitionerRole</a>
-               </td>
-               <td>
-<p>CARIN Blue Button PractitionerRole Profile.</p>
+<p>This profile builds upon the US Core Organization profile. It is used to convey patient information about the patient who received the services described on the claim.</p>
 </td>
             </tr>
          </tbody>
@@ -475,14 +468,6 @@ The claims data is based on the professional claim form 1500, submission standar
                </td>
                <td>
 <p>As per Jira FHIR-26992… HL7 Requested to fix HL7 Adjudication codesystem</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-AdjudicationDenialReason.html" title="ValueSet/AdjudicationDenialReason">Adjudication Denial Reason</a>
-               </td>
-               <td>
-<p>Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC</p>
 </td>
             </tr>
             <tr>
@@ -655,6 +640,14 @@ The claims data is based on the professional claim form 1500, submission standar
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-NUCCHealthcareProviderTaxonomy.html" title="ValueSet/NUCCHealthcareProviderTaxonomy">NUCC Healthcare Provider Taxonomy</a>
+               </td>
+               <td>
+<p>NUCC Healthcare Provider Taxonomy</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-PatientIdentifierType.html" title="ValueSet/PatientIdentifierType">Patient Identifier Type</a>
                </td>
                <td>
@@ -679,7 +672,7 @@ The claims data is based on the professional claim form 1500, submission standar
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-PayerInpatientfacilitydiagnosistype.html" title="ValueSet/PayerInpatientfacilitydiagnosistype">Diagnosis Type -- Inpatient Facility</a>
+                  <a href="ValueSet-PayerInpatientinstitutionaldiagnosistype.html" title="ValueSet/PayerInpatientinstitutionaldiagnosistype">Diagnosis Type -- Inpatient Facility</a>
                </td>
                <td>
 <p>Payer Inpatient Facility Diagnosis Type</p>
@@ -687,7 +680,7 @@ The claims data is based on the professional claim form 1500, submission standar
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-PayerOutpatientfacilitydiagnosistype.html" title="ValueSet/PayerOutpatientfacilitydiagnosistype">Diagnosis Type -- Outpatient Facility</a>
+                  <a href="ValueSet-PayerOutpatientinstitutionaldiagnosistype.html" title="ValueSet/PayerOutpatientinstitutionaldiagnosistype">Diagnosis Type -- Outpatient Facility</a>
                </td>
                <td>
 <p>Payer Outpatient Facility Diagnosis Type</p>
@@ -707,6 +700,14 @@ The claims data is based on the professional claim form 1500, submission standar
                </td>
                <td>
 <p>Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-X12CARCCMSRARC.html" title="ValueSet/X12CARCCMSRARC">Adjudication Denial Reason from X12 CARC and CMS RARC</a>
+               </td>
+               <td>
+<p>Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC</p>
 </td>
             </tr>
          </tbody>
@@ -882,7 +883,7 @@ The claims data is based on the professional claim form 1500, submission standar
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 13, 2020 18:54+0000">2020-08-13</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 13, 2020 22:09+0000">2020-08-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

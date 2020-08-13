@@ -104,13 +104,6 @@
     <sch:title>ExplanationOfBenefit.identifier</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:identifier">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:ExplanationOfBenefit/f:identifier</sch:title>
-    <sch:rule context="f:ExplanationOfBenefit/f:identifier">
-      <sch:assert test="count(f:value) &gt;= 1">value: minimum cardinality of 'value' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -123,37 +116,37 @@
   <sch:pattern>
     <sch:title>ExplanationOfBenefit.identifier.use</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:identifier/f:use">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>ExplanationOfBenefit.identifier.type</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:identifier/f:type">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>ExplanationOfBenefit.identifier.system</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:identifier/f:system">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>ExplanationOfBenefit.identifier.value</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:identifier/f:value">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>ExplanationOfBenefit.identifier.period</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:identifier/f:period">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>ExplanationOfBenefit.identifier.assigner</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:identifier/f:assigner">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-08-13T18:54:48+00:00"/>
+  <date value="2020-08-13T22:09:43+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -219,7 +219,7 @@
         <reference value="StructureDefinition/CARIN-BB-Coverage"/>
       </reference>
       <name value="CARIN BB Coverage"/>
-      <description value="CARIN Blue Button Coverage Profile."/>
+      <description value="Data that reflect a payer&#39;s coverage that was effective as of the date of service  or the date of admission of the claim will be added to the Coverage Profile overview."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -303,7 +303,7 @@
         <reference value="StructureDefinition/CARIN-BB-Organization"/>
       </reference>
       <name value="CARIN BB Organization"/>
-      <description value="CARIN Blue Button Organization Profile."/>
+      <description value="This profile builds upon the US Core Organization profile. It is used to convey a payer or provider organization may be updated to include service facility pending resolution of FHIR-26705.&#xA;."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -317,7 +317,7 @@
         <reference value="StructureDefinition/CARIN-BB-Patient"/>
       </reference>
       <name value="CARIN BB Patient"/>
-      <description value="CARIN Blue Button Patient Profile."/>
+      <description value="This profile builds upon the US Core Organization profile. It is used to convey patient information about the patient who received the services described on the claim."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -331,21 +331,7 @@
         <reference value="StructureDefinition/CARIN-BB-Practitioner"/>
       </reference>
       <name value="CARIN BB Practitioner"/>
-      <description value="CARIN Blue Button Practitioner Profile."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-CARIN-BB-PractitionerRole.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/CARIN-BB-PractitionerRole"/>
-      </reference>
-      <name value="CARIN BB PractitionerRole"/>
-      <description value="CARIN Blue Button PractitionerRole Profile."/>
+      <description value="This profile builds upon the US Core Organization profile. It is used to convey patient information about the patient who received the services described on the claim."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -388,20 +374,6 @@
       </reference>
       <name value="Adjudication CARINBB Value Codes"/>
       <description value="As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-AdjudicationDenialReason.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/AdjudicationDenialReason"/>
-      </reference>
-      <name value="Adjudication Denial Reason"/>
-      <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -703,6 +675,20 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-NUCCHealthcareProviderTaxonomy.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NUCCHealthcareProviderTaxonomy"/>
+      </reference>
+      <name value="NUCC Healthcare Provider Taxonomy"/>
+      <description value="NUCC Healthcare Provider Taxonomy"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-PatientIdentifierType.html"/>
       </extension>
       <reference>
@@ -745,10 +731,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerInpatientfacilitydiagnosistype.html"/>
+        <valueUri value="ValueSet-PayerInpatientinstitutionaldiagnosistype.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PayerInpatientfacilitydiagnosistype"/>
+        <reference value="ValueSet/PayerInpatientinstitutionaldiagnosistype"/>
       </reference>
       <name value="Diagnosis Type -- Inpatient Facility"/>
       <description value="Payer Inpatient Facility Diagnosis Type"/>
@@ -759,10 +745,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-PayerOutpatientfacilitydiagnosistype.html"/>
+        <valueUri value="ValueSet-PayerOutpatientinstitutionaldiagnosistype.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PayerOutpatientfacilitydiagnosistype"/>
+        <reference value="ValueSet/PayerOutpatientinstitutionaldiagnosistype"/>
       </reference>
       <name value="Diagnosis Type -- Outpatient Facility"/>
       <description value="Payer Outpatient Facility Diagnosis Type"/>
@@ -794,6 +780,20 @@
       </reference>
       <name value="Provider Provider Contracting Status"/>
       <description value="Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-X12CARCCMSRARC.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/X12CARCCMSRARC"/>
+      </reference>
+      <name value="Adjudication Denial Reason from X12 CARC and CMS RARC"/>
+      <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1185,7 +1185,7 @@
         <reference value="CapabilityStatement/carin-bb"/>
       </reference>
       <name value="Carin Bb CapabilityStatement"/>
-      <description value="This Section describes the expected capabilities of the Carin-bb Server actor which is responsible for providing responses to the queries submitted by the Carin-bb Requestors. "/>
+      <description value="This Section describes the expected capabilities of the CARIN-BB Server actor which is responsible for providing responses to the queries submitted by the CARIN-BB Requestors. "/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
