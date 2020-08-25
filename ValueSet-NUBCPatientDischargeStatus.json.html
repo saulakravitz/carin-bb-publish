@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="1741474a-35cc-4d4a-b1e0-85362193ef4a">​</a>
+      <li><a name="68082011-46b7-4ff0-9c99-1371c2d7594f">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="a354f593-0893-424b-88b3-fe4b813e6dc5">​</a>
+      <li><a name="8b7d67b4-62e3-4052-b165-f60e62d425ea">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="f0812054-3bc2-4735-b249-4ff105d81079">​</a>
+      <li><a name="1d6337af-e16e-4ae7-a6cd-6053f2ffe1fc">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="0c8afc1a-6956-4034-b0cc-134c12866ba1">​</a>
+      <li><a name="73d9dd56-6234-4479-99bd-48359e5f1371">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -139,7 +139,7 @@
         <a href="search.html">Search Parameters</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Terminology</a>
+        <a href="Terminology.html">Terminology</a>
       </li>
       <li>
         <a href="CapabilityStatement-carin-bb.html">Capability Statement</a>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="25f71eab-d9b0-4096-98d5-a3ad2384fef0">​</a>
+      <li><a name="439d50a8-a2b3-418d-80d9-0ee519ff99a6">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -245,14 +245,14 @@
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "NUBCPatientDischargeStatus",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul/&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;code&gt;https://www.nubc.org/patient-discharge&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCPatientDischargeStatus",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.4.1",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "NUBCPatientDischargeStatus",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "NUBC Patient Discharge Status",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-08-25T15:41:34+00:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-08-25T20:58:20+00:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "HL7 Financial Management Working Group",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -279,7 +279,14 @@
         }
       ]
     }
-  ]
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://www.nubc.org/patient-discharge"
+      }
+    ]
+  }
 }</pre>
 
 
@@ -308,7 +315,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 25, 2020 15:41+0000">2020-08-25</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 25, 2020 20:58+0000">2020-08-25</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

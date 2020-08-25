@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="6e375bf8-8a22-41f6-96ac-4e62049a4333">​</a>
+      <li><a name="af134d9a-9f09-4176-b5e7-219309d8558c">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="0bf5d833-c58d-4c63-99c7-68f38366710c">​</a>
+      <li><a name="30843db6-ceaa-4bdf-9004-5221259219a8">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="1459b80d-1dcc-4064-b33a-8471601ef1f5">​</a>
+      <li><a name="1264149a-2382-4f4a-9478-6d49c441999c">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="5fc4cc3c-54ca-4597-8ffc-5f4cbf427c39">​</a>
+      <li><a name="7e5b7eb2-4741-436a-89c9-8b799b9907c5">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -139,7 +139,7 @@
         <a href="search.html">Search Parameters</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Terminology</a>
+        <a href="Terminology.html">Terminology</a>
       </li>
       <li>
         <a href="CapabilityStatement-carin-bb.html">Capability Statement</a>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="02e7fc3b-e881-4769-86ca-003eebe10228">​</a>
+      <li><a name="8563e9d1-eb3c-4069-b45d-663aac0a461e">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -245,14 +245,14 @@
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "CMSDRG",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul/&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;code&gt;http://www.cms.gov/ms-drg&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSDRG",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.4.1",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "CMSDRG",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "CMS-DRG",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-08-25T15:41:34+00:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-08-25T20:58:20+00:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "HL7 Financial Management Working Group",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -279,7 +279,14 @@
         }
       ]
     }
-  ]
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://www.cms.gov/ms-drg"
+      }
+    ]
+  }
 }</pre>
 
 
@@ -308,7 +315,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 25, 2020 15:41+0000">2020-08-25</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 25, 2020 20:58+0000">2020-08-25</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

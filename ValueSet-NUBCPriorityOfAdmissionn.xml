@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="NUBCPriorityOfAdmissionn"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul/></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>https://www.nubc.org/priority-type-of-admission-or-visit</code></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCPriorityOfAdmissionn"/>
   <version value="0.4.1"/>
   <name value="NUBCPriorityOfAdmissionn"/>
   <title value="NUBC Priority of Admission"/>
   <status value="active"/>
-  <date value="2020-08-25T15:41:34+00:00"/>
+  <date value="2020-08-25T20:58:20+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -30,4 +30,9 @@
       <code value="US"/>
     </coding>
   </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.nubc.org/priority-type-of-admission-or-visit"/>
+    </include>
+  </compose>
 </ValueSet>

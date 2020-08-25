@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="b4fae441-fdde-42a6-b5ad-70af2ebe409e">​</a>
+      <li><a name="02db3590-d7c5-4135-9f99-ec51ead54c2e">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="a32bbceb-4472-4a44-ab4e-1327588573f6">​</a>
+      <li><a name="6a29ee2f-5b4e-4818-94ed-212210dc1b31">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="82532d3a-8721-4ea5-a46d-4b664ab1febb">​</a>
+      <li><a name="7bf79b63-f340-4501-8160-cea6fb18198c">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="3d46c53b-edbc-422b-a556-b30bb86ac4b7">​</a>
+      <li><a name="ee833f75-2154-445f-900f-c1ad8df5d1e4">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -139,7 +139,7 @@
         <a href="search.html">Search Parameters</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Terminology</a>
+        <a href="Terminology.html">Terminology</a>
       </li>
       <li>
         <a href="CapabilityStatement-carin-bb.html">Capability Statement</a>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="cfa41aac-6b87-4255-a264-85cca584906b">​</a>
+      <li><a name="52839617-5c2a-41e6-b857-a96b97ecf125">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -245,14 +245,14 @@
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "CMSPlaceOfService",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul/&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;code&gt;http://www.cms.gov/place-of-service&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSPlaceOfService",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.4.1",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "CMSPlaceOfService",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "CMS Place of Service",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-08-25T15:41:34+00:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-08-25T20:58:20+00:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "HL7 Financial Management Working Group",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -269,7 +269,7 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .  The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.   The code set is owned by CMS and is available for use.",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "CMS Place of Service",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
@@ -279,7 +279,14 @@
         }
       ]
     }
-  ]
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://www.cms.gov/place-of-service"
+      }
+    ]
+  }
 }</pre>
 
 
@@ -308,7 +315,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 25, 2020 15:41+0000">2020-08-25</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 25, 2020 20:58+0000">2020-08-25</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

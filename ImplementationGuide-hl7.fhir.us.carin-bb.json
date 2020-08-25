@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-08-25T15:41:34+00:00",
+  "date": "2020-08-25T20:58:20+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -667,7 +667,7 @@
           "reference": "ValueSet/CMSPlaceOfService"
         },
         "name": "CMS Place of Service",
-        "description": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .  The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.   The code set is owned by CMS and is available for use.",
+        "description": "CMS Place of Service",
         "exampleBoolean": false
       },
       {
@@ -685,7 +685,7 @@
           "reference": "ValueSet/ClaimAdjudicationCategory"
         },
         "name": "Claim Adjudication Category",
-        "description": "Values for EOB.item.adjudication.category, as per Igor",
+        "description": "Values for EOB.item.adjudication.category",
         "exampleBoolean": false
       },
       {
@@ -775,7 +775,7 @@
           "reference": "ValueSet/ICD10CM"
         },
         "name": "ICD-10-CM Diagnosis Codes",
-        "description": "ICD-10-CM Diagnosis Codes.  ***We need ALL Codes, inactive and inactive.   Current binding is to active codes only***",
+        "description": "ICD-10-CM Diagnosis Codes.",
         "exampleBoolean": false
       },
       {
@@ -811,7 +811,7 @@
           "reference": "ValueSet/NCPDPBrandGenericCode"
         },
         "name": "NCPDP Brand Generic Code",
-        "description": "http://www.ncpdp.org/brand-generic-code",
+        "description": "National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode.",
         "exampleBoolean": false
       },
       {
@@ -829,7 +829,7 @@
           "reference": "ValueSet/NCPDPDispensedAsWritten"
         },
         "name": "NCPDP Dispensed As Written (DAW)",
-        "description": "http://www.ncpdp.org/dispensed-as-written-or-product-selection-code",
+        "description": "NCPDP field # 408-D8 (Dispensed As Written (DAW) / Product Selection Code) ",
         "exampleBoolean": false
       },
       {
@@ -847,7 +847,7 @@
           "reference": "ValueSet/NCPDPPrescriptionOriginCode"
         },
         "name": "NCPDP Prescription Origin Code",
-        "description": "http://www.ncpdp.org/prescription-origin-code",
+        "description": "National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code).",
         "exampleBoolean": false
       },
       {
@@ -865,7 +865,7 @@
           "reference": "ValueSet/NCPDPRejectCode"
         },
         "name": "NCPDP Reject Code",
-        "description": "http://www.ncpdp.org/reject-code",
+        "description": "This value set contains the error codes to be used by real-time pharmacy benefit check servers when encountering a data or business condition that prevents processing from completing. \nValues are defined in the NCPDP-maintained Reject Code (511-FB) code set.",
         "exampleBoolean": false
       },
       {
@@ -884,6 +884,24 @@
         },
         "name": "NUBC Patient Discharge Status",
         "description": "NUBC Patient Discharge Status",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-NUBCPointOfOriginForAdmissionOrVisit.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/NUBCPointOfOriginForAdmissionOrVisit"
+        },
+        "name": "NUBC Point Of Origin For Admission Or Visit",
+        "description": "NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
         "exampleBoolean": false
       },
       {
@@ -920,6 +938,42 @@
         },
         "name": "NUBC Priority of Admission",
         "description": "NUBC Priority of Admission",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-NUBCRevenueCode.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/NUBCRevenueCode"
+        },
+        "name": "NUBC Revenue Codes.",
+        "description": "NUBC Revenue codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-NUBCTypeOfBill.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/NUBCTypeOfBill"
+        },
+        "name": "NUBC Type of Bill",
+        "description": "NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
         "exampleBoolean": false
       },
       {
@@ -1080,7 +1134,7 @@
         "reference": {
           "reference": "ValueSet/X12CARCCMSRARC"
         },
-        "name": "Adjudication Denial Reason from X12 CARC and CMS RARC",
+        "name": "Adjudication Denial Reason from X12 CARC and CMS RARC (* NO CodeSystem*)",
         "description": "Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC",
         "exampleBoolean": false
       },
@@ -1164,6 +1218,78 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-NCPDPBrandGenericCodeCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/NCPDPBrandGenericCodeCS"
+        },
+        "name": "NCPDP Brand Generic Code",
+        "description": "National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-NCPDPCompoundCodeCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/NCPDPCompoundCodeCS"
+        },
+        "name": "NCPDP Compound Code",
+        "description": "National Council for Prescription Drug Programs, (NCPDP) field # 406-D6 (Compound Code).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-NCPDPDispensedAsWrittenCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/NCPDPDispensedAsWrittenCS"
+        },
+        "name": "NCPDP Dispensed As Written (DAW)",
+        "description": "National Council for Prescription Drug Programs, (NCPDP) field # 408-D8 (Dispensed As Written (DAW) / Product Selection Code) ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-NCPDPPrescriptionOriginCodeCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/NCPDPPrescriptionOriginCodeCS"
+        },
+        "name": "NCPDP Prescription Origin Code",
+        "description": "National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-NCPDPRejectCodeCS.html"
           }
         ],
@@ -1171,7 +1297,61 @@
           "reference": "CodeSystem/NCPDPRejectCodeCS"
         },
         "name": "NCPDP Reject Code",
-        "description": "The NCPDP Reject Code (511-FB) code set contains exception definitions for use when transaction processing cannot be completed.",
+        "description": "The National Council for Prescription Drug Programs, (NCPDP) Reject Code (511-FB) code set contains exception definitions for use when transaction processing cannot be completed.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-NUBCPointOfOriginForAdmissionOrVisitCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/NUBCPointOfOriginForAdmissionOrVisitCS"
+        },
+        "name": "NUBC Point Of Origin For Admission Or Visit",
+        "description": "NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-NUBCRevenueCodeCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/NUBCRevenueCodeCS"
+        },
+        "name": "NCPDP Compound Code",
+        "description": "These codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-NUBCTypeOfBillCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/NUBCTypeOfBillCS"
+        },
+        "name": "NUBC Type of Bill",
+        "description": "NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
         "exampleBoolean": false
       },
       {

@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "CMSDRG"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://www.cms.gov/ms-drg</code></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSDRG"];
   fhir:ValueSet.version [ fhir:value "0.4.1"];
   fhir:ValueSet.name [ fhir:value "CMSDRG"];
   fhir:ValueSet.title [ fhir:value "CMS-DRG"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-08-25T15:41:34+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-08-25T20:58:20+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -39,6 +39,12 @@
        fhir:index 0;
        fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
        fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://www.cms.gov/ms-drg" ]
      ]
   ] .
 

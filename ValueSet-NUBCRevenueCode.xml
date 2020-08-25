@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="NUBCRevenueCode"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-NUBCRevenueCodeCS.html"><code>https://www.nubc.org/revenue-code</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCRevenueCode"/>
+  <version value="0.4.1"/>
+  <name value="NUBCRevenueCode"/>
+  <title value="NUBC Revenue Codes."/>
+  <status value="active"/>
+  <date value="2020-08-25T20:58:20+00:00"/>
+  <publisher value="HL7 Financial Management Working Group"/>
+  <contact>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="NUBC Revenue codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.nubc.org/revenue-code"/>
+    </include>
+  </compose>
+</ValueSet>

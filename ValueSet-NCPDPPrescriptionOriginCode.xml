@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="NCPDPPrescriptionOriginCode"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul/></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-NCPDPPrescriptionOriginCodeCS.html"><code>http://www.ncpdp.org/prescription-origin-code</code></a></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
   <version value="0.4.1"/>
   <name value="NCPDPPrescriptionOriginCode"/>
   <title value="NCPDP Prescription Origin Code"/>
   <status value="active"/>
-  <date value="2020-08-25T15:41:34+00:00"/>
+  <date value="2020-08-25T20:58:20+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -23,11 +23,16 @@
       <value value="fm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="http://www.ncpdp.org/prescription-origin-code"/>
+  <description value="National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code)."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="US"/>
     </coding>
   </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://www.ncpdp.org/prescription-origin-code"/>
+    </include>
+  </compose>
 </ValueSet>

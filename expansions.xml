@@ -1,11 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="941b107f-97c2-438b-90bd-8255c30aeeb4"/>
+  <id value="da6d5a1c-e368-4cdc-933d-b6e9bdcd9409"/>
   <meta>
-    <lastUpdated value="2020-08-25T15:41:34.330+00:00"/>
+    <lastUpdated value="2020-08-25T20:58:20.289+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCTypeOfBill"/>
+    <resource>
+      <ValueSet>
+        <id value="NUBCTypeOfBill"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCTypeOfBill"/>
+        <version value="0.4.1"/>
+        <name value="NUBCTypeOfBill"/>
+        <title value="NUBC Type of Bill"/>
+        <status value="active"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
+        <publisher value="HL7 Financial Management Working Group"/>
+        <contact>
+          <name value="HL7 Financial Management Working Group"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="fm@lists.HL7.org"/>
+          </telecom>
+        </contact>
+        <description value="NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)."/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d393b1f2-6e43-46d7-912a-15b0c86b518f"/>
+          <timestamp value="2020-08-25T20:59:09+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimPaymentStatusCode"/>
     <resource>
@@ -59,7 +123,7 @@
         <name value="ClaimPaymentStatusCode"/>
         <title value="Claim Payment Status Code"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -80,8 +144,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e4c2def0-6030-43a3-abe7-787df008ab12"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
+          <identifier value="urn:uuid:ef67e45d-a923-49a0-8c7b-d1cf3afc16e6"/>
+          <timestamp value="2020-08-25T20:59:10+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -310,7 +374,7 @@
         <name value="ClaimInformationCategory"/>
         <title value="Claim Information Category"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -331,8 +395,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:75115515-0865-4041-9c61-fb075dcc8695"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
+          <identifier value="urn:uuid:b6c51061-6aa9-4b6b-899d-e963935650ec"/>
+          <timestamp value="2020-08-25T20:59:10+00:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -480,7 +544,7 @@
         <name value="NCPDPPrescriptionOriginCode"/>
         <title value="NCPDP Prescription Origin Code"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -493,7 +557,7 @@
             <value value="fm@lists.HL7.org"/>
           </telecom>
         </contact>
-        <description value="http://www.ncpdp.org/prescription-origin-code"/>
+        <description value="National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code)."/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -501,71 +565,15 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
+          <identifier value="urn:uuid:34a1951d-c225-41aa-879b-2fd4a4d3bb35"/>
+          <timestamp value="2020-08-25T20:59:10+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
-    <resource>
-      <ValueSet>
-        <id value="NCPDPPrescriptionOriginCode"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
-        <version value="0.4.1"/>
-        <name value="NCPDPPrescriptionOriginCode"/>
-        <title value="NCPDP Prescription Origin Code"/>
-        <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
-        <publisher value="HL7 Financial Management Working Group"/>
-        <contact>
-          <name value="HL7 Financial Management Working Group"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="fm@lists.HL7.org"/>
-          </telecom>
-        </contact>
-        <description value="http://www.ncpdp.org/prescription-origin-code"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
           <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
           </parameter>
         </expansion>
       </ValueSet>
@@ -740,7 +748,7 @@
         <name value="AdjudicationCarinBBValueCodes"/>
         <title value="Adjudication CARINBB Value Codes"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -761,8 +769,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8796ea35-64be-4c56-930a-c0f4a1be7b51"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
+          <identifier value="urn:uuid:d0baa632-d83e-4774-9d8c-0f819a87e735"/>
+          <timestamp value="2020-08-25T20:59:10+00:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -911,7 +919,7 @@
         <name value="BenefitPaymentStatus"/>
         <title value="Benefit Payment Status"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -932,8 +940,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b2720860-6ddd-40f0-838d-038cd498730a"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
+          <identifier value="urn:uuid:38c4adb7-0da9-4b5c-b0c6-4ba235b91a01"/>
+          <timestamp value="2020-08-25T20:59:10+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -958,66 +966,6 @@
             <code value="other"/>
             <display value="other"/>
           </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
-    <resource>
-      <ValueSet>
-        <id value="NCPDPPrescriptionOriginCode"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
-        <version value="0.4.1"/>
-        <name value="NCPDPPrescriptionOriginCode"/>
-        <title value="NCPDP Prescription Origin Code"/>
-        <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
-        <publisher value="HL7 Financial Management Working Group"/>
-        <contact>
-          <name value="HL7 Financial Management Working Group"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="fm@lists.HL7.org"/>
-          </telecom>
-        </contact>
-        <description value="http://www.ncpdp.org/prescription-origin-code"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
         </expansion>
       </ValueSet>
     </resource>
@@ -1099,7 +1047,7 @@
         <name value="PayerOutpatientinstitutionaldiagnosistype"/>
         <title value="Diagnosis Type -- Outpatient Facility"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1120,8 +1068,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:16c2c63f-2d32-41e2-a234-2dc2fdc7b535"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
+          <identifier value="urn:uuid:64f10365-717d-472d-82b9-9a5b51695f37"/>
+          <timestamp value="2020-08-25T20:59:11+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1213,7 +1161,7 @@
         <name value="PayerProviderContractingStatus"/>
         <title value="Provider Provider Contracting Status"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1234,8 +1182,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:58a716ce-2462-463e-b892-f73f9b60a634"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
+          <identifier value="urn:uuid:ee705187-ab62-4ee3-8fa6-8b6e4c93de33"/>
+          <timestamp value="2020-08-25T20:59:11+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1320,7 +1268,7 @@
         <name value="PayerProfessionalandnoncliniciandiagnosistype"/>
         <title value="Diagnosis Type -- Professional and Non-Clinician"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1341,8 +1289,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1237cbd4-a800-45aa-ab0f-3e70b3e63a58"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
+          <identifier value="urn:uuid:8b8c8a19-2c3b-4e71-8320-623b0407d601"/>
+          <timestamp value="2020-08-25T20:59:11+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1477,7 +1425,7 @@
         <name value="CARINBBInstitutionalClaimCareTeamRoleCodes"/>
         <title value="CARINBB Institutional Claim Care Team Roles"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1498,8 +1446,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3c3e8509-8ca4-4dd8-bdaf-b7afdb65ff91"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
+          <identifier value="urn:uuid:ce8bbfc1-14c6-4626-aa8f-4791f1172580"/>
+          <timestamp value="2020-08-25T20:59:11+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1661,7 +1609,7 @@
         <name value="PayerAdjudicationAmountCategory"/>
         <title value="Payer Adjudication Amount Category"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1682,8 +1630,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d7c581d9-6c2a-405f-b0cb-d243cee754e0"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
+          <identifier value="urn:uuid:607c8f43-071e-487b-a762-12f84ffca12c"/>
+          <timestamp value="2020-08-25T20:59:11+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1743,10 +1691,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
+    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPDispensedAsWritten"/>
     <resource>
       <ValueSet>
-        <id value="NCPDPPrescriptionOriginCode"/>
+        <id value="NCPDPDispensedAsWritten"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1766,12 +1714,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
+        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPDispensedAsWritten"/>
         <version value="0.4.1"/>
-        <name value="NCPDPPrescriptionOriginCode"/>
-        <title value="NCPDP Prescription Origin Code"/>
+        <name value="NCPDPDispensedAsWritten"/>
+        <title value="NCPDP Dispensed As Written (DAW)"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1784,7 +1732,7 @@
             <value value="fm@lists.HL7.org"/>
           </telecom>
         </contact>
-        <description value="http://www.ncpdp.org/prescription-origin-code"/>
+        <description value="NCPDP field # 408-D8 (Dispensed As Written (DAW) / Product Selection Code) "/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1792,11 +1740,15 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
+          <identifier value="urn:uuid:d225e630-a319-47c1-b595-3f0f88c07037"/>
+          <timestamp value="2020-08-25T20:59:11+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
           </parameter>
         </expansion>
       </ValueSet>
@@ -2130,7 +2082,7 @@
         <name value="ICD10CM"/>
         <title value="ICD-10-CM Diagnosis Codes"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2143,7 +2095,7 @@
             <value value="fm@lists.HL7.org"/>
           </telecom>
         </contact>
-        <description value="ICD-10-CM Diagnosis Codes.  ***We need ALL Codes, inactive and inactive.   Current binding is to active codes only***"/>
+        <description value="ICD-10-CM Diagnosis Codes."/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2151,8 +2103,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dd55a173-7d65-432d-8353-727bda430cbb"/>
-          <timestamp value="2020-08-25T15:42:25+00:00"/>
+          <identifier value="urn:uuid:488c2951-223d-4cbc-9655-0bc5a728e333"/>
+          <timestamp value="2020-08-25T20:59:11+00:00"/>
           <total value="42"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2453,7 +2405,7 @@
         <name value="PayerInpatientinstitutionaldiagnosistype"/>
         <title value="Diagnosis Type -- Inpatient Facility"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2474,8 +2426,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dcf122e0-349f-43be-b6d4-20ec80f94f7f"/>
-          <timestamp value="2020-08-25T15:42:25+00:00"/>
+          <identifier value="urn:uuid:d81d76b9-5a4d-4071-905e-3aab42c30f0d"/>
+          <timestamp value="2020-08-25T20:59:11+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2574,7 +2526,7 @@
         <name value="AdjudicationValueCodes"/>
         <title value="Benefit Payment Status Category"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2595,8 +2547,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a75fb405-c3c4-4319-8a4e-665dd16d4dc0"/>
-          <timestamp value="2020-08-25T15:42:25+00:00"/>
+          <identifier value="urn:uuid:43fa3ddb-5e58-44f4-b36f-4e90370d8dda"/>
+          <timestamp value="2020-08-25T20:59:11+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2634,18 +2586,24 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-IdentifierTypeCS.html">Identifier Type v0.4.1 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-IdentifierTypeCS.html">
-                <code>http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS</code>
-              </a>
-            </p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-IdentifierTypeCS.html">Identifier Type v0.4.1 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v2-0203.html">identifierType v2.9.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -2659,6 +2617,7 @@
                   <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-um"> </a>
                   <a href="CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-um">um</a>
                 </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS</td>
                 <td>Unique Member ID</td>
                 <td>Unique Member ID</td>
               </tr>
@@ -2667,24 +2626,27 @@
                   <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-mb"> </a>
                   <a href="CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-mb">mb</a>
                 </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS</td>
                 <td>Member ID</td>
                 <td>Member ID</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-mr"> </a>
-                  <a href="CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-mr">mr</a>
-                </td>
-                <td/>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-pt"> </a>
                   <a href="CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-pt">pt</a>
                 </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS</td>
                 <td>Patient Account Number</td>
                 <td>Patient Account Number</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v2-0203-MR"> </a>
+                  <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v2-0203.html#v2-0203-MR">MR</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0203</td>
+                <td>Medical record number</td>
+                <td>An identifier that is unique to a patient within a set of medical records, not necessarily unique within an application.</td>
               </tr>
             </table>
           </div>
@@ -2694,7 +2656,7 @@
         <name value="PatientIdentifierType"/>
         <title value="Patient Identifier Type"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2715,8 +2677,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9281ca2e-dbd7-46d7-b7cf-04952d5969a6"/>
-          <timestamp value="2020-08-25T15:42:25+00:00"/>
+          <identifier value="urn:uuid:433b0a36-00a7-4b04-8a0d-3ef5748aec07"/>
+          <timestamp value="2020-08-25T20:59:11+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2725,6 +2687,10 @@
           <parameter>
             <name value="version"/>
             <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS|0.4.1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v2-0203|2.9.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS"/>
@@ -2738,22 +2704,23 @@
           </contains>
           <contains>
             <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS"/>
-            <code value="mr"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS"/>
             <code value="pt"/>
             <display value="Patient Account Number"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+            <code value="MR"/>
+            <display value="Medical record number"/>
           </contains>
         </expansion>
       </ValueSet>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
+    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPBrandGenericCode"/>
     <resource>
       <ValueSet>
-        <id value="NCPDPPrescriptionOriginCode"/>
+        <id value="NCPDPBrandGenericCode"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -2773,12 +2740,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
+        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPBrandGenericCode"/>
         <version value="0.4.1"/>
-        <name value="NCPDPPrescriptionOriginCode"/>
-        <title value="NCPDP Prescription Origin Code"/>
+        <name value="NCPDPBrandGenericCode"/>
+        <title value="NCPDP Brand Generic Code"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2791,7 +2758,7 @@
             <value value="fm@lists.HL7.org"/>
           </telecom>
         </contact>
-        <description value="http://www.ncpdp.org/prescription-origin-code"/>
+        <description value="National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode."/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2799,11 +2766,15 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
+          <identifier value="urn:uuid:9ea93496-b16c-47d8-9082-f74ce9e841e5"/>
+          <timestamp value="2020-08-25T20:59:11+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
           </parameter>
         </expansion>
       </ValueSet>
@@ -2838,7 +2809,7 @@
         <name value="NCPDPRejectCode"/>
         <title value="NCPDP Reject Code"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2851,7 +2822,7 @@
             <value value="fm@lists.HL7.org"/>
           </telecom>
         </contact>
-        <description value="http://www.ncpdp.org/reject-code"/>
+        <description value="This value set contains the error codes to be used by real-time pharmacy benefit check servers when encountering a data or business condition that prevents processing from completing. &#xA;Values are defined in the NCPDP-maintained Reject Code (511-FB) code set."/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2859,8 +2830,72 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:52ed5fca-1761-4c05-a5f7-f41417b95ee4"/>
-          <timestamp value="2020-08-25T15:42:25+00:00"/>
+          <identifier value="urn:uuid:13dbb978-1056-41cf-8228-09593c56e28d"/>
+          <timestamp value="2020-08-25T20:59:11+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCPointOfOriginForAdmissionOrVisit"/>
+    <resource>
+      <ValueSet>
+        <id value="NUBCPointOfOriginForAdmissionOrVisit"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCPointOfOriginForAdmissionOrVisit"/>
+        <version value="0.4.1"/>
+        <name value="NUBCPointOfOriginForAdmissionOrVisit"/>
+        <title value="NUBC Point Of Origin For Admission Or Visit"/>
+        <status value="active"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
+        <publisher value="HL7 Financial Management Working Group"/>
+        <contact>
+          <name value="HL7 Financial Management Working Group"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="fm@lists.HL7.org"/>
+          </telecom>
+        </contact>
+        <description value="NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)."/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c5d32bbb-00d3-41bc-a216-09db4c164c90"/>
+          <timestamp value="2020-08-25T20:59:11+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2943,7 +2978,7 @@
         <name value="CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes"/>
         <title value="CARINBB Professional and Non-Clinician CareTeam Roles"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2964,8 +2999,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dedc655d-8072-408b-a139-7bec310a83d3"/>
-          <timestamp value="2020-08-25T15:42:25+00:00"/>
+          <identifier value="urn:uuid:122ab7c8-c408-4e24-9f9e-5af42d4d7a40"/>
+          <timestamp value="2020-08-25T20:59:12+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2994,66 +3029,6 @@
             <code value="referring"/>
             <display value="Referring Provider"/>
           </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
-    <resource>
-      <ValueSet>
-        <id value="NCPDPPrescriptionOriginCode"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
-        <version value="0.4.1"/>
-        <name value="NCPDPPrescriptionOriginCode"/>
-        <title value="NCPDP Prescription Origin Code"/>
-        <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
-        <publisher value="HL7 Financial Management Working Group"/>
-        <contact>
-          <name value="HL7 Financial Management Working Group"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="fm@lists.HL7.org"/>
-          </telecom>
-        </contact>
-        <description value="http://www.ncpdp.org/prescription-origin-code"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
         </expansion>
       </ValueSet>
     </resource>
@@ -3119,7 +3094,7 @@
         <name value="CARINBBPharmacyClaimCareTeamRoleCodes"/>
         <title value="CARINBB Pharmacy CareTeam Roles"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -3140,8 +3115,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:76ac5ce2-a221-414b-908e-e320eb530998"/>
-          <timestamp value="2020-08-25T15:42:25+00:00"/>
+          <identifier value="urn:uuid:8839a829-309d-4217-afe4-1e57f8d1a41c"/>
+          <timestamp value="2020-08-25T20:59:12+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -8467,7 +8442,7 @@
         <name value="NUCCHealthcareProviderTaxonomy"/>
         <title value="NUCC Healthcare Provider Taxonomy"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -8488,8 +8463,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:105974f4-976a-464b-a945-ede6e8fe3342"/>
-          <timestamp value="2020-08-25T15:42:25+00:00"/>
+          <identifier value="urn:uuid:9eafd1c0-08ad-465b-be57-2725836d2ccf"/>
+          <timestamp value="2020-08-25T20:59:12+00:00"/>
           <total value="878"/>
           <parameter>
             <name value="excludeNested"/>
@@ -12894,6 +12869,70 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCRevenueCode"/>
+    <resource>
+      <ValueSet>
+        <id value="NUBCRevenueCode"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCRevenueCode"/>
+        <version value="0.4.1"/>
+        <name value="NUBCRevenueCode"/>
+        <title value="NUBC Revenue Codes."/>
+        <status value="active"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
+        <publisher value="HL7 Financial Management Working Group"/>
+        <contact>
+          <name value="HL7 Financial Management Working Group"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="fm@lists.HL7.org"/>
+          </telecom>
+        </contact>
+        <description value="NUBC Revenue codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:9c544d87-f147-487b-bae7-048300e20a13"/>
+          <timestamp value="2020-08-25T20:59:12+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimAdjudicationCategory"/>
     <resource>
       <ValueSet>
@@ -13116,7 +13155,7 @@
         <name value="ClaimAdjudicationCategory"/>
         <title value="Claim Adjudication Category"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -13129,7 +13168,7 @@
             <value value="fm@lists.HL7.org"/>
           </telecom>
         </contact>
-        <description value="Values for EOB.item.adjudication.category, as per Igor"/>
+        <description value="Values for EOB.item.adjudication.category"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -13137,8 +13176,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9a77bc73-5522-4304-b4eb-25d68e4f97a1"/>
-          <timestamp value="2020-08-25T15:42:26+00:00"/>
+          <identifier value="urn:uuid:8fed236e-b52e-4279-b0f0-3382d49c6cb8"/>
+          <timestamp value="2020-08-25T20:59:13+00:00"/>
           <total value="19"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13264,66 +13303,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
-    <resource>
-      <ValueSet>
-        <id value="NCPDPPrescriptionOriginCode"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
-        <version value="0.4.1"/>
-        <name value="NCPDPPrescriptionOriginCode"/>
-        <title value="NCPDP Prescription Origin Code"/>
-        <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
-        <publisher value="HL7 Financial Management Working Group"/>
-        <contact>
-          <name value="HL7 Financial Management Working Group"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="fm@lists.HL7.org"/>
-          </telecom>
-        </contact>
-        <description value="http://www.ncpdp.org/prescription-origin-code"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/PayerDiagnosisPresentOnAdmissionDiagnosisType"/>
     <resource>
       <ValueSet>
@@ -13384,7 +13363,7 @@
         <name value="PayerDiagnosisPresentOnAdmissionDiagnosisType"/>
         <title value="Payer Diagnosis Present On Admission Diagnosis Type"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -13405,8 +13384,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fd06eb21-8912-425c-a78e-70350ab6fc8e"/>
-          <timestamp value="2020-08-25T15:42:26+00:00"/>
+          <identifier value="urn:uuid:8bf7e853-9c85-4c4e-9fc7-1a2f915178b2"/>
+          <timestamp value="2020-08-25T20:59:13+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13436,10 +13415,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
+    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/X12CARCCMSRARC"/>
     <resource>
       <ValueSet>
-        <id value="NCPDPPrescriptionOriginCode"/>
+        <id value="X12CARCCMSRARC"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -13459,12 +13438,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
+        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/X12CARCCMSRARC"/>
         <version value="0.4.1"/>
-        <name value="NCPDPPrescriptionOriginCode"/>
-        <title value="NCPDP Prescription Origin Code"/>
+        <name value="X12CARCCMSRARC"/>
+        <title value="Adjudication Denial Reason from X12 CARC and CMS RARC (* NO CodeSystem*)"/>
         <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
+        <date value="2020-08-25T20:58:20+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -13477,7 +13456,7 @@
             <value value="fm@lists.HL7.org"/>
           </telecom>
         </contact>
-        <description value="http://www.ncpdp.org/prescription-origin-code"/>
+        <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -13485,68 +13464,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
-    <resource>
-      <ValueSet>
-        <id value="NCPDPPrescriptionOriginCode"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode"/>
-        <version value="0.4.1"/>
-        <name value="NCPDPPrescriptionOriginCode"/>
-        <title value="NCPDP Prescription Origin Code"/>
-        <status value="active"/>
-        <date value="2020-08-25T15:41:34+00:00"/>
-        <publisher value="HL7 Financial Management Working Group"/>
-        <contact>
-          <name value="HL7 Financial Management Working Group"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="fm@lists.HL7.org"/>
-          </telecom>
-        </contact>
-        <description value="http://www.ncpdp.org/prescription-origin-code"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f"/>
-          <timestamp value="2020-08-25T15:42:24+00:00"/>
+          <identifier value="urn:uuid:ed1e798e-3a2f-4ca0-b809-fe4c29da9151"/>
+          <timestamp value="2020-08-25T20:59:13+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>

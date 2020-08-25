@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="FDANDCNCPDPCompoundCode"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul/></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-ndc.html"><code>http://hl7.org/fhir/sid/ndc</code></a></li><li>Include all codes defined in <a href="CodeSystem-NCPDPCompoundCodeCS.html"><code>http://www.ncpdp.org/compound-code</code></a></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDCNCPDPCompoundCode"/>
   <version value="0.4.1"/>
   <name value="FDANDCNCPDPCompoundCode"/>
   <title value="FDA NDC NCPDP Compound Code"/>
   <status value="active"/>
-  <date value="2020-08-25T15:41:34+00:00"/>
+  <date value="2020-08-25T20:58:20+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -30,4 +30,12 @@
       <code value="US"/>
     </coding>
   </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/ndc"/>
+    </include>
+    <include>
+      <system value="http://www.ncpdp.org/compound-code"/>
+    </include>
+  </compose>
 </ValueSet>

@@ -1,11 +1,59 @@
 {
   "resourceType" : "Bundle",
-  "id" : "941b107f-97c2-438b-90bd-8255c30aeeb4",
+  "id" : "da6d5a1c-e368-4cdc-933d-b6e9bdcd9409",
   "meta" : {
-    "lastUpdated" : "2020-08-25T15:41:34.330+00:00"
+    "lastUpdated" : "2020-08-25T20:58:20.289+00:00"
   },
   "type" : "collection",
   "entry" : [{
+    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCTypeOfBill",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "NUBCTypeOfBill",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCTypeOfBill",
+      "version" : "0.4.1",
+      "name" : "NUBCTypeOfBill",
+      "title" : "NUBC Type of Bill",
+      "status" : "active",
+      "date" : "2020-08-25T20:58:20+00:00",
+      "publisher" : "HL7 Financial Management Working Group",
+      "contact" : [{
+        "name" : "HL7 Financial Management Working Group",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
+          "system" : "email",
+          "value" : "fm@lists.HL7.org"
+        }]
+      }],
+      "description" : "NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:d393b1f2-6e43-46d7-912a-15b0c86b518f",
+        "timestamp" : "2020-08-25T20:59:09+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimPaymentStatusCode",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -19,7 +67,7 @@
       "name" : "ClaimPaymentStatusCode",
       "title" : "Claim Payment Status Code",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -40,8 +88,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e4c2def0-6030-43a3-abe7-787df008ab12",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
+        "identifier" : "urn:uuid:ef67e45d-a923-49a0-8c7b-d1cf3afc16e6",
+        "timestamp" : "2020-08-25T20:59:10+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -78,7 +126,7 @@
       "name" : "ClaimInformationCategory",
       "title" : "Claim Information Category",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -99,8 +147,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:75115515-0865-4041-9c61-fb075dcc8695",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
+        "identifier" : "urn:uuid:b6c51061-6aa9-4b6b-899d-e963935650ec",
+        "timestamp" : "2020-08-25T20:59:10+00:00",
         "total" : 21,
         "parameter" : [{
           "name" : "excludeNested",
@@ -232,7 +280,7 @@
       "name" : "NCPDPPrescriptionOriginCode",
       "title" : "NCPDP Prescription Origin Code",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -245,7 +293,7 @@
           "value" : "fm@lists.HL7.org"
         }]
       }],
-      "description" : "http://www.ncpdp.org/prescription-origin-code",
+      "description" : "National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code).",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -253,55 +301,15 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
+        "identifier" : "urn:uuid:34a1951d-c225-41aa-879b-2fd4a4d3bb35",
+        "timestamp" : "2020-08-25T20:59:10+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "NCPDPPrescriptionOriginCode",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
-      "version" : "0.4.1",
-      "name" : "NCPDPPrescriptionOriginCode",
-      "title" : "NCPDP Prescription Origin Code",
-      "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
-      "publisher" : "HL7 Financial Management Working Group",
-      "contact" : [{
-        "name" : "HL7 Financial Management Working Group",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://www.hl7.org/Special/committees/fm/index.cfm"
         },
         {
-          "system" : "email",
-          "value" : "fm@lists.HL7.org"
-        }]
-      }],
-      "description" : "http://www.ncpdp.org/prescription-origin-code",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
         }]
       }
     }
@@ -320,7 +328,7 @@
       "name" : "AdjudicationCarinBBValueCodes",
       "title" : "Adjudication CARINBB Value Codes",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -341,8 +349,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8796ea35-64be-4c56-930a-c0f4a1be7b51",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
+        "identifier" : "urn:uuid:d0baa632-d83e-4774-9d8c-0f819a87e735",
+        "timestamp" : "2020-08-25T20:59:10+00:00",
         "total" : 14,
         "parameter" : [{
           "name" : "excludeNested",
@@ -443,7 +451,7 @@
       "name" : "BenefitPaymentStatus",
       "title" : "Benefit Payment Status",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -464,8 +472,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b2720860-6ddd-40f0-838d-038cd498730a",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
+        "identifier" : "urn:uuid:38c4adb7-0da9-4b5c-b0c6-4ba235b91a01",
+        "timestamp" : "2020-08-25T20:59:10+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -494,50 +502,6 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "NCPDPPrescriptionOriginCode",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
-      "version" : "0.4.1",
-      "name" : "NCPDPPrescriptionOriginCode",
-      "title" : "NCPDP Prescription Origin Code",
-      "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
-      "publisher" : "HL7 Financial Management Working Group",
-      "contact" : [{
-        "name" : "HL7 Financial Management Working Group",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://www.hl7.org/Special/committees/fm/index.cfm"
-        },
-        {
-          "system" : "email",
-          "value" : "fm@lists.HL7.org"
-        }]
-      }],
-      "description" : "http://www.ncpdp.org/prescription-origin-code",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerOutpatientinstitutionaldiagnosistype",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -551,7 +515,7 @@
       "name" : "PayerOutpatientinstitutionaldiagnosistype",
       "title" : "Diagnosis Type -- Outpatient Facility",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -572,8 +536,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:16c2c63f-2d32-41e2-a234-2dc2fdc7b535",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
+        "identifier" : "urn:uuid:64f10365-717d-472d-82b9-9a5b51695f37",
+        "timestamp" : "2020-08-25T20:59:11+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -625,7 +589,7 @@
       "name" : "PayerProviderContractingStatus",
       "title" : "Provider Provider Contracting Status",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -646,8 +610,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:58a716ce-2462-463e-b892-f73f9b60a634",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
+        "identifier" : "urn:uuid:ee705187-ab62-4ee3-8fa6-8b6e4c93de33",
+        "timestamp" : "2020-08-25T20:59:11+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -684,7 +648,7 @@
       "name" : "PayerProfessionalandnoncliniciandiagnosistype",
       "title" : "Diagnosis Type -- Professional and Non-Clinician",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -705,8 +669,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1237cbd4-a800-45aa-ab0f-3e70b3e63a58",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
+        "identifier" : "urn:uuid:8b8c8a19-2c3b-4e71-8320-623b0407d601",
+        "timestamp" : "2020-08-25T20:59:11+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -748,7 +712,7 @@
       "name" : "CARINBBInstitutionalClaimCareTeamRoleCodes",
       "title" : "CARINBB Institutional Claim Care Team Roles",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -769,8 +733,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3c3e8509-8ca4-4dd8-bdaf-b7afdb65ff91",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
+        "identifier" : "urn:uuid:ce8bbfc1-14c6-4626-aa8f-4791f1172580",
+        "timestamp" : "2020-08-25T20:59:11+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -836,7 +800,7 @@
       "name" : "PayerAdjudicationAmountCategory",
       "title" : "Payer Adjudication Amount Category",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -857,8 +821,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d7c581d9-6c2a-405f-b0cb-d243cee754e0",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
+        "identifier" : "urn:uuid:607c8f43-071e-487b-a762-12f84ffca12c",
+        "timestamp" : "2020-08-25T20:59:11+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -917,20 +881,20 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
+    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPDispensedAsWritten",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "NCPDPPrescriptionOriginCode",
+      "id" : "NCPDPDispensedAsWritten",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
       },
-      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
+      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPDispensedAsWritten",
       "version" : "0.4.1",
-      "name" : "NCPDPPrescriptionOriginCode",
-      "title" : "NCPDP Prescription Origin Code",
+      "name" : "NCPDPDispensedAsWritten",
+      "title" : "NCPDP Dispensed As Written (DAW)",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -943,7 +907,7 @@
           "value" : "fm@lists.HL7.org"
         }]
       }],
-      "description" : "http://www.ncpdp.org/prescription-origin-code",
+      "description" : "NCPDP field # 408-D8 (Dispensed As Written (DAW) / Product Selection Code) ",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -951,11 +915,15 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
+        "identifier" : "urn:uuid:d225e630-a319-47c1-b595-3f0f88c07037",
+        "timestamp" : "2020-08-25T20:59:11+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
         }]
       }
     }
@@ -974,7 +942,7 @@
       "name" : "ICD10CM",
       "title" : "ICD-10-CM Diagnosis Codes",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -987,7 +955,7 @@
           "value" : "fm@lists.HL7.org"
         }]
       }],
-      "description" : "ICD-10-CM Diagnosis Codes.  ***We need ALL Codes, inactive and inactive.   Current binding is to active codes only***",
+      "description" : "ICD-10-CM Diagnosis Codes.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -995,8 +963,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dd55a173-7d65-432d-8353-727bda430cbb",
-        "timestamp" : "2020-08-25T15:42:25+00:00",
+        "identifier" : "urn:uuid:488c2951-223d-4cbc-9655-0bc5a728e333",
+        "timestamp" : "2020-08-25T20:59:11+00:00",
         "total" : 42,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1233,7 +1201,7 @@
       "name" : "PayerInpatientinstitutionaldiagnosistype",
       "title" : "Diagnosis Type -- Inpatient Facility",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1254,8 +1222,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dcf122e0-349f-43be-b6d4-20ec80f94f7f",
-        "timestamp" : "2020-08-25T15:42:25+00:00",
+        "identifier" : "urn:uuid:d81d76b9-5a4d-4071-905e-3aab42c30f0d",
+        "timestamp" : "2020-08-25T20:59:11+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1306,7 +1274,7 @@
       "name" : "AdjudicationValueCodes",
       "title" : "Benefit Payment Status Category",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1327,8 +1295,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a75fb405-c3c4-4319-8a4e-665dd16d4dc0",
-        "timestamp" : "2020-08-25T15:42:25+00:00",
+        "identifier" : "urn:uuid:43fa3ddb-5e58-44f4-b36f-4e90370d8dda",
+        "timestamp" : "2020-08-25T20:59:11+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1363,14 +1331,14 @@
       "id" : "PatientIdentifierType",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-IdentifierTypeCS.html\">Identifier Type v0.4.1 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-IdentifierTypeCS.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-um\"> </a><a href=\"CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-um\">um</a></td><td>Unique Member ID</td><td>Unique Member ID</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-mb\"> </a><a href=\"CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-mb\">mb</a></td><td>Member ID</td><td>Member ID</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-mr\"> </a><a href=\"CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-mr\">mr</a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-pt\"> </a><a href=\"CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-pt\">pt</a></td><td>Patient Account Number</td><td>Patient Account Number</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-IdentifierTypeCS.html\">Identifier Type v0.4.1 (CodeSystem)</a></li><li><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v2-0203.html\">identifierType v2.9.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-um\"> </a><a href=\"CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-um\">um</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS</td><td>Unique Member ID</td><td>Unique Member ID</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-mb\"> </a><a href=\"CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-mb\">mb</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS</td><td>Member ID</td><td>Member ID</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-pt\"> </a><a href=\"CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-pt\">pt</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS</td><td>Patient Account Number</td><td>Patient Account Number</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0203-MR\"> </a><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v2-0203.html#v2-0203-MR\">MR</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0203</td><td>Medical record number</td><td>An identifier that is unique to a patient within a set of medical records, not necessarily unique within an application.</td></tr></table></div>"
       },
       "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/PatientIdentifierType",
       "version" : "0.4.1",
       "name" : "PatientIdentifierType",
       "title" : "Patient Identifier Type",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1391,8 +1359,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9281ca2e-dbd7-46d7-b7cf-04952d5969a6",
-        "timestamp" : "2020-08-25T15:42:25+00:00",
+        "identifier" : "urn:uuid:433b0a36-00a7-4b04-8a0d-3ef5748aec07",
+        "timestamp" : "2020-08-25T20:59:11+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1401,6 +1369,10 @@
         {
           "name" : "version",
           "valueUri" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS|0.4.1"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v2-0203|2.9.0"
         }],
         "contains" : [{
           "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS",
@@ -1414,31 +1386,32 @@
         },
         {
           "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS",
-          "code" : "mr"
-        },
-        {
-          "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS",
           "code" : "pt",
           "display" : "Patient Account Number"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+          "code" : "MR",
+          "display" : "Medical record number"
         }]
       }
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
+    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPBrandGenericCode",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "NCPDPPrescriptionOriginCode",
+      "id" : "NCPDPBrandGenericCode",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
       },
-      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
+      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPBrandGenericCode",
       "version" : "0.4.1",
-      "name" : "NCPDPPrescriptionOriginCode",
-      "title" : "NCPDP Prescription Origin Code",
+      "name" : "NCPDPBrandGenericCode",
+      "title" : "NCPDP Brand Generic Code",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1451,7 +1424,7 @@
           "value" : "fm@lists.HL7.org"
         }]
       }],
-      "description" : "http://www.ncpdp.org/prescription-origin-code",
+      "description" : "National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1459,11 +1432,15 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
+        "identifier" : "urn:uuid:9ea93496-b16c-47d8-9082-f74ce9e841e5",
+        "timestamp" : "2020-08-25T20:59:11+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
         }]
       }
     }
@@ -1482,7 +1459,7 @@
       "name" : "NCPDPRejectCode",
       "title" : "NCPDP Reject Code",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1495,7 +1472,7 @@
           "value" : "fm@lists.HL7.org"
         }]
       }],
-      "description" : "http://www.ncpdp.org/reject-code",
+      "description" : "This value set contains the error codes to be used by real-time pharmacy benefit check servers when encountering a data or business condition that prevents processing from completing. \nValues are defined in the NCPDP-maintained Reject Code (511-FB) code set.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1503,8 +1480,56 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:52ed5fca-1761-4c05-a5f7-f41417b95ee4",
-        "timestamp" : "2020-08-25T15:42:25+00:00",
+        "identifier" : "urn:uuid:13dbb978-1056-41cf-8228-09593c56e28d",
+        "timestamp" : "2020-08-25T20:59:11+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCPointOfOriginForAdmissionOrVisit",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "NUBCPointOfOriginForAdmissionOrVisit",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCPointOfOriginForAdmissionOrVisit",
+      "version" : "0.4.1",
+      "name" : "NUBCPointOfOriginForAdmissionOrVisit",
+      "title" : "NUBC Point Of Origin For Admission Or Visit",
+      "status" : "active",
+      "date" : "2020-08-25T20:58:20+00:00",
+      "publisher" : "HL7 Financial Management Working Group",
+      "contact" : [{
+        "name" : "HL7 Financial Management Working Group",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
+          "system" : "email",
+          "value" : "fm@lists.HL7.org"
+        }]
+      }],
+      "description" : "NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c5d32bbb-00d3-41bc-a216-09db4c164c90",
+        "timestamp" : "2020-08-25T20:59:11+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -1530,7 +1555,7 @@
       "name" : "CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes",
       "title" : "CARINBB Professional and Non-Clinician CareTeam Roles",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1551,8 +1576,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dedc655d-8072-408b-a139-7bec310a83d3",
-        "timestamp" : "2020-08-25T15:42:25+00:00",
+        "identifier" : "urn:uuid:122ab7c8-c408-4e24-9f9e-5af42d4d7a40",
+        "timestamp" : "2020-08-25T20:59:12+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1585,50 +1610,6 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "NCPDPPrescriptionOriginCode",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
-      "version" : "0.4.1",
-      "name" : "NCPDPPrescriptionOriginCode",
-      "title" : "NCPDP Prescription Origin Code",
-      "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
-      "publisher" : "HL7 Financial Management Working Group",
-      "contact" : [{
-        "name" : "HL7 Financial Management Working Group",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://www.hl7.org/Special/committees/fm/index.cfm"
-        },
-        {
-          "system" : "email",
-          "value" : "fm@lists.HL7.org"
-        }]
-      }],
-      "description" : "http://www.ncpdp.org/prescription-origin-code",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/CARINBBPharmacyClaimCareTeamRoleCodes",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1642,7 +1623,7 @@
       "name" : "CARINBBPharmacyClaimCareTeamRoleCodes",
       "title" : "CARINBB Pharmacy CareTeam Roles",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1663,8 +1644,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:76ac5ce2-a221-414b-908e-e320eb530998",
-        "timestamp" : "2020-08-25T15:42:25+00:00",
+        "identifier" : "urn:uuid:8839a829-309d-4217-afe4-1e57f8d1a41c",
+        "timestamp" : "2020-08-25T20:59:12+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1706,7 +1687,7 @@
       "name" : "NUCCHealthcareProviderTaxonomy",
       "title" : "NUCC Healthcare Provider Taxonomy",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1727,8 +1708,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:105974f4-976a-464b-a945-ede6e8fe3342",
-        "timestamp" : "2020-08-25T15:42:25+00:00",
+        "identifier" : "urn:uuid:9eafd1c0-08ad-465b-be57-2725836d2ccf",
+        "timestamp" : "2020-08-25T20:59:12+00:00",
         "total" : 878,
         "parameter" : [{
           "name" : "excludeNested",
@@ -6132,6 +6113,54 @@
     }
   },
   {
+    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCRevenueCode",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "NUBCRevenueCode",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NUBCRevenueCode",
+      "version" : "0.4.1",
+      "name" : "NUBCRevenueCode",
+      "title" : "NUBC Revenue Codes.",
+      "status" : "active",
+      "date" : "2020-08-25T20:58:20+00:00",
+      "publisher" : "HL7 Financial Management Working Group",
+      "contact" : [{
+        "name" : "HL7 Financial Management Working Group",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
+          "system" : "email",
+          "value" : "fm@lists.HL7.org"
+        }]
+      }],
+      "description" : "NUBC Revenue codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9c544d87-f147-487b-bae7-048300e20a13",
+        "timestamp" : "2020-08-25T20:59:12+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimAdjudicationCategory",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -6145,7 +6174,7 @@
       "name" : "ClaimAdjudicationCategory",
       "title" : "Claim Adjudication Category",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -6158,7 +6187,7 @@
           "value" : "fm@lists.HL7.org"
         }]
       }],
-      "description" : "Values for EOB.item.adjudication.category, as per Igor",
+      "description" : "Values for EOB.item.adjudication.category",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -6166,8 +6195,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9a77bc73-5522-4304-b4eb-25d68e4f97a1",
-        "timestamp" : "2020-08-25T15:42:26+00:00",
+        "identifier" : "urn:uuid:8fed236e-b52e-4279-b0f0-3382d49c6cb8",
+        "timestamp" : "2020-08-25T20:59:13+00:00",
         "total" : 19,
         "parameter" : [{
           "name" : "excludeNested",
@@ -6292,50 +6321,6 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "NCPDPPrescriptionOriginCode",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
-      "version" : "0.4.1",
-      "name" : "NCPDPPrescriptionOriginCode",
-      "title" : "NCPDP Prescription Origin Code",
-      "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
-      "publisher" : "HL7 Financial Management Working Group",
-      "contact" : [{
-        "name" : "HL7 Financial Management Working Group",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://www.hl7.org/Special/committees/fm/index.cfm"
-        },
-        {
-          "system" : "email",
-          "value" : "fm@lists.HL7.org"
-        }]
-      }],
-      "description" : "http://www.ncpdp.org/prescription-origin-code",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerDiagnosisPresentOnAdmissionDiagnosisType",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -6349,7 +6334,7 @@
       "name" : "PayerDiagnosisPresentOnAdmissionDiagnosisType",
       "title" : "Payer Diagnosis Present On Admission Diagnosis Type",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -6370,8 +6355,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fd06eb21-8912-425c-a78e-70350ab6fc8e",
-        "timestamp" : "2020-08-25T15:42:26+00:00",
+        "identifier" : "urn:uuid:8bf7e853-9c85-4c4e-9fc7-1a2f915178b2",
+        "timestamp" : "2020-08-25T20:59:13+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -6400,20 +6385,20 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
+    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/X12CARCCMSRARC",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "NCPDPPrescriptionOriginCode",
+      "id" : "X12CARCCMSRARC",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
       },
-      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
+      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/X12CARCCMSRARC",
       "version" : "0.4.1",
-      "name" : "NCPDPPrescriptionOriginCode",
-      "title" : "NCPDP Prescription Origin Code",
+      "name" : "X12CARCCMSRARC",
+      "title" : "Adjudication Denial Reason from X12 CARC and CMS RARC (* NO CodeSystem*)",
       "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
+      "date" : "2020-08-25T20:58:20+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -6426,7 +6411,7 @@
           "value" : "fm@lists.HL7.org"
         }]
       }],
-      "description" : "http://www.ncpdp.org/prescription-origin-code",
+      "description" : "Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -6434,52 +6419,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "NCPDPPrescriptionOriginCode",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
-      },
-      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode",
-      "version" : "0.4.1",
-      "name" : "NCPDPPrescriptionOriginCode",
-      "title" : "NCPDP Prescription Origin Code",
-      "status" : "active",
-      "date" : "2020-08-25T15:41:34+00:00",
-      "publisher" : "HL7 Financial Management Working Group",
-      "contact" : [{
-        "name" : "HL7 Financial Management Working Group",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://www.hl7.org/Special/committees/fm/index.cfm"
-        },
-        {
-          "system" : "email",
-          "value" : "fm@lists.HL7.org"
-        }]
-      }],
-      "description" : "http://www.ncpdp.org/prescription-origin-code",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:18af8f6a-57f9-4773-9a67-a708760c8a2f",
-        "timestamp" : "2020-08-25T15:42:24+00:00",
+        "identifier" : "urn:uuid:ed1e798e-3a2f-4ca0-b809-fe4c29da9151",
+        "timestamp" : "2020-08-25T20:59:13+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false

@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="1fcf1eb4-ef58-4cb9-82c5-ef53659fe22c">​</a>
+      <li><a name="a93ec16e-cbc1-49b5-ba69-8e2f91f044ab">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="fca4769f-0033-488f-99dc-65909bbf7afe">​</a>
+      <li><a name="37a49ecd-9759-4ad5-bf03-5c1ed9e9e406">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="3bd4590a-a3f6-4957-890b-1a8d41facb08">​</a>
+      <li><a name="119c4817-0045-4494-bf85-3badb86c0c25">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="73874ce9-1a90-4702-9c9c-f4cad1ce7909">​</a>
+      <li><a name="d3f03914-6ff4-4389-b69f-7f236ffab10d">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -139,7 +139,7 @@
         <a href="search.html">Search Parameters</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Terminology</a>
+        <a href="Terminology.html">Terminology</a>
       </li>
       <li>
         <a href="CapabilityStatement-carin-bb.html">Capability Statement</a>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="a7821e00-5d7d-46bd-a8de-00200f5fda40">​</a>
+      <li><a name="3efa7f6c-8082-4d44-a3f9-2a9e6608b119">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -523,7 +523,7 @@ The claims data is based on the professional claim form 1500, submission standar
                   <a href="ValueSet-CMSPlaceOfService.html" title="ValueSet/CMSPlaceOfService">CMS Place of Service</a>
                </td>
                <td>
-<p>https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .  The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.   The code set is owned by CMS and is available for use.</p>
+<p>CMS Place of Service</p>
 </td>
             </tr>
             <tr>
@@ -531,7 +531,7 @@ The claims data is based on the professional claim form 1500, submission standar
                   <a href="ValueSet-ClaimAdjudicationCategory.html" title="ValueSet/ClaimAdjudicationCategory">Claim Adjudication Category</a>
                </td>
                <td>
-<p>Values for EOB.item.adjudication.category, as per Igor</p>
+<p>Values for EOB.item.adjudication.category</p>
 </td>
             </tr>
             <tr>
@@ -571,7 +571,7 @@ The claims data is based on the professional claim form 1500, submission standar
                   <a href="ValueSet-ICD10CM.html" title="ValueSet/ICD10CM">ICD-10-CM Diagnosis Codes</a>
                </td>
                <td>
-<p>ICD-10-CM Diagnosis Codes.  <strong><em>We need ALL Codes, inactive and inactive.   Current binding is to active codes only</em></strong></p>
+<p>ICD-10-CM Diagnosis Codes.</p>
 </td>
             </tr>
             <tr>
@@ -587,7 +587,7 @@ The claims data is based on the professional claim form 1500, submission standar
                   <a href="ValueSet-NCPDPBrandGenericCode.html" title="ValueSet/NCPDPBrandGenericCode">NCPDP Brand Generic Code</a>
                </td>
                <td>
-<p>http://www.ncpdp.org/brand-generic-code</p>
+<p>National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode.</p>
 </td>
             </tr>
             <tr>
@@ -595,7 +595,7 @@ The claims data is based on the professional claim form 1500, submission standar
                   <a href="ValueSet-NCPDPDispensedAsWritten.html" title="ValueSet/NCPDPDispensedAsWritten">NCPDP Dispensed As Written (DAW)</a>
                </td>
                <td>
-<p>http://www.ncpdp.org/dispensed-as-written-or-product-selection-code</p>
+<p>NCPDP field # 408-D8 (Dispensed As Written (DAW) / Product Selection Code)</p>
 </td>
             </tr>
             <tr>
@@ -603,7 +603,7 @@ The claims data is based on the professional claim form 1500, submission standar
                   <a href="ValueSet-NCPDPPrescriptionOriginCode.html" title="ValueSet/NCPDPPrescriptionOriginCode">NCPDP Prescription Origin Code</a>
                </td>
                <td>
-<p>http://www.ncpdp.org/prescription-origin-code</p>
+<p>National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code).</p>
 </td>
             </tr>
             <tr>
@@ -611,7 +611,8 @@ The claims data is based on the professional claim form 1500, submission standar
                   <a href="ValueSet-NCPDPRejectCode.html" title="ValueSet/NCPDPRejectCode">NCPDP Reject Code</a>
                </td>
                <td>
-<p>http://www.ncpdp.org/reject-code</p>
+<p>This value set contains the error codes to be used by real-time pharmacy benefit check servers when encountering a data or business condition that prevents processing from completing. 
+Values are defined in the NCPDP-maintained Reject Code (511-FB) code set.</p>
 </td>
             </tr>
             <tr>
@@ -620,6 +621,14 @@ The claims data is based on the professional claim form 1500, submission standar
                </td>
                <td>
 <p>NUBC Patient Discharge Status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-NUBCPointOfOriginForAdmissionOrVisit.html" title="ValueSet/NUBCPointOfOriginForAdmissionOrVisit">NUBC Point Of Origin For Admission Or Visit</a>
+               </td>
+               <td>
+<p>NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).</p>
 </td>
             </tr>
             <tr>
@@ -636,6 +645,22 @@ The claims data is based on the professional claim form 1500, submission standar
                </td>
                <td>
 <p>NUBC Priority of Admission</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-NUBCRevenueCode.html" title="ValueSet/NUBCRevenueCode">NUBC Revenue Codes.</a>
+               </td>
+               <td>
+<p>NUBC Revenue codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-NUBCTypeOfBill.html" title="ValueSet/NUBCTypeOfBill">NUBC Type of Bill</a>
+               </td>
+               <td>
+<p>NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).</p>
 </td>
             </tr>
             <tr>
@@ -704,7 +729,7 @@ The claims data is based on the professional claim form 1500, submission standar
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-X12CARCCMSRARC.html" title="ValueSet/X12CARCCMSRARC">Adjudication Denial Reason from X12 CARC and CMS RARC</a>
+                  <a href="ValueSet-X12CARCCMSRARC.html" title="ValueSet/X12CARCCMSRARC">Adjudication Denial Reason from X12 CARC and CMS RARC (* NO CodeSystem*)</a>
                </td>
                <td>
 <p>Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC</p>
@@ -754,10 +779,66 @@ The claims data is based on the professional claim form 1500, submission standar
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-NCPDPBrandGenericCodeCS.html" title="CodeSystem/NCPDPBrandGenericCodeCS">NCPDP Brand Generic Code</a>
+               </td>
+               <td>
+<p>National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-NCPDPCompoundCodeCS.html" title="CodeSystem/NCPDPCompoundCodeCS">NCPDP Compound Code</a>
+               </td>
+               <td>
+<p>National Council for Prescription Drug Programs, (NCPDP) field # 406-D6 (Compound Code).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-NCPDPDispensedAsWrittenCS.html" title="CodeSystem/NCPDPDispensedAsWrittenCS">NCPDP Dispensed As Written (DAW)</a>
+               </td>
+               <td>
+<p>National Council for Prescription Drug Programs, (NCPDP) field # 408-D8 (Dispensed As Written (DAW) / Product Selection Code)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-NCPDPPrescriptionOriginCodeCS.html" title="CodeSystem/NCPDPPrescriptionOriginCodeCS">NCPDP Prescription Origin Code</a>
+               </td>
+               <td>
+<p>National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-NCPDPRejectCodeCS.html" title="CodeSystem/NCPDPRejectCodeCS">NCPDP Reject Code</a>
                </td>
                <td>
-<p>The NCPDP Reject Code (511-FB) code set contains exception definitions for use when transaction processing cannot be completed.</p>
+<p>The National Council for Prescription Drug Programs, (NCPDP) Reject Code (511-FB) code set contains exception definitions for use when transaction processing cannot be completed.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-NUBCPointOfOriginForAdmissionOrVisitCS.html" title="CodeSystem/NUBCPointOfOriginForAdmissionOrVisitCS">NUBC Point Of Origin For Admission Or Visit</a>
+               </td>
+               <td>
+<p>NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-NUBCRevenueCodeCS.html" title="CodeSystem/NUBCRevenueCodeCS">NCPDP Compound Code</a>
+               </td>
+               <td>
+<p>These codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-NUBCTypeOfBillCS.html" title="CodeSystem/NUBCTypeOfBillCS">NUBC Type of Bill</a>
+               </td>
+               <td>
+<p>NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).</p>
 </td>
             </tr>
             <tr>
@@ -891,7 +972,7 @@ The claims data is based on the professional claim form 1500, submission standar
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 25, 2020 15:41+0000">2020-08-25</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 25, 2020 20:58+0000">2020-08-25</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

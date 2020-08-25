@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-08-25T15:41:34+00:00"/>
+  <date value="2020-08-25T20:58:20+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -471,7 +471,7 @@
         <reference value="ValueSet/CMSPlaceOfService"/>
       </reference>
       <name value="CMS Place of Service"/>
-      <description value="https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html .  The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.   The code set is owned by CMS and is available for use."/>
+      <description value="CMS Place of Service"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -485,7 +485,7 @@
         <reference value="ValueSet/ClaimAdjudicationCategory"/>
       </reference>
       <name value="Claim Adjudication Category"/>
-      <description value="Values for EOB.item.adjudication.category, as per Igor"/>
+      <description value="Values for EOB.item.adjudication.category"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -555,7 +555,7 @@
         <reference value="ValueSet/ICD10CM"/>
       </reference>
       <name value="ICD-10-CM Diagnosis Codes"/>
-      <description value="ICD-10-CM Diagnosis Codes.  ***We need ALL Codes, inactive and inactive.   Current binding is to active codes only***"/>
+      <description value="ICD-10-CM Diagnosis Codes."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -583,7 +583,7 @@
         <reference value="ValueSet/NCPDPBrandGenericCode"/>
       </reference>
       <name value="NCPDP Brand Generic Code"/>
-      <description value="http://www.ncpdp.org/brand-generic-code"/>
+      <description value="National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -597,7 +597,7 @@
         <reference value="ValueSet/NCPDPDispensedAsWritten"/>
       </reference>
       <name value="NCPDP Dispensed As Written (DAW)"/>
-      <description value="http://www.ncpdp.org/dispensed-as-written-or-product-selection-code"/>
+      <description value="NCPDP field # 408-D8 (Dispensed As Written (DAW) / Product Selection Code) "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -611,7 +611,7 @@
         <reference value="ValueSet/NCPDPPrescriptionOriginCode"/>
       </reference>
       <name value="NCPDP Prescription Origin Code"/>
-      <description value="http://www.ncpdp.org/prescription-origin-code"/>
+      <description value="National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -625,7 +625,7 @@
         <reference value="ValueSet/NCPDPRejectCode"/>
       </reference>
       <name value="NCPDP Reject Code"/>
-      <description value="http://www.ncpdp.org/reject-code"/>
+      <description value="This value set contains the error codes to be used by real-time pharmacy benefit check servers when encountering a data or business condition that prevents processing from completing. &#xA;Values are defined in the NCPDP-maintained Reject Code (511-FB) code set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -640,6 +640,20 @@
       </reference>
       <name value="NUBC Patient Discharge Status"/>
       <description value="NUBC Patient Discharge Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-NUBCPointOfOriginForAdmissionOrVisit.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NUBCPointOfOriginForAdmissionOrVisit"/>
+      </reference>
+      <name value="NUBC Point Of Origin For Admission Or Visit"/>
+      <description value="NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -668,6 +682,34 @@
       </reference>
       <name value="NUBC Priority of Admission"/>
       <description value="NUBC Priority of Admission"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-NUBCRevenueCode.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NUBCRevenueCode"/>
+      </reference>
+      <name value="NUBC Revenue Codes."/>
+      <description value="NUBC Revenue codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-NUBCTypeOfBill.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NUBCTypeOfBill"/>
+      </reference>
+      <name value="NUBC Type of Bill"/>
+      <description value="NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -792,7 +834,7 @@
       <reference>
         <reference value="ValueSet/X12CARCCMSRARC"/>
       </reference>
-      <name value="Adjudication Denial Reason from X12 CARC and CMS RARC"/>
+      <name value="Adjudication Denial Reason from X12 CARC and CMS RARC (* NO CodeSystem*)"/>
       <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -857,13 +899,111 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-NCPDPBrandGenericCodeCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/NCPDPBrandGenericCodeCS"/>
+      </reference>
+      <name value="NCPDP Brand Generic Code"/>
+      <description value="National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-NCPDPCompoundCodeCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/NCPDPCompoundCodeCS"/>
+      </reference>
+      <name value="NCPDP Compound Code"/>
+      <description value="National Council for Prescription Drug Programs, (NCPDP) field # 406-D6 (Compound Code)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-NCPDPDispensedAsWrittenCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/NCPDPDispensedAsWrittenCS"/>
+      </reference>
+      <name value="NCPDP Dispensed As Written (DAW)"/>
+      <description value="National Council for Prescription Drug Programs, (NCPDP) field # 408-D8 (Dispensed As Written (DAW) / Product Selection Code) "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-NCPDPPrescriptionOriginCodeCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/NCPDPPrescriptionOriginCodeCS"/>
+      </reference>
+      <name value="NCPDP Prescription Origin Code"/>
+      <description value="National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-NCPDPRejectCodeCS.html"/>
       </extension>
       <reference>
         <reference value="CodeSystem/NCPDPRejectCodeCS"/>
       </reference>
       <name value="NCPDP Reject Code"/>
-      <description value="The NCPDP Reject Code (511-FB) code set contains exception definitions for use when transaction processing cannot be completed."/>
+      <description value="The National Council for Prescription Drug Programs, (NCPDP) Reject Code (511-FB) code set contains exception definitions for use when transaction processing cannot be completed."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-NUBCPointOfOriginForAdmissionOrVisitCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/NUBCPointOfOriginForAdmissionOrVisitCS"/>
+      </reference>
+      <name value="NUBC Point Of Origin For Admission Or Visit"/>
+      <description value="NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-NUBCRevenueCodeCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/NUBCRevenueCodeCS"/>
+      </reference>
+      <name value="NCPDP Compound Code"/>
+      <description value="These codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-NUBCTypeOfBillCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/NUBCTypeOfBillCS"/>
+      </reference>
+      <name value="NUBC Type of Bill"/>
+      <description value="NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -3,14 +3,14 @@
   "id": "NCPDPDispensedAsWritten",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-NCPDPDispensedAsWrittenCS.html\"><code>http://www.ncpdp.org/dispensed-as-written-or-product-selection-code</code></a></li></ul></div>"
   },
   "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPDispensedAsWritten",
   "version": "0.4.1",
   "name": "NCPDPDispensedAsWritten",
   "title": "NCPDP Dispensed As Written (DAW)",
   "status": "active",
-  "date": "2020-08-25T15:41:34+00:00",
+  "date": "2020-08-25T20:58:20+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "http://www.ncpdp.org/dispensed-as-written-or-product-selection-code",
+  "description": "NCPDP field # 408-D8 (Dispensed As Written (DAW) / Product Selection Code) ",
   "jurisdiction": [
     {
       "coding": [
@@ -37,5 +37,12 @@
         }
       ]
     }
-  ]
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ncpdp.org/dispensed-as-written-or-product-selection-code"
+      }
+    ]
+  }
 }

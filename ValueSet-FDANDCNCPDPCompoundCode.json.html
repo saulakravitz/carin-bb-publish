@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="28c6236f-9ee3-456d-a6f6-feae02293209">​</a>
+      <li><a name="e556511a-83e7-4b75-a274-962a653aa91f">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="4655919e-529c-4a06-9b31-023ef535a318">​</a>
+      <li><a name="625d474b-e988-459c-9044-c9e1dbfd51c2">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="f457c89e-06c7-47f0-8e5a-58ee0493ab1d">​</a>
+      <li><a name="471620df-5919-4a2a-b280-152b28cd7459">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="6487c9b8-a3e8-4d16-9afa-c95910b066b2">​</a>
+      <li><a name="d54169b7-3fc1-479b-8e3f-56fcb54ac74d">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -139,7 +139,7 @@
         <a href="search.html">Search Parameters</a>
       </li>
       <li>
-        <a href="artifacts.html#5">Terminology</a>
+        <a href="Terminology.html">Terminology</a>
       </li>
       <li>
         <a href="CapabilityStatement-carin-bb.html">Capability Statement</a>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="96365bc5-966f-4e66-be8c-21fd83f567e1">​</a>
+      <li><a name="621ddb94-dd61-4da7-b995-2634a283cb1b">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -245,14 +245,14 @@
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "FDANDCNCPDPCompoundCode",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul/&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-v3-ndc.html\"&gt;&lt;code&gt;http://hl7.org/fhir/sid/ndc&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include all codes defined in &lt;a href=\"CodeSystem-NCPDPCompoundCodeCS.html\"&gt;&lt;code&gt;http://www.ncpdp.org/compound-code&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDCNCPDPCompoundCode",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.4.1",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "FDANDCNCPDPCompoundCode",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "FDA NDC NCPDP Compound Code",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-08-25T15:41:34+00:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-08-25T20:58:20+00:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "HL7 Financial Management Working Group",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -279,7 +279,17 @@
         }
       ]
     }
-  ]
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://hl7.org/fhir/sid/ndc"
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://www.ncpdp.org/compound-code"
+      }
+    ]
+  }
 }</pre>
 
 
@@ -308,7 +318,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 25, 2020 15:41+0000">2020-08-25</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 25, 2020 20:58+0000">2020-08-25</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
