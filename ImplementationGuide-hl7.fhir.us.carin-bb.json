@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-08-20T21:40:16+00:00",
+  "date": "2020-08-25T14:45:07+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -1153,7 +1153,25 @@
           "reference": "CodeSystem/IdentifierTypeCS"
         },
         "name": "Identifier Type",
-        "description": "Identifier Type",
+        "description": "Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-NCPDPRejectCodeCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/NCPDPRejectCodeCS"
+        },
+        "name": "NCPDP Reject Code",
+        "description": "The NCPDP Reject Code (511-FB) code set contains exception definitions for use when transaction processing cannot be completed.",
         "exampleBoolean": false
       },
       {

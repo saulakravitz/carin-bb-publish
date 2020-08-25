@@ -19,7 +19,7 @@
   fhir:Resource.language [ fhir:value "en-US"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>id</b>: OrganizationProvider1</p><p><b>meta</b>: </p><p><b>language</b>: en-US</p><p><b>identifier</b>: National Provider Identifier: 345678, Tax ID Number: 123-45-6789</p><p><b>active</b>: true</p><p><b>name</b>: Provider 1</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><p><b>id</b>: OrganizationProvider1</p><p><b>meta</b>: </p><p><b>language</b>: en-US</p><p><b>identifier</b>: National Provider Identifier: 345678, Tax ID number: 123-45-6789</p><p><b>active</b>: true</p><p><b>name</b>: Provider 1</p></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;
@@ -37,8 +37,8 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS" ];
-         fhir:Coding.code [ fhir:value "tax" ]
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "TAX" ]
        ]
      ];
      fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.4.4" ];

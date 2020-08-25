@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="IdentifierTypeCS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">tax<a name="IdentifierTypeCS-tax"> </a></td><td>Tax ID Number</td><td>Tax ID Number</td></tr><tr><td style="white-space:nowrap">npi<a name="IdentifierTypeCS-npi"> </a></td><td>National Provider Identifier</td><td>National Provider Identifier</td></tr><tr><td style="white-space:nowrap">clia<a name="IdentifierTypeCS-clia"> </a></td><td>CLIA</td><td>CLIA</td></tr><tr><td style="white-space:nowrap">payerid<a name="IdentifierTypeCS-payerid"> </a></td><td>Payer ID</td><td>Payer ID</td></tr><tr><td style="white-space:nowrap">mb<a name="IdentifierTypeCS-mb"> </a></td><td>Member ID</td><td>Member ID</td></tr><tr><td style="white-space:nowrap">mr<a name="IdentifierTypeCS-mr"> </a></td><td>Medical Record Number</td><td>Medical Record Number</td></tr><tr><td style="white-space:nowrap">pt<a name="IdentifierTypeCS-pt"> </a></td><td>Patient Account Number</td><td>Patient Account Number</td></tr><tr><td style="white-space:nowrap">um<a name="IdentifierTypeCS-um"> </a></td><td>Unique Member ID</td><td>Unique Member ID</td></tr><tr><td style="white-space:nowrap">cn<a name="IdentifierTypeCS-cn"> </a></td><td>Claim Number</td><td>Claim Number</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">npi<a name="IdentifierTypeCS-npi"> </a></td><td>National Provider Identifier</td><td>National Provider Identifier</td></tr><tr><td style="white-space:nowrap">clia<a name="IdentifierTypeCS-clia"> </a></td><td>CLIA</td><td>CLIA</td></tr><tr><td style="white-space:nowrap">payerid<a name="IdentifierTypeCS-payerid"> </a></td><td>Payer ID</td><td>Payer ID</td></tr><tr><td style="white-space:nowrap">mb<a name="IdentifierTypeCS-mb"> </a></td><td>Member ID</td><td>Member ID</td></tr><tr><td style="white-space:nowrap">pt<a name="IdentifierTypeCS-pt"> </a></td><td>Patient Account Number</td><td>Patient Account Number</td></tr><tr><td style="white-space:nowrap">um<a name="IdentifierTypeCS-um"> </a></td><td>Unique Member ID</td><td>Unique Member ID</td></tr><tr><td style="white-space:nowrap">cn<a name="IdentifierTypeCS-cn"> </a></td><td>Claim Number</td><td>Claim Number</td></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS"/>
   <version value="0.4.1"/>
   <name value="IdentifierTypeCS"/>
   <title value="Identifier Type"/>
   <status value="active"/>
-  <date value="2020-08-20T21:40:16+00:00"/>
+  <date value="2020-08-25T14:45:07+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -23,7 +23,7 @@
       <value value="fm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="Identifier Type"/>
+  <description value="Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -31,12 +31,7 @@
     </coding>
   </jurisdiction>
   <content value="complete"/>
-  <count value="9"/>
-  <concept>
-    <code value="tax"/>
-    <display value="Tax ID Number"/>
-    <definition value="Tax ID Number"/>
-  </concept>
+  <count value="7"/>
   <concept>
     <code value="npi"/>
     <display value="National Provider Identifier"/>
@@ -56,11 +51,6 @@
     <code value="mb"/>
     <display value="Member ID"/>
     <definition value="Member ID"/>
-  </concept>
-  <concept>
-    <code value="mr"/>
-    <display value="Medical Record Number"/>
-    <definition value="Medical Record Number"/>
   </concept>
   <concept>
     <code value="pt"/>

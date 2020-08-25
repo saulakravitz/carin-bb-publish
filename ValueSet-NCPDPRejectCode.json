@@ -3,14 +3,14 @@
   "id": "NCPDPRejectCode",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-NCPDPRejectCodeCS.html\"><code>http://ncpdp.org/reject-code</code></a></li></ul></div>"
   },
   "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPRejectCode",
   "version": "0.4.1",
   "name": "NCPDPRejectCode",
   "title": "NCPDP Reject Code",
   "status": "active",
-  "date": "2020-08-20T21:40:16+00:00",
+  "date": "2020-08-25T14:45:07+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -37,5 +37,12 @@
         }
       ]
     }
-  ]
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncpdp.org/reject-code"
+      }
+    ]
+  }
 }
