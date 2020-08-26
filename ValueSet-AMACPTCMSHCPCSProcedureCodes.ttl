@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "AMACPTCMSHCPCSProcedureCodes"];
   fhir:ValueSet.title [ fhir:value "AMA CPT and CMS HCPCS Procedure Codes"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-08-25T20:58:20+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-08-26T15:21:16+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "AMA CPT and CMS HCPCS Procedure Codes"];
+  fhir:ValueSet.description [ fhir:value "AMA CPT and CMS HCPCS Procedure Codes. The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure codes. They are submitted by providers to payers to convey the specific procedure performed.\nAMA CPT CMS HCPCS Procedure Codes leverage US Core Procedure Codes composition.CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt.  HCPCS codes are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. \nThe link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. The target set for this Code System is the procedure codes from this file. The code set is owned by CMS and is available for use."];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -41,6 +41,7 @@
        fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
+  fhir:ValueSet.copyright [ fhir:value "CPT copyright 2014 American Medical Association. All rights reserved."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

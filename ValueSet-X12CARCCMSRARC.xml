@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="X12CARCCMSRARC"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul/></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://www.x12.org/codes/claim-adjustment-reason-codes</code></li><li>Include all codes defined in <code>http://www.wpc-edi.com/remittance-advice-remark</code></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/X12CARCCMSRARC"/>
   <version value="0.4.1"/>
   <name value="X12CARCCMSRARC"/>
-  <title value="Adjudication Denial Reason from X12 CARC and CMS RARC (* NO CodeSystem*)"/>
+  <title value="Denial Reasons - Reason codes used to interpret the adjudication denial reason. The Value Set is a combination of two Code Systems: X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC)"/>
   <status value="active"/>
-  <date value="2020-08-25T20:58:20+00:00"/>
+  <date value="2020-08-26T15:21:16+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -23,11 +23,20 @@
       <value value="fm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC"/>
+  <description value="Reason codes used to interpret the adjudication denial reason.  RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="US"/>
     </coding>
   </jurisdiction>
+  <copyright value="CARC codes are owned, maintained and distributed by X12. Use of X12 codes require licenses. RARC codes are owned by CMS and are available for use."/>
+  <compose>
+    <include>
+      <system value="http://www.x12.org/codes/claim-adjustment-reason-codes"/>
+    </include>
+    <include>
+      <system value="http://www.wpc-edi.com/remittance-advice-remark"/>
+    </include>
+  </compose>
 </ValueSet>

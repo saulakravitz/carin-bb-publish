@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-08-25T20:58:20+00:00",
+  "date": "2020-08-26T15:21:16+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -498,6 +498,114 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-AHANUBCPatientDischargeStatus.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/AHANUBCPatientDischargeStatus"
+        },
+        "name": "AHA NUBC Patient Discharge Status",
+        "description": "UB-04 Patient Discharge Status (FL-17)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-AHANUBCPointOfOriginForAdmissionOrVisit.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/AHANUBCPointOfOriginForAdmissionOrVisit"
+        },
+        "name": "UB-04 Point of Origin for Admission or Visit (FL-15)",
+        "description": "NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-AHANUBCPresentOnAdmission.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/AHANUBCPresentOnAdmission"
+        },
+        "name": "AHA NUBC Present On Admission",
+        "description": "UB-04 Present on Admission (FL-67)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-AHANUBCPriorityTypeOfAdmissionOrVisit.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/AHANUBCPriorityTypeOfAdmissionOrVisit"
+        },
+        "name": "AHA NUBC Priority Type Of Admission Or Visit",
+        "description": "AHA NUBC Priority Type Of Admission Or Visit",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-AHANUBCRevenueCodes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/AHANUBCRevenueCodes"
+        },
+        "name": "UB-04 Revenue Code (FL-42).",
+        "description": "NUBC Revenue codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-AHANUBCTypeOfBill.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/AHANUBCTypeOfBill"
+        },
+        "name": "UB-04 Type of Bill (FL-4)",
+        "description": "NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-AMACPTCMSHCPCSProcedureCodes.html"
           }
         ],
@@ -505,7 +613,7 @@
           "reference": "ValueSet/AMACPTCMSHCPCSProcedureCodes"
         },
         "name": "AMA CPT and CMS HCPCS Procedure Codes",
-        "description": "AMA CPT and CMS HCPCS Procedure Codes",
+        "description": "AMA CPT and CMS HCPCS Procedure Codes. The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure codes. They are submitted by providers to payers to convey the specific procedure performed.\nAMA CPT CMS HCPCS Procedure Codes leverage US Core Procedure Codes composition.CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt.  HCPCS codes are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. \nThe link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. The target set for this Code System is the procedure codes from this file. The code set is owned by CMS and is available for use.",
         "exampleBoolean": false
       },
       {
@@ -523,7 +631,7 @@
           "reference": "ValueSet/AMACPTCMSHCPCSProcedureModifiers"
         },
         "name": "AMA CPT and CMS HCPCS Modifier Codes",
-        "description": "AMA CPT and CMS HCPCS Modifier Codes",
+        "description": "AMA CPT and CMS HCPCS Modifier Codes. The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure code modifiers. Modifiers help further describe a procedure code without changing its definition. \nCPT modifiers are available by subscription from the AMA at http://www.ama-assn.org/go/cpt. HCPCS modifiers are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. \nThe target set for this Code System is the procedure code modifiers from this file. The code set is owned by CMS and is available for use.",
         "exampleBoolean": false
       },
       {
@@ -649,7 +757,7 @@
           "reference": "ValueSet/CMSDRG"
         },
         "name": "CMS-DRG",
-        "description": "CMS-DRG",
+        "description": "Diagnosis Related Group - any of the payment categories that are used to classify patients and especially Medicare patients for the purpose of reimbursing hospitals for each case in a \ngiven category with a fixed fee regardless of the actual costs incurred (Other DRGs, such as AP-DRGs, requires defining their specific Value Sets and Code Systems.) \nhttps://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software.html This link takes one to a list of files. The code set is owned by CMS and is available for use.",
         "exampleBoolean": false
       },
       {
@@ -667,7 +775,7 @@
           "reference": "ValueSet/CMSPlaceOfService"
         },
         "name": "CMS Place of Service",
-        "description": "CMS Place of Service",
+        "description": "Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided. https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html. The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.",
         "exampleBoolean": false
       },
       {
@@ -738,7 +846,7 @@
         "reference": {
           "reference": "ValueSet/FDANDCNCPDPCompoundCode"
         },
-        "name": "FDA NDC NCPDP Compound Code",
+        "name": "FDA NDC NCPDP Compound Code. Indicates whether or not the prescription is a compound.",
         "description": "NCPDP field # 407-D7 (National Drug Code (NDC)) or NCPDP field # 406-D6 (Compound Code)",
         "exampleBoolean": false
       },
@@ -829,7 +937,7 @@
           "reference": "ValueSet/NCPDPDispensedAsWritten"
         },
         "name": "NCPDP Dispensed As Written (DAW)",
-        "description": "NCPDP field # 408-D8 (Dispensed As Written (DAW) / Product Selection Code) ",
+        "description": "NCPDP field # 408-D8 (Dispensed As Written (DAW)/Product Selection Code) Prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. ",
         "exampleBoolean": false
       },
       {
@@ -865,133 +973,7 @@
           "reference": "ValueSet/NCPDPRejectCode"
         },
         "name": "NCPDP Reject Code",
-        "description": "This value set contains the error codes to be used by real-time pharmacy benefit check servers when encountering a data or business condition that prevents processing from completing. \nValues are defined in the NCPDP-maintained Reject Code (511-FB) code set.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-NUBCPatientDischargeStatus.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/NUBCPatientDischargeStatus"
-        },
-        "name": "NUBC Patient Discharge Status",
-        "description": "NUBC Patient Discharge Status",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-NUBCPointOfOriginForAdmissionOrVisit.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/NUBCPointOfOriginForAdmissionOrVisit"
-        },
-        "name": "NUBC Point Of Origin For Admission Or Visit",
-        "description": "NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-NUBCPresentOnAdmission.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/NUBCPresentOnAdmission"
-        },
-        "name": "NUBC Present On Admission",
-        "description": "NUBC Present On Admission",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-NUBCPriorityOfAdmissionn.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/NUBCPriorityOfAdmissionn"
-        },
-        "name": "NUBC Priority of Admission",
-        "description": "NUBC Priority of Admission",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-NUBCRevenueCode.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/NUBCRevenueCode"
-        },
-        "name": "NUBC Revenue Codes.",
-        "description": "NUBC Revenue codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-NUBCTypeOfBill.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/NUBCTypeOfBill"
-        },
-        "name": "NUBC Type of Bill",
-        "description": "NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-NUCCHealthcareProviderTaxonomy.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/NUCCHealthcareProviderTaxonomy"
-        },
-        "name": "NUCC Healthcare Provider Taxonomy",
-        "description": "NUCC Healthcare Provider Taxonomy",
+        "description": "NCPDP field # 511-FB (Reject Code) Code indicating the error encountered.",
         "exampleBoolean": false
       },
       {
@@ -1134,8 +1116,116 @@
         "reference": {
           "reference": "ValueSet/X12CARCCMSRARC"
         },
-        "name": "Adjudication Denial Reason from X12 CARC and CMS RARC (* NO CodeSystem*)",
-        "description": "Reason codes used to interpret the adjudication denial reason.  X12 CARC + CMS RARC",
+        "name": "Denial Reasons - Reason codes used to interpret the adjudication denial reason. The Value Set is a combination of two Code Systems: X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC)",
+        "description": "Reason codes used to interpret the adjudication denial reason.  RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-AHANUBCPatientDischargeStatusCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/AHANUBCPatientDischargeStatusCS"
+        },
+        "name": "AHA NUBC Discharge Status",
+        "description": "UB-04 Patient Discharge Status (FL-17)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-AHANUBCPointOfOriginForAdmissionOrVisitCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/AHANUBCPointOfOriginForAdmissionOrVisitCS"
+        },
+        "name": "AHA NUBC Point Of Origin For Admission Or Visit",
+        "description": "UB-04 Point of Origin for Admission or Visit (FL-15)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-AHANUBCPresentOnAdmissionCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/AHANUBCPresentOnAdmissionCS"
+        },
+        "name": "UB-04 Present on Admission (FL-67)",
+        "description": "These codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-AHANUBCPriorityTypeOfAdmissionOrVisitCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/AHANUBCPriorityTypeOfAdmissionOrVisitCS"
+        },
+        "name": "AHA NUBC Priority Type Of Admission Or Visit",
+        "description": "UB-04 Priority (Type) of Admission or Visit (FL-14).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-AHANUBCRevenueCodesCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/AHANUBCRevenueCodesCS"
+        },
+        "name": "UB-04 Revenue Code (FL-42).",
+        "description": "These codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-AHANUBCTypeOfBillCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/AHANUBCTypeOfBillCS"
+        },
+        "name": "NUBC Type of Bill",
+        "description": "NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
         "exampleBoolean": false
       },
       {
@@ -1225,7 +1315,7 @@
           "reference": "CodeSystem/NCPDPBrandGenericCodeCS"
         },
         "name": "NCPDP Brand Generic Code",
-        "description": "National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode.",
+        "description": "National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode. Whether the plan adjudicated the claim as a brand or generic drug.",
         "exampleBoolean": false
       },
       {
@@ -1298,60 +1388,6 @@
         },
         "name": "NCPDP Reject Code",
         "description": "The National Council for Prescription Drug Programs, (NCPDP) Reject Code (511-FB) code set contains exception definitions for use when transaction processing cannot be completed.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-NUBCPointOfOriginForAdmissionOrVisitCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/NUBCPointOfOriginForAdmissionOrVisitCS"
-        },
-        "name": "NUBC Point Of Origin For Admission Or Visit",
-        "description": "NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-NUBCRevenueCodeCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/NUBCRevenueCodeCS"
-        },
-        "name": "NCPDP Compound Code",
-        "description": "These codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-NUBCTypeOfBillCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/NUBCTypeOfBillCS"
-        },
-        "name": "NUBC Type of Bill",
-        "description": "NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
         "exampleBoolean": false
       },
       {

@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "CMSPlaceOfService"];
   fhir:ValueSet.title [ fhir:value "CMS Place of Service"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-08-25T20:58:20+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-08-26T15:21:16+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "CMS Place of Service"];
+  fhir:ValueSet.description [ fhir:value "Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided. https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html. The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound."];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -41,6 +41,7 @@
        fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
+  fhir:ValueSet.copyright [ fhir:value "The code set is owned by CMS and is available for use."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

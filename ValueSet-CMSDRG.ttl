@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "CMSDRG"];
   fhir:ValueSet.title [ fhir:value "CMS-DRG"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-08-25T20:58:20+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-08-26T15:21:16+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "CMS-DRG"];
+  fhir:ValueSet.description [ fhir:value "Diagnosis Related Group - any of the payment categories that are used to classify patients and especially Medicare patients for the purpose of reimbursing hospitals for each case in a \ngiven category with a fixed fee regardless of the actual costs incurred (Other DRGs, such as AP-DRGs, requires defining their specific Value Sets and Code Systems.) \nhttps://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software.html This link takes one to a list of files. The code set is owned by CMS and is available for use."];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -41,6 +41,7 @@
        fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
+  fhir:ValueSet.copyright [ fhir:value "The code set is owned by CMS and is available for use."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
