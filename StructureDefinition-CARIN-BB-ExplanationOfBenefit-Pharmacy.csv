@@ -207,8 +207,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "ExplanationOfBenefit.careTeam","","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","Care Team members","The members of the team who provided the products and services.","","Common to identify the responsible and supporting practitioners.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.careTeam",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-EOB-pharm-careTeam-practitioner:Pharmacy EOB:  Careteam roles refer to a practitioner {( careTeam.role.coding.code in 
-( 'pcp' or 'prescribing')) implies 
+EOB-careteam-qualification:Care Team Performing physician's qualifications are from US-Core-Provider-Specialty Value Set {ExplanationOfBenefit.careTeam.role.coding.code='performing' implies ExplanationOfBenefit.careTeam.qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty')}EOB-pharm-careTeam-practitioner:Pharmacy EOB:  Careteam roles refer to a practitioner {( careTeam.role.coding.code in 
+( 'primary' or 'prescribing')) implies 
  careTeam.provider.reference.resolve().is(FHIR.Practitioner)}EOB-pharm-careTeam-organization:Pharmacy EOB:  Careteam roles refer to a practitioner {( careTeam.role.coding.code='performing') implies 
  careTeam.provider.reference.resolve().is(FHIR.Organization)}"
 "ExplanationOfBenefit.careTeam.id","","","",0,1,"","","","string {[]} {[]}

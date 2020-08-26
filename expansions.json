@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d1bd00de-f192-4885-b2f1-01d9fa1e046a",
+  "id" : "2859d091-8300-47e2-a0b0-36783ab02ab0",
   "meta" : {
-    "lastUpdated" : "2020-08-26T15:41:48.308+00:00"
+    "lastUpdated" : "2020-08-26T21:53:04.912+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "ClaimPaymentStatusCode",
       "title" : "Claim Payment Status Code",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -40,8 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:48328218-078a-4454-b8ec-3d5c1e133903",
-        "timestamp" : "2020-08-26T15:42:32+00:00",
+        "identifier" : "urn:uuid:517adcce-e11f-44cd-a7c4-db7a887a364f",
+        "timestamp" : "2020-08-26T21:54:04+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -78,7 +78,7 @@
       "name" : "ClaimInformationCategory",
       "title" : "Claim Information Category",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -99,8 +99,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:87cb65ef-1de4-4279-981e-6063b0acde0e",
-        "timestamp" : "2020-08-26T15:42:32+00:00",
+        "identifier" : "urn:uuid:4eac7a82-9a99-4f74-9aae-57e4fbe4d34c",
+        "timestamp" : "2020-08-26T21:54:04+00:00",
         "total" : 21,
         "parameter" : [{
           "name" : "excludeNested",
@@ -232,7 +232,7 @@
       "name" : "AHANUBCPointOfOriginForAdmissionOrVisit",
       "title" : "UB-04 Point of Origin for Admission or Visit (FL-15)",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -254,8 +254,8 @@
       }],
       "copyright" : "AHANUBCCopyright",
       "expansion" : {
-        "identifier" : "urn:uuid:6ccb0b69-f0f0-4d2d-9e7f-de48a5e7999d",
-        "timestamp" : "2020-08-26T15:42:32+00:00",
+        "identifier" : "urn:uuid:b9e237a1-ae5f-4f20-b3af-c44636b25be1",
+        "timestamp" : "2020-08-26T21:54:04+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -281,7 +281,7 @@
       "name" : "NCPDPPrescriptionOriginCode",
       "title" : "NCPDP Prescription Origin Code",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -302,8 +302,57 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bdced9e3-a0d8-4ea5-9659-511240489541",
-        "timestamp" : "2020-08-26T15:42:33+00:00",
+        "identifier" : "urn:uuid:ebdbb046-c147-402d-8f7f-2198b51b1840",
+        "timestamp" : "2020-08-26T21:54:04+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSPlaceOfService",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "CMSPlaceOfService",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSPlaceOfService",
+      "version" : "0.4.1",
+      "name" : "CMSPlaceOfService",
+      "title" : "CMS Place of Service",
+      "status" : "active",
+      "date" : "2020-08-26T21:53:04+00:00",
+      "publisher" : "HL7 Financial Management Working Group",
+      "contact" : [{
+        "name" : "HL7 Financial Management Working Group",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
+          "system" : "email",
+          "value" : "fm@lists.HL7.org"
+        }]
+      }],
+      "description" : "Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided. https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html. The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "copyright" : "The code set is owned by CMS and is available for use.",
+      "expansion" : {
+        "identifier" : "urn:uuid:e27ac941-8c57-44b5-9d26-92bac009693e",
+        "timestamp" : "2020-08-26T21:54:04+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -329,7 +378,7 @@
       "name" : "AHANUBCRevenueCodes",
       "title" : "UB-04 Revenue Code (FL-42).",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -351,8 +400,8 @@
       }],
       "copyright" : "AHANUBCCopyright",
       "expansion" : {
-        "identifier" : "urn:uuid:3c208c41-ea4a-4fdd-85bd-9dce81eff53f",
-        "timestamp" : "2020-08-26T15:42:33+00:00",
+        "identifier" : "urn:uuid:3eb37409-cf97-4e23-aa1d-c14934ef090e",
+        "timestamp" : "2020-08-26T21:54:05+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -378,7 +427,7 @@
       "name" : "AdjudicationCarinBBValueCodes",
       "title" : "Adjudication CARINBB Value Codes",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -399,8 +448,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dbc09a04-86b5-4db3-b65d-7cc46716e6af",
-        "timestamp" : "2020-08-26T15:42:33+00:00",
+        "identifier" : "urn:uuid:e8b20ed0-4a1e-42b4-a862-44c7974a9b60",
+        "timestamp" : "2020-08-26T21:54:05+00:00",
         "total" : 14,
         "parameter" : [{
           "name" : "excludeNested",
@@ -501,7 +550,7 @@
       "name" : "BenefitPaymentStatus",
       "title" : "Benefit Payment Status",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -522,8 +571,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3dd67561-0953-43a4-abb7-921f709c3a8b",
-        "timestamp" : "2020-08-26T15:42:33+00:00",
+        "identifier" : "urn:uuid:fdb2aeb0-a99a-44a3-9645-aaefbd34375a",
+        "timestamp" : "2020-08-26T21:54:05+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -565,7 +614,7 @@
       "name" : "AHANUBCPatientDischargeStatus",
       "title" : "AHA NUBC Patient Discharge Status",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -587,8 +636,8 @@
       }],
       "copyright" : "AHANUBCCopyright",
       "expansion" : {
-        "identifier" : "urn:uuid:ee4d31d6-aedf-428d-a517-1c7d094625ef",
-        "timestamp" : "2020-08-26T15:42:33+00:00",
+        "identifier" : "urn:uuid:1ed8033a-8d3e-46a0-9939-fe9b8b2c55fb",
+        "timestamp" : "2020-08-26T21:54:05+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -614,7 +663,7 @@
       "name" : "PayerOutpatientinstitutionaldiagnosistype",
       "title" : "Diagnosis Type -- Outpatient Facility",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -635,8 +684,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b351c16d-6e96-4ed0-a0c1-1a1dba5051ee",
-        "timestamp" : "2020-08-26T15:42:34+00:00",
+        "identifier" : "urn:uuid:0d6cd7ed-644f-4cfc-919a-430355e8a2b4",
+        "timestamp" : "2020-08-26T21:54:06+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -688,7 +737,7 @@
       "name" : "PayerProviderContractingStatus",
       "title" : "Provider Provider Contracting Status",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -709,8 +758,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:34b733c3-56ad-44a8-acde-945d38bf9df6",
-        "timestamp" : "2020-08-26T15:42:34+00:00",
+        "identifier" : "urn:uuid:cbd989a7-83b2-498f-b594-640f07ee21ad",
+        "timestamp" : "2020-08-26T21:54:06+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -747,7 +796,7 @@
       "name" : "PayerProfessionalandnoncliniciandiagnosistype",
       "title" : "Diagnosis Type -- Professional and Non-Clinician",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -768,8 +817,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f3164554-39a7-44fc-ad94-38f053995b06",
-        "timestamp" : "2020-08-26T15:42:34+00:00",
+        "identifier" : "urn:uuid:38cf3b3f-e281-418f-a2ce-63d78917ea90",
+        "timestamp" : "2020-08-26T21:54:06+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -811,7 +860,7 @@
       "name" : "CARINBBInstitutionalClaimCareTeamRoleCodes",
       "title" : "CARINBB Institutional Claim Care Team Roles",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -832,8 +881,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:740ddf9d-a1a0-4812-97c7-01de24dba5af",
-        "timestamp" : "2020-08-26T15:42:34+00:00",
+        "identifier" : "urn:uuid:d262ad6d-dd58-4dee-809a-9eccee650b27",
+        "timestamp" : "2020-08-26T21:54:06+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -899,7 +948,7 @@
       "name" : "PayerAdjudicationAmountCategory",
       "title" : "Payer Adjudication Amount Category",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -920,8 +969,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4e2faf00-f415-490c-b125-7c5ef5141824",
-        "timestamp" : "2020-08-26T15:42:34+00:00",
+        "identifier" : "urn:uuid:cd4589b5-cc0e-4fdb-8701-e02f9e45d8df",
+        "timestamp" : "2020-08-26T21:54:06+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -993,7 +1042,7 @@
       "name" : "NCPDPDispensedAsWritten",
       "title" : "NCPDP Dispensed As Written (DAW)",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1014,8 +1063,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:09022413-dee9-4f06-8ad0-25aadc6faafd",
-        "timestamp" : "2020-08-26T15:42:34+00:00",
+        "identifier" : "urn:uuid:f5275d25-7394-41a4-a761-62d97868d5b9",
+        "timestamp" : "2020-08-26T21:54:07+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -1041,7 +1090,7 @@
       "name" : "ICD10CM",
       "title" : "ICD-10-CM Diagnosis Codes",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1062,8 +1111,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:deabec57-43ba-4d0e-9f90-b61118195a79",
-        "timestamp" : "2020-08-26T15:42:34+00:00",
+        "identifier" : "urn:uuid:f29b2682-1e37-4937-afbf-534825a86c59",
+        "timestamp" : "2020-08-26T21:54:07+00:00",
         "total" : 42,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1300,7 +1349,7 @@
       "name" : "PayerInpatientinstitutionaldiagnosistype",
       "title" : "Diagnosis Type -- Inpatient Facility",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1321,8 +1370,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:517a37bc-85c2-4805-b8e1-8230e5f69d57",
-        "timestamp" : "2020-08-26T15:42:34+00:00",
+        "identifier" : "urn:uuid:63996e35-822a-4af7-ab17-dfcc6d6fdaaa",
+        "timestamp" : "2020-08-26T21:54:07+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1373,7 +1422,7 @@
       "name" : "AdjudicationValueCodes",
       "title" : "Benefit Payment Status Category",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1394,8 +1443,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:be8282cc-3741-4f55-a2db-6ea075ddfa9a",
-        "timestamp" : "2020-08-26T15:42:34+00:00",
+        "identifier" : "urn:uuid:000da889-bdb6-4996-8f44-abd6831b31ef",
+        "timestamp" : "2020-08-26T21:54:07+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1437,7 +1486,7 @@
       "name" : "AHANUBCTypeOfBill",
       "title" : "UB-04 Type of Bill (FL-4)",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1459,8 +1508,8 @@
       }],
       "copyright" : "AHANUBCCopyright",
       "expansion" : {
-        "identifier" : "urn:uuid:633f986d-e8e4-42a6-a9cc-b23db639b70a",
-        "timestamp" : "2020-08-26T15:42:34+00:00",
+        "identifier" : "urn:uuid:9ca2973a-99c0-4228-a6f3-0e8ca7ad7ab1",
+        "timestamp" : "2020-08-26T21:54:07+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -1486,7 +1535,7 @@
       "name" : "PatientIdentifierType",
       "title" : "Patient Identifier Type",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1507,8 +1556,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:647accc8-fb6f-4549-800f-a9f0b3e36d51",
-        "timestamp" : "2020-08-26T15:42:35+00:00",
+        "identifier" : "urn:uuid:41c15134-9d88-4b81-bf4f-ec8097b358f1",
+        "timestamp" : "2020-08-26T21:54:07+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1559,7 +1608,7 @@
       "name" : "NCPDPBrandGenericCode",
       "title" : "NCPDP Brand Generic Code",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1580,8 +1629,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:edd27bd6-65af-4211-9fc0-98018da3f86e",
-        "timestamp" : "2020-08-26T15:42:35+00:00",
+        "identifier" : "urn:uuid:8cb2575c-8889-4083-a883-a87c0bf12b2c",
+        "timestamp" : "2020-08-26T21:54:07+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -1607,7 +1656,7 @@
       "name" : "NCPDPRejectCode",
       "title" : "NCPDP Reject Code",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1628,8 +1677,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:495c5bdc-44e3-455d-8fba-4eb7f1de2aa4",
-        "timestamp" : "2020-08-26T15:42:35+00:00",
+        "identifier" : "urn:uuid:7eefa57d-54ee-4779-8b21-0c4b60dab8c2",
+        "timestamp" : "2020-08-26T21:54:07+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -1655,7 +1704,7 @@
       "name" : "AHANUBCPresentOnAdmission",
       "title" : "AHA NUBC Present On Admission",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1677,8 +1726,8 @@
       }],
       "copyright" : "AHANUBCCopyright",
       "expansion" : {
-        "identifier" : "urn:uuid:5559347b-0ca1-4e19-868c-dfd29e3c5b38",
-        "timestamp" : "2020-08-26T15:42:35+00:00",
+        "identifier" : "urn:uuid:aea723ce-963f-4af0-84b0-596a0748dc44",
+        "timestamp" : "2020-08-26T21:54:08+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -1704,7 +1753,7 @@
       "name" : "CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes",
       "title" : "CARINBB Professional and Non-Clinician CareTeam Roles",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1725,8 +1774,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f9856db1-5c10-4a53-ab73-f0b644ccdb96",
-        "timestamp" : "2020-08-26T15:42:35+00:00",
+        "identifier" : "urn:uuid:2c06c966-2638-4568-b42f-39caa568c02a",
+        "timestamp" : "2020-08-26T21:54:08+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1772,7 +1821,7 @@
       "name" : "CARINBBPharmacyClaimCareTeamRoleCodes",
       "title" : "CARINBB Pharmacy CareTeam Roles",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1793,8 +1842,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5b35dd4b-b3dc-44dc-aede-087177d2e00f",
-        "timestamp" : "2020-08-26T15:42:35+00:00",
+        "identifier" : "urn:uuid:b9463bba-c220-43e4-8d10-e90d9b200f17",
+        "timestamp" : "2020-08-26T21:54:08+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1823,6 +1872,54 @@
     }
   },
   {
+    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/ICD10PCS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "ICD10PCS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/ICD10PCS",
+      "version" : "0.4.1",
+      "name" : "ICD10PCS",
+      "title" : "ICD-10-PCS",
+      "status" : "active",
+      "date" : "2020-08-26T21:53:04+00:00",
+      "publisher" : "HL7 Financial Management Working Group",
+      "contact" : [{
+        "name" : "HL7 Financial Management Working Group",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
+          "system" : "email",
+          "value" : "fm@lists.HL7.org"
+        }]
+      }],
+      "description" : "ICD-10-PCS",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:787316e4-40f9-4b9b-990a-74cde124a7f3",
+        "timestamp" : "2020-08-26T21:54:08+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimAdjudicationCategory",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1836,7 +1933,7 @@
       "name" : "ClaimAdjudicationCategory",
       "title" : "Claim Adjudication Category",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -1857,8 +1954,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3304a476-99d6-4100-b9a0-cb858354dc52",
-        "timestamp" : "2020-08-26T15:42:35+00:00",
+        "identifier" : "urn:uuid:b401c2f9-efcd-4449-8219-dea943658552",
+        "timestamp" : "2020-08-26T21:54:09+00:00",
         "total" : 19,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1983,6 +2080,55 @@
     }
   },
   {
+    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSDRG",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "CMSDRG",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSDRG",
+      "version" : "0.4.1",
+      "name" : "CMSDRG",
+      "title" : "CMS-DRG",
+      "status" : "active",
+      "date" : "2020-08-26T21:53:04+00:00",
+      "publisher" : "HL7 Financial Management Working Group",
+      "contact" : [{
+        "name" : "HL7 Financial Management Working Group",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
+          "system" : "email",
+          "value" : "fm@lists.HL7.org"
+        }]
+      }],
+      "description" : "Diagnosis Related Group - any of the payment categories that are used to classify patients and especially Medicare patients for the purpose of reimbursing hospitals for each case in a \ngiven category with a fixed fee regardless of the actual costs incurred (Other DRGs, such as AP-DRGs, requires defining their specific Value Sets and Code Systems.) \nhttps://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software.html This link takes one to a list of files. The code set is owned by CMS and is available for use.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "copyright" : "The code set is owned by CMS and is available for use.",
+      "expansion" : {
+        "identifier" : "urn:uuid:663530ae-237b-4cef-840d-ae8fa5ff4be1",
+        "timestamp" : "2020-08-26T21:54:09+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/PayerDiagnosisPresentOnAdmissionDiagnosisType",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1996,7 +2142,7 @@
       "name" : "PayerDiagnosisPresentOnAdmissionDiagnosisType",
       "title" : "Payer Diagnosis Present On Admission Diagnosis Type",
       "status" : "active",
-      "date" : "2020-08-26T15:41:48+00:00",
+      "date" : "2020-08-26T21:53:04+00:00",
       "publisher" : "HL7 Financial Management Working Group",
       "contact" : [{
         "name" : "HL7 Financial Management Working Group",
@@ -2017,8 +2163,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3cd0fbd4-d133-4f9c-9142-548faaf0bd4c",
-        "timestamp" : "2020-08-26T15:42:36+00:00",
+        "identifier" : "urn:uuid:211d62dc-1b06-40a1-8309-b95bc435b870",
+        "timestamp" : "2020-08-26T21:54:09+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2042,6 +2188,59 @@
           "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/PayerDiagnosisTypeCS",
           "code" : "external-cause-of-injury",
           "display" : "external-cause-of-injury"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/us/carin-bb/ValueSet/X12CARCCMSRARC",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "X12CARCCMSRARC",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/carin-bb/ValueSet/X12CARCCMSRARC",
+      "version" : "0.4.1",
+      "name" : "X12CARCCMSRARC",
+      "title" : "Denial Reasons - Reason codes used to interpret the adjudication denial reason. The Value Set is a combination of two Code Systems: X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC)",
+      "status" : "active",
+      "date" : "2020-08-26T21:53:04+00:00",
+      "publisher" : "HL7 Financial Management Working Group",
+      "contact" : [{
+        "name" : "HL7 Financial Management Working Group",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
+          "system" : "email",
+          "value" : "fm@lists.HL7.org"
+        }]
+      }],
+      "description" : "Reason codes used to interpret the adjudication denial reason.  RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "copyright" : "CARC codes are owned, maintained and distributed by X12. Use of X12 codes require licenses. RARC codes are owned by CMS and are available for use.",
+      "expansion" : {
+        "identifier" : "urn:uuid:26c45871-2fa4-4df0-8390-0dc1cdbfb254",
+        "timestamp" : "2020-08-26T21:54:09+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
         }]
       }
     }

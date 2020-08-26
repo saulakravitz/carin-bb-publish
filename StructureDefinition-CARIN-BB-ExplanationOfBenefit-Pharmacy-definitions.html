@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="575940c1-2870-4748-9af2-f7fb3465eef1">​</a>
+      <li><a name="d284bb8e-0c8e-4974-9d7e-b2ebd741ad81">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="dd118568-6b2c-40c8-8baa-ee2ee1a888a8">​</a>
+      <li><a name="e7bcd87c-a0e8-4adb-8ecb-af974c6c2d23">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="a65ec10b-4e44-462e-8cf7-4b7d369a0e74">​</a>
+      <li><a name="371a5625-ef74-4634-96fd-c052f9d6d488">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="106deeea-e6e1-4b0b-a02d-6a7c0a87c367">​</a>
+      <li><a name="3e226d58-2b51-4a13-b201-1b6cb70bb3ee">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="d6f63c7e-6e42-45b2-b6e1-6cc4262128ab">​</a>
+      <li><a name="3535e56f-9a57-4489-ab78-46c3b0720025">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -918,9 +918,9 @@
   <tr><td>Requirements</td><td><p>Common to identify the responsible and supporting practitioners.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">EOB-pharm-careTeam-organization</b>: Pharmacy EOB:  Careteam roles refer to a practitioner (: ( careTeam.role.coding.code='performing') implies 
+<b title="Formal Invariant Identifier">EOB-careteam-qualification</b>: Care Team Performing physician's qualifications are from US-Core-Provider-Specialty Value Set (: ExplanationOfBenefit.careTeam.role.coding.code='performing' implies ExplanationOfBenefit.careTeam.qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty'))<br/><b title="Formal Invariant Identifier">EOB-pharm-careTeam-organization</b>: Pharmacy EOB:  Careteam roles refer to a practitioner (: ( careTeam.role.coding.code='performing') implies 
  careTeam.provider.reference.resolve().is(FHIR.Organization))<br/><b title="Formal Invariant Identifier">EOB-pharm-careTeam-practitioner</b>: Pharmacy EOB:  Careteam roles refer to a practitioner (: ( careTeam.role.coding.code in 
-( 'pcp' or 'prescribing')) implies 
+( 'primary' or 'prescribing')) implies 
  careTeam.provider.reference.resolve().is(FHIR.Practitioner))<br/><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ExplanationOfBenefit.careTeam.id"> </a><span style="color: grey">64.</span> <b>ExplanationOfBenefit.careTeam.id</b><a href="#ExplanationOfBenefit.careTeam.id" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
@@ -4340,7 +4340,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 26, 2020 15:41+0000">2020-08-26</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 26, 2020 21:53+0000">2020-08-26</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

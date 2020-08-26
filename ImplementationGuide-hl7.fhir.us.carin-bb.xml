@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-08-26T15:41:48+00:00"/>
+  <date value="2020-08-26T21:53:04+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -913,6 +913,76 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-AMACPTCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/AMACPTCS"/>
+      </reference>
+      <name value="AMA CPT"/>
+      <description value="American Medical Association (AMA) Current Procedural Codes (CPT)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-AMACPTModifiersCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/AMACPTModifiersCS"/>
+      </reference>
+      <name value="AMA CPT Modifiers"/>
+      <description value="American Medical Association (AMA) Current Procedural Codes (CPT) Modifiers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-CMSDRGCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CMSDRGCS"/>
+      </reference>
+      <name value="CMS Diagnosis Related Group (DRG)"/>
+      <description value="Diagnosis Related Group - any of the payment categories that are used to classify patients and especially Medicare patients for the purpose of reimbursing hospitals for each case in a given &#xA;category with a fixed fee regardless of the actual costs incurred (Other DRGs, such as AP-DRGs, requires defining their specific Value Sets and Code Systems.)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-CMSPlaceOfServiceCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CMSPlaceOfServiceCS"/>
+      </reference>
+      <name value="CMS Place of Service"/>
+      <description value="Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-CMSRARCCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CMSRARCCS"/>
+      </reference>
+      <name value="CMS Remittance Advice Remark Codes (RARC)"/>
+      <description value="Denial Reasons - Reason codes used to interpret the adjudication denial reason"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-CareTeamRoleCS.html"/>
       </extension>
       <reference>
@@ -948,6 +1018,76 @@
       </reference>
       <name value="Claim Information Category"/>
       <description value="Claim Information Category - Used as the discriminator for supportingInfo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-FDANationalDrugCodeCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/FDANationalDrugCodeCS"/>
+      </reference>
+      <name value="FDA National Drug Code (NDC)"/>
+      <description value="NCPDP field # 407-D7 National Drug Code (NDC)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-HCPCSModifiersCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/HCPCSModifiersCS"/>
+      </reference>
+      <name value="AMA CPT Modifiers"/>
+      <description value="Healthcare Common Procedure Coding System (HCPCS) Procedure Code Modifiers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-HCPCSProcedureCodesCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/HCPCSProcedureCodesCS"/>
+      </reference>
+      <name value="AMA CPT"/>
+      <description value="Healthcare Common Procedure Coding System (HCPCS) Procedure Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-ICD10CMCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ICD10CMCS"/>
+      </reference>
+      <name value="ICD-10-CM"/>
+      <description value="International Classification of Diseases, Tenth Revision, Clinical Modification)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-ICD10PCSCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ICD10PCSCS"/>
+      </reference>
+      <name value="ICD-10-PCS"/>
+      <description value="International Classification of Diseases Surgical Procedures (ICD-10)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1060,6 +1200,20 @@
       </reference>
       <name value="Payer Diagnosis Type"/>
       <description value="Payer Diagnosis Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-X12CARCCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/X12CARCCS"/>
+      </reference>
+      <name value="X12 Claim Adjustment Reason Codes (CARC)"/>
+      <description value="Denial Reasons - Reason codes used to interpret the adjudication denial reason"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

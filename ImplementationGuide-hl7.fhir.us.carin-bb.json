@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-08-26T15:41:48+00:00",
+  "date": "2020-08-26T21:53:04+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -1236,6 +1236,96 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-AMACPTCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/AMACPTCS"
+        },
+        "name": "AMA CPT",
+        "description": "American Medical Association (AMA) Current Procedural Codes (CPT)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-AMACPTModifiersCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/AMACPTModifiersCS"
+        },
+        "name": "AMA CPT Modifiers",
+        "description": "American Medical Association (AMA) Current Procedural Codes (CPT) Modifiers",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-CMSDRGCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/CMSDRGCS"
+        },
+        "name": "CMS Diagnosis Related Group (DRG)",
+        "description": "Diagnosis Related Group - any of the payment categories that are used to classify patients and especially Medicare patients for the purpose of reimbursing hospitals for each case in a given \ncategory with a fixed fee regardless of the actual costs incurred (Other DRGs, such as AP-DRGs, requires defining their specific Value Sets and Code Systems.)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-CMSPlaceOfServiceCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/CMSPlaceOfServiceCS"
+        },
+        "name": "CMS Place of Service",
+        "description": "Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-CMSRARCCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/CMSRARCCS"
+        },
+        "name": "CMS Remittance Advice Remark Codes (RARC)",
+        "description": "Denial Reasons - Reason codes used to interpret the adjudication denial reason",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-CareTeamRoleCS.html"
           }
         ],
@@ -1280,6 +1370,96 @@
         },
         "name": "Claim Information Category",
         "description": "Claim Information Category - Used as the discriminator for supportingInfo",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-FDANationalDrugCodeCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/FDANationalDrugCodeCS"
+        },
+        "name": "FDA National Drug Code (NDC)",
+        "description": "NCPDP field # 407-D7 National Drug Code (NDC)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-HCPCSModifiersCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/HCPCSModifiersCS"
+        },
+        "name": "AMA CPT Modifiers",
+        "description": "Healthcare Common Procedure Coding System (HCPCS) Procedure Code Modifiers",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-HCPCSProcedureCodesCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/HCPCSProcedureCodesCS"
+        },
+        "name": "AMA CPT",
+        "description": "Healthcare Common Procedure Coding System (HCPCS) Procedure Codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-ICD10CMCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ICD10CMCS"
+        },
+        "name": "ICD-10-CM",
+        "description": "International Classification of Diseases, Tenth Revision, Clinical Modification)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-ICD10PCSCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ICD10PCSCS"
+        },
+        "name": "ICD-10-PCS",
+        "description": "International Classification of Diseases Surgical Procedures (ICD-10).",
         "exampleBoolean": false
       },
       {
@@ -1424,6 +1604,24 @@
         },
         "name": "Payer Diagnosis Type",
         "description": "Payer Diagnosis Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-X12CARCCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/X12CARCCS"
+        },
+        "name": "X12 Claim Adjustment Reason Codes (CARC)",
+        "description": "Denial Reasons - Reason codes used to interpret the adjudication denial reason",
         "exampleBoolean": false
       },
       {
