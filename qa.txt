@@ -3,10 +3,10 @@
 
 err = 49, warn = 43, info = 10
 IG Publisher Version: 1.1.15
-Generated Wed Aug 26 21:54:54 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.4.1 (canonical = http://hl7.org/fhir/us/carin-bb)
+Generated Wed Aug 26 22:05:50 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.4.1 (canonical = http://hl7.org/fhir/us/carin-bb)
 
  Build Errors : 2576 / 1 / 0
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb : 0 / 3 / 1
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb : 0 / 4 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Coverage-Coverage1 : 0 / 0 / 2
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-BBEobOutpatientFacility : 28 / 3 / 3
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-BBEobPharmacy : 10 / 9 / 8
@@ -72,8 +72,8 @@ Generated Wed Aug 26 21:54:54 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-AHANUBCPriorityTypeOfAdmissionOrVisit : 0 / 1 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-AHANUBCRevenueCodes : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-AHANUBCTypeOfBill : 0 / 0 / 1
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-AMACPTCMSHCPCSProcedureCodes : 0 / 1 / 1
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-AMACPTCMSHCPCSProcedureModifiers : 0 / 1 / 1
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-AMACPTCMSHCPCSProcedureCodes : 0 / 0 / 1
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-AMACPTCMSHCPCSProcedureModifiers : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-AdjudicationCarinBBValueCodes : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-AdjudicationValueCodes : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-BenefitPaymentStatus : 0 / 0 / 1
@@ -100,7 +100,7 @@ Generated Wed Aug 26 21:54:54 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-PayerOutpatientinstitutionaldiagnosistype : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-PayerProfessionalandnoncliniciandiagnosistype : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-PayerProviderContractingStatus : 0 / 0 / 1
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-X12CARCCMSRARC : 0 / 0 / 1
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-X12CARCCMSRARC : 0 / 1 / 1
 </table>
 == n/a ==
 WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jiraspec.tmp.xml' (currently in Github) and 'jira.xml' (reflects current IG content)
@@ -2683,6 +2683,7 @@ ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/toc.html#/html/body/
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb.json ==
 INFORMATION: ImplementationGuide/hl7.fhir.us.carin-bb: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 WARNING: ImplementationGuide/hl7.fhir.us.carin-bb: ImplementationGuide.definition.resource[33].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/hl7.fhir.us.carin-bb: ImplementationGuide.definition.resource[43].name: value should not start or finish with whitespace
 WARNING: ImplementationGuide/hl7.fhir.us.carin-bb: ImplementationGuide.definition.resource[66].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/hl7.fhir.us.carin-bb: ImplementationGuide.definition.resource[93].description: value should not start or finish with whitespace
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Coverage-Coverage1.json ==
@@ -2910,10 +2911,8 @@ INFORMATION: ValueSet/AHANUBCRevenueCodes: ValueSet: Validate resource against p
 INFORMATION: ValueSet/AHANUBCTypeOfBill: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-AMACPTCMSHCPCSProcedureCodes.json ==
 INFORMATION: ValueSet/AMACPTCMSHCPCSProcedureCodes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-WARNING: ValueSet.where(id = 'AMACPTCMSHCPCSProcedureCodes'): Error from server: Unable to provide support for code system http://www.ama-assn.org/go/cpt
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-AMACPTCMSHCPCSProcedureModifiers.json ==
 INFORMATION: ValueSet/AMACPTCMSHCPCSProcedureModifiers: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-WARNING: ValueSet.where(id = 'AMACPTCMSHCPCSProcedureModifiers'): Error from server: Unable to provide support for code system http://www.cms.gov/hcpcs-level-II-modifiers
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-AdjudicationCarinBBValueCodes.json ==
 INFORMATION: ValueSet/AdjudicationCarinBBValueCodes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-AdjudicationValueCodes.json ==
@@ -2971,3 +2970,4 @@ INFORMATION: ValueSet/PayerProfessionalandnoncliniciandiagnosistype: ValueSet: V
 INFORMATION: ValueSet/PayerProviderContractingStatus: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/vocabulary/ValueSet-X12CARCCMSRARC.json ==
 INFORMATION: ValueSet/X12CARCCMSRARC: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/X12CARCCMSRARC: ValueSet.title: value should not start or finish with whitespace

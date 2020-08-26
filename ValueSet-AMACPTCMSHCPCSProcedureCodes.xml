@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="AMACPTCMSHCPCSProcedureCodes"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="http://hl7.org/fhir/R4/valueset-cpt-all.html">http://hl7.org/fhir/ValueSet/cpt-all</a></li><li>Include all codes defined in <code>urn:oid:2.16.840.1.113883.6.285</code></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-cpt-4.html"><code>http://www.ama-assn.org/go/cpt</code></a></li><li>Include all codes defined in <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-cpt-4.html"><code>http://www.ama-assn.org/go/cpt</code></a></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/AMACPTCMSHCPCSProcedureCodes"/>
   <version value="0.4.1"/>
   <name value="AMACPTCMSHCPCSProcedureCodes"/>
   <title value="AMA CPT and CMS HCPCS Procedure Codes"/>
   <status value="active"/>
-  <date value="2020-08-26T21:53:04+00:00"/>
+  <date value="2020-08-26T22:04:25+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -33,10 +33,10 @@
   <copyright value="CPT copyright 2014 American Medical Association. All rights reserved."/>
   <compose>
     <include>
-      <valueSet value="http://hl7.org/fhir/ValueSet/cpt-all"/>
+      <system value="http://www.ama-assn.org/go/cpt"/>
     </include>
     <include>
-      <system value="urn:oid:2.16.840.1.113883.6.285"/>
+      <system value="http://www.ama-assn.org/go/cpt"/>
     </include>
   </compose>
 </ValueSet>
