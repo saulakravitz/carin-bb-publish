@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-08-27T18:13:02+00:00"/>
+  <date value="2020-08-27T18:55:19+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -359,7 +359,7 @@
         <reference value="ValueSet/AHANUBCPointOfOriginForAdmissionOrVisit"/>
       </reference>
       <name value="UB-04 Point of Origin for Admission or Visit (FL-15)"/>
-      <description value="NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)."/>
+      <description value="NUBC Point of Origin for Admission or Visit."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -415,7 +415,7 @@
         <reference value="ValueSet/AHANUBCTypeOfBill"/>
       </reference>
       <name value="UB-04 Type of Bill (FL-4)"/>
-      <description value="NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)."/>
+      <description value="AHA NUBC Type of Bill codes."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -667,7 +667,7 @@
         <reference value="ValueSet/NCPDPBrandGenericCode"/>
       </reference>
       <name value="NCPDP Brand Generic Code"/>
-      <description value="National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode."/>
+      <description value="Indicates whether the plan adjudicated the claim as a brand or generic drug. NCPDP field # 686."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -680,8 +680,8 @@
       <reference>
         <reference value="ValueSet/NCPDPDispensedAsWritten"/>
       </reference>
-      <name value="NCPDP Dispensed As Written (DAW)"/>
-      <description value="NCPDP field # 408-D8 (Dispensed As Written (DAW)/Product Selection Code) Prescriber&#39;s instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. "/>
+      <name value="NCPDP Dispensed As Written Or Product Selection Code"/>
+      <description value="Prescriber&#39;s instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. NCPDP field # 408-D8."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -695,7 +695,7 @@
         <reference value="ValueSet/NCPDPPrescriptionOriginCode"/>
       </reference>
       <name value="NCPDP Prescription Origin Code"/>
-      <description value="National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code)."/>
+      <description value="Indicates whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy. NCPDP field # 419-DJ."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -891,7 +891,7 @@
         <reference value="CodeSystem/AHANUBCTypeOfBillCS"/>
       </reference>
       <name value="AHA NUBC Type of Bill"/>
-      <description value="NUBC Type of Bill codes."/>
+      <description value="AHA NUBC Type of Bill codes."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1044,7 +1044,7 @@
       <reference>
         <reference value="CodeSystem/HCPCSProcedureCodesCS"/>
       </reference>
-      <name value="AMA CPT"/>
+      <name value="HCPCS Procedure Codes"/>
       <description value="Healthcare Common Procedure Coding System (HCPCS) Procedure Codes"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1101,7 +1101,7 @@
         <reference value="CodeSystem/NCPDPBrandGenericCodeCS"/>
       </reference>
       <name value="NCPDP Brand Generic Code"/>
-      <description value="National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode. Whether the plan adjudicated the claim as a brand or generic drug."/>
+      <description value="Indicates whether the plan adjudicated the claim as a brand or generic drug. NCPDP field # 686."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1115,7 +1115,7 @@
         <reference value="CodeSystem/NCPDPCompoundCodeCS"/>
       </reference>
       <name value="NCPDP Compound Code"/>
-      <description value="National Council for Prescription Drug Programs, (NCPDP) field # 406-D6 (Compound Code)."/>
+      <description value="Indicates whether or not the prescription is a compound NCPDP field # 406-D6."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1128,8 +1128,8 @@
       <reference>
         <reference value="CodeSystem/NCPDPDispensedAsWrittenCS"/>
       </reference>
-      <name value="NCPDP Dispensed As Written (DAW)"/>
-      <description value="National Council for Prescription Drug Programs, (NCPDP) field # 408-D8 (Dispensed As Written (DAW) / Product Selection Code) "/>
+      <name value="NCPDP Dispensed As Written Or Product Selection Code"/>
+      <description value="Prescriber&#39;s instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. NCPDP field # 408-D8."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1143,7 +1143,7 @@
         <reference value="CodeSystem/NCPDPPrescriptionOriginCodeCS"/>
       </reference>
       <name value="NCPDP Prescription Origin Code"/>
-      <description value="National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code)."/>
+      <description value="Indicates whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy. NCPDP field # 419-DJ."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

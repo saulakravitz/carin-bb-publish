@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-08-27T18:13:02+00:00",
+  "date": "2020-08-27T18:55:19+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -523,7 +523,7 @@
           "reference": "ValueSet/AHANUBCPointOfOriginForAdmissionOrVisit"
         },
         "name": "UB-04 Point of Origin for Admission or Visit (FL-15)",
-        "description": "NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
+        "description": "NUBC Point of Origin for Admission or Visit.",
         "exampleBoolean": false
       },
       {
@@ -595,7 +595,7 @@
           "reference": "ValueSet/AHANUBCTypeOfBill"
         },
         "name": "UB-04 Type of Bill (FL-4)",
-        "description": "NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC).",
+        "description": "AHA NUBC Type of Bill codes.",
         "exampleBoolean": false
       },
       {
@@ -919,7 +919,7 @@
           "reference": "ValueSet/NCPDPBrandGenericCode"
         },
         "name": "NCPDP Brand Generic Code",
-        "description": "National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode.",
+        "description": "Indicates whether the plan adjudicated the claim as a brand or generic drug. NCPDP field # 686.",
         "exampleBoolean": false
       },
       {
@@ -936,8 +936,8 @@
         "reference": {
           "reference": "ValueSet/NCPDPDispensedAsWritten"
         },
-        "name": "NCPDP Dispensed As Written (DAW)",
-        "description": "NCPDP field # 408-D8 (Dispensed As Written (DAW)/Product Selection Code) Prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. ",
+        "name": "NCPDP Dispensed As Written Or Product Selection Code",
+        "description": "Prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. NCPDP field # 408-D8.",
         "exampleBoolean": false
       },
       {
@@ -955,7 +955,7 @@
           "reference": "ValueSet/NCPDPPrescriptionOriginCode"
         },
         "name": "NCPDP Prescription Origin Code",
-        "description": "National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code).",
+        "description": "Indicates whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy. NCPDP field # 419-DJ.",
         "exampleBoolean": false
       },
       {
@@ -1207,7 +1207,7 @@
           "reference": "CodeSystem/AHANUBCTypeOfBillCS"
         },
         "name": "AHA NUBC Type of Bill",
-        "description": "NUBC Type of Bill codes.",
+        "description": "AHA NUBC Type of Bill codes.",
         "exampleBoolean": false
       },
       {
@@ -1404,7 +1404,7 @@
         "reference": {
           "reference": "CodeSystem/HCPCSProcedureCodesCS"
         },
-        "name": "AMA CPT",
+        "name": "HCPCS Procedure Codes",
         "description": "Healthcare Common Procedure Coding System (HCPCS) Procedure Codes",
         "exampleBoolean": false
       },
@@ -1477,7 +1477,7 @@
           "reference": "CodeSystem/NCPDPBrandGenericCodeCS"
         },
         "name": "NCPDP Brand Generic Code",
-        "description": "National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode. Whether the plan adjudicated the claim as a brand or generic drug.",
+        "description": "Indicates whether the plan adjudicated the claim as a brand or generic drug. NCPDP field # 686.",
         "exampleBoolean": false
       },
       {
@@ -1495,7 +1495,7 @@
           "reference": "CodeSystem/NCPDPCompoundCodeCS"
         },
         "name": "NCPDP Compound Code",
-        "description": "National Council for Prescription Drug Programs, (NCPDP) field # 406-D6 (Compound Code).",
+        "description": "Indicates whether or not the prescription is a compound NCPDP field # 406-D6.",
         "exampleBoolean": false
       },
       {
@@ -1512,8 +1512,8 @@
         "reference": {
           "reference": "CodeSystem/NCPDPDispensedAsWrittenCS"
         },
-        "name": "NCPDP Dispensed As Written (DAW)",
-        "description": "National Council for Prescription Drug Programs, (NCPDP) field # 408-D8 (Dispensed As Written (DAW) / Product Selection Code) ",
+        "name": "NCPDP Dispensed As Written Or Product Selection Code",
+        "description": "Prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. NCPDP field # 408-D8.",
         "exampleBoolean": false
       },
       {
@@ -1531,7 +1531,7 @@
           "reference": "CodeSystem/NCPDPPrescriptionOriginCodeCS"
         },
         "name": "NCPDP Prescription Origin Code",
-        "description": "National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code).",
+        "description": "Indicates whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy. NCPDP field # 419-DJ.",
         "exampleBoolean": false
       },
       {

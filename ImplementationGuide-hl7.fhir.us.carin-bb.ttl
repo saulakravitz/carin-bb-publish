@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CARINConsumerDirectedPayerDataExchange"];
   fhir:ImplementationGuide.title [ fhir:value "CARIN Consumer Directed Payer Data Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-08-27T18:13:02+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-08-27T18:55:19+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -507,7 +507,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/AHANUBCPointOfOriginForAdmissionOrVisit" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "UB-04 Point of Origin for Admission or Visit (FL-15)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NUBC Point of Origin for Admission or Visit. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NUBC Point of Origin for Admission or Visit." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 11;
@@ -579,7 +579,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/AHANUBCTypeOfBill" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "UB-04 Type of Bill (FL-4)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NUBC Type of Bill codes. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AHA NUBC Type of Bill codes." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 15;
@@ -903,7 +903,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/NCPDPBrandGenericCode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPDP Brand Generic Code" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates whether the plan adjudicated the claim as a brand or generic drug. NCPDP field # 686." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 33;
@@ -920,8 +920,8 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPDispensedAsWritten>;
          fhir:Reference.reference [ fhir:value "ValueSet/NCPDPDispensedAsWritten" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPDP Dispensed As Written (DAW)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NCPDP field # 408-D8 (Dispensed As Written (DAW)/Product Selection Code) Prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. " ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPDP Dispensed As Written Or Product Selection Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. NCPDP field # 408-D8." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 34;
@@ -939,7 +939,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/NCPDPPrescriptionOriginCode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPDP Prescription Origin Code" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code)." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy. NCPDP field # 419-DJ." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 35;
@@ -1191,7 +1191,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/AHANUBCTypeOfBillCS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "AHA NUBC Type of Bill" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NUBC Type of Bill codes." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AHA NUBC Type of Bill codes." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 49;
@@ -1388,7 +1388,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/CodeSystem/HCPCSProcedureCodesCS>;
          fhir:Reference.reference [ fhir:value "CodeSystem/HCPCSProcedureCodesCS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMA CPT" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HCPCS Procedure Codes" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Healthcare Common Procedure Coding System (HCPCS) Procedure Codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -1461,7 +1461,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/NCPDPBrandGenericCodeCS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPDP Brand Generic Code" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Council for Prescription Drug Programs, (NCPDP) field # 686, BrandGenericCode. Whether the plan adjudicated the claim as a brand or generic drug." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates whether the plan adjudicated the claim as a brand or generic drug. NCPDP field # 686." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 64;
@@ -1479,7 +1479,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/NCPDPCompoundCodeCS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPDP Compound Code" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Council for Prescription Drug Programs, (NCPDP) field # 406-D6 (Compound Code)." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates whether or not the prescription is a compound NCPDP field # 406-D6." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 65;
@@ -1496,8 +1496,8 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/CodeSystem/NCPDPDispensedAsWrittenCS>;
          fhir:Reference.reference [ fhir:value "CodeSystem/NCPDPDispensedAsWrittenCS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPDP Dispensed As Written (DAW)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Council for Prescription Drug Programs, (NCPDP) field # 408-D8 (Dispensed As Written (DAW) / Product Selection Code) " ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPDP Dispensed As Written Or Product Selection Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. NCPDP field # 408-D8." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 66;
@@ -1515,7 +1515,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/NCPDPPrescriptionOriginCodeCS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPDP Prescription Origin Code" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Council for Prescription Drug Programs, (NCPDP)  field # 419-DJ (Prescription Origin Code)." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy. NCPDP field # 419-DJ." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 67;

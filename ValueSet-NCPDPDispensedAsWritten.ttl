@@ -15,9 +15,9 @@
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPDispensedAsWritten"];
   fhir:ValueSet.version [ fhir:value "0.4.1"];
   fhir:ValueSet.name [ fhir:value "NCPDPDispensedAsWritten"];
-  fhir:ValueSet.title [ fhir:value "NCPDP Dispensed As Written (DAW)"];
+  fhir:ValueSet.title [ fhir:value "NCPDP Dispensed As Written Or Product Selection Code"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-08-27T18:13:02+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-08-27T18:55:19+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "NCPDP field # 408-D8 (Dispensed As Written (DAW)/Product Selection Code) Prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. "];
+  fhir:ValueSet.description [ fhir:value "Prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. NCPDP field # 408-D8."];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -41,6 +41,7 @@
        fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
+  fhir:ValueSet.copyright [ fhir:value "NCPDP codes are available by subscription at ncpdp.org. As HL7 is working with the owning authority to finalize the url, this url is subject to change."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
