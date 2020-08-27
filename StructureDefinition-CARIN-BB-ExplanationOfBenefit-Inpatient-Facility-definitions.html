@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="c7cd6209-5810-479a-8ae7-bfa4592a53bd">​</a>
+      <li><a name="d94d46dc-5225-4fee-89b1-f28aab057d4b">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="b1ed07b0-d6ca-441d-95f4-19fed811d8e3">​</a>
+      <li><a name="a0728075-edae-40a6-87e0-e77884bdebea">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="d989b442-4134-46f4-991f-d4444800fbcf">​</a>
+      <li><a name="fbda17b3-4c08-4ebf-8d22-3085b5ad3326">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="7274c6f1-0d5a-499b-b84a-0856a4f16438">​</a>
+      <li><a name="275dd401-9bbe-4e0d-a106-1c384798e896">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="4012f3e8-6b96-45da-9743-600d3c574515">​</a>
+      <li><a name="b76d417d-d89c-402e-b7a7-a7e8d9f0679b">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -996,7 +996,7 @@
   <tr><td>Requirements</td><td><p>Common to identify the responsible and supporting practitioners.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">EOB-careteam-qualification</b>: Care Team Performing physician's qualifications are from US-Core-Provider-Specialty Value Set (: ExplanationOfBenefit.careTeam.role.coding.code='performing' implies ExplanationOfBenefit.careTeam.qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty'))<br/><b title="Formal Invariant Identifier">EOB-inst-careTeam-organization</b>: Institutional EOB:  Careteam roles refer to an organization (: ( careTeam.role.coding.code='performing') implies 
+<b title="Formal Invariant Identifier">EOB-inst-careTeam-organization</b>: Institutional EOB:  Careteam roles refer to an organization (: ( careTeam.role.coding.code='performing') implies 
  careTeam.provider.reference.resolve().is(FHIR.Organization))<br/><b title="Formal Invariant Identifier">EOB-inst-careTeam-practitioner</b>: Institutional EOB:  Careteam roles refer to a practitioner (: ( careTeam.role.coding.code in 
 ('attending' or 'primary' or 'referring' or 'supervising')) implies 
  careTeam.provider.reference.resolve().is(FHIR.Practitioner))<br/><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
@@ -1077,7 +1077,7 @@
   <tr><td>Definition</td><td><p>The qualification of the practitioner which is applicable for this service.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/us/core/STU3.1/ValueSet-us-core-provider-specialty.html">US Core Provider Speciality (NUCC)</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>Provider professional qualifications.<br/>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-provider-qualification.html">ExampleProviderQualificationCodes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Need to specify which qualification a provider is delivering the product or service under.</p>
 </td></tr>
@@ -4742,7 +4742,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2020 17:45+0000">2020-08-27</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2020 18:13+0000">2020-08-27</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
