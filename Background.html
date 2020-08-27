@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="25ac612c-854e-4a92-980f-b16c6f9604ac">​</a>
+      <li><a name="d0b99e63-17f7-481f-9a9b-de62b2decf59">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="9ac856d5-648c-4f5e-a5ff-37ca7687fc5f">​</a>
+      <li><a name="77dfd945-6ae8-4209-a27a-2b6faa9ddfef">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="4574fede-cbe5-4eb1-a3b5-77d3eae496b2">​</a>
+      <li><a name="71cdbe9a-a5b7-4913-bbda-5144a3fc3a6c">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="3246df0d-6bc2-4e90-8e80-cb3745c8abad">​</a>
+      <li><a name="95899bdd-4146-42a3-8313-ff2b6bdd5d13">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="b0ae7390-49d7-4b01-9df4-1d99044747f4">​</a>
+      <li><a name="eff2e541-845b-42dc-9a1d-5a1ce2ad6030">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -279,10 +279,10 @@ Interoperability and Patient Access Final Rule</a> on patient access to health d
 <p>The SMART App IG also provides guidance on how to handle authentication. If the app needs to authenticate the identity of the end-user, it should include two OpenID Connect scopes: openid and fhirUser. When these scopes are requested, and the request is granted, the app will receive an id_token along with the access token. For details, see the description <a href="http://hl7.org/fhir/smart-app-launch/scopes-and-launch-context/index.html">here</a>.</p>
 
 <h4>PDEX</h4>
-<p><a name="32ab4090-a9c9-4d22-9a28-0d23cab539cc">​</a>CMS Guidance defines two sets of data be made available by payers in the Patient Access API: Claims and Encounter Data and Clinical data. They provide links to specific implementations guides for the Patient Access API to provide guidance. Use of these implementation guides is not required, but if used these guides will provide information payers can use to meet the requirements of the policies being finalized.
-This IG defines how Claims and Encounter Data are to be provided; the DaVinci <a href="http://build.fhir.org/ig/HL7/davinci-epdx/">PDEX</a> (Payer Data Exchange) and <a href="http://hl7.org/fhir/us/core/STU3/index.html">US Core</a> Implementation Guides define how Clinical Data is to be provided.</p>
+<p><a name="df191d55-4016-4041-9f59-7b4b5a09df1d">​</a>CMS Guidance defines two sets of data be made available by payers in the Patient Access API: Claims and Encounter Data and Clinical data. They provide links to specific implementations guides for the Patient Access API to provide guidance. Use of these implementation guides is not required, but if used these guides will provide information payers can use to meet the requirements of the policies being finalized.
+This IG defines how Claims and Encounter Data are to be provided; the DaVinci <a href="http://hl7.org/fhir/us/davinci-pdex/">PDEX</a> (Payer Data Exchange) and <a href="http://hl7.org/fhir/us/core/STU3/index.html">US Core</a> Implementation Guides define how Clinical Data is to be provided.</p>
 <h4>RTPBC</h4>
-<p>Using the <a href="http://build.fhir.org/ig/HL7/carin-rtpbc">RTPBC</a> (Real Time Pharmacy Benefit Check), a patient can learn the cost and insurance coverage related to medications they’ve been prescribed.  A person would typically use the RTPBC prior to the dispensing of the prescription and the filing of the claim.  CARIIN BB provides the capability to access how pharmacy (and medical) benefits have been applied by the payer as a result of a claim filed by the pharmacy.</p>
+<p>Using the <a href="http://hl7.org/fhir/us/carin-rtpbc/">RTPBC</a> (Real Time Pharmacy Benefit Check), a patient can learn the cost and insurance coverage related to medications they’ve been prescribed.  A person would typically use the RTPBC prior to the dispensing of the prescription and the filing of the claim.  CARIIN BB provides the capability to access how pharmacy (and medical) benefits have been applied by the payer as a result of a claim filed by the pharmacy.</p>
 
 <h3>Guide Overview</h3>
 <h4>How to Read This Guide</h4>
@@ -296,7 +296,7 @@ This IG defines how Claims and Encounter Data are to be provided; the DaVinci <a
  providing patient data. This can be thought of as the server in a client-server
  interaction.</li>
  </ul>
-<h4>Conformance Requirementse</h4>
+<h4 name="conformance">Conformance Requirements</h4>
 
 
 
@@ -321,7 +321,7 @@ This IG defines how Claims and Encounter Data are to be provided; the DaVinci <a
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2020 22:04+0000">2020-08-27</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2020 22:52+0000">2020-08-27</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
