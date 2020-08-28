@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="AMACPTCMSHCPCSProcedureModifiers"/>
+  <id value="AMACPTCMSHCPCSModifiers"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-AMACPTModifiersCS.html"><code>http://www.ama-assn.org/go/cpt-modifiers</code></a></li><li>Include all codes defined in <a href="CodeSystem-HCPCSModifiersCS.html"><code>http://www.cms.gov/hcpcs-level-II-modifiers</code></a></li></ul></div>
   </text>
-  <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/AMACPTCMSHCPCSProcedureModifiers"/>
+  <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/AMACPTCMSHCPCSModifiers"/>
   <version value="0.4.1"/>
-  <name value="AMACPTCMSHCPCSProcedureModifiers"/>
-  <title value="AMA CPT and CMS HCPCS Modifier Codes"/>
+  <name value="AMACPTCMSHCPCSModifiers"/>
+  <title value="AMA CPT CMS HCPCS Modifiers"/>
   <status value="active"/>
-  <date value="2020-08-28T13:07:18+00:00"/>
+  <date value="2020-08-28T19:17:02+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -23,14 +23,14 @@
       <value value="fm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="AMA CPT and CMS HCPCS Modifier Codes. The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure code modifiers. Modifiers help further describe a procedure code without changing its definition. &#xA;CPT modifiers are available by subscription from the AMA at http://www.ama-assn.org/go/cpt. HCPCS modifiers are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. &#xA;The target set for this Code System is the procedure code modifiers from this file. The code set is owned by CMS and is available for use."/>
+  <description value="The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure code modifiers. &#xA;Modifiers help further describe a procedure code without changing its definition. CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt. &#xA;HCPCS codes are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. &#xA;The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. The target set for this Code System is the procedure code modifiers from this file."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="US"/>
     </coding>
   </jurisdiction>
-  <copyright value="CPT copyright 2014 American Medical Association. All rights reserved."/>
+  <copyright value="CCPT copyright 2014 American Medical Association. All rights reserved. The HCPCS II codes are owned by CMS and are available for use. As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
   <compose>
     <include>
       <system value="http://www.ama-assn.org/go/cpt-modifiers"/>

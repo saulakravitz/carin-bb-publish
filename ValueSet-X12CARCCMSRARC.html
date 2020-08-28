@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="04f6a958-9267-4429-ab1d-0dbc623b4dfb">​</a>
+      <li><a name="87bcb077-ca2a-46d2-9d70-f4c790f01e04">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="28646f74-4b0b-4f78-924b-3011bcbec373">​</a>
+      <li><a name="75d56d53-8f32-4794-ab3a-3417443726d3">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="33cece0d-ef9d-4edf-9746-ba31b4cab8f2">​</a>
+      <li><a name="9a279e4b-6f4a-427a-8438-679f36c6fa4f">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="e692299e-0ce4-4777-8656-8773fe790b86">​</a>
+      <li><a name="52a289a9-22ab-41f7-aae1-47ef1285d698">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="242dc101-e1fc-414f-9237-02cbddc664e5">​</a>
+      <li><a name="76d671c7-7f09-4c59-af54-d8f503aa75a9">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -237,10 +237,14 @@
  <tr><td>Name:</td><td>X12CARCCMSRARC</td></tr>
  <tr><td>Status:</td><td>Active</td></tr>
  <tr><td>Title:</td><td> X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC)</td></tr>
- <tr><td>Definition:</td><td><p>Reason codes used to interpret the adjudication denial reason.  RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes.</p>
+ <tr><td>Definition:</td><td><p>The Value Set is a combination of two sets of codes: X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC).
+CARC codes describe why a claim or service line was paid differently than it was billed. RARC codes provide additional explanation for an adjustment already described by a
+Claim Adjustment Reason Code (CARC) or convey information about remittance processing. CARC codes are owned, maintained and distributed by X12.
+RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes.</p>
 </td></tr>
  <tr><td>Publisher:</td><td>HL7 Financial Management Working Group</td></tr>
- <tr><td>Copyright:</td><td><p>CARC codes are owned, maintained and distributed by X12. Use of X12 codes require licenses. RARC codes are owned by CMS and are available for use.</p>
+ <tr><td>Copyright:</td><td><p>CARC codes are owned, maintained and distributed by X12. Use of X12 codes require licenses. RARC codes are owned by CMS and are available for useUse of X12 CARC codes require a license. Reference https://x12.org/codes/.
+RARC codes are owned by CMS and are available for use. As HL7 is working with the owning authority to finalize the url, this url is subject to chang.</p>
 </td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-X12CARCCMSRARC.xml.html">XML</a> / <a href="ValueSet-X12CARCCMSRARC.json.html">JSON</a> / <a href="ValueSet-X12CARCCMSRARC.ttl.html">Turtle</a></td></tr>
 </tbody></table>
@@ -266,7 +270,7 @@
 
   <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-X12CARCCS.html"><code>http://www.x12.org/codes/claim-adjustment-reason-codes</code></a></li><li>Include all codes defined in <a href="CodeSystem-CMSRARCCS.html"><code>http://www.wpc-edi.com/remittance-advice-remark</code></a></li></ul></div>
+<div><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-X12CARCCS.html"><code>https://www.x12.org/carc</code></a></li><li>Include all codes defined in <a href="CodeSystem-CMSRARCCS.html"><code>https://www.cms.gov/rarc</code></a></li></ul></div>
 
   <p>&nbsp;</p>
   <a name="expansion"> </a>
@@ -333,7 +337,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 28, 2020 13:07+0000">2020-08-28</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 28, 2020 19:17+0000">2020-08-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-08-28T13:07:18+00:00"/>
+  <date value="2020-08-28T19:17:02+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -423,13 +423,13 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-AMACPTCMSHCPCSProcedureCodes.html"/>
+        <valueUri value="ValueSet-AMACPTCMSHCPCSModifiers.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/AMACPTCMSHCPCSProcedureCodes"/>
+        <reference value="ValueSet/AMACPTCMSHCPCSModifiers"/>
       </reference>
-      <name value="AMA CPT and CMS HCPCS Procedure Codes"/>
-      <description value="AMA CPT and CMS HCPCS Procedure Codes. The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure codes. They are submitted by providers to payers to convey the specific procedure performed.&#xA;AMA CPT CMS HCPCS Procedure Codes leverage US Core Procedure Codes composition.CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt.  HCPCS codes are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. &#xA;The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. The target set for this Code System is the procedure codes from this file. The code set is owned by CMS and is available for use."/>
+      <name value="AMA CPT CMS HCPCS Modifiers"/>
+      <description value="The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure code modifiers. &#xA;Modifiers help further describe a procedure code without changing its definition. CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt. &#xA;HCPCS codes are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. &#xA;The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. The target set for this Code System is the procedure code modifiers from this file."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -437,13 +437,13 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-AMACPTCMSHCPCSProcedureModifiers.html"/>
+        <valueUri value="ValueSet-AMACPTCMSHCPCSProcedureCodes.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/AMACPTCMSHCPCSProcedureModifiers"/>
+        <reference value="ValueSet/AMACPTCMSHCPCSProcedureCodes"/>
       </reference>
-      <name value="AMA CPT and CMS HCPCS Modifier Codes"/>
-      <description value="AMA CPT and CMS HCPCS Modifier Codes. The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure code modifiers. Modifiers help further describe a procedure code without changing its definition. &#xA;CPT modifiers are available by subscription from the AMA at http://www.ama-assn.org/go/cpt. HCPCS modifiers are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. &#xA;The target set for this Code System is the procedure code modifiers from this file. The code set is owned by CMS and is available for use."/>
+      <name value="AMA CPT CMS HCPCS Procedure Codes"/>
+      <description value="The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure codes. They are submitted by providers to payers to convey the specific &#xA;procedure performed. AMA CPT CMS HCPCS Procedure Codes leverage US Core Procedure Codes composition. CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt. &#xA;HCPCS codes are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. &#xA;The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. The target set for this Code System is the procedure codes from this file."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -821,7 +821,7 @@
         <reference value="ValueSet/X12CARCCMSRARC"/>
       </reference>
       <name value=" X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC)"/>
-      <description value="Reason codes used to interpret the adjudication denial reason.  RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes."/>
+      <description value="The Value Set is a combination of two sets of codes: X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC). &#xA;CARC codes describe why a claim or service line was paid differently than it was billed. RARC codes provide additional explanation for an adjustment already described by a &#xA;Claim Adjustment Reason Code (CARC) or convey information about remittance processing. CARC codes are owned, maintained and distributed by X12. &#xA;RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

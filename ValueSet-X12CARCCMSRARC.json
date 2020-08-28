@@ -3,14 +3,14 @@
   "id": "X12CARCCMSRARC",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-X12CARCCS.html\"><code>http://www.x12.org/codes/claim-adjustment-reason-codes</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-CMSRARCCS.html\"><code>http://www.wpc-edi.com/remittance-advice-remark</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-X12CARCCS.html\"><code>https://www.x12.org/carc</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-CMSRARCCS.html\"><code>https://www.cms.gov/rarc</code></a></li></ul></div>"
   },
   "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/X12CARCCMSRARC",
   "version": "0.4.1",
   "name": "X12CARCCMSRARC",
   "title": " X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC)",
   "status": "active",
-  "date": "2020-08-28T13:07:18+00:00",
+  "date": "2020-08-28T19:17:02+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Reason codes used to interpret the adjudication denial reason.  RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes.",
+  "description": "The Value Set is a combination of two sets of codes: X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC). \nCARC codes describe why a claim or service line was paid differently than it was billed. RARC codes provide additional explanation for an adjustment already described by a \nClaim Adjustment Reason Code (CARC) or convey information about remittance processing. CARC codes are owned, maintained and distributed by X12. \nRARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes.",
   "jurisdiction": [
     {
       "coding": [
@@ -38,14 +38,14 @@
       ]
     }
   ],
-  "copyright": "CARC codes are owned, maintained and distributed by X12. Use of X12 codes require licenses. RARC codes are owned by CMS and are available for use.",
+  "copyright": "CARC codes are owned, maintained and distributed by X12. Use of X12 codes require licenses. RARC codes are owned by CMS and are available for useUse of X12 CARC codes require a license. Reference https://x12.org/codes/. \nRARC codes are owned by CMS and are available for use. As HL7 is working with the owning authority to finalize the url, this url is subject to chang.",
   "compose": {
     "include": [
       {
-        "system": "http://www.x12.org/codes/claim-adjustment-reason-codes"
+        "system": "https://www.x12.org/carc"
       },
       {
-        "system": "http://www.wpc-edi.com/remittance-advice-remark"
+        "system": "https://www.cms.gov/rarc"
       }
     ]
   }

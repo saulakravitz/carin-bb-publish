@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="1d8da17c-5421-4392-857d-162ea92f8e66">​</a>
+      <li><a name="b4f322c6-bbdd-49a5-8060-3a016fe24b45">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="1fdabd8c-4dfe-4c69-8050-089b891d30b2">​</a>
+      <li><a name="a8d97593-4013-433a-aae6-2eadb7ba69da">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="f60f7f51-5246-42c5-8342-b476ce9ebcbe">​</a>
+      <li><a name="cc27cd6f-37ad-42b8-a816-c3def0c78d95">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="b6db23bd-491e-4c6c-8cad-ac6b453a6333">​</a>
+      <li><a name="bdf78942-075e-4ba3-9b6d-d51ebeab24ce">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="74f02970-bf71-4c58-80be-5a7d1f9b9328">​</a>
+      <li><a name="327bb3ee-bf3e-4f2b-82bb-b5858cfdc79e">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -224,7 +224,11 @@ Client applications that can protect private cryptographic keys and all systems 
 Conforming client applications and systems of record MAY support the <a href="http://www.udap.org/udap-user-auth.html">UDAP Tiered OAuth for User Authentication</a> profile to enable reusable user credentials for end users.
 
 Additional constraints on the SMART and UDAP profiles listed above for the CARIN Blue Button IG use case can be found at &lt;a href=http://TBD&gt;URI TBD&lt;/a&gt;.
+*** NEW STUFF ***
+Client applications and systems of record MAY support UDAP Dynamic Client Registration for the registration of a client application with a system of record. If supported, systems of records MUST include their registration endpoint URI in their discoverable OAuth metadata. If supported, client applications that have not previously obtained a client_id from a system of record SHOULD attempt registration with the system of record using this profile.
 
+If supported, client applications that can protect private cryptographic keys and all systems of record SHOULD support (UDAP JWT-Based Client Authentication) for the authentication of client applications using asymmetric cryptography. If supported, client applications SHALL specify a token_endpoint_auth_method of "private_key_jwt" or "client_secret_basic" in their submitted software statement. The "private_key_jwt" value is used for clients intending to authenticate using asymmetric cryptography as per the UDAP JWT-Basic Client Authentication profile. If supported, client applications that cannot protect private cryptographic keys MUST use the "client_secret_basic" value. Conforming client applications and systems of record MAY support the UDAP Tiered OAuth for User Authentication profile to enable reusable user credentials for end users. Additional constraints on the SMART and UDAP profiles listed above for the CARIN Blue Button IG use case can be found at &lt;https://docs.google.com/document/d/1HgOlUWMEsZHBChuP4DACRka4ap2S8UwSTkAz4oY6bCo/edit&gt;.
+*** NEW STUFF ***
 </div>
 
 
@@ -249,7 +253,7 @@ Additional constraints on the SMART and UDAP profiles listed above for the CARIN
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 28, 2020 13:07+0000">2020-08-28</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 28, 2020 19:17+0000">2020-08-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

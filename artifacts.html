@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="24b3cfb6-40be-4ee5-80e2-64f37c187090">​</a>
+      <li><a name="2c888eaa-7db2-4e4b-bc75-d3abb32c05a8">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="30dd0315-d516-4899-96ec-a00c1f2688b7">​</a>
+      <li><a name="e589b059-b199-45bf-af3c-dc7627a750ad">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="21657d3b-8ccb-4074-9c3f-5587c8ef7f50">​</a>
+      <li><a name="c5b06942-ae92-423a-88ad-9895e2f0c9e4">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="cc65b12b-b747-49b9-b075-230954f52d79">​</a>
+      <li><a name="8b36131c-0e55-414a-b070-40f17b375d63">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="17577a3b-6c63-4012-a5d0-88f50c243a4d">​</a>
+      <li><a name="d5cde34c-c19f-46bb-ad95-35ccadd3da11">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -496,22 +496,24 @@ The claims data is based on the professional claim form 1500, submission standar
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-AMACPTCMSHCPCSProcedureCodes.html" title="ValueSet/AMACPTCMSHCPCSProcedureCodes">AMA CPT and CMS HCPCS Procedure Codes</a>
+                  <a href="ValueSet-AMACPTCMSHCPCSModifiers.html" title="ValueSet/AMACPTCMSHCPCSModifiers">AMA CPT CMS HCPCS Modifiers</a>
                </td>
                <td>
-<p>AMA CPT and CMS HCPCS Procedure Codes. The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure codes. They are submitted by providers to payers to convey the specific procedure performed.
-AMA CPT CMS HCPCS Procedure Codes leverage US Core Procedure Codes composition.CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt.  HCPCS codes are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. 
-The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. The target set for this Code System is the procedure codes from this file. The code set is owned by CMS and is available for use.</p>
+<p>The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure code modifiers. 
+Modifiers help further describe a procedure code without changing its definition. CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt. 
+HCPCS codes are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. 
+The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. The target set for this Code System is the procedure code modifiers from this file.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-AMACPTCMSHCPCSProcedureModifiers.html" title="ValueSet/AMACPTCMSHCPCSProcedureModifiers">AMA CPT and CMS HCPCS Modifier Codes</a>
+                  <a href="ValueSet-AMACPTCMSHCPCSProcedureCodes.html" title="ValueSet/AMACPTCMSHCPCSProcedureCodes">AMA CPT CMS HCPCS Procedure Codes</a>
                </td>
                <td>
-<p>AMA CPT and CMS HCPCS Modifier Codes. The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure code modifiers. Modifiers help further describe a procedure code without changing its definition. 
-CPT modifiers are available by subscription from the AMA at http://www.ama-assn.org/go/cpt. HCPCS modifiers are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. 
-The target set for this Code System is the procedure code modifiers from this file. The code set is owned by CMS and is available for use.</p>
+<p>The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure codes. They are submitted by providers to payers to convey the specific 
+procedure performed. AMA CPT CMS HCPCS Procedure Codes leverage US Core Procedure Codes composition. CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt. 
+HCPCS codes are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. 
+The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. The target set for this Code System is the procedure codes from this file.</p>
 </td>
             </tr>
             <tr>
@@ -729,7 +731,10 @@ https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/
                   <a href="ValueSet-X12CARCCMSRARC.html" title="ValueSet/X12CARCCMSRARC"> X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC)</a>
                </td>
                <td>
-<p>Reason codes used to interpret the adjudication denial reason.  RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes.</p>
+<p>The Value Set is a combination of two sets of codes: X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC). 
+CARC codes describe why a claim or service line was paid differently than it was billed. RARC codes provide additional explanation for an adjustment already described by a 
+Claim Adjustment Reason Code (CARC) or convey information about remittance processing. CARC codes are owned, maintained and distributed by X12. 
+RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes.</p>
 </td>
             </tr>
          </tbody>
@@ -1074,7 +1079,7 @@ category with a fixed fee regardless of the actual costs incurred (Other DRGs, s
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 28, 2020 13:07+0000">2020-08-28</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 28, 2020 19:17+0000">2020-08-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
