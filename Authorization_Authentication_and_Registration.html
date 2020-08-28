@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="b4f322c6-bbdd-49a5-8060-3a016fe24b45">​</a>
+      <li><a name="da87e9be-01ec-4186-9369-da3ee41ebd74">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="a8d97593-4013-433a-aae6-2eadb7ba69da">​</a>
+      <li><a name="058c1da8-5066-4b21-81b5-97652f98e140">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="cc27cd6f-37ad-42b8-a816-c3def0c78d95">​</a>
+      <li><a name="a61ce0e8-8c64-4229-b2c0-c1ea3b210825">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="bdf78942-075e-4ba3-9b6d-d51ebeab24ce">​</a>
+      <li><a name="56834879-9319-41c0-ba72-29be871d8faa">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="327bb3ee-bf3e-4f2b-82bb-b5858cfdc79e">​</a>
+      <li><a name="0fd4bd4e-de05-4b8f-b6cf-3cc821ded328">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -211,24 +211,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
   <!-- Authorization_Authentication_and_Registration.md -->
-<div xsi:schemalocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
-
+<div>
 <h3>SMART on FHIR Application Launch</h3>
-Client applications and systems of record SHALL support the standalone launch sequence of the <a href="http://www.hl7.org/fhir/smart-app-launch/">SMART App Launch framework</a> for user authorization and client authentication. Systems of record SHALL publish their authorization and token endpoints for discovery in accordance with the SMART App Launch framework.
-
-Client applications and systems of record SHOULD support <a href="http://www.udap.org/udap-dynamic-client-registration.html">UDAP Dynamic Client Registration</a> for the registration of a client application with a system of record. If supported, systems of records MUST include their registration endpoint URI in their discoverable OAuth metadata. Client applications that have not previously obtained a client_id from a system of record SHOULD attempt registration with the system of record using this profile.
-
+Client applications and systems of record SHALL support the standalone launch sequence of the <a href="http://www.hl7.org/fhir/smart-app-launch/">SMART App Launch framework</a> for user authorization and client authentication. Systems of record SHALL publish their authorization and token endpoints for discovery in accordance with the SMART App Launch framework. Client applications and systems of record SHOULD support <a href="http://www.udap.org/udap-dynamic-client-registration.html">UDAP Dynamic Client Registration</a> for the registration of a client application with a system of record. If supported, systems of records MUST include their registration endpoint URI in their discoverable OAuth metadata. Client applications that have not previously obtained a client_id from a system of record SHOULD attempt registration with the system of record using this profile.
 <h3>Authorization and Authentication</h3>
-Client applications that can protect private cryptographic keys and all systems of record SHOULD support (<a href="http://www.udap.org/udap-jwt-client-auth.html">UDAP JWT-Based Client Authentication</a>for the authentication of client applications using asymmetric cryptography. Client applications SHALL specify a token_endpoint_auth_method of "private_key_jwt" or "client_secret_basic" in their submitted software statement. The "private_key_jwt" value is used for clients intending to authenticate using asymmetric cryptography as per the UDAP JWT-Basic Client Authentication profile. Client applications that cannot protect private cryptographic keys MUST use the "client_secret_basic" value. 
- 
-Conforming client applications and systems of record MAY support the <a href="http://www.udap.org/udap-user-auth.html">UDAP Tiered OAuth for User Authentication</a> profile to enable reusable user credentials for end users.
-
-Additional constraints on the SMART and UDAP profiles listed above for the CARIN Blue Button IG use case can be found at &lt;a href=http://TBD&gt;URI TBD&lt;/a&gt;.
-*** NEW STUFF ***
-Client applications and systems of record MAY support UDAP Dynamic Client Registration for the registration of a client application with a system of record. If supported, systems of records MUST include their registration endpoint URI in their discoverable OAuth metadata. If supported, client applications that have not previously obtained a client_id from a system of record SHOULD attempt registration with the system of record using this profile.
-
-If supported, client applications that can protect private cryptographic keys and all systems of record SHOULD support (UDAP JWT-Based Client Authentication) for the authentication of client applications using asymmetric cryptography. If supported, client applications SHALL specify a token_endpoint_auth_method of "private_key_jwt" or "client_secret_basic" in their submitted software statement. The "private_key_jwt" value is used for clients intending to authenticate using asymmetric cryptography as per the UDAP JWT-Basic Client Authentication profile. If supported, client applications that cannot protect private cryptographic keys MUST use the "client_secret_basic" value. Conforming client applications and systems of record MAY support the UDAP Tiered OAuth for User Authentication profile to enable reusable user credentials for end users. Additional constraints on the SMART and UDAP profiles listed above for the CARIN Blue Button IG use case can be found at &lt;https://docs.google.com/document/d/1HgOlUWMEsZHBChuP4DACRka4ap2S8UwSTkAz4oY6bCo/edit&gt;.
-*** NEW STUFF ***
+Client applications and systems of record MAY support UDAP Dynamic Client Registration for the registration of a client application with a system of record. If supported, systems of records MUST include their registration endpoint URI in their discoverable OAuth metadata. If supported, client applications that have not previously obtained a client_id from a system of record SHOULD attempt registration with the system of record using this profile. If supported, client applications that can protect private cryptographic keys and all systems of record SHOULD support (UDAP JWT-Based Client Authentication) for the authentication of client applications using asymmetric cryptography. If supported, client applications SHALL specify a token_endpoint_auth_method of "private_key_jwt" or "client_secret_basic" in their submitted software statement. The "private_key_jwt" value is used for clients intending to authenticate using asymmetric cryptography as per the UDAP JWT-Basic Client Authentication profile. If supported, client applications that cannot protect private cryptographic keys MUST use the "client_secret_basic" value. Conforming client applications and systems of record MAY support the UDAP Tiered OAuth for User Authentication profile to enable reusable user credentials for end users. Additional constraints on the SMART and UDAP profiles listed above for the CARIN Blue Button IG use case can be found <a href="https://docs.google.com/document/d/1HgOlUWMEsZHBChuP4DACRka4ap2S8UwSTkAz4oY6bCo/edit">here</a>.
 </div>
 
 
@@ -253,7 +240,7 @@ If supported, client applications that can protect private cryptographic keys an
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 28, 2020 19:17+0000">2020-08-28</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 28, 2020 19:30+0000">2020-08-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
