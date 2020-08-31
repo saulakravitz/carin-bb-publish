@@ -1434,44 +1434,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>ExplanationOfBenefit.adjudication.extension</sch:title>
-    <sch:rule context="f:ExplanationOfBenefit/f:adjudication/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>ExplanationOfBenefit.adjudication.modifierExtension</sch:title>
-    <sch:rule context="f:ExplanationOfBenefit/f:adjudication/f:modifierExtension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>ExplanationOfBenefit.adjudication.category</sch:title>
-    <sch:rule context="f:ExplanationOfBenefit/f:adjudication/f:category">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>ExplanationOfBenefit.adjudication.reason</sch:title>
-    <sch:rule context="f:ExplanationOfBenefit/f:adjudication/f:reason">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>ExplanationOfBenefit.adjudication.amount</sch:title>
-    <sch:rule context="f:ExplanationOfBenefit/f:adjudication/f:amount">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>ExplanationOfBenefit.adjudication.value</sch:title>
-    <sch:rule context="f:ExplanationOfBenefit/f:adjudication/f:value">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>ExplanationOfBenefit.total</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:total">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>

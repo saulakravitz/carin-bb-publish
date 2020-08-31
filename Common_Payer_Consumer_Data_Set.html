@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="fbe0197c-e960-44d5-8f62-42fa9565d09d">​</a>
+      <li><a name="1fd497b1-ccf3-4c6b-8b30-ec050f2ca161">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="eec6f9b4-35ed-49e6-80a3-28d97e586cdc">​</a>
+      <li><a name="1f152077-1ac6-46e3-9711-4e3cf91928a9">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="10ca171b-25a5-4261-97c9-be7bd7e6498a">​</a>
+      <li><a name="41c33aab-591e-4209-8fd6-d40b804ffe72">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="66383860-7503-4ece-8d55-5ac0e86564a9">​</a>
+      <li><a name="25d76831-6dd9-47f4-9fac-0b8cf9f6c652">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="4c406a6b-fba4-4f4a-9a10-1aa7055161cc">​</a>
+      <li><a name="3528dad1-493e-439a-933c-b2f1784af7af">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -211,16 +211,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
   <!-- Common_Payer_Consumer_Data_Set.md -->
-<div><a name="05a7344b-42aa-432e-abb7-a72de6d876dd">​</a>The Common Payer Consumer Data Set (CPCDS) is a logical data set (similar to ONC 2015 Edition Common Clinical Data Set) that meets CMS Blue Button 2.0 API content The CPCDS data elements can be stored and queried as profiled FHIR resources. They define key payer financial health data that <strong>SHALL</strong> be accessible and available to through standards-based APIs. Data <strong>SHALL</strong> conform to specified profiles, vocabulary standards and code sets. Download your local copy of the CPCDS Data Dictionary <a download="CARIN Blue Button Framework.pdf" href="CPCDS Data Dictionary and Resource Mapping Tables 0615 2020.pdf"> here </a>.
+<div>The Common Payer Consumer Data Set (CPCDS) is a logical data set (similar to ONC 2015 Edition Common Clinical Data Set) that meets CMS Blue Button 2.0 API content The CPCDS data elements can be stored and queried as profiled FHIR resources. They define key payer financial health data that <strong>SHALL</strong> be accessible and available to through standards-based APIs. Data <strong>SHALL</strong> conform to specified profiles, vocabulary standards and code sets. Download your local copy of the CPCDS Data Dictionary <a download="CARIN Blue Button Framework.pdf" href="CPCDS Data Dictionary and Resource Mapping Tables 0615 2020.pdf"> here </a>.
 <h3>Mapping from CPCDS to FHIR Resources</h3>
 Based on CPCDS, the mappings define the minimum mandatory elements, extensions and terminology requirements that must be present in the FHIR resource. Additional business rules are also specified.
 <h3>Explanation of Benefits Resource Profiles Definition</h3>
-This implementation guide establishes a set of profiles for the Explanation of Benefit (EOB) resource and other referenced FHIR resources. As shown here, the data represented in each of the 4 concrete EOB profiles aligns with claim submission standards adopted by the US Department of Health and Human Services for a specific type of benefit. The fifth EOB profile, not shown in this table, is a design artifact that includes data representation constraints common across all types of EOBs, and this profile should not be used for actual data instances.&nbsp; A side by side comparison of the abstract EOB profile, and the four concrete profiles is shown here.
-<br/>&nbsp;<img src="CARINBBResourcesv17.png" style="width: 100%; height: auto; float: none; align: middle;"/></div>
+This implementation guide establishes a set of profiles for the Explanation of Benefit (EOB) resource and other referenced FHIR resources. As shown here, the data represented in each of the 4 concrete EOB profiles aligns with claim submission standards adopted by the US Department of Health and Human Services for a specific type of benefit. The fifth EOB profile, not shown in this table, is a design artifact that includes data representation constraints common across all types of EOBs, and this profile should not be used for actual data instances.&nbsp; A side by side comparison of the abstract EOB profile, and the four concrete profiles is shown here (08/31).
+<br/>&nbsp;<img src="CARINBBResources.png" style="width: 100%; height: auto; float: none; align: middle;"/></div>
 <div>&nbsp;</div>
 <div>Additional EOB profiles for Vision and Dental benefits are planned for future versions of this IG.</div>
 <div>&nbsp;</div>
-<div><a name="5171b94d-5f70-4a8f-aa14-e4c70a7d71de">​</a>A Mapping Worksheet is included with this IG to aid implementers in understanding the data representation requirements of each EOB Profile and the referenced resources used by these profiles. ​Download your local copy of the CPCDS to FHIR Profiles Mapping Excel worksheet from here. <strong>( Replace with link to confluence)</strong>&nbsp;&nbsp;<a download="CARINMappingtoFHIR.xlsx" href="CARINMappingtoFHIRinterim2020818.xlsx">here </a></div>
+<div><a name="ac357c57-4581-48ac-a7dc-0dfb7ddf9a35">​</a>A Mapping Worksheet is included with this IG to aid implementers in understanding the data representation requirements of each EOB Profile and the referenced resources used by these profiles. ​Download your local copy of the CPCDS to FHIR Profiles Mapping Excel worksheet from here. <strong>( Replace with link to confluence)</strong>&nbsp;&nbsp;<a download="CARINMappingtoFHIR.xlsx" href="CARINMappingtoFHIRinterim2020818.xlsx">here </a></div>
 <div>&nbsp;</div>
 <div>The following documentation describes the layout of the Mapping Worksheet and how to use it to understand the profiled data mappings to the FHIR resources. The Data Element Index tab of the Mapping Worksheet maps CPCDS CARIN BB data elements to specific FHIR Profiles and further shows the relevant resource data element to where the CPCDS data element is represented. <img src="guide1.png" style="width: 100%; height: auto; float: none; align: middle;"/></div>
 <div>The Rules tab provides additional background assumptions and the color coding key. The Mapping Worksheet is designed to support filters that allow implementers to view the mapping information in a variety of ways. Filtering on the CPCDS Data Element Name (Column B) shows which FHIR Profiles include that data element. Each tab maps the CPCDS data elements to FHIR for each Profile. To map their data to CPCDS, payers may filter the MapID, column K, removing spaces and ‘removed from scope’ Many CPCDS data elements are not on all profiles. To identify the CPCDS data elements applicable to a specific Profile, payers may filter on the CARIN BB2.X FHIR Profile, column D, selecting the desired profile. Many CPCDS data elements are not on all profiles. Filtering on the FHIR Profile (Column D) shows all the CPCDS data elements required in a particular FHIR Profile. <img src="guide2.png" style="width: 100%; height: auto; float: none; align: middle;"/> The other tabs in the Mapping Worksheet correspond to each of the FHIR Profiles defined in this IG. The profile related tabs map the FHIR resource being profiled to the CPCDS data elements to be represented in that resource. These tabs begin with a representation of the FHIR resource. The FHIR resource data elements needed to represent the CPCDS data elements identified with the relevant constraint information. The tab shows the data element constraints such as cardinality and value set binding requirements. These data mapping requirements are represented as constraints in the associated machine processible profiles included in the IG. By filtering one of these profile tabs using the data element MapID (Column K) a payer gets a view of the underlying FHIR resource, reduced to focusing on only the parts of the resource structure needed to represent the CPCDS data elements. Value Sets requirements for representing coded concepts are listed in Value Set Comments (Column K). <img src="guide3.png" style="width: 100%; height: auto; float: none; align: middle;"/></div>
@@ -247,7 +247,7 @@ This implementation guide establishes a set of profiles for the Explanation of B
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 30, 2020 04:11+0000">2020-08-30</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 31, 2020 22:37+0000">2020-08-31</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

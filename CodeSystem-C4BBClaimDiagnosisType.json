@@ -1,0 +1,66 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "C4BBClaimDiagnosisType",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">external-cause-of-injury<a name=\"C4BBClaimDiagnosisType-external-cause-of-injury\"> </a></td><td>External Cause of Injury</td><td>Required when an external cause of injury is needed to describe the injury</td></tr><tr><td style=\"white-space:nowrap\">patient-reason-for-visit<a name=\"C4BBClaimDiagnosisType-patient-reason-for-visit\"> </a></td><td>Patient Reason for Visit</td><td>Identifies the patient's reason for the outpatient institutional visit</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"C4BBClaimDiagnosisType-other\"> </a></td><td>Other</td><td>Required when other conditions coexist or develop subsequently during the treatment</td></tr><tr><td style=\"white-space:nowrap\">secondary<a name=\"C4BBClaimDiagnosisType-secondary\"> </a></td><td>Secondary</td><td>Required when necessary to report additional diagnoses on professional and non-clinician claims</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType",
+  "version": "0.4.2",
+  "name": "C4BBClaimDiagnosisType",
+  "title": "Payer Diagnosis Type",
+  "status": "active",
+  "date": "2020-08-31T22:37:38+00:00",
+  "publisher": "HL7 Financial Management Working Group",
+  "contact": [
+    {
+      "name": "HL7 Financial Management Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fm/index.cfm"
+        },
+        {
+          "system": "email",
+          "value": "fm@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Payer Diagnosis Type",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "This CodeSystem is not copyrighted.",
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "external-cause-of-injury",
+      "display": "External Cause of Injury",
+      "definition": "Required when an external cause of injury is needed to describe the injury"
+    },
+    {
+      "code": "patient-reason-for-visit",
+      "display": "Patient Reason for Visit",
+      "definition": "Identifies the patient's reason for the outpatient institutional visit"
+    },
+    {
+      "code": "other",
+      "display": "Other",
+      "definition": "Required when other conditions coexist or develop subsequently during the treatment"
+    },
+    {
+      "code": "secondary",
+      "display": "Secondary",
+      "definition": "Required when necessary to report additional diagnoses on professional and non-clinician claims"
+    }
+  ]
+}

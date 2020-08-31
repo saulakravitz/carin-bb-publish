@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="b680369a-3b2a-4f0e-a899-68bc15618528">​</a>
+      <li><a name="739f7118-c6c7-4761-8bf9-73fe8cc35f49">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="42e0b305-e938-432f-a12d-8623da351b35">​</a>
+      <li><a name="d5ad9de7-f4f7-48c4-94bd-7ff8c8a38b30">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="81fee2ad-27d5-4a4a-99ab-65cb16980b57">​</a>
+      <li><a name="812c06d3-d1d4-4d09-8d7b-aee50753e6e4">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="5d2efc5a-0bea-4bde-a9a2-0966ea10e069">​</a>
+      <li><a name="d4557efc-a78c-4732-9d1a-9b7afd54971c">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="fb70f0dc-50cc-4b13-b6d6-a4da0e29a945">​</a>
+      <li><a name="d33282c9-eda8-4dca-9429-3ff523694a45">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -518,7 +518,7 @@ The link takes one to a list of files. The HCPCS ANWEB files include modifier an
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-AdjudicationCarinBBValueCodes.html" title="ValueSet/AdjudicationCarinBBValueCodes">Adjudication CARINBB Value Codes</a>
+                  <a href="ValueSet-C4BBAdjudication.html" title="ValueSet/C4BBAdjudication">Adjudication CARINBB Value Codes</a>
                </td>
                <td>
 <p>As per Jira FHIR-26992… HL7 Requested to fix HL7 Adjudication codesystem</p>
@@ -526,15 +526,55 @@ The link takes one to a list of files. The HCPCS ANWEB files include modifier an
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-AdjudicationValueCodes.html" title="ValueSet/AdjudicationValueCodes">Benefit Payment Status Category</a>
+                  <a href="ValueSet-C4BBClaimInpatientInstitutionalDiagnosisType.html" title="ValueSet/C4BBClaimInpatientInstitutionalDiagnosisType">Diagnosis Type -- Inpatient Facility</a>
                </td>
                <td>
-<p>Benefit Payment Status Category</p>
+<p>Payer Inpatient Facility Diagnosis Type</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-BenefitPaymentStatus.html" title="ValueSet/BenefitPaymentStatus">Benefit Payment Status</a>
+                  <a href="ValueSet-C4BBClaimInstitutionalCareTeamRole.html" title="ValueSet/C4BBClaimInstitutionalCareTeamRole">C4BB Claim Institutional Care Team Role </a>
+               </td>
+               <td>
+<p>Describes functional roles of the care team members.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-C4BBClaimOutpatientInstitutionalDiagnosisType.html" title="ValueSet/C4BBClaimOutpatientInstitutionalDiagnosisType">Diagnosis Type -- Outpatient Facility</a>
+               </td>
+               <td>
+<p>Payer Outpatient Facility Diagnosis Type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-C4BBClaimPharmacyTeamRole.html" title="ValueSet/C4BBClaimPharmacyTeamRole">CARINBB Pharmacy CareTeam Roles</a>
+               </td>
+               <td>
+<p>Indicates the role of the provider providing the care.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-C4BBClaimProfessionalAndNonClinicianCareTeamRole.html" title="ValueSet/C4BBClaimProfessionalAndNonClinicianCareTeamRole">C4BB Claim Professional And Non Clinician Care Team Role </a>
+               </td>
+               <td>
+<p>Describes functional roles of the care team members</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-C4BBClaimProfessionalAndNonClinicianDiagnosisType.html" title="ValueSet/C4BBClaimProfessionalAndNonClinicianDiagnosisType">Diagnosis Type -- Professional and Non-Clinician</a>
+               </td>
+               <td>
+<p>Payer Professional and Non-Clinician Diagnosis Type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-C4BBPayerBenefitPaymentStatus.html" title="ValueSet/C4BBPayerBenefitPaymentStatus">Benefit Payment Status</a>
                </td>
                <td>
 <p>Indicates the in network or out of network payment status of the claim.</p>
@@ -542,26 +582,18 @@ The link takes one to a list of files. The HCPCS ANWEB files include modifier an
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-CARINBBInstitutionalClaimCareTeamRoleCodes.html" title="ValueSet/CARINBBInstitutionalClaimCareTeamRoleCodes">CARINBB Institutional Claim Care Team Roles</a>
+                  <a href="ValueSet-C4BBPayerClaimPaymentStatusCode.html" title="ValueSet/C4BBPayerClaimPaymentStatusCode">Claim Payment Status Code</a>
                </td>
                <td>
-<p>Indicates the role of the provider providing the care.</p>
+<p>Indicates whether the claim / item was paid or denied.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-CARINBBPharmacyClaimCareTeamRoleCodes.html" title="ValueSet/CARINBBPharmacyClaimCareTeamRoleCodes">CARINBB Pharmacy CareTeam Roles</a>
+                  <a href="ValueSet-C4BBPayerProviderContractingStatus.html" title="ValueSet/C4BBPayerProviderContractingStatus">Provider Provider Contracting Status</a>
                </td>
                <td>
-<p>Indicates the role of the provider providing the care.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes.html" title="ValueSet/CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes">CARINBB Professional and Non-Clinician CareTeam Roles</a>
-               </td>
-               <td>
-<p>Indicates the role of the provider providing the care.</p>
+<p>Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.</p>
 </td>
             </tr>
             <tr>
@@ -579,15 +611,8 @@ https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/
                   <a href="ValueSet-CMSPlaceOfService.html" title="ValueSet/CMSPlaceOfService">CMS Place of Service</a>
                </td>
                <td>
-<p>Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided. https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html. The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-ClaimAdjudicationCategory.html" title="ValueSet/ClaimAdjudicationCategory">Claim Adjudication Category</a>
-               </td>
-               <td>
-<p>Values for EOB.item.adjudication.category</p>
+<p>Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided. 
+CMS Place of Service codes are available at https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html.</p>
 </td>
             </tr>
             <tr>
@@ -600,18 +625,19 @@ https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-ClaimPaymentStatusCode.html" title="ValueSet/ClaimPaymentStatusCode">Claim Payment Status Code</a>
+                  <a href="ValueSet-FDANDC.html" title="ValueSet/FDANDC">FDA NDC</a>
                </td>
                <td>
-<p>Indicates whether the claim / item was paid or denied.</p>
+<p>National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-FDANDCNCPDPCompoundCode.html" title="ValueSet/FDANDCNCPDPCompoundCode">FDA NDC NCPDP Compound Code</a>
+                  <a href="ValueSet-FDANDCOrCompound.html" title="ValueSet/FDANDCOrCompound">FDA NDC or Compound </a>
                </td>
                <td>
-<p>NCPDP field # 407-D7 (National Drug Code (NDC)) or NCPDP field # 406-D6 (Compound Code)</p>
+<p>National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.<br/>
+Values will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, ‘compound’</p>
 </td>
             </tr>
             <tr>
@@ -676,54 +702,6 @@ https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/
                </td>
                <td>
 <p>Patient Identifier Type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-PayerAdjudicationAmountCategory.html" title="ValueSet/PayerAdjudicationAmountCategory">Payer Adjudication Amount Category</a>
-               </td>
-               <td>
-<p>This describes the various amount fields used when payers receive and adjudicate a claim.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-PayerDiagnosisPresentOnAdmissionDiagnosisType.html" title="ValueSet/PayerDiagnosisPresentOnAdmissionDiagnosisType">Payer Diagnosis Present On Admission Diagnosis Type</a>
-               </td>
-               <td>
-<p>Payer Diagnosis Present On Admission Diagnosis Type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-PayerInpatientinstitutionaldiagnosistype.html" title="ValueSet/PayerInpatientinstitutionaldiagnosistype">Diagnosis Type -- Inpatient Facility</a>
-               </td>
-               <td>
-<p>Payer Inpatient Facility Diagnosis Type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-PayerOutpatientinstitutionaldiagnosistype.html" title="ValueSet/PayerOutpatientinstitutionaldiagnosistype">Diagnosis Type -- Outpatient Facility</a>
-               </td>
-               <td>
-<p>Payer Outpatient Facility Diagnosis Type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-PayerProfessionalandnoncliniciandiagnosistype.html" title="ValueSet/PayerProfessionalandnoncliniciandiagnosistype">Diagnosis Type -- Professional and Non-Clinician</a>
-               </td>
-               <td>
-<p>Payer Professional and Non-Clinician Diagnosis Type</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-PayerProviderContractingStatus.html" title="ValueSet/PayerProviderContractingStatus">Provider Provider Contracting Status</a>
-               </td>
-               <td>
-<p>Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.</p>
 </td>
             </tr>
             <tr>
@@ -813,6 +791,38 @@ RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcar
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-C4BBAdjudicationCS.html" title="CodeSystem/C4BBAdjudicationCS">C4BB Adjudication</a>
+               </td>
+               <td>
+<p>Describes the various amount fields used when payers receive and adjudicate a claim.  It complements the values defined in http://terminology.hl7.org/CodeSystem/adjudication.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-C4BBBCompoundLiteralCS.html" title="CodeSystem/C4BBBCompoundLiteralCS">C4BB Compound Literal Code System</a>
+               </td>
+               <td>
+<p>CodeSystem for a Literal ‘compound’ value</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-C4BBClaimCareTeamRoleCS.html" title="CodeSystem/C4BBClaimCareTeamRoleCS">Payer Provider Role</a>
+               </td>
+               <td>
+<p>Payer Provider Role</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-C4BBClaimDiagnosisType.html" title="CodeSystem/C4BBClaimDiagnosisType">Payer Diagnosis Type</a>
+               </td>
+               <td>
+<p>Payer Diagnosis Type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-CMSDRGCS.html" title="CodeSystem/CMSDRGCS">CMS Diagnosis Related Group (DRG)</a>
                </td>
                <td>
@@ -825,7 +835,8 @@ category with a fixed fee regardless of the actual costs incurred (Other DRGs, s
                   <a href="CodeSystem-CMSPlaceOfServiceCS.html" title="CodeSystem/CMSPlaceOfServiceCS">CMS Place of Service</a>
                </td>
                <td>
-<p>Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided</p>
+<p>Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided. 
+CMS Place of Service codes are available at https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html.</p>
 </td>
             </tr>
             <tr>
@@ -834,14 +845,6 @@ category with a fixed fee regardless of the actual costs incurred (Other DRGs, s
                </td>
                <td>
 <p>Denial Reasons - Reason codes used to interpret the adjudication denial reason</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-CareTeamRoleCS.html" title="CodeSystem/CareTeamRoleCS">Payer Provider Role</a>
-               </td>
-               <td>
-<p>Payer Provider Role</p>
 </td>
             </tr>
             <tr>
@@ -938,22 +941,6 @@ category with a fixed fee regardless of the actual costs incurred (Other DRGs, s
                </td>
                <td>
 <p>Indicates whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy. NCPDP field # 419-DJ.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-PayerAdjudicationCategoryCS.html" title="CodeSystem/PayerAdjudicationCategoryCS">Payer Adjudication Category</a>
-               </td>
-               <td>
-<p>Payer Adjudication Category</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-PayerDiagnosisTypeCS.html" title="CodeSystem/PayerDiagnosisTypeCS">Payer Diagnosis Type</a>
-               </td>
-               <td>
-<p>Payer Diagnosis Type</p>
 </td>
             </tr>
             <tr>
@@ -1079,7 +1066,7 @@ category with a fixed fee regardless of the actual costs incurred (Other DRGs, s
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Aug 30, 2020 04:11+0000">2020-08-30</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 31, 2020 22:37+0000">2020-08-31</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

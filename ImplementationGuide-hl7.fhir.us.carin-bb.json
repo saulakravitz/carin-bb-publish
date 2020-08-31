@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-08-30T04:11:49+00:00",
+  "date": "2020-08-31T22:37:38+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -642,11 +642,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-AdjudicationCarinBBValueCodes.html"
+            "valueUri": "ValueSet-C4BBAdjudication.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/AdjudicationCarinBBValueCodes"
+          "reference": "ValueSet/C4BBAdjudication"
         },
         "name": "Adjudication CARINBB Value Codes",
         "description": "As per Jira FHIR-26992... HL7 Requested to fix HL7 Adjudication codesystem",
@@ -660,14 +660,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-AdjudicationValueCodes.html"
+            "valueUri": "ValueSet-C4BBClaimInpatientInstitutionalDiagnosisType.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/AdjudicationValueCodes"
+          "reference": "ValueSet/C4BBClaimInpatientInstitutionalDiagnosisType"
         },
-        "name": "Benefit Payment Status Category",
-        "description": "Benefit Payment Status Category",
+        "name": "Diagnosis Type -- Inpatient Facility",
+        "description": "Payer Inpatient Facility Diagnosis Type",
         "exampleBoolean": false
       },
       {
@@ -678,14 +678,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-BenefitPaymentStatus.html"
+            "valueUri": "ValueSet-C4BBClaimInstitutionalCareTeamRole.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/BenefitPaymentStatus"
+          "reference": "ValueSet/C4BBClaimInstitutionalCareTeamRole"
         },
-        "name": "Benefit Payment Status",
-        "description": "Indicates the in network or out of network payment status of the claim.",
+        "name": "C4BB Claim Institutional Care Team Role ",
+        "description": "Describes functional roles of the care team members.",
         "exampleBoolean": false
       },
       {
@@ -696,14 +696,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-CARINBBInstitutionalClaimCareTeamRoleCodes.html"
+            "valueUri": "ValueSet-C4BBClaimOutpatientInstitutionalDiagnosisType.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/CARINBBInstitutionalClaimCareTeamRoleCodes"
+          "reference": "ValueSet/C4BBClaimOutpatientInstitutionalDiagnosisType"
         },
-        "name": "CARINBB Institutional Claim Care Team Roles",
-        "description": "Indicates the role of the provider providing the care.",
+        "name": "Diagnosis Type -- Outpatient Facility",
+        "description": "Payer Outpatient Facility Diagnosis Type",
         "exampleBoolean": false
       },
       {
@@ -714,11 +714,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-CARINBBPharmacyClaimCareTeamRoleCodes.html"
+            "valueUri": "ValueSet-C4BBClaimPharmacyTeamRole.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/CARINBBPharmacyClaimCareTeamRoleCodes"
+          "reference": "ValueSet/C4BBClaimPharmacyTeamRole"
         },
         "name": "CARINBB Pharmacy CareTeam Roles",
         "description": "Indicates the role of the provider providing the care.",
@@ -732,14 +732,86 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes.html"
+            "valueUri": "ValueSet-C4BBClaimProfessionalAndNonClinicianCareTeamRole.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/CARINBBProfessionalAndNonclinicanClaimCareTeamRoleCodes"
+          "reference": "ValueSet/C4BBClaimProfessionalAndNonClinicianCareTeamRole"
         },
-        "name": "CARINBB Professional and Non-Clinician CareTeam Roles",
-        "description": "Indicates the role of the provider providing the care.",
+        "name": "C4BB Claim Professional And Non Clinician Care Team Role ",
+        "description": "Describes functional roles of the care team members",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-C4BBClaimProfessionalAndNonClinicianDiagnosisType.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/C4BBClaimProfessionalAndNonClinicianDiagnosisType"
+        },
+        "name": "Diagnosis Type -- Professional and Non-Clinician",
+        "description": "Payer Professional and Non-Clinician Diagnosis Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-C4BBPayerBenefitPaymentStatus.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/C4BBPayerBenefitPaymentStatus"
+        },
+        "name": "Benefit Payment Status",
+        "description": "Indicates the in network or out of network payment status of the claim.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-C4BBPayerClaimPaymentStatusCode.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/C4BBPayerClaimPaymentStatusCode"
+        },
+        "name": "Claim Payment Status Code",
+        "description": "Indicates whether the claim / item was paid or denied.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-C4BBPayerProviderContractingStatus.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/C4BBPayerProviderContractingStatus"
+        },
+        "name": "Provider Provider Contracting Status",
+        "description": "Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.",
         "exampleBoolean": false
       },
       {
@@ -775,25 +847,7 @@
           "reference": "ValueSet/CMSPlaceOfService"
         },
         "name": "CMS Place of Service",
-        "description": "Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided. https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html. The link takes one to the Place of Service list as an html document; it is not a file to which an IG can be bound.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-ClaimAdjudicationCategory.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/ClaimAdjudicationCategory"
-        },
-        "name": "Claim Adjudication Category",
-        "description": "Values for EOB.item.adjudication.category",
+        "description": "Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided. \nCMS Place of Service codes are available at https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html.",
         "exampleBoolean": false
       },
       {
@@ -822,14 +876,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-ClaimPaymentStatusCode.html"
+            "valueUri": "ValueSet-FDANDC.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/ClaimPaymentStatusCode"
+          "reference": "ValueSet/FDANDC"
         },
-        "name": "Claim Payment Status Code",
-        "description": "Indicates whether the claim / item was paid or denied.",
+        "name": "FDA NDC",
+        "description": "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  ",
         "exampleBoolean": false
       },
       {
@@ -840,14 +894,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-FDANDCNCPDPCompoundCode.html"
+            "valueUri": "ValueSet-FDANDCOrCompound.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/FDANDCNCPDPCompoundCode"
+          "reference": "ValueSet/FDANDCOrCompound"
         },
-        "name": "FDA NDC NCPDP Compound Code",
-        "description": "NCPDP field # 407-D7 (National Drug Code (NDC)) or NCPDP field # 406-D6 (Compound Code)",
+        "name": "FDA NDC or Compound ",
+        "description": "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  \nValues will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, ‘compound’",
         "exampleBoolean": false
       },
       {
@@ -992,114 +1046,6 @@
         },
         "name": "Patient Identifier Type",
         "description": "Patient Identifier Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerAdjudicationAmountCategory.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PayerAdjudicationAmountCategory"
-        },
-        "name": "Payer Adjudication Amount Category",
-        "description": "This describes the various amount fields used when payers receive and adjudicate a claim.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerDiagnosisPresentOnAdmissionDiagnosisType.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PayerDiagnosisPresentOnAdmissionDiagnosisType"
-        },
-        "name": "Payer Diagnosis Present On Admission Diagnosis Type",
-        "description": "Payer Diagnosis Present On Admission Diagnosis Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerInpatientinstitutionaldiagnosistype.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PayerInpatientinstitutionaldiagnosistype"
-        },
-        "name": "Diagnosis Type -- Inpatient Facility",
-        "description": "Payer Inpatient Facility Diagnosis Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerOutpatientinstitutionaldiagnosistype.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PayerOutpatientinstitutionaldiagnosistype"
-        },
-        "name": "Diagnosis Type -- Outpatient Facility",
-        "description": "Payer Outpatient Facility Diagnosis Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerProfessionalandnoncliniciandiagnosistype.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PayerProfessionalandnoncliniciandiagnosistype"
-        },
-        "name": "Diagnosis Type -- Professional and Non-Clinician",
-        "description": "Payer Professional and Non-Clinician Diagnosis Type",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PayerProviderContractingStatus.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PayerProviderContractingStatus"
-        },
-        "name": "Provider Provider Contracting Status",
-        "description": "Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.",
         "exampleBoolean": false
       },
       {
@@ -1272,6 +1218,78 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-C4BBAdjudicationCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/C4BBAdjudicationCS"
+        },
+        "name": "C4BB Adjudication",
+        "description": "Describes the various amount fields used when payers receive and adjudicate a claim.  It complements the values defined in http://terminology.hl7.org/CodeSystem/adjudication.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-C4BBBCompoundLiteralCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/C4BBBCompoundLiteralCS"
+        },
+        "name": "C4BB Compound Literal Code System",
+        "description": "CodeSystem for a Literal 'compound' value",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-C4BBClaimCareTeamRoleCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/C4BBClaimCareTeamRoleCS"
+        },
+        "name": "Payer Provider Role",
+        "description": "Payer Provider Role",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-C4BBClaimDiagnosisType.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/C4BBClaimDiagnosisType"
+        },
+        "name": "Payer Diagnosis Type",
+        "description": "Payer Diagnosis Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-CMSDRGCS.html"
           }
         ],
@@ -1297,7 +1315,7 @@
           "reference": "CodeSystem/CMSPlaceOfServiceCS"
         },
         "name": "CMS Place of Service",
-        "description": "Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided",
+        "description": "Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided. \nCMS Place of Service codes are available at https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html.",
         "exampleBoolean": false
       },
       {
@@ -1316,24 +1334,6 @@
         },
         "name": "CMS Remittance Advice Remark Codes (RARC)",
         "description": "Denial Reasons - Reason codes used to interpret the adjudication denial reason",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-CareTeamRoleCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/CareTeamRoleCS"
-        },
-        "name": "Payer Provider Role",
-        "description": "Payer Provider Role",
         "exampleBoolean": false
       },
       {
@@ -1550,42 +1550,6 @@
         },
         "name": "NCPDP Prescription Origin Code",
         "description": "Indicates whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy. NCPDP field # 419-DJ.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-PayerAdjudicationCategoryCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/PayerAdjudicationCategoryCS"
-        },
-        "name": "Payer Adjudication Category",
-        "description": "Payer Adjudication Category",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-PayerDiagnosisTypeCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/PayerDiagnosisTypeCS"
-        },
-        "name": "Payer Diagnosis Type",
-        "description": "Payer Diagnosis Type",
         "exampleBoolean": false
       },
       {

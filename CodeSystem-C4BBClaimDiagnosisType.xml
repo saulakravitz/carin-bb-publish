@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="C4BBClaimDiagnosisType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">external-cause-of-injury<a name="C4BBClaimDiagnosisType-external-cause-of-injury"> </a></td><td>External Cause of Injury</td><td>Required when an external cause of injury is needed to describe the injury</td></tr><tr><td style="white-space:nowrap">patient-reason-for-visit<a name="C4BBClaimDiagnosisType-patient-reason-for-visit"> </a></td><td>Patient Reason for Visit</td><td>Identifies the patient's reason for the outpatient institutional visit</td></tr><tr><td style="white-space:nowrap">other<a name="C4BBClaimDiagnosisType-other"> </a></td><td>Other</td><td>Required when other conditions coexist or develop subsequently during the treatment</td></tr><tr><td style="white-space:nowrap">secondary<a name="C4BBClaimDiagnosisType-secondary"> </a></td><td>Secondary</td><td>Required when necessary to report additional diagnoses on professional and non-clinician claims</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
+  <version value="0.4.2"/>
+  <name value="C4BBClaimDiagnosisType"/>
+  <title value="Payer Diagnosis Type"/>
+  <status value="active"/>
+  <date value="2020-08-31T22:37:38+00:00"/>
+  <publisher value="HL7 Financial Management Working Group"/>
+  <contact>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Payer Diagnosis Type"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This CodeSystem is not copyrighted."/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="external-cause-of-injury"/>
+    <display value="External Cause of Injury"/>
+    <definition value="Required when an external cause of injury is needed to describe the injury"/>
+  </concept>
+  <concept>
+    <code value="patient-reason-for-visit"/>
+    <display value="Patient Reason for Visit"/>
+    <definition value="Identifies the patient&#39;s reason for the outpatient institutional visit"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+    <definition value="Required when other conditions coexist or develop subsequently during the treatment"/>
+  </concept>
+  <concept>
+    <code value="secondary"/>
+    <display value="Secondary"/>
+    <definition value="Required when necessary to report additional diagnoses on professional and non-clinician claims"/>
+  </concept>
+</CodeSystem>
