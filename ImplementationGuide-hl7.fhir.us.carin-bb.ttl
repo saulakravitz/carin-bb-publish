@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CARINConsumerDirectedPayerDataExchange"];
   fhir:ImplementationGuide.title [ fhir:value "CARIN Consumer Directed Payer Data Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-08-31T22:59:55+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-08-31T23:25:44+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -650,8 +650,8 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBClaimInpatientInstitutionalDiagnosisType>;
          fhir:Reference.reference [ fhir:value "ValueSet/C4BBClaimInpatientInstitutionalDiagnosisType" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnosis Type -- Inpatient Facility" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Payer Inpatient Facility Diagnosis Type" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Claim Inpatient Institutional Diagnosis Type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates if the inpatient institutional diagnosis is admitting, principal, secondary or an external cause of injury." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 19;
@@ -686,8 +686,8 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBClaimOutpatientInstitutionalDiagnosisType>;
          fhir:Reference.reference [ fhir:value "ValueSet/C4BBClaimOutpatientInstitutionalDiagnosisType" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnosis Type -- Outpatient Facility" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Payer Outpatient Facility Diagnosis Type" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Claim Outpatient Institutional Diagnosis Type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates if the outpatient institutional diagnosis is admitting, principal, secondary an external cause of injury or a patient reason for visit" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 21;
@@ -740,8 +740,8 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBClaimProfessionalAndNonClinicianDiagnosisType>;
          fhir:Reference.reference [ fhir:value "ValueSet/C4BBClaimProfessionalAndNonClinicianDiagnosisType" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnosis Type -- Professional and Non-Clinician" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Payer Professional and Non-Clinician Diagnosis Type" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Claim Professional And Non Clinician Diagnosis Type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates if the professional and non-clinician diagnosis is principal or secondary" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 24;
@@ -1244,7 +1244,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRoleCS>;
          fhir:Reference.reference [ fhir:value "CodeSystem/C4BBClaimCareTeamRoleCS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BBB Claim Care Team Role" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Claim Care Team Role" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes functional roles of the care team members.  Complements http://terminology.hl7.org/CodeSystem/claimcareteamrole" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [

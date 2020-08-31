@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.US.CARIN-BB\Diagnosis Type -- Inpatient Facility - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.CARIN-BB\C4BB Claim Inpatient Institutional Diagnosis Type - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="450bbb73-e65f-4b6b-bb9f-46e170a65c4b">​</a>
+      <li><a name="361db156-f40f-4590-9859-e555baedf8f8">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="e93aa8d2-dc9a-49ed-840b-8f8430974e86">​</a>
+      <li><a name="427fe888-670e-46df-9543-d2c04f0915e8">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="bf3a792e-1e91-4706-af12-b298d45d6ec1">​</a>
+      <li><a name="fa9a6f38-74b1-4cb4-8096-c79f291dc52f">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="60911d7c-1e9e-4cf8-83e6-e31d1c8a9e70">​</a>
+      <li><a name="7cf3d391-df46-4ee3-953a-00584996a597">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="9cbc0e27-9570-4ba4-bf35-916a66ff2a2e">​</a>
+      <li><a name="7bbcd30f-32e6-4fcd-9abf-93b113733f63">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -176,7 +176,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Diagnosis Type -- Inpatient Facility</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>C4BB Claim Inpatient Institutional Diagnosis Type</b></li>
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -227,7 +227,7 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: Diagnosis Type -- Inpatient Facility</h2>
+  <h2 id="root">ValueSet: C4BB Claim Inpatient Institutional Diagnosis Type</h2>
   <p>
     <b>Summary</b>
   </p>
@@ -236,8 +236,8 @@
  <tr><td>Version:</td><td>0.4.2</td></tr>
  <tr><td>Name:</td><td>C4BBClaimInpatientInstitutionalDiagnosisType</td></tr>
  <tr><td>Status:</td><td>Active</td></tr>
- <tr><td>Title:</td><td>Diagnosis Type -- Inpatient Facility</td></tr>
- <tr><td>Definition:</td><td><p>Payer Inpatient Facility Diagnosis Type</p>
+ <tr><td>Title:</td><td>C4BB Claim Inpatient Institutional Diagnosis Type</td></tr>
+ <tr><td>Definition:</td><td><p>Indicates if the inpatient institutional diagnosis is admitting, principal, secondary or an external cause of injury.</p>
 </td></tr>
  <tr><td>Publisher:</td><td>HL7 Financial Management Working Group</td></tr>
  <tr><td>Copyright:</td><td><p>This Valueset is not copyrighted.</p>
@@ -264,13 +264,13 @@
 
   <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><ul><li>Include these codes as defined in <a href="CodeSystem-C4BBClaimDiagnosisType.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name="5da997b3-f815-4f8f-bd71-f771d4f8077d">​</a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-principal">principal</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-secondary">secondary</a></td><td>Secondary</td><td>Required when necessary to report additional diagnoses on professional and non-clinician claims</td></tr><tr><td><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-external-cause-of-injury">external-cause-of-injury</a></td><td>External Cause of Injury</td><td>Required when an external cause of injury is needed to describe the injury</td></tr><tr><td><a name="77fe97ba-fb03-4efa-a69a-2dd33e87d2f9">​</a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-first-listed">first-listed</a></td><td></td><td></td></tr><tr><td><a name="f70fbc0d-659e-4ee9-969a-005ec4c5337e">​</a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-admitting">admitting</a></td><td></td><td></td></tr></table></li></ul></div>
+<div><ul><li>Include these codes as defined in <a href="CodeSystem-C4BBClaimDiagnosisType.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name="81709d67-ec3d-4849-893e-70b6f85d868f">​</a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-principal">principal</a></td><td></td><td></td></tr><tr><td><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-secondary">secondary</a></td><td>Secondary</td><td>Required when necessary to report additional diagnoses on professional and non-clinician claims</td></tr><tr><td><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-external-cause-of-injury">external-cause-of-injury</a></td><td>External Cause of Injury</td><td>Required when an external cause of injury is needed to describe the injury</td></tr><tr><td><a name="12194e06-7536-4058-b7a1-c376f4919ae2">​</a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-first-listed">first-listed</a></td><td></td><td></td></tr><tr><td><a name="6703c068-ecbf-41c6-a53e-86338af7c6f5">​</a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-admitting">admitting</a></td><td></td><td></td></tr></table></li></ul></div>
 
   <p>&nbsp;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div><p>This value set contains 5 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-C4BBClaimDiagnosisType.html">C4BB Claim Diagnosis Type v0.4.2 (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-C4BBClaimDiagnosisType.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="7859ab4f-63ff-43c7-9d90-39adcc8d5017">​</a><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-principal"> </a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-principal">principal</a></td><td></td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-secondary"> </a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-secondary">secondary</a></td><td>Secondary</td><td>Required when necessary to report additional diagnoses on professional and non-clinician claims</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-external-cause-of-injury"> </a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-external-cause-of-injury">external-cause-of-injury</a></td><td>External Cause of Injury</td><td>Required when an external cause of injury is needed to describe the injury</td></tr><tr><td style="white-space:nowrap"><a name="1ce09011-9004-476d-925e-9981c0835207">​</a><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-first-listed"> </a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-first-listed">first-listed</a></td><td></td><td></td></tr><tr><td style="white-space:nowrap"><a name="d04ccd43-35e5-4e75-b608-291bdb37222a">​</a><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-admitting"> </a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-admitting">admitting</a></td><td></td><td></td></tr></table></div>
+  <div><p>This value set contains 5 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-C4BBClaimDiagnosisType.html">C4BB Claim Diagnosis Type v0.4.2 (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-C4BBClaimDiagnosisType.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="9cf37751-032c-41cb-947e-7ee4241463d0">​</a><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-principal"> </a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-principal">principal</a></td><td></td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-secondary"> </a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-secondary">secondary</a></td><td>Secondary</td><td>Required when necessary to report additional diagnoses on professional and non-clinician claims</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-external-cause-of-injury"> </a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-external-cause-of-injury">external-cause-of-injury</a></td><td>External Cause of Injury</td><td>Required when an external cause of injury is needed to describe the injury</td></tr><tr><td style="white-space:nowrap"><a name="17c25d35-b406-4e60-83be-731d30fd1bac">​</a><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-first-listed"> </a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-first-listed">first-listed</a></td><td></td><td></td></tr><tr><td style="white-space:nowrap"><a name="1cf6375a-f1e7-4a8d-9a1b-ee9056fe28bf">​</a><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-admitting"> </a><a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-admitting">admitting</a></td><td></td><td></td></tr></table></div>
 
   <hr/>
   <p>
@@ -331,7 +331,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 31, 2020 22:59+0000">2020-08-31</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.4.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 31, 2020 23:25+0000">2020-08-31</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
