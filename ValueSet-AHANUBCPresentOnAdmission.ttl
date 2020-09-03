@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "AHANUBCPresentOnAdmission"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-AHANUBCPresentOnAdmissionCS.html\"><code>urn:oid:2.16.840.1.113883.6.301.11</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-AHANUBCPresentOnAdmission.html\"><code>http://www.nubc.org/PresentOnAdmission</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/AHANUBCPresentOnAdmission"];
   fhir:ValueSet.version [ fhir:value "0.1.2"];
   fhir:ValueSet.name [ fhir:value "AHANUBCPresentOnAdmission"];
   fhir:ValueSet.title [ fhir:value "AHA NUBC Present On Admission"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-09-03T16:15:59+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-09-03T22:02:17+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -45,7 +45,7 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.6.301.11" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://www.nubc.org/PresentOnAdmission" ]
      ]
   ] .
 

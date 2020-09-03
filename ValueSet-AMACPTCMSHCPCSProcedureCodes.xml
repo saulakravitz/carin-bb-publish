@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="AMACPTCMSHCPCSProcedureCodes"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-cpt-4.html"><code>http://www.ama-assn.org/go/cpt</code></a></li><li>Include all codes defined in <a href="CodeSystem-HCPCSProcedureCodesCS.html"><code>urn:oid:2.16.840.1.113883.6.285</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-cpt-4.html"><code>http://www.ama-assn.org/go/cpt</code></a></li><li>Include all codes defined in <a href="CodeSystem-CMSHCPCSCodes.html"><code>http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets</code></a></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/AMACPTCMSHCPCSProcedureCodes"/>
   <version value="0.1.2"/>
   <name value="AMACPTCMSHCPCSProcedureCodes"/>
   <title value="AMA CPT CMS HCPCS Procedure Codes"/>
   <status value="active"/>
-  <date value="2020-09-03T16:15:59+00:00"/>
+  <date value="2020-09-03T22:02:17+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -23,20 +23,20 @@
       <value value="fm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure codes. They are submitted by providers to payers to convey the specific &#xA;procedure performed. AMA CPT CMS HCPCS Procedure Codes leverage US Core Procedure Codes composition. CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt. &#xA;HCPCS codes are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. &#xA;The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. The target set for this Code System is the procedure codes from this file."/>
+  <description value="The Value Set is a combination of two Code Systems:  CPT (HCPCS I) and HCPCS II procedure codes. They are submitted by providers to payers to convey the specific procedure performed.  AMA CPT CMS HCPCS Procedure Codes leverage US Core Procedure Codes composition.  &#xA;CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt.  HCPCS codes are available at http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets.  The link takes one to a list of files.  The target set for this Code System is the procedure codes from this file.&#xA;&#xA;**PROCEDURE CODES ONLY**"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="US"/>
     </coding>
   </jurisdiction>
-  <copyright value="CPT copyright 2014 American Medical Association. All rights reserved. The HCPCS II codes are owned by CMS and are available for use. As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
+  <copyright value="CPT copyright 2014 American Medical Association. All rights reserved. HCPCS Level II Alphanumeric Codes are maintained by the US Centers for Medicare and Medicaid Services (CMS) and are available for public use. As HL7 is working with the owning authorities to finalize the urls, the urls are subject to change."/>
   <compose>
     <include>
       <system value="http://www.ama-assn.org/go/cpt"/>
     </include>
     <include>
-      <system value="urn:oid:2.16.840.1.113883.6.285"/>
+      <system value="http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"/>
     </include>
   </compose>
 </ValueSet>

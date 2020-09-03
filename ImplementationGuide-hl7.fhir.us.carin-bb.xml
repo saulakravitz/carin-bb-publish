@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-09-03T16:15:59+00:00"/>
+  <date value="2020-09-03T22:02:17+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -213,12 +213,12 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-CARIN-BB-Coverage.html"/>
+        <valueUri value="StructureDefinition-C4BB-Coverage.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CARIN-BB-Coverage"/>
+        <reference value="StructureDefinition/C4BB-Coverage"/>
       </reference>
-      <name value="CARIN BB Coverage"/>
+      <name value="C4BB Coverage"/>
       <description value="Data that reflect a payer&#39;s coverage that was effective as of the date of service  or the date of admission of the claim will be added to the Coverage Profile overview."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -227,12 +227,12 @@
         <valueString value="StructureDefinition:resource:abstract"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-CARIN-BB-ExplanationOfBenefit.html"/>
+        <valueUri value="StructureDefinition-C4BB-ExplanationOfBenefit.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CARIN-BB-ExplanationOfBenefit"/>
+        <reference value="StructureDefinition/C4BB-ExplanationOfBenefit"/>
       </reference>
-      <name value="CARIN BB Explanation Of Benefit"/>
+      <name value="C4BB Explanation Of Benefit"/>
       <description value="Abstract parent profile that includes constraints that are common to the four specific ExplanationOfBenefit (EOB) profiles defined in this Implementation Guide.&#xA;All EOB instances should be from one of the four non-abstract EOB profiles defined in this Implementation Guide:  Inpatient, Outpatient, Pharmacy, and Professional/NonClinician"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -241,13 +241,13 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Inpatient-Facility.html"/>
+        <valueUri value="StructureDefinition-C4BB-ExplanationOfBenefit-Inpatient-Institutional.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility"/>
+        <reference value="StructureDefinition/C4BB-ExplanationOfBenefit-Inpatient-Institutional"/>
       </reference>
-      <name value="CARIN BB ExplanationOfBenefit Inpatient Facility"/>
-      <description value="The profile is used for Explanation of Benefits (EOBs) based on claims submitted by clinics, hospitals, skilled nursing facilities and other institutions for inpatient services, which may include the use of equipment and supplies, laboratory services, radiology services and other charges. Inpatient claims are submitted for services rendered at a facility as part of an overnight stay. &#xA;The claims data is based on the institutional claim format UB-04, submission standards adopted by the Department of Health and Human Services as form CMS-1450."/>
+      <name value="C4BB ExplanationOfBenefit Inpatient Institutional"/>
+      <description value="The profile is used for Explanation of Benefits (EOBs) based on claims submitted by clinics, hospitals, skilled nursing facilities and other institutions for inpatient services, which may include the use of equipment and supplies, laboratory services, radiology services and other charges. Inpatient claims are submitted for services rendered at an institution as part of an overnight stay. &#xA;The claims data is based on the institutional claim format UB-04, submission standards adopted by the Department of Health and Human Services as form CMS-1450."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -255,13 +255,13 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Outpatient-Facility.html"/>
+        <valueUri value="StructureDefinition-C4BB-ExplanationOfBenefit-Outpatient-Institutional.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CARIN-BB-ExplanationOfBenefit-Outpatient-Facility"/>
+        <reference value="StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional"/>
       </reference>
-      <name value="CARIN BB ExplanationOfBenefit Outpatient Facility"/>
-      <description value="This profile is used for Explanation of Benefits (EOBs) based on claims submitted by clinics, hospitals, skilled nursing facilities and other institutions for outpatient services, which may include including the use of equipment and supplies, laboratory services, radiology services and other charges. Outpatient claims are submitted for services rendered at a facility that are not part of an overnight stay. &#xA;The claims data is based on the institutional claim form UB-04, submission standards adopted by the Department of Health and Human Services as form CMS-1450."/>
+      <name value="C4BB ExplanationOfBenefit Outpatient Institutional"/>
+      <description value="This profile is used for Explanation of Benefits (EOBs) based on claims submitted by clinics, hospitals, skilled nursing facilities and other institutions for outpatient services, which may include including the use of equipment and supplies, laboratory services, radiology services and other charges. Outpatient claims are submitted for services rendered at a Institutional that are not part of an overnight stay. &#xA;The claims data is based on the institutional claim form UB-04, submission standards adopted by the Department of Health and Human Services as form CMS-1450."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -269,12 +269,12 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Pharmacy.html"/>
+        <valueUri value="StructureDefinition-C4BB-ExplanationOfBenefit-Pharmacy.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy"/>
+        <reference value="StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"/>
       </reference>
-      <name value="CARIN BB ExplanationOfBenefit Pharmacy"/>
+      <name value="C4BB ExplanationOfBenefit Pharmacy"/>
       <description value="This profile is used for Explanation of Benefits (EOBs) based on claims submitted by retail pharmacies. &#xA;The claims data is based on submission standards adopted by the Department of Health and Human Services defined by NCPDP (National Council for Prescription Drug Program)"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -283,12 +283,12 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Professional-NonClinician.html"/>
+        <valueUri value="StructureDefinition-C4BB-ExplanationOfBenefit-Professional-NonClinician.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CARIN-BB-ExplanationOfBenefit-Professional-NonClinician"/>
+        <reference value="StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician"/>
       </reference>
-      <name value="CARIN BB ExplanationOfBenefit Professional NonClinician"/>
+      <name value="C4BB ExplanationOfBenefit Professional NonClinician"/>
       <description value="This profile is used for Explanation of Benefits (EOBs) based on claims submitted by physicians, suppliers and other non-institutional providers for professional services. These services may be rendered in inpatient or outpatient, including office locations. &#xA;The claims data is based on the professional claim form 1500, submission standards adopted by the Department of Health and Human Services as form CMS-1500."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -297,12 +297,12 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-CARIN-BB-Organization.html"/>
+        <valueUri value="StructureDefinition-C4BB-Organization.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CARIN-BB-Organization"/>
+        <reference value="StructureDefinition/C4BB-Organization"/>
       </reference>
-      <name value="CARIN BB Organization"/>
+      <name value="C4BB Organization"/>
       <description value="This profile builds upon the US Core Organization profile. It is used to convey a payer or provider organization may be updated to include service facility pending resolution of FHIR-26705.&#xA;."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -311,12 +311,12 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-CARIN-BB-Patient.html"/>
+        <valueUri value="StructureDefinition-C4BB-Patient.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CARIN-BB-Patient"/>
+        <reference value="StructureDefinition/C4BB-Patient"/>
       </reference>
-      <name value="CARIN BB Patient"/>
+      <name value="C4BB Patient"/>
       <description value="This profile builds upon the US Core Organization profile. It is used to convey patient information about the patient who received the services described on the claim."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -325,12 +325,12 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-CARIN-BB-Practitioner.html"/>
+        <valueUri value="StructureDefinition-C4BB-Practitioner.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CARIN-BB-Practitioner"/>
+        <reference value="StructureDefinition/C4BB-Practitioner"/>
       </reference>
-      <name value="CARIN BB Practitioner"/>
+      <name value="C4BB Practitioner"/>
       <description value="This profile builds upon the US Core Organization profile. It is used to convey patient information about the patient who received the services described on the claim."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -401,7 +401,7 @@
         <reference value="ValueSet/AHANUBCRevenueCodes"/>
       </reference>
       <name value="AHA NUBC Revenue Codes"/>
-      <description value="NUBC Revenue codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)"/>
+      <description value="NUBC Revenue codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC) UB-04 Revenue Code (FL-42)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -415,7 +415,7 @@
         <reference value="ValueSet/AHANUBCTypeOfBill"/>
       </reference>
       <name value="AHA NUBC Type of Bill"/>
-      <description value="AHA NUBC Type of Bill codes."/>
+      <description value="UB-04 Type of Bill (FL-4)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -429,7 +429,7 @@
         <reference value="ValueSet/AMACPTCMSHCPCSModifiers"/>
       </reference>
       <name value="AMA CPT CMS HCPCS Modifiers"/>
-      <description value="The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure code modifiers. &#xA;Modifiers help further describe a procedure code without changing its definition. CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt. &#xA;HCPCS codes are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. &#xA;The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. The target set for this Code System is the procedure code modifiers from this file."/>
+      <description value="The Value Set is a combination of two Code Systems:  CPT (HCPCS I) and HCPCS II procedure code modifiers.  Modifiers help further describe a procedure code without changing its definition.  &#xA;CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt.  HCPCS codes are available at http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets.  The link takes one to a list of files.  The target set for this Code System is the procedure code modifiers from this file.  &#xA;&#xA;**MODIFIER CODES ONLY**"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -443,7 +443,7 @@
         <reference value="ValueSet/AMACPTCMSHCPCSProcedureCodes"/>
       </reference>
       <name value="AMA CPT CMS HCPCS Procedure Codes"/>
-      <description value="The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure codes. They are submitted by providers to payers to convey the specific &#xA;procedure performed. AMA CPT CMS HCPCS Procedure Codes leverage US Core Procedure Codes composition. CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt. &#xA;HCPCS codes are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html. &#xA;The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. The target set for this Code System is the procedure codes from this file."/>
+      <description value="The Value Set is a combination of two Code Systems:  CPT (HCPCS I) and HCPCS II procedure codes. They are submitted by providers to payers to convey the specific procedure performed.  AMA CPT CMS HCPCS Procedure Codes leverage US Core Procedure Codes composition.  &#xA;CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt.  HCPCS codes are available at http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets.  The link takes one to a list of files.  The target set for this Code System is the procedure codes from this file.&#xA;&#xA;**PROCEDURE CODES ONLY**"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -484,7 +484,7 @@
       <reference>
         <reference value="ValueSet/C4BBClaimInstitutionalCareTeamRole"/>
       </reference>
-      <name value="C4BB Claim Institutional Care Team Role "/>
+      <name value="C4BB Claim Institutional Care Team Role"/>
       <description value="Describes functional roles of the care team members."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -512,7 +512,7 @@
       <reference>
         <reference value="ValueSet/C4BBClaimPharmacyTeamRole"/>
       </reference>
-      <name value="CARINBB Pharmacy CareTeam Roles"/>
+      <name value="C4BB Pharmacy CareTeam Roles"/>
       <description value="Indicates the role of the provider providing the care."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -605,13 +605,13 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-CMSPlaceOfService.html"/>
+        <valueUri value="ValueSet-CMSPlaceofServiceCodes.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/CMSPlaceOfService"/>
+        <reference value="ValueSet/CMSPlaceofServiceCodes"/>
       </reference>
-      <name value="CMS Place of Service"/>
-      <description value="Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided. &#xA;CMS Place of Service codes are available at https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html."/>
+      <name value="CMS Place of Service Codes (POS)"/>
+      <description value="Place of Service Codes are two-digit codes placed on health care professional claims to indicate the setting in which a service was provided."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -638,7 +638,7 @@
       <reference>
         <reference value="ValueSet/FDANDC"/>
       </reference>
-      <name value="FDA NDC"/>
+      <name value="FDA National Drug Code (NDC)"/>
       <description value="National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  "/>
       <exampleBoolean value="false"/>
     </resource>
@@ -654,20 +654,6 @@
       </reference>
       <name value="FDA NDC or Compound "/>
       <description value="National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  &#xA;Values will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, &#x2018;compound&#x2019;"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-FDANationalDrugCode.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/FDANationalDrugCode"/>
-      </reference>
-      <name value="FDA National Drug Code (NDC)"/>
-      <description value="FDA National Drug Code (NDC)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -731,10 +717,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-NCPDPDispensedAsWritten.html"/>
+        <valueUri value="ValueSet-NCPDPDispensedAsWrittenOrProductSelectionCode.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/NCPDPDispensedAsWritten"/>
+        <reference value="ValueSet/NCPDPDispensedAsWrittenOrProductSelectionCode"/>
       </reference>
       <name value="NCPDP Dispensed As Written Or Product Selection Code"/>
       <description value="Prescriber&#39;s instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. NCPDP field # 408-D8."/>
@@ -759,6 +745,20 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-NCPDPRejectCode.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NCPDPRejectCode"/>
+      </reference>
+      <name value="NCPDP Reject Code"/>
+      <description value="The National Council for Prescription Drug Programs, (NCPDP) Reject Code (511-FB) code set contains exception definitions for use when transaction processing cannot be completed."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-PatientIdentifierType.html"/>
       </extension>
       <reference>
@@ -773,13 +773,13 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-X12CARCCMSRARC.html"/>
+        <valueUri value="ValueSet-X12ClaimAdjustmentReasonCodesCMSRemittanceAdviceRemarkCodes.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/X12CARCCMSRARC"/>
+        <reference value="ValueSet/X12ClaimAdjustmentReasonCodesCMSRemittanceAdviceRemarkCodes"/>
       </reference>
-      <name value=" X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC)"/>
-      <description value="The Value Set is a combination of two sets of codes: X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC). &#xA;CARC codes describe why a claim or service line was paid differently than it was billed. RARC codes provide additional explanation for an adjustment already described by a &#xA;Claim Adjustment Reason Code (CARC) or convey information about remittance processing. CARC codes are owned, maintained and distributed by X12. &#xA;RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes."/>
+      <name value="X12 Claim Adjustment Reason Codes (CARC) - CMS- Remittance Advice Remark Codes (RARC)"/>
+      <description value="The Value Set is a combination of two sets of codes:  X12 Claim Adjustment Reason Codes (CARC) and CMS Remittance Advice Remark Codes (RARC).  CARC codes describe why a claim or service line was paid differently than it was billed.  RARC codes provide additional explanation for an adjustment already described by a Claim Adjustment Reason Code (CARC) or convey information about remittance processing.  &#xA;Use of X12 CARC codes require a license.  Reference https://x12.org/codes/.  RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -787,10 +787,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-AHANUBCPatientDischargeStatusCS.html"/>
+        <valueUri value="CodeSystem-AHANUBCPatientDischargeStatus.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/AHANUBCPatientDischargeStatusCS"/>
+        <reference value="CodeSystem/AHANUBCPatientDischargeStatus"/>
       </reference>
       <name value="AHA NUBC Discharge Status"/>
       <description value="UB-04 Patient Discharge Status (FL-17)"/>
@@ -801,10 +801,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-AHANUBCPointOfOriginForAdmissionOrVisitCS.html"/>
+        <valueUri value="CodeSystem-AHANUBCPointOfOriginForAdmissionOrVisit.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/AHANUBCPointOfOriginForAdmissionOrVisitCS"/>
+        <reference value="CodeSystem/AHANUBCPointOfOriginForAdmissionOrVisit"/>
       </reference>
       <name value="AHA NUBC Point Of Origin For Admission Or Visit"/>
       <description value="UB-04 Point of Origin for Admission or Visit (FL-15)"/>
@@ -815,10 +815,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-AHANUBCPresentOnAdmissionCS.html"/>
+        <valueUri value="CodeSystem-AHANUBCPresentOnAdmission.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/AHANUBCPresentOnAdmissionCS"/>
+        <reference value="CodeSystem/AHANUBCPresentOnAdmission"/>
       </reference>
       <name value="AHA NUBC PresentOn Admission"/>
       <description value="UB-04 Present on Admission (FL-67)."/>
@@ -829,10 +829,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-AHANUBCPriorityTypeOfAdmissionOrVisitCS.html"/>
+        <valueUri value="CodeSystem-AHANUBCPriorityTypeOfAdmissionOrVisit.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/AHANUBCPriorityTypeOfAdmissionOrVisitCS"/>
+        <reference value="CodeSystem/AHANUBCPriorityTypeOfAdmissionOrVisit"/>
       </reference>
       <name value="AHA NUBC Priority Type Of Admission Or Visit"/>
       <description value="UB-04 Priority (Type) of Admission or Visit (FL-14)."/>
@@ -843,13 +843,13 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-AHANUBCRevenueCodesCS.html"/>
+        <valueUri value="CodeSystem-AHANUBCRevenueCodes.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/AHANUBCRevenueCodesCS"/>
+        <reference value="CodeSystem/AHANUBCRevenueCodes"/>
       </reference>
       <name value="AHA NUBC Revenue Codes"/>
-      <description value="NUBC Revenue codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC)"/>
+      <description value="NUBC Revenue codes are used to convey specific accomodation, ancillary service or unique billing calculations or arrangements. They are listed within the UB-04 Data Specifications Manual and maintained by the National Uniform Billing Committee (NUBC) UB-04 Revenue Code (FL-42)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -857,13 +857,13 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-AHANUBCTypeOfBillCS.html"/>
+        <valueUri value="CodeSystem-AHANUBCTypeOfBill.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/AHANUBCTypeOfBillCS"/>
+        <reference value="CodeSystem/AHANUBCTypeOfBill"/>
       </reference>
       <name value="AHA NUBC Type of Bill"/>
-      <description value="AHA NUBC Type of Bill codes."/>
+      <description value="UB-04 Type of Bill (FL-4)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -871,27 +871,13 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-AMACPTCS.html"/>
+        <valueUri value="CodeSystem-AMACPTCodes.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/AMACPTCS"/>
+        <reference value="CodeSystem/AMACPTCodes"/>
       </reference>
-      <name value="AMA CPT"/>
-      <description value="American Medical Association (AMA) Current Procedural Codes (CPT)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-AMACPTModifiersCS.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/AMACPTModifiersCS"/>
-      </reference>
-      <name value="AMA CPT Modifiers"/>
-      <description value="American Medical Association (AMA) Current Procedural Codes (CPT) Modifiers"/>
+      <name value="AMA CPT Codes"/>
+      <description value="CPT procedure and modifier codes are submitted to payers to convey the specific procedure performed.  CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -906,20 +892,6 @@
       </reference>
       <name value="C4BB Adjudication"/>
       <description value="Describes the various amount fields used when payers receive and adjudicate a claim.  It complements the values defined in http://terminology.hl7.org/CodeSystem/adjudication."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-C4BBBCompoundLiteralCS.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/C4BBBCompoundLiteralCS"/>
-      </reference>
-      <name value="C4BB Compound Literal Code System"/>
-      <description value="CodeSystem for a Literal &#39;compound&#39; value"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -955,10 +927,24 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-CMSDRGCS.html"/>
+        <valueUri value="CodeSystem-C4BBCompoundLiteral.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/CMSDRGCS"/>
+        <reference value="CodeSystem/C4BBCompoundLiteral"/>
+      </reference>
+      <name value="C4BB Compound Literal Code System"/>
+      <description value="CodeSystem for a Literal &#39;compound&#39; value"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-CMSDRG.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CMSDRG"/>
       </reference>
       <name value="CMS Diagnosis Related Group (DRG)"/>
       <description value="Diagnosis Related Group - any of the payment categories that are used to classify patients and especially Medicare patients for the purpose of reimbursing hospitals for each case in a given &#xA;category with a fixed fee regardless of the actual costs incurred (Other DRGs, such as AP-DRGs, requires defining their specific Value Sets and Code Systems.)"/>
@@ -969,13 +955,13 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-CMSPlaceOfServiceCS.html"/>
+        <valueUri value="CodeSystem-CMSHCPCSCodes.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/CMSPlaceOfServiceCS"/>
+        <reference value="CodeSystem/CMSHCPCSCodes"/>
       </reference>
-      <name value="CMS Place of Service"/>
-      <description value="Place of Service codes are placed on health care professional claims to indicate the setting in which a service was provided. &#xA;CMS Place of Service codes are available at https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set.html."/>
+      <name value="CMS HCPCS Codes"/>
+      <description value="HCPCS procedure codes and modifiers are submitted by providers to payers to convey the specific procedure performed.&#xA;HCPCS codes are available at http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -983,13 +969,27 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-CMSRARCCS.html"/>
+        <valueUri value="CodeSystem-CMSPlaceofServiceCodes.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/CMSRARCCS"/>
+        <reference value="CodeSystem/CMSPlaceofServiceCodes"/>
       </reference>
-      <name value="CMS Remittance Advice Remark Codes (RARC)"/>
-      <description value="Denial Reasons - Reason codes used to interpret the adjudication denial reason"/>
+      <name value="CMS Place of Service Codes (POS)"/>
+      <description value="Place of Service Codes are two-digit codes placed on health care professional claims to indicate the setting in which a service was provided."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-CMSRemittanceAdviceRemarkCodes.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CMSRemittanceAdviceRemarkCodes"/>
+      </reference>
+      <name value="CMS- Remittance Advice Remark Codes (RARC)"/>
+      <description value="RARC codes provide additional explanation for an adjustment already described by a Claim Adjustment Reason Code (CARC) or convey information about remittance processing.  &#xA;RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1025,41 +1025,13 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-FDANationalDrugCodeCS.html"/>
+        <valueUri value="CodeSystem-FDANDC.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/FDANationalDrugCodeCS"/>
+        <reference value="CodeSystem/FDANDC"/>
       </reference>
       <name value="FDA National Drug Code (NDC)"/>
-      <description value="NCPDP field # 407-D7 National Drug Code (NDC)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-HCPCSModifiersCS.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/HCPCSModifiersCS"/>
-      </reference>
-      <name value="AMA CPT Modifiers"/>
-      <description value="Healthcare Common Procedure Coding System (HCPCS) Procedure Code Modifiers"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-HCPCSProcedureCodesCS.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/HCPCSProcedureCodesCS"/>
-      </reference>
-      <name value="HCPCS Procedure Codes"/>
-      <description value="Healthcare Common Procedure Coding System (HCPCS) Procedure Codes"/>
+      <description value="National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7. "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1109,10 +1081,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-NCPDPBrandGenericCodeCS.html"/>
+        <valueUri value="CodeSystem-NCPDPBrandGenericCode.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/NCPDPBrandGenericCodeCS"/>
+        <reference value="CodeSystem/NCPDPBrandGenericCode"/>
       </reference>
       <name value="NCPDP Brand Generic Code"/>
       <description value="Indicates whether the plan adjudicated the claim as a brand or generic drug. NCPDP field # 686."/>
@@ -1123,10 +1095,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-NCPDPCompoundCodeCS.html"/>
+        <valueUri value="CodeSystem-NCPDPCompoundCode.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/NCPDPCompoundCodeCS"/>
+        <reference value="CodeSystem/NCPDPCompoundCode"/>
       </reference>
       <name value="NCPDP Compound Code"/>
       <description value="Indicates whether or not the prescription is a compound NCPDP field # 406-D6."/>
@@ -1137,10 +1109,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-NCPDPDispensedAsWrittenCS.html"/>
+        <valueUri value="CodeSystem-NCPDPDispensedAsWrittenOrProductSelectionCode.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/NCPDPDispensedAsWrittenCS"/>
+        <reference value="CodeSystem/NCPDPDispensedAsWrittenOrProductSelectionCode"/>
       </reference>
       <name value="NCPDP Dispensed As Written Or Product Selection Code"/>
       <description value="Prescriber&#39;s instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. NCPDP field # 408-D8."/>
@@ -1151,10 +1123,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-NCPDPPrescriptionOriginCodeCS.html"/>
+        <valueUri value="CodeSystem-NCPDPPrescriptionOriginCode.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/NCPDPPrescriptionOriginCodeCS"/>
+        <reference value="CodeSystem/NCPDPPrescriptionOriginCode"/>
       </reference>
       <name value="NCPDP Prescription Origin Code"/>
       <description value="Indicates whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy. NCPDP field # 419-DJ."/>
@@ -1165,13 +1137,27 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-X12CARCCS.html"/>
+        <valueUri value="CodeSystem-NCPDPRejectCode.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/X12CARCCS"/>
+        <reference value="CodeSystem/NCPDPRejectCode"/>
+      </reference>
+      <name value="NCPDP Reject Code"/>
+      <description value="Contains exception definitions for use when transaction processing cannot be completed. NCPDP field # 511-FB (Reject Code)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-X12ClaimAdjustmentReasonCodes.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/X12ClaimAdjustmentReasonCodes"/>
       </reference>
       <name value="X12 Claim Adjustment Reason Codes (CARC)"/>
-      <description value="Denial Reasons - Reason codes used to interpret the adjudication denial reason"/>
+      <description value="CARC codes describe why a claim or service line was paid differently than it was billed.   Use of X12 CARC codes require a license.  Reference https://x12.org/codes/."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1179,14 +1165,14 @@
         <valueString value="ExplanationOfBenefit"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ExplanationOfBenefit-BBEobOutpatientFacility.html"/>
+        <valueUri value="ExplanationOfBenefit-BBEobOutpatientInstitutional.html"/>
       </extension>
       <reference>
-        <reference value="ExplanationOfBenefit/BBEobOutpatientFacility"/>
+        <reference value="ExplanationOfBenefit/BBEobOutpatientInstitutional"/>
       </reference>
-      <name value="BBEobOutpatientFacility"/>
+      <name value="BBEobOutpatientInstitutional"/>
       <description value="BBEoB from Jeff"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Outpatient-Facility"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1200,7 +1186,7 @@
       </reference>
       <name value="BBEobPharmacy"/>
       <description value="BBEoB from Jeff"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1214,7 +1200,7 @@
       </reference>
       <name value="Coverage1"/>
       <description value="Coverage Example1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1228,21 +1214,21 @@
       </reference>
       <name value="EOBInpatient1"/>
       <description value="EOB Inpatient Example1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Inpatient-Institutional"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ExplanationOfBenefit"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ExplanationOfBenefit-EOBOutpatientFacility1.html"/>
+        <valueUri value="ExplanationOfBenefit-EOBOutpatientInstitutional1.html"/>
       </extension>
       <reference>
-        <reference value="ExplanationOfBenefit/EOBOutpatientFacility1"/>
+        <reference value="ExplanationOfBenefit/EOBOutpatientInstitutional1"/>
       </reference>
-      <name value="EOBOutpatientFacility1"/>
+      <name value="EOBOutpatientInstitutional1"/>
       <description value="EOB Outpatient Example1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Outpatient-Facility"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1256,7 +1242,7 @@
       </reference>
       <name value="EOBPharmacy1"/>
       <description value="EOB PHarmacy Example1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1270,7 +1256,7 @@
       </reference>
       <name value="EOBProfessional1"/>
       <description value="EOB Professional  Example1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Professional-NonClinician"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1284,7 +1270,7 @@
       </reference>
       <name value="OrganizationPayer1"/>
       <description value="Payer1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1298,7 +1284,7 @@
       </reference>
       <name value="OrganizationProvider1"/>
       <description value="Provider 1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1312,7 +1298,7 @@
       </reference>
       <name value="Patient1"/>
       <description value="Patient Example1"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1479,7 +1465,7 @@
         <reference value="CapabilityStatement/carin-bb"/>
       </reference>
       <name value="Carin Bb CapabilityStatement"/>
-      <description value="This Section describes the expected capabilities of the CARIN-BB Server actor which is responsible for providing responses to the queries submitted by the CARIN-BB Requestors. "/>
+      <description value="This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors. "/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

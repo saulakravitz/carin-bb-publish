@@ -7,11 +7,11 @@
     "name": "ICD10CMCS"
   },
   {
-    "id": "FDANationalDrugCodeCS",
+    "id": "FDANDC",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/sid/ndc",
     "version": "0.1.2",
-    "name": "FDANationalDrugCodeCS"
+    "name": "FDANDC"
   },
   {
     "id": "carin-bb",
@@ -28,13 +28,6 @@
     "name": "C4BBAdjudicationCS"
   },
   {
-    "id": "C4BBBCompoundLiteralCS",
-    "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBBCompoundLiteralCS",
-    "version": "0.1.2",
-    "name": "C4BBBCompoundLiteralCS"
-  },
-  {
     "id": "C4BBClaimCareTeamRoleCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRoleCS",
@@ -47,6 +40,13 @@
     "url": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType",
     "version": "0.1.2",
     "name": "C4BBClaimDiagnosisType"
+  },
+  {
+    "id": "C4BBCompoundLiteral",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBCompoundLiteral",
+    "version": "0.1.2",
+    "name": "C4BBCompoundLiteral"
   },
   {
     "id": "ClaimAdjudicationCategoryCS",
@@ -154,67 +154,67 @@
     "name": "ExplanationOfBenefit_Practitioner"
   },
   {
-    "id": "CARIN-BB-Coverage",
+    "id": "C4BB-Coverage",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage",
+    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage",
     "version": "0.1.2",
-    "name": "CARINBBCoverage"
+    "name": "C4BBCoverage"
   },
   {
-    "id": "CARIN-BB-ExplanationOfBenefit",
+    "id": "C4BB-ExplanationOfBenefit",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit",
+    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit",
     "version": "0.1.2",
-    "name": "CARINBBExplanationOfBenefit"
+    "name": "C4BBExplanationOfBenefit"
   },
   {
-    "id": "CARIN-BB-ExplanationOfBenefit-Inpatient-Facility",
+    "id": "C4BB-ExplanationOfBenefit-Inpatient-Institutional",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility",
+    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Inpatient-Institutional",
     "version": "0.1.2",
-    "name": "CARINBBExplanationOfBenefitInpatientFacility"
+    "name": "C4BBExplanationOfBenefitInpatientInstitutional"
   },
   {
-    "id": "CARIN-BB-ExplanationOfBenefit-Outpatient-Facility",
+    "id": "C4BB-ExplanationOfBenefit-Outpatient-Institutional",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Outpatient-Facility",
+    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional",
     "version": "0.1.2",
-    "name": "CARINBBExplanationOfBenefitOutpatientFacility"
+    "name": "C4BBExplanationOfBenefitOutpatientInstitutional"
   },
   {
-    "id": "CARIN-BB-ExplanationOfBenefit-Pharmacy",
+    "id": "C4BB-ExplanationOfBenefit-Pharmacy",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy",
+    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy",
     "version": "0.1.2",
-    "name": "CARINBBExplanationOfBenefitPharmacy"
+    "name": "C4BBExplanationOfBenefitPharmacy"
   },
   {
-    "id": "CARIN-BB-ExplanationOfBenefit-Professional-NonClinician",
+    "id": "C4BB-ExplanationOfBenefit-Professional-NonClinician",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Professional-NonClinician",
+    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician",
     "version": "0.1.2",
-    "name": "CARINBBExplanationOfBenefitProfessionalNonClinician"
+    "name": "C4BBExplanationOfBenefitProfessionalNonClinician"
   },
   {
-    "id": "CARIN-BB-Organization",
+    "id": "C4BB-Organization",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization",
+    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization",
     "version": "0.1.2",
-    "name": "CARINBBOrganization"
+    "name": "C4BBOrganization"
   },
   {
-    "id": "CARIN-BB-Patient",
+    "id": "C4BB-Patient",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient",
+    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient",
     "version": "0.1.2",
-    "name": "CARINBBPatient"
+    "name": "C4BBPatient"
   },
   {
-    "id": "CARIN-BB-Practitioner",
+    "id": "C4BB-Practitioner",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Practitioner",
+    "url": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner",
     "version": "0.1.2",
-    "name": "CARINBBPractitioner"
+    "name": "C4BBPractitioner"
   },
   {
     "id": "AHANUBCPatientDischargeStatus",
@@ -350,11 +350,11 @@
     "name": "CMSDRG"
   },
   {
-    "id": "CMSPlaceOfService",
+    "id": "CMSPlaceofServiceCodes",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSPlaceOfService",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSPlaceofServiceCodes",
     "version": "0.1.2",
-    "name": "CMSPlaceOfService"
+    "name": "CMSPlaceofServiceCodes"
   },
   {
     "id": "ClaimInformationCategory",
@@ -376,13 +376,6 @@
     "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDCOrCompound",
     "version": "0.1.2",
     "name": "FDANDCOrCompound"
-  },
-  {
-    "id": "FDANationalDrugCode",
-    "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/FDANationalDrugCode",
-    "version": "0.1.2",
-    "name": "FDANationalDrugCode"
   },
   {
     "id": "ICD10CM",
@@ -413,11 +406,11 @@
     "name": "NCPDPCompoundCode"
   },
   {
-    "id": "NCPDPDispensedAsWritten",
+    "id": "NCPDPDispensedAsWrittenOrProductSelectionCode",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPDispensedAsWritten",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPDispensedAsWrittenOrProductSelectionCode",
     "version": "0.1.2",
-    "name": "NCPDPDispensedAsWritten"
+    "name": "NCPDPDispensedAsWrittenOrProductSelectionCode"
   },
   {
     "id": "NCPDPPrescriptionOriginCode",
@@ -427,6 +420,13 @@
     "name": "NCPDPPrescriptionOriginCode"
   },
   {
+    "id": "NCPDPRejectCode",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPRejectCode",
+    "version": "0.1.2",
+    "name": "NCPDPRejectCode"
+  },
+  {
     "id": "PatientIdentifierType",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/PatientIdentifierType",
@@ -434,74 +434,67 @@
     "name": "PatientIdentifierType"
   },
   {
-    "id": "X12CARCCMSRARC",
+    "id": "X12ClaimAdjustmentReasonCodesCMSRemittanceAdviceRemarkCodes",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/X12CARCCMSRARC",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/X12ClaimAdjustmentReasonCodesCMSRemittanceAdviceRemarkCodes",
     "version": "0.1.2",
-    "name": "X12CARCCMSRARC"
+    "name": "X12ClaimAdjustmentReasonCodesCMSRemittanceAdviceRemarkCodes"
   },
   {
-    "id": "AMACPTCS",
+    "id": "NCPDPRejectCode",
+    "type": "CodeSystem",
+    "url": "http://ncpdp.org/RejectCode",
+    "version": "0.1.2",
+    "name": "NCPDPRejectCode"
+  },
+  {
+    "id": "AMACPTCodes",
     "type": "CodeSystem",
     "url": "http://www.ama-assn.org/go/cpt",
     "version": "0.1.2",
-    "name": "AMACPTCS"
+    "name": "AMACPTCodes"
   },
   {
-    "id": "AMACPTModifiersCS",
+    "id": "CMSHCPCSCodes",
     "type": "CodeSystem",
-    "url": "http://www.ama-assn.org/go/cpt-modifiers",
+    "url": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
     "version": "0.1.2",
-    "name": "AMACPTModifiersCS"
+    "name": "CMSHCPCSCodes"
   },
   {
-    "id": "HCPCSModifiersCS",
-    "type": "CodeSystem",
-    "url": "http://www.cms.gov/hcpcs-level-II-modifiers",
-    "version": "0.1.2",
-    "name": "HCPCSModifiersCS"
-  },
-  {
-    "id": "CMSDRGCS",
+    "id": "CMSDRG",
     "type": "CodeSystem",
     "url": "http://www.cms.gov/ms-drg",
     "version": "0.1.2",
-    "name": "CMSDRGCS"
+    "name": "CMSDRG"
   },
   {
-    "id": "CMSPlaceOfServiceCS",
+    "id": "NCPDPBrandGenericCode",
     "type": "CodeSystem",
-    "url": "http://www.cms.gov/place-of-service",
+    "url": "http://www.ncpdp.org/BrandGenericCode",
     "version": "0.1.2",
-    "name": "CMSPlaceOfServiceCS"
+    "name": "NCPDPBrandGenericCode"
   },
   {
-    "id": "NCPDPBrandGenericCodeCS",
+    "id": "NCPDPCompoundCode",
     "type": "CodeSystem",
-    "url": "http://www.ncpdp.org/brand-generic-code",
+    "url": "http://www.ncpdp.org/CompoundCode",
     "version": "0.1.2",
-    "name": "NCPDPBrandGenericCodeCS"
+    "name": "NCPDPCompoundCode"
   },
   {
-    "id": "NCPDPCompoundCodeCS",
+    "id": "NCPDPDispensedAsWrittenOrProductSelectionCode",
     "type": "CodeSystem",
-    "url": "http://www.ncpdp.org/compound-code",
+    "url": "http://www.ncpdp.org/DispensedAsWrittenOrProductSelectionCode",
     "version": "0.1.2",
-    "name": "NCPDPCompoundCodeCS"
+    "name": "NCPDPDispensedAsWrittenOrProductSelectionCode"
   },
   {
-    "id": "NCPDPDispensedAsWrittenCS",
+    "id": "NCPDPPrescriptionOriginCode",
     "type": "CodeSystem",
-    "url": "http://www.ncpdp.org/dispensed-as-written-or-product-selection-code",
+    "url": "http://www.ncpdp.org/PrescriptionOriginCode",
     "version": "0.1.2",
-    "name": "NCPDPDispensedAsWrittenCS"
-  },
-  {
-    "id": "NCPDPPrescriptionOriginCodeCS",
-    "type": "CodeSystem",
-    "url": "http://www.ncpdp.org/prescription-origin-code",
-    "version": "0.1.2",
-    "name": "NCPDPPrescriptionOriginCodeCS"
+    "name": "NCPDPPrescriptionOriginCode"
   },
   {
     "id": "ICD10PCSCS",
@@ -511,66 +504,66 @@
     "name": "ICD10PCSCS"
   },
   {
-    "id": "AHANUBCPointOfOriginForAdmissionOrVisitCS",
+    "id": "AHANUBCPatientDischargeStatus",
     "type": "CodeSystem",
-    "url": "http://www.nubc.org/point-of-origin-for-admission-or-visit",
+    "url": "http://www.nubc.org/PatientDischargeStatus",
     "version": "0.1.2",
-    "name": "AHANUBCPointOfOriginForAdmissionOrVisitCS"
+    "name": "AHANUBCPatientDischargeStatus"
   },
   {
-    "id": "AHANUBCPriorityTypeOfAdmissionOrVisitCS",
+    "id": "AHANUBCPointOfOriginForAdmissionOrVisit",
     "type": "CodeSystem",
-    "url": "http://www.nubc.org/priority-type-of-admission-or-visit",
+    "url": "http://www.nubc.org/PointOfOriginForAdmissionOrVisit",
     "version": "0.1.2",
-    "name": "AHANUBCPriorityTypeOfAdmissionOrVisitCS"
+    "name": "AHANUBCPointOfOriginForAdmissionOrVisit"
   },
   {
-    "id": "CMSRARCCS",
+    "id": "AHANUBCPresentOnAdmission",
     "type": "CodeSystem",
-    "url": "https://www.cms.gov/rarc",
+    "url": "http://www.nubc.org/PresentOnAdmission",
     "version": "0.1.2",
-    "name": "CMSRARCCS"
+    "name": "AHANUBCPresentOnAdmission"
   },
   {
-    "id": "X12CARCCS",
+    "id": "AHANUBCPriorityTypeOfAdmissionOrVisit",
     "type": "CodeSystem",
-    "url": "https://www.x12.org/carc",
+    "url": "http://www.nubc.org/PriorityTypeOfAdmissionOrVisit",
     "version": "0.1.2",
-    "name": "X12CARCCS"
+    "name": "AHANUBCPriorityTypeOfAdmissionOrVisit"
   },
   {
-    "id": "AHANUBCRevenueCodesCS",
+    "id": "AHANUBCRevenueCodes",
     "type": "CodeSystem",
-    "url": "urn:oid:2.16.840.1.113883.13.18",
+    "url": "http://www.nubc.org/RevenueCodes",
     "version": "0.1.2",
-    "name": "AHANUBCRevenueCodesCS"
+    "name": "AHANUBCRevenueCodes"
   },
   {
-    "id": "AHANUBCTypeOfBillCS",
+    "id": "AHANUBCTypeOfBill",
     "type": "CodeSystem",
-    "url": "urn:oid:2.16.840.1.113883.18.290",
+    "url": "http://www.nubc.org/TypeOfBill",
     "version": "0.1.2",
-    "name": "AHANUBCTypeOfBillCS"
+    "name": "AHANUBCTypeOfBill"
   },
   {
-    "id": "HCPCSProcedureCodesCS",
+    "id": "CMSPlaceofServiceCodes",
     "type": "CodeSystem",
-    "url": "urn:oid:2.16.840.1.113883.6.285",
+    "url": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
     "version": "0.1.2",
-    "name": "HCPCSProcedureCodesCS"
+    "name": "CMSPlaceofServiceCodes"
   },
   {
-    "id": "AHANUBCPresentOnAdmissionCS",
+    "id": "X12ClaimAdjustmentReasonCodes",
     "type": "CodeSystem",
-    "url": "urn:oid:2.16.840.1.113883.6.301.11",
+    "url": "https://x12.org/codes/claim-adjustment-reason-codes",
     "version": "0.1.2",
-    "name": "AHANUBCPresentOnAdmissionCS"
+    "name": "X12ClaimAdjustmentReasonCodes"
   },
   {
-    "id": "AHANUBCPatientDischargeStatusCS",
+    "id": "CMSRemittanceAdviceRemarkCodes",
     "type": "CodeSystem",
-    "url": "urn:oid:2.16.840.1.113883.6.301.5",
+    "url": "https://x12.org/codes/remittance-advice-remark-codes",
     "version": "0.1.2",
-    "name": "AHANUBCPatientDischargeStatusCS"
+    "name": "CMSRemittanceAdviceRemarkCodes"
   }
 ]

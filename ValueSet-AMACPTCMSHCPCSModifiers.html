@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="a546d495-01ec-4564-9620-8b6f15462ad8">​</a>
+      <li><a name="48886803-58d4-4b1e-b42e-3bafc4128378">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="b3496b45-4080-44ba-bf14-7cdd24b8c41d">​</a>
+      <li><a name="5cb01e79-fe77-4bbb-96aa-e97deaf5549a">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="47bdfeb0-5765-498a-ab2e-6e674b9ce303">​</a>
+      <li><a name="7c820ac8-e579-4ede-91fc-acc63ca1530b">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="460890ee-259e-4a12-ae31-159ae5ed6fc1">​</a>
+      <li><a name="f91c8e28-5a5c-468f-8a8b-7f3652f2c363">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="a28308f9-87e3-4c8a-b7a4-918bd5d1965e">​</a>
+      <li><a name="8785e2fd-ac47-4869-98e7-01d8ae802d55">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -237,13 +237,12 @@
  <tr><td>Name:</td><td>AMACPTCMSHCPCSModifiers</td></tr>
  <tr><td>Status:</td><td>Active</td></tr>
  <tr><td>Title:</td><td>AMA CPT CMS HCPCS Modifiers</td></tr>
- <tr><td>Definition:</td><td><p>The Value Set is a combination of two Code Systems: CPT (HCPCS I) and HCPCS II procedure code modifiers.
-Modifiers help further describe a procedure code without changing its definition. CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt.
-HCPCS codes are available at https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS.html.
-The link takes one to a list of files. The HCPCS ANWEB files include modifier and procedure codes. The target set for this Code System is the procedure code modifiers from this file.</p>
+ <tr><td>Definition:</td><td><p>The Value Set is a combination of two Code Systems:  CPT (HCPCS I) and HCPCS II procedure code modifiers.  Modifiers help further describe a procedure code without changing its definition.<br/>
+CPT codes are available by subscription from the AMA at http://www.ama-assn.org/go/cpt.  HCPCS codes are available at http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets.  The link takes one to a list of files.  The target set for this Code System is the procedure code modifiers from this file.</p>
+<p><strong>MODIFIER CODES ONLY</strong></p>
 </td></tr>
  <tr><td>Publisher:</td><td>HL7 Financial Management Working Group</td></tr>
- <tr><td>Copyright:</td><td><p>CCPT copyright 2014 American Medical Association. All rights reserved. The HCPCS II codes are owned by CMS and are available for use. As HL7 is working with the owning authority to finalize the url, this url is subject to change.</p>
+ <tr><td>Copyright:</td><td><p>CPT copyright 2014 American Medical Association. All rights reserved. HCPCS Level II Alphanumeric Codes are maintained by the US Centers for Medicare and Medicaid Services (CMS) and are available for public use. As HL7 is working with the owning authorities to finalize the urls, the urls are subject to change.</p>
 </td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-AMACPTCMSHCPCSModifiers.xml.html">XML</a> / <a href="ValueSet-AMACPTCMSHCPCSModifiers.json.html">JSON</a> / <a href="ValueSet-AMACPTCMSHCPCSModifiers.ttl.html">Turtle</a></td></tr>
 </tbody></table>
@@ -254,9 +253,9 @@ The link takes one to a list of files. The HCPCS ANWEB files include modifier an
   </p>
   
 <ul>
- <li><a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Inpatient-Facility.html">CARIN BB ExplanationOfBenefit Inpatient Facility</a></li>
- <li><a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Outpatient-Facility.html">CARIN BB ExplanationOfBenefit Outpatient Facility</a></li>
- <li><a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Professional-NonClinician.html">CARIN BB ExplanationOfBenefit Professional NonClinician</a></li>
+ <li><a href="StructureDefinition-C4BB-ExplanationOfBenefit-Inpatient-Institutional.html">C4BB ExplanationOfBenefit Inpatient Institutional</a></li>
+ <li><a href="StructureDefinition-C4BB-ExplanationOfBenefit-Outpatient-Institutional.html">C4BB ExplanationOfBenefit Outpatient Institutional</a></li>
+ <li><a href="StructureDefinition-C4BB-ExplanationOfBenefit-Professional-NonClinician.html">C4BB ExplanationOfBenefit Professional NonClinician</a></li>
 </ul>
 
 
@@ -269,7 +268,7 @@ The link takes one to a list of files. The HCPCS ANWEB files include modifier an
 
   <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-AMACPTModifiersCS.html"><code>http://www.ama-assn.org/go/cpt-modifiers</code></a></li><li>Include all codes defined in <a href="CodeSystem-HCPCSModifiersCS.html"><code>http://www.cms.gov/hcpcs-level-II-modifiers</code></a></li></ul></div>
+<div><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-cpt-4.html"><code>http://www.ama-assn.org/go/cpt</code></a></li><li>Include all codes defined in <a href="CodeSystem-CMSHCPCSCodes.html"><code>http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets</code></a></li></ul></div>
 
   <p>&nbsp;</p>
   <a name="expansion"> </a>
@@ -336,7 +335,7 @@ The link takes one to a list of files. The HCPCS ANWEB files include modifier an
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 3, 2020 16:15+0000">2020-09-03</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 3, 2020 22:02+0000">2020-09-03</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

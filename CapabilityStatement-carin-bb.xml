@@ -3,9 +3,9 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="carin-bb"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Carin Bb CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-08-27</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p><p>This Section describes the expected capabilities of the CARIN-BB Server actor which is responsible for providing responses to the queries submitted by the CARIN-BB Requestors.</p></p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The CARIN-BB  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Carin Bb CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-09-03</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p><p>This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors.</p></p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The CARIN-BB  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
 <ul><li>(Status 400): invalid parameter</li><li>(Status 401/4xx): unauthorized request</li><li>(Status 403): insufficient scope</li><li>(Status 404): unknown resource</li><li>(Status 410): deleted resource.</li></ul>
-</li><li>Support json source formats for all CARIN-BB interactions.</li><li>Identify the CARIN-BB  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li></ol><p>The CARIN-BB  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all CARIN-BB interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#coverage">Coverage</a></td><td><a href="StructureDefinition-CARIN-BB-Coverage.html">CARIN-BB-Coverage</a></td><td>
+</li><li>Support json source formats for all CARIN-BB interactions.</li><li>Identify the CARIN-BB  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li></ol><p>The CARIN-BB  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all CARIN-BB interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#coverage">Coverage</a></td><td><a href="StructureDefinition-C4BB-Coverage.html">C4BB-Coverage</a></td><td>
 							
 						</td><td>
 							Coverage:payor
@@ -13,15 +13,15 @@
               
             </td><td>
 							
-						</td></tr><tr><td><a href="#explanationofbenefit">ExplanationOfBenefit</a></td><td><a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit.html">CARIN-BB-ExplanationOfBenefit</a>, 
+						</td></tr><tr><td><a href="#explanationofbenefit">ExplanationOfBenefit</a></td><td><a href="StructureDefinition-C4BB-ExplanationOfBenefit.html">C4BB-ExplanationOfBenefit</a>, 
 
-						<a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Inpatient-Facility.html">CARIN-BB-ExplanationOfBenefit-Inpatient-Facility</a>, 
+						<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Inpatient-Institutional.html">C4BB-ExplanationOfBenefit-Inpatient-Institutional</a>, 
 
-						<a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Outpatient-Facility.html">CARIN-BB-ExplanationOfBenefit-Outpatient-Facility</a>, 
+						<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Outpatient-Institutional.html">C4BB-ExplanationOfBenefit-Outpatient-Institutional</a>, 
 
-						<a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Pharmacy.html">CARIN-BB-ExplanationOfBenefit-Pharmacy</a>, 
+						<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Pharmacy.html">C4BB-ExplanationOfBenefit-Pharmacy</a>, 
 
-						<a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Professional-NonClinician.html">CARIN-BB-ExplanationOfBenefit-Professional-NonClinician</a></td><td>
+						<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Professional-NonClinician.html">C4BB-ExplanationOfBenefit-Professional-NonClinician</a></td><td>
 							
 							_id, patient, _lastUpdated, type, identifier, service-date
 							
@@ -33,7 +33,7 @@
               
             </td><td>
 							
-						</td></tr><tr><td><a href="#organization">Organization</a></td><td><a href="StructureDefinition-CARIN-BB-Organization.html">CARIN-BB-Organization</a></td><td>
+						</td></tr><tr><td><a href="#organization">Organization</a></td><td><a href="StructureDefinition-C4BB-Organization.html">C4BB-Organization</a></td><td>
 							
 						</td><td>
 							
@@ -41,7 +41,7 @@
               
             </td><td>
 							
-						</td></tr><tr><td><a href="#patient">Patient</a></td><td><a href="StructureDefinition-CARIN-BB-Patient.html">CARIN-BB-Patient</a></td><td>
+						</td></tr><tr><td><a href="#patient">Patient</a></td><td><a href="StructureDefinition-C4BB-Patient.html">C4BB-Patient</a></td><td>
 							
 						</td><td>
 							
@@ -49,7 +49,7 @@
               
             </td><td>
 							
-						</td></tr><tr><td><a href="#practitioner">Practitioner</a></td><td><a href="StructureDefinition-CARIN-BB-Practitioner.html">CARIN-BB-Practitioner</a></td><td>
+						</td></tr><tr><td><a href="#practitioner">Practitioner</a></td><td><a href="StructureDefinition-C4BB-Practitioner.html">C4BB-Practitioner</a></td><td>
 							
 						</td><td>
 							
@@ -59,7 +59,7 @@
 							
 						</td></tr></tbody></table><br/><h4 id="coverage" class="no_toc">Coverage</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-CARIN-BB-Coverage.html">CARIN-BB-Coverage</a>
+											<a href="StructureDefinition-C4BB-Coverage.html">C4BB-Coverage</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>read</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
@@ -77,15 +77,15 @@
 					
 				</li><br/>  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="explanationofbenefit" class="no_toc">ExplanationOfBenefit</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit.html">CARIN-BB-ExplanationOfBenefit</a>, 
+											<a href="StructureDefinition-C4BB-ExplanationOfBenefit.html">C4BB-ExplanationOfBenefit</a>, 
 				
-											<a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Inpatient-Facility.html">CARIN-BB-ExplanationOfBenefit-Inpatient-Facility</a>, 
+											<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Inpatient-Institutional.html">C4BB-ExplanationOfBenefit-Inpatient-Institutional</a>, 
 				
-											<a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Outpatient-Facility.html">CARIN-BB-ExplanationOfBenefit-Outpatient-Facility</a>, 
+											<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Outpatient-Institutional.html">C4BB-ExplanationOfBenefit-Outpatient-Institutional</a>, 
 				
-											<a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Pharmacy.html">CARIN-BB-ExplanationOfBenefit-Pharmacy</a>, 
+											<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Pharmacy.html">C4BB-ExplanationOfBenefit-Pharmacy</a>, 
 				
-											<a href="StructureDefinition-CARIN-BB-ExplanationOfBenefit-Professional-NonClinician.html">CARIN-BB-ExplanationOfBenefit-Professional-NonClinician</a>
+											<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Professional-NonClinician.html">C4BB-ExplanationOfBenefit-Professional-NonClinician</a>
 				
 				</p><p>Resource Specific Documentation:</p><blockquote><p>The EOB Resource is the focal Consumer-Directed Payer Data Exchange (CDPDE) Resource. Several Reference Resources are defined directly/indirectly from the EOB: Coverage, Patient, Organization (Payer ID), Practioner, Organization (Facility), PractionerRole, Location.</p><p>The Coverage Reference Resource SHALL be returned with data that was effective as of the date of service of the claim; for example, the data will reflect the employer name in effect at that time. However, for other reference resources, payers MAY decide to provide either the data that was in effect as of the date of service or the current data. All reference resources within the EOB will have meta.lastUpdated flagged as must support. Payers SHALL provide the last time the data was updated or the date of creation in the payers system of record, whichever comes last. Apps will use the meta.lastUpdated values to determine if the reference resources are as of the current date or date of service.</p><p>When an EOB references another resource (e.g., Patient or Practitioner), the reference may be versioned or versionless. Payers SHALL use versioned references whenever they maintain point-in-time data (data that was effective as of the date of service or date of admission on the claim), but MAY use versionless references when they do not maintain versioned data. Clients MAY request referenced resources as part of an EOB search (by supplying the _include parameter) or directly using read or vread. Payers SHALL support both approaches, and SHALL return the same content for referenced resources in either case.</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>read</code><sup>†</sup>.</li></ul><blockquote>read<sup>†</sup><p>Searches using service-date, _lastUpdated, or type require a patient search argument.</p>
@@ -127,7 +127,7 @@
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?service-date=[service-date]</code></td></tr></tbody></table><hr/><h4 id="organization" class="no_toc">Organization</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-CARIN-BB-Organization.html">CARIN-BB-Organization</a>
+											<a href="StructureDefinition-C4BB-Organization.html">C4BB-Organization</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
@@ -144,7 +144,7 @@
 				
 				  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="patient" class="no_toc">Patient</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-CARIN-BB-Patient.html">CARIN-BB-Patient</a>
+											<a href="StructureDefinition-C4BB-Patient.html">C4BB-Patient</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
@@ -161,7 +161,7 @@
 				
 				  <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="practitioner" class="no_toc">Practitioner</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
-											<a href="StructureDefinition-CARIN-BB-Practitioner.html">CARIN-BB-Practitioner</a>
+											<a href="StructureDefinition-C4BB-Practitioner.html">C4BB-Practitioner</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
@@ -184,7 +184,7 @@
   <title value="Carin Bb CapabilityStatement"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2020-08-27"/>
+  <date value="2020-09-03"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -197,7 +197,7 @@
       <value value="fm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="This Section describes the expected capabilities of the CARIN-BB Server actor which is responsible for providing responses to the queries submitted by the CARIN-BB Requestors. "/>
+  <description value="This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors. "/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -221,7 +221,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Coverage"/>
-      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Coverage"/>
+      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -236,11 +236,11 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="ExplanationOfBenefit"/>
-      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit"/>
-      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Inpatient-Facility"/>
-      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Outpatient-Facility"/>
-      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Pharmacy"/>
-      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-ExplanationOfBenefit-Professional-NonClinician"/>
+      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit"/>
+      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Inpatient-Institutional"/>
+      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional"/>
+      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"/>
+      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician"/>
       <documentation value="The EOB Resource is the focal Consumer-Directed Payer Data Exchange (CDPDE) Resource. Several Reference Resources are defined directly/indirectly from the EOB: Coverage, Patient, Organization (Payer ID), Practioner, Organization (Facility), PractionerRole, Location.&#xA;&#xA;The Coverage Reference Resource SHALL be returned with data that was effective as of the date of service of the claim; for example, the data will reflect the employer name in effect at that time. However, for other reference resources, payers MAY decide to provide either the data that was in effect as of the date of service or the current data. All reference resources within the EOB will have meta.lastUpdated flagged as must support. Payers SHALL provide the last time the data was updated or the date of creation in the payers system of record, whichever comes last. Apps will use the meta.lastUpdated values to determine if the reference resources are as of the current date or date of service.&#xA;&#xA;When an EOB references another resource (e.g., Patient or Practitioner), the reference may be versioned or versionless. Payers SHALL use versioned references whenever they maintain point-in-time data (data that was effective as of the date of service or date of admission on the claim), but MAY use versionless references when they do not maintain versioned data. Clients MAY request referenced resources as part of an EOB search (by supplying the _include parameter) or directly using read or vread. Payers SHALL support both approaches, and SHALL return the same content for referenced resources in either case."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -310,7 +310,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Organization"/>
-      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Organization"/>
+      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -330,7 +330,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Patient"/>
-      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Patient"/>
+      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -350,7 +350,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Practitioner"/>
-      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/CARIN-BB-Practitioner"/>
+      <supportedProfile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
