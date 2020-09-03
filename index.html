@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="e3a693da-ff8c-47ec-9b61-83eef8070a78">​</a>
+      <li><a name="b5ffcab1-d284-42dc-a4b5-25e5794e9705">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="6c8eedba-7939-4f91-a3d3-fc92a6ebaf6f">​</a>
+      <li><a name="8d9f89dd-1da2-49e4-bab8-c55cd410d8e1">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="c9c39606-729e-4439-818e-10282b9c2d1c">​</a>
+      <li><a name="81ce0f18-c0d3-4ca6-aa5c-1dc480694f03">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="bb715ff3-4073-4b0b-93a5-d81334cd9ca0">​</a>
+      <li><a name="89449472-e089-4928-b569-8dfd2cd77a4e">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="d2452424-89ea-4958-9f9a-99656be9d7b2">​</a>
+      <li><a name="d6aa6d00-38b6-4603-8b7b-e7baf96ad262">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -226,46 +226,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>This implementation guide describes the CARIN for Blue Button&reg; <sup>[<a name="id1" href="#ftn.id1">*</a>]</sup> Framework and Common Payer Consumer Data Set (CPCDS), providing a set of resources that payers can display to consumers via a FHIR API. See the [Table of Contents](toc.html) for more information.</p>
 <h3>Log of Continuous Integration Build Changes</h3>
 <ul>
-<li>Interim Version 0.4.2 - August 28, 2020</li>
+<li>Interim Version 0.1.3 - September 4, 2020</li>
+<ol>
+<li>Pat's updates to CodeSystem stubs and Codesystems/Valuesets</li>
+<li>Updates to Graphics</li>
+<li>Changed references to CARIN-BB to C4BB, including profile, codesystem, and valueset names</li>
+<li>Changed naming convention for releases to Release.Ballot.Version. </li>
+</ol>
+</ul>
+<li>Interim Version 0.1.2 - August 28, 2020</li>
 <ol>
 <li>Update to <a href="CARINBBResourcesv17.png">EOBComparisonv17</a> from Pat, still in draft form.</li>
 <li>Created Codesystem stubs for all key external codesystems referenced by IG, along with corresponding ValueSets</li>
 <li>Further corrections to capability statement based on Igor comments. supported_profiles vs profiles still deferred.</li>
 <li>Resolved all but a handful of remaining comments relating to BV1, BV2, BV2a, BV4, BV6</li>
 </ol>
-<li>Interim Version 0.4.1 - August 13, 2020</li>
-<ol>
-<li>Update to EOBComparisonv13 from Pat</li>
-<li>Imported comments and MS from CPCDS spreadsheet</li>
-<li>Further corrections to capability statement based on Igor comments. supported_profiles vs profiles deferred.</li>
-</ol>
-<li>Interim Version 0.4. - August 5, 2020</li>
-<ol>
-<li>Update to EOBComparisonv13 from Pat</li>
-<li>Imported comments and MS from CPCDS spreadsheet</li>
-</ol>
-<li>Version 0.3.1 - July 26, 2020</li>
-<ol>
-<li>Corrections to slices defined and names of value sets referenced in 4 EOB profiles following review. EOB Profile Summary withdrawn pending review..</li>
-<li>Correction to example</li>
-<li>Correct version of CPCDS mapping spreadsheet linked.</li>
-</ol>
-<li>Version 0.3.0 - July 24, 2020</li>
-<ol>
-<li>Corrections to slices defined and names of value sets referenced in 4 EOB profiles following review. These are now in line with <a href="EOBtypes.png">the EOB Profile Summary</a>.</li>
-<li>Addition of initial skeletal examples for 4 EOB profiles. Feedback/input/suggestions welcome!</li>
-<li>Eliminated CPCDS mapping table in Coverage intro. CPCDS information is to be moved to an external reference only based on FW WG direction.</li>
-<li>Committing FSH/sushi inputs to github now that mismatch between Sushi 0.14.0 and the latest IG publisher has been addressed.</li>
-</ol>
-<li>Version 0.2.0 - July 17, 2020</li>
-<ol>
-<li>Corrections to slices defined and value sets referenced in 4 EOB profiles following review</li>
-<li>Changes to Value Set names (removing VS suffix)</li>
-<li>Experimental labeling of Coverage profile with annotation from CPCDS-FHIR mapping spreadsheet. Inclusion of CPCDS mapping table in Coverage intro</li>
-<li>Addition of (empty) Capability Statement page.</li>
-<li>Addition of initial set of examples. Will be expanded to cover all resources.</li>
-</ol>
-</ul>
+<p>&lt;/ul&gt;</p>
 <h3>Authors</h3>
 <table border="1" style="width: 50%;">
 <tbody>
@@ -342,7 +318,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 3, 2020 22:22+0000">2020-09-03</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 3, 2020 22:37+0000">2020-09-03</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
