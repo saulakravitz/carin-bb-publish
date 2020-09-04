@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-09-03T22:37:47+00:00"/>
+  <date value="2020-09-04T18:56:03+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -484,7 +484,7 @@
       <reference>
         <reference value="ValueSet/C4BBClaimInstitutionalCareTeamRole"/>
       </reference>
-      <name value="C4BB Claim Institutional Care Team Role"/>
+      <name value="C4BB Claim Institutional Care Team Role "/>
       <description value="Describes functional roles of the care team members."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -512,8 +512,8 @@
       <reference>
         <reference value="ValueSet/C4BBClaimPharmacyTeamRole"/>
       </reference>
-      <name value="C4BB Pharmacy CareTeam Roles"/>
-      <description value="Indicates the role of the provider providing the care."/>
+      <name value="C4BB Claim Pharmacy CareTeam Roles"/>
+      <description value="Describes functional roles of the care team members"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -582,8 +582,8 @@
       <reference>
         <reference value="ValueSet/C4BBPayerProviderContractingStatus"/>
       </reference>
-      <name value="Provider Provider Contracting Status"/>
-      <description value="Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission."/>
+      <name value="C4BB Payer Provider Contracting Status"/>
+      <description value="Indicates that the Provider has a contract with the Payer as of the effective date of service or admission."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -885,10 +885,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-C4BBAdjudicationCS.html"/>
+        <valueUri value="CodeSystem-C4BBAdjudication.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/C4BBAdjudicationCS"/>
+        <reference value="CodeSystem/C4BBAdjudication"/>
       </reference>
       <name value="C4BB Adjudication"/>
       <description value="Describes the various amount fields used when payers receive and adjudicate a claim.  It complements the values defined in http://terminology.hl7.org/CodeSystem/adjudication."/>
@@ -899,10 +899,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-C4BBClaimCareTeamRoleCS.html"/>
+        <valueUri value="CodeSystem-C4BBClaimCareTeamRole.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/C4BBClaimCareTeamRoleCS"/>
+        <reference value="CodeSystem/C4BBClaimCareTeamRole"/>
       </reference>
       <name value="C4BB Claim Care Team Role"/>
       <description value="Describes functional roles of the care team members.  Complements http://terminology.hl7.org/CodeSystem/claimcareteamrole"/>
@@ -932,8 +932,22 @@
       <reference>
         <reference value="CodeSystem/C4BBCompoundLiteral"/>
       </reference>
-      <name value="C4BB Compound Literal Code System"/>
+      <name value="C4BB Compound Literal"/>
       <description value="CodeSystem for a Literal &#39;compound&#39; value"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-C4BBPayerAdjudicationStatus.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/C4BBPayerAdjudicationStatus"/>
+      </reference>
+      <name value="C4BB Payer Adjudication Status"/>
+      <description value="Describes the various status fields used when payers adjudicate a claim, such as whether the claim was adjudicated in or out of network, if the provider was contracted or non-contracted for the service"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -997,10 +1011,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-ClaimAdjudicationCategoryCS.html"/>
+        <valueUri value="CodeSystem-ClaimAdjudicationCategory.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/ClaimAdjudicationCategoryCS"/>
+        <reference value="CodeSystem/ClaimAdjudicationCategory"/>
       </reference>
       <name value="Claim Adjudication Category"/>
       <description value="Values for EOB.item.adjudication.category and total.category"/>
@@ -1011,10 +1025,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-ClaimInformationCategoryCS.html"/>
+        <valueUri value="CodeSystem-ClaimInformationCategory.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/ClaimInformationCategoryCS"/>
+        <reference value="CodeSystem/ClaimInformationCategory"/>
       </reference>
       <name value="Claim Information Category"/>
       <description value="Claim Information Category - Used as the discriminator for supportingInfo"/>
@@ -1464,7 +1478,7 @@
       <reference>
         <reference value="CapabilityStatement/carin-bb"/>
       </reference>
-      <name value="Carin Bb CapabilityStatement"/>
+      <name value="C4BB CapabilityStatement"/>
       <description value="This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors. "/>
       <exampleBoolean value="false"/>
     </resource>

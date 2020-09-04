@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.US.CARIN-BB\Provider Provider Contracting Status - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.CARIN-BB\C4BB Payer Provider Contracting Status - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="76e9314e-3d18-4396-9469-6620fd53a817">​</a>
+      <li><a name="e1ced967-4055-4e3f-aa99-c0c5f3a49413">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="08c216a3-8648-4062-835a-e9743392e924">​</a>
+      <li><a name="f2392586-0c14-49f2-854c-7a85ee0f8dc7">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="2c372f48-3d65-4b65-99a9-725e7637743f">​</a>
+      <li><a name="ac16a39e-8ad5-4d5e-b3c7-a136ecd97057">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="e164fcc5-43b2-47e0-a7a1-d6279bb01d9a">​</a>
+      <li><a name="f92b4b6f-96dc-4ba0-9e52-e2f42f6e67cd">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="fbd82fa6-1a9c-41d4-9146-279cebfff736">​</a>
+      <li><a name="bf261279-3e1d-4845-bedc-734857bafa02">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -176,7 +176,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Provider Provider Contracting Status</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>C4BB Payer Provider Contracting Status</b></li>
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -227,7 +227,7 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: Provider Provider Contracting Status</h2>
+  <h2 id="root">ValueSet: C4BB Payer Provider Contracting Status</h2>
   <p>
     <b>Summary</b>
   </p>
@@ -236,8 +236,8 @@
  <tr><td>Version:</td><td>0.1.2</td></tr>
  <tr><td>Name:</td><td>C4BBPayerProviderContractingStatus</td></tr>
  <tr><td>Status:</td><td>Active</td></tr>
- <tr><td>Title:</td><td>Provider Provider Contracting Status</td></tr>
- <tr><td>Definition:</td><td><p>Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.</p>
+ <tr><td>Title:</td><td>C4BB Payer Provider Contracting Status</td></tr>
+ <tr><td>Definition:</td><td><p>Indicates that the Provider has a contract with the Payer as of the effective date of service or admission.</p>
 </td></tr>
  <tr><td>Publisher:</td><td>HL7 Financial Management Working Group</td></tr>
  <tr><td>Copyright:</td><td><p>This Valueset is not copyrighted.</p>
@@ -267,13 +267,13 @@
 
   <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><ul><li>Include these codes as defined in <a href="CodeSystem-C4BBAdjudicationCS.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name="71fbabdc-2668-464f-812e-e528d9248422">​</a><a href="CodeSystem-C4BBAdjudicationCS.html#C4BBAdjudicationCS-contracted">contracted</a></td><td>contracted</td><td></td></tr><tr><td><a name="255b49a3-96e1-4c8e-a997-efd80d9009d5">​</a><a href="CodeSystem-C4BBAdjudicationCS.html#C4BBAdjudicationCS-non-contracted">non-contracted</a></td><td>non-contracted</td><td></td></tr></table></li></ul></div>
+<div><ul><li>Include these codes as defined in <a href="CodeSystem-C4BBPayerAdjudicationStatus.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-contracted">contracted</a></td><td>Contracted</td><td>Indicates the provider was contracted for the service</td></tr><tr><td><a name="7698acc5-2365-43dc-baaa-c61c3e80eb5e">​</a><a href="CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-nnoncontracted">nnoncontracted</a></td><td>Non-Contracted</td><td></td></tr></table></li></ul></div>
 
   <p>&nbsp;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div><p>This value set contains 2 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-C4BBAdjudicationCS.html">C4BB Adjudication v0.1.2 (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-C4BBAdjudicationCS.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationCS</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="5022c87e-3eb6-4c94-aa52-d9f8e37ad44e">​</a><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBAdjudicationCS-contracted"> </a><a href="CodeSystem-C4BBAdjudicationCS.html#C4BBAdjudicationCS-contracted">contracted</a></td><td>contracted</td><td></td></tr><tr><td style="white-space:nowrap"><a name="a597b001-025d-499d-9734-c9b0bd3ee86f">​</a><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBAdjudicationCS-non-contracted"> </a><a href="CodeSystem-C4BBAdjudicationCS.html#C4BBAdjudicationCS-non-contracted">non-contracted</a></td><td>non-contracted</td><td></td></tr></table></div>
+  <div><p>This value set contains 2 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-C4BBPayerAdjudicationStatus.html">C4BB Payer Adjudication Status v0.1.2 (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-C4BBPayerAdjudicationStatus.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBPayerAdjudicationStatus-contracted"> </a><a href="CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-contracted">contracted</a></td><td>Contracted</td><td>Indicates the provider was contracted for the service</td></tr><tr><td style="white-space:nowrap"><a name="7b4f06b7-3128-4f76-8a57-b09a43cd49cd">​</a><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBPayerAdjudicationStatus-nnoncontracted"> </a><a href="CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-nnoncontracted">nnoncontracted</a></td><td>Non-Contracted</td><td></td></tr></table></div>
 
   <hr/>
   <p>
@@ -334,7 +334,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 3, 2020 22:37+0000">2020-09-03</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 4, 2020 18:56+0000">2020-09-04</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

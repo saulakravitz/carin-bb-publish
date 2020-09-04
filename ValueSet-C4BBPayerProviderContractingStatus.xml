@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="C4BBPayerProviderContractingStatus"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-C4BBAdjudicationCS.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-C4BBAdjudicationCS.html#C4BBAdjudicationCS-contracted">contracted</a></td><td>contracted</td><td/></tr><tr><td><a href="CodeSystem-C4BBAdjudicationCS.html#C4BBAdjudicationCS-non-contracted">non-contracted</a></td><td>non-contracted</td><td/></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-C4BBPayerAdjudicationStatus.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-contracted">contracted</a></td><td>Contracted</td><td>Indicates the provider was contracted for the service</td></tr><tr><td><a href="CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-nnoncontracted">nnoncontracted</a></td><td>Non-Contracted</td><td/></tr></table></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBPayerProviderContractingStatus"/>
   <version value="0.1.2"/>
   <name value="C4BBPayerProviderContractingStatus"/>
-  <title value="Provider Provider Contracting Status"/>
+  <title value="C4BB Payer Provider Contracting Status"/>
   <status value="active"/>
-  <date value="2020-09-03T22:37:47+00:00"/>
+  <date value="2020-09-04T18:56:03+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -23,7 +23,7 @@
       <value value="fm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission."/>
+  <description value="Indicates that the Provider has a contract with the Payer as of the effective date of service or admission."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -33,14 +33,14 @@
   <copyright value="This Valueset is not copyrighted."/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationCS"/>
+      <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"/>
       <concept>
         <code value="contracted"/>
-        <display value="contracted"/>
+        <display value="Contracted"/>
       </concept>
       <concept>
-        <code value="non-contracted"/>
-        <display value="non-contracted"/>
+        <code value="nnoncontracted"/>
+        <display value="Non-Contracted"/>
       </concept>
     </include>
   </compose>

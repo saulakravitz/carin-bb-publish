@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "C4BBClaimDiagnosisType"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">external-cause-of-injury<a name=\"C4BBClaimDiagnosisType-external-cause-of-injury\"> </a></td><td>External Cause of Injury</td><td>Required when an external cause of injury is needed to describe the injury</td></tr><tr><td style=\"white-space:nowrap\">patient-reason-for-visit<a name=\"C4BBClaimDiagnosisType-patient-reason-for-visit\"> </a></td><td>Patient Reason for Visit</td><td>Identifies the patient's reason for the outpatient institutional visit</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"C4BBClaimDiagnosisType-other\"> </a></td><td>Other</td><td>Required when other conditions coexist or develop subsequently during the treatment</td></tr><tr><td style=\"white-space:nowrap\">secondary<a name=\"C4BBClaimDiagnosisType-secondary\"> </a></td><td>Secondary</td><td>Required when necessary to report additional diagnoses on professional and non-clinician claims</td></tr><tr><td style=\"white-space:nowrap\">principal<a name=\"C4BBClaimDiagnosisType-principal\"> </a></td><td>Principal</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">admitting<a name=\"C4BBClaimDiagnosisType-admitting\"> </a></td><td>Admitting</td><td>Undefined</td></tr><tr><td style=\"white-space:nowrap\">first-listed<a name=\"C4BBClaimDiagnosisType-first-listed\"> </a></td><td>First Listed</td><td>Undefined</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">external-cause-of-injury<a name=\"C4BBClaimDiagnosisType-external-cause-of-injury\"> </a></td><td>External Cause of Injury</td><td>Required when an external cause of injury is needed to describe the injury</td></tr><tr><td style=\"white-space:nowrap\">patient-reason-for-visit<a name=\"C4BBClaimDiagnosisType-patient-reason-for-visit\"> </a></td><td>Patient Reason for Visit</td><td>Identifies the patient's reason for the outpatient institutional visit</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"C4BBClaimDiagnosisType-other\"> </a></td><td>Other</td><td>Required when other conditions coexist or develop subsequently during the treatment</td></tr><tr><td style=\"white-space:nowrap\">secondary<a name=\"C4BBClaimDiagnosisType-secondary\"> </a></td><td>Secondary</td><td>Required when necessary to report additional diagnoses on professional and non-clinician claims</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"];
   fhir:CodeSystem.version [ fhir:value "0.1.2"];
   fhir:CodeSystem.name [ fhir:value "C4BBClaimDiagnosisType"];
   fhir:CodeSystem.title [ fhir:value "C4BB Claim Diagnosis Type"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-09-03T22:37:47+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-09-04T18:56:03+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -43,7 +43,7 @@
   ];
   fhir:CodeSystem.copyright [ fhir:value "This CodeSystem is not copyrighted."];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "external-cause-of-injury" ];
@@ -64,21 +64,6 @@
      fhir:CodeSystem.concept.code [ fhir:value "secondary" ];
      fhir:CodeSystem.concept.display [ fhir:value "Secondary" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Required when necessary to report additional diagnoses on professional and non-clinician claims" ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "principal" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Principal" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
-  ], [
-     fhir:index 5;
-     fhir:CodeSystem.concept.code [ fhir:value "admitting" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Admitting" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
-  ], [
-     fhir:index 6;
-     fhir:CodeSystem.concept.code [ fhir:value "first-listed" ];
-     fhir:CodeSystem.concept.display [ fhir:value "First Listed" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Undefined" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

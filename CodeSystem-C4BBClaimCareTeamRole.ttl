@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "C4BBClaimCareTeamRole"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">attending<a name=\"C4BBClaimCareTeamRole-attending\"> </a></td><td>Attending</td><td>The attending physicianr</td></tr><tr><td style=\"white-space:nowrap\">referring<a name=\"C4BBClaimCareTeamRole-referring\"> </a></td><td>Referring</td><td>The referring physician</td></tr><tr><td style=\"white-space:nowrap\">operating<a name=\"C4BBClaimCareTeamRole-operating\"> </a></td><td>Operating</td><td>The operating physician</td></tr><tr><td style=\"white-space:nowrap\">performing<a name=\"C4BBClaimCareTeamRole-performing\"> </a></td><td>Performing provider</td><td>The performing or rendering provider</td></tr><tr><td style=\"white-space:nowrap\">prescribing<a name=\"C4BBClaimCareTeamRole-prescribing\"> </a></td><td>Prescribing provider</td><td>The prescribing provider</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole"];
+  fhir:CodeSystem.version [ fhir:value "0.1.2"];
+  fhir:CodeSystem.name [ fhir:value "C4BBClaimCareTeamRole"];
+  fhir:CodeSystem.title [ fhir:value "C4BB Claim Care Team Role"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2020-09-04T18:56:03+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Financial Management Working Group"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Financial Management Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/fm/index.cfm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Describes functional roles of the care team members.  Complements http://terminology.hl7.org/CodeSystem/claimcareteamrole"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "This Code System is not copyrighted."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "attending" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Attending" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The attending physicianr" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "referring" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Referring" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The referring physician" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "operating" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Operating" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The operating physician" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "performing" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Performing provider" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The performing or rendering provider" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "prescribing" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prescribing provider" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The prescribing provider" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole.ttl> .
+
+# -------------------------------------------------------------------------------------
+

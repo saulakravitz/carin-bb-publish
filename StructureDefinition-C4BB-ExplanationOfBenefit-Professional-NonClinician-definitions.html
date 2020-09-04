@@ -90,10 +90,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="c2e2f4df-582b-4bff-a35f-9e40d07b9495">​</a>
+      <li><a name="4174ca0d-4f02-4e0c-b5bb-7d6ae35a5b59">​</a>
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
-      <li><a name="89ab73ed-7934-4cfc-9dd9-32ca1c43707c">​</a>
+      <li><a name="2af4ca54-98a7-4018-9024-e0c8717af05d">​</a>
         <a href="Background.html#guide-overview">Guide Overview</a>
       </li>
     </ul>
@@ -103,10 +103,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="f3352820-da4b-47a3-a2fd-af17590d48f1">​</a>
+      <li><a name="5fe963e2-8384-4419-9cc4-35374acbcdc7">​</a>
         <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
       </li>
-      <li><a name="9514083a-da94-4ad1-b867-4904408ca9f8">​</a>
+      <li><a name="969bd938-affb-4643-b394-cbb86dac01d6">​</a>
         <a href="Use_Case.html#use-cases">Use Cases</a>
       </li>
     </ul>
@@ -151,7 +151,7 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="9d1bd024-0eac-4b12-87f7-fae27056ac11">​</a>
+      <li><a name="35cf7c8e-d530-409a-8d8b-df21af5b84c8">​</a>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
       <li>
@@ -1178,7 +1178,7 @@
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
 </td></tr>
-  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns="http://hl7.org/fhir"&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value="billingnetworkcontractingstatus"/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns="http://hl7.org/fhir"&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value="billingnetworkcontractingstatus"/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ExplanationOfBenefit.supportingInfo:billingnetworkcontractingstatus.category.id"> </a><span style="color: grey">88.</span> <b>ExplanationOfBenefit.supportingInfo:billingnetworkcontractingstatus.category.id</b><a href="#ExplanationOfBenefit.supportingInfo:billingnetworkcontractingstatus.category.id" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -1223,7 +1223,7 @@
   <tr><td>Definition</td><td><p>System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-C4BBPayerProviderContractingStatus.html">Provider Provider Contracting Status</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-C4BBPayerProviderContractingStatus.html">C4BB Payer Provider Contracting Status</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to identify the kind of additional information.</p>
@@ -1327,14 +1327,14 @@
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
 </td></tr>
-  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns="http://hl7.org/fhir"&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value="performingnetworkcontractingstatus"/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns="http://hl7.org/fhir"&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value="performingnetworkcontractingstatus"/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ExplanationOfBenefit.supportingInfo:performingnetworkcontractingstatus.code"> </a><span style="color: grey">102.</span> <b>ExplanationOfBenefit.supportingInfo:performingnetworkcontractingstatus.code</b><a href="#ExplanationOfBenefit.supportingInfo:performingnetworkcontractingstatus.code" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-C4BBPayerProviderContractingStatus.html">Provider Provider Contracting Status</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-C4BBPayerProviderContractingStatus.html">C4BB Payer Provider Contracting Status</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Required to identify the kind of additional information.</p>
@@ -1438,7 +1438,7 @@
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
 </td></tr>
-  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns="http://hl7.org/fhir"&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value="claimrecvddate"/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns="http://hl7.org/fhir"&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value="claimrecvddate"/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ExplanationOfBenefit.supportingInfo:claimrecvddate.code"> </a><span style="color: grey">112.</span> <b>ExplanationOfBenefit.supportingInfo:claimrecvddate.code</b><a href="#ExplanationOfBenefit.supportingInfo:claimrecvddate.code" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -1549,7 +1549,7 @@
 </td></tr>
   <tr><td>Comments</td><td><p>This may contain a category for the local bill type codes.</p>
 </td></tr>
-  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns="http://hl7.org/fhir"&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value="servicefacility"/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns="http://hl7.org/fhir"&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value="servicefacility"/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ExplanationOfBenefit.supportingInfo:servicefacility.code"> </a><span style="color: grey">122.</span> <b>ExplanationOfBenefit.supportingInfo:servicefacility.code</b><a href="#ExplanationOfBenefit.supportingInfo:servicefacility.code" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -2464,7 +2464,7 @@
 </td></tr>
   <tr><td>Comments</td><td><p>For example, codes indicating: Co-Pay, deductible, eligible, benefit, tax, etc.</p>
 </td></tr>
-  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns="http://hl7.org/fhir"&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value="denialreason"/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns="http://hl7.org/fhir"&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategory"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value="denialreason"/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ExplanationOfBenefit.item.adjudication:denialreason.reason"> </a><span style="color: grey">208.</span> <b>ExplanationOfBenefit.item.adjudication:denialreason.reason</b><a href="#ExplanationOfBenefit.item.adjudication:denialreason.reason" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -2640,7 +2640,7 @@
 </td></tr>
   <tr><td>Comments</td><td><p>For example, codes indicating: Co-Pay, deductible, eligible, benefit, tax, etc.</p>
 </td></tr>
-  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns="http://hl7.org/fhir"&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value="allowedunits"/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns="http://hl7.org/fhir"&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategory"/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value="allowedunits"/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ExplanationOfBenefit.item.adjudication:allowedunits.reason"> </a><span style="color: grey">224.</span> <b>ExplanationOfBenefit.item.adjudication:allowedunits.reason</b><a href="#ExplanationOfBenefit.item.adjudication:allowedunits.reason" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -4041,7 +4041,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 3, 2020 22:37+0000">2020-09-03</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.2 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 4, 2020 18:56+0000">2020-09-04</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

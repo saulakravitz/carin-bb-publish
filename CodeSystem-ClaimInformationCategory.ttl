@@ -1,0 +1,136 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ClaimInformationCategory"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">admissionperiod<a name=\"ClaimInformationCategory-admissionperiod\"> </a></td><td>Admission Period</td><td>Admission Period</td></tr><tr><td style=\"white-space:nowrap\">admtype<a name=\"ClaimInformationCategory-admtype\"> </a></td><td>admtype</td><td>Priority of the admission. Information located on (UB04 Form Locator 14). For example, an admission type of elective indicates that the patient's condition permitted time for medical services to be scheduled.</td></tr><tr><td style=\"white-space:nowrap\">billingnetworkcontractingstatus<a name=\"ClaimInformationCategory-billingnetworkcontractingstatus\"> </a></td><td>billingnetworkcontractingstatus</td><td>Indicates the network  status of the billing physician.</td></tr><tr><td style=\"white-space:nowrap\">brandgenericcode<a name=\"ClaimInformationCategory-brandgenericcode\"> </a></td><td>brandgenericcode</td><td>Whether the plan adjudicated the claim as a brand or generic drug.</td></tr><tr><td style=\"white-space:nowrap\">claimrecvddate<a name=\"ClaimInformationCategory-claimrecvddate\"> </a></td><td>claimmrecvddate</td><td>The date the claim was received by the payer.</td></tr><tr><td style=\"white-space:nowrap\">compoundcode<a name=\"ClaimInformationCategory-compoundcode\"> </a></td><td>compoundcode</td><td>NCPDP Compound code</td></tr><tr><td style=\"white-space:nowrap\">dawcode<a name=\"ClaimInformationCategory-dawcode\"> </a></td><td>dawcode</td><td>Prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication.</td></tr><tr><td style=\"white-space:nowrap\">dayssupply<a name=\"ClaimInformationCategory-dayssupply\"> </a></td><td>dayssupply</td><td>Number of days supply of medication dispensed by the pharmacy.</td></tr><tr><td style=\"white-space:nowrap\">discharge-status<a name=\"ClaimInformationCategory-discharge-status\"> </a></td><td>discharge-status</td><td>Patient’s status as of the discharge date for a facility stay.</td></tr><tr><td style=\"white-space:nowrap\">drg<a name=\"ClaimInformationCategory-drg\"> </a></td><td>drg</td><td>Diagnosis Related Group</td></tr><tr><td style=\"white-space:nowrap\">performingnetworkcontractingstatus<a name=\"ClaimInformationCategory-performingnetworkcontractingstatus\"> </a></td><td>performingnetworkcontractingstatus</td><td>Indicates the network  status of the performing physician.</td></tr><tr><td style=\"white-space:nowrap\">placeofservice<a name=\"ClaimInformationCategory-placeofservice\"> </a></td><td>placeofservice</td><td>Code indicating the location, such as inpatient, outpatient facility, office, or home health agency, where this service was performed.</td></tr><tr><td style=\"white-space:nowrap\">refillnum<a name=\"ClaimInformationCategory-refillnum\"> </a></td><td>refillnum</td><td>The number fill of the current dispensed supply (0, 1, 2, etc.).</td></tr><tr><td style=\"white-space:nowrap\">rxorigincode<a name=\"ClaimInformationCategory-rxorigincode\"> </a></td><td>rxorigincode</td><td>Whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy</td></tr><tr><td style=\"white-space:nowrap\">servicefacility<a name=\"ClaimInformationCategory-servicefacility\"> </a></td><td>Service Facility</td><td>Service Facility</td></tr><tr><td style=\"white-space:nowrap\">typeofbill<a name=\"ClaimInformationCategory-typeofbill\"> </a></td><td>Type of Bill</td><td>Type of Bill</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"];
+  fhir:CodeSystem.version [ fhir:value "0.1.2"];
+  fhir:CodeSystem.name [ fhir:value "ClaimInformationCategory"];
+  fhir:CodeSystem.title [ fhir:value "Claim Information Category"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2020-09-04T18:56:03+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Financial Management Working Group"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Financial Management Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/fm/index.cfm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Claim Information Category - Used as the discriminator for supportingInfo"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "This CodeSystem is not copyrighted."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "16"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "admissionperiod" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Admission Period" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Admission Period" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "admtype" ];
+     fhir:CodeSystem.concept.display [ fhir:value "admtype" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Priority of the admission. Information located on (UB04 Form Locator 14). For example, an admission type of elective indicates that the patient's condition permitted time for medical services to be scheduled." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "billingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.display [ fhir:value "billingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the network  status of the billing physician." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "brandgenericcode" ];
+     fhir:CodeSystem.concept.display [ fhir:value "brandgenericcode" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Whether the plan adjudicated the claim as a brand or generic drug." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "claimrecvddate" ];
+     fhir:CodeSystem.concept.display [ fhir:value "claimmrecvddate" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The date the claim was received by the payer." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "compoundcode" ];
+     fhir:CodeSystem.concept.display [ fhir:value "compoundcode" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "NCPDP Compound code" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "dawcode" ];
+     fhir:CodeSystem.concept.display [ fhir:value "dawcode" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication." ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "dayssupply" ];
+     fhir:CodeSystem.concept.display [ fhir:value "dayssupply" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Number of days supply of medication dispensed by the pharmacy." ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "discharge-status" ];
+     fhir:CodeSystem.concept.display [ fhir:value "discharge-status" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Patient’s status as of the discharge date for a facility stay." ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "drg" ];
+     fhir:CodeSystem.concept.display [ fhir:value "drg" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Diagnosis Related Group" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "performingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.display [ fhir:value "performingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the network  status of the performing physician." ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "placeofservice" ];
+     fhir:CodeSystem.concept.display [ fhir:value "placeofservice" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Code indicating the location, such as inpatient, outpatient facility, office, or home health agency, where this service was performed." ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "refillnum" ];
+     fhir:CodeSystem.concept.display [ fhir:value "refillnum" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The number fill of the current dispensed supply (0, 1, 2, etc.)." ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "rxorigincode" ];
+     fhir:CodeSystem.concept.display [ fhir:value "rxorigincode" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "servicefacility" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Service Facility" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Service Facility" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "typeofbill" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Type of Bill" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Type of Bill" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/CodeSystem/ClaimInformationCategory.ttl> .
+
+# -------------------------------------------------------------------------------------
+

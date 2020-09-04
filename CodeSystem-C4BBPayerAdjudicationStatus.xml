@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="C4BBPayerAdjudicationStatus"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">innetwork<a name="C4BBPayerAdjudicationStatus-innetwork"> </a></td><td>In Network</td><td>Indicates the claim or claim line was paid in network.  This does not indicate the contracting status of the provider</td></tr><tr><td style="white-space:nowrap">outofnetwork<a name="C4BBPayerAdjudicationStatus-outofnetwork"> </a></td><td>Out Of Network</td><td>Indicates the claim or claim line was paid out of network.  This does not indicate the contracting status of the provider</td></tr><tr><td style="white-space:nowrap">other<a name="C4BBPayerAdjudicationStatus-other"> </a></td><td>Other</td><td>Indicates other network status or when a network does not apply</td></tr><tr><td style="white-space:nowrap">contracted<a name="C4BBPayerAdjudicationStatus-contracted"> </a></td><td>Contracted</td><td>Indicates the provider was contracted for the service</td></tr><tr><td style="white-space:nowrap">noncontracted<a name="C4BBPayerAdjudicationStatus-noncontracted"> </a></td><td>Non-Contracted</td><td>Indicates the provider was not contracted for the service</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"/>
+  <version value="0.1.2"/>
+  <name value="C4BBPayerAdjudicationStatus"/>
+  <title value="C4BB Payer Adjudication Status"/>
+  <status value="active"/>
+  <date value="2020-09-04T18:56:03+00:00"/>
+  <publisher value="HL7 Financial Management Working Group"/>
+  <contact>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Describes the various status fields used when payers adjudicate a claim, such as whether the claim was adjudicated in or out of network, if the provider was contracted or non-contracted for the service"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This CodeSystem is not copyrighted."/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="innetwork"/>
+    <display value="In Network"/>
+    <definition value="Indicates the claim or claim line was paid in network.  This does not indicate the contracting status of the provider"/>
+  </concept>
+  <concept>
+    <code value="outofnetwork"/>
+    <display value="Out Of Network"/>
+    <definition value="Indicates the claim or claim line was paid out of network.  This does not indicate the contracting status of the provider"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+    <definition value="Indicates other network status or when a network does not apply"/>
+  </concept>
+  <concept>
+    <code value="contracted"/>
+    <display value="Contracted"/>
+    <definition value="Indicates the provider was contracted for the service"/>
+  </concept>
+  <concept>
+    <code value="noncontracted"/>
+    <display value="Non-Contracted"/>
+    <definition value="Indicates the provider was not contracted for the service"/>
+  </concept>
+</CodeSystem>

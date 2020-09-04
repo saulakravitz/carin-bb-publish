@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-09-03T22:37:47+00:00",
+  "date": "2020-09-04T18:56:03+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -684,7 +684,7 @@
         "reference": {
           "reference": "ValueSet/C4BBClaimInstitutionalCareTeamRole"
         },
-        "name": "C4BB Claim Institutional Care Team Role",
+        "name": "C4BB Claim Institutional Care Team Role ",
         "description": "Describes functional roles of the care team members.",
         "exampleBoolean": false
       },
@@ -720,8 +720,8 @@
         "reference": {
           "reference": "ValueSet/C4BBClaimPharmacyTeamRole"
         },
-        "name": "C4BB Pharmacy CareTeam Roles",
-        "description": "Indicates the role of the provider providing the care.",
+        "name": "C4BB Claim Pharmacy CareTeam Roles",
+        "description": "Describes functional roles of the care team members",
         "exampleBoolean": false
       },
       {
@@ -810,8 +810,8 @@
         "reference": {
           "reference": "ValueSet/C4BBPayerProviderContractingStatus"
         },
-        "name": "Provider Provider Contracting Status",
-        "description": "Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.",
+        "name": "C4BB Payer Provider Contracting Status",
+        "description": "Indicates that the Provider has a contract with the Payer as of the effective date of service or admission.",
         "exampleBoolean": false
       },
       {
@@ -1200,11 +1200,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-C4BBAdjudicationCS.html"
+            "valueUri": "CodeSystem-C4BBAdjudication.html"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/C4BBAdjudicationCS"
+          "reference": "CodeSystem/C4BBAdjudication"
         },
         "name": "C4BB Adjudication",
         "description": "Describes the various amount fields used when payers receive and adjudicate a claim.  It complements the values defined in http://terminology.hl7.org/CodeSystem/adjudication.",
@@ -1218,11 +1218,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-C4BBClaimCareTeamRoleCS.html"
+            "valueUri": "CodeSystem-C4BBClaimCareTeamRole.html"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/C4BBClaimCareTeamRoleCS"
+          "reference": "CodeSystem/C4BBClaimCareTeamRole"
         },
         "name": "C4BB Claim Care Team Role",
         "description": "Describes functional roles of the care team members.  Complements http://terminology.hl7.org/CodeSystem/claimcareteamrole",
@@ -1260,8 +1260,26 @@
         "reference": {
           "reference": "CodeSystem/C4BBCompoundLiteral"
         },
-        "name": "C4BB Compound Literal Code System",
+        "name": "C4BB Compound Literal",
         "description": "CodeSystem for a Literal 'compound' value",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-C4BBPayerAdjudicationStatus.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/C4BBPayerAdjudicationStatus"
+        },
+        "name": "C4BB Payer Adjudication Status",
+        "description": "Describes the various status fields used when payers adjudicate a claim, such as whether the claim was adjudicated in or out of network, if the provider was contracted or non-contracted for the service",
         "exampleBoolean": false
       },
       {
@@ -1344,11 +1362,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-ClaimAdjudicationCategoryCS.html"
+            "valueUri": "CodeSystem-ClaimAdjudicationCategory.html"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/ClaimAdjudicationCategoryCS"
+          "reference": "CodeSystem/ClaimAdjudicationCategory"
         },
         "name": "Claim Adjudication Category",
         "description": "Values for EOB.item.adjudication.category and total.category",
@@ -1362,11 +1380,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-ClaimInformationCategoryCS.html"
+            "valueUri": "CodeSystem-ClaimInformationCategory.html"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/ClaimInformationCategoryCS"
+          "reference": "CodeSystem/ClaimInformationCategory"
         },
         "name": "Claim Information Category",
         "description": "Claim Information Category - Used as the discriminator for supportingInfo",
@@ -1944,7 +1962,7 @@
         "reference": {
           "reference": "CapabilityStatement/carin-bb"
         },
-        "name": "Carin Bb CapabilityStatement",
+        "name": "C4BB CapabilityStatement",
         "description": "This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors. ",
         "exampleBoolean": false
       }

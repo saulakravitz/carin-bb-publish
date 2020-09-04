@@ -3,14 +3,14 @@
   "id": "C4BBPayerProviderContractingStatus",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-C4BBAdjudicationCS.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-C4BBAdjudicationCS.html#C4BBAdjudicationCS-contracted\">contracted</a></td><td>contracted</td><td/></tr><tr><td><a href=\"CodeSystem-C4BBAdjudicationCS.html#C4BBAdjudicationCS-non-contracted\">non-contracted</a></td><td>non-contracted</td><td/></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-C4BBPayerAdjudicationStatus.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-contracted\">contracted</a></td><td>Contracted</td><td>Indicates the provider was contracted for the service</td></tr><tr><td><a href=\"CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-nnoncontracted\">nnoncontracted</a></td><td>Non-Contracted</td><td/></tr></table></li></ul></div>"
   },
   "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBPayerProviderContractingStatus",
   "version": "0.1.2",
   "name": "C4BBPayerProviderContractingStatus",
-  "title": "Provider Provider Contracting Status",
+  "title": "C4BB Payer Provider Contracting Status",
   "status": "active",
-  "date": "2020-09-03T22:37:47+00:00",
+  "date": "2020-09-04T18:56:03+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission.",
+  "description": "Indicates that the Provider has a contract with the Payer as of the effective date of service or admission.",
   "jurisdiction": [
     {
       "coding": [
@@ -42,15 +42,15 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationCS",
+        "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
         "concept": [
           {
             "code": "contracted",
-            "display": "contracted"
+            "display": "Contracted"
           },
           {
-            "code": "non-contracted",
-            "display": "non-contracted"
+            "code": "nnoncontracted",
+            "display": "Non-Contracted"
           }
         ]
       }

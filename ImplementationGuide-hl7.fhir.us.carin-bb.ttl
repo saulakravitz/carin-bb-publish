@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CARINConsumerDirectedPayerDataExchange"];
   fhir:ImplementationGuide.title [ fhir:value "CARIN Consumer Directed Payer Data Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-09-03T22:37:47+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-09-04T18:56:03+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -668,7 +668,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBClaimInstitutionalCareTeamRole>;
          fhir:Reference.reference [ fhir:value "ValueSet/C4BBClaimInstitutionalCareTeamRole" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Claim Institutional Care Team Role" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Claim Institutional Care Team Role " ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes functional roles of the care team members." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -704,8 +704,8 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBClaimPharmacyTeamRole>;
          fhir:Reference.reference [ fhir:value "ValueSet/C4BBClaimPharmacyTeamRole" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Pharmacy CareTeam Roles" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the role of the provider providing the care." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Claim Pharmacy CareTeam Roles" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes functional roles of the care team members" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 22;
@@ -794,8 +794,8 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBPayerProviderContractingStatus>;
          fhir:Reference.reference [ fhir:value "ValueSet/C4BBPayerProviderContractingStatus" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provider Provider Contracting Status" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates that the Provider has a contract with the Plan (regardless of the network) as of the effective date of service or admission." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Payer Provider Contracting Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates that the Provider has a contract with the Payer as of the effective date of service or admission." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 27;
@@ -1184,11 +1184,11 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-C4BBAdjudicationCS.html" ]
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-C4BBAdjudication.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationCS>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/C4BBAdjudicationCS" ]
+         fhir:link <http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/C4BBAdjudication" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Adjudication" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the various amount fields used when payers receive and adjudicate a claim.  It complements the values defined in http://terminology.hl7.org/CodeSystem/adjudication." ];
@@ -1202,11 +1202,11 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-C4BBClaimCareTeamRoleCS.html" ]
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-C4BBClaimCareTeamRole.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRoleCS>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/C4BBClaimCareTeamRoleCS" ]
+         fhir:link <http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/C4BBClaimCareTeamRole" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Claim Care Team Role" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes functional roles of the care team members.  Complements http://terminology.hl7.org/CodeSystem/claimcareteamrole" ];
@@ -1244,11 +1244,29 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBCompoundLiteral>;
          fhir:Reference.reference [ fhir:value "CodeSystem/C4BBCompoundLiteral" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Compound Literal Code System" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Compound Literal" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem for a Literal 'compound' value" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-C4BBPayerAdjudicationStatus.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/C4BBPayerAdjudicationStatus" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB Payer Adjudication Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the various status fields used when payers adjudicate a claim, such as whether the claim was adjudicated in or out of network, if the provider was contracted or non-contracted for the service" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1266,7 +1284,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diagnosis Related Group - any of the payment categories that are used to classify patients and especially Medicare patients for the purpose of reimbursing hospitals for each case in a given \ncategory with a fixed fee regardless of the actual costs incurred (Other DRGs, such as AP-DRGs, requires defining their specific Value Sets and Code Systems.)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 53;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1284,7 +1302,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "HCPCS procedure codes and modifiers are submitted by providers to payers to convey the specific procedure performed.\nHCPCS codes are available at http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 54;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1302,7 +1320,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Place of Service Codes are two-digit codes placed on health care professional claims to indicate the setting in which a service was provided." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 55;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1320,24 +1338,6 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "RARC codes provide additional explanation for an adjustment already described by a Claim Adjustment Reason Code (CARC) or convey information about remittance processing.  \nRARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 56;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-ClaimAdjudicationCategoryCS.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/ClaimAdjudicationCategoryCS" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Claim Adjudication Category" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for EOB.item.adjudication.category and total.category" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
        fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
@@ -1346,17 +1346,35 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-ClaimInformationCategoryCS.html" ]
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-ClaimAdjudicationCategory.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/ClaimInformationCategoryCS" ]
+         fhir:link <http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategory>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/ClaimAdjudicationCategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Claim Adjudication Category" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for EOB.item.adjudication.category and total.category" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-ClaimInformationCategory.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/ClaimInformationCategory" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Claim Information Category" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Claim Information Category - Used as the discriminator for supportingInfo" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 58;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1374,7 +1392,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7. " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 59;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1392,7 +1410,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "International Classification of Diseases, Tenth Revision, Clinical Modification)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 60;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1410,7 +1428,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "International Classification of Diseases Surgical Procedures (ICD-10)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 61;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1428,7 +1446,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 62;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1446,7 +1464,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates whether the plan adjudicated the claim as a brand or generic drug. NCPDP field # 686." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 63;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1464,7 +1482,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates whether or not the prescription is a compound NCPDP field # 406-D6." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 64;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1482,7 +1500,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication. NCPDP field # 408-D8." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 65;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1500,7 +1518,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy. NCPDP field # 419-DJ." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 66;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1518,7 +1536,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contains exception definitions for use when transaction processing cannot be completed. NCPDP field # 511-FB (Reject Code)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 67;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1536,7 +1554,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CARC codes describe why a claim or service line was paid differently than it was billed.   Use of X12 CARC codes require a license.  Reference https://x12.org/codes/." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 68;
+       fhir:index 69;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1557,7 +1575,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional>
        ]
      ], [
-       fhir:index 69;
+       fhir:index 70;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1578,7 +1596,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy>
        ]
      ], [
-       fhir:index 70;
+       fhir:index 71;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1599,7 +1617,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage>
        ]
      ], [
-       fhir:index 71;
+       fhir:index 72;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1620,7 +1638,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Inpatient-Institutional>
        ]
      ], [
-       fhir:index 72;
+       fhir:index 73;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1641,7 +1659,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional>
        ]
      ], [
-       fhir:index 73;
+       fhir:index 74;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1662,7 +1680,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy>
        ]
      ], [
-       fhir:index 74;
+       fhir:index 75;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1683,7 +1701,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician>
        ]
      ], [
-       fhir:index 75;
+       fhir:index 76;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1704,7 +1722,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization>
        ]
      ], [
-       fhir:index 76;
+       fhir:index 77;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1725,7 +1743,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization>
        ]
      ], [
-       fhir:index 77;
+       fhir:index 78;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1746,7 +1764,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient>
        ]
      ], [
-       fhir:index 78;
+       fhir:index 79;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1764,7 +1782,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The identity of the insurer or party paying for services" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 79;
+       fhir:index 80;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1782,7 +1800,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Member of the CareTeam" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 80;
+       fhir:index 81;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1800,7 +1818,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The plan under which the claim was adjudicated" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 81;
+       fhir:index 82;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1818,7 +1836,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The business/claim identifier of the Explanation of Benefit" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 82;
+       fhir:index 83;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1836,7 +1854,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The party responsible for the claim" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 83;
+       fhir:index 84;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1854,7 +1872,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The reference to the patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 84;
+       fhir:index 85;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1872,7 +1890,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The reference to the provider" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 85;
+       fhir:index 86;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1890,7 +1908,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Date of the service for the EOB" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 86;
+       fhir:index 87;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1908,7 +1926,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The type of the ExplanationOfBenefit" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 87;
+       fhir:index 88;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1926,7 +1944,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The identity of the organization the practitioner represents / acts on behalf of" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 88;
+       fhir:index 89;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1944,7 +1962,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Practitioner that is able to provide the defined services for the organization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 89;
+       fhir:index 90;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1958,7 +1976,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/carin-bb" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Carin Bb CapabilityStatement" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB CapabilityStatement" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors. " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
@@ -2178,13 +2196,15 @@
 
 <http://hl7.org/fhir/us/carin-bb/CodeSystem/AMACPTCodes> a fhir:us .
 
-<http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationCS> a fhir:us .
+<http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication> a fhir:us .
 
-<http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRoleCS> a fhir:us .
+<http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole> a fhir:us .
 
 <http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType> a fhir:us .
 
 <http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBCompoundLiteral> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus> a fhir:us .
 
 <http://hl7.org/fhir/us/carin-bb/CodeSystem/CMSDRG> a fhir:us .
 
@@ -2194,9 +2214,9 @@
 
 <http://hl7.org/fhir/us/carin-bb/CodeSystem/CMSRemittanceAdviceRemarkCodes> a fhir:us .
 
-<http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategoryCS> a fhir:us .
+<http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategory> a fhir:us .
 
-<http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategoryCS> a fhir:us .
+<http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory> a fhir:us .
 
 <http://hl7.org/fhir/us/carin-bb/CodeSystem/FDANDC> a fhir:us .
 
