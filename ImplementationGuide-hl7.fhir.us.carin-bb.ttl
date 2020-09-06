@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CARINConsumerDirectedPayerDataExchange"];
   fhir:ImplementationGuide.title [ fhir:value "CARIN Consumer Directed Payer Data Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-09-04T21:30:14+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-09-06T12:50:51+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -884,7 +884,7 @@
          fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDCOrCompound>;
          fhir:Reference.reference [ fhir:value "ValueSet/FDANDCOrCompound" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FDA NDC or Compound " ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FDA NDC or Compound" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  \nValues will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, ‘compound’" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -1970,11 +1970,11 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-carin-bb.html" ]
+         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-c4bb.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb>;
-         fhir:Reference.reference [ fhir:value "CapabilityStatement/carin-bb" ]
+         fhir:link <http://hl7.org/fhir/us/carin-bb/CapabilityStatement/c4bb>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/c4bb" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB CapabilityStatement" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors. " ];
@@ -2280,7 +2280,7 @@
 
 <http://hl7.org/fhir/us/carin-bb/SearchParameter/practitionerrole-practitioner> a fhir:us .
 
-<http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb> a fhir:us .
+<http://hl7.org/fhir/us/carin-bb/CapabilityStatement/c4bb> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

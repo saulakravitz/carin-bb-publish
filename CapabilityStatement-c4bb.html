@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7.FHIR.US.CARIN-BB\C4BB CapabilityStatement - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+    <style type="text/css">h2{--heading-prefix:"12.1"}
+    h3,h4,h5,h6{--heading-prefix:"12.1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange</span><br/>0.1.3 - STU1</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
+      </li>
+      <li>
+        <a href="Background.html#guide-overview">Guide Overview</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Cases
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Use_Case.html#terms-and-concepts">Terms and Concepts</a>
+      </li>
+      <li>
+        <a href="Use_Case.html#use-cases">Use Cases</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="Common_Payer_Consumer_Data_Set.html">Common Payer Consumer Data Set (CPCDS)</a>
+      </li>
+      <li>
+        <a href="Notes_To_Developers.html">Notes To Developers</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#3">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Search Parameters</a>
+      </li>
+      <li>
+        <a href="Terminology.html">Terminology</a>
+      </li>
+      <li><a name="26130056-7e2f-4aef-b651-c306909cb9b9">​</a>
+        <a href="CapabilityStatement-carin-bb.html">Capability Statement</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Security
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
+      </li>
+      <li>
+        <a href="https://build.fhir.org/ig/HL7/carin-bb/Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html#7">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>C4BB CapabilityStatement</b></li>
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <div id="segment-content">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange - Local Development build (v0.1.3). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="CapabilityStatement-c4bb.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CapabilityStatement-c4bb.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CapabilityStatement-c4bb.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">CapabilityStatement: C4BB CapabilityStatement</h2>
+
+
+  
+      <p>
+      <a href="c4bb.openapi.json" no-download="true">Raw OpenAPI-Swagger Definition file</a> | <a download="null" href="c4bb.openapi.json">Download</a>
+      </p>
+  
+
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <div><h2 id="title">C4BB CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-09-06</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p><p>This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors.</p></p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The C4BB  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
+<ul><li>(Status 400): invalid parameter</li><li>(Status 401/4xx): unauthorized request</li><li>(Status 403): insufficient scope</li><li>(Status 404): unknown resource</li><li>(Status 410): deleted resource.</li></ul>
+</li><li>Support json source formats for all CARIN-BB interactions.</li><li>Identify the CARIN-BB  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li></ol><p>The C4BB  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all C4BB interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="/Authorization_Authentication_and_Registration.html">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#coverage">Coverage</a></td><td><a href="StructureDefinition-C4BB-Coverage.html">C4BB-Coverage</a></td><td>
+							
+						</td><td>
+							Coverage:payor
+						</td><td>
+              
+            </td><td>
+							
+						</td></tr><tr><td><a href="#explanationofbenefit">ExplanationOfBenefit</a></td><td><a href="StructureDefinition-C4BB-ExplanationOfBenefit.html">C4BB-ExplanationOfBenefit</a>, 
+
+						<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Inpatient-Institutional.html">C4BB-ExplanationOfBenefit-Inpatient-Institutional</a>, 
+
+						<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Outpatient-Institutional.html">C4BB-ExplanationOfBenefit-Outpatient-Institutional</a>, 
+
+						<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Pharmacy.html">C4BB-ExplanationOfBenefit-Pharmacy</a>, 
+
+						<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Professional-NonClinician.html">C4BB-ExplanationOfBenefit-Professional-NonClinician</a></td><td>
+							
+							_id, patient, _lastUpdated, type, identifier, service-date
+							
+							
+							
+						</td><td>
+							ExplanationOfBenefit:patient, ExplanationOfBenefit:provider, ExplanationOfBenefit:care-team, ExplanationOfBenefit:coverage, ExplanationOfBenefit:insurer, ExplanationOfBenefit:*
+						</td><td>
+              
+            </td><td>
+							
+						</td></tr><tr><td><a href="#organization">Organization</a></td><td><a href="StructureDefinition-C4BB-Organization.html">C4BB-Organization</a></td><td>
+							
+						</td><td>
+							
+						</td><td>
+              
+            </td><td>
+							
+						</td></tr><tr><td><a href="#patient">Patient</a></td><td><a href="StructureDefinition-C4BB-Patient.html">C4BB-Patient</a></td><td>
+							
+						</td><td>
+							
+						</td><td>
+              
+            </td><td>
+							
+						</td></tr><tr><td><a href="#practitioner">Practitioner</a></td><td><a href="StructureDefinition-C4BB-Practitioner.html">C4BB-Practitioner</a></td><td>
+							
+						</td><td>
+							
+						</td><td>
+              
+            </td><td>
+							
+						</td></tr></tbody></table><br/><h4 id="coverage" class="no_toc">Coverage</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				
+											<a href="StructureDefinition-C4BB-Coverage.html">C4BB-Coverage</a>
+				
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>read</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a Coverage resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Coverage/[id]</code>
+				</li><br/>    <!-- Only SHOULDs -->SHALL for include for now the capability statement does not create the primitive 
+				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&gt;
+				
+				<li>
+					A Server <strong>SHALL</strong> be capable of supporting the following _includes:
+					<br/>
+					
+						Coverage:payor - <code class="highlighter-rouge">GET [base]/Coverage?[parameter=value]&amp;_include=Coverage:payor</code><br/>
+					
+				</li><br/>    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="explanationofbenefit" class="no_toc">ExplanationOfBenefit</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				
+											<a href="StructureDefinition-C4BB-ExplanationOfBenefit.html">C4BB-ExplanationOfBenefit</a>, 
+				
+											<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Inpatient-Institutional.html">C4BB-ExplanationOfBenefit-Inpatient-Institutional</a>, 
+				
+											<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Outpatient-Institutional.html">C4BB-ExplanationOfBenefit-Outpatient-Institutional</a>, 
+				
+											<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Pharmacy.html">C4BB-ExplanationOfBenefit-Pharmacy</a>, 
+				
+											<a href="StructureDefinition-C4BB-ExplanationOfBenefit-Professional-NonClinician.html">C4BB-ExplanationOfBenefit-Professional-NonClinician</a>
+				
+				</p><p>Resource Specific Documentation:</p><blockquote><p>The EOB Resource is the focal Consumer-Directed Payer Data Exchange (CDPDE) Resource. Several Reference Resources are defined directly/indirectly from the EOB: Coverage, Patient, Organization (Payer ID), Practioner, Organization (Facility), PractionerRole, Location.</p><p>The Coverage Reference Resource SHALL be returned with data that was effective as of the date of service of the claim; for example, the data will reflect the employer name in effect at that time. However, for other reference resources, payers MAY decide to provide either the data that was in effect as of the date of service or the current data. All reference resources within the EOB will have meta.lastUpdated flagged as must support. Payers SHALL provide the last time the data was updated or the date of creation in the payers system of record, whichever comes last. Apps will use the meta.lastUpdated values to determine if the reference resources are as of the current date or date of service.</p><p>When an EOB references another resource (e.g., Patient or Practitioner), the reference may be versioned or versionless. Payers SHALL use versioned references whenever they maintain point-in-time data (data that was effective as of the date of service or date of admission on the claim), but MAY use versionless references when they do not maintain versioned data. Clients MAY request referenced resources as part of an EOB search (by supplying the _include parameter) or directly using read or vread. Payers SHALL support both approaches, and SHALL return the same content for referenced resources in either case.</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>read</code><sup>†</sup>.</li></ul><blockquote>read<sup>†</sup><p>Searches using service-date, _lastUpdated, or type require a patient search argument.</p>
+<p>_include:* SHALL be supported.</p>
+</blockquote><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a ExplanationOfBenefit resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/ExplanationOfBenefit/[id]</code>
+				</li><br/>    <!-- Only SHOULDs -->SHALL for include for now the capability statement does not create the primitive 
+				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&gt;
+				
+				<li>
+					A Server <strong>SHALL</strong> be capable of supporting the following _includes:
+					<br/>
+					
+						ExplanationOfBenefit:patient - <code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include=ExplanationOfBenefit:patient</code><br/>
+					
+						ExplanationOfBenefit:provider - <code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include=ExplanationOfBenefit:provider</code><br/>
+					
+						ExplanationOfBenefit:care-team - <code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include=ExplanationOfBenefit:care-team</code><br/>
+					
+						ExplanationOfBenefit:coverage - <code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include=ExplanationOfBenefit:coverage</code><br/>
+					
+						ExplanationOfBenefit:insurer - <code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include=ExplanationOfBenefit:insurer</code><br/>
+					
+						ExplanationOfBenefit:* - <code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?[parameter=value]&amp;_include=ExplanationOfBenefit:*</code><br/>
+					
+				</li><br/>    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_id</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?_id=[id]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-explanationofbenefit-patient.html">patient</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?patient=[patient]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="http://hl7.org/fhir/R4/search.html">_lastUpdated</a></td><td>
+							date
+						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?_lastUpdated=[_lastUpdated]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-explanationofbenefit-type.html">type</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?type=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-explanationofbenefit-identifier.html">identifier</a></td><td>
+							token
+						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?identifier=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-explanationofbenefit-service-date.html">service-date</a></td><td>
+							date
+						</td><td><code class="highlighter-rouge">GET [base]/ExplanationOfBenefit?service-date=[service-date]</code></td></tr></tbody></table><hr/><h4 id="organization" class="no_toc">Organization</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				
+											<a href="StructureDefinition-C4BB-Organization.html">C4BB-Organization</a>
+				
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
+																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a Organization resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Organization/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of returning a Organization resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Organization/[id]/_history/vid</code>
+				</li><br/>    <!-- Only SHOULDs -->SHALL for include for now the capability statement does not create the primitive 
+				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&gt;
+				
+				    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="patient" class="no_toc">Patient</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				
+											<a href="StructureDefinition-C4BB-Patient.html">C4BB-Patient</a>
+				
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
+																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a Patient resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Patient/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of returning a Patient resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Patient/[id]/_history/vid</code>
+				</li><br/>    <!-- Only SHOULDs -->SHALL for include for now the capability statement does not create the primitive 
+				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&gt;
+				
+				    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="practitioner" class="no_toc">Practitioner</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
+				
+											<a href="StructureDefinition-C4BB-Practitioner.html">C4BB-Practitioner</a>
+				
+				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
+																							<code>vread</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a Practitioner resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Practitioner/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of returning a Practitioner resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Practitioner/[id]/_history/vid</code>
+				</li><br/>    <!-- Only SHOULDs -->SHALL for include for now the capability statement does not create the primitive 
+				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&gt;
+				
+				    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><br/></div>
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.3 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Sep 6, 2020 12:50+0000">2020-09-06</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/carin-bb/history.html" target="_blank">Version History  |
+                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change </a>
+
+          
+        
+          <!-- /inner-wrapper -->
+        <!-- /container -->
+      <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+    <!-- Analytics Below
+  ================================================== -->
+  
+
+</a></span></p></div></div></div></body></html>
