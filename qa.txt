@@ -1,11 +1,11 @@
 ﻿CARINConsumerDirectedPayerDataExchange : Validation Results
 =========================================
 
-err = 72, warn = 31, info = 16
-IG Publisher Version: 1.1.17
-Generated Sun Sep 06 13:34:59 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.3 (canonical = http://hl7.org/fhir/us/carin-bb)
+err = 73, warn = 31, info = 16
+IG Publisher Version: 1.1.19
+Generated Tue Sep 08 18:18:03 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.3 (canonical = http://hl7.org/fhir/us/carin-bb)
 
- Build Errors : 13 / 1 / 0
+ Build Errors : 14 / 1 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb : 0 / 5 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Coverage-Coverage1 : 0 / 0 / 2
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-BBEobOutpatientInstitutional : 31 / 3 / 4
@@ -13,7 +13,7 @@ Generated Sun Sep 06 13:34:59 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBInpatient1 : 3 / 1 / 2
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBOutpatientInstitutional1 : 3 / 1 / 2
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBPharmacy1 : 7 / 1 / 2
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBProfessional1 : 2 / 1 / 1
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBProfessional1a : 2 / 1 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Organization-OrganizationPayer1 : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Organization-OrganizationProvider1 : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Patient-Patient1 : 0 / 0 / 1
@@ -26,7 +26,7 @@ Generated Sun Sep 06 13:34:59 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-C4BB-Organization : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-C4BB-Patient : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-C4BB-Practitioner : 0 / 1 / 1
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/CapabilityStatement-c4bb : 3 / 0 / 1
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/CapabilityStatement-c4bb : 4 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/SearchParameter-coverage-payor : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/SearchParameter-explanationofbenefit-care-team : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/SearchParameter-explanationofbenefit-coverage : 0 / 0 / 1
@@ -101,19 +101,20 @@ Generated Sun Sep 06 13:34:59 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin
 </table>
 == n/a ==
 WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jiraspec.tmp.xml' (currently in Github) and 'jira.xml' (reflects current IG content)
-ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 429: The link 'Patient/1656' for "Bobbie Dawn Avery" cannot be resolved
-ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 626: The link 'Organization/9' for "SilverCaid" cannot be resolved
-ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 243, column 947: The link 'Organization/2348' for "Bay Area Family Practice" cannot be resolved
-ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 1038: The link 'Claim/2744' for "Claim for Bobbie Dawn Avery" cannot be resolved
-ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 1119: The link 'ClaimResponse/2745' for "Bobbie Dawn Avery ClaimResponse" cannot be resolved
-ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 243, column 1297: The link 'Practitioner/2584' for "Larry Calvin Kirk MD" cannot be resolved
-ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 243, column 1735: The link 'Practitioner/2585' for "Jane Kirk MD" cannot be resolved
-ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 243, column 2163: The link 'Practitioner/2586' for "Captain Kirk MD" cannot be resolved
-ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobPharmacy.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 404: The link 'Patient/64' for "Alice Dominguez Gibson" cannot be resolved
-ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobPharmacy.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 607: The link 'Organization/9' for "SilverCaid" cannot be resolved
-ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobPharmacy.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 243, column 919: The link 'Organization/2910' for "TrueScript Pharmacy" cannot be resolved
-ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobPharmacy.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 1005: The link 'Claim/2912' for "Claim for Alice Dominguez Gibson" cannot be resolved
-ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobPharmacy.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 1091: The link 'ClaimResponse/2913' for "Alice Dominguez Gibson ClaimResponse" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 520: The link 'Patient/1656' for "Bobbie Dawn Avery" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 717: The link 'Organization/9' for "SilverCaid" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 243, column 1038: The link 'Organization/2348' for "Bay Area Family Practice" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 1129: The link 'Claim/2744' for "Claim for Bobbie Dawn Avery" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 1210: The link 'ClaimResponse/2745' for "Bobbie Dawn Avery ClaimResponse" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 243, column 1388: The link 'Practitioner/2584' for "Larry Calvin Kirk MD" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 243, column 1826: The link 'Practitioner/2585' for "Jane Kirk MD" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobOutpatientInstitutional.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 243, column 2254: The link 'Practitioner/2586' for "Captain Kirk MD" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobPharmacy.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 510: The link 'Patient/64' for "Alice Dominguez Gibson" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobPharmacy.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 713: The link 'Organization/9' for "SilverCaid" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobPharmacy.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 243, column 1025: The link 'Organization/2910' for "TrueScript Pharmacy" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobPharmacy.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 1111: The link 'Claim/2912' for "Claim for Alice Dominguez Gibson" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/ExplanationOfBenefit-BBEobPharmacy.html#/html/body/div/div/div/div/div/div/p/a at Line 243, column 1197: The link 'ClaimResponse/2913' for "Alice Dominguez Gibson ClaimResponse" cannot be resolved
+ERROR: /home/runner/work/carin-bb/carin-bb/fsh/build/output/Guidance.html#/html/body/div/div/div/div/div/p/a at Line 215, column 84: The link 'http:/hl7.org/fhir/R4/conformance-rules.html' for "FHIR Conformance Rules." cannot be resolved
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb.json ==
 INFORMATION: ImplementationGuide/hl7.fhir.us.carin-bb: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 WARNING: ImplementationGuide/hl7.fhir.us.carin-bb: ImplementationGuide.definition.resource[19].name: value should not start or finish with whitespace
@@ -229,11 +230,11 @@ ERROR: ExplanationOfBenefit/EOBPharmacy1: ExplanationOfBenefit.item[0].adjudicat
 ERROR: ExplanationOfBenefit/EOBPharmacy1: ExplanationOfBenefit.item[0].adjudication[3]: Internal error: Could not match discriminator ([category]) for slice ExplanationOfBenefit.item.adjudication:denialreason in profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy - the discriminator [category] does not have fixed value, binding or existence assertions
 ERROR: ExplanationOfBenefit/EOBPharmacy1: ExplanationOfBenefit.item[0].adjudication[4]: Internal error: Could not match discriminator ([category]) for slice ExplanationOfBenefit.item.adjudication:denialreason in profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy - the discriminator [category] does not have fixed value, binding or existence assertions
 WARNING: ExplanationOfBenefit/EOBPharmacy1: ExplanationOfBenefit.item[0].productOrService: The display "100-count bottle of Prozac 20 mg" is not a valid display for the code {http://hl7.org/fhir/sid/ndc}0777-3105-02 - should be one of ["100 CAPSULE in 1 BOTTLE (0777-3105-02)"] (from http://tx.fhir.org/r4)
-== /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBProfessional1.json ==
-INFORMATION: ExplanationOfBenefit/EOBProfessional1: ExplanationOfBenefit: Validate resource against profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician
-WARNING: ExplanationOfBenefit/EOBProfessional1: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/ICD10CM because the value set or code system is not known to the validator]
-ERROR: ExplanationOfBenefit/EOBProfessional1: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept): Code "S06.0x1A" not found; The code "S06.0x1A" is not valid in the system http://hl7.org/fhir/sid/icd-10-cm; The code provided (http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A) is not valid in the value set 'ICD10CM' (from http://tx.fhir.org/r4)
-ERROR: ExplanationOfBenefit/EOBProfessional1: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept).coding[0]: Code "S06.0x1A" not found; The code "S06.0x1A" is not valid in the system http://hl7.org/fhir/sid/icd-10-cm; The code provided (http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A'
+== /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBProfessional1a.json ==
+INFORMATION: ExplanationOfBenefit/EOBProfessional1a: ExplanationOfBenefit: Validate resource against profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician
+WARNING: ExplanationOfBenefit/EOBProfessional1a: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/ICD10CM because the value set or code system is not known to the validator]
+ERROR: ExplanationOfBenefit/EOBProfessional1a: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept): Code "S06.0x1A" not found; The code "S06.0x1A" is not valid in the system http://hl7.org/fhir/sid/icd-10-cm; The code provided (http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A) is not valid in the value set 'ICD10CM' (from http://tx.fhir.org/r4)
+ERROR: ExplanationOfBenefit/EOBProfessional1a: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept).coding[0]: Code "S06.0x1A" not found; The code "S06.0x1A" is not valid in the system http://hl7.org/fhir/sid/icd-10-cm; The code provided (http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A'
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Organization-OrganizationPayer1.json ==
 INFORMATION: Organization/OrganizationPayer1: Organization: Validate resource against profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Organization-OrganizationProvider1.json ==
@@ -268,6 +269,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/carin-bb/Struct
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/CapabilityStatement-c4bb.json ==
 ERROR: CapabilityStatement.url: Resource id/url mismatch: c4bb/http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb
 INFORMATION: CapabilityStatement/c4bb: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
+ERROR: CapabilityStatement/c4bb: CapabilityStatement.text.div: Illegal element name inside in a paragraph in the XHTML ('p')
 ERROR: CapabilityStatement/c4bb: CapabilityStatement.rest[0].resource[1].searchParam[0].definition: URL value 'http://hl7.org/fhir/SearchParameter/explanationofbenefit-id' does not resolve
 ERROR: CapabilityStatement/c4bb: CapabilityStatement.rest[0].resource[1].searchParam[2].definition: URL value 'http://hl7.org/fhir/SearchParameter/explanationofbenefit-lastUpdated' does not resolve
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/SearchParameter-coverage-payor.json ==

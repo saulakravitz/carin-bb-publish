@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CARINConsumerDirectedPayerDataExchange"];
   fhir:ImplementationGuide.title [ fhir:value "CARIN Consumer Directed Payer Data Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-09-06T13:33:30+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-09-08T18:13:24+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -363,7 +363,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/C4BB-ExplanationOfBenefit-Inpatient-Institutional" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB ExplanationOfBenefit Inpatient Institutional" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile is used for Explanation of Benefits (EOBs) based on claims submitted by clinics, hospitals, skilled nursing facilities and other institutions for inpatient services, which may include the use of equipment and supplies, laboratory services, radiology services and other charges. Inpatient claims are submitted for services rendered at an institution as part of an overnight stay. \nThe claims data is based on the institutional claim format UB-04, submission standards adopted by the Department of Health and Human Services as form CMS-1450." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile is used for Explanation of Benefits (EOBs) based on claims submitted by clinics, hospitals, skilled nursing facilities and other institutions for inpatient services, which may include the use of equipment and supplies, laboratory services, radiology services and other charges. Inpatient claims are submitted for services rendered at an institution as part of an overnight stay. \nThe claims data is based on the institutional claim format UB-04, submission standards adopted by the Department of Health and Human \nServices." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
@@ -381,7 +381,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB ExplanationOfBenefit Outpatient Institutional" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is used for Explanation of Benefits (EOBs) based on claims submitted by clinics, hospitals, skilled nursing facilities and other institutions for outpatient services, which may include including the use of equipment and supplies, laboratory services, radiology services and other charges. Outpatient claims are submitted for services rendered at a Institutional that are not part of an overnight stay. \nThe claims data is based on the institutional claim form UB-04, submission standards adopted by the Department of Health and Human Services as form CMS-1450." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is used for Explanation of Benefits (EOBs) based on claims submitted by clinics, hospitals, skilled nursing facilities and other institutions for outpatient services, which may include including the use of equipment and supplies, laboratory services, radiology services and other charges. Outpatient claims are submitted for services rendered at a Institutional that are not part of an overnight stay. \nThe claims data is based on the institutional claim form UB-04, submission standards adopted by the Department of Health and Human Services ." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
@@ -1688,13 +1688,13 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ExplanationOfBenefit-EOBProfessional1.html" ]
+         fhir:Extension.valueUri [ fhir:value "ExplanationOfBenefit-EOBProfessional1a.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/EOBProfessional1>;
-         fhir:Reference.reference [ fhir:value "ExplanationOfBenefit/EOBProfessional1" ]
+         fhir:link <http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/EOBProfessional1a>;
+         fhir:Reference.reference [ fhir:value "ExplanationOfBenefit/EOBProfessional1a" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EOBProfessional1" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EOBProfessional1a" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "EOB Professional  Example1" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician";
@@ -2250,7 +2250,7 @@
 
 <http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/EOBPharmacy1> a fhir:us .
 
-<http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/EOBProfessional1> a fhir:us .
+<http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/EOBProfessional1a> a fhir:us .
 
 <http://hl7.org/fhir/us/carin-bb/Organization/OrganizationPayer1> a fhir:us .
 
