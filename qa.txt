@@ -1,9 +1,9 @@
 ﻿CARINConsumerDirectedPayerDataExchange : Validation Results
 =========================================
 
-err = 73, warn = 31, info = 16
+err = 72, warn = 31, info = 16
 IG Publisher Version: 1.1.19
-Generated Wed Sep 09 02:07:13 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.3 (canonical = http://hl7.org/fhir/us/carin-bb)
+Generated Wed Sep 09 03:01:39 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.3 (canonical = http://hl7.org/fhir/us/carin-bb)
 
  Build Errors : 13 / 1 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb : 0 / 5 / 1
@@ -26,7 +26,7 @@ Generated Wed Sep 09 02:07:13 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-C4BB-Organization : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-C4BB-Patient : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/profiles/StructureDefinition-C4BB-Practitioner : 0 / 1 / 1
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/CapabilityStatement-c4bb : 4 / 0 / 1
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/CapabilityStatement-c4bb : 3 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/SearchParameter-coverage-payor : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/SearchParameter-explanationofbenefit-care-team : 0 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/SearchParameter-explanationofbenefit-coverage : 0 / 0 / 1
@@ -266,7 +266,6 @@ INFORMATION: StructureDefinition/C4BB-Patient: StructureDefinition: Validate res
 INFORMATION: StructureDefinition/C4BB-Practitioner: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner'): The Implementation Guide contains no examples for this profile
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/resources/CapabilityStatement-c4bb.json ==
-ERROR: CapabilityStatement.url: Resource id/url mismatch: c4bb/http://hl7.org/fhir/us/carin-bb/CapabilityStatement/carin-bb
 INFORMATION: CapabilityStatement/c4bb: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 ERROR: CapabilityStatement/c4bb: CapabilityStatement.text.div: Illegal element name inside in a paragraph in the XHTML ('p')
 ERROR: CapabilityStatement/c4bb: CapabilityStatement.rest[0].resource[1].searchParam[0].definition: URL value 'http://hl7.org/fhir/SearchParameter/explanationofbenefit-id' does not resolve
