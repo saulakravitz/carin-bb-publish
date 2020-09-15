@@ -177,9 +177,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Reference to the related claim","Reference to a related claim.","","For workplace or other accidents it is common to relate separate claims arising from the same event.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.related.claim",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.related.relationship","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
-","How the reference claim is related","A code to convey how the claims are related.","For example, prior claim or umbrella.","Some insurers need a declaration of the type of relationship.","","","","","","","",,"example","Relationship of this claim to a related Claim.","http://hl7.org/fhir/ValueSet/related-claim-relationship","",,,,"ExplanationOfBenefit.related.relationship",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","How the reference claim is related","A code to convey how the claims are related.","For example, prior claim or umbrella.","Some insurers need a declaration of the type of relationship.","","","","","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBRelatedClaimRelationshipCodes","",,,,"ExplanationOfBenefit.related.relationship",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.related.reference","","","",0,1,"","","","Identifier {[]} {[]}
+"ExplanationOfBenefit.related.reference","","","",1,1,"Y","","","Identifier {[]} {[]}
 ","File or case reference","An alternate organizational reference to the case or file to which this particular claim pertains.","For example, Property/Casualty insurer claim number or Workers Compensation case number.","In cases where an event-triggered claim is being submitted to an insurer which requires a reference number to be specified on all exchanges.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.related.reference",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.prescription","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/VisionPrescription]]}
@@ -205,7 +205,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "ExplanationOfBenefit.payee.type","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Identifies the type of recipient of the adjudication amount; i.e., provider or subscriber or another recipient
-","Type of Party to be reimbursed: Subscriber, provider, other.","","Need to know who should receive payment with the most common situations being the Provider (assignment of benefits) or the Subscriber.","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/payeetype","",,,,"ExplanationOfBenefit.payee.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Type of Party to be reimbursed: Subscriber, provider, other.","","Need to know who should receive payment with the most common situations being the Provider (assignment of benefits) or the Subscriber.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBPayeeType","",,,,"ExplanationOfBenefit.payee.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.payee.party","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization], CanonicalType[http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient], CanonicalType[http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner]]}
 ","Recipient reference

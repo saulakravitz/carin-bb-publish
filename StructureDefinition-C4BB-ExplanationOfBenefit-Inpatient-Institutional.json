@@ -20,7 +20,7 @@
   "name": "C4BBExplanationOfBenefitInpatientInstitutional",
   "title": "C4BB ExplanationOfBenefit Inpatient Institutional",
   "status": "active",
-  "date": "2020-09-09T02:57:11+00:00",
+  "date": "2020-09-15T14:24:14+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -2456,15 +2456,8 @@
         "isModifier": false,
         "isSummary": false,
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "RelatedClaimRelationship"
-            }
-          ],
-          "strength": "example",
-          "description": "Relationship of this claim to a related Claim.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/related-claim-relationship"
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBRelatedClaimRelationshipCodes"
         }
       },
       {
@@ -2474,7 +2467,7 @@
         "definition": "An alternate organizational reference to the case or file to which this particular claim pertains.",
         "comment": "For example, Property/Casualty insurer claim number or Workers Compensation case number.",
         "requirements": "In cases where an event-triggered claim is being submitted to an insurer which requires a reference number to be specified on all exchanges.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "ExplanationOfBenefit.related.reference",
@@ -2496,6 +2489,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "mustSupport": true,
         "isModifier": false,
         "isSummary": false
       },
@@ -2777,7 +2771,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/payeetype"
+          "valueSet": "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBPayeeType"
         }
       },
       {

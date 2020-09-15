@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-09-09T02:57:11+00:00"/>
+  <date value="2020-09-15T14:24:14+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -549,6 +549,20 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-C4BBPayeeType.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/C4BBPayeeType"/>
+      </reference>
+      <name value="C4BB Payee Type"/>
+      <description value="Identifies the type of recipient of the adjudication amount; i.e., provider, subscriber, beneficiary or another recipient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-C4BBPayerBenefitPaymentStatus.html"/>
       </extension>
       <reference>
@@ -584,6 +598,20 @@
       </reference>
       <name value="C4BB Payer Provider Contracting Status"/>
       <description value="Indicates that the Provider has a contract with the Payer as of the effective date of service or admission."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-C4BBRelatedClaimRelationshipCodes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/C4BBRelatedClaimRelationshipCodes"/>
+      </reference>
+      <name value="C4BB Related Claim Relationship Codes"/>
+      <description value="Identifies if the current claim represents a claim that has been adjusted and was given a prior claim number or if the current claim has been adjusted; i.e., replaced by or merged to another claim number."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -941,6 +969,20 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-C4BBPayeeType.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/C4BBPayeeType"/>
+      </reference>
+      <name value="C4BB Related Claim Relationship Codes"/>
+      <description value="Indicates that a payee type may be a beneficiary "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-C4BBPayerAdjudicationStatus.html"/>
       </extension>
       <reference>
@@ -948,6 +990,20 @@
       </reference>
       <name value="C4BB Payer Adjudication Status"/>
       <description value="Describes the various status fields used when payers adjudicate a claim, such as whether the claim was adjudicated in or out of network, if the provider was contracted or non-contracted for the service"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-C4BBRelatedClaimRelationshipCodes.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/C4BBRelatedClaimRelationshipCodes"/>
+      </reference>
+      <name value="C4BB Related Claim Relationship Codes"/>
+      <description value="Identifies if the current claim represents a claim that has been adjusted and was given a prior claim number or if the current claim has been adjusted; i.e., replaced by or merged to another claim number."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -103,7 +103,7 @@
   <name value="C4BBExplanationOfBenefitOutpatientInstitutional"/>
   <title value="C4BB ExplanationOfBenefit Outpatient Institutional"/>
   <status value="active"/>
-  <date value="2020-09-09T02:57:11+00:00"/>
+  <date value="2020-09-15T14:24:14+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -1768,12 +1768,8 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="RelatedClaimRelationship"/>
-        </extension>
-        <strength value="example"/>
-        <description value="Relationship of this claim to a related Claim."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/related-claim-relationship"/>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBRelatedClaimRelationshipCodes"/>
       </binding>
     </element>
     <element id="ExplanationOfBenefit.related.reference">
@@ -1782,7 +1778,7 @@
       <definition value="An alternate organizational reference to the case or file to which this particular claim pertains."/>
       <comment value="For example, Property/Casualty insurer claim number or Workers Compensation case number."/>
       <requirements value="In cases where an event-triggered claim is being submitted to an insurer which requires a reference number to be specified on all exchanges."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="ExplanationOfBenefit.related.reference"/>
@@ -1800,6 +1796,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
@@ -2026,7 +2023,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/payeetype"/>
+        <valueSet value="http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBPayeeType"/>
       </binding>
     </element>
     <element id="ExplanationOfBenefit.payee.party">

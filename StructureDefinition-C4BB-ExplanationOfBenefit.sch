@@ -261,6 +261,7 @@
     <sch:title>f:ExplanationOfBenefit/f:related</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:related">
       <sch:assert test="count(f:relationship) &gt;= 1">relationship: minimum cardinality of 'relationship' is 1</sch:assert>
+      <sch:assert test="count(f:reference) &gt;= 1">reference: minimum cardinality of 'reference' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

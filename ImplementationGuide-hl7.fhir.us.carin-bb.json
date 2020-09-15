@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-09-09T02:57:11+00:00",
+  "date": "2020-09-15T14:24:14+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -768,6 +768,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-C4BBPayeeType.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/C4BBPayeeType"
+        },
+        "name": "C4BB Payee Type",
+        "description": "Identifies the type of recipient of the adjudication amount; i.e., provider, subscriber, beneficiary or another recipient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-C4BBPayerBenefitPaymentStatus.html"
           }
         ],
@@ -812,6 +830,24 @@
         },
         "name": "C4BB Payer Provider Contracting Status",
         "description": "Indicates that the Provider has a contract with the Payer as of the effective date of service or admission.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-C4BBRelatedClaimRelationshipCodes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/C4BBRelatedClaimRelationshipCodes"
+        },
+        "name": "C4BB Related Claim Relationship Codes",
+        "description": "Identifies if the current claim represents a claim that has been adjusted and was given a prior claim number or if the current claim has been adjusted; i.e., replaced by or merged to another claim number.",
         "exampleBoolean": false
       },
       {
@@ -1272,6 +1308,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-C4BBPayeeType.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/C4BBPayeeType"
+        },
+        "name": "C4BB Related Claim Relationship Codes",
+        "description": "Indicates that a payee type may be a beneficiary ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-C4BBPayerAdjudicationStatus.html"
           }
         ],
@@ -1280,6 +1334,24 @@
         },
         "name": "C4BB Payer Adjudication Status",
         "description": "Describes the various status fields used when payers adjudicate a claim, such as whether the claim was adjudicated in or out of network, if the provider was contracted or non-contracted for the service",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-C4BBRelatedClaimRelationshipCodes.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/C4BBRelatedClaimRelationshipCodes"
+        },
+        "name": "C4BB Related Claim Relationship Codes",
+        "description": "Identifies if the current claim represents a claim that has been adjusted and was given a prior claim number or if the current claim has been adjusted; i.e., replaced by or merged to another claim number.",
         "exampleBoolean": false
       },
       {

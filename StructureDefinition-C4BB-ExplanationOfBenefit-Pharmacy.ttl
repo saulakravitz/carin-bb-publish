@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "C4BBExplanationOfBenefitPharmacy"];
   fhir:StructureDefinition.title [ fhir:value "C4BB ExplanationOfBenefit Pharmacy"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-09-09T02:57:11+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-09-15T14:24:14+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2192,16 +2192,10 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "RelatedClaimRelationship" ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "Relationship of this claim to a related Claim." ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/related-claim-relationship";
-           fhir:link <http://hl7.org/fhir/ValueSet/related-claim-relationship>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBRelatedClaimRelationshipCodes";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBRelatedClaimRelationshipCodes>
          ]
        ]
      ], [
@@ -2212,7 +2206,7 @@
        fhir:ElementDefinition.definition [ fhir:value "An alternate organizational reference to the case or file to which this particular claim pertains." ];
        fhir:ElementDefinition.comment [ fhir:value "For example, Property/Casualty insurer claim number or Workers Compensation case number." ];
        fhir:ElementDefinition.requirements [ fhir:value "In cases where an event-triggered claim is being submitted to an insurer which requires a reference number to be specified on all exchanges." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "ExplanationOfBenefit.related.reference" ];
@@ -2235,6 +2229,7 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2539,8 +2534,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/payeetype";
-           fhir:link <http://hl7.org/fhir/ValueSet/payeetype>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBPayeeType";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBPayeeType>
          ]
        ]
      ], [
