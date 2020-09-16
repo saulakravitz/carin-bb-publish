@@ -154,7 +154,7 @@
       <li>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
-      <li><a name="bf3ec255-96fe-499c-9366-f738f7da7b0e">​</a>
+      <li><a name="06645062-5f5d-444a-b21f-1b4be58fceea">​</a>
         <a href="Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
       </li>
     </ul>
@@ -531,7 +531,7 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
                   <a href="ValueSet-C4BBClaimInpatientInstitutionalDiagnosisType.html" title="ValueSet/C4BBClaimInpatientInstitutionalDiagnosisType">C4BB Claim Inpatient Institutional Diagnosis Type</a>
                </td>
                <td>
-<p>Indicates if the inpatient institutional diagnosis is admitting, principal, secondary or an external cause of injury.</p>
+<p>Indicates if the inpatient institutional diagnosis is admitting, principal, other or an external cause of injury.</p>
 </td>
             </tr>
             <tr>
@@ -547,7 +547,7 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
                   <a href="ValueSet-C4BBClaimOutpatientInstitutionalDiagnosisType.html" title="ValueSet/C4BBClaimOutpatientInstitutionalDiagnosisType">C4BB Claim Outpatient Institutional Diagnosis Type</a>
                </td>
                <td>
-<p>Indicates if the outpatient institutional diagnosis is admitting, principal, secondary an external cause of injury or a patient reason for visit</p>
+<p>Indicates if the outpatient institutional diagnosis is principal, other, an external cause of injury or a patient reason for visit.</p>
 </td>
             </tr>
             <tr>
@@ -616,6 +616,14 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-C4BBSupportingInfoType.html" title="ValueSet/C4BBSupportingInfoType">C4BB SupportingInfo Type</a>
+               </td>
+               <td>
+<p>Used as the discriminator for the types of supporting information for the CARIN IG for Blue Button� Implementation Guide.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-CMSDRG.html" title="ValueSet/CMSDRG">CMS-DRG</a>
                </td>
                <td>
@@ -630,14 +638,6 @@ https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/
                </td>
                <td>
 <p>Place of Service Codes are two-digit codes placed on health care professional claims to indicate the setting in which a service was provided.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-ClaimInformationCategory.html" title="ValueSet/ClaimInformationCategory">Claim Information Category</a>
-               </td>
-               <td>
-<p>Claim Information Category - Used as the discriminator for supportingInfo</p>
 </td>
             </tr>
             <tr>
@@ -806,6 +806,14 @@ Use of X12 CARC codes require a license.  Reference https://x12.org/codes/.  RAR
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-C4BBAdjudicationDiscriminator.html" title="CodeSystem/C4BBAdjudicationDiscriminator">C4BB Adjudication Discriminator</a>
+               </td>
+               <td>
+<p>Used as the discriminator for the data elements in adjudication and item.adjudication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-C4BBClaimCareTeamRole.html" title="CodeSystem/C4BBClaimCareTeamRole">C4BB Claim Care Team Role</a>
                </td>
                <td>
@@ -817,7 +825,7 @@ Use of X12 CARC codes require a license.  Reference https://x12.org/codes/.  RAR
                   <a href="CodeSystem-C4BBClaimDiagnosisType.html" title="CodeSystem/C4BBClaimDiagnosisType">C4BB Claim Diagnosis Type</a>
                </td>
                <td>
-<p>Indicates if the institutional diagnosis is admitting, principal, secondary an external cause of injury or a patient reason for visit.  Complements http://terminology.hl7.org/CodeSystem/ex-diagnosistype.</p>
+<p>Indicates if the institutional diagnosis is admitting, principal, secondary, other, an external cause of injury or a patient reason for visit.  Complements http://terminology.hl7.org/CodeSystem/ex-diagnosistype.</p>
 </td>
             </tr>
             <tr>
@@ -830,10 +838,18 @@ Use of X12 CARC codes require a license.  Reference https://x12.org/codes/.  RAR
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-C4BBPayeeType.html" title="CodeSystem/C4BBPayeeType">C4BB Related Claim Relationship Codes</a>
+                  <a href="CodeSystem-C4BBIdentifierType.html" title="CodeSystem/C4BBIdentifierType">Identifier Type</a>
                </td>
                <td>
-<p>Indicates that a payee type may be a beneficiary</p>
+<p>Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-C4BBPayeeType.html" title="CodeSystem/C4BBPayeeType">C4BB Payee Type</a>
+               </td>
+               <td>
+<p>Indicates that a payee type may be a beneficiary.</p>
 </td>
             </tr>
             <tr>
@@ -850,6 +866,14 @@ Use of X12 CARC codes require a license.  Reference https://x12.org/codes/.  RAR
                </td>
                <td>
 <p>Identifies if the current claim represents a claim that has been adjusted and was given a prior claim number or if the current claim has been adjusted; i.e., replaced by or merged to another claim number.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-C4BBSupportingInfoType.html" title="CodeSystem/C4BBSupportingInfoType">C4BB Supporting Info Type</a>
+               </td>
+               <td>
+<p>Claim Information Category - Used as the discriminator for supportingInfo</p>
 </td>
             </tr>
             <tr>
@@ -889,22 +913,6 @@ RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcar
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-ClaimAdjudicationCategory.html" title="CodeSystem/ClaimAdjudicationCategory">Claim Adjudication Category</a>
-               </td>
-               <td>
-<p>Values for EOB.item.adjudication.category and total.category</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-ClaimInformationCategory.html" title="CodeSystem/ClaimInformationCategory">Claim Information Category</a>
-               </td>
-               <td>
-<p>Claim Information Category - Used as the discriminator for supportingInfo</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="CodeSystem-FDANDC.html" title="CodeSystem/FDANDC">FDA National Drug Code (NDC)</a>
                </td>
                <td>
@@ -925,14 +933,6 @@ RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcar
                </td>
                <td>
 <p>International Classification of Diseases Surgical Procedures (ICD-10).</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-IdentifierTypeCS.html" title="CodeSystem/IdentifierTypeCS">Identifier Type</a>
-               </td>
-               <td>
-<p>Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203</p>
 </td>
             </tr>
             <tr>
@@ -1098,7 +1098,7 @@ RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcar
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 15, 2020 18:55+0000">2020-09-15</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 16, 2020 22:51+0000">2020-09-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

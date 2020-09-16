@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange"/>
   <status value="active"/>
-  <date value="2020-09-15T18:55:01+00:00"/>
+  <date value="2020-09-16T22:51:32+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -471,7 +471,7 @@
         <reference value="ValueSet/C4BBClaimInpatientInstitutionalDiagnosisType"/>
       </reference>
       <name value="C4BB Claim Inpatient Institutional Diagnosis Type"/>
-      <description value="Indicates if the inpatient institutional diagnosis is admitting, principal, secondary or an external cause of injury."/>
+      <description value="Indicates if the inpatient institutional diagnosis is admitting, principal, other or an external cause of injury."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -499,7 +499,7 @@
         <reference value="ValueSet/C4BBClaimOutpatientInstitutionalDiagnosisType"/>
       </reference>
       <name value="C4BB Claim Outpatient Institutional Diagnosis Type"/>
-      <description value="Indicates if the outpatient institutional diagnosis is admitting, principal, secondary an external cause of injury or a patient reason for visit"/>
+      <description value="Indicates if the outpatient institutional diagnosis is principal, other, an external cause of injury or a patient reason for visit."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -619,6 +619,20 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-C4BBSupportingInfoType.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/C4BBSupportingInfoType"/>
+      </reference>
+      <name value="C4BB SupportingInfo Type"/>
+      <description value="Used as the discriminator for the types of supporting information for the CARIN IG for Blue Button&#xFFFD; Implementation Guide."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-CMSDRG.html"/>
       </extension>
       <reference>
@@ -640,20 +654,6 @@
       </reference>
       <name value="CMS Place of Service Codes (POS)"/>
       <description value="Place of Service Codes are two-digit codes placed on health care professional claims to indicate the setting in which a service was provided."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-ClaimInformationCategory.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ClaimInformationCategory"/>
-      </reference>
-      <name value="Claim Information Category"/>
-      <description value="Claim Information Category - Used as the discriminator for supportingInfo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -927,6 +927,20 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-C4BBAdjudicationDiscriminator.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/C4BBAdjudicationDiscriminator"/>
+      </reference>
+      <name value="C4BB Adjudication Discriminator"/>
+      <description value="Used as the discriminator for the data elements in adjudication and item.adjudication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-C4BBClaimCareTeamRole.html"/>
       </extension>
       <reference>
@@ -947,7 +961,7 @@
         <reference value="CodeSystem/C4BBClaimDiagnosisType"/>
       </reference>
       <name value="C4BB Claim Diagnosis Type"/>
-      <description value="Indicates if the institutional diagnosis is admitting, principal, secondary an external cause of injury or a patient reason for visit.  Complements http://terminology.hl7.org/CodeSystem/ex-diagnosistype."/>
+      <description value="Indicates if the institutional diagnosis is admitting, principal, secondary, other, an external cause of injury or a patient reason for visit.  Complements http://terminology.hl7.org/CodeSystem/ex-diagnosistype."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -969,13 +983,27 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-C4BBIdentifierType.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/C4BBIdentifierType"/>
+      </reference>
+      <name value="Identifier Type"/>
+      <description value="Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-C4BBPayeeType.html"/>
       </extension>
       <reference>
         <reference value="CodeSystem/C4BBPayeeType"/>
       </reference>
-      <name value="C4BB Related Claim Relationship Codes"/>
-      <description value="Indicates that a payee type may be a beneficiary "/>
+      <name value="C4BB Payee Type"/>
+      <description value="Indicates that a payee type may be a beneficiary."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1004,6 +1032,20 @@
       </reference>
       <name value="C4BB Related Claim Relationship Codes"/>
       <description value="Identifies if the current claim represents a claim that has been adjusted and was given a prior claim number or if the current claim has been adjusted; i.e., replaced by or merged to another claim number."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-C4BBSupportingInfoType.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/C4BBSupportingInfoType"/>
+      </reference>
+      <name value="C4BB Supporting Info Type"/>
+      <description value="Claim Information Category - Used as the discriminator for supportingInfo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1067,34 +1109,6 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-ClaimAdjudicationCategory.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ClaimAdjudicationCategory"/>
-      </reference>
-      <name value="Claim Adjudication Category"/>
-      <description value="Values for EOB.item.adjudication.category and total.category"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-ClaimInformationCategory.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ClaimInformationCategory"/>
-      </reference>
-      <name value="Claim Information Category"/>
-      <description value="Claim Information Category - Used as the discriminator for supportingInfo"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-FDANDC.html"/>
       </extension>
       <reference>
@@ -1130,20 +1144,6 @@
       </reference>
       <name value="ICD-10-PCS"/>
       <description value="International Classification of Diseases Surgical Procedures (ICD-10)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-IdentifierTypeCS.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/IdentifierTypeCS"/>
-      </reference>
-      <name value="Identifier Type"/>
-      <description value="Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

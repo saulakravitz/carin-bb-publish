@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="965e8da4-ef41-4807-8edf-3676a87cb690"/>
+  <id value="684ded8b-78f2-41d7-b521-7d8a9a8248b1"/>
   <meta>
-    <lastUpdated value="2020-09-15T18:55:01.468+00:00"/>
+    <lastUpdated value="2020-09-16T22:51:32.202+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,19 +14,25 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 7 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-C4BBClaimDiagnosisType.html">C4BB Claim Diagnosis Type v0.1.4 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-C4BBClaimDiagnosisType.html">
-                <code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType</code>
-              </a>
-            </p>
+            <p>This value set contains 4 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-diagnosistype.html">Example Diagnosis Type Codes v4.2.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="CodeSystem-C4BBClaimDiagnosisType.html">C4BB Claim Diagnosis Type v0.1.4 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -37,59 +43,39 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-external-cause-of-injury"> </a>
-                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-external-cause-of-injury">external-cause-of-injury</a>
+                  <a name="http---terminology.hl7.org-CodeSystem-ex-diagnosistype-principal"> </a>
+                  <a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-diagnosistype.html#ex-diagnosistype-principal">principal</a>
                 </td>
-                <td>External Cause of Injury</td>
-                <td>Required when an external cause of injury is needed to describe the injury</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-first-listed"> </a>
-                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-first-listed">first-listed</a>
-                </td>
-                <td>first-listed</td>
-                <td>First Listed</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-patient-reason-for-visit"> </a>
-                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-patient-reason-for-visit">patient-reason-for-visit</a>
-                </td>
-                <td>Patient Reason for Visit</td>
-                <td>Identifies the patient&#39;s reason for the outpatient institutional visit</td>
+                <td>http://terminology.hl7.org/CodeSystem/ex-diagnosistype</td>
+                <td>Principal Diagnosis</td>
+                <td>The single medical diagnosis that is most relevant to the patient&#39;s chief complaint or need for treatment.</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-other"> </a>
                   <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-other">other</a>
                 </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType</td>
                 <td>Other</td>
                 <td>Required when other conditions coexist or develop subsequently during the treatment</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-secondary"> </a>
-                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-secondary">secondary</a>
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-externalcauseofinjury"> </a>
+                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-externalcauseofinjury">externalcauseofinjury</a>
                 </td>
-                <td>Secondary</td>
-                <td>Required when necessary to report additional diagnoses on professional and non-clinician claims</td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType</td>
+                <td>External Cause of Injury</td>
+                <td>Required when an external cause of injury is needed to describe the injury</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-principal"> </a>
-                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-principal">principal</a>
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-patientreasonforvisit"> </a>
+                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-patientreasonforvisit">patientreasonforvisit</a>
                 </td>
-                <td>Principal</td>
-                <td>Principal</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-admitting"> </a>
-                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-admitting">admitting</a>
-                </td>
-                <td>Admitting</td>
-                <td>Admitting</td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType</td>
+                <td>Patient Reason for Visit</td>
+                <td>Identifies the patient&#39;s reason for the outpatient institutional visit</td>
               </tr>
             </table>
           </div>
@@ -99,7 +85,7 @@
         <name value="C4BBClaimOutpatientInstitutionalDiagnosisType"/>
         <title value="C4BB Claim Outpatient Institutional Diagnosis Type"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -112,39 +98,34 @@
             <value value="fm@lists.HL7.org"/>
           </telecom>
         </contact>
-        <description value="Indicates if the outpatient institutional diagnosis is admitting, principal, secondary an external cause of injury or a patient reason for visit"/>
+        <description value="Indicates if the outpatient institutional diagnosis is principal, other, an external cause of injury or a patient reason for visit."/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="US"/>
           </coding>
         </jurisdiction>
+        <copyright value="This Valueset is not copyrighted."/>
         <expansion>
-          <identifier value="urn:uuid:0625aec6-fa2f-4f32-9288-08659e6a5eb5"/>
-          <timestamp value="2020-09-15T18:56:04+00:00"/>
-          <total value="7"/>
+          <identifier value="urn:uuid:625a3b5d-46fb-4c5d-81f8-26de54cae432"/>
+          <timestamp value="2020-09-16T22:52:45+00:00"/>
+          <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype|4.2.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
             <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType|0.1.4"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
-            <code value="external-cause-of-injury"/>
-            <display value="External Cause of Injury"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
-            <code value="first-listed"/>
-            <display value="first-listed"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
-            <code value="patient-reason-for-visit"/>
-            <display value="Patient Reason for Visit"/>
+            <system value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype"/>
+            <code value="principal"/>
+            <display value="Principal Diagnosis"/>
           </contains>
           <contains>
             <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
@@ -153,18 +134,13 @@
           </contains>
           <contains>
             <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
-            <code value="secondary"/>
-            <display value="Secondary"/>
+            <code value="externalcauseofinjury"/>
+            <display value="External Cause of Injury"/>
           </contains>
           <contains>
             <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
-            <code value="principal"/>
-            <display value="Principal"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
-            <code value="admitting"/>
-            <display value="Admitting"/>
+            <code value="patientreasonforvisit"/>
+            <display value="Patient Reason for Visit"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -199,7 +175,7 @@
         <name value="AMACPTCMSHCPCSModifiers"/>
         <title value="AMA CPT CMS HCPCS Modifiers"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -221,8 +197,8 @@
         </jurisdiction>
         <copyright value="CPT copyright 2014 American Medical Association. All rights reserved. HCPCS Level II Alphanumeric Codes are maintained by the US Centers for Medicare and Medicaid Services (CMS) and are available for public use. As HL7 is working with the owning authorities to finalize the urls, the urls are subject to change."/>
         <expansion>
-          <identifier value="urn:uuid:f4778720-ac17-43c7-8c2d-cece62f0de85"/>
-          <timestamp value="2020-09-15T18:56:04+00:00"/>
+          <identifier value="urn:uuid:5f8917a0-7155-46c2-9c8d-106c232e2d5a"/>
+          <timestamp value="2020-09-16T22:52:45+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -268,7 +244,7 @@
         <name value="CMSPlaceofServiceCodes"/>
         <title value="CMS Place of Service Codes (POS)"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -290,8 +266,8 @@
         </jurisdiction>
         <copyright value="The Centers for Medicare &amp; Medicaid Services (CMS) maintain Place Of Service (POS) codes used throughout the US health care industry."/>
         <expansion>
-          <identifier value="urn:uuid:8c41fffc-7cf1-45ad-8019-33d57e2d6aa7"/>
-          <timestamp value="2020-09-15T18:56:04+00:00"/>
+          <identifier value="urn:uuid:0b3aec3c-2474-45d3-ab35-91e7311e0e43"/>
+          <timestamp value="2020-09-16T22:52:45+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -317,7 +293,7 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-IdentifierTypeCS.html">Identifier Type v0.1.4 (CodeSystem)</a>
+                  <a href="CodeSystem-C4BBIdentifierType.html">Identifier Type v0.1.4 (CodeSystem)</a>
                 </li>
                 <li>
                   <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v2-0203.html">identifierType v2.9.0 (CodeSystem)</a>
@@ -341,28 +317,28 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-um"> </a>
-                  <a href="CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-um">um</a>
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBIdentifierType-um"> </a>
+                  <a href="CodeSystem-C4BBIdentifierType.html#C4BBIdentifierType-um">um</a>
                 </td>
-                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS</td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType</td>
                 <td>Unique Member ID</td>
                 <td>Unique Member ID</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-mb"> </a>
-                  <a href="CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-mb">mb</a>
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBIdentifierType-mb"> </a>
+                  <a href="CodeSystem-C4BBIdentifierType.html#C4BBIdentifierType-mb">mb</a>
                 </td>
-                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS</td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType</td>
                 <td>Member ID</td>
                 <td>Member ID</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-IdentifierTypeCS-pt"> </a>
-                  <a href="CodeSystem-IdentifierTypeCS.html#IdentifierTypeCS-pt">pt</a>
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBIdentifierType-pt"> </a>
+                  <a href="CodeSystem-C4BBIdentifierType.html#C4BBIdentifierType-pt">pt</a>
                 </td>
-                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS</td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType</td>
                 <td>Patient Account Number</td>
                 <td>Patient Account Number</td>
               </tr>
@@ -383,7 +359,7 @@
         <name value="PatientIdentifierType"/>
         <title value="Patient Identifier Type"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -405,8 +381,8 @@
         </jurisdiction>
         <copyright value="This Valueset is not copyrighted."/>
         <expansion>
-          <identifier value="urn:uuid:026688ba-8e5a-4d66-a6c9-8dd3a2faa92c"/>
-          <timestamp value="2020-09-15T18:56:04+00:00"/>
+          <identifier value="urn:uuid:05b9b6a6-50d0-4ce5-8b09-686cf41fd8e5"/>
+          <timestamp value="2020-09-16T22:52:45+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -414,24 +390,24 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS|0.1.4"/>
+            <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType|0.1.4"/>
           </parameter>
           <parameter>
             <name value="version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/v2-0203|2.9.0"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS"/>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType"/>
             <code value="um"/>
             <display value="Unique Member ID"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS"/>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType"/>
             <code value="mb"/>
             <display value="Member ID"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS"/>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType"/>
             <code value="pt"/>
             <display value="Patient Account Number"/>
           </contains>
@@ -473,7 +449,7 @@
         <name value="AHANUBCPatientDischargeStatus"/>
         <title value="AHA NUBC Patient Discharge Status"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -495,8 +471,8 @@
         </jurisdiction>
         <copyright value="The Official UB-04 Data Specifications Manual, copyrighted by the American Hospital Association, is the only official source of UB-04 billing information adopted by the National Uniform Billing Committee. &#xA;No other publication&#x2014;governmental or private/commercial&#x2014;can be considered authoritative. See their website for licensing terms and conditions.&#xA;As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
         <expansion>
-          <identifier value="urn:uuid:1717b6a0-174d-440c-88cd-b04a16108e49"/>
-          <timestamp value="2020-09-15T18:56:04+00:00"/>
+          <identifier value="urn:uuid:00c5df29-82df-4da7-807e-47c844af3cee"/>
+          <timestamp value="2020-09-16T22:52:45+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -538,7 +514,7 @@
         <name value="NCPDPDispensedAsWrittenOrProductSelectionCode"/>
         <title value="NCPDP Dispensed As Written Or Product Selection Code"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -560,8 +536,8 @@
         </jurisdiction>
         <copyright value="NCPDP codes are available by subscription at ncpdp.org. As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
         <expansion>
-          <identifier value="urn:uuid:8c2f0ff0-01db-40b6-bbec-bfb18425e471"/>
-          <timestamp value="2020-09-15T18:56:05+00:00"/>
+          <identifier value="urn:uuid:2a81f2ab-fd37-4be1-b8f8-2d6b66f4a7d8"/>
+          <timestamp value="2020-09-16T22:52:46+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -582,19 +558,25 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-C4BBClaimDiagnosisType.html">C4BB Claim Diagnosis Type v0.1.4 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-C4BBClaimDiagnosisType.html">
-                <code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType</code>
-              </a>
-            </p>
+            <p>This value set contains 2 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-diagnosistype.html">Example Diagnosis Type Codes v4.2.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="CodeSystem-C4BBClaimDiagnosisType.html">C4BB Claim Diagnosis Type v0.1.4 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -605,27 +587,21 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-principal"> </a>
-                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-principal">principal</a>
+                  <a name="http---terminology.hl7.org-CodeSystem-ex-diagnosistype-principal"> </a>
+                  <a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-diagnosistype.html#ex-diagnosistype-principal">principal</a>
                 </td>
+                <td>http://terminology.hl7.org/CodeSystem/ex-diagnosistype</td>
                 <td>principal</td>
-                <td>Principal</td>
+                <td>The single medical diagnosis that is most relevant to the patient&#39;s chief complaint or need for treatment.</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-secondary"> </a>
                   <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-secondary">secondary</a>
                 </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType</td>
                 <td>secondary</td>
                 <td>Required when necessary to report additional diagnoses on professional and non-clinician claims</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-first-listed"> </a>
-                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-first-listed">first-listed</a>
-                </td>
-                <td>first-listed</td>
-                <td>First Listed</td>
               </tr>
             </table>
           </div>
@@ -635,7 +611,7 @@
         <name value="C4BBClaimProfessionalAndNonClinicianDiagnosisType"/>
         <title value="C4BB Claim Professional And Non Clinician Diagnosis Type"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -657,19 +633,23 @@
         </jurisdiction>
         <copyright value="This Valueset is not copyrighted."/>
         <expansion>
-          <identifier value="urn:uuid:a7ae87bb-6248-473e-a78b-c4efc9bcc649"/>
-          <timestamp value="2020-09-15T18:56:05+00:00"/>
-          <total value="3"/>
+          <identifier value="urn:uuid:22d0cc0a-af2d-42f4-aac6-b7ad4a848f6b"/>
+          <timestamp value="2020-09-16T22:52:46+00:00"/>
+          <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype|4.2.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
             <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType|0.1.4"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
+            <system value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype"/>
             <code value="principal"/>
             <display value="principal"/>
           </contains>
@@ -677,11 +657,6 @@
             <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
             <code value="secondary"/>
             <display value="secondary"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
-            <code value="first-listed"/>
-            <display value="first-listed"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -695,19 +670,25 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-C4BBClaimDiagnosisType.html">C4BB Claim Diagnosis Type v0.1.4 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-C4BBClaimDiagnosisType.html">
-                <code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType</code>
-              </a>
-            </p>
+            <p>This value set contains 4 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-diagnosistype.html">Example Diagnosis Type Codes v4.2.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="CodeSystem-C4BBClaimDiagnosisType.html">C4BB Claim Diagnosis Type v0.1.4 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -718,43 +699,39 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-principal"> </a>
-                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-principal">principal</a>
+                  <a name="http---terminology.hl7.org-CodeSystem-ex-diagnosistype-principal"> </a>
+                  <a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-diagnosistype.html#ex-diagnosistype-principal">principal</a>
                 </td>
-                <td>Principal</td>
-                <td>Principal</td>
+                <td>http://terminology.hl7.org/CodeSystem/ex-diagnosistype</td>
+                <td>Principal Diagnosis</td>
+                <td>The single medical diagnosis that is most relevant to the patient&#39;s chief complaint or need for treatment.</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-secondary"> </a>
-                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-secondary">secondary</a>
+                  <a name="http---terminology.hl7.org-CodeSystem-ex-diagnosistype-admitting"> </a>
+                  <a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-diagnosistype.html#ex-diagnosistype-admitting">admitting</a>
                 </td>
-                <td>Secondary</td>
-                <td>Required when necessary to report additional diagnoses on professional and non-clinician claims</td>
+                <td>http://terminology.hl7.org/CodeSystem/ex-diagnosistype</td>
+                <td>Admitting Diagnosis</td>
+                <td>The diagnosis given as the reason why the patient was admitted to the hospital.</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-external-cause-of-injury"> </a>
-                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-external-cause-of-injury">external-cause-of-injury</a>
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-other"> </a>
+                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-other">other</a>
                 </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType</td>
+                <td>Other</td>
+                <td>Required when other conditions coexist or develop subsequently during the treatment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-externalcauseofinjury"> </a>
+                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-externalcauseofinjury">externalcauseofinjury</a>
+                </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType</td>
                 <td>External Cause of Injury</td>
                 <td>Required when an external cause of injury is needed to describe the injury</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-first-listed"> </a>
-                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-first-listed">first-listed</a>
-                </td>
-                <td>first-listed</td>
-                <td>First Listed</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBClaimDiagnosisType-admitting"> </a>
-                  <a href="CodeSystem-C4BBClaimDiagnosisType.html#C4BBClaimDiagnosisType-admitting">admitting</a>
-                </td>
-                <td>Admitting</td>
-                <td>Admitting</td>
               </tr>
             </table>
           </div>
@@ -764,7 +741,7 @@
         <name value="C4BBClaimInpatientInstitutionalDiagnosisType"/>
         <title value="C4BB Claim Inpatient Institutional Diagnosis Type"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -777,7 +754,7 @@
             <value value="fm@lists.HL7.org"/>
           </telecom>
         </contact>
-        <description value="Indicates if the inpatient institutional diagnosis is admitting, principal, secondary or an external cause of injury."/>
+        <description value="Indicates if the inpatient institutional diagnosis is admitting, principal, other or an external cause of injury."/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -786,41 +763,40 @@
         </jurisdiction>
         <copyright value="This Valueset is not copyrighted."/>
         <expansion>
-          <identifier value="urn:uuid:54dc233f-c998-4d3f-b675-aea04267c759"/>
-          <timestamp value="2020-09-15T18:56:05+00:00"/>
-          <total value="5"/>
+          <identifier value="urn:uuid:bc33ab03-2d73-4009-a971-d7c1a2d48922"/>
+          <timestamp value="2020-09-16T22:52:46+00:00"/>
+          <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype|4.2.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
             <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType|0.1.4"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
+            <system value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype"/>
             <code value="principal"/>
-            <display value="Principal"/>
+            <display value="Principal Diagnosis"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
-            <code value="secondary"/>
-            <display value="Secondary"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
-            <code value="external-cause-of-injury"/>
-            <display value="External Cause of Injury"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
-            <code value="first-listed"/>
-            <display value="first-listed"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
+            <system value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype"/>
             <code value="admitting"/>
-            <display value="Admitting"/>
+            <display value="Admitting Diagnosis"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
+            <code value="other"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
+            <code value="externalcauseofinjury"/>
+            <display value="External Cause of Injury"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -855,7 +831,7 @@
         <name value="CMSDRG"/>
         <title value="CMS-DRG"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -877,8 +853,8 @@
         </jurisdiction>
         <copyright value="The code set is owned by CMS and is available for use."/>
         <expansion>
-          <identifier value="urn:uuid:6232d6dc-9f7b-4819-8529-3e7c41e3f3e0"/>
-          <timestamp value="2020-09-15T18:56:05+00:00"/>
+          <identifier value="urn:uuid:f93fe715-56eb-4c94-852f-4f25aa84fb34"/>
+          <timestamp value="2020-09-16T22:52:46+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -952,7 +928,7 @@
         <name value="C4BBClaimPharmacyTeamRole"/>
         <title value="C4BB Claim Pharmacy CareTeam Roles"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -974,8 +950,8 @@
         </jurisdiction>
         <copyright value="This Valueset is not copyrighted."/>
         <expansion>
-          <identifier value="urn:uuid:45c781c9-6736-43a2-ad5d-7deaea01b4ca"/>
-          <timestamp value="2020-09-15T18:56:05+00:00"/>
+          <identifier value="urn:uuid:5b3ac891-8704-4a2f-90c6-e17bc9d80ea4"/>
+          <timestamp value="2020-09-16T22:52:46+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1032,7 +1008,7 @@
         <name value="AHANUBCPriorityTypeOfAdmissionOrVisit"/>
         <title value="AHA NUBC Priority Type Of Admission Or Visit"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1054,8 +1030,8 @@
         </jurisdiction>
         <copyright value="The Official UB-04 Data Specifications Manual, copyrighted by the American Hospital Association, is the only official source of UB-04 billing information adopted by the National Uniform Billing Committee. &#xA;No other publication&#x2014;governmental or private/commercial&#x2014;can be considered authoritative. See their website for licensing terms and conditions.&#xA;As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
         <expansion>
-          <identifier value="urn:uuid:64f9c8cc-bf89-489a-984f-c9e1d51f4dec"/>
-          <timestamp value="2020-09-15T18:56:05+00:00"/>
+          <identifier value="urn:uuid:3de8e474-6bb7-4e50-89a1-60e91e1d633a"/>
+          <timestamp value="2020-09-16T22:52:46+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1237,7 +1213,7 @@
         <name value="C4BBAdjudication"/>
         <title value="C4BB Adjudication"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1259,8 +1235,8 @@
         </jurisdiction>
         <copyright value="This Valueset is not copyrighted."/>
         <expansion>
-          <identifier value="urn:uuid:98cab57f-5cc1-4562-a0c3-6029d2a57151"/>
-          <timestamp value="2020-09-15T18:56:05+00:00"/>
+          <identifier value="urn:uuid:2e380e22-05d8-40b7-8491-8e4ce3cff56a"/>
+          <timestamp value="2020-09-16T22:52:46+00:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1377,7 +1353,7 @@
         <name value="NCPDPRejectCode"/>
         <title value="NCPDP Reject Code"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1399,8 +1375,8 @@
         </jurisdiction>
         <copyright value="NCPDP codes are available by subscription at ncpdp.org. As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
         <expansion>
-          <identifier value="urn:uuid:6bc6329c-f502-4ccd-b4f6-fdf73ec35929"/>
-          <timestamp value="2020-09-15T18:56:05+00:00"/>
+          <identifier value="urn:uuid:4c813278-1f14-4301-872d-c0141ac03b1f"/>
+          <timestamp value="2020-09-16T22:52:46+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1409,6 +1385,288 @@
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType"/>
+    <resource>
+      <ValueSet>
+        <id value="C4BBSupportingInfoType"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 16 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-C4BBSupportingInfoType.html">C4BB Supporting Info Type v0.1.4 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-C4BBSupportingInfoType.html">
+                <code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-admissionperiod"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-admissionperiod">admissionperiod</a>
+                </td>
+                <td>Admission Period</td>
+                <td>Dates corresponding with the admission and discharge of the beneficiary to a facility</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-pointoforigin"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-pointoforigin">pointoforigin</a>
+                </td>
+                <td>Point Of Origin</td>
+                <td>UB-04 Source of Admission (FL-15) identifies the place where the patient was identified as needing admission to a facility.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-admtype"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-admtype">admtype</a>
+                </td>
+                <td>Admission Type</td>
+                <td>UB-04 Priority of the admission (FL-14) indicates, for example, an admission type of elective indicates that the patient&#39;s condition permitted time for medical services to be scheduled.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-billingnetworkcontractingstatus"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-billingnetworkcontractingstatus">billingnetworkcontractingstatus</a>
+                </td>
+                <td>Billing Network Contracting Status</td>
+                <td>Indicates that the Billing Provider has a contract with the Payer as of the effective date of service or admission.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-brandgenericcode"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-brandgenericcode">brandgenericcode</a>
+                </td>
+                <td>Brand Generic Code</td>
+                <td>NCPDP code indicating whether the plan adjudicated the claim as a brand or generic drug.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-clmrecvddate"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-clmrecvddate">clmrecvddate</a>
+                </td>
+                <td>Claim Received Date</td>
+                <td>Date the claim was received by the payer.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-compoundcode"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-compoundcode">compoundcode</a>
+                </td>
+                <td>Compound Code</td>
+                <td>NCPDP code indicating whether or not the prescription is a compound.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-dawcode"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-dawcode">dawcode</a>
+                </td>
+                <td>DAW (Dispense As Written) Code</td>
+                <td>NCPDP code indicating the prescriber&#39;s instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-dayssupply"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-dayssupply">dayssupply</a>
+                </td>
+                <td>Days Supply</td>
+                <td>NCPDP value indicating the Number of days supply of medication dispensed by the pharmacy.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-discharge-status"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-discharge-status">discharge-status</a>
+                </td>
+                <td>Discharge Status</td>
+                <td>UB-04 Discharge Status (FL-17) indicates the patient’s status as of the discharge date for a facility stay.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-drg"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-drg">drg</a>
+                </td>
+                <td>DRG</td>
+                <td>DRG (Diagnosis Related Group), including the code system, the DRG version and the code value</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-performingnetworkcontractingstatus"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-performingnetworkcontractingstatus">performingnetworkcontractingstatus</a>
+                </td>
+                <td>Performing Network Contracting Status</td>
+                <td>Indicates that the Performing Provider has a contract with the Payer as of the effective date of service or admission.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-refillnum"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-refillnum">refillnum</a>
+                </td>
+                <td>Refill Number</td>
+                <td>NCPDP value indicating the number fill of the current dispensed supply (0, 1, 2, etc.)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-rxorigincode"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-rxorigincode">rxorigincode</a>
+                </td>
+                <td>Rx Origin Code</td>
+                <td>NCPDP code indicating whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-servicefacility"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-servicefacility">servicefacility</a>
+                </td>
+                <td>Service Facility</td>
+                <td>The facility where the service occurred.  Examples include hospitals, nursing homes, laboratories or homeless shelters.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBSupportingInfoType-typeofbill"> </a>
+                  <a href="CodeSystem-C4BBSupportingInfoType.html#C4BBSupportingInfoType-typeofbill">typeofbill</a>
+                </td>
+                <td>Type of Bill</td>
+                <td>UB-04 Type of Bill (FL-04) provides specific information for payer purposes.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType"/>
+        <version value="0.1.4"/>
+        <name value="C4BBSupportingInfoType"/>
+        <title value="C4BB SupportingInfo Type"/>
+        <status value="active"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
+        <publisher value="HL7 Financial Management Working Group"/>
+        <contact>
+          <name value="HL7 Financial Management Working Group"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="fm@lists.HL7.org"/>
+          </telecom>
+        </contact>
+        <description value="Used as the discriminator for the types of supporting information for the CARIN IG for Blue Button&#xFFFD; Implementation Guide."/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <copyright value="This Valueset is not copyrighted."/>
+        <expansion>
+          <identifier value="urn:uuid:cb4f03a6-d750-4455-b45f-11ba2b471985"/>
+          <timestamp value="2020-09-16T22:52:46+00:00"/>
+          <total value="16"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType|0.1.4"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="admissionperiod"/>
+            <display value="Admission Period"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="pointoforigin"/>
+            <display value="Point Of Origin"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="admtype"/>
+            <display value="Admission Type"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="billingnetworkcontractingstatus"/>
+            <display value="Billing Network Contracting Status"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="brandgenericcode"/>
+            <display value="Brand Generic Code"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="clmrecvddate"/>
+            <display value="Claim Received Date"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="compoundcode"/>
+            <display value="Compound Code"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="dawcode"/>
+            <display value="DAW (Dispense As Written) Code"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="dayssupply"/>
+            <display value="Days Supply"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="discharge-status"/>
+            <display value="Discharge Status"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="drg"/>
+            <display value="DRG"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="performingnetworkcontractingstatus"/>
+            <display value="Performing Network Contracting Status"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="refillnum"/>
+            <display value="Refill Number"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="rxorigincode"/>
+            <display value="Rx Origin Code"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="servicefacility"/>
+            <display value="Service Facility"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"/>
+            <code value="typeofbill"/>
+            <display value="Type of Bill"/>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>
@@ -1442,7 +1700,7 @@
         <name value="AHANUBCTypeOfBill"/>
         <title value="AHA NUBC Type of Bill"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1464,8 +1722,8 @@
         </jurisdiction>
         <copyright value="The Official UB-04 Data Specifications Manual, copyrighted by the American Hospital Association, is the only official source of UB-04 billing information adopted by the National Uniform Billing Committee. &#xA;No other publication&#x2014;governmental or private/commercial&#x2014;can be considered authoritative. See their website for licensing terms and conditions.&#xA;As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
         <expansion>
-          <identifier value="urn:uuid:b4b7e907-c4f7-4090-b12a-5a9dec0c7bb7"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
+          <identifier value="urn:uuid:f4a0c8fa-66a4-47ee-8970-fe1603c7884a"/>
+          <timestamp value="2020-09-16T22:52:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1486,13 +1744,13 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
+            <p>This value set contains 3 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-C4BBAdjudication.html">C4BB Adjudication v0.1.4 (CodeSystem)</a>
+              <a href="CodeSystem-C4BBPayerAdjudicationStatus.html">C4BB Payer Adjudication Status v0.1.4 (CodeSystem)</a>
             </p>
             <p>All codes from system 
-              <a href="CodeSystem-C4BBAdjudication.html">
-                <code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication</code>
+              <a href="CodeSystem-C4BBPayerAdjudicationStatus.html">
+                <code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus</code>
               </a>
             </p>
             <table class="codes">
@@ -1509,19 +1767,27 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBAdjudication-paid"> </a>
-                  <a href="CodeSystem-C4BBAdjudication.html#C4BBAdjudication-paid">paid</a>
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBPayerAdjudicationStatus-paid"> </a>
+                  <a href="CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-paid">paid</a>
                 </td>
-                <td>paid</td>
-                <td>paid</td>
+                <td>Paid</td>
+                <td>Indicates if the claim was approved for payment</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBAdjudication-denied"> </a>
-                  <a href="CodeSystem-C4BBAdjudication.html#C4BBAdjudication-denied">denied</a>
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBPayerAdjudicationStatus-denied"> </a>
+                  <a href="CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-denied">denied</a>
                 </td>
-                <td>denied</td>
-                <td>denied</td>
+                <td>Denied</td>
+                <td>Indicates if the claim was denied</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBPayerAdjudicationStatus-partiallypaid"> </a>
+                  <a href="CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-partiallypaid">partiallypaid</a>
+                </td>
+                <td>Partially Paid</td>
+                <td>Indicates that some line items on the claim were denied</td>
               </tr>
             </table>
           </div>
@@ -1531,7 +1797,7 @@
         <name value="C4BBPayerClaimPaymentStatusCode"/>
         <title value="C4BB Payer Claim Payment Status Code"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1553,26 +1819,31 @@
         </jurisdiction>
         <copyright value="This Valueset is not copyrighted."/>
         <expansion>
-          <identifier value="urn:uuid:659e765e-116b-4586-a3ce-df48dbe3b6c0"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
-          <total value="2"/>
+          <identifier value="urn:uuid:cdf5e138-a6fe-4fbe-9018-c2d617b1a486"/>
+          <timestamp value="2020-09-16T22:52:47+00:00"/>
+          <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication|0.1.4"/>
+            <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus|0.1.4"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication"/>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"/>
             <code value="paid"/>
-            <display value="paid"/>
+            <display value="Paid"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication"/>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"/>
             <code value="denied"/>
-            <display value="denied"/>
+            <display value="Denied"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"/>
+            <code value="partiallypaid"/>
+            <display value="Partially Paid"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1607,7 +1878,7 @@
         <name value="NCPDPCompoundCode"/>
         <title value="NCPDP Compound Code"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1629,8 +1900,8 @@
         </jurisdiction>
         <copyright value="NCPDP codes are available by subscription at ncpdp.org. As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
         <expansion>
-          <identifier value="urn:uuid:8adb89f7-acee-4bd6-bbb2-f24b52b4b2f5"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
+          <identifier value="urn:uuid:92b3657d-80e0-488a-aaf3-6a4ffdd221c1"/>
+          <timestamp value="2020-09-16T22:52:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1659,7 +1930,7 @@
                   <a href="https://terminology.hl7.org/1.0.0//CodeSystem-payeetype.html">ClaimPayeeTypeCodes v4.2.1 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-C4BBPayeeType.html">C4BB Related Claim Relationship Codes v0.1.4 (CodeSystem)</a>
+                  <a href="CodeSystem-C4BBPayeeType.html">C4BB Payee Type v0.1.4 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -1677,6 +1948,15 @@
                 <td>
                   <b>Definition</b>
                 </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBPayeeType-beneficiary"> </a>
+                  <a href="CodeSystem-C4BBPayeeType.html#C4BBPayeeType-beneficiary">beneficiary</a>
+                </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType</td>
+                <td>Beneficiary</td>
+                <td>The beneficiary (patient) will be reimbursed.</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -1705,15 +1985,6 @@
                 <td>Provider</td>
                 <td>Any benefit payable will be paid to a third party such as a guarrantor.</td>
               </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBPayeeType-beneficiary"> </a>
-                  <a href="CodeSystem-C4BBPayeeType.html#C4BBPayeeType-beneficiary">beneficiary</a>
-                </td>
-                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType</td>
-                <td>Beneficiary</td>
-                <td>Beneficiary</td>
-              </tr>
             </table>
           </div>
         </text>
@@ -1722,7 +1993,7 @@
         <name value="C4BBPayeeType"/>
         <title value="C4BB Payee Type"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1742,10 +2013,10 @@
             <code value="US"/>
           </coding>
         </jurisdiction>
-        <copyright value="This Code System is not copyrighted."/>
+        <copyright value="This Valueset is not copyrighted."/>
         <expansion>
-          <identifier value="urn:uuid:0780b2be-c40f-42a4-a2ed-fe0a1510bbd1"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
+          <identifier value="urn:uuid:4d280fed-abff-4128-84e5-c3bcff227952"/>
+          <timestamp value="2020-09-16T22:52:47+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1753,12 +2024,17 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/payeetype|4.2.1"/>
+            <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType|0.1.4"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType|0.1.4"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/payeetype|4.2.1"/>
           </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType"/>
+            <code value="beneficiary"/>
+            <display value="Beneficiary"/>
+          </contains>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/payeetype"/>
             <code value="subscriber"/>
@@ -1773,11 +2049,6 @@
             <system value="http://terminology.hl7.org/CodeSystem/payeetype"/>
             <code value="other"/>
             <display value="Provider"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType"/>
-            <code value="beneficiary"/>
-            <display value="Beneficiary"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1812,7 +2083,7 @@
         <name value="AHANUBCPresentOnAdmission"/>
         <title value="AHA NUBC Present On Admission"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1834,8 +2105,8 @@
         </jurisdiction>
         <copyright value="The Official UB-04 Data Specifications Manual, copyrighted by the American Hospital Association, is the only official source of UB-04 billing information adopted by the National Uniform Billing Committee. &#xA;No other publication&#x2014;governmental or private/commercial&#x2014;can be considered authoritative. See their website for licensing terms and conditions.&#xA;As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
         <expansion>
-          <identifier value="urn:uuid:22a8a64e-da31-4314-bd2b-3033761018f7"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
+          <identifier value="urn:uuid:8c4a0578-03e5-4016-96b6-077b1ee4669d"/>
+          <timestamp value="2020-09-16T22:52:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1856,7 +2127,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
+            <p>This value set contains 4 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -1865,6 +2136,9 @@
                 </li>
                 <li>
                   <a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-relatedclaimrelationship.html">Example Related Claim Relationship Codes v4.2.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="CodeSystem-C4BBPayeeType.html">C4BB Payee Type v0.1.4 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -1894,12 +2168,30 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBRelatedClaimRelationshipCodes-replacedBy"> </a>
-                  <a href="CodeSystem-C4BBRelatedClaimRelationshipCodes.html#C4BBRelatedClaimRelationshipCodes-replacedBy">replacedBy</a>
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBPayeeType-provider"> </a>
+                  <a href="CodeSystem-C4BBPayeeType.html#C4BBPayeeType-provider">provider</a>
+                </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType</td>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBPayeeType-other"> </a>
+                  <a href="CodeSystem-C4BBPayeeType.html#C4BBPayeeType-other">other</a>
+                </td>
+                <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType</td>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBRelatedClaimRelationshipCodes-replacedby"> </a>
+                  <a href="CodeSystem-C4BBRelatedClaimRelationshipCodes.html#C4BBRelatedClaimRelationshipCodes-replacedby">replacedby</a>
                 </td>
                 <td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBRelatedClaimRelationshipCodes</td>
-                <td>Replaced by</td>
                 <td>Replaced by claim number</td>
+                <td>The current claim has been adjusted; i.e., replaced by or merged to another claim number.</td>
               </tr>
             </table>
           </div>
@@ -1909,7 +2201,7 @@
         <name value="C4BBRelatedClaimRelationshipCodes"/>
         <title value="C4BB Related Claim Relationship Codes"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -1929,11 +2221,11 @@
             <code value="US"/>
           </coding>
         </jurisdiction>
-        <copyright value="This Code System is not copyrighted."/>
+        <copyright value="This Valueset is not copyrighted."/>
         <expansion>
-          <identifier value="urn:uuid:2515488a-3357-4e2b-b082-d97cc4bf6fad"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
-          <total value="2"/>
+          <identifier value="urn:uuid:38709ae7-5e13-4b75-a88e-4e342c5a363e"/>
+          <timestamp value="2020-09-16T22:52:47+00:00"/>
+          <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1941,6 +2233,10 @@
           <parameter>
             <name value="version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship|4.2.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType|0.1.4"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -1952,9 +2248,17 @@
             <display value="Prior Claim"/>
           </contains>
           <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType"/>
+            <code value="provider"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType"/>
+            <code value="other"/>
+          </contains>
+          <contains>
             <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBRelatedClaimRelationshipCodes"/>
-            <code value="replacedBy"/>
-            <display value="Replaced by"/>
+            <code value="replacedby"/>
+            <display value="Replaced by claim number"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1989,7 +2293,7 @@
         <name value="AHANUBCRevenueCodes"/>
         <title value="AHA NUBC Revenue Codes"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2011,8 +2315,8 @@
         </jurisdiction>
         <copyright value="The Official UB-04 Data Specifications Manual, copyrighted by the American Hospital Association, is the only official source of UB-04 billing information adopted by the National Uniform Billing Committee. &#xA;No other publication&#x2014;governmental or private/commercial&#x2014;can be considered authoritative. See their website for licensing terms and conditions.&#xA;As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
         <expansion>
-          <identifier value="urn:uuid:02ef7f7f-ed1a-4a8c-ae7c-b512ca4cc9dd"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
+          <identifier value="urn:uuid:886b5b0a-80a7-4d53-95ff-453da28cf23b"/>
+          <timestamp value="2020-09-16T22:52:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2054,7 +2358,7 @@
         <name value="AMACPTCMSHCPCSModifiers"/>
         <title value="AMA CPT CMS HCPCS Modifiers"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2076,8 +2380,8 @@
         </jurisdiction>
         <copyright value="CPT copyright 2014 American Medical Association. All rights reserved. HCPCS Level II Alphanumeric Codes are maintained by the US Centers for Medicare and Medicaid Services (CMS) and are available for public use. As HL7 is working with the owning authorities to finalize the urls, the urls are subject to change."/>
         <expansion>
-          <identifier value="urn:uuid:f4778720-ac17-43c7-8c2d-cece62f0de85"/>
-          <timestamp value="2020-09-15T18:56:04+00:00"/>
+          <identifier value="urn:uuid:5f8917a0-7155-46c2-9c8d-106c232e2d5a"/>
+          <timestamp value="2020-09-16T22:52:45+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2123,7 +2427,7 @@
         <name value="ICD10PCS"/>
         <title value="ICD-10-PCS"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2145,8 +2449,8 @@
         </jurisdiction>
         <copyright value="The code set is owned by CMS and is available for use."/>
         <expansion>
-          <identifier value="urn:uuid:8027faac-a6c4-4672-acec-b9a5f0013d0c"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
+          <identifier value="urn:uuid:4c153757-03a4-454c-9842-f3a078055143"/>
+          <timestamp value="2020-09-16T22:52:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2188,7 +2492,7 @@
         <name value="NCPDPPrescriptionOriginCode"/>
         <title value="NCPDP Prescription Origin Code"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2210,8 +2514,8 @@
         </jurisdiction>
         <copyright value="NCPDP codes are available by subscription at ncpdp.org. As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
         <expansion>
-          <identifier value="urn:uuid:acdc8641-5263-47cb-9d88-5b4928dba33c"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
+          <identifier value="urn:uuid:b847910b-b1e1-4665-94a5-c4e35ec9e72e"/>
+          <timestamp value="2020-09-16T22:52:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2253,7 +2557,7 @@
         <name value="AHANUBCPointOfOriginForAdmissionOrVisit"/>
         <title value="AHA NUBC Point of Origin for Admission or Visit."/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2275,8 +2579,8 @@
         </jurisdiction>
         <copyright value="The Official UB-04 Data Specifications Manual, copyrighted by the American Hospital Association, is the only official source of UB-04 billing information adopted by the National Uniform Billing Committee. &#xA;No other publication&#x2014;governmental or private/commercial&#x2014;can be considered authoritative. See their website for licensing terms and conditions.&#xA;As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
         <expansion>
-          <identifier value="urn:uuid:b79e60da-5a42-45bb-a4f2-b7ac10fd7998"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
+          <identifier value="urn:uuid:9ba2d1ae-a8e4-4350-8a87-ab0932d21bd6"/>
+          <timestamp value="2020-09-16T22:52:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2342,7 +2646,7 @@
         <name value="C4BBPayerProviderContractingStatus"/>
         <title value="C4BB Payer Provider Contracting Status"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2364,8 +2668,8 @@
         </jurisdiction>
         <copyright value="This Valueset is not copyrighted."/>
         <expansion>
-          <identifier value="urn:uuid:123dec35-99d8-4456-900d-459c055f2bc1"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
+          <identifier value="urn:uuid:1fa75469-e7eb-49a2-af83-4bff868a1de7"/>
+          <timestamp value="2020-09-16T22:52:48+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2477,7 +2781,7 @@
         <name value="C4BBClaimInstitutionalCareTeamRole"/>
         <title value="C4BB Claim Institutional Care Team Role "/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2499,8 +2803,8 @@
         </jurisdiction>
         <copyright value="This Valueset is not copyrighted."/>
         <expansion>
-          <identifier value="urn:uuid:19868368-8529-4e10-ab49-f648dbb199ca"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
+          <identifier value="urn:uuid:47a777d9-f37b-4b9c-a577-d9b3f67b710e"/>
+          <timestamp value="2020-09-16T22:52:48+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2604,7 +2908,7 @@
         <name value="C4BBPayerBenefitPaymentStatus"/>
         <title value="C4BB Payer Benefit Payment Status"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2626,8 +2930,8 @@
         </jurisdiction>
         <copyright value="This Valueset is not copyrighted."/>
         <expansion>
-          <identifier value="urn:uuid:79b5e674-9255-49d4-869d-60e2503da8aa"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
+          <identifier value="urn:uuid:c4288f66-86ec-4fa7-97bb-2dc1cda5c253"/>
+          <timestamp value="2020-09-16T22:52:48+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2697,7 +3001,7 @@
                   <a href="https://terminology.hl7.org/1.0.0//CodeSystem-claimcareteamrole.html#claimcareteamrole-primary">primary</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/claimcareteamrole</td>
-                <td>Primary provider.</td>
+                <td>Primary provider</td>
                 <td>The primary care provider.</td>
               </tr>
               <tr>
@@ -2726,7 +3030,7 @@
         <name value="C4BBClaimProfessionalAndNonClinicianCareTeamRole"/>
         <title value="C4BB Claim Professional And Non Clinician Care Team Role "/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2748,8 +3052,8 @@
         </jurisdiction>
         <copyright value="This Valueset is not copyrighted."/>
         <expansion>
-          <identifier value="urn:uuid:7ee154e1-5e4f-48ee-aa99-ce27ef6c5e98"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
+          <identifier value="urn:uuid:0375a87a-1176-477c-8431-94fa32d64cf7"/>
+          <timestamp value="2020-09-16T22:52:48+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2766,7 +3070,7 @@
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/claimcareteamrole"/>
             <code value="primary"/>
-            <display value="Primary provider."/>
+            <display value="Primary provider"/>
           </contains>
           <contains>
             <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole"/>
@@ -2811,7 +3115,7 @@
         <name value="X12ClaimAdjustmentReasonCodesCMSRemittanceAdviceRemarkCodes"/>
         <title value="X12 Claim Adjustment Reason Codes (CARC) - CMS- Remittance Advice Remark Codes (RARC)"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -2833,8 +3137,8 @@
         </jurisdiction>
         <copyright value="CARC codes are owned, maintained and distributed by X12.  The Centers for Medicare &amp; Medicaid Services (CMS) maintain Remittance Advice Remark Codes (RARC) used throughout the US health care industry."/>
         <expansion>
-          <identifier value="urn:uuid:f002ec49-075f-4946-84fe-fe2d6d7d32c5"/>
-          <timestamp value="2020-09-15T18:56:06+00:00"/>
+          <identifier value="urn:uuid:fa269118-0172-4913-91af-e090723da27a"/>
+          <timestamp value="2020-09-16T22:52:48+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -2847,301 +3151,6 @@
             <name value="excludeNested"/>
             <valueBoolean value="true"/>
           </parameter>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategory"/>
-    <resource>
-      <ValueSet>
-        <id value="ClaimInformationCategory"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 17 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-ClaimInformationCategory.html">Claim Information Category v0.1.4 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-ClaimInformationCategory.html">
-                <code>http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-admissionperiod"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-admissionperiod">admissionperiod</a>
-                </td>
-                <td>Admission Period</td>
-                <td>Admission Period</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-admsrc"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-admsrc">admsrc</a>
-                </td>
-                <td>admsrc</td>
-                <td>Point Of Origin For Admission Or Visit.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-admtype"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-admtype">admtype</a>
-                </td>
-                <td>admtype</td>
-                <td>Priority of the admission. Information located on (UB04 Form Locator 14). For example, an admission type of elective indicates that the patient&#39;s condition permitted time for medical services to be scheduled.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-billingnetworkcontractingstatus"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-billingnetworkcontractingstatus">billingnetworkcontractingstatus</a>
-                </td>
-                <td>billingnetworkcontractingstatus</td>
-                <td>Indicates the network  status of the billing physician.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-brandgenericcode"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-brandgenericcode">brandgenericcode</a>
-                </td>
-                <td>brandgenericcode</td>
-                <td>Whether the plan adjudicated the claim as a brand or generic drug.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-claimrecvddate"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-claimrecvddate">claimrecvddate</a>
-                </td>
-                <td>claimmrecvddate</td>
-                <td>The date the claim was received by the payer.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-compoundcode"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-compoundcode">compoundcode</a>
-                </td>
-                <td>compoundcode</td>
-                <td>NCPDP Compound code</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-dawcode"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-dawcode">dawcode</a>
-                </td>
-                <td>dawcode</td>
-                <td>Prescriber&#39;s instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-dayssupply"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-dayssupply">dayssupply</a>
-                </td>
-                <td>dayssupply</td>
-                <td>Number of days supply of medication dispensed by the pharmacy.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-discharge-status"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-discharge-status">discharge-status</a>
-                </td>
-                <td>discharge-status</td>
-                <td>Patient’s status as of the discharge date for a facility stay.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-drg"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-drg">drg</a>
-                </td>
-                <td>drg</td>
-                <td>Diagnosis Related Group</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-performingnetworkcontractingstatus"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-performingnetworkcontractingstatus">performingnetworkcontractingstatus</a>
-                </td>
-                <td>performingnetworkcontractingstatus</td>
-                <td>Indicates the network  status of the performing physician.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-placeofservice"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-placeofservice">placeofservice</a>
-                </td>
-                <td>placeofservice</td>
-                <td>Code indicating the location, such as inpatient, outpatient facility, office, or home health agency, where this service was performed.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-refillnum"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-refillnum">refillnum</a>
-                </td>
-                <td>refillnum</td>
-                <td>The number fill of the current dispensed supply (0, 1, 2, etc.).</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-rxorigincode"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-rxorigincode">rxorigincode</a>
-                </td>
-                <td>rxorigincode</td>
-                <td>Whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-servicefacility"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-servicefacility">servicefacility</a>
-                </td>
-                <td>Service Facility</td>
-                <td>Service Facility</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-ClaimInformationCategory-typeofbill"> </a>
-                  <a href="CodeSystem-ClaimInformationCategory.html#ClaimInformationCategory-typeofbill">typeofbill</a>
-                </td>
-                <td>Type of Bill</td>
-                <td>Type of Bill</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/ClaimInformationCategory"/>
-        <version value="0.1.4"/>
-        <name value="ClaimInformationCategory"/>
-        <title value="Claim Information Category"/>
-        <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
-        <publisher value="HL7 Financial Management Working Group"/>
-        <contact>
-          <name value="HL7 Financial Management Working Group"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="fm@lists.HL7.org"/>
-          </telecom>
-        </contact>
-        <description value="Claim Information Category - Used as the discriminator for supportingInfo"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-          </coding>
-        </jurisdiction>
-        <copyright value="This Valueset is not copyrighted."/>
-        <expansion>
-          <identifier value="urn:uuid:c088d8cc-f7bf-4145-84c0-6f21d3520fb9"/>
-          <timestamp value="2020-09-15T18:56:07+00:00"/>
-          <total value="17"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory|0.1.4"/>
-          </parameter>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="admissionperiod"/>
-            <display value="Admission Period"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="admsrc"/>
-            <display value="admsrc"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="admtype"/>
-            <display value="admtype"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="billingnetworkcontractingstatus"/>
-            <display value="billingnetworkcontractingstatus"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="brandgenericcode"/>
-            <display value="brandgenericcode"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="claimrecvddate"/>
-            <display value="claimmrecvddate"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="compoundcode"/>
-            <display value="compoundcode"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="dawcode"/>
-            <display value="dawcode"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="dayssupply"/>
-            <display value="dayssupply"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="discharge-status"/>
-            <display value="discharge-status"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="drg"/>
-            <display value="drg"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="performingnetworkcontractingstatus"/>
-            <display value="performingnetworkcontractingstatus"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="placeofservice"/>
-            <display value="placeofservice"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="refillnum"/>
-            <display value="refillnum"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="rxorigincode"/>
-            <display value="rxorigincode"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="servicefacility"/>
-            <display value="Service Facility"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
-            <code value="typeofbill"/>
-            <display value="Type of Bill"/>
-          </contains>
         </expansion>
       </ValueSet>
     </resource>
@@ -3175,7 +3184,7 @@
         <name value="NCPDPBrandGenericCode"/>
         <title value="NCPDP Brand Generic Code"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -3197,8 +3206,8 @@
         </jurisdiction>
         <copyright value="NCPDP codes are available by subscription at ncpdp.org. As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
         <expansion>
-          <identifier value="urn:uuid:335301ee-f0b3-4fd5-a130-74557ae3f7c1"/>
-          <timestamp value="2020-09-15T18:56:07+00:00"/>
+          <identifier value="urn:uuid:ce7d53eb-2fb7-4da8-b22f-6547d56d0f31"/>
+          <timestamp value="2020-09-16T22:52:48+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -3539,7 +3548,7 @@
         <name value="ICD10CM"/>
         <title value="ICD-10-CM Diagnosis Codes"/>
         <status value="active"/>
-        <date value="2020-09-15T18:55:01+00:00"/>
+        <date value="2020-09-16T22:51:32+00:00"/>
         <publisher value="HL7 Financial Management Working Group"/>
         <contact>
           <name value="HL7 Financial Management Working Group"/>
@@ -3561,8 +3570,8 @@
         </jurisdiction>
         <copyright value="The ICD-10-CM code set is maintained by the National Center for Health Statistics (NCHS) of the Centers for Disease Control and Prevention (CDC) for use in the United States. &#xA;It is based on ICD-10, which was developed by the World Health Organization (WHO) and is used internationally as a medical classification. &#xA;The code set is owned by the NCHS-CDC and is available for use.  "/>
         <expansion>
-          <identifier value="urn:uuid:70cfcb51-4442-40c4-b5e7-62a3e3337b00"/>
-          <timestamp value="2020-09-15T18:56:07+00:00"/>
+          <identifier value="urn:uuid:325767ad-84bc-4964-9d5f-06ad33cc628f"/>
+          <timestamp value="2020-09-16T22:52:48+00:00"/>
           <total value="42"/>
           <parameter>
             <name value="excludeNested"/>

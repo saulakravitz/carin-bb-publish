@@ -1,7 +1,13 @@
 "Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: Workflow Pattern","Mapping: FiveWs Pattern Mapping","Mapping: HL7 v2 Mapping","Mapping: RIM Mapping"
 "ExplanationOfBenefit","","EOB
 ","",0,*,"","","","","Explanation of Benefit resource","This resource provides: the claim details; adjudication details from the processing of a Claim; and optionally account balance information, for informing the subscriber of the benefits provided.","","","","","","","","","",,,,,"",,,,"ExplanationOfBenefit",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
-dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}","Event","Entity. Role, or Act"
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}EOB-inst-careTeam-practitioner:Institutional EOB:  Careteam roles refer to a practitioner {(
+     careTeam.where(role.where(coding.where(code in ('attending' | 'primary' | 'referring' | 'supervising')).exists()).exists()).exists() implies
+     careTeam.where(role.where(coding.where(code in ('attending' | 'primary' | 'referring' | 'supervising')).exists()).exists()).provider.all(resolve() is Practitioner)
+    )}EOB-inst-careTeam-organization:Institutional EOB:  Careteam roles refer to an organization {( 
+     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).exists() implies
+     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).provider.all(resolve() is Organization)
+    )}","Event","Entity. Role, or Act"
 "ExplanationOfBenefit.id","","","",0,1,"","","Y","string {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "ExplanationOfBenefit.meta","","","",0,1,"Y","","Y","Meta {[]} {[]}
@@ -237,10 +243,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "ExplanationOfBenefit.careTeam","","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","Care Team members","The members of the team who provided the products and services.","","Common to identify the responsible and supporting practitioners.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.careTeam",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-EOB-inst-careTeam-practitioner:Institutional EOB:  Careteam roles refer to a practitioner {( careTeam.role.coding.code in 
-('attending' or 'primary' or 'referring' or 'supervising')) implies 
- careTeam.provider.reference.resolve().is(FHIR.Practitioner)}EOB-inst-careTeam-organization:Institutional EOB:  Careteam roles refer to an organization {( careTeam.role.coding.code='performing') implies 
- careTeam.provider.reference.resolve().is(FHIR.Organization)}"
+"
 "ExplanationOfBenefit.careTeam.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "ExplanationOfBenefit.careTeam.extension","","extensions
@@ -323,7 +326,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory""/>
+    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""billingnetworkcontractingstatus""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -340,7 +343,7 @@ string {[]} {[]}Quantity {[]} {[]}Attachment {[]} {[]}Reference {[]} {[Canonical
 "ExplanationOfBenefit.supportingInfo.reason","","","",0,1,"","","","Coding {[]} {[]}
 ","Explanation for the information","Provides the reason in the situation where a reason code is required in addition to the content.","For example: the reason for the additional stay, or why a tooth is  missing.","Needed when the supporting information has both a date and amount/value and requires explanation.","","","","","","","",,"example","Reason codes for the missing teeth.","http://hl7.org/fhir/ValueSet/missing-tooth-reason","",,,,"ExplanationOfBenefit.supportingInfo.reason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo","claimrecvddate","","",0,1,"Y","","","BackboneElement {[]} {[]}
+"ExplanationOfBenefit.supportingInfo","clmrecvddate","","",0,1,"Y","","","BackboneElement {[]} {[]}
 ","The date the claim was received by the payer (88)","Additional information codes regarding exceptions, special considerations, the condition, situation, prior or concurrent issues.","Often there are multiple jurisdiction specific valuesets which are required.","Typically these information codes are required to support the services rendered or the adjudication of the services rendered.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.id","","","",0,1,"","","","string {[]} {[]}
@@ -361,8 +364,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory""/>
-    <code value=""claimrecvddate""/>
+    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
+    <code value=""clmrecvddate""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -403,7 +406,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory""/>
+    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""typeofbill""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -441,8 +444,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory""/>
-    <code value=""admsrc""/>
+    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
+    <code value=""pointoforigin""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -479,7 +482,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory""/>
+    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""admtype""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -517,7 +520,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory""/>
+    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""discharge-status""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -555,7 +558,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory""/>
+    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""drg""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -593,7 +596,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory""/>
+    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""admissionperiod""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -877,7 +880,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.item.adjudication.category","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of adjudication information","A code to indicate the information type of this adjudication record. Information types may include: the value submitted, maximum values or percentages allowed or payable under the plan, amounts that the patient is responsible for in-aggregate or pertaining to this item, amounts paid by other coverages, and the benefit payable for this item.","For example, codes indicating: Co-Pay, deductible, eligible, benefit, tax, etc.","Needed to enable understanding of the context of the other information in the adjudication.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategory""/>
+    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator""/>
     <code value=""denialreason""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","The adjudication codes.","http://hl7.org/fhir/ValueSet/adjudication","",,,,"ExplanationOfBenefit.item.adjudication.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -909,7 +912,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.item.adjudication.category","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of adjudication information","A code to indicate the information type of this adjudication record. Information types may include: the value submitted, maximum values or percentages allowed or payable under the plan, amounts that the patient is responsible for in-aggregate or pertaining to this item, amounts paid by other coverages, and the benefit payable for this item.","For example, codes indicating: Co-Pay, deductible, eligible, benefit, tax, etc.","Needed to enable understanding of the context of the other information in the adjudication.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategory""/>
+    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator""/>
     <code value=""allowedunits""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","The adjudication codes.","http://hl7.org/fhir/ValueSet/adjudication","",,,,"ExplanationOfBenefit.item.adjudication.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1248,7 +1251,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.adjudication.category","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of adjudication information","A code to indicate the information type of this adjudication record. Information types may include: the value submitted, maximum values or percentages allowed or payable under the plan, amounts that the patient is responsible for in-aggregate or pertaining to this item, amounts paid by other coverages, and the benefit payable for this item.","For example, codes indicating: Co-Pay, deductible, eligible, benefit, tax, etc.","Needed to enable understanding of the context of the other information in the adjudication.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimAdjudicationCategory""/>
+    <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator""/>
     <code value=""denialreason""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","The adjudication codes.","http://hl7.org/fhir/ValueSet/adjudication","",,,,"ExplanationOfBenefit.item.adjudication.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

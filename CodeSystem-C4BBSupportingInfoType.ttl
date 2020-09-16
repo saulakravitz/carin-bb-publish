@@ -1,0 +1,136 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "C4BBSupportingInfoType"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">admissionperiod<a name=\"C4BBSupportingInfoType-admissionperiod\"> </a></td><td>Admission Period</td><td>Dates corresponding with the admission and discharge of the beneficiary to a facility</td></tr><tr><td style=\"white-space:nowrap\">pointoforigin<a name=\"C4BBSupportingInfoType-pointoforigin\"> </a></td><td>Point Of Origin</td><td>UB-04 Source of Admission (FL-15) identifies the place where the patient was identified as needing admission to a facility.</td></tr><tr><td style=\"white-space:nowrap\">admtype<a name=\"C4BBSupportingInfoType-admtype\"> </a></td><td>Admission Type</td><td>UB-04 Priority of the admission (FL-14) indicates, for example, an admission type of elective indicates that the patient's condition permitted time for medical services to be scheduled.</td></tr><tr><td style=\"white-space:nowrap\">billingnetworkcontractingstatus<a name=\"C4BBSupportingInfoType-billingnetworkcontractingstatus\"> </a></td><td>Billing Network Contracting Status</td><td>Indicates that the Billing Provider has a contract with the Payer as of the effective date of service or admission.</td></tr><tr><td style=\"white-space:nowrap\">brandgenericcode<a name=\"C4BBSupportingInfoType-brandgenericcode\"> </a></td><td>Brand Generic Code</td><td>NCPDP code indicating whether the plan adjudicated the claim as a brand or generic drug.</td></tr><tr><td style=\"white-space:nowrap\">clmrecvddate<a name=\"C4BBSupportingInfoType-clmrecvddate\"> </a></td><td>Claim Received Date</td><td>Date the claim was received by the payer.</td></tr><tr><td style=\"white-space:nowrap\">compoundcode<a name=\"C4BBSupportingInfoType-compoundcode\"> </a></td><td>Compound Code</td><td>NCPDP code indicating whether or not the prescription is a compound.</td></tr><tr><td style=\"white-space:nowrap\">dawcode<a name=\"C4BBSupportingInfoType-dawcode\"> </a></td><td>DAW (Dispense As Written) Code</td><td>NCPDP code indicating the prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication.</td></tr><tr><td style=\"white-space:nowrap\">dayssupply<a name=\"C4BBSupportingInfoType-dayssupply\"> </a></td><td>Days Supply</td><td>NCPDP value indicating the Number of days supply of medication dispensed by the pharmacy.</td></tr><tr><td style=\"white-space:nowrap\">discharge-status<a name=\"C4BBSupportingInfoType-discharge-status\"> </a></td><td>Discharge Status</td><td>UB-04 Discharge Status (FL-17) indicates the patient’s status as of the discharge date for a facility stay.</td></tr><tr><td style=\"white-space:nowrap\">drg<a name=\"C4BBSupportingInfoType-drg\"> </a></td><td>DRG</td><td>DRG (Diagnosis Related Group), including the code system, the DRG version and the code value</td></tr><tr><td style=\"white-space:nowrap\">performingnetworkcontractingstatus<a name=\"C4BBSupportingInfoType-performingnetworkcontractingstatus\"> </a></td><td>Performing Network Contracting Status</td><td>Indicates that the Performing Provider has a contract with the Payer as of the effective date of service or admission.</td></tr><tr><td style=\"white-space:nowrap\">refillnum<a name=\"C4BBSupportingInfoType-refillnum\"> </a></td><td>Refill Number</td><td>NCPDP value indicating the number fill of the current dispensed supply (0, 1, 2, etc.)</td></tr><tr><td style=\"white-space:nowrap\">rxorigincode<a name=\"C4BBSupportingInfoType-rxorigincode\"> </a></td><td>Rx Origin Code</td><td>NCPDP code indicating whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy.</td></tr><tr><td style=\"white-space:nowrap\">servicefacility<a name=\"C4BBSupportingInfoType-servicefacility\"> </a></td><td>Service Facility</td><td>The facility where the service occurred.  Examples include hospitals, nursing homes, laboratories or homeless shelters.</td></tr><tr><td style=\"white-space:nowrap\">typeofbill<a name=\"C4BBSupportingInfoType-typeofbill\"> </a></td><td>Type of Bill</td><td>UB-04 Type of Bill (FL-04) provides specific information for payer purposes.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType"];
+  fhir:CodeSystem.version [ fhir:value "0.1.4"];
+  fhir:CodeSystem.name [ fhir:value "C4BBSupportingInfoType"];
+  fhir:CodeSystem.title [ fhir:value "C4BB Supporting Info Type"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2020-09-16T22:51:32+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Financial Management Working Group"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Financial Management Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/fm/index.cfm" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Claim Information Category - Used as the discriminator for supportingInfo"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "This CodeSystem is not copyrighted."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "16"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "admissionperiod" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Admission Period" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dates corresponding with the admission and discharge of the beneficiary to a facility" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "pointoforigin" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Point Of Origin" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "UB-04 Source of Admission (FL-15) identifies the place where the patient was identified as needing admission to a facility." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "admtype" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Admission Type" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "UB-04 Priority of the admission (FL-14) indicates, for example, an admission type of elective indicates that the patient's condition permitted time for medical services to be scheduled." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "billingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Billing Network Contracting Status" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates that the Billing Provider has a contract with the Payer as of the effective date of service or admission." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "brandgenericcode" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Brand Generic Code" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "NCPDP code indicating whether the plan adjudicated the claim as a brand or generic drug." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "clmrecvddate" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Claim Received Date" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Date the claim was received by the payer." ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "compoundcode" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Compound Code" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "NCPDP code indicating whether or not the prescription is a compound." ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "dawcode" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DAW (Dispense As Written) Code" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "NCPDP code indicating the prescriber's instruction regarding substitution of generic equivalents or order to dispense the specific prescribed medication." ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "dayssupply" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Days Supply" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "NCPDP value indicating the Number of days supply of medication dispensed by the pharmacy." ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "discharge-status" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Discharge Status" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "UB-04 Discharge Status (FL-17) indicates the patient’s status as of the discharge date for a facility stay." ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "drg" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DRG" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "DRG (Diagnosis Related Group), including the code system, the DRG version and the code value" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "performingnetworkcontractingstatus" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Performing Network Contracting Status" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates that the Performing Provider has a contract with the Payer as of the effective date of service or admission." ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "refillnum" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Refill Number" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "NCPDP value indicating the number fill of the current dispensed supply (0, 1, 2, etc.)" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "rxorigincode" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rx Origin Code" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "NCPDP code indicating whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy." ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "servicefacility" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Service Facility" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The facility where the service occurred.  Examples include hospitals, nursing homes, laboratories or homeless shelters." ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "typeofbill" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Type of Bill" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "UB-04 Type of Bill (FL-04) provides specific information for payer purposes." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/CodeSystem/C4BBSupportingInfoType.ttl> .
+
+# -------------------------------------------------------------------------------------
+

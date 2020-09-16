@@ -3,14 +3,14 @@
   "id": "C4BBPayerClaimPaymentStatusCode",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-C4BBAdjudication.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-C4BBAdjudication.html#C4BBAdjudication-paid\">paid</a></td><td>paid</td><td>paid</td></tr><tr><td><a href=\"CodeSystem-C4BBAdjudication.html#C4BBAdjudication-denied\">denied</a></td><td>denied</td><td>denied</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-C4BBPayerAdjudicationStatus.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-paid\">paid</a></td><td>Paid</td><td>Indicates if the claim was approved for payment</td></tr><tr><td><a href=\"CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-denied\">denied</a></td><td>Denied</td><td>Indicates if the claim was denied</td></tr><tr><td><a href=\"CodeSystem-C4BBPayerAdjudicationStatus.html#C4BBPayerAdjudicationStatus-partiallypaid\">partiallypaid</a></td><td>Partially Paid</td><td>Indicates that some line items on the claim were denied</td></tr></table></li></ul></div>"
   },
   "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBPayerClaimPaymentStatusCode",
   "version": "0.1.4",
   "name": "C4BBPayerClaimPaymentStatusCode",
   "title": "C4BB Payer Claim Payment Status Code",
   "status": "active",
-  "date": "2020-09-15T18:55:01+00:00",
+  "date": "2020-09-16T22:51:32+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -42,15 +42,16 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication",
+        "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus",
         "concept": [
           {
-            "code": "paid",
-            "display": "paid"
+            "code": "paid"
           },
           {
-            "code": "denied",
-            "display": "denied"
+            "code": "denied"
+          },
+          {
+            "code": "partiallypaid"
           }
         ]
       }

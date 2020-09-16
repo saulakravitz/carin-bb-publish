@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-09-15T18:55:01+00:00",
+  "date": "2020-09-16T22:51:32+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -667,7 +667,7 @@
           "reference": "ValueSet/C4BBClaimInpatientInstitutionalDiagnosisType"
         },
         "name": "C4BB Claim Inpatient Institutional Diagnosis Type",
-        "description": "Indicates if the inpatient institutional diagnosis is admitting, principal, secondary or an external cause of injury.",
+        "description": "Indicates if the inpatient institutional diagnosis is admitting, principal, other or an external cause of injury.",
         "exampleBoolean": false
       },
       {
@@ -703,7 +703,7 @@
           "reference": "ValueSet/C4BBClaimOutpatientInstitutionalDiagnosisType"
         },
         "name": "C4BB Claim Outpatient Institutional Diagnosis Type",
-        "description": "Indicates if the outpatient institutional diagnosis is admitting, principal, secondary an external cause of injury or a patient reason for visit",
+        "description": "Indicates if the outpatient institutional diagnosis is principal, other, an external cause of injury or a patient reason for visit.",
         "exampleBoolean": false
       },
       {
@@ -858,6 +858,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-C4BBSupportingInfoType.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/C4BBSupportingInfoType"
+        },
+        "name": "C4BB SupportingInfo Type",
+        "description": "Used as the discriminator for the types of supporting information for the CARIN IG for Blue Button� Implementation Guide.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-CMSDRG.html"
           }
         ],
@@ -884,24 +902,6 @@
         },
         "name": "CMS Place of Service Codes (POS)",
         "description": "Place of Service Codes are two-digit codes placed on health care professional claims to indicate the setting in which a service was provided.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-ClaimInformationCategory.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/ClaimInformationCategory"
-        },
-        "name": "Claim Information Category",
-        "description": "Claim Information Category - Used as the discriminator for supportingInfo",
         "exampleBoolean": false
       },
       {
@@ -1254,6 +1254,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-C4BBAdjudicationDiscriminator.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/C4BBAdjudicationDiscriminator"
+        },
+        "name": "C4BB Adjudication Discriminator",
+        "description": "Used as the discriminator for the data elements in adjudication and item.adjudication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-C4BBClaimCareTeamRole.html"
           }
         ],
@@ -1279,7 +1297,7 @@
           "reference": "CodeSystem/C4BBClaimDiagnosisType"
         },
         "name": "C4BB Claim Diagnosis Type",
-        "description": "Indicates if the institutional diagnosis is admitting, principal, secondary an external cause of injury or a patient reason for visit.  Complements http://terminology.hl7.org/CodeSystem/ex-diagnosistype.",
+        "description": "Indicates if the institutional diagnosis is admitting, principal, secondary, other, an external cause of injury or a patient reason for visit.  Complements http://terminology.hl7.org/CodeSystem/ex-diagnosistype.",
         "exampleBoolean": false
       },
       {
@@ -1308,14 +1326,32 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-C4BBIdentifierType.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/C4BBIdentifierType"
+        },
+        "name": "Identifier Type",
+        "description": "Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-C4BBPayeeType.html"
           }
         ],
         "reference": {
           "reference": "CodeSystem/C4BBPayeeType"
         },
-        "name": "C4BB Related Claim Relationship Codes",
-        "description": "Indicates that a payee type may be a beneficiary ",
+        "name": "C4BB Payee Type",
+        "description": "Indicates that a payee type may be a beneficiary.",
         "exampleBoolean": false
       },
       {
@@ -1352,6 +1388,24 @@
         },
         "name": "C4BB Related Claim Relationship Codes",
         "description": "Identifies if the current claim represents a claim that has been adjusted and was given a prior claim number or if the current claim has been adjusted; i.e., replaced by or merged to another claim number.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-C4BBSupportingInfoType.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/C4BBSupportingInfoType"
+        },
+        "name": "C4BB Supporting Info Type",
+        "description": "Claim Information Category - Used as the discriminator for supportingInfo",
         "exampleBoolean": false
       },
       {
@@ -1434,42 +1488,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-ClaimAdjudicationCategory.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/ClaimAdjudicationCategory"
-        },
-        "name": "Claim Adjudication Category",
-        "description": "Values for EOB.item.adjudication.category and total.category",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-ClaimInformationCategory.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/ClaimInformationCategory"
-        },
-        "name": "Claim Information Category",
-        "description": "Claim Information Category - Used as the discriminator for supportingInfo",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-FDANDC.html"
           }
         ],
@@ -1514,24 +1532,6 @@
         },
         "name": "ICD-10-PCS",
         "description": "International Classification of Diseases Surgical Procedures (ICD-10).",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-IdentifierTypeCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/IdentifierTypeCS"
-        },
-        "name": "Identifier Type",
-        "description": "Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203",
         "exampleBoolean": false
       },
       {
