@@ -154,7 +154,7 @@
       <li>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
-      <li><a name="c88dc177-36ff-4951-8047-210112351a54">​</a>
+      <li><a name="102730e8-d684-4078-a28d-0a4f25a7d2e7">​</a>
         <a href="Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
       </li>
     </ul>
@@ -244,7 +244,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3>CARIN Alliance Code of Conduct</h3>
 <h3>CARIN BB IG Relation to other IGs</h3>
 <h4>US Core</h4>
-<p>CARIN BB uses the ExplanationOfBenefit Resource as its primary resource. Reference Resources are Coverage, Patient, Practitioner, PractitionerRole, Organization and Location. Since the ExplanationOfBenefit and Coverage profiles are not included in the US Core, there is no alignment requirement for these profiles. Patient, Practitioner, PractitionerRole, Organization and Location are US Core Profiles. Since these are supporting / reference profiles (rather than a focus profile) in CARIN BB, the alignment with the US Core is on the content of these profiles, but not on the search parameters. The following diagram provides a high-level view of the relationships between resources used in this IG. It does not necessarily reflect all of the relationships/references between resources.&nbsp;</p>
+<p>CARIN BB uses the ExplanationOfBenefit Resource as its primary resource. Reference Resources are Coverage, Patient, Practitioner, PractitionerRole, Organization and Location. Since the ExplanationOfBenefit and Coverage profiles are not included in the US Core, there is no alignment requirement for these profiles. Patient, Practitioner, PractitionerRole, Organization and Location are US Core Profiles. Since these are supporting / reference profiles (rather than a focus profile) in CARIN BB, the alignment with the US Core is on the content of these profiles, but not on the search parameters. The following diagram provides a high-level view of the relationships between resources used in this IG. It does not necessarily reflect all of the relationships/references between resources.
+<img src="CARINBBResources.png" style="width:100%;float:none;align:middle;"/></p>
 <h4>SMART Application Launch</h4>
 <p>The Consumer-Directed Payer Data Exchange IG requires the use of the SMART App Launch Framework’s standalone launch sequence. Data holders SHALL support the use of the launch/Patient scope. The use of the launch/Patient scope will make it clear to an application the patient context that must be used for the duration of the connection. The authorization sequence supports the ability for data holders to provide a patient selection widget that can be used to enable delegated access to member information. Details about the SMART App Launch Framework and standalone launch sequence can be found here. The SMART App IG provides guidance on how to configure OAuth 2.0 servers to mediate access based on a set of rules configured to enforce institutional policy, which may include requesting end-user authorization. The SMART App IG does not dictate the institutional policies that are implemented in the authorization server. Security mechanisms, such as those mandated by HIPAA in the US (end-user authentication, session time-out, security auditing, and accounting of disclosures) are outside the scope of this profile. The SMART App IG also provides guidance on how to handle authentication. If the app needs to authenticate the identity of the end-user, it should include two OpenID Connect scopes: openid and fhirUser. When these scopes are requested, and the request is granted, the app will receive an id_token along with the access token. For details, see the description <a href="http://hl7.org/fhir/smart-app-launch/scopes-and-launch-context/index.html">here</a>.</p>
 <h4>PDEX</h4>
@@ -282,7 +283,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2020 16:59+0000">2020-09-17</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2020 20:29+0000">2020-09-17</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

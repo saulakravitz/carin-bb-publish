@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Organization/PAT-V-FR0000010000010001-0000000UPP> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PAT-V-FR0000010000010001-0000000UPP"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-09-17T15:34:39.0216454-04:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: Tax ID number: 987654321, payerid: 0000000UPP</p><p><b>active</b>: false</p><p><b>name</b>: UNIVERSITY OF PITTSBURGH PHYSICIANS</p><p><b>address</b>: PO BOX 67890 Pittsburgh PA 15222 USA </p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "TAX" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.4.4" ];
+     fhir:Identifier.value [ fhir:value "987654321" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS" ];
+         fhir:Coding.code [ fhir:value "payerid" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://www.upmchealthplan.com/VendorId" ];
+     fhir:Identifier.value [ fhir:value "0000000UPP" ]
+  ];
+  fhir:Organization.active [ fhir:value "false"^^xsd:boolean];
+  fhir:Organization.name [ fhir:value "UNIVERSITY OF PITTSBURGH PHYSICIANS"];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.line [
+       fhir:value "PO BOX 67890";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Pittsburgh" ];
+     fhir:Address.state [ fhir:value "PA" ];
+     fhir:Address.postalCode [ fhir:value "15222" ];
+     fhir:Address.country [ fhir:value "USA" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Organization/PAT-V-FR0000010000010001-0000000UPP.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/Organization/PAT-V-FR0000010000010001-0000000UPP.ttl> .
+
+# -------------------------------------------------------------------------------------
+

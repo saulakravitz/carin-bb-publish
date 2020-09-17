@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange",
   "status": "active",
-  "date": "2020-09-17T16:59:39+00:00",
+  "date": "2020-09-17T20:29:02+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -2037,6 +2037,159 @@
         "name": "C4BB CapabilityStatement",
         "description": "This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors. ",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Coverage-01234567801-20190801-20191231-SEA17.html"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/01234567801-20190801-20191231-SEA17"
+        },
+        "name": "01234567801-20190801-20191231-SEA17",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Coverage-01234567801-20200101-99991231-SEA22.html"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/01234567801-20200101-99991231-SEA22"
+        },
+        "name": "01234567801-20200101-99991231-SEA22",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExplanationOfBenefit"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ExplanationOfBenefit-01234567801-FR123E1230000010000010001.html"
+          }
+        ],
+        "reference": {
+          "reference": "ExplanationOfBenefit/01234567801-FR123E1230000010000010001"
+        },
+        "name": "01234567801-FR123E1230000010000010001",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExplanationOfBenefit"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ExplanationOfBenefit-01234567801-GNXYZ1230000010000010001.html"
+          }
+        ],
+        "reference": {
+          "reference": "ExplanationOfBenefit/01234567801-GNXYZ1230000010000010001"
+        },
+        "name": "01234567801-GNXYZ1230000010000010001",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/1"
+        },
+        "name": "1",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-PAT-V-FR0000010000010001-0000000UPP.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/PAT-V-FR0000010000010001-0000000UPP"
+        },
+        "name": "PAT-V-FR0000010000010001-0000000UPP",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-PAT-V-GN0000010000010001-0000000UPP.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/PAT-V-GN0000010000010001-0000000UPP"
+        },
+        "name": "PAT-V-GN0000010000010001-0000000UPP",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-01234567801.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/01234567801"
+        },
+        "name": "01234567801",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-V00UPP.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/V00UPP"
+        },
+        "name": "V00UPP",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner"
       }
     ],
     "page": {

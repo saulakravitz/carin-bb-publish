@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExplanationOfBenefit xmlns="http://hl7.org/fhir">
+  <id value="01234567801-FR123E1230000010000010001"/>
+  <meta>
+    <lastUpdated value="2020-08-25T19:07:14-04:00"/>
+    <source value="Organization/1"/>
+    <profile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: Claim Number: 01234567801-FR123E1230000010000010001</p><p><b>status</b>: active</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/claim-type professional}">Professional</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient-01234567801.html">Generated Summary: language: en-US; mb: 01234567801; active; firstName lastName ; ph: 5555555555, ph: 5555555555, ph: 5555555555, ph: 5555555555, ph: 5555555555(HOME), ph: 5555555555(WORK), ph: LXXX@XXXX.com, ph: 5555555555; gender: male; birthDate: 1990-01-01; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}">unknown</span></a></p><p><b>billablePeriod</b>: Nov 22, 2019, 5:00:00 AM --&gt; Nov 22, 2019, 5:00:00 AM</p><p><b>created</b>: Dec 6, 2019, 5:00:00 AM</p><p><b>insurer</b>: <a href="Organization-1.html">UPMC Health Plan. Generated Summary: id: 95216; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type pay}">Payer</span>; name: UPMC Health Plan; ph: 1-844-220-4785 TTY: 711(WORK), ph: 1-866-406-8762(WORK)</a></p><p><b>provider</b>: <a href="Organization/PRV-V00UPP">Organization/PRV-V00UPP</a></p><h3>Payees</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Party</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/payeetype provider}">Provider</span></td><td><a href="Organization/PAT-V-FR123E1230000010000010001-0000000UPP">Organization/PAT-V-FR123E1230000010000010001-0000000UPP</a></td></tr></table><p><b>outcome</b>: complete</p><h3>SupportingInfos</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>1</td><td><span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory billingnetworkcontractingstatus}">billingnetworkcontractingstatus</span></td><td><span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus contracted}">Indicates the provider was contracted for the service</span></td></tr></table><h3>Diagnoses</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>1</td><td><span title="Codes: {http://hl7.org/fhir/sid/icd-10-cm EX11.1}">Description for EX11.1</span></td><td><span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType principal}">principal</span></td></tr></table><blockquote><p><b>procedure</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/ex-procedure-type primary}">Primary procedure</span></p><p><b>date</b>: Nov 22, 2019, 5:00:00 AM</p><p><b>procedure</b>: <span title="Codes: {http://hl7.org/fhir/sid/ex-icd-10-procedures S1234}">Description for S1234</span></p></blockquote><blockquote><p><b>procedure</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/ex-procedure-type primary}">Primary procedure</span></p><p><b>date</b>: Nov 22, 2019, 5:00:00 AM</p><p><b>procedure</b>: <span title="Codes: {http://hl7.org/fhir/sid/ex-icd-10-procedures 99999}">Description for 99999</span></p></blockquote><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>true</td><td><a href="Coverage-01234567801-20190801-20191231-SEA17.html">Generated Summary: language: en-US; mb: 01234567801; status: active; subscriberId: 012345678; dependent: 01; <span title="Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}">Self</span>; period: Aug 1, 2019, 4:00:00 AM --&gt; Dec 31, 2019, 5:00:00 AM; network: SEA17-Advantage HSA EPO</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: <span title="Codes: {http://www.ama-assn.org/go/cpt S1234}">S1234</span></p><p><b>serviced</b>: Nov 22, 2019, 5:00:00 AM --&gt; Nov 22, 2019, 5:00:00 AM</p><p><b>location</b>: <span title="Codes: {https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set 20}">URGENT CARE FACILITY</span></p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication memberliability}">The amount of the member's liability.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}">The total submitted amount for the claim or group or line item.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication copay}">Patient Co-Payment</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication eligible}">Amount of the change which is considered for adjudication.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication deductible}">Amount deducted from the eligible amount prior to adjudication.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication benefit}">Amount payable under the coverage</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication noncovered}">The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>productOrService</b>: <span title="Codes: {http://www.ama-assn.org/go/cpt 99999}">99999</span></p><p><b>serviced</b>: Nov 22, 2019, 5:00:00 AM --&gt; Nov 22, 2019, 5:00:00 AM</p><p><b>location</b>: <span title="Codes: {https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set 20}">URGENT CARE FACILITY</span></p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication memberliability}">The amount of the member's liability.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}">The total submitted amount for the claim or group or line item.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication copay}">Patient Co-Payment</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication eligible}">Amount of the change which is considered for adjudication.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication deductible}">Amount deducted from the eligible amount prior to adjudication.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication benefit}">Amount payable under the coverage</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication noncovered}">The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}">The total submitted amount for the claim or group or line item.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication eligible}">Amount of the change which is considered for adjudication.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication deductible}">Amount deducted from the eligible amount prior to adjudication.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication copay}">Patient Co-Payment</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication noncovered}">The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication benefit}">Amount payable under the coverage</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication memberliability}">The amount of the member's liability.</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/IdentifierTypeCS"/>
+        <code value="cn"/>
+      </coding>
+      <text value="Claim Number"/>
+    </type>
+    <system value="https://www.upmchealthplan.com/fhir/EOBIdentifier"/>
+    <value value="01234567801-FR123E1230000010000010001"/>
+  </identifier>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="professional"/>
+    </coding>
+    <text value="Professional"/>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/01234567801"/>
+  </patient>
+  <billablePeriod>
+    <start value="2019-11-22T00:00:00-05:00"/>
+    <end value="2019-11-22T00:00:00-05:00"/>
+  </billablePeriod>
+  <created value="2019-12-06T00:00:00-05:00"/>
+  <insurer>
+    <reference value="Organization/1"/>
+    <display value="UPMC Health Plan"/>
+  </insurer>
+  <provider>
+    <reference value="Organization/PRV-V00UPP"/>
+  </provider>
+  <payee>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/payeetype"/>
+        <code value="provider"/>
+      </coding>
+      <text value="Provider"/>
+    </type>
+    <party>
+      <reference value="Organization/PAT-V-FR123E1230000010000010001-0000000UPP"/>
+    </party>
+  </payee>
+  <outcome value="complete"/>
+  <supportingInfo>
+    <sequence value="1"/>
+    <category>
+      <coding>
+        <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/ClaimInformationCategory"/>
+        <code value="billingnetworkcontractingstatus"/>
+      </coding>
+    </category>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus"/>
+        <code value="contracted"/>
+        <display value="Contracted"/>
+      </coding>
+      <text value="Indicates the provider was contracted for the service"/>
+    </code>
+  </supportingInfo>
+  <diagnosis>
+    <sequence value="1"/>
+    <diagnosisCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+        <code value="EX11.1"/>
+      </coding>
+      <text value="Description for EX11.1"/>
+    </diagnosisCodeableConcept>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType"/>
+        <code value="principal"/>
+      </coding>
+      <text value="principal"/>
+    </type>
+  </diagnosis>
+  <procedure>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-procedure-type"/>
+        <code value="primary"/>
+      </coding>
+      <text value="Primary procedure"/>
+    </type>
+    <date value="2019-11-22T00:00:00-05:00"/>
+    <procedureCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/sid/ex-icd-10-procedures"/>
+        <code value="S1234"/>
+      </coding>
+      <text value="Description for S1234"/>
+    </procedureCodeableConcept>
+  </procedure>
+  <procedure>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-procedure-type"/>
+        <code value="primary"/>
+      </coding>
+      <text value="Primary procedure"/>
+    </type>
+    <date value="2019-11-22T00:00:00-05:00"/>
+    <procedureCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/sid/ex-icd-10-procedures"/>
+        <code value="99999"/>
+      </coding>
+      <text value="Description for 99999"/>
+    </procedureCodeableConcept>
+  </procedure>
+  <insurance>
+    <focal value="true"/>
+    <coverage>
+      <reference value="Coverage/01234567801-20190801-20191231-SEA17"/>
+    </coverage>
+  </insurance>
+  <item>
+    <sequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://www.ama-assn.org/go/cpt"/>
+        <code value="S1234"/>
+      </coding>
+    </productOrService>
+    <servicedPeriod>
+      <start value="2019-11-22T00:00:00-05:00"/>
+      <end value="2019-11-22T00:00:00-05:00"/>
+    </servicedPeriod>
+    <locationCodeableConcept>
+      <coding>
+        <system value="https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"/>
+        <code value="20"/>
+      </coding>
+      <text value="URGENT CARE FACILITY"/>
+    </locationCodeableConcept>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication"/>
+          <code value="memberliability"/>
+          <display value="Member liability"/>
+        </coding>
+        <text value="The amount of the member&#39;s liability."/>
+      </category>
+      <amount>
+        <value value="35.0"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+          <code value="submitted"/>
+          <display value="Submitted Amount"/>
+        </coding>
+        <text value="The total submitted amount for the claim or group or line item."/>
+      </category>
+      <amount>
+        <value value="40.0"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+          <code value="copay"/>
+          <display value="CoPay"/>
+        </coding>
+        <text value="Patient Co-Payment"/>
+      </category>
+      <amount>
+        <value value="0.0"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+          <code value="eligible"/>
+          <display value="Eligible Amount"/>
+        </coding>
+        <text value="Amount of the change which is considered for adjudication."/>
+      </category>
+      <amount>
+        <value value="35.0"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+          <code value="deductible"/>
+          <display value="Deductible"/>
+        </coding>
+        <text value="Amount deducted from the eligible amount prior to adjudication."/>
+      </category>
+      <amount>
+        <value value="35.0"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+          <code value="benefit"/>
+          <display value="Benefit Amount"/>
+        </coding>
+        <text value="Amount payable under the coverage"/>
+      </category>
+      <amount>
+        <value value="0.0"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication"/>
+          <code value="noncovered"/>
+          <display value="Noncovered"/>
+        </coding>
+        <text value="The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract."/>
+      </category>
+      <amount>
+        <value value="0.0"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+  </item>
+  <item>
+    <sequence value="2"/>
+    <productOrService>
+      <coding>
+        <system value="http://www.ama-assn.org/go/cpt"/>
+        <code value="99999"/>
+      </coding>
+    </productOrService>
+    <servicedPeriod>
+      <start value="2019-11-22T00:00:00-05:00"/>
+      <end value="2019-11-22T00:00:00-05:00"/>
+    </servicedPeriod>
+    <locationCodeableConcept>
+      <coding>
+        <system value="https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"/>
+        <code value="20"/>
+      </coding>
+      <text value="URGENT CARE FACILITY"/>
+    </locationCodeableConcept>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication"/>
+          <code value="memberliability"/>
+          <display value="Member liability"/>
+        </coding>
+        <text value="The amount of the member&#39;s liability."/>
+      </category>
+      <amount>
+        <value value="104.86"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+          <code value="submitted"/>
+          <display value="Submitted Amount"/>
+        </coding>
+        <text value="The total submitted amount for the claim or group or line item."/>
+      </category>
+      <amount>
+        <value value="220.0"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+          <code value="copay"/>
+          <display value="CoPay"/>
+        </coding>
+        <text value="Patient Co-Payment"/>
+      </category>
+      <amount>
+        <value value="0.0"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+          <code value="eligible"/>
+          <display value="Eligible Amount"/>
+        </coding>
+        <text value="Amount of the change which is considered for adjudication."/>
+      </category>
+      <amount>
+        <value value="104.86"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+          <code value="deductible"/>
+          <display value="Deductible"/>
+        </coding>
+        <text value="Amount deducted from the eligible amount prior to adjudication."/>
+      </category>
+      <amount>
+        <value value="104.86"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+          <code value="benefit"/>
+          <display value="Benefit Amount"/>
+        </coding>
+        <text value="Amount payable under the coverage"/>
+      </category>
+      <amount>
+        <value value="0.0"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+    <adjudication>
+      <category>
+        <coding>
+          <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication"/>
+          <code value="noncovered"/>
+          <display value="Noncovered"/>
+        </coding>
+        <text value="The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract."/>
+      </category>
+      <amount>
+        <value value="0.0"/>
+        <currency value="USD"/>
+      </amount>
+    </adjudication>
+  </item>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="submitted"/>
+        <display value="Submitted Amount"/>
+      </coding>
+      <text value="The total submitted amount for the claim or group or line item."/>
+    </category>
+    <amount>
+      <value value="260.0"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="eligible"/>
+        <display value="Eligible Amount"/>
+      </coding>
+      <text value="Amount of the change which is considered for adjudication."/>
+    </category>
+    <amount>
+      <value value="139.86"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="deductible"/>
+        <display value="Deductible"/>
+      </coding>
+      <text value="Amount deducted from the eligible amount prior to adjudication."/>
+    </category>
+    <amount>
+      <value value="139.86"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="copay"/>
+        <display value="CoPay"/>
+      </coding>
+      <text value="Patient Co-Payment"/>
+    </category>
+    <amount>
+      <value value="0.0"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication"/>
+        <code value="noncovered"/>
+        <display value="Noncovered"/>
+      </coding>
+      <text value="The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract."/>
+    </category>
+    <amount>
+      <value value="0.0"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="benefit"/>
+        <display value="Benefit Amount"/>
+      </coding>
+      <text value="Amount payable under the coverage"/>
+    </category>
+    <amount>
+      <value value="0.0"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication"/>
+        <code value="memberliability"/>
+        <display value="Member liability"/>
+      </coding>
+      <text value="The amount of the member&#39;s liability."/>
+    </category>
+    <amount>
+      <value value="139.86"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+</ExplanationOfBenefit>

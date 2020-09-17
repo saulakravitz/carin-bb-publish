@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CARINConsumerDirectedPayerDataExchange"];
   fhir:ImplementationGuide.title [ fhir:value "CARIN Consumer Directed Payer Data Exchange"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-09-17T16:59:39+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-09-17T20:29:02+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -2051,6 +2051,186 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "C4BB CapabilityStatement" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors. " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 95;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Coverage" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Coverage-01234567801-20190801-20191231-SEA17.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Coverage/01234567801-20190801-20191231-SEA17>;
+         fhir:Reference.reference [ fhir:value "Coverage/01234567801-20190801-20191231-SEA17" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "01234567801-20190801-20191231-SEA17" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage";
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage>
+       ]
+     ], [
+       fhir:index 96;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Coverage" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Coverage-01234567801-20200101-99991231-SEA22.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Coverage/01234567801-20200101-99991231-SEA22>;
+         fhir:Reference.reference [ fhir:value "Coverage/01234567801-20200101-99991231-SEA22" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "01234567801-20200101-99991231-SEA22" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage";
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage>
+       ]
+     ], [
+       fhir:index 97;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ExplanationOfBenefit" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ExplanationOfBenefit-01234567801-FR123E1230000010000010001.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/01234567801-FR123E1230000010000010001>;
+         fhir:Reference.reference [ fhir:value "ExplanationOfBenefit/01234567801-FR123E1230000010000010001" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "01234567801-FR123E1230000010000010001" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician";
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician>
+       ]
+     ], [
+       fhir:index 98;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ExplanationOfBenefit" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ExplanationOfBenefit-01234567801-GNXYZ1230000010000010001.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/01234567801-GNXYZ1230000010000010001>;
+         fhir:Reference.reference [ fhir:value "ExplanationOfBenefit/01234567801-GNXYZ1230000010000010001" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "01234567801-GNXYZ1230000010000010001" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician";
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician>
+       ]
+     ], [
+       fhir:index 99;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Organization/1>;
+         fhir:Reference.reference [ fhir:value "Organization/1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization";
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization>
+       ]
+     ], [
+       fhir:index 100;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-PAT-V-FR0000010000010001-0000000UPP.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Organization/PAT-V-FR0000010000010001-0000000UPP>;
+         fhir:Reference.reference [ fhir:value "Organization/PAT-V-FR0000010000010001-0000000UPP" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PAT-V-FR0000010000010001-0000000UPP" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization";
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization>
+       ]
+     ], [
+       fhir:index 101;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-PAT-V-GN0000010000010001-0000000UPP.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Organization/PAT-V-GN0000010000010001-0000000UPP>;
+         fhir:Reference.reference [ fhir:value "Organization/PAT-V-GN0000010000010001-0000000UPP" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PAT-V-GN0000010000010001-0000000UPP" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization";
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization>
+       ]
+     ], [
+       fhir:index 102;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Patient-01234567801.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Patient/01234567801>;
+         fhir:Reference.reference [ fhir:value "Patient/01234567801" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "01234567801" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient";
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient>
+       ]
+     ], [
+       fhir:index 103;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-V00UPP.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Practitioner/V00UPP>;
+         fhir:Reference.reference [ fhir:value "Practitioner/V00UPP" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "V00UPP" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner";
+         fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
@@ -2356,6 +2536,24 @@
 <http://hl7.org/fhir/us/carin-bb/SearchParameter/practitionerrole-practitioner> a fhir:us .
 
 <http://hl7.org/fhir/us/carin-bb/CapabilityStatement/c4bb> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Coverage/01234567801-20190801-20191231-SEA17> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Coverage/01234567801-20200101-99991231-SEA22> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/01234567801-FR123E1230000010000010001> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/01234567801-GNXYZ1230000010000010001> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Organization/1> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Organization/PAT-V-FR0000010000010001-0000000UPP> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Organization/PAT-V-GN0000010000010001-0000000UPP> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Patient/01234567801> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Practitioner/V00UPP> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
