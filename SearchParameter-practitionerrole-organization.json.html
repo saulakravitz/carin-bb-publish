@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
     <link rel="stylesheet" href="assets/css/hl7.css"/>
     <link rel="stylesheet" href="assets/css/fhir.css"/>
@@ -38,6 +39,8 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
 
     <style type="text/css">h2{--heading-prefix:"11.11"}
     h3,h4,h5,h6{--heading-prefix:"11.11"}</style>
@@ -154,7 +157,7 @@
       <li>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
-      <li><a name="3f91fb2a-60bf-4c81-b390-e3dbef0727f9">​</a>
+      <li><a name="e4248840-5677-4269-9279-c5521b5c64b1">​</a>
         <a href="Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
       </li>
     </ul>
@@ -245,7 +248,7 @@
   "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.id">id</a>" : "practitionerrole-organization",
   "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Ids&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Standards Status&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\"http://hl7.org/fhir/us/carin-bb/SearchParameter/practitionerrole-organization\"&gt;http://hl7.org/fhir/us/carin-bb/SearchParameter/practitionerrole-organization&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 0.1.4&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: ExplanationOfBenefit_Organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;derivedFrom&lt;/b&gt;: &lt;a href=\"http://hl7.org/fhir/SearchParameter/PractitionerRole-organization\"&gt;http://hl7.org/fhir/SearchParameter/PractitionerRole-organization&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: draft&lt;/p&gt;&lt;p&gt;&lt;b&gt;experimental&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Oct 31, 2019, 10:29:23 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: HL7 Financial Management Working Group&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: HL7 Financial Management Working Group: http://www.hl7.org/Special/committees/fm/index.cfm,fm@lists.HL7.org&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: The identity of the organization the practitioner represents / acts on behalf of&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: &lt;span title=\"Codes: {urn:iso:std:iso:3166 US}\"&gt;United States of America&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;base&lt;/b&gt;: PractitionerRole&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: reference&lt;/p&gt;&lt;p&gt;&lt;b&gt;expression&lt;/b&gt;: PractitionerRole.organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;xpath&lt;/b&gt;: f:PractitionerRole/f:organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;xpathUsage&lt;/b&gt;: normal&lt;/p&gt;&lt;p&gt;&lt;b&gt;target&lt;/b&gt;: Organization&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Ids&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Standards Status&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\"http://hl7.org/fhir/us/carin-bb/SearchParameter/practitionerrole-organization\"&gt;http://hl7.org/fhir/us/carin-bb/SearchParameter/practitionerrole-organization&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 0.1.4&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: ExplanationOfBenefit_Organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;derivedFrom&lt;/b&gt;: &lt;a href=\"http://hl7.org/fhir/SearchParameter/PractitionerRole-organization\"&gt;http://hl7.org/fhir/SearchParameter/PractitionerRole-organization&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: draft&lt;/p&gt;&lt;p&gt;&lt;b&gt;experimental&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Oct 31, 2019, 10:29:23 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: HL7 Financial Management Working Group&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: HL7 Financial Management Working Group: &lt;a href=\"http://www.hl7.org/Special/committees/fm/index.cfm\"&gt;http://www.hl7.org/Special/committees/fm/index.cfm&lt;/a&gt;,&lt;a href=\"mailto:fm@lists.HL7.org\"&gt;fm@lists.HL7.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: The identity of the organization the practitioner represents / acts on behalf of&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: &lt;span title=\"Codes: {urn:iso:std:iso:3166 US}\"&gt;United States of America&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;base&lt;/b&gt;: PractitionerRole&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: reference&lt;/p&gt;&lt;p&gt;&lt;b&gt;expression&lt;/b&gt;: PractitionerRole.organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;xpath&lt;/b&gt;: f:PractitionerRole/f:organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;xpathUsage&lt;/b&gt;: normal&lt;/p&gt;&lt;p&gt;&lt;b&gt;target&lt;/b&gt;: Organization&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.extension">extension</a>" : [
     {
@@ -326,7 +329,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 18, 2020 14:50+0000">2020-09-18</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 21, 2020 22:13+0000">2020-09-21</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

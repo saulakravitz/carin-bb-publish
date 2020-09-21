@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
     <link rel="stylesheet" href="assets/css/hl7.css"/>
     <link rel="stylesheet" href="assets/css/fhir.css"/>
@@ -38,6 +39,8 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
 
     <style type="text/css">h2{--heading-prefix:"11.9"}
     h3,h4,h5,h6{--heading-prefix:"11.9"}</style>
@@ -154,7 +157,7 @@
       <li>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
-      <li><a name="6570761e-117b-4c11-90f7-fda8ee6a4c7c">​</a>
+      <li><a name="a085cca4-609c-444b-98a3-50727fee2040">​</a>
         <a href="Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
       </li>
     </ul>
@@ -242,7 +245,7 @@
 
 
 
-  <div><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Standards Status</b>: </p><p><b>url</b>: <a href="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-service-date">http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-service-date</a></p><p><b>version</b>: 0.1.4</p><p><b>name</b>: ExplanationOfBenefit_ServiceDate</p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: Mar 31, 2020, 9:48:45 AM</p><p><b>publisher</b>: HL7 Financial Management Working Group</p><p><b>contact</b>: HL7 Financial Management Working Group: http://www.hl7.org/Special/committees/fm/index.cfm,fm@lists.HL7.org</p><p><b>description</b>: Date of the service for the EOB</p><p><b>jurisdiction</b>: <span title="Codes: {urn:iso:std:iso:3166 US}">United States of America</span></p><p><b>code</b>: service-date</p><p><b>base</b>: ExplanationOfBenefit</p><p><b>type</b>: date</p><p><b>expression</b>: ExplanationOfBenefit.billablePeriod | ExplanationOfBenefit.serviced as Date |  ExplanationOfBenefit.serviced as Period</p><p><b>xpath</b>: f:ExplanationOfBenefit/f:billablePeriod | f:ExplanationOfBenefit/f:serviced/f:servicedDate | f:ExplanationOfBenefit/f:serviced/f:servicedPeriod</p><p><b>xpathUsage</b>: normal</p><p><b>comparator</b>: eq, ne, gt, ge, lt, le, sa, eb, ap</p></div>
+  <div><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Standards Status</b>: </p><p><b>url</b>: <a href="http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-service-date">http://hl7.org/fhir/us/carin-bb/SearchParameter/explanationofbenefit-service-date</a></p><p><b>version</b>: 0.1.4</p><p><b>name</b>: ExplanationOfBenefit_ServiceDate</p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: Mar 31, 2020, 9:48:45 AM</p><p><b>publisher</b>: HL7 Financial Management Working Group</p><p><b>contact</b>: HL7 Financial Management Working Group: <a href="http://www.hl7.org/Special/committees/fm/index.cfm">http://www.hl7.org/Special/committees/fm/index.cfm</a>,<a href="mailto:fm@lists.HL7.org">fm@lists.HL7.org</a></p><p><b>description</b>: Date of the service for the EOB</p><p><b>jurisdiction</b>: <span title="Codes: {urn:iso:std:iso:3166 US}">United States of America</span></p><p><b>code</b>: service-date</p><p><b>base</b>: ExplanationOfBenefit</p><p><b>type</b>: date</p><p><b>expression</b>: ExplanationOfBenefit.billablePeriod | ExplanationOfBenefit.item.serviced as Date |  ExplanationOfBenefit.item.serviced as Period</p><p><b>xpath</b>: f:ExplanationOfBenefit/f:billablePeriod | f:ExplanationOfBenefit/f:item/f:serviced/f:servicedDate | f:ExplanationOfBenefit/f:item/f:serviced/f:servicedPeriod</p><p><b>xpathUsage</b>: normal</p><p><b>comparator</b>: eq, ne, gt, ge, lt, le, sa, eb, ap</p></div>
 
     <!-- insert notes if present -->
   
@@ -269,7 +272,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 18, 2020 14:50+0000">2020-09-18</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 21, 2020 22:13+0000">2020-09-21</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
