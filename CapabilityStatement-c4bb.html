@@ -157,7 +157,7 @@
       <li>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
-      <li><a name="54214a14-24be-4a5e-9b4c-aadb731e42de">​</a>
+      <li><a name="0f63a33d-2bec-439f-a182-85b736436f6c">​</a>
         <a href="Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
       </li>
     </ul>
@@ -249,7 +249,7 @@
 
 
 
-  <div><h2 id="title">C4BB CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-09-08</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p>This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors.</p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The C4BB  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
+  <div><h2 id="title">C4BB CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-09-22</li><li>Published by: HL7 Financial Management Working Group (FM WG)</li></ul><p>This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors.</p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The C4BB  Server <strong>SHALL</strong>:</p><ol><li>Support all profiles defined in this Implementation Guide..</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
 <ul><li>(Status 400): invalid parameter</li><li>(Status 401/4xx): unauthorized request</li><li>(Status 403): insufficient scope</li><li>(Status 404): unknown resource</li><li>(Status 410): deleted resource.</li></ul>
 </li><li>Support json source formats for all CARIN-BB interactions.</li><li>Identify the CARIN-BB  profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li></ol><p>The C4BB  Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all C4BB interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="/Authorization_Authentication_and_Registration.html">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#coverage">Coverage</a></td><td><a href="StructureDefinition-C4BB-Coverage.html">C4BB-Coverage</a></td><td>
 							
@@ -313,7 +313,7 @@
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Coverage/[id]</code>
 				</li><br/>    <!-- Only SHOULDs -->SHALL for include for now the capability statement does not create the primitive
-				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&gt;
+				     extensios for this yet.  --&gt;
 				
 				<li>
 					A Server <strong>SHALL</strong> be capable of supporting the following _includes:
@@ -341,7 +341,7 @@
 					<br/>
 						<code class="highlighter-rouge">GET [base]/ExplanationOfBenefit/[id]</code>
 				</li><br/>    <!-- Only SHOULDs -->SHALL for include for now the capability statement does not create the primitive
-				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&gt;
+				     extensios for this yet.  --&gt;
 				
 				<li>
 					A Server <strong>SHALL</strong> be capable of supporting the following _includes:
@@ -386,7 +386,7 @@
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Organization/[id]/_history/vid</code>
 				</li><br/>    <!-- Only SHOULDs -->SHALL for include for now the capability statement does not create the primitive
-				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&gt;
+				     extensios for this yet.  --&gt;
 				
 				    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="patient" class="no_toc">Patient</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
@@ -403,7 +403,7 @@
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Patient/[id]/_history/vid</code>
 				</li><br/>    <!-- Only SHOULDs -->SHALL for include for now the capability statement does not create the primitive
-				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&gt;
+				     extensios for this yet.  --&gt;
 				
 				    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><h4 id="practitioner" class="no_toc">Practitioner</h4><p>Conformance Expectation:	<strong>SHALL</strong></p><p>Supported Profiles:
 				
@@ -420,7 +420,7 @@
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Practitioner/[id]/_history/vid</code>
 				</li><br/>    <!-- Only SHOULDs -->SHALL for include for now the capability statement does not create the primitive
-				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&gt;
+				     extensios for this yet.  --&gt;
 				
 				    <!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr/><br/></div>
 
@@ -449,7 +449,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 21, 2020 22:14+0000">2020-09-21</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 22, 2020 23:20+0000">2020-09-22</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

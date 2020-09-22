@@ -157,7 +157,7 @@
       <li>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
-      <li><a name="f426ec36-2f51-4cb1-8b6f-3a1432a4d9e3">​</a>
+      <li><a name="894a05d1-299f-4858-8ae2-e59cc55c65b5">​</a>
         <a href="Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
       </li>
     </ul>
@@ -248,7 +248,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="c4bb"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;h2 id="title"&gt;C4BB CapabilityStatement&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide Version: 1.0.0&lt;/li&gt;&lt;li&gt;FHIR Version: 4.0.1&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2020-09-08&lt;/li&gt;&lt;li&gt;Published by: HL7 Financial Management Working Group (FM WG)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors.&lt;/p&gt;&lt;h3 id="behavior"&gt;FHIR RESTful Capabilities&lt;/h3&gt;&lt;p&gt;The C4BB  Server &lt;strong&gt;SHALL&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support all profiles defined in this Implementation Guide..&lt;/li&gt;&lt;li&gt;Implement the RESTful behavior according to the FHIR specification.&lt;/li&gt;&lt;li&gt;Return the following response classes:
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;h2 id="title"&gt;C4BB CapabilityStatement&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide Version: 1.0.0&lt;/li&gt;&lt;li&gt;FHIR Version: 4.0.1&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2020-09-22&lt;/li&gt;&lt;li&gt;Published by: HL7 Financial Management Working Group (FM WG)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors.&lt;/p&gt;&lt;h3 id="behavior"&gt;FHIR RESTful Capabilities&lt;/h3&gt;&lt;p&gt;The C4BB  Server &lt;strong&gt;SHALL&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support all profiles defined in this Implementation Guide..&lt;/li&gt;&lt;li&gt;Implement the RESTful behavior according to the FHIR specification.&lt;/li&gt;&lt;li&gt;Return the following response classes:
 &lt;ul&gt;&lt;li&gt;(Status 400): invalid parameter&lt;/li&gt;&lt;li&gt;(Status 401/4xx): unauthorized request&lt;/li&gt;&lt;li&gt;(Status 403): insufficient scope&lt;/li&gt;&lt;li&gt;(Status 404): unknown resource&lt;/li&gt;&lt;li&gt;(Status 410): deleted resource.&lt;/li&gt;&lt;/ul&gt;
 &lt;/li&gt;&lt;li&gt;Support json source formats for all CARIN-BB interactions.&lt;/li&gt;&lt;li&gt;Identify the CARIN-BB  profiles supported as part of the FHIR &lt;code&gt;meta.profile&lt;/code&gt; attribute for each instance.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;The C4BB  Server &lt;strong&gt;SHOULD&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support xml source formats for all C4BB interactions.&lt;/li&gt;&lt;/ol&gt;&lt;p id="security"&gt;&lt;strong&gt;Security:&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;See the &lt;a href="/Authorization_Authentication_and_Registration.html"&gt;General Security Considerations&lt;/a&gt; section for requirements and recommendations.&lt;/li&gt;&lt;li&gt;A server &lt;strong&gt;SHALL&lt;/strong&gt; reject any unauthorized requests by returning an &lt;code&gt;HTTP 401&lt;/code&gt; unauthorized response code.&lt;/li&gt;&lt;/ol&gt;&lt;h3 id="resource--details" class="no_toc"&gt;RESTful Capabilities by Resource/Profile:&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Summary of Search Criteria&lt;/strong&gt;&lt;/p&gt;&lt;table class="grid"&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Supported Profiles&lt;/th&gt;&lt;th&gt;Supported Searches&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_includes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported &lt;code&gt;_revincludes&lt;/code&gt;&lt;/th&gt;&lt;th&gt;Supported Operations&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="#coverage"&gt;Coverage&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="StructureDefinition-C4BB-Coverage.html"&gt;C4BB-Coverage&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							
@@ -312,7 +312,7 @@
 					&lt;br/&gt;
 						&lt;code class="highlighter-rouge"&gt;GET [base]/Coverage/[id]&lt;/code&gt;
 				&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHOULDs --&gt;SHALL for include for now the capability statement does not create the primitive
-				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&amp;gt;
+				     extensios for this yet.  --&amp;gt;
 				
 				&lt;li&gt;
 					A Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of supporting the following _includes:
@@ -340,7 +340,7 @@
 					&lt;br/&gt;
 						&lt;code class="highlighter-rouge"&gt;GET [base]/ExplanationOfBenefit/[id]&lt;/code&gt;
 				&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHOULDs --&gt;SHALL for include for now the capability statement does not create the primitive
-				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&amp;gt;
+				     extensios for this yet.  --&amp;gt;
 				
 				&lt;li&gt;
 					A Server &lt;strong&gt;SHALL&lt;/strong&gt; be capable of supporting the following _includes:
@@ -385,7 +385,7 @@
 					&lt;br/&gt;
 						&lt;code class="highlighter-rouge"&gt;GET [base]/Organization/[id]/_history/vid&lt;/code&gt;
 				&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHOULDs --&gt;SHALL for include for now the capability statement does not create the primitive
-				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&amp;gt;
+				     extensios for this yet.  --&amp;gt;
 				
 				  &lt;!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --&gt;&lt;/ul&gt;&lt;hr/&gt;&lt;h4 id="patient" class="no_toc"&gt;Patient&lt;/h4&gt;&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Supported Profiles:
 				
@@ -402,7 +402,7 @@
 					&lt;br/&gt;
 						&lt;code class="highlighter-rouge"&gt;GET [base]/Patient/[id]/_history/vid&lt;/code&gt;
 				&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHOULDs --&gt;SHALL for include for now the capability statement does not create the primitive
-				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&amp;gt;
+				     extensios for this yet.  --&amp;gt;
 				
 				  &lt;!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --&gt;&lt;/ul&gt;&lt;hr/&gt;&lt;h4 id="practitioner" class="no_toc"&gt;Practitioner&lt;/h4&gt;&lt;p&gt;Conformance Expectation:	&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Supported Profiles:
 				
@@ -419,7 +419,7 @@
 					&lt;br/&gt;
 						&lt;code class="highlighter-rouge"&gt;GET [base]/Practitioner/[id]/_history/vid&lt;/code&gt;
 				&lt;/li&gt;&lt;br/&gt;  &lt;!-- Only SHOULDs --&gt;SHALL for include for now the capability statement does not create the primitive
-				     extensios for this yet. SAK:  SHould allow differentiation between SHOULDS and SHALLS with conformance extensions --&amp;gt;
+				     extensios for this yet.  --&amp;gt;
 				
 				  &lt;!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --&gt;&lt;/ul&gt;&lt;hr/&gt;&lt;br/&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
@@ -429,7 +429,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="C4BB CapabilityStatement"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="false"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2020-09-08"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2020-09-22"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 Financial Management Working Group"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="HL7 Financial Management Working Group"/&gt;
@@ -547,8 +547,7 @@ _include:* SHALL be supported.
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="SHALL"/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="_id"/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://hl7.org/fhir/SearchParameter/explanationofbenefit-id"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://hl7.org/fhir/SearchParameter/Resource-id"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="token"/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -568,7 +567,7 @@ _include:* SHALL be supported.
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="_lastUpdated"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://hl7.org/fhir/SearchParameter/explanationofbenefit-lastUpdated"/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="date"/&gt;
       &lt;/searchParam&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>&gt;
@@ -703,7 +702,7 @@ _include:* SHALL be supported.
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 21, 2020 22:14+0000">2020-09-21</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 22, 2020 23:20+0000">2020-09-22</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
