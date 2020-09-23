@@ -179,6 +179,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","./IdentifierIssuingAuthority","CX.4 / (CX.4,CX.9,CX.10)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
 "Organization.identifier","naiccode","","",0,*,"Y","","Y","Identifier {[]} {[]}
 ","NAIC Code","Identifier for the organization that is used to identify the organization across multiple disparate systems.","NPI preferred.","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.","","","","<valueIdentifier xmlns=""http://hl7.org/fhir"">
+  <type>
+    <coding>
+      <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType""/>
+      <code value=""naiccode""/>
+    </coding>
+  </type>
   <system value=""urn:oid:2.16.840.1.113883.6.300""/>
 </valueIdentifier>","","","",,,,,"",,,,"Organization.identifier",0,*,"org-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
