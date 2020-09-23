@@ -268,7 +268,7 @@
     <sch:title>Patient.name</sch:title>
     <sch:rule context="f:Patient/f:name">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="f:given or f:family">Patient.name.given or Patient.name.family or both SHALL be present (inherited)</sch:assert>
+      <sch:assert test="(/f:extension/@url='http://hl7.org/fhir/StructureDefinition/data-absent-reason' and not(/f:family or /f:given)) or (not(/f:extension/@url='http://hl7.org/fhir/StructureDefinition/data-absent-reason') and (/f:family or /f:given))">Either Patient.name.given and/or Patient.name.family SHALL be present or a Data Absent Reason Extension SHALL be present. (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

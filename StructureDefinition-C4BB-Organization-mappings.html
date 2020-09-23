@@ -157,7 +157,7 @@
       <li>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
-      <li><a name="995e9f8b-166b-48e5-a9f0-849075fc988d">​</a>
+      <li><a name="7fd6f548-cfa4-4b41-9a25-bda8367e7800">​</a>
         <a href="Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
       </li>
     </ul>
@@ -281,16 +281,17 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>./StartDate and ./EndDate</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>./IdentifierIssuingAuthority</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (CLIA)</td><td>./Identifiers, n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>./IdentifierType</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>./Value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>./StartDate and ./EndDate</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>./IdentifierIssuingAuthority</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (tax)</td><td>./Identifiers, n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>./IdentifierType</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>./Value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>./StartDate and ./EndDate</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>./IdentifierIssuingAuthority</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (payerid)</td><td>./Identifiers, n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>./IdentifierType</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>./Value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>./StartDate and ./EndDate</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>./IdentifierIssuingAuthority</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (naiccode)</td><td>./Identifiers, n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>./IdentifierType</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>./Value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>./StartDate and ./EndDate</td> </tr>
@@ -321,12 +322,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>CX.7 + CX.8</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>CX.4 / (CX.4,CX.9,CX.10)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (CLIA)</td><td>XON.10 / XON.3</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>CX.5</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>CX.4 / EI-2-4</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>CX.1 / EI.1</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>CX.7 + CX.8</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>CX.4 / (CX.4,CX.9,CX.10)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (tax)</td><td>XON.10 / XON.3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>CX.5</td> </tr>
@@ -335,6 +330,13 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>CX.7 + CX.8</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>CX.4 / (CX.4,CX.9,CX.10)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (payerid)</td><td>XON.10 / XON.3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>CX.5</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>CX.4 / EI-2-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>CX.1 / EI.1</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>CX.7 + CX.8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>CX.4 / (CX.4,CX.9,CX.10)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (naiccode)</td><td>XON.10 / XON.3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>CX.5</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>CX.4 / EI-2-4</td> </tr>
@@ -383,14 +385,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>Role.effectiveTime or implied by context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (CLIA)</td><td>.scopes[Role](classCode=IDENT)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>Role.code or implied by context</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>Role.code or implied by context</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>II.root or Role.id.root</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>Role.effectiveTime or implied by context</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (tax)</td><td>.scopes[Role](classCode=IDENT)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
@@ -401,6 +395,15 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>Role.effectiveTime or implied by context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (payerid)</td><td>.scopes[Role](classCode=IDENT)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>Role.code or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>Role.code or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>II.root or Role.id.root</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>Role.effectiveTime or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (naiccode)</td><td>.scopes[Role](classCode=IDENT)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>Role.code or implied by context</td> </tr>
@@ -446,6 +449,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (CLIA)</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (tax)</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (payerid)</td><td>FiveWs.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier (naiccode)</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>FiveWs.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>FiveWs.class</td> </tr>
 </table>
@@ -500,7 +504,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 22, 2020 23:24+0000">2020-09-22</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 23, 2020 21:42+0000">2020-09-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
