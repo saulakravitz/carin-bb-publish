@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExplanationOfBenefit xmlns="http://hl7.org/fhir">
+  <id value="7665f579-6a4d-49a2-941d-467b6bc33df8"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-09-17T15:27:53.713+00:00"/>
+    <tag>
+      <code value="Professional"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: Claim unique identifier: 4c079bdb-7905-4e22-aed3-38db122c9f3e</p><p><b>status</b>: active</p><p><b>type</b>: <span title="Codes: {http://hl7.org/fhir/us/carin/CodeSystem/carin-bb-claim-type professional-nonclinician}">professional-nonclinician</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient/be1b2b9f-22ca-4995-9577-b3ce6efac44c">Patient/be1b2b9f-22ca-4995-9577-b3ce6efac44c</a></p><p><b>billablePeriod</b>: 2020-03-09 --&gt; 2020-03-09</p><p><b>created</b>: 2020-09-17</p><p><b>insurer</b>: <span>Not Found-99f25457-33ea-418a-b960-fbb15dec3934</span></p><p><b>provider</b>: <a href="Practitioner/f33d4c63-32d3-4bd6-bf7a-083d32761080">986297852679</a></p><h3>Payees</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Party</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/payeetype practitioner}">practitioner</span></td><td><span>986297852679</span></td></tr></table><p><b>outcome</b>: complete</p><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}">billingnetworkcontractingstatus</span></p><p><b>code</b>: <span title="Codes: ">out</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}">clmrecvddate</span></p><p><b>code</b>: <span title="Codes: ">2020-03-09</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 3</p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}">referringnetworkcontractingstatus</span></p><p><b>code</b>: <span title="Codes: ">out</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 4</p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}">sitenetworkcontractingstatus</span></p><p><b>code</b>: <span title="Codes: ">out</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 1</p><p><b>diagnosis</b>: <span title="Codes: {http://snomed.info/sct 49727002}">Cough (finding)</span></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype principal}">Principal Diagnosis</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 2</p><p><b>diagnosis</b>: <span title="Codes: {http://snomed.info/sct 267102003}">Sore throat symptom (finding)</span></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype clinical}">Clinical Diagnosis</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 3</p><p><b>diagnosis</b>: <span title="Codes: {http://snomed.info/sct 386661006}">Fever (finding)</span></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype clinical}">Clinical Diagnosis</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 4</p><p><b>diagnosis</b>: <span title="Codes: {http://snomed.info/sct 36955009}">Loss of taste (finding)</span></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype clinical}">Clinical Diagnosis</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 5</p><p><b>diagnosis</b>: <span title="Codes: {http://snomed.info/sct 840544004}">Suspected COVID-19</span></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype clinical}">Clinical Diagnosis</span></p></blockquote><h3>Procedures</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Type</b></td><td><b>Date</b></td><td><b>Procedure[x]</b></td></tr><tr><td>*</td><td>1</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/ex-procedure-type primary}">Primary procedure</span></td><td>2020-03-09</td><td><span title="Codes: {http://snomed.info/sct 261352009}">Face mask (physical object)</span></td></tr></table><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>false</td><td><span>Not Found-d8a24d95-b4b2-437c-a5c4-dbf89841ac2a</span></td></tr></table><h3>Items</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>ProductOrService</b></td><td><b>Serviced[x]</b></td><td><b>Location[x]</b></td></tr><tr><td>*</td><td>1</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/ex-benefitcategory 11}">11</span></td><td><span title="Codes: {http://snomed.info/sct 261352009}">Face mask (physical object)</span></td><td>2020-03-09 --&gt; 2020-03-09</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/ex-serviceplace 19}">Off Campus-Outpatient Hospital</span></td></tr></table><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}">Submitted Amount</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication allowed}">allowed</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication paidbypatient}">paidbypatient</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication paidtoprovider}">paidtoprovider</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication paidtopatient}">paidtopatient</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication payment}">payment</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication disallowed}">disallowed</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication deductible}">Deductible</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication coins}">coins</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication copay}">CoPay</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication memberliability}">memberliability</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication priorpayerpaid}">priorpayerpaid</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/adjudication discount}">discount</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><h3>Payments</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Date</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/paymentstatus complete}">complete</span></td><td>2020-03-09</td></tr></table></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+        <code value="professional"/>
+        <display value="Professional"/>
+      </coding>
+      <text value="Claim unique identifier"/>
+    </type>
+    <value value="4c079bdb-7905-4e22-aed3-38db122c9f3e"/>
+  </identifier>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/us/carin/CodeSystem/carin-bb-claim-type"/>
+      <code value="professional-nonclinician"/>
+    </coding>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/be1b2b9f-22ca-4995-9577-b3ce6efac44c"/>
+  </patient>
+  <billablePeriod>
+    <start value="2020-03-09"/>
+    <end value="2020-03-09"/>
+  </billablePeriod>
+  <created value="2020-09-17"/>
+  <insurer>
+    <display value="Not Found-99f25457-33ea-418a-b960-fbb15dec3934"/>
+  </insurer>
+  <provider>
+    <reference value="Practitioner/f33d4c63-32d3-4bd6-bf7a-083d32761080"/>
+    <identifier>
+      <system value="http://hl7.org/fhir/sid/us-npi"/>
+      <value value="f33d4c63-32d3-4bd6-bf7a-083d32761080"/>
+    </identifier>
+    <display value="986297852679"/>
+  </provider>
+  <payee>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/payeetype"/>
+        <code value="practitioner"/>
+      </coding>
+    </type>
+    <party>
+      <display value="986297852679"/>
+    </party>
+  </payee>
+  <outcome value="complete"/>
+  <supportingInfo>
+    <sequence value="1"/>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"/>
+        <code value="info"/>
+      </coding>
+      <text value="billingnetworkcontractingstatus"/>
+    </category>
+    <code>
+      <coding>
+        <code value="out"/>
+      </coding>
+    </code>
+  </supportingInfo>
+  <supportingInfo>
+    <sequence value="2"/>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"/>
+        <code value="info"/>
+      </coding>
+      <text value="clmrecvddate"/>
+    </category>
+    <code>
+      <coding>
+        <code value="2020-03-09"/>
+      </coding>
+    </code>
+  </supportingInfo>
+  <supportingInfo>
+    <sequence value="3"/>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"/>
+        <code value="info"/>
+      </coding>
+      <text value="referringnetworkcontractingstatus"/>
+    </category>
+    <code>
+      <coding>
+        <code value="out"/>
+      </coding>
+    </code>
+  </supportingInfo>
+  <supportingInfo>
+    <sequence value="4"/>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"/>
+        <code value="info"/>
+      </coding>
+      <text value="sitenetworkcontractingstatus"/>
+    </category>
+    <code>
+      <coding>
+        <code value="out"/>
+      </coding>
+    </code>
+  </supportingInfo>
+  <diagnosis>
+    <sequence value="1"/>
+    <diagnosisCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="49727002"/>
+        <display value="Cough (finding)"/>
+      </coding>
+    </diagnosisCodeableConcept>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype"/>
+        <code value="principal"/>
+      </coding>
+    </type>
+  </diagnosis>
+  <diagnosis>
+    <sequence value="2"/>
+    <diagnosisCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="267102003"/>
+        <display value="Sore throat symptom (finding)"/>
+      </coding>
+    </diagnosisCodeableConcept>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype"/>
+        <code value="clinical"/>
+      </coding>
+    </type>
+  </diagnosis>
+  <diagnosis>
+    <sequence value="3"/>
+    <diagnosisCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386661006"/>
+        <display value="Fever (finding)"/>
+      </coding>
+    </diagnosisCodeableConcept>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype"/>
+        <code value="clinical"/>
+      </coding>
+    </type>
+  </diagnosis>
+  <diagnosis>
+    <sequence value="4"/>
+    <diagnosisCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="36955009"/>
+        <display value="Loss of taste (finding)"/>
+      </coding>
+    </diagnosisCodeableConcept>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype"/>
+        <code value="clinical"/>
+      </coding>
+    </type>
+  </diagnosis>
+  <diagnosis>
+    <sequence value="5"/>
+    <diagnosisCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="840544004"/>
+        <display value="Suspected COVID-19"/>
+      </coding>
+    </diagnosisCodeableConcept>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-diagnosistype"/>
+        <code value="clinical"/>
+      </coding>
+    </type>
+  </diagnosis>
+  <procedure>
+    <sequence value="1"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-procedure-type"/>
+        <code value="primary"/>
+      </coding>
+    </type>
+    <date value="2020-03-09"/>
+    <procedureCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="261352009"/>
+        <display value="Face mask (physical object)"/>
+      </coding>
+    </procedureCodeableConcept>
+  </procedure>
+  <insurance>
+    <focal value="false"/>
+    <coverage>
+      <display value="Not Found-d8a24d95-b4b2-437c-a5c4-dbf89841ac2a"/>
+    </coverage>
+  </insurance>
+  <item>
+    <sequence value="1"/>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-benefitcategory"/>
+        <code value="11"/>
+        <display value="11"/>
+      </coding>
+    </category>
+    <productOrService>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="261352009"/>
+        <display value="Face mask (physical object)"/>
+      </coding>
+    </productOrService>
+    <servicedPeriod>
+      <start value="2020-03-09"/>
+      <end value="2020-03-09"/>
+    </servicedPeriod>
+    <locationCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-serviceplace"/>
+        <code value="19"/>
+        <display value="Off Campus-Outpatient Hospital"/>
+      </coding>
+    </locationCodeableConcept>
+  </item>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="submitted"/>
+      </coding>
+    </category>
+    <amount>
+      <value value="465.95"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="allowed"/>
+      </coding>
+    </category>
+    <amount>
+      <value value="465.95"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="paidbypatient"/>
+      </coding>
+    </category>
+    <amount>
+      <value value="414.47"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="paidtoprovider"/>
+      </coding>
+    </category>
+    <amount>
+      <value value="465.95"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="paidtopatient"/>
+      </coding>
+    </category>
+    <amount>
+      <value value="0.0"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="payment"/>
+      </coding>
+    </category>
+    <amount>
+      <value value="465.95"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="disallowed"/>
+      </coding>
+    </category>
+    <amount>
+      <value value="414.47"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="deductible"/>
+      </coding>
+    </category>
+    <amount>
+      <value value="700.0"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="coins"/>
+      </coding>
+    </category>
+    <amount>
+      <value value="0.0"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="copay"/>
+      </coding>
+    </category>
+    <amount>
+      <value value="455.0"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="memberliability"/>
+      </coding>
+    </category>
+    <amount>
+      <value value="0.0"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="priorpayerpaid"/>
+      </coding>
+    </category>
+    <amount>
+      <value value="51.48"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="discount"/>
+      </coding>
+    </category>
+    <amount>
+      <value value="0.0"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <payment>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/paymentstatus"/>
+        <code value="complete"/>
+      </coding>
+    </type>
+    <date value="2020-03-09"/>
+  </payment>
+</ExplanationOfBenefit>

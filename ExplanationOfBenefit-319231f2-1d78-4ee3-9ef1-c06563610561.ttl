@@ -1,0 +1,476 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/319231f2-1d78-4ee3-9ef1-c06563610561> a fhir:ExplanationOfBenefit;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "319231f2-1d78-4ee3-9ef1-c06563610561"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2020-09-17T15:25:29.2+00:00"^^xsd:dateTime ];
+     fhir:Meta.tag [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "Pharmacy" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: Claim unique identifier: d712127c-fd0d-4fd8-b2f7-10e97401aa93, RX service reference number: 63aebeed-2cb7-499e-a6be-be79629e822a</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin/CodeSystem/carin-bb-claim-type pharmacy}\">pharmacy</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient/582821be-f87e-477b-8452-d268e0febc67\">Patient/582821be-f87e-477b-8452-d268e0febc67</a></p><p><b>created</b>: 2020-09-17</p><p><b>insurer</b>: <span>Not Found-03966f69-d4fa-4091-a49d-0c5fe30d64fa</span></p><p><b>provider</b>: <span>Not Found-140515140697</span></p><h3>Payees</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Party</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claim-type practitioner}\">practitioner</span></td><td><span>269512210031</span></td></tr></table><p><b>outcome</b>: complete</p><h3>CareTeams</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Provider</b></td><td><b>Role</b></td></tr><tr><td>*</td><td>1</td><td><a href=\"Practitioner/9ed1d9e6-b2f0-4433-a403-919bff1c1978\">269512210031</a></td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claimcareteamrole primary}\">Primary provider</span></td></tr></table><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">billingnetworkcontractingstatus</span></p><p><b>code</b>: <span title=\"Codes: \">out</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">clmrecvddate</span></p><p><b>code</b>: <span title=\"Codes: \">2020-01-25</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 3</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">dayssupply</span></p><p><b>code</b>: <span title=\"Codes: \">5</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 4</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">dawcode</span></p><p><b>code</b>: <span title=\"Codes: \">3</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 5</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">refillnum</span></p><p><b>code</b>: <span title=\"Codes: \">false</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 6</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">rxorigincode</span></p><p><b>code</b>: <span title=\"Codes: \">false</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 7</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">brandgeneric</span></p><p><b>code</b>: <span title=\"Codes: \">b</span></p></blockquote><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>1</td><td><span title=\"Codes: {http://snomed.info/sct 43878008}\">Streptococcal sore throat (disorder)</span></td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype principal}\">Principal Diagnosis</span></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>false</td><td><span>Not Found-7e024021-618e-433c-9e64-194ac070cca9</span></td></tr></table><h3>Items</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>ProductOrService</b></td><td><b>Serviced[x]</b></td><td><b>Location[x]</b></td></tr><tr><td>*</td><td>1</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/ex-benefitcategory 16}\">16</span></td><td><span title=\"Codes: {http://hl7.org/fhir/sid/ndc 834061}\">834061</span></td><td>2020-01-25</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/ex-serviceplace 1}\">Pharmacy</span></td></tr></table><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\">Submitted Amount</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication allowed}\">allowed</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication paidbypatient}\">paidbypatient</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication paidtoprovider}\">paidtoprovider</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication paidtopatient}\">paidtopatient</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication payment}\">payment</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication disallowed}\">disallowed</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication deductible}\">Deductible</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication coins}\">coins</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication copay}\">CoPay</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication memberliability}\">memberliability</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication priorpayerpaid}\">priorpayerpaid</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication discount}\">discount</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><h3>Payments</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Date</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/paymentstatus complete}\">complete</span></td><td>2020-01-25</td></tr></table></div>"
+  ];
+  fhir:ExplanationOfBenefit.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claim-type" ];
+         fhir:Coding.code [ fhir:value "pharmacy" ];
+         fhir:Coding.display [ fhir:value "Pharmacy" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Claim unique identifier" ]
+     ];
+     fhir:Identifier.value [ fhir:value "d712127c-fd0d-4fd8-b2f7-10e97401aa93" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claim-type" ];
+         fhir:Coding.code [ fhir:value "pharmacy" ];
+         fhir:Coding.display [ fhir:value "Pharmacy" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "RX service reference number" ]
+     ];
+     fhir:Identifier.value [ fhir:value "63aebeed-2cb7-499e-a6be-be79629e822a" ]
+  ];
+  fhir:ExplanationOfBenefit.status [ fhir:value "active"];
+  fhir:ExplanationOfBenefit.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin/CodeSystem/carin-bb-claim-type" ];
+       fhir:Coding.code [ fhir:value "pharmacy" ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.use [ fhir:value "claim"];
+  fhir:ExplanationOfBenefit.patient [
+     fhir:link <http://hl7.org/fhir/us/carin-bb/Patient/582821be-f87e-477b-8452-d268e0febc67>;
+     fhir:Reference.reference [ fhir:value "Patient/582821be-f87e-477b-8452-d268e0febc67" ]
+  ];
+  fhir:ExplanationOfBenefit.created [ fhir:value "2020-09-17"^^xsd:date];
+  fhir:ExplanationOfBenefit.insurer [
+     fhir:Reference.display [ fhir:value "Not Found-03966f69-d4fa-4091-a49d-0c5fe30d64fa" ]
+  ];
+  fhir:ExplanationOfBenefit.provider [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://hl7.org/fhir/sid/us-npi" ];
+       fhir:Identifier.value [ fhir:value "140515140697" ]
+     ];
+     fhir:Reference.display [ fhir:value "Not Found-140515140697" ]
+  ];
+  fhir:ExplanationOfBenefit.payee [
+     fhir:ExplanationOfBenefit.payee.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claim-type" ];
+         fhir:Coding.code [ fhir:value "practitioner" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.payee.party [
+       fhir:Reference.display [ fhir:value "269512210031" ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.outcome [ fhir:value "complete"];
+  fhir:ExplanationOfBenefit.careTeam [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.careTeam.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.careTeam.provider [
+       fhir:link <http://hl7.org/fhir/us/carin-bb/Practitioner/9ed1d9e6-b2f0-4433-a403-919bff1c1978>;
+       fhir:Reference.reference [ fhir:value "Practitioner/9ed1d9e6-b2f0-4433-a403-919bff1c1978" ];
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "http://hl7.org/fhir/sid/us-npi" ];
+         fhir:Identifier.value [ fhir:value "269512210031" ]
+       ];
+       fhir:Reference.display [ fhir:value "269512210031" ]
+     ];
+     fhir:ExplanationOfBenefit.careTeam.role [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claimcareteamrole" ];
+         fhir:Coding.code [ fhir:value "primary" ];
+         fhir:Coding.display [ fhir:value "Primary provider" ]
+       ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.supportingInfo [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.supportingInfo.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claiminformationcategory" ];
+         fhir:Coding.code [ fhir:value "info" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "billingnetworkcontractingstatus" ]
+     ];
+     fhir:ExplanationOfBenefit.supportingInfo.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "out" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ExplanationOfBenefit.supportingInfo.sequence [ fhir:value "2"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claiminformationcategory" ];
+         fhir:Coding.code [ fhir:value "info" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "clmrecvddate" ]
+     ];
+     fhir:ExplanationOfBenefit.supportingInfo.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "2020-01-25" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ExplanationOfBenefit.supportingInfo.sequence [ fhir:value "3"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claiminformationcategory" ];
+         fhir:Coding.code [ fhir:value "info" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "dayssupply" ]
+     ];
+     fhir:ExplanationOfBenefit.supportingInfo.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "5" ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:ExplanationOfBenefit.supportingInfo.sequence [ fhir:value "4"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claiminformationcategory" ];
+         fhir:Coding.code [ fhir:value "info" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "dawcode" ]
+     ];
+     fhir:ExplanationOfBenefit.supportingInfo.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "3" ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:ExplanationOfBenefit.supportingInfo.sequence [ fhir:value "5"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claiminformationcategory" ];
+         fhir:Coding.code [ fhir:value "info" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "refillnum" ]
+     ];
+     fhir:ExplanationOfBenefit.supportingInfo.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "false" ]
+       ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:ExplanationOfBenefit.supportingInfo.sequence [ fhir:value "6"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claiminformationcategory" ];
+         fhir:Coding.code [ fhir:value "info" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "rxorigincode" ]
+     ];
+     fhir:ExplanationOfBenefit.supportingInfo.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "false" ]
+       ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:ExplanationOfBenefit.supportingInfo.sequence [ fhir:value "7"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claiminformationcategory" ];
+         fhir:Coding.code [ fhir:value "info" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "brandgeneric" ]
+     ];
+     fhir:ExplanationOfBenefit.supportingInfo.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "b" ]
+       ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.diagnosis [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.diagnosis.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.diagnosis.diagnosisCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:43878008;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "43878008" ];
+         fhir:Coding.display [ fhir:value "Streptococcal sore throat (disorder)" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.diagnosis.type [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/ex-diagnosistype" ];
+         fhir:Coding.code [ fhir:value "principal" ]
+       ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.insurance [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.insurance.focal [ fhir:value "false"^^xsd:boolean ];
+     fhir:ExplanationOfBenefit.insurance.coverage [
+       fhir:Reference.display [ fhir:value "Not Found-7e024021-618e-433c-9e64-194ac070cca9" ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.item [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.item.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.item.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/ex-benefitcategory" ];
+         fhir:Coding.code [ fhir:value "16" ];
+         fhir:Coding.display [ fhir:value "16" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/ndc" ];
+         fhir:Coding.code [ fhir:value "834061" ];
+         fhir:Coding.display [ fhir:value "834061" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.servicedDate [ fhir:value "2020-01-25"^^xsd:date ];
+     fhir:ExplanationOfBenefit.item.locationCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/ex-serviceplace" ];
+         fhir:Coding.code [ fhir:value "1" ];
+         fhir:Coding.display [ fhir:value "Pharmacy" ]
+       ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.total [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "submitted" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "14.43"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "allowed" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "14.43"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "paidbypatient" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "14.43"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "paidtoprovider" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "14.43"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "paidtopatient" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "payment" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "14.43"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "disallowed" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "14.43"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "deductible" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "coins" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "copay" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "memberliability" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "priorpayerpaid" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "discount" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.payment [
+     fhir:ExplanationOfBenefit.payment.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/paymentstatus" ];
+         fhir:Coding.code [ fhir:value "complete" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.payment.date [ fhir:value "2020-01-25"^^xsd:date ]
+  ] .
+
+<http://hl7.org/fhir/us/carin-bb/Patient/582821be-f87e-477b-8452-d268e0febc67> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Practitioner/9ed1d9e6-b2f0-4433-a403-919bff1c1978> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/319231f2-1d78-4ee3-9ef1-c06563610561.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/ExplanationOfBenefit/319231f2-1d78-4ee3-9ef1-c06563610561.ttl> .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Organization/45666b45-8275-47a6-85b5-4e23f36d8868> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "45666b45-8275-47a6-85b5-4e23f36d8868"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "10" ];
+     fhir:Meta.lastUpdated [ fhir:value "2020-09-15T05:07:19.552+00:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: 278020554390 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: LEWISGALE HOSPITAL PULASKI</p><p><b>telecom</b>: ph: 5409948100</p><p><b>address</b>: 2400 LEE HIGHWAY, PULASKI, VA 24301(WORK)</p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>LEWISGALE HOSPITAL PULASKI</td><td>ph: 5409948100</td></tr></table></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://npiregistry.cms.hhs.gov/" ];
+     fhir:Identifier.value [ fhir:value "278020554390" ]
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/organization-type" ];
+       fhir:Coding.code [ fhir:value "prov" ]
+     ]
+  ];
+  fhir:Organization.name [ fhir:value "LEWISGALE HOSPITAL PULASKI"];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "5409948100" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.type [ fhir:value "both" ];
+     fhir:Address.text [ fhir:value "2400 LEE HIGHWAY, PULASKI, VA 24301" ];
+     fhir:Address.line [
+       fhir:value "2400 LEE HIGHWAY";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "PULASKI" ];
+     fhir:Address.state [ fhir:value "VA" ];
+     fhir:Address.postalCode [ fhir:value "24301" ]
+  ];
+  fhir:Organization.contact [
+     fhir:index 0;
+     fhir:Organization.contact.name [
+       fhir:HumanName.text [ fhir:value "LEWISGALE HOSPITAL PULASKI" ]
+     ];
+     fhir:Organization.contact.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "5409948100" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Organization/45666b45-8275-47a6-85b5-4e23f36d8868.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/Organization/45666b45-8275-47a6-85b5-4e23f36d8868.ttl> .
+
+# -------------------------------------------------------------------------------------
+
