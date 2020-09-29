@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CARINConsumerDirectedPayerDataExchange"];
   fhir:ImplementationGuide.title [ fhir:value "CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-09-29T18:16:19+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-09-29T18:39:00+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -950,14 +950,14 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-FDANDC.html" ]
+         fhir:Extension.valueUri [ fhir:value "ValueSet-FDANDCOrCompound.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDC>;
-         fhir:Reference.reference [ fhir:value "ValueSet/FDANDC" ]
+         fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDCOrCompound>;
+         fhir:Reference.reference [ fhir:value "ValueSet/FDANDCOrCompound" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FDA National Drug Code (NDC)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  " ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FDA NDC or Compound" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  \nValues will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, ‘compound’" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 36;
@@ -968,14 +968,14 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-FDANDCOrCompound.html" ]
+         fhir:Extension.valueUri [ fhir:value "ValueSet-FDANationalDrugCode.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDCOrCompound>;
-         fhir:Reference.reference [ fhir:value "ValueSet/FDANDCOrCompound" ]
+         fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/FDANationalDrugCode>;
+         fhir:Reference.reference [ fhir:value "ValueSet/FDANationalDrugCode" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FDA NDC or Compound" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  \nValues will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, ‘compound’" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FDA National Drug Code (NDC)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 37;
@@ -2647,9 +2647,9 @@
 
 <http://hl7.org/fhir/us/carin-bb/ValueSet/CMSPlaceofServiceCodes> a fhir:us .
 
-<http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDC> a fhir:us .
-
 <http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDCOrCompound> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/ValueSet/FDANationalDrugCode> a fhir:us .
 
 <http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPBrandGenericCode> a fhir:us .
 

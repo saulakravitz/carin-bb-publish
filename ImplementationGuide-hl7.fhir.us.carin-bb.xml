@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button&#xAE;)"/>
   <status value="active"/>
-  <date value="2020-09-29T18:16:19+00:00"/>
+  <date value="2020-09-29T18:39:00+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -703,20 +703,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-FDANDC.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/FDANDC"/>
-      </reference>
-      <name value="FDA National Drug Code (NDC)"/>
-      <description value="National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  "/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-FDANDCOrCompound.html"/>
       </extension>
       <reference>
@@ -724,6 +710,20 @@
       </reference>
       <name value="FDA NDC or Compound"/>
       <description value="National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  &#xA;Values will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, &#x2018;compound&#x2019;"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-FDANationalDrugCode.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FDANationalDrugCode"/>
+      </reference>
+      <name value="FDA National Drug Code (NDC)"/>
+      <description value="National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

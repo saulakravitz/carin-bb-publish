@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)",
   "status": "active",
-  "date": "2020-09-29T18:16:19+00:00",
+  "date": "2020-09-29T18:39:00+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -966,14 +966,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-FDANDC.html"
+            "valueUri": "ValueSet-FDANDCOrCompound.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/FDANDC"
+          "reference": "ValueSet/FDANDCOrCompound"
         },
-        "name": "FDA National Drug Code (NDC)",
-        "description": "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  ",
+        "name": "FDA NDC or Compound",
+        "description": "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  \nValues will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, ‘compound’",
         "exampleBoolean": false
       },
       {
@@ -984,14 +984,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-FDANDCOrCompound.html"
+            "valueUri": "ValueSet-FDANationalDrugCode.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/FDANDCOrCompound"
+          "reference": "ValueSet/FDANationalDrugCode"
         },
-        "name": "FDA NDC or Compound",
-        "description": "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  \nValues will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, ‘compound’",
+        "name": "FDA National Drug Code (NDC)",
+        "description": "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  ",
         "exampleBoolean": false
       },
       {
