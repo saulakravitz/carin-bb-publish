@@ -144,7 +144,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Reference to the related claim","Reference to a related claim.","","For workplace or other accidents it is common to relate separate claims arising from the same event.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.related.claim",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.related.relationship","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
-","How the reference claim is related","A code to convey how the claims are related.","For example, prior claim or umbrella.","Some insurers need a declaration of the type of relationship.","","","","","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBRelatedClaimRelationshipCodes","",,,,"ExplanationOfBenefit.related.relationship",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","How the reference claim is related","A code to convey how the claims are related.","For example, prior claim or umbrella.","Some insurers need a declaration of the type of relationship.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBRelatedClaimRelationshipCodes","",,,,"ExplanationOfBenefit.related.relationship",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.related.reference","","","",1,1,"Y","","","Identifier {[]} {[]}
 ","File or case reference","An alternate organizational reference to the case or file to which this particular claim pertains.","For example, Property/Casualty insurer claim number or Workers Compensation case number.","In cases where an event-triggered claim is being submitted to an insurer which requires a reference number to be specified on all exchanges.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.related.reference",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -293,7 +293,7 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition
 "ExplanationOfBenefit.diagnosis.packageCode","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Package billing code","A package billing code or bundle code used to group products and services to a particular health condition (such as heart attack) which is based on a predetermined grouping code system.","For example, DRG (Diagnosis Related Group) or a bundled billing code. A patient may have a diagnosis of a Myocardio-infarction and a DRG for HeartAttack would assigned. The Claim item (and possible subsequent claims) would refer to the DRG for those line items that were for services related to the heart attack event.","Required to relate the current  diagnosis to a package billing code that is then referenced on the individual claim items which are specific to the health condition covered by the package code.","","","","","","","",,"example","The DRG codes associated with the diagnosis.","http://hl7.org/fhir/ValueSet/ex-diagnosisrelatedgroup","",,,,"ExplanationOfBenefit.diagnosis.packageCode",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.procedure","","","",0,*,"Y","","","BackboneElement {[]} {[]}
+"ExplanationOfBenefit.procedure","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Clinical procedures performed","Procedures performed on the patient relevant to the billing items with the claim.","","The specific clinical invention are sometimes required to be provided to justify billing a greater than customary amount for a service.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.procedure",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.procedure.id","","","",0,1,"","","","string {[]} {[]}
@@ -311,10 +311,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.procedure.sequence","","","",1,1,"","","","positiveInt {[]} {[]}
 ","Procedure instance identifier","A number to uniquely identify procedure entries.","","Necessary to provide a mechanism to link to claim details.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.procedure.sequence",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.procedure.type","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
+"ExplanationOfBenefit.procedure.type","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Category of Procedure","When the condition was observed or the relative ranking.","","Often required to capture a particular diagnosis, for example: primary or discharge.","","","","","","","",,"example","Example procedure type codes.","http://hl7.org/fhir/ValueSet/ex-procedure-type","",,,,"ExplanationOfBenefit.procedure.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.procedure.date","","","",0,1,"Y","","","dateTime {[]} {[]}
+"ExplanationOfBenefit.procedure.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","When the procedure was performed","Date and optionally time the procedure was performed.","","Required for auditing purposes.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.procedure.date",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.procedure.procedure[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
