@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)",
   "status": "active",
-  "date": "2020-09-25T21:05:25+00:00",
+  "date": "2020-09-29T15:02:39+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -732,6 +732,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-C4BBClaimProcedureType.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/C4BBClaimProcedureType"
+        },
+        "name": "C4BB Claim Procedure Type",
+        "description": "Indicates if the professional and non-clinician diagnosis is principal or secondary",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-C4BBClaimProfessionalAndNonClinicianCareTeamRole.html"
           }
         ],
@@ -876,14 +894,50 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-CMSDRG.html"
+            "valueUri": "ValueSet-CDCICD910CMDiagnosisCodes.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/CMSDRG"
+          "reference": "ValueSet/CDCICD910CMDiagnosisCodes"
         },
-        "name": "CMS-DRG",
-        "description": "Diagnosis Related Group - any of the payment categories that are used to classify patients and especially Medicare patients for the purpose of reimbursing hospitals for each case in a \ngiven category with a fixed fee regardless of the actual costs incurred (Other DRGs, such as AP-DRGs, requires defining their specific Value Sets and Code Systems.) \nhttps://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software.html This link takes one to a list of files. The code set is owned by CMS and is available for use.",
+        "name": "CDC ICD-9-10-CM Diagnosis Codes",
+        "description": "The ICD-CM (International Classification of Diseases, Clinical Modification) is a system used by physicians and other healthcare providers to classify and code all diagnoses and symptoms recorded in conjunction with hospital care in the United States.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-CMSICD910PCSProcedureCodes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/CMSICD910PCSProcedureCodes"
+        },
+        "name": "CMS ICD-9-10-PCS Procedure Codes",
+        "description": "This value set defines a set of codes from ICD-PCS that can be used to indicate the procedure performed",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-CMSMS3MAPRDRG.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/CMSMS3MAPRDRG"
+        },
+        "name": "MS MS 3M APR DRG",
+        "description": "This value set defines two sets of DRGs, MS-DRGs (Medicare Severity Diagnosis Related Groups) and APR-DRGs (All Patient Refined Diagnosis Related Groups).  MS-DRGs are owned by CMS; APR-DRGs are owned by 3M.  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version.  ",
         "exampleBoolean": false
       },
       {
@@ -938,42 +992,6 @@
         },
         "name": "FDA NDC or Compound",
         "description": "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  \nValues will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, ‘compound’",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-ICD10CM.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/ICD10CM"
-        },
-        "name": "ICD-10-CM Diagnosis Codes",
-        "description": "ICD-10-CM Diagnosis Codes.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-ICD10PCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/ICD10PCS"
-        },
-        "name": "ICD-10-PCS",
-        "description": "ICD-10-PCS",
         "exampleBoolean": false
       },
       {
@@ -1308,6 +1326,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-C4BBClaimProcedureType.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/C4BBClaimProcedureType"
+        },
+        "name": "C4BB Claim Procedure Type",
+        "description": "Indicates if the inpatient institutional procedure (ICD-PCS) is the principal procedure or another procedure",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-C4BBCompoundLiteral.html"
           }
         ],
@@ -1416,14 +1452,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-CMSDRG.html"
+            "valueUri": "CodeSystem-CMSHCPCSCodes.html"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/CMSDRG"
+          "reference": "CodeSystem/CMSHCPCSCodes"
         },
-        "name": "CMS Diagnosis Related Group (DRG)",
-        "description": "Diagnosis Related Group - any of the payment categories that are used to classify patients and especially Medicare patients for the purpose of reimbursing hospitals for each case in a given \ncategory with a fixed fee regardless of the actual costs incurred (Other DRGs, such as AP-DRGs, requires defining their specific Value Sets and Code Systems.)",
+        "name": "CMS HCPCS Codes",
+        "description": "HCPCS procedure codes and modifiers are submitted by providers to payers to convey the specific procedure performed.\nHCPCS codes are available at http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets.",
         "exampleBoolean": false
       },
       {
@@ -1434,14 +1470,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-CMSHCPCSCodes.html"
+            "valueUri": "CodeSystem-CMSMSDRG.html"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/CMSHCPCSCodes"
+          "reference": "CodeSystem/CMSMSDRG"
         },
-        "name": "CMS HCPCS Codes",
-        "description": "HCPCS procedure codes and modifiers are submitted by providers to payers to convey the specific procedure performed.\nHCPCS codes are available at http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets.",
+        "name": "CMS MS DRG",
+        "description": "MS-DRGs (Medicare Severity Diagnosis Related Groups).  MS-DRGs are owned by CMS.  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version.",
         "exampleBoolean": false
       },
       {
@@ -1478,60 +1514,6 @@
         },
         "name": "CMS- Remittance Advice Remark Codes (RARC)",
         "description": "RARC codes provide additional explanation for an adjustment already described by a Claim Adjustment Reason Code (CARC) or convey information about remittance processing.  \nRARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-FDANDC.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/FDANDC"
-        },
-        "name": "FDA National Drug Code (NDC)",
-        "description": "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7. ",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-ICD10CMCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/ICD10CMCS"
-        },
-        "name": "ICD-10-CM",
-        "description": "International Classification of Diseases, Tenth Revision, Clinical Modification)",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-ICD10PCSCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/ICD10PCSCS"
-        },
-        "name": "ICD-10-PCS",
-        "description": "International Classification of Diseases Surgical Procedures (ICD-10).",
         "exampleBoolean": false
       },
       {
@@ -1632,6 +1614,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-THREEMAPRDRG.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/THREEMAPRDRG"
+        },
+        "name": "3M APR DRG",
+        "description": "APR-DRGs (All Patient Refined Diagnosis Related Groups).  APR-DRGs are owned by 3M.  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version.  ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-X12ClaimAdjustmentReasonCodes.html"
           }
         ],
@@ -1641,42 +1641,6 @@
         "name": "X12 Claim Adjustment Reason Codes (CARC)",
         "description": "CARC codes describe why a claim or service line was paid differently than it was billed.   Use of X12 CARC codes require a license.  Reference https://x12.org/codes/.",
         "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-BBEobOutpatientInstitutional.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/BBEobOutpatientInstitutional"
-        },
-        "name": "BBEobOutpatientInstitutional",
-        "description": "BBEoB from Jeff",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-BBEobPharmacy.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/BBEobPharmacy"
-        },
-        "name": "BBEobPharmacy",
-        "description": "BBEoB from Jeff",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"
       },
       {
         "extension": [

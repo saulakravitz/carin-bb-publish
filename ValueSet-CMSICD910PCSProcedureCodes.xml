@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CMSICD910PCSProcedureCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="https://terminology.hl7.org/1.0.0//CodeSystem-icd10PCS.html"><code>http://www.cms.gov/Medicare/Coding/ICD10</code></a></li><li>Include all codes defined in <code>http://www.cms.gov/Medicare/Coding/ICD9</code></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/CMSICD910PCSProcedureCodes"/>
+  <version value="0.1.4"/>
+  <name value="CMSICD910PCSProcedureCodes"/>
+  <title value="CMS ICD-9-10-PCS Procedure Codes"/>
+  <status value="active"/>
+  <date value="2020-09-29T15:02:39+00:00"/>
+  <publisher value="HL7 Financial Management Working Group"/>
+  <contact>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="This value set defines a set of codes from ICD-PCS that can be used to indicate the procedure performed"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="The Centers for Medicare &amp; Medicaid Services (CMS) maintain ICD PCS Procedure Codes used throughout the US health care industry.  As HL7 is working with the owning authority to finalize the urls, the urls are subject to change."/>
+  <compose>
+    <include>
+      <system value="http://www.cms.gov/Medicare/Coding/ICD10"/>
+    </include>
+    <include>
+      <system value="http://www.cms.gov/Medicare/Coding/ICD9"/>
+    </include>
+  </compose>
+</ValueSet>

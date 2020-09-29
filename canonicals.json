@@ -1,19 +1,5 @@
 [
   {
-    "id": "ICD10CMCS",
-    "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/sid/icd-10-cm",
-    "version": "0.1.4",
-    "name": "ICD10CMCS"
-  },
-  {
-    "id": "FDANDC",
-    "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/sid/ndc",
-    "version": "0.1.4",
-    "name": "FDANDC"
-  },
-  {
     "id": "c4bb",
     "type": "CapabilityStatement",
     "url": "http://hl7.org/fhir/us/carin-bb/CapabilityStatement/c4bb",
@@ -47,6 +33,13 @@
     "url": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType",
     "version": "0.1.4",
     "name": "C4BBClaimDiagnosisType"
+  },
+  {
+    "id": "C4BBClaimProcedureType",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimProcedureType",
+    "version": "0.1.4",
+    "name": "C4BBClaimProcedureType"
   },
   {
     "id": "C4BBCompoundLiteral",
@@ -329,6 +322,13 @@
     "name": "C4BBClaimPharmacyTeamRole"
   },
   {
+    "id": "C4BBClaimProcedureType",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBClaimProcedureType",
+    "version": "0.1.4",
+    "name": "C4BBClaimProcedureType"
+  },
+  {
     "id": "C4BBClaimProfessionalAndNonClinicianCareTeamRole",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBClaimProfessionalAndNonClinicianCareTeamRole",
@@ -385,11 +385,25 @@
     "name": "C4BBSupportingInfoType"
   },
   {
-    "id": "CMSDRG",
+    "id": "CDCICD910CMDiagnosisCodes",
     "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSDRG",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/CDCICD910CMDiagnosisCodes",
     "version": "0.1.4",
-    "name": "CMSDRG"
+    "name": "CDCICD910CMDiagnosisCodes"
+  },
+  {
+    "id": "CMSICD910PCSProcedureCodes",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSICD910PCSProcedureCodes",
+    "version": "0.1.4",
+    "name": "CMSICD910PCSProcedureCodes"
+  },
+  {
+    "id": "CMSMS3MAPRDRG",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSMS3MAPRDRG",
+    "version": "0.1.4",
+    "name": "CMSMS3MAPRDRG"
   },
   {
     "id": "CMSPlaceofServiceCodes",
@@ -411,20 +425,6 @@
     "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDCOrCompound",
     "version": "0.1.4",
     "name": "FDANDCOrCompound"
-  },
-  {
-    "id": "ICD10CM",
-    "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/ICD10CM",
-    "version": "0.1.4",
-    "name": "ICD10CM"
-  },
-  {
-    "id": "ICD10PCS",
-    "type": "ValueSet",
-    "url": "http://hl7.org/fhir/us/carin-bb/ValueSet/ICD10PCS",
-    "version": "0.1.4",
-    "name": "ICD10PCS"
   },
   {
     "id": "NCPDPBrandGenericCode",
@@ -483,6 +483,13 @@
     "name": "NCPDPRejectCode"
   },
   {
+    "id": "THREEMAPRDRG",
+    "type": "CodeSystem",
+    "url": "http://www.3M.com/APR",
+    "version": "0.1.4",
+    "name": "THREEMAPRDRG"
+  },
+  {
     "id": "AMACPTCodes",
     "type": "CodeSystem",
     "url": "http://www.ama-assn.org/go/cpt",
@@ -497,11 +504,11 @@
     "name": "CMSHCPCSCodes"
   },
   {
-    "id": "CMSDRG",
+    "id": "CMSMSDRG",
     "type": "CodeSystem",
-    "url": "http://www.cms.gov/ms-drg",
+    "url": "http://www.cms.gov/Medicare/Coding/ms-drg/MS",
     "version": "0.1.4",
-    "name": "CMSDRG"
+    "name": "CMSMSDRG"
   },
   {
     "id": "NCPDPBrandGenericCode",
@@ -530,13 +537,6 @@
     "url": "http://www.ncpdp.org/PrescriptionOriginCode",
     "version": "0.1.4",
     "name": "NCPDPPrescriptionOriginCode"
-  },
-  {
-    "id": "ICD10PCSCS",
-    "type": "CodeSystem",
-    "url": "http://www.nlm.nih.gov/research/umls/icd10pcs",
-    "version": "0.1.4",
-    "name": "ICD10PCSCS"
   },
   {
     "id": "AHANUBCPatientDischargeStatus",

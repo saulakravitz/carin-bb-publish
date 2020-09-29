@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "C4BBClaimCareTeamRole"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">attending<a name=\"C4BBClaimCareTeamRole-attending\"> </a></td><td>Attending</td><td>The attending physicianr</td></tr><tr><td style=\"white-space:nowrap\">referring<a name=\"C4BBClaimCareTeamRole-referring\"> </a></td><td>Referring</td><td>The referring physician</td></tr><tr><td style=\"white-space:nowrap\">operating<a name=\"C4BBClaimCareTeamRole-operating\"> </a></td><td>Operating</td><td>The operating physician</td></tr><tr><td style=\"white-space:nowrap\">performing<a name=\"C4BBClaimCareTeamRole-performing\"> </a></td><td>Performing provider</td><td>The performing or rendering provider</td></tr><tr><td style=\"white-space:nowrap\">prescribing<a name=\"C4BBClaimCareTeamRole-prescribing\"> </a></td><td>Prescribing provider</td><td>The prescribing provider</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">attending<a name=\"C4BBClaimCareTeamRole-attending\"> </a></td><td>Attending</td><td>The attending physicianr</td></tr><tr><td style=\"white-space:nowrap\">referring<a name=\"C4BBClaimCareTeamRole-referring\"> </a></td><td>Referring</td><td>The referring physician</td></tr><tr><td style=\"white-space:nowrap\">operating<a name=\"C4BBClaimCareTeamRole-operating\"> </a></td><td>Operating</td><td>The operating physician</td></tr><tr><td style=\"white-space:nowrap\">otheroperating<a name=\"C4BBClaimCareTeamRole-otheroperating\"> </a></td><td>Other Operating</td><td>The other operating physician</td></tr><tr><td style=\"white-space:nowrap\">performing<a name=\"C4BBClaimCareTeamRole-performing\"> </a></td><td>Performing provider</td><td>The performing or rendering provider</td></tr><tr><td style=\"white-space:nowrap\">prescribing<a name=\"C4BBClaimCareTeamRole-prescribing\"> </a></td><td>Prescribing provider</td><td>The prescribing provider</td></tr><tr><td style=\"white-space:nowrap\">purchasedservice<a name=\"C4BBClaimCareTeamRole-purchasedservice\"> </a></td><td>Purchased Service</td><td>A purchased service occurs when one provider purchases a service from another provider and then provides it to the patient, e.g. a diagnostic exam</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole"];
   fhir:CodeSystem.version [ fhir:value "0.1.4"];
   fhir:CodeSystem.name [ fhir:value "C4BBClaimCareTeamRole"];
   fhir:CodeSystem.title [ fhir:value "C4BB Claim Care Team Role"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-09-25T21:05:25+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-09-29T15:02:39+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -43,7 +43,7 @@
   ];
   fhir:CodeSystem.copyright [ fhir:value "This Code System is not copyrighted."];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "attending" ];
@@ -61,14 +61,24 @@
      fhir:CodeSystem.concept.definition [ fhir:value "The operating physician" ]
   ], [
      fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "otheroperating" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other Operating" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The other operating physician" ]
+  ], [
+     fhir:index 4;
      fhir:CodeSystem.concept.code [ fhir:value "performing" ];
      fhir:CodeSystem.concept.display [ fhir:value "Performing provider" ];
      fhir:CodeSystem.concept.definition [ fhir:value "The performing or rendering provider" ]
   ], [
-     fhir:index 4;
+     fhir:index 5;
      fhir:CodeSystem.concept.code [ fhir:value "prescribing" ];
      fhir:CodeSystem.concept.display [ fhir:value "Prescribing provider" ];
      fhir:CodeSystem.concept.definition [ fhir:value "The prescribing provider" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "purchasedservice" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Purchased Service" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "A purchased service occurs when one provider purchases a service from another provider and then provides it to the patient, e.g. a diagnostic exam" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

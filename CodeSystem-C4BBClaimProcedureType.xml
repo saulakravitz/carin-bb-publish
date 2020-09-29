@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="C4BBClaimProcedureType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimProcedureType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">principal<a name="C4BBClaimProcedureType-principal"> </a></td><td>Principal</td><td>The Principal Procedure is based on the relation of the procedure to the Principal Diagnosis</td></tr><tr><td style="white-space:nowrap">other<a name="C4BBClaimProcedureType-other"> </a></td><td>Other</td><td>Other procedures performed during the inpatient institutional admission</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimProcedureType"/>
+  <version value="0.1.4"/>
+  <name value="C4BBClaimProcedureType"/>
+  <title value="C4BB Claim Procedure Type"/>
+  <status value="active"/>
+  <date value="2020-09-29T15:02:39+00:00"/>
+  <publisher value="HL7 Financial Management Working Group"/>
+  <contact>
+    <name value="HL7 Financial Management Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fm/index.cfm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fm@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <description value="Indicates if the inpatient institutional procedure (ICD-PCS) is the principal procedure or another procedure"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This CodeSystem is not copyrighted."/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="principal"/>
+    <display value="Principal"/>
+    <definition value="The Principal Procedure is based on the relation of the procedure to the Principal Diagnosis"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+    <definition value="Other procedures performed during the inpatient institutional admission"/>
+  </concept>
+</CodeSystem>

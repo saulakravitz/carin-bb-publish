@@ -11,7 +11,7 @@
   <name value="CARINConsumerDirectedPayerDataExchange"/>
   <title value="CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button&#xAE;)"/>
   <status value="active"/>
-  <date value="2020-09-25T21:05:25+00:00"/>
+  <date value="2020-09-29T15:02:39+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -521,6 +521,20 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-C4BBClaimProcedureType.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/C4BBClaimProcedureType"/>
+      </reference>
+      <name value="C4BB Claim Procedure Type"/>
+      <description value="Indicates if the professional and non-clinician diagnosis is principal or secondary"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-C4BBClaimProfessionalAndNonClinicianCareTeamRole.html"/>
       </extension>
       <reference>
@@ -633,13 +647,41 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-CMSDRG.html"/>
+        <valueUri value="ValueSet-CDCICD910CMDiagnosisCodes.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/CMSDRG"/>
+        <reference value="ValueSet/CDCICD910CMDiagnosisCodes"/>
       </reference>
-      <name value="CMS-DRG"/>
-      <description value="Diagnosis Related Group - any of the payment categories that are used to classify patients and especially Medicare patients for the purpose of reimbursing hospitals for each case in a &#xA;given category with a fixed fee regardless of the actual costs incurred (Other DRGs, such as AP-DRGs, requires defining their specific Value Sets and Code Systems.) &#xA;https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software.html This link takes one to a list of files. The code set is owned by CMS and is available for use."/>
+      <name value="CDC ICD-9-10-CM Diagnosis Codes"/>
+      <description value="The ICD-CM (International Classification of Diseases, Clinical Modification) is a system used by physicians and other healthcare providers to classify and code all diagnoses and symptoms recorded in conjunction with hospital care in the United States."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-CMSICD910PCSProcedureCodes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CMSICD910PCSProcedureCodes"/>
+      </reference>
+      <name value="CMS ICD-9-10-PCS Procedure Codes"/>
+      <description value="This value set defines a set of codes from ICD-PCS that can be used to indicate the procedure performed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-CMSMS3MAPRDRG.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CMSMS3MAPRDRG"/>
+      </reference>
+      <name value="MS MS 3M APR DRG"/>
+      <description value="This value set defines two sets of DRGs, MS-DRGs (Medicare Severity Diagnosis Related Groups) and APR-DRGs (All Patient Refined Diagnosis Related Groups).  MS-DRGs are owned by CMS; APR-DRGs are owned by 3M.  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version.  "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -682,34 +724,6 @@
       </reference>
       <name value="FDA NDC or Compound"/>
       <description value="National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  &#xA;Values will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, &#x2018;compound&#x2019;"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-ICD10CM.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ICD10CM"/>
-      </reference>
-      <name value="ICD-10-CM Diagnosis Codes"/>
-      <description value="ICD-10-CM Diagnosis Codes."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-ICD10PCS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ICD10PCS"/>
-      </reference>
-      <name value="ICD-10-PCS"/>
-      <description value="ICD-10-PCS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -969,6 +983,20 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-C4BBClaimProcedureType.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/C4BBClaimProcedureType"/>
+      </reference>
+      <name value="C4BB Claim Procedure Type"/>
+      <description value="Indicates if the inpatient institutional procedure (ICD-PCS) is the principal procedure or another procedure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-C4BBCompoundLiteral.html"/>
       </extension>
       <reference>
@@ -1053,20 +1081,6 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-CMSDRG.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CMSDRG"/>
-      </reference>
-      <name value="CMS Diagnosis Related Group (DRG)"/>
-      <description value="Diagnosis Related Group - any of the payment categories that are used to classify patients and especially Medicare patients for the purpose of reimbursing hospitals for each case in a given &#xA;category with a fixed fee regardless of the actual costs incurred (Other DRGs, such as AP-DRGs, requires defining their specific Value Sets and Code Systems.)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-CMSHCPCSCodes.html"/>
       </extension>
       <reference>
@@ -1074,6 +1088,20 @@
       </reference>
       <name value="CMS HCPCS Codes"/>
       <description value="HCPCS procedure codes and modifiers are submitted by providers to payers to convey the specific procedure performed.&#xA;HCPCS codes are available at http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-CMSMSDRG.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CMSMSDRG"/>
+      </reference>
+      <name value="CMS MS DRG"/>
+      <description value="MS-DRGs (Medicare Severity Diagnosis Related Groups).  MS-DRGs are owned by CMS.  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1102,48 +1130,6 @@
       </reference>
       <name value="CMS- Remittance Advice Remark Codes (RARC)"/>
       <description value="RARC codes provide additional explanation for an adjustment already described by a Claim Adjustment Reason Code (CARC) or convey information about remittance processing.  &#xA;RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-FDANDC.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/FDANDC"/>
-      </reference>
-      <name value="FDA National Drug Code (NDC)"/>
-      <description value="National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7. "/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-ICD10CMCS.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ICD10CMCS"/>
-      </reference>
-      <name value="ICD-10-CM"/>
-      <description value="International Classification of Diseases, Tenth Revision, Clinical Modification)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-ICD10PCSCS.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ICD10PCSCS"/>
-      </reference>
-      <name value="ICD-10-PCS"/>
-      <description value="International Classification of Diseases Surgical Procedures (ICD-10)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1221,6 +1207,20 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-THREEMAPRDRG.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/THREEMAPRDRG"/>
+      </reference>
+      <name value="3M APR DRG"/>
+      <description value="APR-DRGs (All Patient Refined Diagnosis Related Groups).  APR-DRGs are owned by 3M.  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version.  "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-X12ClaimAdjustmentReasonCodes.html"/>
       </extension>
       <reference>
@@ -1229,34 +1229,6 @@
       <name value="X12 Claim Adjustment Reason Codes (CARC)"/>
       <description value="CARC codes describe why a claim or service line was paid differently than it was billed.   Use of X12 CARC codes require a license.  Reference https://x12.org/codes/."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExplanationOfBenefit"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ExplanationOfBenefit-BBEobOutpatientInstitutional.html"/>
-      </extension>
-      <reference>
-        <reference value="ExplanationOfBenefit/BBEobOutpatientInstitutional"/>
-      </reference>
-      <name value="BBEobOutpatientInstitutional"/>
-      <description value="BBEoB from Jeff"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExplanationOfBenefit"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ExplanationOfBenefit-BBEobPharmacy.html"/>
-      </extension>
-      <reference>
-        <reference value="ExplanationOfBenefit/BBEobPharmacy"/>
-      </reference>
-      <name value="BBEobPharmacy"/>
-      <description value="BBEoB from Jeff"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

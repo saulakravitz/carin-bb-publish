@@ -56,8 +56,8 @@
         <div id="family-nav">
           <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
         </div>
-        <div id="hl7-search">
-          <a no-external="true" id="hl7-search-lnk" href="http://hl7.org/fhir/search.cfm"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        <div id="hl7-search"><a name="5d38a266-1ce6-4366-aa4c-1a6162ad5880">​</a>
+          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
         </div>
 
 
@@ -157,7 +157,7 @@
       <li>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
-      <li><a name="bc302ee5-3c9c-4df7-8e20-f4bc7bbf1992">​</a>
+      <li><a name="fcf86ad3-6caf-4065-b92e-8ff8657dc7ff">​</a>
         <a href="Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
       </li>
     </ul>
@@ -573,6 +573,14 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-C4BBClaimProcedureType.html" title="ValueSet/C4BBClaimProcedureType">C4BB Claim Procedure Type</a>
+               </td>
+               <td>
+<p>Indicates if the professional and non-clinician diagnosis is principal or secondary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-C4BBClaimProfessionalAndNonClinicianCareTeamRole.html" title="ValueSet/C4BBClaimProfessionalAndNonClinicianCareTeamRole">C4BB Claim Professional And Non Clinician Care Team Role </a>
                </td>
                <td>
@@ -637,12 +645,26 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-CMSDRG.html" title="ValueSet/CMSDRG">CMS-DRG</a>
+                  <a href="ValueSet-CDCICD910CMDiagnosisCodes.html" title="ValueSet/CDCICD910CMDiagnosisCodes">CDC ICD-9-10-CM Diagnosis Codes</a>
                </td>
                <td>
-<p>Diagnosis Related Group - any of the payment categories that are used to classify patients and especially Medicare patients for the purpose of reimbursing hospitals for each case in a 
-given category with a fixed fee regardless of the actual costs incurred (Other DRGs, such as AP-DRGs, requires defining their specific Value Sets and Code Systems.) 
-https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software.html This link takes one to a list of files. The code set is owned by CMS and is available for use.</p>
+<p>The ICD-CM (International Classification of Diseases, Clinical Modification) is a system used by physicians and other healthcare providers to classify and code all diagnoses and symptoms recorded in conjunction with hospital care in the United States.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-CMSICD910PCSProcedureCodes.html" title="ValueSet/CMSICD910PCSProcedureCodes">CMS ICD-9-10-PCS Procedure Codes</a>
+               </td>
+               <td>
+<p>This value set defines a set of codes from ICD-PCS that can be used to indicate the procedure performed</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-CMSMS3MAPRDRG.html" title="ValueSet/CMSMS3MAPRDRG">MS MS 3M APR DRG</a>
+               </td>
+               <td>
+<p>This value set defines two sets of DRGs, MS-DRGs (Medicare Severity Diagnosis Related Groups) and APR-DRGs (All Patient Refined Diagnosis Related Groups).  MS-DRGs are owned by CMS; APR-DRGs are owned by 3M.  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version.</p>
 </td>
             </tr>
             <tr>
@@ -668,22 +690,6 @@ https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/
                <td>
 <p>National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.<br/>
 Values will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, ‘compound’</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-ICD10CM.html" title="ValueSet/ICD10CM">ICD-10-CM Diagnosis Codes</a>
-               </td>
-               <td>
-<p>ICD-10-CM Diagnosis Codes.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-ICD10PCS.html" title="ValueSet/ICD10PCS">ICD-10-PCS</a>
-               </td>
-               <td>
-<p>ICD-10-PCS</p>
 </td>
             </tr>
             <tr>
@@ -845,6 +851,14 @@ Use of X12 CARC codes require a license.  Reference https://x12.org/codes/.  RAR
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-C4BBClaimProcedureType.html" title="CodeSystem/C4BBClaimProcedureType">C4BB Claim Procedure Type</a>
+               </td>
+               <td>
+<p>Indicates if the inpatient institutional procedure (ICD-PCS) is the principal procedure or another procedure</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-C4BBCompoundLiteral.html" title="CodeSystem/C4BBCompoundLiteral">C4BB Compound Literal</a>
                </td>
                <td>
@@ -893,20 +907,19 @@ Use of X12 CARC codes require a license.  Reference https://x12.org/codes/.  RAR
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-CMSDRG.html" title="CodeSystem/CMSDRG">CMS Diagnosis Related Group (DRG)</a>
-               </td>
-               <td>
-<p>Diagnosis Related Group - any of the payment categories that are used to classify patients and especially Medicare patients for the purpose of reimbursing hospitals for each case in a given 
-category with a fixed fee regardless of the actual costs incurred (Other DRGs, such as AP-DRGs, requires defining their specific Value Sets and Code Systems.)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="CodeSystem-CMSHCPCSCodes.html" title="CodeSystem/CMSHCPCSCodes">CMS HCPCS Codes</a>
                </td>
                <td>
 <p>HCPCS procedure codes and modifiers are submitted by providers to payers to convey the specific procedure performed.
 HCPCS codes are available at http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CMSMSDRG.html" title="CodeSystem/CMSMSDRG">CMS MS DRG</a>
+               </td>
+               <td>
+<p>MS-DRGs (Medicare Severity Diagnosis Related Groups).  MS-DRGs are owned by CMS.  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version.</p>
 </td>
             </tr>
             <tr>
@@ -924,30 +937,6 @@ HCPCS codes are available at http://www.cms.gov/Medicare/Coding/HCPCSReleaseCode
                <td>
 <p>RARC codes provide additional explanation for an adjustment already described by a Claim Adjustment Reason Code (CARC) or convey information about remittance processing.<br/>
 RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-FDANDC.html" title="CodeSystem/FDANDC">FDA National Drug Code (NDC)</a>
-               </td>
-               <td>
-<p>National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-ICD10CMCS.html" title="CodeSystem/ICD10CMCS">ICD-10-CM</a>
-               </td>
-               <td>
-<p>International Classification of Diseases, Tenth Revision, Clinical Modification)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-ICD10PCSCS.html" title="CodeSystem/ICD10PCSCS">ICD-10-PCS</a>
-               </td>
-               <td>
-<p>International Classification of Diseases Surgical Procedures (ICD-10).</p>
 </td>
             </tr>
             <tr>
@@ -992,6 +981,14 @@ RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcar
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-THREEMAPRDRG.html" title="CodeSystem/THREEMAPRDRG">3M APR DRG</a>
+               </td>
+               <td>
+<p>APR-DRGs (All Patient Refined Diagnosis Related Groups).  APR-DRGs are owned by 3M.  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-X12ClaimAdjustmentReasonCodes.html" title="CodeSystem/X12ClaimAdjustmentReasonCodes">X12 Claim Adjustment Reason Codes (CARC)</a>
                </td>
                <td>
@@ -1010,22 +1007,6 @@ RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcar
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ExplanationOfBenefit-BBEobOutpatientInstitutional.html" title="ExplanationOfBenefit/BBEobOutpatientInstitutional">BBEobOutpatientInstitutional</a>
-               </td>
-               <td>
-<p>BBEoB from Jeff</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ExplanationOfBenefit-BBEobPharmacy.html" title="ExplanationOfBenefit/BBEobPharmacy">BBEobPharmacy</a>
-               </td>
-               <td>
-<p>BBEoB from Jeff</p>
-</td>
-            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Coverage-Coverage1.html" title="Coverage/Coverage1">Coverage1</a>
@@ -1315,12 +1296,13 @@ RARC codes are available at http://www.wpc-edi.com/reference/codelists/healthcar
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 25, 2020 21:05+0000">2020-09-25</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 29, 2020 15:02+0000">2020-09-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
-                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/carin-bb/history.html" target="_blank">Version History  |
+               | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/carin-bb/history.html" target="_blank"><a name="5ff2b3b6-426a-4847-9cde-f04baac6a191">​</a>Version History  |
+               <a style="color: #81BEF7" href="searchform.html" target="_blank">Search  |
                  <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
                    <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
                  <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change </a>
@@ -1350,4 +1332,4 @@ anchors.add()</script>
   ================================================== -->
   
 
-</a></span></p></div></div></div></body></html>
+</a></a></span></p></div></div></div></body></html>
