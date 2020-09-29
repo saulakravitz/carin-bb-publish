@@ -258,7 +258,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Information instance identifier","A number to uniquely identify supporting information entries.","","Necessary to maintain the order of the supporting information items and provide a mechanism to link to claim details.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.sequence",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"example","The valuset used for additional information codes.","http://hl7.org/fhir/ValueSet/claim-exception","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -296,7 +296,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""billingnetworkcontractingstatus""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.code","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBPayerProviderContractingStatus","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -334,7 +334,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""brandgenericcode""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPBrandGenericCode","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -372,7 +372,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""rxorigincode""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPPrescriptionOriginCode","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -410,7 +410,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""refillnum""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"example","The valuset used for additional information codes.","http://hl7.org/fhir/ValueSet/claim-exception","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -448,7 +448,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""dawcode""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPDispensedAsWrittenOrProductSelectionCode","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -486,7 +486,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""clmrecvddate""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"example","The valuset used for additional information codes.","http://hl7.org/fhir/ValueSet/claim-exception","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -524,7 +524,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""dayssupply""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"example","The valuset used for additional information codes.","http://hl7.org/fhir/ValueSet/claim-exception","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -562,7 +562,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType""/>
     <code value=""compoundcode""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","The valuset used for additional information category codes.","http://hl7.org/fhir/ValueSet/claim-informationcategory","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPCompoundCode","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

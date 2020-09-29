@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "C4BBExplanationOfBenefitProfessionalNonClinician"];
   fhir:StructureDefinition.title [ fhir:value "C4BB ExplanationOfBenefit Professional NonClinician"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-09-29T16:34:56+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-09-29T18:11:59+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3567,16 +3567,10 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "InformationCategory" ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "The valuset used for additional information category codes." ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/claim-informationcategory";
-           fhir:link <http://hl7.org/fhir/ValueSet/claim-informationcategory>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType>
          ]
        ]
      ], [
@@ -4019,16 +4013,10 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "InformationCategory" ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "The valuset used for additional information category codes." ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/claim-informationcategory";
-           fhir:link <http://hl7.org/fhir/ValueSet/claim-informationcategory>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType>
          ]
        ]
      ], [
@@ -4659,16 +4647,10 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "InformationCategory" ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "The valuset used for additional information category codes." ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/claim-informationcategory";
-           fhir:link <http://hl7.org/fhir/ValueSet/claim-informationcategory>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType>
          ]
        ]
      ], [
@@ -5105,16 +5087,10 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "InformationCategory" ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "The valuset used for additional information category codes." ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/claim-informationcategory";
-           fhir:link <http://hl7.org/fhir/ValueSet/claim-informationcategory>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType>
          ]
        ]
      ], [
@@ -5554,16 +5530,10 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.binding [
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
-           fhir:Extension.valueString [ fhir:value "InformationCategory" ]
-         ];
-         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
-         fhir:ElementDefinition.binding.description [ fhir:value "The valuset used for additional information category codes." ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/claim-informationcategory";
-           fhir:link <http://hl7.org/fhir/ValueSet/claim-informationcategory>
+           fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType";
+           fhir:link <http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType>
          ]
        ]
      ], [
