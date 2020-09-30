@@ -1,9 +1,9 @@
 ﻿CARINConsumerDirectedPayerDataExchange : Validation Results
 =========================================
 
-err = 211, warn = 127, info = 18
+err = 211, warn = 124, info = 18
 IG Publisher Version: 1.1.32
-Generated Wed Sep 30 15:02:08 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.4 (canonical = http://hl7.org/fhir/us/carin-bb)
+Generated Wed Sep 30 15:37:02 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.4 (canonical = http://hl7.org/fhir/us/carin-bb)
 
  Build Errors : 659 / 26 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb : 0 / 6 / 1
@@ -12,8 +12,8 @@ Generated Wed Sep 30 15:02:08 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Coverage-31535e09-5bbd-4e97-af5a-de353ecdb667 : 3 / 0 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Coverage-Coverage1 : 0 / 0 / 2
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Coverage-b19e0ac3-4cd1-46a6-aef7-d74f04f6b00d : 3 / 0 / 1
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-01234567801-FR123E1230000010000010001 : 16 / 5 / 6
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-01234567801-GNXYZ1230000010000010001 : 13 / 3 / 4
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-01234567801-FR123E1230000010000010001 : 16 / 3 / 6
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-01234567801-GNXYZ1230000010000010001 : 13 / 2 / 4
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-30736584-f300-4c1b-8207-aff424a0c1ea : 17 / 5 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-319231f2-1d78-4ee3-9ef1-c06563610561 : 19 / 8 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-4791ba6a-bde6-460b-b7ca-729d994b495f : 18 / 12 / 1
@@ -864,12 +864,10 @@ ERROR: ExplanationOfBenefit/01234567801-FR123E1230000010000010001: ExplanationOf
 ERROR: ExplanationOfBenefit/01234567801-FR123E1230000010000010001: ExplanationOfBenefit.item[0]: Profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician, Element 'ExplanationOfBenefit.item[0].adjudication[inoutnetwork]': minimum required = 1, but only found 0
 WARNING: ExplanationOfBenefit/01234567801-FR123E1230000010000010001: ExplanationOfBenefit.item[0].productOrService: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/AMACPTCMSHCPCSProcedureCodes because the value set or code system is not known to the validator]
 INFORMATION: ExplanationOfBenefit/01234567801-FR123E1230000010000010001: ExplanationOfBenefit.item[0].productOrService.coding[0]: Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
-WARNING: ExplanationOfBenefit/01234567801-FR123E1230000010000010001: ExplanationOfBenefit.item[0].location.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/CMSPlaceofServiceCodes because the value set or code system is not known to the validator]
 INFORMATION: ExplanationOfBenefit/01234567801-FR123E1230000010000010001: ExplanationOfBenefit.item[0].location.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set' is unknown so the code cannot be validated
 ERROR: ExplanationOfBenefit/01234567801-FR123E1230000010000010001: ExplanationOfBenefit.item[1]: Profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician, Element 'ExplanationOfBenefit.item[1].adjudication[inoutnetwork]': minimum required = 1, but only found 0
 WARNING: ExplanationOfBenefit/01234567801-FR123E1230000010000010001: ExplanationOfBenefit.item[1].productOrService: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/AMACPTCMSHCPCSProcedureCodes because the value set or code system is not known to the validator]
 INFORMATION: ExplanationOfBenefit/01234567801-FR123E1230000010000010001: ExplanationOfBenefit.item[1].productOrService.coding[0]: Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
-WARNING: ExplanationOfBenefit/01234567801-FR123E1230000010000010001: ExplanationOfBenefit.item[1].location.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/CMSPlaceofServiceCodes because the value set or code system is not known to the validator]
 INFORMATION: ExplanationOfBenefit/01234567801-FR123E1230000010000010001: ExplanationOfBenefit.item[1].location.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set' is unknown so the code cannot be validated
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-01234567801-GNXYZ1230000010000010001.json ==
 INFORMATION: ExplanationOfBenefit/01234567801-GNXYZ1230000010000010001: ExplanationOfBenefit: Validate resource against profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician
@@ -890,7 +888,6 @@ ERROR: ExplanationOfBenefit/01234567801-GNXYZ1230000010000010001: ExplanationOfB
 ERROR: ExplanationOfBenefit/01234567801-GNXYZ1230000010000010001: ExplanationOfBenefit.item[0]: Profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician, Element 'ExplanationOfBenefit.item[0].adjudication[inoutnetwork]': minimum required = 1, but only found 0
 WARNING: ExplanationOfBenefit/01234567801-GNXYZ1230000010000010001: ExplanationOfBenefit.item[0].productOrService: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/AMACPTCMSHCPCSProcedureCodes because the value set or code system is not known to the validator]
 INFORMATION: ExplanationOfBenefit/01234567801-GNXYZ1230000010000010001: ExplanationOfBenefit.item[0].productOrService.coding[0]: Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
-WARNING: ExplanationOfBenefit/01234567801-GNXYZ1230000010000010001: ExplanationOfBenefit.item[0].location.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/CMSPlaceofServiceCodes because the value set or code system is not known to the validator]
 INFORMATION: ExplanationOfBenefit/01234567801-GNXYZ1230000010000010001: ExplanationOfBenefit.item[0].location.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set' is unknown so the code cannot be validated
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-30736584-f300-4c1b-8207-aff424a0c1ea.json ==
 INFORMATION: ExplanationOfBenefit/30736584-f300-4c1b-8207-aff424a0c1ea: ExplanationOfBenefit: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit

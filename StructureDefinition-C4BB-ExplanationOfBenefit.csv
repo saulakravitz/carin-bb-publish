@@ -224,7 +224,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.careTeam.responsible","","","",0,1,"Y","","","boolean {[]} {[]}
 ","Indicator of the lead practitioner","The party who is billing and/or responsible for the claimed products or services.","Responsible might not be required when there is only a single provider listed.","When multiple parties are present it is required to distinguish the lead or responsible individual.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.careTeam.responsible",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.careTeam.role","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+"ExplanationOfBenefit.careTeam.role","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Function within the team","The lead, assisting or supervising practitioner and their discipline if a multidisciplinary team.","Role might not be required when there is only a single provider listed.","When multiple parties are present it is required to distinguish the roles performed by each member.","","","","","","","",,"example","The role codes for the care team members.","http://hl7.org/fhir/ValueSet/claim-careteamrole","",,,,"ExplanationOfBenefit.careTeam.role",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.careTeam.qualification","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -251,13 +251,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.code","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"example","The valuset used for additional information codes.","http://hl7.org/fhir/ValueSet/claim-exception","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,1,"Y","","","date {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,1,"","","","date {[]} {[]}
 Period {[]} {[]}","When it occurred","The date when or period to which this information refers.","","","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.timing[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,1,"Y","","","boolean {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.value[x]","","","",0,1,"","","","boolean {[]} {[]}
 string {[]} {[]}Quantity {[]} {[]}Attachment {[]} {[]}Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}","Data to be provided","Additional data or information such as resources, documents, images etc. including references to the data or the actual inclusion of the data.","Could be used to provide references to other resources, document. For example, could contain a PDF in an Attachment of the Police Report for an Accident.","To convey the data content to be provided when the information is more than a simple code or period.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.reason","","","",0,1,"","","","Coding {[]} {[]}
