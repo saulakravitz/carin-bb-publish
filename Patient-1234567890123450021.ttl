@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Patient/1234567890123450021> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "1234567890123450021"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-patient";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-patient>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "en"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>language</b>: en</p><p><b>identifier</b>: Member Number: 435678904000, Member Number: 567878904000</p><p><b>active</b>: true</p><p><b>name</b>: MRS ANNABEL MARIE DEMOHOEPER MD</p><p><b>telecom</b>: ph: 860-278-7654, ph: 860-645-9876</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1951-08-03</p><p><b>address</b>: 29248 HEBRON DRIVE,BLUE SPRINGS,MO 64013</p><h3>Communications</h3><table class=\"grid\"><tr><td>-</td><td><b>Language</b></td></tr><tr><td>*</td><td><span title=\"Codes: {https://www.hl7.org/fhir/valueset-languages.html en}\">en</span></td></tr></table></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "MB" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://www.examplescvshealth.com/fhir/Medicare" ];
+     fhir:Identifier.value [ fhir:value "435678904000" ];
+     fhir:Identifier.period [
+       fhir:Period.start [ fhir:value "2020-01-01"^^xsd:date ];
+       fhir:Period.end [ fhir:value "2020-12-31"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "MB" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://www.examplescvshealth.com/fhir/Medicare" ];
+     fhir:Identifier.value [ fhir:value "567878904000" ];
+     fhir:Identifier.period [
+       fhir:Period.start [ fhir:value "2020-01-01"^^xsd:date ];
+       fhir:Period.end [ fhir:value "2020-12-31"^^xsd:date ]
+     ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "MRS ANNABEL MARIE DEMOHOEPER MD" ];
+     fhir:HumanName.family [ fhir:value "DEMOHOEPER" ];
+     fhir:HumanName.given [
+       fhir:value "ANNABEL MARIE";
+       fhir:index 0
+     ];
+     fhir:HumanName.prefix [
+       fhir:value "MRS";
+       fhir:index 0
+     ];
+     fhir:HumanName.suffix [
+       fhir:value "MD";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "860-278-7654" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "860-645-9876" ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1951-08-03"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "29248 HEBRON DRIVE,BLUE SPRINGS,MO 64013" ];
+     fhir:Address.line [
+       fhir:value "29248 HEBRON DRIVE";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "BLUE SPRINGS" ];
+     fhir:Address.state [ fhir:value "MO" ];
+     fhir:Address.postalCode [ fhir:value "64013" ]
+  ];
+  fhir:Patient.communication [
+     fhir:index 0;
+     fhir:Patient.communication.language [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.hl7.org/fhir/valueset-languages.html" ];
+         fhir:Coding.code [ fhir:value "en" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Patient/1234567890123450021.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/Patient/1234567890123450021.ttl> .
+
+# -------------------------------------------------------------------------------------
+
