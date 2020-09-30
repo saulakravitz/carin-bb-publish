@@ -56,7 +56,7 @@
         <div id="family-nav">
           <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
         </div>
-        <div id="hl7-search"><a name="9d6af11f-7622-472d-aab5-1b60aa4b0519">​</a>
+        <div id="hl7-search">
           <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
         </div>
 
@@ -97,7 +97,10 @@
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
       <li>
-        <a href="Background.html#guide-overview">Guide Overview</a>
+        <a href="Background.html#patient-protection">Patient Protection</a>
+      </li>
+      <li>
+        <a href="Background.html#relation-to-other-IGs">Relation to Other IGs</a>
       </li>
     </ul>
   </li>
@@ -157,7 +160,7 @@
       <li>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
-      <li><a name="a01b6781-d185-4d2c-8b8b-6e0f2db0176d">​</a>
+      <li><a name="b99221f5-0afa-441d-956d-4a9620a982aa">​</a>
         <a href="Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
       </li>
     </ul>
@@ -239,7 +242,7 @@
 <tr><td>Defining URL:</td><td>http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBRelatedClaimRelationshipCodes</td></tr>
  <tr><td>Version:</td><td>0.1.4</td></tr>
  <tr><td>Name:</td><td>C4BBRelatedClaimRelationshipCodes ("C4BB Related Claim Relationship Codes")</td></tr>
- <tr><td>Status:</td><td>Active as of 2020-09-29T21:11:31+00:00</td></tr>
+ <tr><td>Status:</td><td>Active as of 2020-09-30T14:58:45+00:00</td></tr>
  <tr><td>Definition:</td><td><p>Identifies if the current claim represents a claim that has been adjusted and was given a prior claim number or if the current claim has been adjusted; i.e., replaced by or merged to another claim number.</p>
 </td></tr>
  <tr><td>Publisher:</td><td>HL7 Financial Management Working Group</td></tr>
@@ -271,13 +274,13 @@
 
   <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-relatedclaimrelationship.html"><code>http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-relatedclaimrelationship.html#ex-relatedclaimrelationship-prior">prior</a></td><td>Prior Claim</td><td>A prior claim instance for the same intended suite of services.</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-C4BBPayeeType.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name="514159a5-e8b5-4d0a-9a41-43f66d6c47d6">​</a><a href="CodeSystem-C4BBPayeeType.html#C4BBPayeeType-provider">provider</a></td><td></td></tr><tr><td><a name="f682bf4f-e586-4fed-8ff1-f437d5caca83">​</a><a href="CodeSystem-C4BBPayeeType.html#C4BBPayeeType-other">other</a></td><td></td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-C4BBRelatedClaimRelationshipCodes.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBRelatedClaimRelationshipCodes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-C4BBRelatedClaimRelationshipCodes.html#C4BBRelatedClaimRelationshipCodes-replacedby">replacedby</a></td><td>Replaced by claim number</td><td>The current claim has been adjusted; i.e., replaced by or merged to another claim number.</td></tr></table></li></ul></div>
+<div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-relatedclaimrelationship.html"><code>http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-relatedclaimrelationship.html#ex-relatedclaimrelationship-prior">prior</a></td><td>Prior Claim</td><td>A prior claim instance for the same intended suite of services.</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-C4BBPayeeType.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name="af65ada1-d55c-47a8-bc5c-155645aa24af">​</a><a href="CodeSystem-C4BBPayeeType.html#C4BBPayeeType-provider">provider</a></td><td></td></tr><tr><td><a name="b687fcd7-35c3-418c-8445-feece2b538c4">​</a><a href="CodeSystem-C4BBPayeeType.html#C4BBPayeeType-other">other</a></td><td></td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-C4BBRelatedClaimRelationshipCodes.html"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBRelatedClaimRelationshipCodes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-C4BBRelatedClaimRelationshipCodes.html#C4BBRelatedClaimRelationshipCodes-replacedby">replacedby</a></td><td>Replaced by claim number</td><td>The current claim has been adjusted; i.e., replaced by or merged to another claim number.</td></tr></table></li></ul></div>
 
   <p>&nbsp;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div><p>This value set contains 4 concepts</p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="CodeSystem-C4BBRelatedClaimRelationshipCodes.html">C4BB Related Claim Relationship Codes v0.1.4 (CodeSystem)</a></li><li><a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-relatedclaimrelationship.html">Example Related Claim Relationship Codes v4.2.0 (CodeSystem)</a></li><li><a href="CodeSystem-C4BBPayeeType.html">C4BB Payee Type v0.1.4 (CodeSystem)</a></li></ul></div><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-ex-relatedclaimrelationship-prior"> </a><a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-relatedclaimrelationship.html#ex-relatedclaimrelationship-prior">prior</a></td><td>http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship</td><td>Prior Claim</td><td>A prior claim instance for the same intended suite of services.</td></tr><tr><td style="white-space:nowrap"><a name="050f6c0f-5a6b-4c89-8bc9-b82d4479d8d6">​</a><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBPayeeType-provider"> </a><a href="CodeSystem-C4BBPayeeType.html#C4BBPayeeType-provider">provider</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType</td><td></td><td></td></tr><tr><td style="white-space:nowrap"><a name="e5261505-6286-4638-bdeb-3127712b9aa3">​</a><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBPayeeType-other"> </a><a href="CodeSystem-C4BBPayeeType.html#C4BBPayeeType-other">other</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType</td><td></td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBRelatedClaimRelationshipCodes-replacedby"> </a><a href="CodeSystem-C4BBRelatedClaimRelationshipCodes.html#C4BBRelatedClaimRelationshipCodes-replacedby">replacedby</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBRelatedClaimRelationshipCodes</td><td>Replaced by claim number</td><td>The current claim has been adjusted; i.e., replaced by or merged to another claim number.</td></tr></table></div>
+  <div><p>This value set contains 4 concepts</p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="CodeSystem-C4BBRelatedClaimRelationshipCodes.html">C4BB Related Claim Relationship Codes v0.1.4 (CodeSystem)</a></li><li><a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-relatedclaimrelationship.html">Example Related Claim Relationship Codes v4.2.0 (CodeSystem)</a></li><li><a href="CodeSystem-C4BBPayeeType.html">C4BB Payee Type v0.1.4 (CodeSystem)</a></li></ul></div><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-ex-relatedclaimrelationship-prior"> </a><a href="https://terminology.hl7.org/1.0.0//CodeSystem-ex-relatedclaimrelationship.html#ex-relatedclaimrelationship-prior">prior</a></td><td>http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship</td><td>Prior Claim</td><td>A prior claim instance for the same intended suite of services.</td></tr><tr><td style="white-space:nowrap"><a name="a10e90b5-543a-43cc-9c7b-bb3d0b447165">​</a><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBPayeeType-provider"> </a><a href="CodeSystem-C4BBPayeeType.html#C4BBPayeeType-provider">provider</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType</td><td></td><td></td></tr><tr><td style="white-space:nowrap"><a name="4570b9cf-3812-4dd8-b974-8ec2b2ecfcb2">​</a><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBPayeeType-other"> </a><a href="CodeSystem-C4BBPayeeType.html#C4BBPayeeType-other">other</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayeeType</td><td></td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-us-carin-bb-CodeSystem-C4BBRelatedClaimRelationshipCodes-replacedby"> </a><a href="CodeSystem-C4BBRelatedClaimRelationshipCodes.html#C4BBRelatedClaimRelationshipCodes-replacedby">replacedby</a></td><td>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBRelatedClaimRelationshipCodes</td><td>Replaced by claim number</td><td>The current claim has been adjusted; i.e., replaced by or merged to another claim number.</td></tr></table></div>
 
   <hr/>
   <p>
@@ -338,12 +341,12 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 29, 2020 21:11+0000">2020-09-29</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 30, 2020 14:58+0000">2020-09-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
-               | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/carin-bb/history.html" target="_blank"><a name="d0a7a397-c627-4f37-b42a-50e4dc599921">​</a>Version History  |
+               | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/carin-bb/history.html" target="_blank">Version History  |
                <a style="color: #81BEF7" href="searchform.html" target="_blank">Search  |
                  <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
                    <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 

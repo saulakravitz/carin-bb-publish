@@ -56,7 +56,7 @@
         <div id="family-nav">
           <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
         </div>
-        <div id="hl7-search"><a name="c7cf2365-1970-4562-acd0-02e9489b0dde">​</a>
+        <div id="hl7-search">
           <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
         </div>
 
@@ -97,7 +97,10 @@
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
       <li>
-        <a href="Background.html#guide-overview">Guide Overview</a>
+        <a href="Background.html#patient-protection">Patient Protection</a>
+      </li>
+      <li>
+        <a href="Background.html#relation-to-other-IGs">Relation to Other IGs</a>
       </li>
     </ul>
   </li>
@@ -157,7 +160,7 @@
       <li>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
-      <li><a name="56752ab4-056b-4493-976e-373bed4d670c">​</a>
+      <li><a name="0141f8e3-0ca0-4b7b-9391-7fbcc7d1938f">​</a>
         <a href="Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
       </li>
     </ul>
@@ -214,38 +217,35 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
   <!-- Terminology.md -->
-<div xsi:schemalocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
-
-<h3>Code Systems Requiring Licenses </h3>
+<div>
+<h3>Code Systems Requiring Licenses</h3>
 <h4>Access to Licensed Code Systems</h4>
 This HL7 specification contains and references intellectual property owned by third parties ("Third Party IP"). Implementers and testers of this specification SHALL abide by the license requirements for each terminology content artifact utilized within a functioning implementation. Terminology licenses SHALL be obtained from the Third Party IP owner for each code system and/or other specified artifact used. It is the sole responsibility of each organization deploying or testing this specification to ensure their implementations comply with licensing requirements of each Third Party IP.
-
 <h4>Licensed Industry Standard Code Systems</h4>
-This IG includes value set bindings to code systems that reference industry standard codes which require implementers to purchase a license before the coded concepts can be used.  The following information summarizes the set of licensed Code Systems required by this IG and provides links to the information about where to go to obtain a license.
+This IG includes value set bindings to code systems that reference industry standard codes which require implementers to purchase a license before the coded concepts can be used. The following information summarizes the set of licensed Code Systems required by this IG and provides links to the information about where to go to obtain a license.
 <ul>
 <li><a href="http://www.ama-assn.org/go/cpt">AMA CPT</a>: The CPT procedure and modifier codes are owned by the American Medical Association.</li>
-<li> <a href="http://www.x12.org/codes/claim-adjustment-reason-codes/">X12</a>:  CARC (Claim Adjustment Reason Codes are owned by X12.&lt;/a&gt;.</li>
+<li><a href="http://www.x12.org/codes/claim-adjustment-reason-codes/">X12</a>: CARC (Claim Adjustment Reason Codes are owned by X12..</li>
 <li><a href="https://www.nubc.org">NUBC</a>: The NUBC secretariat is the American Hospital Association..</li>
-<li><a href="http://www.nucc.org/">NUCC</a>:  National Uniform Claim Committee (NUCC) is presently maintaining the Taxonomy code set. The codes are free and publically available for download and use. If the use however is “For commercial use, including sales or licensing, a license must be obtained”. It would be appropriate for an app developer to file the license form just like they would for any other code set; however, there is no fee.  </li>
-<li><a href="https://www.ncpdp.org">NCPDP</a>: Retail Pharmacy data standards are defined by the NCPDP. .</li>
+<li><a href="http://www.nucc.org/">NUCC</a>: National Uniform Claim Committee (NUCC) is presently maintaining the Taxonomy code set. The codes are free and publically available for download and use. If the use however is ”For commercial use, including sales or licensing, a license must be obtainedÉ. It would be appropriate for an app developer to file the license form just like they would for any other code set; however, there is no fee.</li>
+<li><a href="https://www.ncpdp.org">NCPDP</a>: Retail Pharmacy data standards are defined by the NCPDP .</li>
+<li><a href="https://www.3m.com/3M/en_US/health-information-systems-us/drive-value-based-care/patient-classification-methodologies/apr-drgs/">3M APR-DRG</a>: APR-DRGs are owned by 3M.  Use of APR-DRGs require a license.  
+</li>
 </ul>
-<h3>Code Systems Not Requiring Licenses </h3>
+<h3>Code Systems Not Requiring Licenses</h3>
 This IG includes value set bindings to code systems that are industry standard codes available for use without licenses. The following information summarizes the set of Code Systems required by this IG that are available for use:
 <ul>
-<li><a href="https://www.icd10data.com/ICD10CM/Codes">ICD-CM Diagnosis Codes (ICD-10-CM)</a>: International Statistical Classification of Diseases and Related Health Problems (ICD). This IG will use version 10. The ICD-10-CM code set is maintained by the National Center for Health Statistics (NCHS) of the Centers for Disease Control and Prevention (CDC) for use in the United States. It is based on ICD-10, which was developed by the World Health Organization (WHO) and is used internationally a medical classification. </li>
+<li><a href="https://www.icd10data.com/ICD10CM/Codes">ICD-CM Diagnosis Codes (ICD-10-CM)</a>: International Statistical Classification of Diseases and Related Health Problems (ICD). This IG will use version 10. The ICD-10-CM code set is maintained by the National Center for Health Statistics (NCHS) of the Centers for Disease Control and Prevention (CDC) for use in the United States. It is based on ICD-10, which was developed by the World Health Organization (WHO) and is used internationally a medical classification.</li>
 <li><a href="https://www.icd10data.com/ICD10PCS/Codes">ICD-Procedure Codes (ICD-PCS)</a>: The ICD-10-PCS code set is owned by CMS..</li>
-<li><a href="https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software.html">DRGs</a>.:All versions of the DRG (MS-DRG, AP-DRG, etc.) are owned by CMS. MS-DRGs are used for the Medicare population. </li>
-<li> <a href="https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS-Items/2020-HCPCS-Record-Layout">HCPCS  Level II Procedure and Modifier Codes</a>: Primarily include non-physician products, supplies, and procedures not included in CPT.  They are owned by CMS and are available for use.</li>
-<li> <a href="http://hl7.org/fhir/sid/ndc.html">NDC (National Drug Codes)</a>: The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code..</li>
-<li> <a href="http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes">RARCCodes</a>: The RARC codes are owned by CMS..</li>
+<li><a href="https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software.html">DRGs</a>.:All versions of the DRG (MS-DRG, AP-DRG, etc.) are owned by CMS. MS-DRGs are used for the Medicare population.</li>
+<li><a href="https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/Alpha-Numeric-HCPCS-Items/2020-HCPCS-Record-Layout">HCPCS Level II Procedure and Modifier Codes</a>: Primarily include non-physician products, supplies, and procedures not included in CPT. They are owned by CMS and are available for use.</li>
+<li><a href="http://hl7.org/fhir/sid/ndc.html">NDC (National Drug Codes)</a>: The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code..</li>
+<li><a href="http://www.wpc-edi.com/reference/codelists/healthcare/remittance-advice-remark-codes">RARCCodes</a>: The RARC codes are owned by CMS..</li>
 </ul>
-<h3>Value Sets defined as part of this Implementation Guide.  </h3>
+<h3>Value Sets defined as part of this Implementation Guide.</h3>
 See <a href="artifacts.html#5">ValueSets</a>.
-
-<h3>Code Systems defined as part of this Implementation Guide.  </h3>
-See <a href="artifacts.html#6">CodeSystems</a>.
-</div>
-
+<h3>Code Systems defined as part of this Implementation Guide.</h3>
+See <a href="artifacts.html#6">CodeSystems</a>.</div>
 
 
 
@@ -269,12 +269,12 @@ See <a href="artifacts.html#6">CodeSystems</a>.
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 29, 2020 21:11+0000">2020-09-29</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 30, 2020 14:58+0000">2020-09-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
-               | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/carin-bb/history.html" target="_blank"><a name="8b1cae10-ab39-4fb8-8581-a36a5376e6e9">​</a>Version History  |
+               | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/carin-bb/history.html" target="_blank">Version History  |
                <a style="color: #81BEF7" href="searchform.html" target="_blank">Search  |
                  <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
                    <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 

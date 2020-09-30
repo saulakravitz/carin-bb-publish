@@ -56,7 +56,7 @@
         <div id="family-nav">
           <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
         </div>
-        <div id="hl7-search"><a name="42d86556-3195-4837-83c4-e130ff02e29f">​</a>
+        <div id="hl7-search">
           <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
         </div>
 
@@ -97,7 +97,10 @@
         <a href="Background.html#the-carin-alliance">The CARIN Alliance</a>
       </li>
       <li>
-        <a href="Background.html#guide-overview">Guide Overview</a>
+        <a href="Background.html#patient-protection">Patient Protection</a>
+      </li>
+      <li>
+        <a href="Background.html#relation-to-other-IGs">Relation to Other IGs</a>
       </li>
     </ul>
   </li>
@@ -157,7 +160,7 @@
       <li>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
-      <li><a name="6401fa52-b5c4-40ca-bea9-e0d9ec0f8de8">​</a>
+      <li><a name="cc0bac37-c62f-48ff-b60f-d89eb885feae">​</a>
         <a href="Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
       </li>
     </ul>
@@ -227,7 +230,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <li>Plan Coverage and Formularies</li>
 </ul>
 <p>The Consumer Directed Payer Data Exchange Implementation Guide was defined by the CARIN Alliance to meet CMS requirements to provide Claims and Encounter data. <br/><br/>Provisioning Clinical Data is defined by the DaVinci Payer Data Exchange (PDex) and US Core Implementation Guides. <br/><br/>Provisioning Plan Coverage and Formularies is defined by the DaVinci Payer Data Exchange US Drug Formulary Implementation Guide. <br/><br/>The implementation date is January 1, 2021.</p>
-<h3>Patient Protection</h3>
+<h3 id="patient-protection">Patient Protection</h3>
 <h4>Health Care Payers and HIPAA</h4>
 <h4>Patients Sharing Their Health Information With Third Parties</h4>
 <p>The CMS final rule states: ”An MA organization must provide in an easily accessible location on its public website and through other appropriate mechanisms through which it ordinarily communicates with current and former enrollees seeking to access their health information held by the MA organization, educational resources in non-technical, simple and easy-to-understand language." Therefore, providing member educational materials is outside the scope of this IG and the responsibility of each payer.&nbsp; Although it’s outside the scope of the IG, the CARIN Alliance is encouraging payers to have applications self-attest to the CARIN Code of Conduct to ensure there is consistency in how apps are getting informed, proactive consent from members and consistency in how apps use, share, and store a member’s health information.</p>
@@ -245,7 +248,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 <p>The implementation date is January 1, 2021. Patient education is out of scope for this Implementation Guide.</p>
 <h3>CARIN Alliance Code of Conduct</h3>
-<h3>CARIN BB IG Relation to other IGs</h3>
+<h3 id="relation-to-other-IGs">CARIN IG for Blue Button&reg; Relation to other IGs</h3>
 <h4>US Core</h4>
 <p>CARIN BB uses the ExplanationOfBenefit Resource as its primary resource. Reference Resources are Coverage, Patient, Practitioner, PractitionerRole, Organization and Location. Since the ExplanationOfBenefit and Coverage profiles are not included in the US Core, there is no alignment requirement for these profiles. Patient, Practitioner, PractitionerRole, Organization and Location are US Core Profiles. Since these are supporting / reference profiles (rather than a focus profile) in CARIN BB, the alignment with the US Core is on the content of these profiles, but not on the search parameters. The following diagram provides a high-level view of the relationships between resources used in this IG. It does not necessarily reflect all of the relationships/references between resources. <img src="CARINBBResources.png" style="width: 100%; float: none; align: middle;"/></p>
 <h4>SMART Application Launch</h4>
@@ -306,12 +309,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 29, 2020 21:11+0000">2020-09-29</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 30, 2020 14:58+0000">2020-09-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
-               | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/carin-bb/history.html" target="_blank"><a name="e21bf59d-534d-4d73-afdd-e09a43f6b0e1">​</a>Version History  |
+               | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/carin-bb/history.html" target="_blank">Version History  |
                <a style="color: #81BEF7" href="searchform.html" target="_blank">Search  |
                  <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
                    <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
