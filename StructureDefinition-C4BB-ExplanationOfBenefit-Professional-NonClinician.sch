@@ -829,7 +829,6 @@
     <sch:title>ExplanationOfBenefit.item.serviced[x] 1</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:item/f:serviced[x]">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
