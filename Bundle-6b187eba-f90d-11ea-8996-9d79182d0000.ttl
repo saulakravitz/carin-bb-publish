@@ -1,0 +1,349 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Bundle/6b187eba-f90d-11ea-8996-9d79182d0000> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "6b187eba-f90d-11ea-8996-9d79182d0000"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-09-17T13:44:21.487-04:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-explanationofbenefit";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-explanationofbenefit>
+     ]
+  ];
+  fhir:Bundle.type [ fhir:value "searchset"];
+  fhir:Bundle.total [ fhir:value "2"^^xsd:nonNegativeInteger];
+  fhir:Bundle.link [
+     fhir:index 0;
+     fhir:Bundle.link.relation [ fhir:value "self" ];
+     fhir:Bundle.link.url [ fhir:value "explanationOfBenefits/ExplanationOfBenefit?page=1" ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.link.relation [ fhir:value "first" ];
+     fhir:Bundle.link.url [ fhir:value "explanationOfBenefits/ExplanationOfBenefit?page=1" ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.link.relation [ fhir:value "last" ];
+     fhir:Bundle.link.url [ fhir:value "explanationOfBenefits/ExplanationOfBenefit?page=2" ]
+  ];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.resource [
+       a fhir:ExplanationOfBenefit;
+       fhir:Resource.id [ fhir:value "EOB12345" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: 12~345</p><p><b>status</b>: draft</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/ValueSet/claim-type pharmacy}\">pharmacy</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-1234567890123450021.html\">Generated Summary: language: en; Member Number: 435678904000, Member Number: 567878904000; active; MRS ANNABEL MARIE DEMOHOEPER MD; Phone: 860-278-7654, Phone: 860-645-9876; gender: female; birthDate: 1951-08-03</a></p><p><b>billablePeriod</b>: 2019-03-13 --&gt; 2019-03-13</p><p><b>created</b>: 2019-03-15</p><p><b>insurer</b>: <a href=\"Medicare\">Medicare</a></p><p><b>provider</b>: <a href=\"Practitioner/2345678901234560001\">Practitioner/2345678901234560001</a></p><h3>Payees</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Party</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">P</span></td><td><a href=\"Practitioner/2345678901234560001\">Practitioner/2345678901234560001</a></td></tr></table><p><b>outcome</b>: complete</p><p><b>disposition</b>: In-Progress</p><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>true</td><td><a href=\"Coverage/3456789012345670042\">Coverage/3456789012345670042</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>diagnosisSequence</b>: 1</p><p><b>procedureSequence</b>: 1</p><p><b>productOrService</b>: <span title=\"Codes: \">Exam,comp,primary</span></p><p><b>serviced</b>: 2019-03-13 --&gt; 2019-03-13</p><p><b>location</b>: <span title=\"Codes: \">11</span></p><p><b>quantity</b>: 1</p><h3>Nets</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: \">submitted</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: \">submitted</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: \">submittedamount</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><h3>BenefitBalances</h3><table class=\"grid\"><tr><td>-</td><td><b>Category</b></td><td><b>Network</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">Medical Care</span></td><td><span title=\"Codes: \">in</span></td></tr></table></div>"
+       ];
+       fhir:ExplanationOfBenefit.identifier [
+         fhir:index 0;
+         fhir:Identifier.value [ fhir:value "12~345" ]
+       ];
+       fhir:ExplanationOfBenefit.status [ fhir:value "draft" ];
+       fhir:ExplanationOfBenefit.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/claim-type" ];
+           fhir:Coding.code [ fhir:value "pharmacy" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.use [ fhir:value "claim" ];
+       fhir:ExplanationOfBenefit.patient [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Patient/1234567890123450021>;
+         fhir:Reference.reference [ fhir:value "Patient/1234567890123450021" ]
+       ];
+       fhir:ExplanationOfBenefit.billablePeriod [
+         fhir:Period.start [ fhir:value "2019-03-13"^^xsd:date ];
+         fhir:Period.end [ fhir:value "2019-03-13"^^xsd:date ]
+       ];
+       fhir:ExplanationOfBenefit.created [ fhir:value "2019-03-15"^^xsd:date ];
+       fhir:ExplanationOfBenefit.insurer [
+         fhir:Reference.reference [ fhir:value "Medicare" ]
+       ];
+       fhir:ExplanationOfBenefit.provider [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Practitioner/2345678901234560001>;
+         fhir:Reference.reference [ fhir:value "Practitioner/2345678901234560001" ]
+       ];
+       fhir:ExplanationOfBenefit.payee [
+         fhir:ExplanationOfBenefit.payee.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "P" ]
+           ]
+         ];
+         fhir:ExplanationOfBenefit.payee.party [
+           fhir:link <http://hl7.org/fhir/us/carin-bb/Practitioner/2345678901234560001>;
+           fhir:Reference.reference [ fhir:value "Practitioner/2345678901234560001" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.outcome [ fhir:value "complete" ];
+       fhir:ExplanationOfBenefit.disposition [ fhir:value "In-Progress" ];
+       fhir:ExplanationOfBenefit.insurance [
+         fhir:index 0;
+         fhir:ExplanationOfBenefit.insurance.focal [ fhir:value "true"^^xsd:boolean ];
+         fhir:ExplanationOfBenefit.insurance.coverage [
+           fhir:link <http://hl7.org/fhir/us/carin-bb/Coverage/3456789012345670042>;
+           fhir:Reference.reference [ fhir:value "Coverage/3456789012345670042" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.item [
+         fhir:index 0;
+         fhir:ExplanationOfBenefit.item.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+         fhir:ExplanationOfBenefit.item.diagnosisSequence [
+           fhir:value "1"^^xsd:positiveInteger;
+           fhir:index 0
+         ];
+         fhir:ExplanationOfBenefit.item.procedureSequence [
+           fhir:value "1"^^xsd:positiveInteger;
+           fhir:index 0
+         ];
+         fhir:ExplanationOfBenefit.item.productOrService [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "1101" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "Exam,comp,primary" ]
+         ];
+         fhir:ExplanationOfBenefit.item.servicedPeriod [
+           fhir:Period.start [ fhir:value "2019-03-13"^^xsd:date ];
+           fhir:Period.end [ fhir:value "2019-03-13"^^xsd:date ]
+         ];
+         fhir:ExplanationOfBenefit.item.locationCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "11" ]
+           ]
+         ];
+         fhir:ExplanationOfBenefit.item.quantity [
+           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ]
+         ];
+         fhir:ExplanationOfBenefit.item.net [
+           fhir:Money.value [ fhir:value "2321"^^xsd:decimal ]
+         ];
+         fhir:ExplanationOfBenefit.item.adjudication [
+           fhir:index 0;
+           fhir:ExplanationOfBenefit.item.adjudication.category [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.code [ fhir:value "submitted" ]
+             ]
+           ];
+           fhir:ExplanationOfBenefit.item.adjudication.amount [
+             fhir:Money.value [ fhir:value "2432"^^xsd:decimal ];
+             fhir:Money.currency [ fhir:value "USD" ]
+           ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.adjudication [
+         fhir:index 0;
+         fhir:ExplanationOfBenefit.item.adjudication.category [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "submitted" ]
+           ]
+         ];
+         fhir:ExplanationOfBenefit.item.adjudication.amount [
+           fhir:Money.value [ fhir:value "2432"^^xsd:decimal ];
+           fhir:Money.currency [ fhir:value "USD" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.total [
+         fhir:index 0;
+         fhir:ExplanationOfBenefit.total.category [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "submittedamount" ]
+           ]
+         ];
+         fhir:ExplanationOfBenefit.total.amount [
+           fhir:Money.value [ fhir:value "2432"^^xsd:decimal ];
+           fhir:Money.currency [ fhir:value "USD" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.benefitBalance [
+         fhir:index 0;
+         fhir:ExplanationOfBenefit.benefitBalance.category [
+           fhir:CodeableConcept.text [ fhir:value "Medical Care" ]
+         ];
+         fhir:ExplanationOfBenefit.benefitBalance.network [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "in" ]
+           ]
+         ]
+       ]
+     ];
+     fhir:Bundle.entry.search [
+       fhir:Bundle.entry.search.mode [ fhir:value "match" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.resource [
+       a fhir:ExplanationOfBenefit;
+       fhir:Resource.id [ fhir:value "EOB12346" ];
+       fhir:DomainResource.text [
+         fhir:Narrative.status [ fhir:value "generated" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: 12~346</p><p><b>status</b>: draft</p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/ValueSet/claim-type vision}\">vision</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-1234567890123450021.html\">Generated Summary: language: en; Member Number: 435678904000, Member Number: 567878904000; active; MRS ANNABEL MARIE DEMOHOEPER MD; Phone: 860-278-7654, Phone: 860-645-9876; gender: female; birthDate: 1951-08-03</a></p><p><b>billablePeriod</b>: 2020-01-21 --&gt; 2020-02-02</p><p><b>created</b>: 2020-02-03</p><p><b>insurer</b>: <a href=\"Medicare\">Medicare</a></p><p><b>provider</b>: <a href=\"Practitioner/2345678901234560001\">Practitioner/2345678901234560001</a></p><h3>Payees</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Party</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">M</span></td><td><a href=\"Practitioner/2345678901234560001\">Practitioner/2345678901234560001</a></td></tr></table><p><b>outcome</b>: complete</p><p><b>disposition</b>: In-Progress</p><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>true</td><td><a href=\"Coverage/3456789012345670042\">Coverage/3456789012345670042</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>diagnosisSequence</b>: 2</p><p><b>procedureSequence</b>: 1</p><p><b>productOrService</b>: <span title=\"Codes: \">Exam, comp, mixed</span></p><p><b>serviced</b>: 2020-01-21 --&gt; 2020-02-02</p><p><b>location</b>: <span title=\"Codes: \">7</span></p><p><b>quantity</b>: 21</p><h3>Nets</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: \">copay</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: \">submitted</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: \">allowedamount</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><h3>BenefitBalances</h3><table class=\"grid\"><tr><td>-</td><td><b>Category</b></td><td><b>Network</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">Medical Care</span></td><td><span title=\"Codes: \">in</span></td></tr></table></div>"
+       ];
+       fhir:ExplanationOfBenefit.identifier [
+         fhir:index 0;
+         fhir:Identifier.value [ fhir:value "12~346" ]
+       ];
+       fhir:ExplanationOfBenefit.status [ fhir:value "draft" ];
+       fhir:ExplanationOfBenefit.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/claim-type" ];
+           fhir:Coding.code [ fhir:value "vision" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.use [ fhir:value "claim" ];
+       fhir:ExplanationOfBenefit.patient [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Patient/1234567890123450021>;
+         fhir:Reference.reference [ fhir:value "Patient/1234567890123450021" ]
+       ];
+       fhir:ExplanationOfBenefit.billablePeriod [
+         fhir:Period.start [ fhir:value "2020-01-21"^^xsd:date ];
+         fhir:Period.end [ fhir:value "2020-02-02"^^xsd:date ]
+       ];
+       fhir:ExplanationOfBenefit.created [ fhir:value "2020-02-03"^^xsd:date ];
+       fhir:ExplanationOfBenefit.insurer [
+         fhir:Reference.reference [ fhir:value "Medicare" ]
+       ];
+       fhir:ExplanationOfBenefit.provider [
+         fhir:link <http://hl7.org/fhir/us/carin-bb/Practitioner/2345678901234560001>;
+         fhir:Reference.reference [ fhir:value "Practitioner/2345678901234560001" ]
+       ];
+       fhir:ExplanationOfBenefit.payee [
+         fhir:ExplanationOfBenefit.payee.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "M" ]
+           ]
+         ];
+         fhir:ExplanationOfBenefit.payee.party [
+           fhir:link <http://hl7.org/fhir/us/carin-bb/Practitioner/2345678901234560001>;
+           fhir:Reference.reference [ fhir:value "Practitioner/2345678901234560001" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.outcome [ fhir:value "complete" ];
+       fhir:ExplanationOfBenefit.disposition [ fhir:value "In-Progress" ];
+       fhir:ExplanationOfBenefit.insurance [
+         fhir:index 0;
+         fhir:ExplanationOfBenefit.insurance.focal [ fhir:value "true"^^xsd:boolean ];
+         fhir:ExplanationOfBenefit.insurance.coverage [
+           fhir:link <http://hl7.org/fhir/us/carin-bb/Coverage/3456789012345670042>;
+           fhir:Reference.reference [ fhir:value "Coverage/3456789012345670042" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.item [
+         fhir:index 0;
+         fhir:ExplanationOfBenefit.item.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+         fhir:ExplanationOfBenefit.item.diagnosisSequence [
+           fhir:value "2"^^xsd:positiveInteger;
+           fhir:index 0
+         ];
+         fhir:ExplanationOfBenefit.item.procedureSequence [
+           fhir:value "1"^^xsd:positiveInteger;
+           fhir:index 0
+         ];
+         fhir:ExplanationOfBenefit.item.productOrService [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "1102" ]
+           ];
+           fhir:CodeableConcept.text [ fhir:value "Exam, comp, mixed" ]
+         ];
+         fhir:ExplanationOfBenefit.item.servicedPeriod [
+           fhir:Period.start [ fhir:value "2020-01-21"^^xsd:date ];
+           fhir:Period.end [ fhir:value "2020-02-02"^^xsd:date ]
+         ];
+         fhir:ExplanationOfBenefit.item.locationCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "7" ]
+           ]
+         ];
+         fhir:ExplanationOfBenefit.item.quantity [
+           fhir:Quantity.value [ fhir:value "21"^^xsd:decimal ]
+         ];
+         fhir:ExplanationOfBenefit.item.net [
+           fhir:Money.value [ fhir:value "87"^^xsd:decimal ]
+         ];
+         fhir:ExplanationOfBenefit.item.adjudication [
+           fhir:index 0;
+           fhir:ExplanationOfBenefit.item.adjudication.category [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.code [ fhir:value "copay" ]
+             ]
+           ];
+           fhir:ExplanationOfBenefit.item.adjudication.amount [
+             fhir:Money.value [ fhir:value "424"^^xsd:decimal ];
+             fhir:Money.currency [ fhir:value "USD" ]
+           ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.adjudication [
+         fhir:index 0;
+         fhir:ExplanationOfBenefit.item.adjudication.category [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "submitted" ]
+           ]
+         ];
+         fhir:ExplanationOfBenefit.item.adjudication.amount [
+           fhir:Money.value [ fhir:value "424"^^xsd:decimal ];
+           fhir:Money.currency [ fhir:value "USD" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.total [
+         fhir:index 0;
+         fhir:ExplanationOfBenefit.total.category [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "allowedamount" ]
+           ]
+         ];
+         fhir:ExplanationOfBenefit.total.amount [
+           fhir:Money.value [ fhir:value "424"^^xsd:decimal ];
+           fhir:Money.currency [ fhir:value "USD" ]
+         ]
+       ];
+       fhir:ExplanationOfBenefit.benefitBalance [
+         fhir:index 0;
+         fhir:ExplanationOfBenefit.benefitBalance.category [
+           fhir:CodeableConcept.text [ fhir:value "Medical Care" ]
+         ];
+         fhir:ExplanationOfBenefit.benefitBalance.network [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.code [ fhir:value "in" ]
+           ]
+         ]
+       ]
+     ];
+     fhir:Bundle.entry.search [
+       fhir:Bundle.entry.search.mode [ fhir:value "match" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/carin-bb/Patient/1234567890123450021> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Practitioner/2345678901234560001> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Coverage/3456789012345670042> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Bundle/6b187eba-f90d-11ea-8996-9d79182d0000.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/Bundle/6b187eba-f90d-11ea-8996-9d79182d0000.ttl> .
+
+# -------------------------------------------------------------------------------------
+
