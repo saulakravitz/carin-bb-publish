@@ -257,7 +257,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.sequence","","","",1,1,"","","","positiveInt {[]} {[]}
 ","Information instance identifier","A number to uniquely identify supporting information entries.","","Necessary to maintain the order of the supporting information items and provide a mechanism to link to claim details.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.sequence",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.category","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Classification of the supplied information","The general class of the information supplied: information; exception; accident, employment; onset, etc.","This may contain a category for the local bill type codes.","Required to group or associate information items with common characteristics. For example: admission information or prior treatments.","","","","","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -311,7 +311,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.category.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
-"ExplanationOfBenefit.supportingInfo.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.code","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBPayerProviderContractingStatus","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,1,"","","","date {[]} {[]}
@@ -349,7 +349,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   </coding>
 </valueCodeableConcept>","","","",,"extensible","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBSupportingInfoType","",,,,"ExplanationOfBenefit.supportingInfo.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.code","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBPayerProviderContractingStatus","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.timing[x]","","","",0,1,"","","","date {[]} {[]}
@@ -390,7 +390,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.supportingInfo.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Type of information","System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.","This may contain the local bill type codes such as the US UB-04 bill type code.","Required to identify the kind of additional information.","","","","","","","",,"example","The valuset used for additional information codes.","http://hl7.org/fhir/ValueSet/claim-exception","",,,,"ExplanationOfBenefit.supportingInfo.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ExplanationOfBenefit.supportingInfo.timing[x]","","","",1,1,"","","","date {[]} {[]}
+"ExplanationOfBenefit.supportingInfo.timing[x]","","","",1,1,"Y","","","date {[]} {[]}
 ","When it occurred","The date when or period to which this information refers.","","","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.supportingInfo.timing[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExplanationOfBenefit.supportingInfo.value[x]","","","",0,1,"","","","boolean {[]} {[]}
@@ -602,11 +602,7 @@ Bill CodeService Code","",1,1,"Y","","","CodeableConcept {[]} {[]}
 Period {[]} {[]}","Date services began/ended. Located on CMS 1500 (Form Locator 24A) (118)","The date or dates when the service or product was supplied, performed or completed.","","Needed to determine whether the  service or product was provided during the term of the insurance coverage.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.serviced[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.done[x]"
 "ExplanationOfBenefit.item.location[x]","","","",0,1,"Y","","","CodeableConcept {[]} {[]}
-Address {[]} {[]}Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}","Code indicating the location, such as inpatient, outpatient facility, office, or home health agency, where this service was performed. (46)","Where the product or service was provided.","","The location can alter whether the item was acceptable for insurance purposes or impact the determination of the benefit amount.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/CMSPlaceofServiceCodes","","type:$this}
-","",,"closed","ExplanationOfBenefit.item.location[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","FiveWs.where[x]"
-"ExplanationOfBenefit.item.location[x]","locationCodeableConcept","","",0,1,"Y","","","CodeableConcept {[]} {[]}
-","Place of service or where product was supplied","Where the product or service was provided.","","The location can alter whether the item was acceptable for insurance purposes or impact the determination of the benefit amount.","","","","","","","",,"example","Place where the service is rendered.","http://hl7.org/fhir/ValueSet/service-place","",,,,"ExplanationOfBenefit.item.location[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Code indicating the location, such as inpatient, outpatient facility, office, or home health agency, where this service was performed. (46)","Where the product or service was provided.","","The location can alter whether the item was acceptable for insurance purposes or impact the determination of the benefit amount.","","","","","","","",,"required","","http://hl7.org/fhir/us/carin-bb/ValueSet/CMSPlaceofServiceCodes","",,,,"ExplanationOfBenefit.item.location[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.where[x]"
 "ExplanationOfBenefit.item.quantity","","","",0,1,"Y","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
 ","The quantity of units, times, days, visits, services, or treatments for the service described by the HCPCS code, revenue code or procedure code, submitted by the provider.  (42)","The number of repetitions of a service or product.","","Required when the product or service code does not convey the quantity provided.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.item.quantity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
