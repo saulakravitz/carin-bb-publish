@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)",
   "status": "active",
-  "date": "2020-10-01T13:42:09+00:00",
+  "date": "2020-10-05T21:23:59+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -451,7 +451,7 @@
           "reference": "StructureDefinition/C4BB-Organization"
         },
         "name": "C4BB Organization",
-        "description": "This profile builds upon the US Core Organization profile. It is used to convey a payer or provider organization may be updated to include service facility pending resolution of FHIR-26705.\n.",
+        "description": "This profile builds upon the US Core Organization profile. It is used to convey a payer, provider, payee or service facility organization.",
         "exampleBoolean": false
       },
       {
@@ -1650,6 +1650,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Coverage-01234567801-20200101-99991231-SEA22.html"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/01234567801-20200101-99991231-SEA22"
+        },
+        "name": "Coverage2UPMC",
+        "description": "Coverage2 from UPMC",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Coverage-Coverage1.html"
           }
         ],
@@ -1658,6 +1676,24 @@
         },
         "name": "Coverage1",
         "description": "Coverage Example1",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Coverage-Coverage1UPMC.html"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/Coverage1UPMC"
+        },
+        "name": "Coverage1UPMC",
+        "description": "Coverage1 from UPMC",
         "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"
       },
       {
@@ -1722,6 +1758,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ExplanationOfBenefit-EOBProfessional1UPMC.html"
+          }
+        ],
+        "reference": {
+          "reference": "ExplanationOfBenefit/EOBProfessional1UPMC"
+        },
+        "name": "EOBProfessional1UPMC",
+        "description": "EOB Professional Example1 from UPMC",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExplanationOfBenefit"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ExplanationOfBenefit-EOBProfessional1a.html"
           }
         ],
@@ -1731,6 +1785,78 @@
         "name": "EOBProfessional1a",
         "description": "EOB Professional  Example1",
         "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExplanationOfBenefit"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ExplanationOfBenefit-EOBProfessional2UPMC.html"
+          }
+        ],
+        "reference": {
+          "reference": "ExplanationOfBenefit/EOBProfessional2UPMC"
+        },
+        "name": "EOBProfessional2UPMC",
+        "description": "EOB Professional Example1 from UPMC",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-Organization1UPMC.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Organization1UPMC"
+        },
+        "name": "Organization1UPMC",
+        "description": "Organization1 from UPMC",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-Organization2UPMC.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Organization2UPMC"
+        },
+        "name": "Organization2UPMC",
+        "description": "Organization2 from UPMC",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-Organization3UPMC.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Organization3UPMC"
+        },
+        "name": "Organization3UPMC",
+        "description": "Organization3 from UPMC",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
       },
       {
         "extension": [
@@ -1785,6 +1911,42 @@
         "name": "Patient1",
         "description": "Patient Example1",
         "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-Patient1UPMC.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/Patient1UPMC"
+        },
+        "name": "Patient1UPMC",
+        "description": "Patient1 from UPMC",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-Practitioner1UPMC.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Practitioner1UPMC"
+        },
+        "name": "Practitioner1UPMC",
+        "description": "Practitioner1 from UPMC",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner"
       },
       {
         "extension": [
@@ -2001,448 +2163,6 @@
         "name": "C4BB CapabilityStatement",
         "description": "This Section describes the expected capabilities of the C4BB Server actor which is responsible for providing responses to the queries submitted by the C4BB Requestors. ",
         "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-1234567890123450021.html"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/1234567890123450021"
-        },
-        "name": "1234567890123450021",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Coverage"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Coverage-01234567801-20190801-20191231-SEA17.html"
-          }
-        ],
-        "reference": {
-          "reference": "Coverage/01234567801-20190801-20191231-SEA17"
-        },
-        "name": "01234567801-20190801-20191231-SEA17",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Coverage"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Coverage-01234567801-20200101-99991231-SEA22.html"
-          }
-        ],
-        "reference": {
-          "reference": "Coverage/01234567801-20200101-99991231-SEA22"
-        },
-        "name": "01234567801-20200101-99991231-SEA22",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-01234567801-FR123E1230000010000010001.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/01234567801-FR123E1230000010000010001"
-        },
-        "name": "01234567801-FR123E1230000010000010001",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-01234567801-GNXYZ1230000010000010001.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/01234567801-GNXYZ1230000010000010001"
-        },
-        "name": "01234567801-GNXYZ1230000010000010001",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Organization-1.html"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/1"
-        },
-        "name": "1",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Organization-PAT-V-FR0000010000010001-0000000UPP.html"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/PAT-V-FR0000010000010001-0000000UPP"
-        },
-        "name": "PAT-V-FR0000010000010001-0000000UPP",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Organization-PAT-V-GN0000010000010001-0000000UPP.html"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/PAT-V-GN0000010000010001-0000000UPP"
-        },
-        "name": "PAT-V-GN0000010000010001-0000000UPP",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-01234567801.html"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/01234567801"
-        },
-        "name": "01234567801",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Practitioner"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Practitioner-V00UPP.html"
-          }
-        ],
-        "reference": {
-          "reference": "Practitioner/V00UPP"
-        },
-        "name": "V00UPP",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Coverage"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Coverage-31535e09-5bbd-4e97-af5a-de353ecdb667.html"
-          }
-        ],
-        "reference": {
-          "reference": "Coverage/31535e09-5bbd-4e97-af5a-de353ecdb667"
-        },
-        "name": "31535e09-5bbd-4e97-af5a-de353ecdb667",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Coverage"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Coverage-b19e0ac3-4cd1-46a6-aef7-d74f04f6b00d.html"
-          }
-        ],
-        "reference": {
-          "reference": "Coverage/b19e0ac3-4cd1-46a6-aef7-d74f04f6b00d"
-        },
-        "name": "b19e0ac3-4cd1-46a6-aef7-d74f04f6b00d",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-4791ba6a-bde6-460b-b7ca-729d994b495f.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/4791ba6a-bde6-460b-b7ca-729d994b495f"
-        },
-        "name": "4791ba6a-bde6-460b-b7ca-729d994b495f",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-fcceee01-61ec-43a2-95a9-6525b53efd28.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/fcceee01-61ec-43a2-95a9-6525b53efd28"
-        },
-        "name": "fcceee01-61ec-43a2-95a9-6525b53efd28",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-d5991a8f-5bce-41aa-926e-d4370c215a0a.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/d5991a8f-5bce-41aa-926e-d4370c215a0a"
-        },
-        "name": "d5991a8f-5bce-41aa-926e-d4370c215a0a",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-64ced8e6-78c0-4cd9-bc63-3ce6e54e9568.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/64ced8e6-78c0-4cd9-bc63-3ce6e54e9568"
-        },
-        "name": "64ced8e6-78c0-4cd9-bc63-3ce6e54e9568",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-ec019c07-b18a-4f46-885e-6b012c1f264c.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/ec019c07-b18a-4f46-885e-6b012c1f264c"
-        },
-        "name": "ec019c07-b18a-4f46-885e-6b012c1f264c",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-319231f2-1d78-4ee3-9ef1-c06563610561.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/319231f2-1d78-4ee3-9ef1-c06563610561"
-        },
-        "name": "319231f2-1d78-4ee3-9ef1-c06563610561",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-7665f579-6a4d-49a2-941d-467b6bc33df8.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/7665f579-6a4d-49a2-941d-467b6bc33df8"
-        },
-        "name": "7665f579-6a4d-49a2-941d-467b6bc33df8",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ExplanationOfBenefit"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ExplanationOfBenefit-30736584-f300-4c1b-8207-aff424a0c1ea.html"
-          }
-        ],
-        "reference": {
-          "reference": "ExplanationOfBenefit/30736584-f300-4c1b-8207-aff424a0c1ea"
-        },
-        "name": "30736584-f300-4c1b-8207-aff424a0c1ea",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Organization-45666b45-8275-47a6-85b5-4e23f36d8868.html"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/45666b45-8275-47a6-85b5-4e23f36d8868"
-        },
-        "name": "45666b45-8275-47a6-85b5-4e23f36d8868",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Organization-00ce2ecc-dac6-43cd-abad-791c83ed546c.html"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/00ce2ecc-dac6-43cd-abad-791c83ed546c"
-        },
-        "name": "00ce2ecc-dac6-43cd-abad-791c83ed546c",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-bea3a592-709f-4151-a2a8-e0caf53d2b28.html"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/bea3a592-709f-4151-a2a8-e0caf53d2b28"
-        },
-        "name": "bea3a592-709f-4151-a2a8-e0caf53d2b28",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-c618c291-2d6b-4e49-a80a-caef76e79bf0.html"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/c618c291-2d6b-4e49-a80a-caef76e79bf0"
-        },
-        "name": "c618c291-2d6b-4e49-a80a-caef76e79bf0",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Practitioner"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Practitioner-bd61d275-2001-4017-8df2-51ef16c63d48.html"
-          }
-        ],
-        "reference": {
-          "reference": "Practitioner/bd61d275-2001-4017-8df2-51ef16c63d48"
-        },
-        "name": "bd61d275-2001-4017-8df2-51ef16c63d48",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Practitioner"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Practitioner-dc7d191d-3cfd-469f-b70d-2722f9f2c7ff.html"
-          }
-        ],
-        "reference": {
-          "reference": "Practitioner/dc7d191d-3cfd-469f-b70d-2722f9f2c7ff"
-        },
-        "name": "dc7d191d-3cfd-469f-b70d-2722f9f2c7ff",
-        "exampleBoolean": true
       }
     ],
     "page": {

@@ -561,6 +561,13 @@
     <sch:title>f:ExplanationOfBenefit/f:supportingInfo</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:supportingInfo">
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:value[x]) &gt;= 1">value[x]: minimum cardinality of 'value[x]' is 1</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:timing[x]) &gt;= 1">timing[x]: minimum cardinality of 'timing[x]' is 1</sch:assert>
+      <sch:assert test="count(f:value[x]) &gt;= 1">value[x]: minimum cardinality of 'value[x]' is 1</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

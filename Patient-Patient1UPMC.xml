@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="Patient1UPMC"/>
+  <meta>
+    <lastUpdated value="2020-09-17T15:34:38.950648-04:00"/>
+    <source value="Organization/Organization1UPMC"/>
+    <profile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>language</b>: en-US</p><p><b>identifier</b>: Member ID: 01234567801</p><p><b>active</b>: true</p><p><b>name</b>: Johnny Example1 </p><p><b>telecom</b>: ph: (301)666-1212</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1990-01-01</p><p><b>address</b>: </p><ul><li>123 Main Street PITTSBURGH PA 15220 </li><li>123 Main Street PITTSBURGH PA 15220 </li></ul><p><b>maritalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}">unknown</span></p><p><b>managingOrganization</b>: <a href="Organization-Organization1UPMC.html">UPMC Health Plan. Generated Summary: id: 95216; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type pay}">Payer</span>; name: UPMC Health Plan; Phone: 1-844-220-4785 TTY: 711, Phone: 1-866-406-8762</a></p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType"/>
+        <code value="mb"/>
+      </coding>
+    </type>
+    <system value="https://www.upmchealthplan.com/fhir/memberidentifier"/>
+    <value value="01234567801"/>
+    <assigner>
+      <reference value="Organization/Organization1UPMC"/>
+      <display value="UPMC Health Plan"/>
+    </assigner>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Example1"/>
+    <given value="Johnny"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="(301)666-1212"/>
+    <rank value="2"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1990-01-01"/>
+  <address>
+    <type value="physical"/>
+    <line value="123 Main Street"/>
+    <city value="PITTSBURGH"/>
+    <state value="PA"/>
+    <postalCode value="15220"/>
+  </address>
+  <address>
+    <type value="physical"/>
+    <line value="123 Main Street"/>
+    <city value="PITTSBURGH"/>
+    <state value="PA"/>
+    <postalCode value="15220"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <code value="UNK"/>
+    </coding>
+    <text value="unknown"/>
+  </maritalStatus>
+  <managingOrganization>
+    <reference value="Organization/Organization1UPMC"/>
+    <display value="UPMC Health Plan"/>
+  </managingOrganization>
+</Patient>

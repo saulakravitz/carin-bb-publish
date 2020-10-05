@@ -1,40 +1,42 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>HL7.FHIR.US.CARIN-BB\EOBPharmacy1 - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-      <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/hl7.css"/>
-    <link rel="stylesheet" href="assets/css/fhir.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -42,49 +44,49 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"11.89"}
-    h3,h4,h5,h6{--heading-prefix:"11.89"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
-          <!-- Placeholder for child template header declarations -->
+    <style type="text/css">h2{--heading-prefix:"11.91"}
+    h3,h4,h5,h6{--heading-prefix:"11.91"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
 
         <div id="hl7-nav">
-          <a no-external="true" id="hl7-logo" href="http://hl7.org">
-            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
           </a>
         </div>
         <div id="family-nav">
-          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
         </div>
         <div id="hl7-search">
-          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
         </div>
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button&reg;)</span><br/>0.1.4 - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)</span><br/>0.1.4 - STU1</p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -160,7 +162,7 @@
       <li>
         <a href="Authorization_Authentication_and_Registration.html#smart-on-fhir-application-launch">SMART on FHIR Application Launch</a>
       </li>
-      <li><a name="98c9f7eb-8d9f-435d-b753-57a9d1c7fc8f">​</a>
+      <li>
         <a href="Authorization_Authentication_and_Registration.html#authorization-and-authentication">Authorization and Authentication</a>
       </li>
     </ul>
@@ -172,28 +174,28 @@
     <a href="downloads.html">Downloads</a>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>EOBPharmacy1</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EOBPharmacy1</b></li>
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button&reg;) - Local Development build (v0.1.4). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+<!--ReleaseHeader--><p id="publish-box">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®) - Local Development build (v0.1.4). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -238,9 +240,9 @@
 
 <h2 id="root">: EOBPharmacy1 - TTL Representation</h2>
 
-<p><a href="ExplanationOfBenefit-EOBPharmacy1.ttl" no-download="true">Raw ttl</a> | <a download="null" href="ExplanationOfBenefit-EOBPharmacy1.ttl">Download</a></p>
+<p><a href="ExplanationOfBenefit-EOBPharmacy1.ttl" no-download="true">Raw ttl</a> | <a href="ExplanationOfBenefit-EOBPharmacy1.ttl" download>Download</a></p>
 
-    <!-- insert intro if present -->
+  <!-- insert intro if present -->
   
 
 
@@ -255,175 +257,175 @@
 
  a fhir:ExplanationOfBenefit;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "EOBPharmacy1"];
+  <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EOBPharmacy1&quot;];
   <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.meta">fhir:Resource.meta</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:Meta.lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:value</a> "2019-12-12T09:14:11+00:00"^^xsd:dateTime ];
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:Meta.lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:value</a> &quot;2019-12-12T09:14:11+00:00&quot;^^xsd:dateTime ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy";
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy&quot;;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy&gt;     ]
   ];
-  <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "en-US"];
+  <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot;];
   <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "generated" ];
-     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Ids&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Meta&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;language&lt;/b&gt;: en-US&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Claim Number: AW123412341234123412341234123412&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claim-type pharmacy}\"&gt;Inpatient Institution&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;use&lt;/b&gt;: claim&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\"Patient-Patient1.html\"&gt;Generated Summary: language: en-US; Member ID: 1234-234-1243-12345678901, Medical record number: 1234-234-1243-12345678901m, Unique Member ID: 1234-234-1243-12345678901u, Patient Account Number: 1234-234-1243-12345678901a; active; Johnny Example1 ; Phone: (301)666-1212; gender: male; birthDate: 1986-01-01; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}\"&gt;unknown&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;billablePeriod&lt;/b&gt;: Jan 1, 2019, 12:00:00 AM --&amp;gt; Oct 31, 2019, 12:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;created&lt;/b&gt;: Jul 2, 2019, 12:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;insurer&lt;/b&gt;: &lt;a href=\"Organization-OrganizationPayer1.html\"&gt;XXX Health Plan. Generated Summary: language: en-US; National Provider Identifier: 345678, Payer ID: 901234; active; name: Payer 1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;provider&lt;/b&gt;: &lt;a href=\"Organization-OrganizationProvider1.html\"&gt;XXX Health Plan. Generated Summary: language: en-US; National Provider Identifier: 345678, Tax ID number: 123-45-6789; active; name: Provider 1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;outcome&lt;/b&gt;: partial&lt;/p&gt;&lt;h3&gt;Diagnoses&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Diagnosis[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm S06.0x1A}\"&gt;S06.0x1A&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType principal}\"&gt;principal&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Insurances&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Focal&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Coverage&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;&lt;a href=\"Coverage-Coverage1.html\"&gt;Generated Summary: language: en-US; Member ID: 1234-234-1243-12345678901; status: active; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActCode HIP}\"&gt;health insurance plan policy&lt;/span&gt;; subscriberId: 12345678901; dependent: 01; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\"&gt;Self&lt;/span&gt;; period: Jan 1, 2019, 12:00:00 AM --&amp;gt; Oct 31, 2019, 12:00:00 AM; network: XYZ123-UPMC CONSUMER ADVA&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: &lt;span title=\"Codes: {http://hl7.org/fhir/sid/ndc 0777-3105-02}\"&gt;100-count bottle of Prozac 20 mg&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\"&gt;Submitted Amount&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication benefit}\"&gt;Benefit Amount&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication discount}\"&gt;Discount&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication memberliability}\"&gt;Member liability&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication paidtoprovider}\"&gt;Paid to provider&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;total&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication paidtoprovider}\"&gt;Payment Amount&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;total&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\"&gt;Submitted Amount&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;total&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication paidbypatient}\"&gt;Patient Pay Amount&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;total&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication innetwork}\"&gt;innetwork&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; xml:lang=\&quot;en-US\&quot; lang=\&quot;en-US\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Ids&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Meta&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;language&lt;/b&gt;: en-US&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Claim Number: AW123412341234123412341234123412&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/claim-type pharmacy}\&quot;&gt;Inpatient Institution&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;use&lt;/b&gt;: claim&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-Patient1.html\&quot;&gt;Generated Summary: language: en-US; Member ID: 1234-234-1243-12345678901, Medical record number: 1234-234-1243-12345678901m, Unique Member ID: 1234-234-1243-12345678901u, Patient Account Number: 1234-234-1243-12345678901a; active; Johnny Example1 ; Phone: (301)666-1212; gender: male; birthDate: 1986-01-01; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}\&quot;&gt;unknown&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;billablePeriod&lt;/b&gt;: Jan 1, 2019, 12:00:00 AM --&amp;gt; Oct 31, 2019, 12:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;created&lt;/b&gt;: Jul 2, 2019, 12:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;insurer&lt;/b&gt;: &lt;a href=\&quot;Organization-OrganizationPayer1.html\&quot;&gt;XXX Health Plan. Generated Summary: language: en-US; National Provider Identifier: 345678, Payer ID: 901234; active; name: Payer 1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;provider&lt;/b&gt;: &lt;a href=\&quot;Organization-OrganizationProvider1.html\&quot;&gt;XXX Health Plan. Generated Summary: language: en-US; National Provider Identifier: 345678, Tax ID number: 123-45-6789; active; name: Provider 1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;outcome&lt;/b&gt;: partial&lt;/p&gt;&lt;h3&gt;Diagnoses&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Diagnosis[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes: {http://hl7.org/fhir/sid/icd-10-cm S06.0x1A}\&quot;&gt;S06.0x1A&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType principal}\&quot;&gt;principal&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Insurances&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Focal&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Coverage&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Coverage-Coverage1.html\&quot;&gt;Generated Summary: language: en-US; Member ID: 1234-234-1243-12345678901; status: active; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-ActCode HIP}\&quot;&gt;health insurance plan policy&lt;/span&gt;; subscriberId: 12345678901; dependent: 01; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\&quot;&gt;Self&lt;/span&gt;; period: Jan 1, 2019, 12:00:00 AM --&amp;gt; Oct 31, 2019, 12:00:00 AM; network: XYZ123-UPMC CONSUMER ADVA&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://hl7.org/fhir/sid/ndc 0777-3105-02}\&quot;&gt;100-count bottle of Prozac 20 mg&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\&quot;&gt;Submitted Amount&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/adjudication benefit}\&quot;&gt;Benefit Amount&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication discount}\&quot;&gt;Discount&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication memberliability}\&quot;&gt;Member liability&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication paidtoprovider}\&quot;&gt;Paid to provider&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;total&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication paidtoprovider}\&quot;&gt;Payment Amount&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;total&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\&quot;&gt;Submitted Amount&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;total&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication paidbypatient}\&quot;&gt;Patient Pay Amount&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;total&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication innetwork}\&quot;&gt;innetwork&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
   ];
   <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.identifier">fhir:ExplanationOfBenefit.identifier</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "cn" ]       ]     ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "https://www.xxxplan.com/fhir/EOBIdentifier" ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "AW123412341234123412341234123412" ]
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;cn&quot; ]       ]     ];
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://www.xxxplan.com/fhir/EOBIdentifier&quot; ];
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;AW123412341234123412341234123412&quot; ]
   ];
-  <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.status">fhir:ExplanationOfBenefit.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "active"];
+  <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.status">fhir:ExplanationOfBenefit.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
   <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.type">fhir:ExplanationOfBenefit.type</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://terminology.hl7.org/CodeSystem/claim-type" ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "pharmacy" ]     ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Inpatient Institution" ]
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/claim-type&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;pharmacy&quot; ]     ];
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Inpatient Institution&quot; ]
   ];
-  <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.use">fhir:ExplanationOfBenefit.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "claim"];
+  <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.use">fhir:ExplanationOfBenefit.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;claim&quot;];
   <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.patient">fhir:ExplanationOfBenefit.patient</a> [
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Patient/Patient1" ]
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/Patient1&quot; ]
   ];
   <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.billablePeriod">fhir:ExplanationOfBenefit.billablePeriod</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2019-01-01T00:00:00+00:00"^^xsd:dateTime ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2019-10-31T00:00:00+00:00"^^xsd:dateTime ]
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2019-01-01T00:00:00+00:00&quot;^^xsd:dateTime ];
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2019-10-31T00:00:00+00:00&quot;^^xsd:dateTime ]
   ];
-  <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.created">fhir:ExplanationOfBenefit.created</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2019-07-02T00:00:00+00:00"^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.created">fhir:ExplanationOfBenefit.created</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2019-07-02T00:00:00+00:00&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.insurer">fhir:ExplanationOfBenefit.insurer</a> [
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Organization/OrganizationPayer1" ];
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "XXX Health Plan" ]
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Organization/OrganizationPayer1&quot; ];
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;XXX Health Plan&quot; ]
   ];
   <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.provider">fhir:ExplanationOfBenefit.provider</a> [
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Organization/OrganizationProvider1" ];
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "XXX Health Plan" ]
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Organization/OrganizationProvider1&quot; ];
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;XXX Health Plan&quot; ]
   ];
-  <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.outcome">fhir:ExplanationOfBenefit.outcome</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "partial"];
+  <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.outcome">fhir:ExplanationOfBenefit.outcome</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;partial&quot;];
   <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.diagnosis">fhir:ExplanationOfBenefit.diagnosis</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.diagnosis.sequence">fhir:ExplanationOfBenefit.diagnosis.sequence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> "1"^^xsd:positiveInteger ];
+     <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.diagnosis.sequence">fhir:ExplanationOfBenefit.diagnosis.sequence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> &quot;1&quot;^^xsd:positiveInteger ];
      <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.diagnosis.diagnosis[x]">fhir:ExplanationOfBenefit.diagnosis.diagnosisCodeableConcept</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/sid/icd-10-cm" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "S06.0x1A" ]       ]     ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/sid/icd-10-cm&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;S06.0x1A&quot; ]       ]     ];
      <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.diagnosis.type">fhir:ExplanationOfBenefit.diagnosis.type</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "principal" ]       ]     ]
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;principal&quot; ]       ]     ]
   ];
   <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.insurance">fhir:ExplanationOfBenefit.insurance</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.insurance.focal">fhir:ExplanationOfBenefit.insurance.focal</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> "true"^^xsd:boolean ];
+     <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.insurance.focal">fhir:ExplanationOfBenefit.insurance.focal</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
      <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.insurance.coverage">fhir:ExplanationOfBenefit.insurance.coverage</a> [
-       <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Coverage/Coverage1" ]     ]
+       <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Coverage/Coverage1&quot; ]     ]
   ];
   <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item">fhir:ExplanationOfBenefit.item</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.sequence">fhir:ExplanationOfBenefit.item.sequence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> "1"^^xsd:positiveInteger ];
+     <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.sequence">fhir:ExplanationOfBenefit.item.sequence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> &quot;1&quot;^^xsd:positiveInteger ];
      <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.productOrService">fhir:ExplanationOfBenefit.item.productOrService</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/sid/ndc" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "0777-3105-02" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "100-count bottle of Prozac 20 mg" ]       ]     ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/sid/ndc&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;0777-3105-02&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;100-count bottle of Prozac 20 mg&quot; ]       ]     ];
      <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication">fhir:ExplanationOfBenefit.item.adjudication</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.category">fhir:ExplanationOfBenefit.item.adjudication.category</a> [
          <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
            <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://terminology.hl7.org/CodeSystem/adjudication" ];
-           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "submitted" ]         ]       ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/adjudication&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;submitted&quot; ]         ]       ];
        <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.amount">fhir:ExplanationOfBenefit.item.adjudication.amount</a> [
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> "1000"^^xsd:decimal ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "USD" ]       ]     ], [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;1000&quot;^^xsd:decimal ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;USD&quot; ]       ]     ], [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
        <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.category">fhir:ExplanationOfBenefit.item.adjudication.category</a> [
          <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
            <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://terminology.hl7.org/CodeSystem/adjudication" ];
-           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "benefit" ]         ]       ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/adjudication&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;benefit&quot; ]         ]       ];
        <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.amount">fhir:ExplanationOfBenefit.item.adjudication.amount</a> [
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> "20"^^xsd:decimal ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "USD" ]       ]     ], [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;20&quot;^^xsd:decimal ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;USD&quot; ]       ]     ], [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
        <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.category">fhir:ExplanationOfBenefit.item.adjudication.category</a> [
          <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
            <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
-           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "discount" ]         ]       ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;discount&quot; ]         ]       ];
        <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.amount">fhir:ExplanationOfBenefit.item.adjudication.amount</a> [
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> "900"^^xsd:decimal ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "USD" ]       ]     ], [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;900&quot;^^xsd:decimal ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;USD&quot; ]       ]     ], [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3;
        <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.category">fhir:ExplanationOfBenefit.item.adjudication.category</a> [
          <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
            <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
-           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "memberliability" ]         ]       ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;memberliability&quot; ]         ]       ];
        <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.amount">fhir:ExplanationOfBenefit.item.adjudication.amount</a> [
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> "80"^^xsd:decimal ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "USD" ]       ]     ], [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;80&quot;^^xsd:decimal ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;USD&quot; ]       ]     ], [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4;
        <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.category">fhir:ExplanationOfBenefit.item.adjudication.category</a> [
          <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
            <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
-           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "paidtoprovider" ]         ]       ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;paidtoprovider&quot; ]         ]       ];
        <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.amount">fhir:ExplanationOfBenefit.item.adjudication.amount</a> [
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> "20"^^xsd:decimal ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "USD" ]       ]     ]
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;20&quot;^^xsd:decimal ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;USD&quot; ]       ]     ]
   ];
   <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.total">fhir:ExplanationOfBenefit.total</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.total.category">fhir:ExplanationOfBenefit.total.category</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "paidtoprovider" ]       ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Payment Amount" ]     ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;paidtoprovider&quot; ]       ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Payment Amount&quot; ]     ];
      <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.total.amount">fhir:ExplanationOfBenefit.total.amount</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> "620"^^xsd:decimal ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "USD" ]     ]
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;620&quot;^^xsd:decimal ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;USD&quot; ]     ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
      <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.total.category">fhir:ExplanationOfBenefit.total.category</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://terminology.hl7.org/CodeSystem/adjudication" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "submitted" ]       ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Submitted Amount" ]     ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/adjudication&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;submitted&quot; ]       ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Submitted Amount&quot; ]     ];
      <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.total.amount">fhir:ExplanationOfBenefit.total.amount</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> "2650"^^xsd:decimal ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "USD" ]     ]
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;2650&quot;^^xsd:decimal ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;USD&quot; ]     ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
      <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.total.category">fhir:ExplanationOfBenefit.total.category</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "paidbypatient" ]       ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Patient Pay Amount" ]     ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;paidbypatient&quot; ]       ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient Pay Amount&quot; ]     ];
      <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.total.amount">fhir:ExplanationOfBenefit.total.amount</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> "0"^^xsd:decimal ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "USD" ]     ]
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;0&quot;^^xsd:decimal ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;USD&quot; ]     ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3;
      <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.total.category">fhir:ExplanationOfBenefit.total.category</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "innetwork" ]       ]     ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;innetwork&quot; ]       ]     ];
      <a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.total.amount">fhir:ExplanationOfBenefit.total.amount</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> "0"^^xsd:decimal ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "USD" ]     ]
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:Money.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;0&quot;^^xsd:decimal ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:Money.currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;USD&quot; ]     ]
   ].
 
 # - ontology header ------------------------------------------------------------
@@ -435,19 +437,19 @@
 
 
 
-    <!-- insert notes if present -->
+  <!-- insert notes if present -->
   
 
 
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -456,44 +458,43 @@
       }
     });
   </script>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 1, 2020 13:42+0000">2020-10-01</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 5, 2020 21:23+0000">2020-10-05</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
-               | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/carin-bb/history.html" target="_blank">Version History  |
-               <a style="color: #81BEF7" href="searchform.html" target="_blank">Search  |
-                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
-                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change </a>
+               | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/carin-bb/history.html">Version History  |
+               <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change </a>
 
-          
-        
-          <!-- /inner-wrapper -->
-        <!-- /container -->
-      <!-- /segment-footer -->
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
-  
-
-</a></a></span></p></div></div></div></body></html>
+  </body>
+</html>

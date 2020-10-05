@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Organization/Organization1UPMC> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Organization1UPMC"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-09-08T00:00:00+00:00"^^xsd:dateTime ];
+     fhir:Meta.source [ fhir:value "Organization/Organization1UPMC" ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: 95216</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type pay}\">Payer</span></p><p><b>name</b>: UPMC Health Plan</p><p><b>telecom</b>: ph: 1-844-220-4785 TTY: 711(WORK), ph: 1-866-406-8762(WORK)</p><p><b>address</b>: UPMC Health Plan Attn: Commercial Plans U.S. Steel Tower 600 Grant Street Pittsburgh PA 15219 </p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://content.naic.org/cis_consumer_information" ];
+     fhir:Identifier.value [ fhir:value "95216" ]
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/organization-type" ];
+       fhir:Coding.code [ fhir:value "pay" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Payer" ]
+  ];
+  fhir:Organization.name [ fhir:value "UPMC Health Plan"];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "1-844-220-4785 TTY: 711" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "1-866-406-8762" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.type [ fhir:value "physical" ];
+     fhir:Address.line [
+       fhir:value "UPMC Health Plan";
+       fhir:index 0
+     ], [
+       fhir:value "Attn: Commercial Plans";
+       fhir:index 1
+     ], [
+       fhir:value "U.S. Steel Tower";
+       fhir:index 2
+     ], [
+       fhir:value "600 Grant Street";
+       fhir:index 3
+     ];
+     fhir:Address.city [ fhir:value "Pittsburgh" ];
+     fhir:Address.state [ fhir:value "PA" ];
+     fhir:Address.postalCode [ fhir:value "15219" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Organization/Organization1UPMC.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/Organization/Organization1UPMC.ttl> .
+
+# -------------------------------------------------------------------------------------
+

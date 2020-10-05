@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Organization1UPMC"/>
+  <meta>
+    <lastUpdated value="2020-09-08T00:00:00+00:00"/>
+    <source value="Organization/Organization1UPMC"/>
+    <profile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: 95216</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type pay}">Payer</span></p><p><b>name</b>: UPMC Health Plan</p><p><b>telecom</b>: ph: 1-844-220-4785 TTY: 711(WORK), ph: 1-866-406-8762(WORK)</p><p><b>address</b>: UPMC Health Plan Attn: Commercial Plans U.S. Steel Tower 600 Grant Street Pittsburgh PA 15219 </p></div>
+  </text>
+  <identifier>
+    <system value="https://content.naic.org/cis_consumer_information"/>
+    <value value="95216"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="pay"/>
+    </coding>
+    <text value="Payer"/>
+  </type>
+  <name value="UPMC Health Plan"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="1-844-220-4785 TTY: 711"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="1-866-406-8762"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <type value="physical"/>
+    <line value="UPMC Health Plan"/>
+    <line value="Attn: Commercial Plans"/>
+    <line value="U.S. Steel Tower"/>
+    <line value="600 Grant Street"/>
+    <city value="Pittsburgh"/>
+    <state value="PA"/>
+    <postalCode value="15219"/>
+  </address>
+</Organization>
