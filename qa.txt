@@ -1,18 +1,18 @@
 ﻿CARINConsumerDirectedPayerDataExchange : Validation Results
 =========================================
 
-err = 35, warn = 31, info = 17
+err = 29, warn = 31, info = 17
 IG Publisher Version: 1.1.34
-Generated Mon Oct 05 21:27:07 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.4 (canonical = http://hl7.org/fhir/us/carin-bb)
+Generated Mon Oct 05 21:45:40 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.carin-bb#0.1.4 (canonical = http://hl7.org/fhir/us/carin-bb)
 
  Build Errors : 8 / 1 / 0
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/ImplementationGuide-hl7.fhir.us.carin-bb : 0 / 6 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Coverage-01234567801-20200101-99991231-SEA22 : 0 / 0 / 2
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Coverage-Coverage1 : 0 / 0 / 2
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/Coverage-Coverage1UPMC : 0 / 0 / 2
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBInpatient1 : 6 / 1 / 2
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBOutpatientInstitutional1 : 7 / 1 / 2
- /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBPharmacy1 : 4 / 1 / 2
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBInpatient1 : 4 / 1 / 2
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBOutpatientInstitutional1 : 5 / 1 / 2
+ /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBPharmacy1 : 2 / 1 / 2
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBProfessional1UPMC : 7 / 5 / 8
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBProfessional1a : 4 / 1 / 1
  /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBProfessional2UPMC : 5 / 3 / 4
@@ -144,8 +144,6 @@ ERROR: ExplanationOfBenefit/EOBInpatient1: ExplanationOfBenefit: Profile http://
 WARNING: ExplanationOfBenefit/EOBInpatient1: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/CDCICD910CMDiagnosisCodes because the value set or code system is not known to the validator]
 ERROR: ExplanationOfBenefit/EOBInpatient1: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept): Code "S06.0x1A" not found; The code "S06.0x1A" is not valid in the system http://hl7.org/fhir/sid/icd-10-cm; The code provided (http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A) is not valid in the value set 'CDCICD910CMDiagnosisCodes' (from http://tx.fhir.org/r4)
 ERROR: ExplanationOfBenefit/EOBInpatient1: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept).coding[0]: Code "S06.0x1A" not found; The code "S06.0x1A" is not valid in the system http://hl7.org/fhir/sid/icd-10-cm; The code provided (http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A'
-ERROR: ExplanationOfBenefit/EOBInpatient1: ExplanationOfBenefit.diagnosis[0].type[0]: None of the codes provided are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBClaimInpatientInstitutionalDiagnosisType (http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBClaimInpatientInstitutionalDiagnosisType), and a code from this value set is required) (codes = http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType#principal)
-ERROR: ExplanationOfBenefit/EOBInpatient1: ExplanationOfBenefit.diagnosis[0].type[0].coding[0]: Unknown Code http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType#principal in http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType for 'http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType#principal'
 ERROR: ExplanationOfBenefit/EOBInpatient1: ExplanationOfBenefit.total[3].category.coding[0]: Unknown Code http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication#innetwork in http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication for 'http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication#innetwork'
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBOutpatientInstitutional1.json ==
 INFORMATION: ExplanationOfBenefit/EOBOutpatientInstitutional1: ExplanationOfBenefit: Validate resource against profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional
@@ -155,15 +153,11 @@ ERROR: ExplanationOfBenefit/EOBOutpatientInstitutional1: ExplanationOfBenefit: P
 WARNING: ExplanationOfBenefit/EOBOutpatientInstitutional1: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/CDCICD910CMDiagnosisCodes because the value set or code system is not known to the validator]
 ERROR: ExplanationOfBenefit/EOBOutpatientInstitutional1: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept): Code "S06.0x1A" not found; The code "S06.0x1A" is not valid in the system http://hl7.org/fhir/sid/icd-10-cm; The code provided (http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A) is not valid in the value set 'CDCICD910CMDiagnosisCodes' (from http://tx.fhir.org/r4)
 ERROR: ExplanationOfBenefit/EOBOutpatientInstitutional1: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept).coding[0]: Code "S06.0x1A" not found; The code "S06.0x1A" is not valid in the system http://hl7.org/fhir/sid/icd-10-cm; The code provided (http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A'
-ERROR: ExplanationOfBenefit/EOBOutpatientInstitutional1: ExplanationOfBenefit.diagnosis[0].type[0]: None of the codes provided are in the value set http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBClaimOutpatientInstitutionalDiagnosisType (http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBClaimOutpatientInstitutionalDiagnosisType), and a code from this value set is required) (codes = http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType#principal)
-ERROR: ExplanationOfBenefit/EOBOutpatientInstitutional1: ExplanationOfBenefit.diagnosis[0].type[0].coding[0]: Unknown Code http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType#principal in http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType for 'http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType#principal'
 ERROR: ExplanationOfBenefit/EOBOutpatientInstitutional1: ExplanationOfBenefit.total[3].category.coding[0]: Unknown Code http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication#innetwork in http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication for 'http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication#innetwork'
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBPharmacy1.json ==
 INFORMATION: ExplanationOfBenefit/EOBPharmacy1: ExplanationOfBenefit: Validate resource against profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy
 INFORMATION: ExplanationOfBenefit/EOBPharmacy1: ExplanationOfBenefit.total[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy
 ERROR: ExplanationOfBenefit/EOBPharmacy1: ExplanationOfBenefit: Profile http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy, Element 'ExplanationOfBenefit.total[inoutnetwork]': minimum required = 1, but only found 0
-ERROR: ExplanationOfBenefit/EOBPharmacy1: ExplanationOfBenefit.diagnosis[0].diagnosis.ofType(CodeableConcept).coding[0]: Code "S06.0x1A" not found; The code "S06.0x1A" is not valid in the system http://hl7.org/fhir/sid/icd-10-cm; The code provided (http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10-cm#S06.0x1A'
-ERROR: ExplanationOfBenefit/EOBPharmacy1: ExplanationOfBenefit.diagnosis[0].type[0].coding[0]: Unknown Code http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType#principal in http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType for 'http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType#principal'
 WARNING: ExplanationOfBenefit/EOBPharmacy1: ExplanationOfBenefit.item[0].productOrService: The display "100-count bottle of Prozac 20 mg" is not a valid display for the code {http://hl7.org/fhir/sid/ndc}0777-3105-02 - should be one of ["100 CAPSULE in 1 BOTTLE (0777-3105-02)"] (from http://tx.fhir.org/r4)
 ERROR: ExplanationOfBenefit/EOBPharmacy1: ExplanationOfBenefit.total[3].category.coding[0]: Unknown Code http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication#innetwork in http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication for 'http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication#innetwork'
 == /home/runner/work/carin-bb/carin-bb/fsh/build/input/examples/ExplanationOfBenefit-EOBProfessional1UPMC.json ==
