@@ -9,15 +9,15 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "C4BBClaimProcedureType"];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-ex-diagnosistype.html\"><code>http://terminology.hl7.org/CodeSystem/ex-diagnosistype</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"https://terminology.hl7.org/1.0.0//CodeSystem-ex-diagnosistype.html#ex-diagnosistype-principal\">principal</a></td><td>principal</td><td>The single medical diagnosis that is most relevant to the patient's chief complaint or need for treatment.</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-C4BBClaimProcedureType.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimProcedureType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-C4BBClaimProcedureType.html#C4BBClaimProcedureType-secondary\">secondary</a></td><td/></tr></table></li></ul></div>"
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-C4BBClaimProcedureType.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimProcedureType</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/C4BBClaimProcedureType"];
   fhir:ValueSet.version [ fhir:value "0.1.4"];
   fhir:ValueSet.name [ fhir:value "C4BBClaimProcedureType"];
   fhir:ValueSet.title [ fhir:value "C4BB Claim Procedure Type"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-10-06T16:36:53+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-10-06T17:38:27+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Indicates if the professional and non-clinician diagnosis is principal or secondary"];
+  fhir:ValueSet.description [ fhir:value "Indicates if the inpatient institutional procedure (ICD-PCS) is the principal procedure or another procedure"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -41,23 +41,11 @@
        fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:ValueSet.copyright [ fhir:value "This Valueset is not copyrighted."];
+  fhir:ValueSet.copyright [ fhir:value "This Value Set is not copyrighted."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/ex-diagnosistype" ];
-       fhir:ValueSet.compose.include.concept [
-         fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "principal" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "principal" ]
-       ]
-     ], [
-       fhir:index 1;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimProcedureType" ];
-       fhir:ValueSet.compose.include.concept [
-         fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "secondary" ]
-       ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimProcedureType" ]
      ]
   ] .
 
