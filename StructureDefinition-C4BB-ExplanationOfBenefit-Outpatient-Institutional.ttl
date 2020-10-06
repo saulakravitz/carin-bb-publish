@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "C4BBExplanationOfBenefitOutpatientInstitutional"];
   fhir:StructureDefinition.title [ fhir:value "C4BB ExplanationOfBenefit Outpatient Institutional"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-10-06T15:01:26+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-10-06T15:54:02+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -187,7 +187,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "EOB-careteam-qualification" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Care Team Performing physician's qualifications are from US-Core-Provider-Specialty Value Set" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "ExplanationOfBenefit.careTeam.role.coding.code='performing' implies ExplanationOfBenefit.careTeam.qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty')" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "( \n     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).exists() implies\n     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty')\n    )" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional";
            fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional>
@@ -16964,7 +16964,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "EOB-careteam-qualification" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Care Team Performing physician's qualifications are from US-Core-Provider-Specialty Value Set" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "ExplanationOfBenefit.careTeam.role.coding.code='performing' implies ExplanationOfBenefit.careTeam.qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty')" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "( \n     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).exists() implies\n     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty')\n    )" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional";
            fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional>

@@ -7,7 +7,10 @@ dom-3:If the resource is contained in another resource, it SHALL be referred to 
     )}EOB-inst-careTeam-organization:Institutional EOB:  Careteam roles refer to an organization {( 
      careTeam.where(role.where(coding.where(code='performing').exists()).exists()).exists() implies
      careTeam.where(role.where(coding.where(code='performing').exists()).exists()).provider.all(resolve() is Organization)
-    )}EOB-careteam-qualification:Care Team Performing physician's qualifications are from US-Core-Provider-Specialty Value Set {ExplanationOfBenefit.careTeam.role.coding.code='performing' implies ExplanationOfBenefit.careTeam.qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty')}","Event","Entity. Role, or Act"
+    )}EOB-careteam-qualification:Care Team Performing physician's qualifications are from US-Core-Provider-Specialty Value Set {( 
+     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).exists() implies
+     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty')
+    )}","Event","Entity. Role, or Act"
 "ExplanationOfBenefit.id","","","",0,1,"","","Y","string {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "ExplanationOfBenefit.meta","","","",0,1,"","","Y","Meta {[]} {[]}

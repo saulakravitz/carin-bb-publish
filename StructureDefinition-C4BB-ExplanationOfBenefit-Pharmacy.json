@@ -20,7 +20,7 @@
   "name": "C4BBExplanationOfBenefitPharmacy",
   "title": "C4BB ExplanationOfBenefit Pharmacy",
   "status": "active",
-  "date": "2020-10-06T15:01:26+00:00",
+  "date": "2020-10-06T15:54:02+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -2756,14 +2756,14 @@
             "key": "EOB-pharm-careTeam-practitioner",
             "severity": "error",
             "human": "Pharmacy EOB:  Careteam roles refer to a practitioner",
-            "expression": "( careTeam.role.coding.code in \n( 'primary' or 'prescribing')) implies \n careTeam.provider.reference.resolve().is(FHIR.Practitioner)",
+            "expression": "( \n     careTeam.where(role.where(coding.where(code in ( 'primary' or 'prescribing')).exists()).exists()).exists() implies\n     careTeam.where(role.where(coding.where(code in ( 'primary' or 'prescribing')).exists()).exists()).provider.all(resolve().is Practitioner)\n    )",
             "source": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"
           },
           {
             "key": "EOB-pharm-careTeam-organization",
             "severity": "error",
             "human": "Pharmacy EOB:  Careteam roles refer to a practitioner",
-            "expression": "( careTeam.role.coding.code='performing') implies \n careTeam.provider.reference.resolve().is(FHIR.Organization)",
+            "expression": "( \n     careTeam.where(role.where(coding.where(code in ( 'performing')).exists()).exists()).exists() implies\n     careTeam.where(role.where(coding.where(code in ( 'performing')).exists()).exists()).provider.all(resolve().is Organization)\n    )",
             "source": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"
           }
         ],
@@ -15476,14 +15476,14 @@
             "key": "EOB-pharm-careTeam-practitioner",
             "severity": "error",
             "human": "Pharmacy EOB:  Careteam roles refer to a practitioner",
-            "expression": "( careTeam.role.coding.code in \n( 'primary' or 'prescribing')) implies \n careTeam.provider.reference.resolve().is(FHIR.Practitioner)",
+            "expression": "( \n     careTeam.where(role.where(coding.where(code in ( 'primary' or 'prescribing')).exists()).exists()).exists() implies\n     careTeam.where(role.where(coding.where(code in ( 'primary' or 'prescribing')).exists()).exists()).provider.all(resolve().is Practitioner)\n    )",
             "source": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"
           },
           {
             "key": "EOB-pharm-careTeam-organization",
             "severity": "error",
             "human": "Pharmacy EOB:  Careteam roles refer to a practitioner",
-            "expression": "( careTeam.role.coding.code='performing') implies \n careTeam.provider.reference.resolve().is(FHIR.Organization)",
+            "expression": "( \n     careTeam.where(role.where(coding.where(code in ( 'performing')).exists()).exists()).exists() implies\n     careTeam.where(role.where(coding.where(code in ( 'performing')).exists()).exists()).provider.all(resolve().is Organization)\n    )",
             "source": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"
           }
         ]

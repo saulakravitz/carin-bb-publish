@@ -207,10 +207,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "ExplanationOfBenefit.careTeam","","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","Care Team members","The members of the team who provided the products and services.","","Common to identify the responsible and supporting practitioners.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.careTeam",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-EOB-prof-careTeam-practitioner:Professional EOB:  Careteam roles refer to a practitioner {( careTeam.role.coding.code in 
-('performing' or 'primary' or 'referring' or 'supervising')) implies 
- careTeam.provider.reference.resolve().is(FHIR.Practitioner)}EOB-prof-careTeam-organization:Professional EOB:  Careteam roles refer to an organization {( careTeam.role.coding.code='site') implies 
- careTeam.provider.reference.resolve().is(FHIR.Organization)}"
+EOB-prof-careTeam-practitioner:Professional EOB:  Careteam roles refer to a practitioner {( 
+     careTeam.where(role.where(coding.where(code in ('performing' or 'primary' or 'referring' or 'supervising')).exists()).exists()).exists() implies
+     careTeam.where(role.where(coding.where(code in ('performing' or 'primary' or 'referring' or 'supervising')).exists()).exists()).provider.all(resolve().is Practitioner)
+    )}EOB-prof-careTeam-organization:Professional EOB:  Careteam roles refer to an organization {( 
+     careTeam.where(role.where(coding.where(code in ( 'site')).exists()).exists()).exists() implies
+     careTeam.where(role.where(coding.where(code in ( 'site')).exists()).exists()).provider.all(resolve().is Organization)
+    )}"
 "ExplanationOfBenefit.careTeam.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "ExplanationOfBenefit.careTeam.extension","","extensions

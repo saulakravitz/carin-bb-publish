@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "C4BBExplanationOfBenefitPharmacy"];
   fhir:StructureDefinition.title [ fhir:value "C4BB ExplanationOfBenefit Pharmacy"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-10-06T15:01:26+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-10-06T15:54:02+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2926,7 +2926,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "EOB-pharm-careTeam-practitioner" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Pharmacy EOB:  Careteam roles refer to a practitioner" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "( careTeam.role.coding.code in \n( 'primary' or 'prescribing')) implies \n careTeam.provider.reference.resolve().is(FHIR.Practitioner)" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "( \n     careTeam.where(role.where(coding.where(code in ( 'primary' or 'prescribing')).exists()).exists()).exists() implies\n     careTeam.where(role.where(coding.where(code in ( 'primary' or 'prescribing')).exists()).exists()).provider.all(resolve().is Practitioner)\n    )" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy";
            fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy>
@@ -2936,7 +2936,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "EOB-pharm-careTeam-organization" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Pharmacy EOB:  Careteam roles refer to a practitioner" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "( careTeam.role.coding.code='performing') implies \n careTeam.provider.reference.resolve().is(FHIR.Organization)" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "( \n     careTeam.where(role.where(coding.where(code in ( 'performing')).exists()).exists()).exists() implies\n     careTeam.where(role.where(coding.where(code in ( 'performing')).exists()).exists()).provider.all(resolve().is Organization)\n    )" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy";
            fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy>
@@ -16482,7 +16482,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "EOB-pharm-careTeam-practitioner" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Pharmacy EOB:  Careteam roles refer to a practitioner" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "( careTeam.role.coding.code in \n( 'primary' or 'prescribing')) implies \n careTeam.provider.reference.resolve().is(FHIR.Practitioner)" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "( \n     careTeam.where(role.where(coding.where(code in ( 'primary' or 'prescribing')).exists()).exists()).exists() implies\n     careTeam.where(role.where(coding.where(code in ( 'primary' or 'prescribing')).exists()).exists()).provider.all(resolve().is Practitioner)\n    )" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy";
            fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy>
@@ -16492,7 +16492,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "EOB-pharm-careTeam-organization" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Pharmacy EOB:  Careteam roles refer to a practitioner" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "( careTeam.role.coding.code='performing') implies \n careTeam.provider.reference.resolve().is(FHIR.Organization)" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "( \n     careTeam.where(role.where(coding.where(code in ( 'performing')).exists()).exists()).exists() implies\n     careTeam.where(role.where(coding.where(code in ( 'performing')).exists()).exists()).provider.all(resolve().is Organization)\n    )" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy";
            fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy>

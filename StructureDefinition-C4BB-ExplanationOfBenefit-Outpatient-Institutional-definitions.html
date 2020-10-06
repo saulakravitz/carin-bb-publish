@@ -285,7 +285,10 @@
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>EOB</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">EOB-careteam-qualification</b>: Care Team Performing physician's qualifications are from US-Core-Provider-Specialty Value Set (: ExplanationOfBenefit.careTeam.role.coding.code='performing' implies ExplanationOfBenefit.careTeam.qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty'))<br/><b title="Formal Invariant Identifier">EOB-inst-careTeam-organization</b>: Institutional EOB:  Careteam roles refer to an organization (: ( 
+<b title="Formal Invariant Identifier">EOB-careteam-qualification</b>: Care Team Performing physician's qualifications are from US-Core-Provider-Specialty Value Set (: ( 
+     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).exists() implies
+     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty')
+    ))<br/><b title="Formal Invariant Identifier">EOB-inst-careTeam-organization</b>: Institutional EOB:  Careteam roles refer to an organization (: ( 
      careTeam.where(role.where(coding.where(code='performing').exists()).exists()).exists() implies
      careTeam.where(role.where(coding.where(code='performing').exists()).exists()).provider.all(resolve() is Organization)
     ))<br/><b title="Formal Invariant Identifier">EOB-inst-careTeam-practitioner</b>: Institutional EOB:  Careteam roles refer to a practitioner (: (
@@ -4394,7 +4397,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 6, 2020 15:01+0000">2020-10-06</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 6, 2020 15:54+0000">2020-10-06</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

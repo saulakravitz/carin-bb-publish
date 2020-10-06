@@ -20,7 +20,7 @@
   "name": "C4BBExplanationOfBenefitOutpatientInstitutional",
   "title": "C4BB ExplanationOfBenefit Outpatient Institutional",
   "status": "active",
-  "date": "2020-10-06T15:01:26+00:00",
+  "date": "2020-10-06T15:54:02+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -162,7 +162,7 @@
             "key": "EOB-careteam-qualification",
             "severity": "error",
             "human": "Care Team Performing physician's qualifications are from US-Core-Provider-Specialty Value Set",
-            "expression": "ExplanationOfBenefit.careTeam.role.coding.code='performing' implies ExplanationOfBenefit.careTeam.qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty')",
+            "expression": "( \n     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).exists() implies\n     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty')\n    )",
             "source": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional"
           }
         ],
@@ -15906,7 +15906,7 @@
             "key": "EOB-careteam-qualification",
             "severity": "error",
             "human": "Care Team Performing physician's qualifications are from US-Core-Provider-Specialty Value Set",
-            "expression": "ExplanationOfBenefit.careTeam.role.coding.code='performing' implies ExplanationOfBenefit.careTeam.qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty')",
+            "expression": "( \n     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).exists() implies\n     careTeam.where(role.where(coding.where(code='performing').exists()).exists()).qualification.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty')\n    )",
             "source": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional"
           }
         ]

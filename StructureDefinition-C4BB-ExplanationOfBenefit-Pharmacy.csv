@@ -207,10 +207,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "ExplanationOfBenefit.careTeam","","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","Care Team members","The members of the team who provided the products and services.","","Common to identify the responsible and supporting practitioners.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.careTeam",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-EOB-pharm-careTeam-practitioner:Pharmacy EOB:  Careteam roles refer to a practitioner {( careTeam.role.coding.code in 
-( 'primary' or 'prescribing')) implies 
- careTeam.provider.reference.resolve().is(FHIR.Practitioner)}EOB-pharm-careTeam-organization:Pharmacy EOB:  Careteam roles refer to a practitioner {( careTeam.role.coding.code='performing') implies 
- careTeam.provider.reference.resolve().is(FHIR.Organization)}"
+EOB-pharm-careTeam-practitioner:Pharmacy EOB:  Careteam roles refer to a practitioner {( 
+     careTeam.where(role.where(coding.where(code in ( 'primary' or 'prescribing')).exists()).exists()).exists() implies
+     careTeam.where(role.where(coding.where(code in ( 'primary' or 'prescribing')).exists()).exists()).provider.all(resolve().is Practitioner)
+    )}EOB-pharm-careTeam-organization:Pharmacy EOB:  Careteam roles refer to a practitioner {( 
+     careTeam.where(role.where(coding.where(code in ( 'performing')).exists()).exists()).exists() implies
+     careTeam.where(role.where(coding.where(code in ( 'performing')).exists()).exists()).provider.all(resolve().is Organization)
+    )}"
 "ExplanationOfBenefit.careTeam.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "ExplanationOfBenefit.careTeam.extension","","extensions

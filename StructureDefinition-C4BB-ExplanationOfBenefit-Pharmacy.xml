@@ -115,7 +115,7 @@
   <name value="C4BBExplanationOfBenefitPharmacy"/>
   <title value="C4BB ExplanationOfBenefit Pharmacy"/>
   <status value="active"/>
-  <date value="2020-10-06T15:01:26+00:00"/>
+  <date value="2020-10-06T15:54:02+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -2335,14 +2335,14 @@
         <key value="EOB-pharm-careTeam-practitioner"/>
         <severity value="error"/>
         <human value="Pharmacy EOB:  Careteam roles refer to a practitioner"/>
-        <expression value="( careTeam.role.coding.code in &#xA;( &#39;primary&#39; or &#39;prescribing&#39;)) implies &#xA; careTeam.provider.reference.resolve().is(FHIR.Practitioner)"/>
+        <expression value="( &#xA;     careTeam.where(role.where(coding.where(code in ( &#39;primary&#39; or &#39;prescribing&#39;)).exists()).exists()).exists() implies&#xA;     careTeam.where(role.where(coding.where(code in ( &#39;primary&#39; or &#39;prescribing&#39;)).exists()).exists()).provider.all(resolve().is Practitioner)&#xA;    )"/>
         <source value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"/>
       </constraint>
       <constraint>
         <key value="EOB-pharm-careTeam-organization"/>
         <severity value="error"/>
         <human value="Pharmacy EOB:  Careteam roles refer to a practitioner"/>
-        <expression value="( careTeam.role.coding.code=&#39;performing&#39;) implies &#xA; careTeam.provider.reference.resolve().is(FHIR.Organization)"/>
+        <expression value="( &#xA;     careTeam.where(role.where(coding.where(code in ( &#39;performing&#39;)).exists()).exists()).exists() implies&#xA;     careTeam.where(role.where(coding.where(code in ( &#39;performing&#39;)).exists()).exists()).provider.all(resolve().is Organization)&#xA;    )"/>
         <source value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"/>
       </constraint>
       <mustSupport value="true"/>
@@ -12694,14 +12694,14 @@
         <key value="EOB-pharm-careTeam-practitioner"/>
         <severity value="error"/>
         <human value="Pharmacy EOB:  Careteam roles refer to a practitioner"/>
-        <expression value="( careTeam.role.coding.code in &#xA;( &#39;primary&#39; or &#39;prescribing&#39;)) implies &#xA; careTeam.provider.reference.resolve().is(FHIR.Practitioner)"/>
+        <expression value="( &#xA;     careTeam.where(role.where(coding.where(code in ( &#39;primary&#39; or &#39;prescribing&#39;)).exists()).exists()).exists() implies&#xA;     careTeam.where(role.where(coding.where(code in ( &#39;primary&#39; or &#39;prescribing&#39;)).exists()).exists()).provider.all(resolve().is Practitioner)&#xA;    )"/>
         <source value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"/>
       </constraint>
       <constraint>
         <key value="EOB-pharm-careTeam-organization"/>
         <severity value="error"/>
         <human value="Pharmacy EOB:  Careteam roles refer to a practitioner"/>
-        <expression value="( careTeam.role.coding.code=&#39;performing&#39;) implies &#xA; careTeam.provider.reference.resolve().is(FHIR.Organization)"/>
+        <expression value="( &#xA;     careTeam.where(role.where(coding.where(code in ( &#39;performing&#39;)).exists()).exists()).exists() implies&#xA;     careTeam.where(role.where(coding.where(code in ( &#39;performing&#39;)).exists()).exists()).provider.all(resolve().is Organization)&#xA;    )"/>
         <source value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Pharmacy"/>
       </constraint>
     </element>

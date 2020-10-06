@@ -105,7 +105,7 @@
   <name value="C4BBExplanationOfBenefitOutpatientInstitutional"/>
   <title value="C4BB ExplanationOfBenefit Outpatient Institutional"/>
   <status value="active"/>
-  <date value="2020-10-06T15:01:26+00:00"/>
+  <date value="2020-10-06T15:54:02+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -228,7 +228,7 @@
         <key value="EOB-careteam-qualification"/>
         <severity value="error"/>
         <human value="Care Team Performing physician&#39;s qualifications are from US-Core-Provider-Specialty Value Set"/>
-        <expression value="ExplanationOfBenefit.careTeam.role.coding.code=&#39;performing&#39; implies ExplanationOfBenefit.careTeam.qualification.memberOf(&#39;http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty&#39;)"/>
+        <expression value="( &#xA;     careTeam.where(role.where(coding.where(code=&#39;performing&#39;).exists()).exists()).exists() implies&#xA;     careTeam.where(role.where(coding.where(code=&#39;performing&#39;).exists()).exists()).qualification.memberOf(&#39;http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty&#39;)&#xA;    )"/>
         <source value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional"/>
       </constraint>
       <isModifier value="false"/>
@@ -13046,7 +13046,7 @@
         <key value="EOB-careteam-qualification"/>
         <severity value="error"/>
         <human value="Care Team Performing physician&#39;s qualifications are from US-Core-Provider-Specialty Value Set"/>
-        <expression value="ExplanationOfBenefit.careTeam.role.coding.code=&#39;performing&#39; implies ExplanationOfBenefit.careTeam.qualification.memberOf(&#39;http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty&#39;)"/>
+        <expression value="( &#xA;     careTeam.where(role.where(coding.where(code=&#39;performing&#39;).exists()).exists()).exists() implies&#xA;     careTeam.where(role.where(coding.where(code=&#39;performing&#39;).exists()).exists()).qualification.memberOf(&#39;http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty&#39;)&#xA;    )"/>
         <source value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional"/>
       </constraint>
     </element>
