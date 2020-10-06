@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "C4BBIdentifierType"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">npi<a name=\"C4BBIdentifierType-npi\"> </a></td><td>National Provider Identifier</td><td>National Provider Identifier</td></tr><tr><td style=\"white-space:nowrap\">payerid<a name=\"C4BBIdentifierType-payerid\"> </a></td><td>Payer ID</td><td>Payer ID</td></tr><tr><td style=\"white-space:nowrap\">naiccode<a name=\"C4BBIdentifierType-naiccode\"> </a></td><td>NAIC Code</td><td>NAIC Code</td></tr><tr><td style=\"white-space:nowrap\">mb<a name=\"C4BBIdentifierType-mb\"> </a></td><td>Member ID</td><td>Member ID</td></tr><tr><td style=\"white-space:nowrap\">pt<a name=\"C4BBIdentifierType-pt\"> </a></td><td>Patient Account Number</td><td>Patient Account Number</td></tr><tr><td style=\"white-space:nowrap\">um<a name=\"C4BBIdentifierType-um\"> </a></td><td>Unique Member ID</td><td>Unique Member ID</td></tr><tr><td style=\"white-space:nowrap\">cn<a name=\"C4BBIdentifierType-cn\"> </a></td><td>Claim Number</td><td>Claim Number</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">npi<a name=\"C4BBIdentifierType-npi\"> </a></td><td>National Provider Identifier</td><td>National Provider Identifier</td></tr><tr><td style=\"white-space:nowrap\">payerid<a name=\"C4BBIdentifierType-payerid\"> </a></td><td>Payer ID</td><td>Payer ID</td></tr><tr><td style=\"white-space:nowrap\">naiccode<a name=\"C4BBIdentifierType-naiccode\"> </a></td><td>NAIC Code</td><td>NAIC Code</td></tr><tr><td style=\"white-space:nowrap\">pat<a name=\"C4BBIdentifierType-pat\"> </a></td><td>Patient Account Number</td><td>Patient Account Number</td></tr><tr><td style=\"white-space:nowrap\">um<a name=\"C4BBIdentifierType-um\"> </a></td><td>Unique Member ID</td><td>Indicates that the patient identifier is a unique member identifier assigned by a payer across all lines of business</td></tr><tr><td style=\"white-space:nowrap\">uc<a name=\"C4BBIdentifierType-uc\"> </a></td><td>Unique Claim ID</td><td>Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType"];
   fhir:CodeSystem.version [ fhir:value "0.1.4"];
   fhir:CodeSystem.name [ fhir:value "C4BBIdentifierType"];
   fhir:CodeSystem.title [ fhir:value "C4BB Identifier Type"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-10-05T21:48:32+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-10-06T14:45:03+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
-  fhir:CodeSystem.description [ fhir:value "Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203"];
+  fhir:CodeSystem.description [ fhir:value "Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203 to define the type of identifier payers and providers assign to claims and patients"];
   fhir:CodeSystem.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -43,7 +43,7 @@
   ];
   fhir:CodeSystem.copyright [ fhir:value "This CodeSystem is not copyrighted."];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "npi" ];
@@ -61,24 +61,19 @@
      fhir:CodeSystem.concept.definition [ fhir:value "NAIC Code" ]
   ], [
      fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "mb" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Member ID" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Member ID" ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "pt" ];
+     fhir:CodeSystem.concept.code [ fhir:value "pat" ];
      fhir:CodeSystem.concept.display [ fhir:value "Patient Account Number" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Patient Account Number" ]
   ], [
-     fhir:index 5;
+     fhir:index 4;
      fhir:CodeSystem.concept.code [ fhir:value "um" ];
      fhir:CodeSystem.concept.display [ fhir:value "Unique Member ID" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Unique Member ID" ]
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates that the patient identifier is a unique member identifier assigned by a payer across all lines of business" ]
   ], [
-     fhir:index 6;
-     fhir:CodeSystem.concept.code [ fhir:value "cn" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Claim Number" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Claim Number" ]
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "uc" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unique Claim ID" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

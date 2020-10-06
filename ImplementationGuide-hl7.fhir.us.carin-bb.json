@@ -10,7 +10,7 @@
   "name": "CARINConsumerDirectedPayerDataExchange",
   "title": "CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)",
   "status": "active",
-  "date": "2020-10-05T21:48:32+00:00",
+  "date": "2020-10-06T14:45:03+00:00",
   "publisher": "HL7 Financial Management Working Group",
   "contact": [
     {
@@ -660,6 +660,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-C4BBClaimIdentifierType.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/C4BBClaimIdentifierType"
+        },
+        "name": "C4BB Claim Identifier Type",
+        "description": "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-C4BBClaimInpatientInstitutionalDiagnosisType.html"
           }
         ],
@@ -776,6 +794,42 @@
         },
         "name": "C4BB Claim Professional And Non Clinician Diagnosis Type",
         "description": "Indicates if the professional and non-clinician diagnosis is principal or secondary",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-C4BBOrganizationIdentifierType.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/C4BBOrganizationIdentifierType"
+        },
+        "name": "C4BB Organization Identifier Type",
+        "description": "Identifies the type of identifiers for organizations",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-C4BBPatientIdentifierType.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/C4BBPatientIdentifierType"
+        },
+        "name": "C4BB Patient Identifier Type",
+        "description": "Identifies the type of identifier payers and providers assign to patients",
         "exampleBoolean": false
       },
       {
@@ -930,14 +984,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-CMSMS3MAPRDRG.html"
+            "valueUri": "ValueSet-CMSMS3MAPAPRDRG.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/CMSMS3MAPRDRG"
+          "reference": "ValueSet/CMSMS3MAPAPRDRG"
         },
-        "name": "CMS MS 3M APR DRG",
-        "description": "This value set defines two sets of DRGs, MS-DRGs (Medicare Severity Diagnosis Related Groups) and APR-DRGs (All Patient Refined Diagnosis Related Groups).  MS-DRGs are owned by CMS; APR-DRGs are owned by 3M.  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version.  ",
+        "name": "CMS MS 3M AP APR DRG",
+        "description": "This value set defines three sets of DRGs, MS-DRGs (Medicare Severity Diagnosis Related Groups) AP-DRGs (All Patient Diagnosis Related Groups) and APR-DRGs (All Patient Refined Diagnosis Related Groups).  MS-DRGs are owned by CMS; AP-DRGs and APR-DRGs are owned by 3M.  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version.",
         "exampleBoolean": false
       },
       {
@@ -1082,24 +1136,6 @@
         },
         "name": "NCPDP Reject Code",
         "description": "The National Council for Prescription Drug Programs, (NCPDP) Reject Code (511-FB) code set contains exception definitions for use when transaction processing cannot be completed.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-PatientIdentifierType.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/PatientIdentifierType"
-        },
-        "name": "Patient Identifier Type",
-        "description": "Patient Identifier Type",
         "exampleBoolean": false
       },
       {
@@ -1369,7 +1405,7 @@
           "reference": "CodeSystem/C4BBIdentifierType"
         },
         "name": "C4BB Identifier Type",
-        "description": "Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203",
+        "description": "Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203 to define the type of identifier payers and providers assign to claims and patients",
         "exampleBoolean": false
       },
       {
@@ -1614,6 +1650,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-THREEMAPDRG.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/THREEMAPDRG"
+        },
+        "name": "3M AP DRG",
+        "description": "AP-DRGs (All Patient Diagnosis Related Groups).  AP-DRGs are owned by 3M.  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version.  ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-THREEMAPRDRG.html"
           }
         ],
@@ -1650,24 +1704,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Coverage-01234567801-20200101-99991231-SEA22.html"
-          }
-        ],
-        "reference": {
-          "reference": "Coverage/01234567801-20200101-99991231-SEA22"
-        },
-        "name": "Coverage2UPMC",
-        "description": "Coverage2 from UPMC",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Coverage"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Coverage-Coverage1.html"
           }
         ],
@@ -1694,6 +1730,24 @@
         },
         "name": "Coverage1UPMC",
         "description": "Coverage1 from UPMC",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Coverage-Coverage2UPMC.html"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/Coverage2UPMC"
+        },
+        "name": "Coverage2UPMC",
+        "description": "Coverage2 from UPMC",
         "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"
       },
       {
@@ -1866,24 +1920,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Organization-OrganizationPayer1.html"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/OrganizationPayer1"
-        },
-        "name": "OrganizationPayer1",
-        "description": "Payer1",
-        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Organization-OrganizationProvider1.html"
           }
         ],
@@ -1929,6 +1965,24 @@
         "name": "Patient1UPMC",
         "description": "Patient1 from UPMC",
         "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-Payer1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Payer1"
+        },
+        "name": "OrganizationPayer1",
+        "description": "Payer1",
+        "exampleCanonical": "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"
       },
       {
         "extension": [

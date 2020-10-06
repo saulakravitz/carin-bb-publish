@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="C4BBIdentifierType"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">npi<a name="C4BBIdentifierType-npi"> </a></td><td>National Provider Identifier</td><td>National Provider Identifier</td></tr><tr><td style="white-space:nowrap">payerid<a name="C4BBIdentifierType-payerid"> </a></td><td>Payer ID</td><td>Payer ID</td></tr><tr><td style="white-space:nowrap">naiccode<a name="C4BBIdentifierType-naiccode"> </a></td><td>NAIC Code</td><td>NAIC Code</td></tr><tr><td style="white-space:nowrap">mb<a name="C4BBIdentifierType-mb"> </a></td><td>Member ID</td><td>Member ID</td></tr><tr><td style="white-space:nowrap">pt<a name="C4BBIdentifierType-pt"> </a></td><td>Patient Account Number</td><td>Patient Account Number</td></tr><tr><td style="white-space:nowrap">um<a name="C4BBIdentifierType-um"> </a></td><td>Unique Member ID</td><td>Unique Member ID</td></tr><tr><td style="white-space:nowrap">cn<a name="C4BBIdentifierType-cn"> </a></td><td>Claim Number</td><td>Claim Number</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">npi<a name="C4BBIdentifierType-npi"> </a></td><td>National Provider Identifier</td><td>National Provider Identifier</td></tr><tr><td style="white-space:nowrap">payerid<a name="C4BBIdentifierType-payerid"> </a></td><td>Payer ID</td><td>Payer ID</td></tr><tr><td style="white-space:nowrap">naiccode<a name="C4BBIdentifierType-naiccode"> </a></td><td>NAIC Code</td><td>NAIC Code</td></tr><tr><td style="white-space:nowrap">pat<a name="C4BBIdentifierType-pat"> </a></td><td>Patient Account Number</td><td>Patient Account Number</td></tr><tr><td style="white-space:nowrap">um<a name="C4BBIdentifierType-um"> </a></td><td>Unique Member ID</td><td>Indicates that the patient identifier is a unique member identifier assigned by a payer across all lines of business</td></tr><tr><td style="white-space:nowrap">uc<a name="C4BBIdentifierType-uc"> </a></td><td>Unique Claim ID</td><td>Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber</td></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType"/>
   <version value="0.1.4"/>
   <name value="C4BBIdentifierType"/>
   <title value="C4BB Identifier Type"/>
   <status value="active"/>
-  <date value="2020-10-05T21:48:32+00:00"/>
+  <date value="2020-10-06T14:45:03+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -23,7 +23,7 @@
       <value value="fm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203"/>
+  <description value="Identifier Type codes that extend those defined in http://terminology.hl7.org/CodeSystem/v2-0203 to define the type of identifier payers and providers assign to claims and patients"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -32,7 +32,7 @@
   </jurisdiction>
   <copyright value="This CodeSystem is not copyrighted."/>
   <content value="complete"/>
-  <count value="7"/>
+  <count value="6"/>
   <concept>
     <code value="npi"/>
     <display value="National Provider Identifier"/>
@@ -49,23 +49,18 @@
     <definition value="NAIC Code"/>
   </concept>
   <concept>
-    <code value="mb"/>
-    <display value="Member ID"/>
-    <definition value="Member ID"/>
-  </concept>
-  <concept>
-    <code value="pt"/>
+    <code value="pat"/>
     <display value="Patient Account Number"/>
     <definition value="Patient Account Number"/>
   </concept>
   <concept>
     <code value="um"/>
     <display value="Unique Member ID"/>
-    <definition value="Unique Member ID"/>
+    <definition value="Indicates that the patient identifier is a unique member identifier assigned by a payer across all lines of business"/>
   </concept>
   <concept>
-    <code value="cn"/>
-    <display value="Claim Number"/>
-    <definition value="Claim Number"/>
+    <code value="uc"/>
+    <display value="Unique Claim ID"/>
+    <definition value="Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber"/>
   </concept>
 </CodeSystem>
