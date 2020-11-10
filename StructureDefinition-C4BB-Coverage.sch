@@ -12,6 +12,7 @@
   <sch:pattern>
     <sch:title>f:Coverage</sch:title>
     <sch:rule context="f:Coverage">
+      <sch:assert test="count(f:meta) &gt;= 1">meta: minimum cardinality of 'meta' is 1</sch:assert>
       <sch:assert test="count(f:subscriberId) &gt;= 1">subscriberId: minimum cardinality of 'subscriberId' is 1</sch:assert>
       <sch:assert test="count(f:relationship) &gt;= 1">relationship: minimum cardinality of 'relationship' is 1</sch:assert>
       <sch:assert test="count(f:payor) &lt;= 1">payor: maximum cardinality of 'payor' is 1</sch:assert>

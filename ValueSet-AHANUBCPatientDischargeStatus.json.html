@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.CARIN-BB\AHA NUBC Patient Discharge Status - JSON Representation - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.CARIN-BB\NUBC Patient Discharge Status Codes - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"11.22"}
-    h3,h4,h5,h6{--heading-prefix:"11.22"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.22"}
+    h3,h4,h5,h6{--heading-prefix:"10.22"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -64,7 +64,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)</span><br/>0.1.4 - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)</span><br/>0.1.10 - STU1</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -125,13 +125,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Guidance.html">General Guidance</a>
+        <a href="General_Guidance.html">General Guidance</a>
       </li>
       <li>
         <a href="Common_Payer_Consumer_Data_Set.html">Common Payer Consumer Data Set (CPCDS)</a>
       </li>
       <li>
-        <a href="Notes_To_Developers.html">Notes To Developers</a>
+        <a href="Terminology_Licensure.html">Terminology Licensure</a>
       </li>
     </ul>
   </li>
@@ -144,10 +144,10 @@
         <a href="artifacts.html#3">Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#2">Search Parameters</a>
+        <a href="searchparameters.html">Search Parameters</a>
       </li>
       <li>
-        <a href="Terminology.html">Terminology</a>
+        <a href="artifacts.html#5">Terminology</a>
       </li>
       <li>
         <a href="CapabilityStatement-c4bb.html">Capability Statement</a>
@@ -184,7 +184,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>AHA NUBC Patient Discharge Status</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NUBC Patient Discharge Status Codes</b></li>
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -195,7 +195,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®) - Local Development build (v0.1.4). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®) - Local Development build (v0.1.10). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -238,7 +238,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: AHA NUBC Patient Discharge Status - JSON Representation</h2>
+<h2 id="root">: NUBC Patient Discharge Status Codes - JSON Representation</h2>
 
 <p><a href="ValueSet-AHANUBCPatientDischargeStatus.json" no-download="true">Raw json</a> | <a href="ValueSet-AHANUBCPatientDischargeStatus.json" download>Download</a></p>
 
@@ -253,14 +253,14 @@
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "AHANUBCPatientDischargeStatus",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-AHANUBCPatientDischargeStatus.html\&quot;&gt;&lt;code&gt;http://www.nubc.org/PatientDischargeStatus&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-AHANUBCPatientDischargeStatus.html\&quot;&gt;&lt;code&gt;https://www.nubc.org/CodeSystem/PatDischargeStatus&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://hl7.org/fhir/us/carin-bb/ValueSet/AHANUBCPatientDischargeStatus",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.4",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.10",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "AHANUBCPatientDischargeStatus",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "AHA NUBC Patient Discharge Status",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "NUBC Patient Discharge Status Codes",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-11-10T23:06:02+00:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-11-10T23:20:04+00:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "HL7 Financial Management Working Group",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -277,7 +277,7 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "UB-04 Patient Discharge Status (FL-17)",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "The UB-04 Data File contains the complete set of NUBC codes. Every code in the range of possible codes is accounted for sequentially. There are no gaps because all used and unused codes are identified.\n\nThis code system consists of the following:\n\n*   FL 17 - Patient Discharge Status\n\nThese codes are used to convey the patient discharge status and are the property of the American Hospital Association.\n\nTo obtain the underlying code systems, please see information [here](https://www.nubc.org/subscription-information)",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
@@ -288,11 +288,11 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.copyright">copyright</a>" : "The Official UB-04 Data Specifications Manual, copyrighted by the American Hospital Association, is the only official source of UB-04 billing information adopted by the National Uniform Billing Committee. \nNo other publication—governmental or private/commercial—can be considered authoritative. See their website for licensing terms and conditions.\nAs HL7 is working with the owning authority to finalize the url, this url is subject to change.",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.copyright">copyright</a>" : "Licensing information can be found [here](https://www.nubc.org/license).\n\nThese codes are listed within the UB-04 Data Specifications Manual. The Official UB-04 Data Specifications Manual, copyrighted by the American Hospital Association, is the only official source of UB-04 billing information adopted by the National Uniform Billing Committee. No other publication—governmental or private/commercial—can be considered authoritative. The AHA wants to make you aware that the use of codes, descriptions, or any other content contained in the manual to be used in a software application, publication, or any other derivative work must be properly licensed by the AHA. If your organization uses or intends to use any of the codes or other related content from the manual in this manner, please contact the AHA’s licensing manager, Tim Carlson, at 312.893.6816 or email tcarlson@aha.org",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
     "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://www.nubc.org/PatientDischargeStatus"
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://www.nubc.org/CodeSystem/PatDischargeStatus"
       }
     ]
   }
@@ -324,7 +324,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 10, 2020 23:06+0000">2020-11-10</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.10 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 10, 2020 23:20+0000">2020-11-10</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

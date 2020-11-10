@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.CARIN-BB\CDC ICD-9-10-CM Diagnosis Codes - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.CARIN-BB\Diagnosis Codes - International Classification of Diseases, Clinical Modification (ICD-9-CM, ICD-10-CM) - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"11.47"}
-    h3,h4,h5,h6{--heading-prefix:"11.47"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.48"}
+    h3,h4,h5,h6{--heading-prefix:"10.48"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -62,7 +62,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)</span><br/>0.1.4 - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)</span><br/>0.1.10 - STU1</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -123,13 +123,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Guidance.html">General Guidance</a>
+        <a href="General_Guidance.html">General Guidance</a>
       </li>
       <li>
         <a href="Common_Payer_Consumer_Data_Set.html">Common Payer Consumer Data Set (CPCDS)</a>
       </li>
       <li>
-        <a href="Notes_To_Developers.html">Notes To Developers</a>
+        <a href="Terminology_Licensure.html">Terminology Licensure</a>
       </li>
     </ul>
   </li>
@@ -142,10 +142,10 @@
         <a href="artifacts.html#3">Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#2">Search Parameters</a>
+        <a href="searchparameters.html">Search Parameters</a>
       </li>
       <li>
-        <a href="Terminology.html">Terminology</a>
+        <a href="artifacts.html#5">Terminology</a>
       </li>
       <li>
         <a href="CapabilityStatement-c4bb.html">Capability Statement</a>
@@ -182,7 +182,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CDC ICD-9-10-CM Diagnosis Codes</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Diagnosis Codes - International Classification of Diseases, Clinical Modification (ICD-9-CM, ICD-10-CM)</b></li>
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -193,7 +193,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®) - Local Development build (v0.1.4). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®) - Local Development build (v0.1.10). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -233,21 +233,51 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: CDC ICD-9-10-CM Diagnosis Codes</h2>
+  <h2 id="root">ValueSet: Diagnosis Codes - International Classification of Diseases, Clinical Modification (ICD-9-CM, ICD-10-CM)</h2>
   <p>
     <b>Summary</b>
   </p>
   <table class="grid">
 <tbody>
 <tr><td>Defining URL:</td><td>http://hl7.org/fhir/us/carin-bb/ValueSet/CDCICD910CMDiagnosisCodes</td></tr>
- <tr><td>Version:</td><td>0.1.4</td></tr>
+ <tr><td>Version:</td><td>0.1.10</td></tr>
  <tr><td>Name:</td><td>CDCICD910CMDiagnosisCodes</td></tr>
- <tr><td>Title:</td><td>CDC ICD-9-10-CM Diagnosis Codes</td></tr>
- <tr><td>Status:</td><td>Active as of 2020-11-10T23:06:02+00:00</td></tr>
- <tr><td>Definition:</td><td><p>The ICD-CM (International Classification of Diseases, Clinical Modification) is a system used by physicians and other healthcare providers to classify and code all diagnoses and symptoms recorded in conjunction with hospital care in the United States.</p>
+ <tr><td>Title:</td><td>Diagnosis Codes - International Classification of Diseases, Clinical Modification (ICD-9-CM, ICD-10-CM)</td></tr>
+ <tr><td>Status:</td><td>Active as of 2020-11-10T23:20:04+00:00</td></tr>
+ <tr><td>Definition:</td><td><p>The Value Set is a combination of values from volume 1 and volume 2 from the Code System International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM) and values in the Code System International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)</p>
+<p>The International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM) is based on the World Health Organization’s Ninth Revision, International Classification of Diseases (ICD-9). ICD-9-CM was the official system of assigning codes to diagnoses and procedures associated with hospital utilization in the United States.</p>
+<p>The ICD-9-CM consists of:</p>
+<ul>
+<li>a tabular list containing a numerical list of the disease code numbers in tabular form;</li>
+<li>an alphabetical index to the disease entries; and</li>
+<li>a classification system for surgical, diagnostic, and therapeutic procedures (alphabetic index and tabular list).</li>
+</ul>
+<p>The National Center for Health Statistics (NCHS) and the <a href="http://www.cms.hhs.gov/">Centers for Medicare and Medicaid Services</a> are the U.S. governmental agencies responsible for overseeing all changes and modifications to the ICD-9-CM.</p>
+<p><a href="https://confluence.hl7.org/pages/viewpage.action?pageId=97453674">ICD-10-CM</a> is the replacement for ICD-9-CM, volumes 1 and 2, effective October 1, 2015.</p>
+<p>The National Center for Health Statistics (NCHS), the Federal agency responsible for use of the International Statistical Classification of Diseases and Related Health Problems, 10th revision (ICD-10) in the United States, has developed a clinical modification of the classification for morbidity purposes. The ICD-10 is used to code and classify mortality data from death certificates, having replaced ICD-9 for this purpose as of January 1, 1999.</p>
+<p>The clinical modification represents a significant improvement over ICD-9-CM and ICD-10. Specific improvements include: the addition of information relevant to ambulatory and managed care encounters; expanded injury codes; the creation of combination diagnosis/symptom codes to reduce the number of codes needed to fully describe a condition; the addition of sixth and seventh characters; incorporation of common 4th and 5th digit subclassifications; laterality; and greater specificity in code assignment. The new structure will allow further expansion than was possible with ICD-9-CM.</p>
+<p>Current and previous releases of ICD-9-CM are available here: <a href="https://www.cdc.gov/nchs/icd/icd9cm.htm">https://www.cdc.gov/nchs/icd/icd9cm.htm</a></p>
+<p>Current and previous releases of ICD-10-CM are available in PDF and XML format here: <a href="https://www.cdc.gov/nchs/icd/icd10cm.htm">https://www.cdc.gov/nchs/icd/icd10cm.htm</a></p>
+<p>Most files are provided in compressed zip format for ease in downloading. These files have been created by the National Center for Health Statistics (NCHS), under authorization by the World Health Organization. Any questions regarding typographical or other errors noted on this release may be reported to nchsicd10cm@cdc.gov.</p>
 </td></tr>
  <tr><td>Publisher:</td><td>HL7 Financial Management Working Group</td></tr>
- <tr><td>Copyright:</td><td><p>ICD-9 and ICD-10 are copyrighted by the World Health Organization (WHO) which owns and publishes the classification. See https://www.who.int/classifications/icd/en. WHO has authorized the development of an adaptation of ICD-9 and ICD-10 to ICD-9-CM to ICD-10-CM for use in the United States for U.S. government purposes.  As HL7 is working with the owning authority to finalize the urls, the urls are subject to change.</p>
+ <tr><td>Copyright:</td><td><p>The ICD-10 is copyrighted by the <a href="http://www.who.int/classifications/icd/en/">World Health Organization (WHO)external icon</a>, which owns and publishes the classification. WHO has authorized the development of an adaptation of ICD-10 for use in the United States for U.S. government purposes. As agreed, all modifications to the ICD-10 must conform to WHO conventions for the ICD. ICD-10-CM was developed following a thorough evaluation by a Technical Advisory Panel and extensive additional consultation with physician groups, clinical coders, and others to assure clinical accuracy and utility.</p>
+<p>The following requirements must be followed to utilize CDC’s public domain content:</p>
+<ol>
+<li>
+<p>Attribution to the agency that developed the material must be provided in your use of the materials. Such attribution should clearly state the materials were developed by CDC ATSDR and/or HHS (e.g., Source: CDC; Materials developed by CDC);</p>
+</li>
+<li>
+<p>You must utilize a disclaimer which clearly indicates that your use of the material, including any links to the materials on the CDC, ATSDR or HHS websites, does not imply endorsement by CDC, ATSDR, HHS or the United States Government of you, your company, product, facility, service or enterprise. All such disclaimers must be prominently and unambiguously displayed (e.g., Reference to specific commercial products, manufacturers, companies, or trademarks does not constitute its endorsement or recommendation by the U.S. Government, Department of Health and Human Services, or Centers for Disease Control and Prevention;</p>
+</li>
+<li>
+<p>You may not change the substantive content of the materials; and</p>
+</li>
+<li>
+<p>You must state that the material is otherwise available on the agency website for no charge.</p>
+</li>
+</ol>
+<p>For information on NCHS agency level use of materials see <a href="https://www.cdc.gov/other/agencymaterials.html">here</a>.</p>
 </td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-CDCICD910CMDiagnosisCodes.xml.html">XML</a> / <a href="ValueSet-CDCICD910CMDiagnosisCodes.json.html">JSON</a> / <a href="ValueSet-CDCICD910CMDiagnosisCodes.ttl.html">Turtle</a></td></tr>
 </tbody></table>
@@ -273,13 +303,13 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/2.0.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a></li><li>Include all codes defined in <a href="http://terminology.hl7.org/2.0.0/CodeSystem-icd9.html"><code>http://terminology.hl7.org/CodeSystem/icd9</code></a></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/2.0.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a></li><li>Include all codes defined in <a href="CodeSystem-ICD9CM.html"><code>http://hl7.org/fhir/sid/icd-9-cm</code></a></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 42 concepts</p><p>All codes from system <a href="http://terminology.hl7.org/2.0.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-E00-E89"> </a>E00-E89</td><td>Endocrine, nutritional and metabolic diseases</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-E70-E88"> </a>E70-E88</td><td>Metabolic disorders</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-E84"> </a>E84</td><td>Cystic fibrosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-E84.0"> </a>E84.0</td><td>Cystic fibrosis with pulmonary manifestations</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M00-M99"> </a>M00-M99</td><td>Diseases of the musculoskeletal system and connective tissue</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M40-M54"> </a>M40-M54</td><td>Dorsopathies</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M45-M49"> </a>M45-M49</td><td>Spondylopathies</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47"> </a>M47</td><td>Spondylosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.0-"> </a>M47.0†</td><td>Anterior spinal and vertebral artery compression syndromes</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.1"> </a>M47.1</td><td>Other spondylosis with myelopathy</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.2"> </a>M47.2</td><td>Other spondylosis with radiculopathy</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.8"> </a>M47.8</td><td>Other spondylosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.81"> </a>M47.81</td><td>Spondylosis without myelopathy or radiculopathy</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.816"> </a>M47.816</td><td>Spondylosis without myelopathy or radiculopathy, lumbar region</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.9"> </a>M47.9</td><td>Spondylosis, unspecified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M50-54"> </a>M50-54</td><td>Other dorsopathies</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53"> </a>M53</td><td>Other dorsopathies, not elsewhere classified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.0"> </a>M53.0</td><td>Cervicocranial syndrome</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.1"> </a>M53.1</td><td>Cervicobrachial syndrome</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.2"> </a>M53.2</td><td>Spinal instabilities</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.3"> </a>M53.3</td><td>Sacrococcygeal disorders, not elsewhere classified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.8"> </a>M53.8</td><td>Other specified dorsopathies</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.88"> </a>M53.88</td><td>Other specified dorsopathies, sacral and sacrococcygeal region</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.9"> </a>M53.9</td><td>Dorsopathy, unspecified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M95-M99"> </a>M95-M99</td><td>Other disorders of the musculoskeletal system and connective tissue</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96"> </a>M96</td><td>Postprocedural musculoskeletal disorders, not elsewhere classified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.0"> </a>M96.0</td><td>Pseudarthrosis after fusion or arthrodesis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.1"> </a>M96.1</td><td>Postlaminectomy syndrome, not elsewhere classified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.2"> </a>M96.2</td><td>Postradiation kyphosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.3"> </a>M96.3</td><td>Postlaminectomy kyphosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.4"> </a>M96.4</td><td>Postsurgical lordosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.5"> </a>M96.5</td><td>Postradiation scoliosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.6"> </a>M96.6</td><td>Fracture of bone following insertion of orthopaedic implant, joint prosthesis, or bone plate</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.8"> </a>M96.8</td><td>Other postprocedural musculoskeletal disorders</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.9"> </a>M96.9</td><td>Postprocedural musculoskeletal disorder, unspecified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-G00-99"> </a>G00-99</td><td>Diseases of the nervous system</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-G89-99"> </a>G89-99</td><td>Other disorders of the nervous system</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-G89"> </a>G89</td><td>Pain, not elsewhere classified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-G89.4"> </a>G89.4</td><td>Chronic pain syndrome</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-R00-R99"> </a>R00-R99</td><td>Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-R50-R69"> </a>R50-R69</td><td>General symptoms and signs</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-R52"> </a>R52</td><td>Pain, unspecified</td><td/></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 55 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on http://hl7.org/fhir/sid/icd-9-cm version 2012</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-E00-E89"> </a>E00-E89</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Endocrine, nutritional and metabolic diseases</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-E70-E88"> </a>E70-E88</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Metabolic disorders</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-E84"> </a>E84</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Cystic fibrosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-E84.0"> </a>E84.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Cystic fibrosis with pulmonary manifestations</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M00-M99"> </a>M00-M99</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Diseases of the musculoskeletal system and connective tissue</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M40-M54"> </a>M40-M54</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Dorsopathies</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M45-M49"> </a>M45-M49</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Spondylopathies</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47"> </a>M47</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Spondylosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.0-"> </a>M47.0†</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Anterior spinal and vertebral artery compression syndromes</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.1"> </a>M47.1</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other spondylosis with myelopathy</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.2"> </a>M47.2</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other spondylosis with radiculopathy</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.8"> </a>M47.8</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other spondylosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.81"> </a>M47.81</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Spondylosis without myelopathy or radiculopathy</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.816"> </a>M47.816</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Spondylosis without myelopathy or radiculopathy, lumbar region</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M47.9"> </a>M47.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Spondylosis, unspecified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M50-54"> </a>M50-54</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other dorsopathies</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53"> </a>M53</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other dorsopathies, not elsewhere classified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.0"> </a>M53.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Cervicocranial syndrome</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.1"> </a>M53.1</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Cervicobrachial syndrome</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.2"> </a>M53.2</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Spinal instabilities</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.3"> </a>M53.3</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Sacrococcygeal disorders, not elsewhere classified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.8"> </a>M53.8</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other specified dorsopathies</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.88"> </a>M53.88</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other specified dorsopathies, sacral and sacrococcygeal region</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M53.9"> </a>M53.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Dorsopathy, unspecified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M95-M99"> </a>M95-M99</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other disorders of the musculoskeletal system and connective tissue</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96"> </a>M96</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Postprocedural musculoskeletal disorders, not elsewhere classified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.0"> </a>M96.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Pseudarthrosis after fusion or arthrodesis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.1"> </a>M96.1</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Postlaminectomy syndrome, not elsewhere classified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.2"> </a>M96.2</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Postradiation kyphosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.3"> </a>M96.3</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Postlaminectomy kyphosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.4"> </a>M96.4</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Postsurgical lordosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.5"> </a>M96.5</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Postradiation scoliosis</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.6"> </a>M96.6</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Fracture of bone following insertion of orthopaedic implant, joint prosthesis, or bone plate</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.8"> </a>M96.8</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other postprocedural musculoskeletal disorders</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-M96.9"> </a>M96.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Postprocedural musculoskeletal disorder, unspecified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-G00-99"> </a>G00-99</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Diseases of the nervous system</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-G89-99"> </a>G89-99</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other disorders of the nervous system</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-G89"> </a>G89</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Pain, not elsewhere classified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-G89.4"> </a>G89.4</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Chronic pain syndrome</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-R00-R99"> </a>R00-R99</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-R50-R69"> </a>R50-R69</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>General symptoms and signs</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-10-cm-R52"> </a>R52</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Pain, unspecified</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-87-99"> </a>87-99</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Miscellaneous Diagnostic And Therapeutic Procedures</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99"> </a>99</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Other Nonoperative Procedures</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.0"> </a>99.0</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Transfusion Of Blood And Blood Components</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.00"> </a>99.00</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Perioperative autologous transfusion of whole blood or blood components</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.01"> </a>99.01</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Exchange transfusion</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.02"> </a>99.02</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Transfusion of previously collected autologous blood</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.03"> </a>99.03</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Other transfusion of whole blood</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.04"> </a>99.04</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Transfusion of packed cells</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.05"> </a>99.05</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Transfusion of platelets</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.06"> </a>99.06</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Transfusion of coagulation factors</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.07"> </a>99.07</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Transfusion of other serum</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.08"> </a>99.08</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Transfusion of blood expander</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.09"> </a>99.09</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Transfusion of other substance</td><td/></tr></table></div>
 
   <hr/>
   <p>
@@ -340,7 +370,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 10, 2020 23:06+0000">2020-11-10</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.10 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 10, 2020 23:20+0000">2020-11-10</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

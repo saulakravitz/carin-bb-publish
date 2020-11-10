@@ -192,6 +192,25 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>ExplanationOfBenefit.billablePeriod.extension</sch:title>
+    <sch:rule context="f:ExplanationOfBenefit/f:billablePeriod/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>ExplanationOfBenefit.billablePeriod.start</sch:title>
+    <sch:rule context="f:ExplanationOfBenefit/f:billablePeriod/f:start">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>ExplanationOfBenefit.billablePeriod.end</sch:title>
+    <sch:rule context="f:ExplanationOfBenefit/f:billablePeriod/f:end">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>ExplanationOfBenefit.created</sch:title>
     <sch:rule context="f:ExplanationOfBenefit/f:created">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>

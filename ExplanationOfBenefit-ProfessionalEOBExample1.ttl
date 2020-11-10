@@ -1,0 +1,1050 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/ProfessionalEOBExample1> a fhir:ExplanationOfBenefit;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ProfessionalEOBExample1"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-10-20T14:46:05-04:00"^^xsd:dateTime ];
+     fhir:Meta.source [ fhir:value "Organization/PayerOrganizationExample1" ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber: ProfessionalEOBExample1</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claim-type professional}\">Professional</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-ExamplePatient1.html\">Generated Summary: language: en-US; An identifier for the insured of an insurance policy (this insured always has a subscriber), usually assigned by the insurance carrier.: 88800933501; active; Member 01 Test ; Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, GXXX@XXXX.com, Fax: 5555555555; gender: male; birthDate: 1943-01-01; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}\">unknown</span></a></p><p><b>billablePeriod</b>: Aug 4, 2020, 4:00:00 AM --&gt; Aug 4, 2020, 4:00:00 AM</p><p><b>created</b>: Aug 24, 2020, 4:00:00 AM</p><p><b>insurer</b>: <a href=\"Organization-PayerOrganizationExample1.html\">UPMC Health Plan. Generated Summary: NAIC Code: 95216; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type pay}\">Payer</span>; name: UPMC Health Plan; Phone: 1-844-220-4785 TTY: 711, Phone: 1-866-406-8762</a></p><p><b>provider</b>: <a href=\"Organization-ProviderOrganization1.html\">Generated Summary: National Provider Identifier: 1112223330; active; name: Orange Medical Group</a></p><h3>Payees</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Party</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/payeetype provider}\">Any benefit payable will be paid to the provider (Assignment of Benefit).</span></td><td><a href=\"Organization-ProviderOrganization1.html\">Generated Summary: National Provider Identifier: 1112223330; active; name: Orange Medical Group</a></td></tr></table><p><b>outcome</b>: complete</p><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 1</p><p><b>provider</b>: <a href=\"Organization-ProviderOrganization1.html\">Generated Summary: National Provider Identifier: 1112223330; active; name: Orange Medical Group</a></p><p><b>role</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claimcareteamrole primary}\">The primary care provider.</span></p></blockquote><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 2</p><p><b>provider</b>: <a href=\"Practitioner-Practitioner1.html\">Generated Summary: National Provider Identifier: 6667778880; active; John Smith </a></p><p><b>role</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole referring}\">The referring physician</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType billingnetworkcontractingstatus}\">Indicates that the Billing Provider has a contract with the Payer as of the effective date of service or admission.</span></p><p><b>code</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus contracted}\">Indicates the provider was contracted for the service</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType clmrecvddate}\">Date the claim was received by the payer.</span></p><p><b>timing</b>: 2020-08-24</p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 1</p><p><b>diagnosis</b>: <span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm I70.249}\">I70.249</span></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype principal}\">The single medical diagnosis that is most relevant to the patient's chief complaint or need for treatment.</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 2</p><p><b>diagnosis</b>: <span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm L97.929}\">L97.929</span></p><p><b>type</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType secondary}\">Required when necessary to report additional diagnoses on professional and non-clinician claims</span></p></blockquote><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>true</td><td><a href=\"Coverage-CoverageEx1.html\">Generated Summary: language: en-US; An identifier for the insured of an insurance policy (this insured always has a subscriber), usually assigned by the insurance carrier.: 88800933501; status: active; subscriberId: 888009335; dependent: 01; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span>; period: Jan 1, 2020, 5:00:00 AM --&gt; (ongoing); network: GR5-HMO DEDUCTIBLE</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: <span title=\"Codes: {http://www.ama-assn.org/go/cpt 75710}\">75710</span></p><p><b>serviced</b>: 2020-08-04</p><p><b>location</b>: <span title=\"Codes: {https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set 21}\">HOSPITAL - INPATIENT HOSPITAL</span></p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\">The total submitted amount for the claim or group or line item.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication copay}\">Patient Co-Payment</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication eligible}\">Amount of the change which is considered for adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication deductible}\">Amount deducted from the eligible amount prior to adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication benefit}\">Amount payable under the coverage</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication noncovered}\">The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus innetwork}\">Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider</span></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>productOrService</b>: <span title=\"Codes: {http://www.ama-assn.org/go/cpt 75710}\">75710</span></p><p><b>serviced</b>: 2020-08-04</p><p><b>location</b>: <span title=\"Codes: {https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set 21}\">HOSPITAL - INPATIENT HOSPITAL</span></p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\">The total submitted amount for the claim or group or line item.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication copay}\">Patient Co-Payment</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication eligible}\">Amount of the change which is considered for adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication deductible}\">Amount deducted from the eligible amount prior to adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication benefit}\">Amount payable under the coverage</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication noncovered}\">The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus innetwork}\">Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider</span></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 3</p><p><b>productOrService</b>: <span title=\"Codes: {http://www.ama-assn.org/go/cpt 75710}\">75710</span></p><p><b>serviced</b>: 2020-08-04</p><p><b>location</b>: <span title=\"Codes: {https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set 21}\">HOSPITAL - INPATIENT HOSPITAL</span></p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\">The total submitted amount for the claim or group or line item.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication copay}\">Patient Co-Payment</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication eligible}\">Amount of the change which is considered for adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication deductible}\">Amount deducted from the eligible amount prior to adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication benefit}\">Amount payable under the coverage</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication noncovered}\">The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus innetwork}\">Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider</span></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 4</p><p><b>productOrService</b>: <span title=\"Codes: {http://www.ama-assn.org/go/cpt 37228}\">37228</span></p><p><b>serviced</b>: 2020-08-04</p><p><b>location</b>: <span title=\"Codes: {https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set 21}\">HOSPITAL - INPATIENT HOSPITAL</span></p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\">The total submitted amount for the claim or group or line item.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication copay}\">Patient Co-Payment</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication eligible}\">Amount of the change which is considered for adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication deductible}\">Amount deducted from the eligible amount prior to adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication benefit}\">Amount payable under the coverage</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication noncovered}\">The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus innetwork}\">Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider</span></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 5</p><p><b>productOrService</b>: <span title=\"Codes: {http://www.ama-assn.org/go/cpt 37228}\">37228</span></p><p><b>serviced</b>: 2020-08-04</p><p><b>location</b>: <span title=\"Codes: {https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set 21}\">HOSPITAL - INPATIENT HOSPITAL</span></p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\">The total submitted amount for the claim or group or line item.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication copay}\">Patient Co-Payment</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication eligible}\">Amount of the change which is considered for adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication deductible}\">Amount deducted from the eligible amount prior to adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication benefit}\">Amount payable under the coverage</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication noncovered}\">The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus innetwork}\">Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider</span></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 6</p><p><b>productOrService</b>: <span title=\"Codes: {http://www.ama-assn.org/go/cpt 37228}\">37228</span></p><p><b>serviced</b>: 2020-08-04</p><p><b>location</b>: <span title=\"Codes: {https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set 21}\">HOSPITAL - INPATIENT HOSPITAL</span></p><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\">The total submitted amount for the claim or group or line item.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication copay}\">Patient Co-Payment</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication eligible}\">Amount of the change which is considered for adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication deductible}\">Amount deducted from the eligible amount prior to adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication benefit}\">Amount payable under the coverage</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication noncovered}\">The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus innetwork}\">Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider</span></p></blockquote></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication submitted}\">The total submitted amount for the claim or group or line item.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication eligible}\">Amount of the change which is considered for adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication deductible}\">Amount deducted from the eligible amount prior to adjudication.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication copay}\">Patient Co-Payment</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication noncovered}\">The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/adjudication benefit}\">Amount payable under the coverage</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>total</b></p><p><b>category</b>: <span title=\"Codes: {http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication memberliability}\">The amount of the member's liability.</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+  ];
+  fhir:ExplanationOfBenefit.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType" ];
+         fhir:Coding.code [ fhir:value "uc" ];
+         fhir:Coding.display [ fhir:value "Unique Claim ID" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Indicates that the claim identifier is that assigned by a payer for a claim received from a provider or subscriber" ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://www.upmchealthplan.com/fhir/EOBIdentifier" ];
+     fhir:Identifier.value [ fhir:value "ProfessionalEOBExample1" ]
+  ];
+  fhir:ExplanationOfBenefit.status [ fhir:value "active"];
+  fhir:ExplanationOfBenefit.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claim-type" ];
+       fhir:Coding.code [ fhir:value "professional" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Professional" ]
+  ];
+  fhir:ExplanationOfBenefit.use [ fhir:value "claim"];
+  fhir:ExplanationOfBenefit.patient [
+     fhir:link <http://hl7.org/fhir/us/carin-bb/Patient/ExamplePatient1>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient1" ]
+  ];
+  fhir:ExplanationOfBenefit.billablePeriod [
+     fhir:Period.start [ fhir:value "2020-08-04T00:00:00-04:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2020-08-04T00:00:00-04:00"^^xsd:dateTime ]
+  ];
+  fhir:ExplanationOfBenefit.created [ fhir:value "2020-08-24T00:00:00-04:00"^^xsd:dateTime];
+  fhir:ExplanationOfBenefit.insurer [
+     fhir:link <http://hl7.org/fhir/us/carin-bb/Organization/PayerOrganizationExample1>;
+     fhir:Reference.reference [ fhir:value "Organization/PayerOrganizationExample1" ];
+     fhir:Reference.display [ fhir:value "UPMC Health Plan" ]
+  ];
+  fhir:ExplanationOfBenefit.provider [
+     fhir:link <http://hl7.org/fhir/us/carin-bb/Organization/ProviderOrganization1>;
+     fhir:Reference.reference [ fhir:value "Organization/ProviderOrganization1" ]
+  ];
+  fhir:ExplanationOfBenefit.payee [
+     fhir:ExplanationOfBenefit.payee.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/payeetype" ];
+         fhir:Coding.code [ fhir:value "provider" ];
+         fhir:Coding.display [ fhir:value "Provider" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Any benefit payable will be paid to the provider (Assignment of Benefit)." ]
+     ];
+     fhir:ExplanationOfBenefit.payee.party [
+       fhir:link <http://hl7.org/fhir/us/carin-bb/Organization/ProviderOrganization1>;
+       fhir:Reference.reference [ fhir:value "Organization/ProviderOrganization1" ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.outcome [ fhir:value "complete"];
+  fhir:ExplanationOfBenefit.careTeam [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.careTeam.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.careTeam.provider [
+       fhir:link <http://hl7.org/fhir/us/carin-bb/Organization/ProviderOrganization1>;
+       fhir:Reference.reference [ fhir:value "Organization/ProviderOrganization1" ]
+     ];
+     fhir:ExplanationOfBenefit.careTeam.role [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claimcareteamrole" ];
+         fhir:Coding.code [ fhir:value "primary" ];
+         fhir:Coding.display [ fhir:value "Primary provider" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "The primary care provider." ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ExplanationOfBenefit.careTeam.sequence [ fhir:value "2"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.careTeam.provider [
+       fhir:link <http://hl7.org/fhir/us/carin-bb/Practitioner/Practitioner1>;
+       fhir:Reference.reference [ fhir:value "Practitioner/Practitioner1" ]
+     ];
+     fhir:ExplanationOfBenefit.careTeam.role [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole" ];
+         fhir:Coding.code [ fhir:value "referring" ];
+         fhir:Coding.display [ fhir:value "Referring" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "The referring physician" ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.supportingInfo [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.supportingInfo.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType" ];
+         fhir:Coding.code [ fhir:value "billingnetworkcontractingstatus" ];
+         fhir:Coding.display [ fhir:value "Billing Network Contracting Status" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Indicates that the Billing Provider has a contract with the Payer as of the effective date of service or admission." ]
+     ];
+     fhir:ExplanationOfBenefit.supportingInfo.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus" ];
+         fhir:Coding.code [ fhir:value "contracted" ];
+         fhir:Coding.display [ fhir:value "Contracted" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Indicates the provider was contracted for the service" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ExplanationOfBenefit.supportingInfo.sequence [ fhir:value "2"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.supportingInfo.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType" ];
+         fhir:Coding.code [ fhir:value "clmrecvddate" ];
+         fhir:Coding.display [ fhir:value "Claim Received Date" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Date the claim was received by the payer." ]
+     ];
+     fhir:ExplanationOfBenefit.supportingInfo.timingDate [ fhir:value "2020-08-24"^^xsd:date ]
+  ];
+  fhir:ExplanationOfBenefit.diagnosis [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.diagnosis.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.diagnosis.diagnosisCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10-cm" ];
+         fhir:Coding.code [ fhir:value "I70.249" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.diagnosis.type [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/ex-diagnosistype" ];
+         fhir:Coding.code [ fhir:value "principal" ];
+         fhir:Coding.display [ fhir:value "Principal Diagnosis" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "The single medical diagnosis that is most relevant to the patient's chief complaint or need for treatment." ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ExplanationOfBenefit.diagnosis.sequence [ fhir:value "2"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.diagnosis.diagnosisCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10-cm" ];
+         fhir:Coding.code [ fhir:value "L97.929" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.diagnosis.type [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType" ];
+         fhir:Coding.code [ fhir:value "secondary" ];
+         fhir:Coding.display [ fhir:value "secondary" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Required when necessary to report additional diagnoses on professional and non-clinician claims" ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.insurance [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.insurance.focal [ fhir:value "true"^^xsd:boolean ];
+     fhir:ExplanationOfBenefit.insurance.coverage [
+       fhir:link <http://hl7.org/fhir/us/carin-bb/Coverage/CoverageEx1>;
+       fhir:Reference.reference [ fhir:value "Coverage/CoverageEx1" ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.item [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.item.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.ama-assn.org/go/cpt" ];
+         fhir:Coding.code [ fhir:value "75710" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.servicedDate [ fhir:value "2020-08-04"^^xsd:date ];
+     fhir:ExplanationOfBenefit.item.locationCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set" ];
+         fhir:Coding.code [ fhir:value "21" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "HOSPITAL - INPATIENT HOSPITAL" ]
+     ];
+     fhir:ExplanationOfBenefit.item.adjudication [
+       fhir:index 0;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "submitted" ];
+           fhir:Coding.display [ fhir:value "Submitted Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "The total submitted amount for the claim or group or line item." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "68.8"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "copay" ];
+           fhir:Coding.display [ fhir:value "CoPay" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Patient Co-Payment" ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "eligible" ];
+           fhir:Coding.display [ fhir:value "Eligible Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount of the change which is considered for adjudication." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "34.8"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "deductible" ];
+           fhir:Coding.display [ fhir:value "Deductible" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount deducted from the eligible amount prior to adjudication." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "benefit" ];
+           fhir:Coding.display [ fhir:value "Benefit Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount payable under the coverage" ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "34.8"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
+           fhir:Coding.code [ fhir:value "noncovered" ];
+           fhir:Coding.display [ fhir:value "Noncovered" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus" ];
+           fhir:Coding.code [ fhir:value "innetwork" ];
+           fhir:Coding.display [ fhir:value "In Network" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ExplanationOfBenefit.item.sequence [ fhir:value "2"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.ama-assn.org/go/cpt" ];
+         fhir:Coding.code [ fhir:value "75710" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.servicedDate [ fhir:value "2020-08-04"^^xsd:date ];
+     fhir:ExplanationOfBenefit.item.locationCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set" ];
+         fhir:Coding.code [ fhir:value "21" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "HOSPITAL - INPATIENT HOSPITAL" ]
+     ];
+     fhir:ExplanationOfBenefit.item.adjudication [
+       fhir:index 0;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "submitted" ];
+           fhir:Coding.display [ fhir:value "Submitted Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "The total submitted amount for the claim or group or line item." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "-68.8"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "copay" ];
+           fhir:Coding.display [ fhir:value "CoPay" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Patient Co-Payment" ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "eligible" ];
+           fhir:Coding.display [ fhir:value "Eligible Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount of the change which is considered for adjudication." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "-34.8"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "deductible" ];
+           fhir:Coding.display [ fhir:value "Deductible" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount deducted from the eligible amount prior to adjudication." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "benefit" ];
+           fhir:Coding.display [ fhir:value "Benefit Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount payable under the coverage" ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "-34.8"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
+           fhir:Coding.code [ fhir:value "noncovered" ];
+           fhir:Coding.display [ fhir:value "Noncovered" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus" ];
+           fhir:Coding.code [ fhir:value "innetwork" ];
+           fhir:Coding.display [ fhir:value "In Network" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ExplanationOfBenefit.item.sequence [ fhir:value "3"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.ama-assn.org/go/cpt" ];
+         fhir:Coding.code [ fhir:value "75710" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.servicedDate [ fhir:value "2020-08-04"^^xsd:date ];
+     fhir:ExplanationOfBenefit.item.locationCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set" ];
+         fhir:Coding.code [ fhir:value "21" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "HOSPITAL - INPATIENT HOSPITAL" ]
+     ];
+     fhir:ExplanationOfBenefit.item.adjudication [
+       fhir:index 0;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "submitted" ];
+           fhir:Coding.display [ fhir:value "Submitted Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "The total submitted amount for the claim or group or line item." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "68.8"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "copay" ];
+           fhir:Coding.display [ fhir:value "CoPay" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Patient Co-Payment" ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "eligible" ];
+           fhir:Coding.display [ fhir:value "Eligible Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount of the change which is considered for adjudication." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "34.8"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "deductible" ];
+           fhir:Coding.display [ fhir:value "Deductible" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount deducted from the eligible amount prior to adjudication." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "benefit" ];
+           fhir:Coding.display [ fhir:value "Benefit Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount payable under the coverage" ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "34.8"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
+           fhir:Coding.code [ fhir:value "noncovered" ];
+           fhir:Coding.display [ fhir:value "Noncovered" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus" ];
+           fhir:Coding.code [ fhir:value "innetwork" ];
+           fhir:Coding.display [ fhir:value "In Network" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider" ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:ExplanationOfBenefit.item.sequence [ fhir:value "4"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.ama-assn.org/go/cpt" ];
+         fhir:Coding.code [ fhir:value "37228" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.servicedDate [ fhir:value "2020-08-04"^^xsd:date ];
+     fhir:ExplanationOfBenefit.item.locationCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set" ];
+         fhir:Coding.code [ fhir:value "21" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "HOSPITAL - INPATIENT HOSPITAL" ]
+     ];
+     fhir:ExplanationOfBenefit.item.adjudication [
+       fhir:index 0;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "submitted" ];
+           fhir:Coding.display [ fhir:value "Submitted Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "The total submitted amount for the claim or group or line item." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "751.2"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "copay" ];
+           fhir:Coding.display [ fhir:value "CoPay" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Patient Co-Payment" ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "eligible" ];
+           fhir:Coding.display [ fhir:value "Eligible Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount of the change which is considered for adjudication." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "224.11"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "deductible" ];
+           fhir:Coding.display [ fhir:value "Deductible" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount deducted from the eligible amount prior to adjudication." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "benefit" ];
+           fhir:Coding.display [ fhir:value "Benefit Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount payable under the coverage" ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
+           fhir:Coding.code [ fhir:value "noncovered" ];
+           fhir:Coding.display [ fhir:value "Noncovered" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "224.11"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus" ];
+           fhir:Coding.code [ fhir:value "innetwork" ];
+           fhir:Coding.display [ fhir:value "In Network" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider" ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:ExplanationOfBenefit.item.sequence [ fhir:value "5"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.ama-assn.org/go/cpt" ];
+         fhir:Coding.code [ fhir:value "37228" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.servicedDate [ fhir:value "2020-08-04"^^xsd:date ];
+     fhir:ExplanationOfBenefit.item.locationCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set" ];
+         fhir:Coding.code [ fhir:value "21" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "HOSPITAL - INPATIENT HOSPITAL" ]
+     ];
+     fhir:ExplanationOfBenefit.item.adjudication [
+       fhir:index 0;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "submitted" ];
+           fhir:Coding.display [ fhir:value "Submitted Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "The total submitted amount for the claim or group or line item." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "751.2"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "copay" ];
+           fhir:Coding.display [ fhir:value "CoPay" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Patient Co-Payment" ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "eligible" ];
+           fhir:Coding.display [ fhir:value "Eligible Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount of the change which is considered for adjudication." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "224.11"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "deductible" ];
+           fhir:Coding.display [ fhir:value "Deductible" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount deducted from the eligible amount prior to adjudication." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "benefit" ];
+           fhir:Coding.display [ fhir:value "Benefit Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount payable under the coverage" ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "224.11"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
+           fhir:Coding.code [ fhir:value "noncovered" ];
+           fhir:Coding.display [ fhir:value "Noncovered" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus" ];
+           fhir:Coding.code [ fhir:value "innetwork" ];
+           fhir:Coding.display [ fhir:value "In Network" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider" ]
+       ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:ExplanationOfBenefit.item.sequence [ fhir:value "6"^^xsd:positiveInteger ];
+     fhir:ExplanationOfBenefit.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.ama-assn.org/go/cpt" ];
+         fhir:Coding.code [ fhir:value "37228" ]
+       ]
+     ];
+     fhir:ExplanationOfBenefit.item.servicedDate [ fhir:value "2020-08-04"^^xsd:date ];
+     fhir:ExplanationOfBenefit.item.locationCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set" ];
+         fhir:Coding.code [ fhir:value "21" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "HOSPITAL - INPATIENT HOSPITAL" ]
+     ];
+     fhir:ExplanationOfBenefit.item.adjudication [
+       fhir:index 0;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "submitted" ];
+           fhir:Coding.display [ fhir:value "Submitted Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "The total submitted amount for the claim or group or line item." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "-751.2"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "copay" ];
+           fhir:Coding.display [ fhir:value "CoPay" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Patient Co-Payment" ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "eligible" ];
+           fhir:Coding.display [ fhir:value "Eligible Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount of the change which is considered for adjudication." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "-224.11"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "deductible" ];
+           fhir:Coding.display [ fhir:value "Deductible" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount deducted from the eligible amount prior to adjudication." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+           fhir:Coding.code [ fhir:value "benefit" ];
+           fhir:Coding.display [ fhir:value "Benefit Amount" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Amount payable under the coverage" ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
+           fhir:Coding.code [ fhir:value "noncovered" ];
+           fhir:Coding.display [ fhir:value "Noncovered" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract." ]
+       ];
+       fhir:ExplanationOfBenefit.item.adjudication.amount [
+         fhir:Money.value [ fhir:value "-224.11"^^xsd:decimal ];
+         fhir:Money.currency [ fhir:value "USD" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:ExplanationOfBenefit.item.adjudication.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus" ];
+           fhir:Coding.code [ fhir:value "innetwork" ];
+           fhir:Coding.display [ fhir:value "In Network" ]
+         ];
+         fhir:CodeableConcept.text [ fhir:value "Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider" ]
+       ]
+     ]
+  ];
+  fhir:ExplanationOfBenefit.total [
+     fhir:index 0;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "submitted" ];
+         fhir:Coding.display [ fhir:value "Submitted Amount" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "The total submitted amount for the claim or group or line item." ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "820.0"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "eligible" ];
+         fhir:Coding.display [ fhir:value "Eligible Amount" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Amount of the change which is considered for adjudication." ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "258.91"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "deductible" ];
+         fhir:Coding.display [ fhir:value "Deductible" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Amount deducted from the eligible amount prior to adjudication." ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "copay" ];
+         fhir:Coding.display [ fhir:value "CoPay" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Patient Co-Payment" ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
+         fhir:Coding.code [ fhir:value "noncovered" ];
+         fhir:Coding.display [ fhir:value "Noncovered" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract." ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/adjudication" ];
+         fhir:Coding.code [ fhir:value "benefit" ];
+         fhir:Coding.display [ fhir:value "Benefit Amount" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Amount payable under the coverage" ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "258.91"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:ExplanationOfBenefit.total.category [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication" ];
+         fhir:Coding.code [ fhir:value "memberliability" ];
+         fhir:Coding.display [ fhir:value "Member liability" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "The amount of the member's liability." ]
+     ];
+     fhir:ExplanationOfBenefit.total.amount [
+       fhir:Money.value [ fhir:value "0.0"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/carin-bb/Patient/ExamplePatient1> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Organization/PayerOrganizationExample1> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Organization/ProviderOrganization1> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Practitioner/Practitioner1> a fhir:us .
+
+<http://hl7.org/fhir/us/carin-bb/Coverage/CoverageEx1> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/ExplanationOfBenefit/ProfessionalEOBExample1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/ExplanationOfBenefit/ProfessionalEOBExample1.ttl> .
+
+# -------------------------------------------------------------------------------------
+

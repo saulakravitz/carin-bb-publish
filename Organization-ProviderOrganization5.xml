@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="ProviderOrganization5"/>
+  <meta>
+    <lastUpdated value="2020-05-04T03:02:01-04:00"/>
+    <profile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: National Provider Identifier: 5556667770</p><p><b>active</b>: true</p><p><b>name</b>: Black Medical Group</p><p><b>address</b>: Attn: Black Medical Group Pittsburgh PA 15222 USA </p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: 555-555-5555(WORK)</td></tr></table></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType"/>
+        <code value="npi"/>
+        <display value="National Provider Identifier"/>
+      </coding>
+      <text value="National Provider Identifier"/>
+    </type>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="5556667770"/>
+  </identifier>
+  <active value="true"/>
+  <name value="Black Medical Group"/>
+  <address>
+    <line value="Attn: Black Medical Group"/>
+    <city value="Pittsburgh"/>
+    <state value="PA"/>
+    <postalCode value="15222"/>
+    <country value="USA"/>
+  </address>
+  <contact>
+    <telecom>
+      <system value="phone"/>
+      <value value="555-555-5555"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+</Organization>

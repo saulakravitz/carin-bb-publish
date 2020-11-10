@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="ExamplePatient1"/>
+  <meta>
+    <lastUpdated value="2020-10-30T09:48:01.8512764-04:00"/>
+    <source value="Organization/PayerOrganizationExample1"/>
+    <profile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Patient"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>language</b>: en-US</p><p><b>identifier</b>: An identifier for the insured of an insurance policy (this insured always has a subscriber), usually assigned by the insurance carrier.: 88800933501</p><p><b>active</b>: true</p><p><b>name</b>: Member 01 Test </p><p><b>telecom</b>: ph: 5555555555, ph: 5555555555, ph: 5555555555, ph: 5555555555, ph: 5555555555(HOME), ph: 5555555555(WORK), <a href="mailto:GXXX@XXXX.com">GXXX@XXXX.com</a>, fax: 5555555555</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1943-01-01</p><p><b>address</b>: </p><ul><li>123 Main Street PITTSBURGH PA 15239 </li><li>123 Main Street PITTSBURGH PA 15239 </li></ul><p><b>maritalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}">unknown</span></p><h3>Communications</h3><table class="grid"><tr><td>-</td><td><b>Language</b></td><td><b>Preferred</b></td></tr><tr><td>*</td><td><span title="Codes: {urn:ietf:bcp:47 en}">English</span></td><td>true</td></tr></table><p><b>managingOrganization</b>: <a href="Organization-PayerOrganizationExample1.html">UPMC Health Plan. Generated Summary: NAIC Code: 95216; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type pay}">Payer</span>; name: UPMC Health Plan; Phone: 1-844-220-4785 TTY: 711, Phone: 1-866-406-8762</a></p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MB"/>
+        <display value="Member Number"/>
+      </coding>
+      <text value="An identifier for the insured of an insurance policy (this insured always has a subscriber), usually assigned by the insurance carrier."/>
+    </type>
+    <system value="https://www.upmchealthplan.com/fhir/memberidentifier"/>
+    <value value="88800933501"/>
+    <assigner>
+      <reference value="Organization/PayerOrganizationExample1"/>
+      <display value="UPMC Health Plan"/>
+    </assigner>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Test"/>
+    <given value="Member 01"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="5555555555"/>
+    <rank value="1"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="5555555555"/>
+    <rank value="2"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="5555555555"/>
+    <rank value="3"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="5555555555"/>
+    <rank value="4"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="5555555555"/>
+    <use value="home"/>
+    <rank value="5"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="5555555555"/>
+    <use value="work"/>
+    <rank value="6"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="GXXX@XXXX.com"/>
+    <rank value="7"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="5555555555"/>
+    <rank value="8"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1943-01-01"/>
+  <address>
+    <type value="physical"/>
+    <line value="123 Main Street"/>
+    <city value="PITTSBURGH"/>
+    <state value="PA"/>
+    <postalCode value="15239"/>
+  </address>
+  <address>
+    <type value="physical"/>
+    <line value="123 Main Street"/>
+    <city value="PITTSBURGH"/>
+    <state value="PA"/>
+    <postalCode value="15239"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <code value="UNK"/>
+    </coding>
+    <text value="unknown"/>
+  </maritalStatus>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:ietf:bcp:47"/>
+        <code value="en"/>
+      </coding>
+      <text value="English"/>
+    </language>
+    <preferred value="true"/>
+  </communication>
+  <managingOrganization>
+    <reference value="Organization/PayerOrganizationExample1"/>
+    <display value="UPMC Health Plan"/>
+  </managingOrganization>
+</Patient>

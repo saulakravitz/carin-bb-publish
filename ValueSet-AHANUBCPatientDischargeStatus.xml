@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="AHANUBCPatientDischargeStatus"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-AHANUBCPatientDischargeStatus.html"><code>http://www.nubc.org/PatientDischargeStatus</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-AHANUBCPatientDischargeStatus.html"><code>https://www.nubc.org/CodeSystem/PatDischargeStatus</code></a></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/AHANUBCPatientDischargeStatus"/>
-  <version value="0.1.4"/>
+  <version value="0.1.10"/>
   <name value="AHANUBCPatientDischargeStatus"/>
-  <title value="AHA NUBC Patient Discharge Status"/>
+  <title value="NUBC Patient Discharge Status Codes"/>
   <status value="active"/>
-  <date value="2020-11-10T23:06:02+00:00"/>
+  <date value="2020-11-10T23:20:04+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -23,17 +23,17 @@
       <value value="fm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="UB-04 Patient Discharge Status (FL-17)"/>
+  <description value="The UB-04 Data File contains the complete set of NUBC codes. Every code in the range of possible codes is accounted for sequentially. There are no gaps because all used and unused codes are identified.&#xA;&#xA;This code system consists of the following:&#xA;&#xA;*   FL 17 - Patient Discharge Status&#xA;&#xA;These codes are used to convey the patient discharge status and are the property of the American Hospital Association.&#xA;&#xA;To obtain the underlying code systems, please see information [here](https://www.nubc.org/subscription-information)"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="US"/>
     </coding>
   </jurisdiction>
-  <copyright value="The Official UB-04 Data Specifications Manual, copyrighted by the American Hospital Association, is the only official source of UB-04 billing information adopted by the National Uniform Billing Committee. &#xA;No other publication&#x2014;governmental or private/commercial&#x2014;can be considered authoritative. See their website for licensing terms and conditions.&#xA;As HL7 is working with the owning authority to finalize the url, this url is subject to change."/>
+  <copyright value="Licensing information can be found [here](https://www.nubc.org/license).&#xA;&#xA;These codes are listed within the UB-04 Data Specifications Manual. The Official UB-04 Data Specifications Manual, copyrighted by the American Hospital Association, is the only official source of UB-04 billing information adopted by the National Uniform Billing Committee. No other publication&#x2014;governmental or private/commercial&#x2014;can be considered authoritative. The AHA wants to make you aware that the use of codes, descriptions, or any other content contained in the manual to be used in a software application, publication, or any other derivative work must be properly licensed by the AHA. If your organization uses or intends to use any of the codes or other related content from the manual in this manner, please contact the AHA&#x2019;s licensing manager, Tim Carlson, at 312.893.6816 or email tcarlson@aha.org"/>
   <compose>
     <include>
-      <system value="http://www.nubc.org/PatientDischargeStatus"/>
+      <system value="https://www.nubc.org/CodeSystem/PatDischargeStatus"/>
     </include>
   </compose>
 </ValueSet>

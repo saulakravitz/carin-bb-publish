@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Practitioner/Practitioner1> a fhir:Practitioner;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Practitioner1"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-05-04T03:02:01-04:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: National Provider Identifier: 6667778880</p><p><b>active</b>: true</p><p><b>name</b>: John Smith </p></div>"
+  ];
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType" ];
+         fhir:Coding.code [ fhir:value "npi" ];
+         fhir:Coding.display [ fhir:value "National Provider Identifier" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "National Provider Identifier" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://hl7.org/fhir/sid/us-npi" ];
+     fhir:Identifier.value [ fhir:value "6667778880" ]
+  ];
+  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Smith" ];
+     fhir:HumanName.given [
+       fhir:value "John";
+       fhir:index 0
+     ];
+     fhir:HumanName.prefix [
+       fhir:value "Dr.";
+       fhir:index 0
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/carin-bb/Practitioner/Practitioner1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/carin-bb/Practitioner/Practitioner1.ttl> .
+
+# -------------------------------------------------------------------------------------
+

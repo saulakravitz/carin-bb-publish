@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -62,7 +62,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)</span><br/>0.1.4 - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)</span><br/>0.1.10 - STU1</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -123,13 +123,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Guidance.html">General Guidance</a>
+        <a href="General_Guidance.html">General Guidance</a>
       </li>
       <li>
         <a href="Common_Payer_Consumer_Data_Set.html">Common Payer Consumer Data Set (CPCDS)</a>
       </li>
       <li>
-        <a href="Notes_To_Developers.html">Notes To Developers</a>
+        <a href="Terminology_Licensure.html">Terminology Licensure</a>
       </li>
     </ul>
   </li>
@@ -142,10 +142,10 @@
         <a href="artifacts.html#3">Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#2">Search Parameters</a>
+        <a href="searchparameters.html">Search Parameters</a>
       </li>
       <li>
-        <a href="Terminology.html">Terminology</a>
+        <a href="artifacts.html#5">Terminology</a>
       </li>
       <li>
         <a href="CapabilityStatement-c4bb.html">Capability Statement</a>
@@ -200,7 +200,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®) - Local Development build (v0.1.4). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®) - Local Development build (v0.1.10). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Authorization Authentication and Registration</h2>
   
 
@@ -219,10 +219,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- Authorization_Authentication_and_Registration.md  -->
 <div>
 <h3 id="smart-on-fhir-application-launch">SMART on FHIR Application Launch</h3>
-Client applications and systems of record SHALL support the standalone launch sequence of the <a href="http://www.hl7.org/fhir/smart-app-launch/">SMART App Launch framework</a> for user authorization and client authentication. Systems of record SHALL publish their authorization and token endpoints for discovery in accordance with the SMART App Launch framework. Client applications and systems of record SHOULD support <a href="http://www.udap.org/udap-dynamic-client-registration.html">UDAP Dynamic Client Registration</a> for the registration of a client application with a system of record. If supported, systems of records MUST include their registration endpoint URI in their discoverable OAuth metadata. Client applications that have not previously obtained a client_id from a system of record SHOULD attempt registration with the system of record using this profile.
+<p>Client applications and Payers SHALL support the standalone launch sequence (launch/Patient) of the SMART App Launch framework for user authorization and client authentication. Payers SHALL publish their authorization and token endpoints for discovery in accordance with the SMART App Launch framework. If the app needs to authenticate the identity of the end-user, it MAY include two OpenID Connect scopes: openid and fhirUser. When these scopes are requested, and the request is granted, the app MAY receive an id token along with the access token.</p>
+<p>&nbsp;</p>
 <h3 id="authorization-and-authentication">Authorization and Authentication</h3>
-Client applications and systems of record MAY support UDAP Dynamic Client Registration for the registration of a client application with a system of record. If supported, systems of records MUST include their registration endpoint URI in their discoverable OAuth metadata. If supported, client applications that have not previously obtained a client_id from a system of record SHOULD attempt registration with the system of record using this profile. If supported, client applications that can protect private cryptographic keys and all systems of record SHOULD support (UDAP JWT-Based Client Authentication) for the authentication of client applications using asymmetric cryptography. If supported, client applications SHALL specify a token_endpoint_auth_method of "private_key_jwt" or "client_secret_basic" in their submitted software statement. The "private_key_jwt" value is used for clients intending to authenticate using asymmetric cryptography as per the UDAP JWT-Basic Client Authentication profile. If supported, client applications that cannot protect private cryptographic keys MUST use the "client_secret_basic" value. Conforming client applications and systems of record MAY support the UDAP Tiered OAuth for User Authentication profile to enable reusable user credentials for end users. Additional constraints on the SMART and UDAP profiles listed above for the CARIN Blue Button IG use case can be found <a href="https://docs.google.com/document/d/1HgOlUWMEsZHBChuP4DACRka4ap2S8UwSTkAz4oY6bCo/edit">here</a>.
+<p>Client applications and systems of record MAY support UDAP Dynamic Client Registration for the registration of a client application with a system of record. If supported, systems of records MUST include their registration endpoint URI in their discoverable OAuth metadata. If supported, client applications that have not previously obtained a client_id from a system of record SHOULD attempt registration with the system of record using this profile.</p>
+<div>&nbsp;</div>
+<p>If supported, client applications that can protect private cryptographic keys and all systems of record SHOULD support (UDAP JWT-Based Client Authentication) for the authentication of client applications using asymmetric cryptography. If supported, client applications SHALL specify a token_endpoint_auth_method of "private_key_jwt" or "client_secret_basic" in their submitted software statement. The "private_key_jwt" value is used for clients intending to authenticate using asymmetric cryptography as per the UDAP JWT-Basic Client Authentication profile. If supported, client applications that cannot protect private cryptographic keys MUST use the "client_secret_basic" value.</p>
+<div>&nbsp;</div>
+<p>Conforming client applications and systems of record MAY support the <a href="https://www.udap.org/udap-user-auth.html">UDAP Tiered OAuth for User Authentication </a>profile to enable reusable user credentials for end users.</p>
+<div>&nbsp;</div>
+<p>Additional constraints on the SMART and UDAP profiles listed above for the CARIN Blue Button IG use case can be found <a href="https://docs.google.com/document/d/1HgOlUWMEsZHBChuP4DACRka4ap2S8UwSTkAz4oY6bCo/edit">here</a>.</p>
 </div>
+
 
 
 
@@ -246,7 +254,7 @@ Client applications and systems of record MAY support UDAP Dynamic Client Regist
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 10, 2020 23:06+0000">2020-11-10</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.10 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 10, 2020 23:20+0000">2020-11-10</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

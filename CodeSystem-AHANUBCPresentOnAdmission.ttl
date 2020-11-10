@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "AHANUBCPresentOnAdmission"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://www.nubc.org/PresentOnAdmission defines many codes, but they are not represented here</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.nubc.org/CodeSystem/PresentOnAdmissionIndicator defines many codes, but they are not represented here</p></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://www.nubc.org/PresentOnAdmission"];
-  fhir:CodeSystem.version [ fhir:value "0.1.4"];
+  fhir:CodeSystem.url [ fhir:value "https://www.nubc.org/CodeSystem/PresentOnAdmissionIndicator"];
+  fhir:CodeSystem.version [ fhir:value "0.1.10"];
   fhir:CodeSystem.name [ fhir:value "AHANUBCPresentOnAdmission"];
-  fhir:CodeSystem.title [ fhir:value "AHA NUBC PresentOn Admission"];
+  fhir:CodeSystem.title [ fhir:value "NUBC Present On Admission Indicator Codes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-11-10T23:06:02+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-11-10T23:20:04+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
-  fhir:CodeSystem.description [ fhir:value "UB-04 Present on Admission (FL-67)."];
+  fhir:CodeSystem.description [ fhir:value "The UB-04 Data File contains the complete set of NUBC codes. Every code in the range of possible codes is accounted for sequentially. There are no gaps because all used and unused codes are identified.\n\nThis code system consists of the following:\n\n*   FL 67 - Present On Admission Indicator\n\nThese codes are used to report the principal diagnosis code (ICD-9 or ICD-10 code) and each of the secondary diagnoses.  The 8th character in that set (first 7 are ICD) is the location used to report whether or not a condition was present on admission. The present on admission code acts as a modifier and is used to further define another code, so as to say this ICD-10 code is for a condition that was/was not present on admission.  It should be noted that present on admission also appears in FL 72\n\nTo obtain the underlying code systems, please see information [here](https://www.nubc.org/subscription-information)"];
   fhir:CodeSystem.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -41,7 +41,7 @@
        fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:CodeSystem.copyright [ fhir:value "The Official UB-04 Data Specifications Manual, copyrighted by the American Hospital Association, is the only official source of UB-04 billing information adopted by the National Uniform Billing Committee. \nNo other publication—governmental or private/commercial—can be considered authoritative. See their website for licensing terms and conditions.\nAs HL7 is working with the owning authority to finalize the url, this url is subject to change."];
+  fhir:CodeSystem.copyright [ fhir:value "Licensing information can be found [here](https://www.nubc.org/license).\n\nThese codes are listed within the UB-04 Data Specifications Manual. The Official UB-04 Data Specifications Manual, copyrighted by the American Hospital Association, is the only official source of UB-04 billing information adopted by the National Uniform Billing Committee. No other publication—governmental or private/commercial—can be considered authoritative. The AHA wants to make you aware that the use of codes, descriptions, or any other content contained in the manual to be used in a software application, publication, or any other derivative work must be properly licensed by the AHA. If your organization uses or intends to use any of the codes or other related content from the manual in this manner, please contact the AHA’s licensing manager, Tim Carlson, at 312.893.6816 or email tcarlson@aha.org"];
   fhir:CodeSystem.content [ fhir:value "not-present"] .
 
 # - ontology header ------------------------------------------------------------

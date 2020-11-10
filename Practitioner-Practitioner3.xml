@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="Practitioner3"/>
+  <meta>
+    <lastUpdated value="2020-05-04T03:02:01-04:00"/>
+    <profile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: National Provider Identifier: 7778889990</p><p><b>active</b>: true</p><p><b>name</b>: Jane Williams </p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType"/>
+        <code value="npi"/>
+        <display value="National Provider Identifier"/>
+      </coding>
+      <text value="National Provider Identifier"/>
+    </type>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="7778889990"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Williams"/>
+    <given value="Jane"/>
+    <prefix value="Dr."/>
+  </name>
+</Practitioner>

@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set defines many codes, but they are not represented here</p></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"];
-  fhir:CodeSystem.version [ fhir:value "0.1.4"];
+  fhir:CodeSystem.version [ fhir:value "0.1.10"];
   fhir:CodeSystem.name [ fhir:value "CMSPlaceofServiceCodes"];
   fhir:CodeSystem.title [ fhir:value "CMS Place of Service Codes (POS)"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-11-10T23:06:02+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-11-10T23:20:04+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
-  fhir:CodeSystem.description [ fhir:value "Place of Service Codes are two-digit codes placed on health care professional claims to indicate the setting in which a service was provided."];
+  fhir:CodeSystem.description [ fhir:value "Place of Service Codes are two-digit codes placed on health care professional claims to indicate the setting in which a service was provided. The Centers for Medicare & Medicaid Services (CMS) maintain POS codes used throughout the health care industry.\n\nThis code set is required for use in the implementation guide adopted as the national standard for electronic transmission of professional health care claims under the provisions of the Health Insurance Portability and Accountability Act of 1996 (HIPAA). HIPAA directed the Secretary of HHS to adopt national standards for electronic transactions. These standard transactions require all health plans and providers to use standard code sets to populate data elements in each transaction. The Transaction and Code Set Rule adopted the ASC X12N-837 Health Care Claim: Professional, volumes 1 and 2, version 4010, as the standard for electronic submission of professional claims. This standard names the POS code set currently maintained by CMS as the code set to be used for describing sites of service in such claims. POS information is often needed to determine the acceptability of direct billing of Medicare, Medicaid and private insurance services provided by a given provider.\n\nCurrent codes can be obtained [here](https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set)"];
   fhir:CodeSystem.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -41,7 +41,7 @@
        fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:CodeSystem.copyright [ fhir:value "The Centers for Medicare & Medicaid Services (CMS) maintain Place Of Service (POS) codes used throughout the US health care industry."];
+  fhir:CodeSystem.copyright [ fhir:value "The Centers for Medicare & Medicaid Services (CMS) maintain Place Of Service (POS) codes used throughout the US health care industry. The CMS POS codes are free to use without restriction."];
   fhir:CodeSystem.content [ fhir:value "not-present"] .
 
 # - ontology header ------------------------------------------------------------

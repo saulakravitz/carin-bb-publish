@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.CARIN-BB\CMS ICD-9-10-PCS Procedure Codes - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.CARIN-BB\Procedure Codes - International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM) - ICD-10 Procedure Coding System - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"11.48"}
-    h3,h4,h5,h6{--heading-prefix:"11.48"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.49"}
+    h3,h4,h5,h6{--heading-prefix:"10.49"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -62,7 +62,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)</span><br/>0.1.4 - STU1</p>
+          <p><span style="font-size:12pt;font-weight:bold">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)</span><br/>0.1.10 - STU1</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -123,13 +123,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Guidance.html">General Guidance</a>
+        <a href="General_Guidance.html">General Guidance</a>
       </li>
       <li>
         <a href="Common_Payer_Consumer_Data_Set.html">Common Payer Consumer Data Set (CPCDS)</a>
       </li>
       <li>
-        <a href="Notes_To_Developers.html">Notes To Developers</a>
+        <a href="Terminology_Licensure.html">Terminology Licensure</a>
       </li>
     </ul>
   </li>
@@ -142,10 +142,10 @@
         <a href="artifacts.html#3">Profiles</a>
       </li>
       <li>
-        <a href="artifacts.html#2">Search Parameters</a>
+        <a href="searchparameters.html">Search Parameters</a>
       </li>
       <li>
-        <a href="Terminology.html">Terminology</a>
+        <a href="artifacts.html#5">Terminology</a>
       </li>
       <li>
         <a href="CapabilityStatement-c4bb.html">Capability Statement</a>
@@ -182,7 +182,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CMS ICD-9-10-PCS Procedure Codes</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Procedure Codes - International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM) - ICD-10 Procedure Coding System</b></li>
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -193,7 +193,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®) - Local Development build (v0.1.4). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®) - Local Development build (v0.1.10). See the <a href="http://hl7.org/fhir/us/carin-bb/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -233,21 +233,40 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: CMS ICD-9-10-PCS Procedure Codes</h2>
+  <h2 id="root">ValueSet: Procedure Codes - International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM) - ICD-10 Procedure Coding System</h2>
   <p>
     <b>Summary</b>
   </p>
   <table class="grid">
 <tbody>
 <tr><td>Defining URL:</td><td>http://hl7.org/fhir/us/carin-bb/ValueSet/CMSICD910PCSProcedureCodes</td></tr>
- <tr><td>Version:</td><td>0.1.4</td></tr>
+ <tr><td>Version:</td><td>0.1.10</td></tr>
  <tr><td>Name:</td><td>CMSICD910PCSProcedureCodes</td></tr>
- <tr><td>Title:</td><td>CMS ICD-9-10-PCS Procedure Codes</td></tr>
- <tr><td>Status:</td><td>Active as of 2020-11-10T23:06:02+00:00</td></tr>
- <tr><td>Definition:</td><td><p>This value set defines a set of codes from ICD-PCS that can be used to indicate the procedure performed</p>
+ <tr><td>Title:</td><td>Procedure Codes - International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM) - ICD-10 Procedure Coding System</td></tr>
+ <tr><td>Status:</td><td>Active as of 2020-11-10T23:20:04+00:00</td></tr>
+ <tr><td>Definition:</td><td><p>The Value Set is a combination of values from volume 3 from the Code System International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM) and values in the Code System ICD-10 Procedure Coding System. The International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM) is based on the World Health Organization’s Ninth Revision, International Classification of Diseases (ICD-9). ICD-9-CM was the official system of assigning codes to diagnoses and procedures associated with hospital utilization in the United States.  The ICD-9-CM consists of: a tabular list containing a numerical list of the disease code numbers in tabular form; an alphabetical index to the disease entries; and a classification system for surgical, diagnostic, and therapeutic procedures (alphabetic index and tabular list). The National Center for Health Statistics (NCHS) and the Centers for Medicare and Medicaid Services are the U.S. governmental agencies responsible for overseeing all changes and modifications to the ICD-9-CM. ICD-10 Procedure Coding System is the replacement for ICD-9-CM, volume 3, effective October 1, 2015. Current and previous releases of ICD-9-CM are available here: https://www.cdc.gov/nchs/icd/icd9cm.htm Most files are provided in compressed zip format for ease in downloading. These files have been created by the National Center for Health Statistics (NCHS), under authorization by the World Health Organization. Any questions regarding typographical or other errors noted on this release may be reported to nchsicd10cm@cdc.gov. The ICD-10-PCS is a procedure classification published by the United States Centers for Medicare &amp; Medicaid Services (CMS) (https://www.cms.gov) for classifying procedures performed in hospital inpatient health care settings. Link to information about the code system: https://www.cms.gov/Medicare/Coding/ICD10 Note: CMS is the owner of the ICD-10-PCS code system. CMS is NOT the owner of ICD-10-CM. CMS republishes the ICD-10-CM codes system on their website for convienence only. For authoratative information on ICD-10-CM, users should refer to the National Center for Health Statistics (NCHS) site located here.</p>
 </td></tr>
  <tr><td>Publisher:</td><td>HL7 Financial Management Working Group</td></tr>
- <tr><td>Copyright:</td><td><p>The Centers for Medicare &amp; Medicaid Services (CMS) maintain ICD PCS Procedure Codes used throughout the US health care industry.  As HL7 is working with the owning authority to finalize the urls, the urls are subject to change.</p>
+ <tr><td>Copyright:</td><td><p>ICD-9 copyright:</p>
+<p>The following requirements must be followed to utilize CDC’s public domain content:</p>
+<ol>
+<li>
+<p>Attribution to the agency that developed the material must be provided in your use of the materials. Such attribution should clearly state the materials were developed by CDC ATSDR and/or HHS (e.g., Source: CDC; Materials developed by CDC);</p>
+</li>
+<li>
+<p>You must utilize a disclaimer which clearly indicates that your use of the material, including any links to the materials on the CDC, ATSDR or HHS websites, does not imply endorsement by CDC, ATSDR, HHS or the United States Government of you, your company, product, facility, service or enterprise. All such disclaimers must be prominently and unambiguously displayed (e.g., Reference to specific commercial products, manufacturers, companies, or trademarks does not constitute its endorsement or recommendation by the U.S. Government, Department of Health and Human Services, or Centers for Disease Control and Prevention;</p>
+</li>
+<li>
+<p>You may not change the substantive content of the materials; and</p>
+</li>
+<li>
+<p>You must state that the material is otherwise available on the agency website for no charge.</p>
+</li>
+</ol>
+<p>For information on NCHS agency level use of materials see <a href="https://www.cdc.gov/other/agencymaterials.html">here</a>.</p>
+<p>ICD-10-PCS copyright:</p>
+<p>The CMS licenses its published material in order to encourage maximum use and dissemination. See<br />
+the CMS (<a href="https://www.cms.gov/Medicare/Coding/ICD10">https://www.cms.gov/Medicare/Coding/ICD10</a>) web site for more information.</p>
 </td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-CMSICD910PCSProcedureCodes.xml.html">XML</a> / <a href="ValueSet-CMSICD910PCSProcedureCodes.json.html">JSON</a> / <a href="ValueSet-CMSICD910PCSProcedureCodes.ttl.html">Turtle</a></td></tr>
 </tbody></table>
@@ -271,14 +290,13 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/2.0.0/CodeSystem-icd10PCS.html"><code>http://www.cms.gov/Medicare/Coding/ICD10</code></a></li><li>Include all codes defined in <code>http://www.cms.gov/Medicare/Coding/ICD9</code></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-ICD10PCS.html"><code>https://www.cms.gov/Medicare/Coding/ICD10</code></a></li><li>Include all codes defined in <a href="CodeSystem-ICD9CM.html"><code>http://hl7.org/fhir/sid/icd-9-cm</code></a></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <p><span style="color: maroon; font-weight: bold" title="Publication Tooling Error: [Unable to expand imported value set: Error from server: Unable to provide support for code system http://www.cms.gov/Medicare/Coding/ICD9, Error from server: Unable to provide support for code system http://www.cms.gov/Medicare/Coding/ICD9]">No Expansion for this valueset (Unknown Code System<!-- [Unable to expand imported value set: Error from server: Unable to provide support for code system http://www.cms.gov/Medicare/Coding/ICD9, Error from server: Unable to provide support for code system http://www.cms.gov/Medicare/Coding/ICD9] -->)</span></p>
-
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 13 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on http://hl7.org/fhir/sid/icd-9-cm version 2012</p><p>All codes from system <a href="CodeSystem-ICD9CM.html"><code>http://hl7.org/fhir/sid/icd-9-cm</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-87-99"> </a>87-99</td><td>Miscellaneous Diagnostic And Therapeutic Procedures</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99"> </a>99</td><td>Other Nonoperative Procedures</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.0"> </a>99.0</td><td>Transfusion Of Blood And Blood Components</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.00"> </a>99.00</td><td>Perioperative autologous transfusion of whole blood or blood components</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.01"> </a>99.01</td><td>Exchange transfusion</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.02"> </a>99.02</td><td>Transfusion of previously collected autologous blood</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.03"> </a>99.03</td><td>Other transfusion of whole blood</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.04"> </a>99.04</td><td>Transfusion of packed cells</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.05"> </a>99.05</td><td>Transfusion of platelets</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.06"> </a>99.06</td><td>Transfusion of coagulation factors</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.07"> </a>99.07</td><td>Transfusion of other serum</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.08"> </a>99.08</td><td>Transfusion of blood expander</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-icd-9-cm-99.09"> </a>99.09</td><td>Transfusion of other substance</td><td/></tr></table></div>
 
   <hr/>
   <p>
@@ -339,7 +357,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.4 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 10, 2020 23:06+0000">2020-11-10</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.10 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 10, 2020 23:20+0000">2020-11-10</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

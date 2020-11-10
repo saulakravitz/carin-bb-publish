@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Coverage xmlns="http://hl7.org/fhir">
+  <id value="CoverageEx2"/>
+  <meta>
+    <lastUpdated value="2020-10-30T09:48:01.8462752-04:00"/>
+    <source value="Organization/PayerOrganizationExample1"/>
+    <profile value="http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>language</b>: en-US</p><p><b>identifier</b>: An identifier for the insured of an insurance policy (this insured always has a subscriber), usually assigned by the insurance carrier.: 88800933501</p><p><b>status</b>: active</p><p><b>policyHolder</b>: <a href="Patient-ExamplePatient1.html">Generated Summary: language: en-US; An identifier for the insured of an insurance policy (this insured always has a subscriber), usually assigned by the insurance carrier.: 88800933501; active; Member 01 Test ; Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, GXXX@XXXX.com, Fax: 5555555555; gender: male; birthDate: 1943-01-01; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}">unknown</span></a></p><p><b>subscriber</b>: <a href="Patient-ExamplePatient1.html">Generated Summary: language: en-US; An identifier for the insured of an insurance policy (this insured always has a subscriber), usually assigned by the insurance carrier.: 88800933501; active; Member 01 Test ; Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, GXXX@XXXX.com, Fax: 5555555555; gender: male; birthDate: 1943-01-01; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}">unknown</span></a></p><p><b>subscriberId</b>: 888009335</p><p><b>beneficiary</b>: <a href="Patient-ExamplePatient1.html">Generated Summary: language: en-US; An identifier for the insured of an insurance policy (this insured always has a subscriber), usually assigned by the insurance carrier.: 88800933501; active; Member 01 Test ; Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, Phone: 5555555555, GXXX@XXXX.com, Fax: 5555555555; gender: male; birthDate: 1943-01-01; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}">unknown</span></a></p><p><b>dependent</b>: 01</p><p><b>relationship</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}">Self</span></p><p><b>period</b>: Jan 1, 2017, 5:00:00 AM --&gt; Jun 30, 2017, 4:00:00 AM</p><p><b>payor</b>: <a href="Organization-PayerOrganizationExample1.html">UPMC Health Plan. Generated Summary: NAIC Code: 95216; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type pay}">Payer</span>; name: UPMC Health Plan; Phone: 1-844-220-4785 TTY: 711, Phone: 1-866-406-8762</a></p><blockquote><p><b>class</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/coverage-class group}">An employee group</span></p><p><b>value</b>: MCHMO1</p><p><b>name</b>: MEDICARE HMO PLAN</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/coverage-class plan}">A specific suite of benefits.</span></p><p><b>value</b>: GI8</p><p><b>name</b>: GI8-HMO DEDUCTIBLE</p></blockquote><p><b>network</b>: GI8-HMO DEDUCTIBLE</p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MB"/>
+        <display value="Member Number"/>
+      </coding>
+      <text value="An identifier for the insured of an insurance policy (this insured always has a subscriber), usually assigned by the insurance carrier."/>
+    </type>
+    <system value="https://www.upmchealthplan.com/fhir/memberidentifier"/>
+    <value value="88800933501"/>
+    <assigner>
+      <reference value="Organization/PayerOrganizationExample1"/>
+      <display value="UPMC Health Plan"/>
+    </assigner>
+  </identifier>
+  <status value="active"/>
+  <policyHolder>
+    <reference value="Patient/ExamplePatient1"/>
+  </policyHolder>
+  <subscriber>
+    <reference value="Patient/ExamplePatient1"/>
+  </subscriber>
+  <subscriberId value="888009335"/>
+  <beneficiary>
+    <reference value="Patient/ExamplePatient1"/>
+  </beneficiary>
+  <dependent value="01"/>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/subscriber-relationship"/>
+      <code value="self"/>
+    </coding>
+    <text value="Self"/>
+  </relationship>
+  <period>
+    <start value="2017-01-01T00:00:00-05:00"/>
+    <end value="2017-06-30T00:00:00-04:00"/>
+  </period>
+  <payor>
+    <reference value="Organization/PayerOrganizationExample1"/>
+    <display value="UPMC Health Plan"/>
+  </payor>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
+        <code value="group"/>
+        <display value="Group"/>
+      </coding>
+      <text value="An employee group"/>
+    </type>
+    <value value="MCHMO1"/>
+    <name value="MEDICARE HMO PLAN"/>
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
+        <code value="plan"/>
+        <display value="Plan"/>
+      </coding>
+      <text value="A specific suite of benefits."/>
+    </type>
+    <value value="GI8"/>
+    <name value="GI8-HMO DEDUCTIBLE"/>
+  </class>
+  <network value="GI8-HMO DEDUCTIBLE"/>
+</Coverage>

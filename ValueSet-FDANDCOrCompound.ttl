@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-v3-ndc.html\"><code>http://hl7.org/fhir/sid/ndc</code></a></li><li>Include these codes as defined in <a href=\"CodeSystem-C4BBCompoundLiteral.html\"><code>http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBCompoundLiteral</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-C4BBCompoundLiteral.html#C4BBCompoundLiteral-compound\">compound</a></td><td>compound</td><td>Compound</td></tr></table></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDCOrCompound"];
-  fhir:ValueSet.version [ fhir:value "0.1.4"];
+  fhir:ValueSet.version [ fhir:value "0.1.10"];
   fhir:ValueSet.name [ fhir:value "FDANDCOrCompound"];
-  fhir:ValueSet.title [ fhir:value "FDA NDC or Compound"];
+  fhir:ValueSet.title [ fhir:value "NDC or Compound"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-11-10T23:06:02+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-11-10T23:20:04+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "National Drug Code (NDC).  The US Federal Drug Administration (FDA) Data Standards Council assigns the first 5 digits of the 11 digit code.  NCPDP field # 407-D7.  \nValues will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, ‘compound’"];
+  fhir:ValueSet.description [ fhir:value "Values will be the NDC Codes when the Compound Code value is 0 or 1.  When the Compound Code value = 2, the value will be the literal, ‘compound’"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="CMSMSDRG"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://www.cms.gov/Medicare/Coding/ms-drg/MS-DRG defines many codes, but they are not represented here</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software defines many codes, but they are not represented here</p></div>
   </text>
-  <url value="http://www.cms.gov/Medicare/Coding/ms-drg/MS-DRG"/>
-  <version value="0.1.4"/>
+  <url value="https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software"/>
+  <version value="0.1.10"/>
   <name value="CMSMSDRG"/>
-  <title value="CMS MS DRG"/>
+  <title value="Medicare Severity Diagnosis Related Groups (MS-DRGs)"/>
   <status value="active"/>
-  <date value="2020-11-10T23:06:02+00:00"/>
+  <date value="2020-11-10T23:20:04+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -23,13 +23,13 @@
       <value value="fm@lists.HL7.org"/>
     </telecom>
   </contact>
-  <description value="MS-DRGs (Medicare Severity Diagnosis Related Groups).  MS-DRGs are owned by CMS.  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version."/>
+  <description value="Section 1886(d) of the Act specifies that the Secretary shall establish a classification system (referred to as DRGs) for inpatient discharges and adjust payments under the IPPS based on appropriate weighting factors assigned to each DRG.  Therefore, under the IPPS, we pay for inpatient hospital services on a rate per discharge basis that varies according to the DRG to which a beneficiary&#39;s stay is assigned. The formula used to calculate payment for a specific case multiplies an individual hospital&#39;s payment rate per case by the weight of the DRG to which the case is assigned.  Each DRG weight represents the average resources required to care for cases in that particular DRG, relative to the average resources used to treat cases in all DRGs.&#xA;&#xA;Congress recognized that it would be necessary to recalculate the DRG relative weights periodically to account for changes in resource consumption.  Accordingly, section 1886(d)(4)(C) of the Act requires that the Secretary adjust the DRG classifications and relative weights at least annually.  These adjustments are made to reflect changes in treatment patterns, technology, and any other factors that may change the relative use of hospital resources.&#xA;&#xA;Currently, cases are classified into Medicare Severity Diagnosis Related Groups (MS-DRGs) for payment under the IPPS based on the following information reported by the hospital: the principal diagnosis, up to 25 additional diagnoses, and up to 25 procedures performed during the stay.  In a small number of MS-DRGs, classification is also based on the age, sex, and discharge status of the patient.  Effective October 1, 2015, the diagnosis and procedure information is reported by the hospital using codes from the International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM) and the International Classification of Diseases, Tenth Revision, Procedure Coding System (ICD-10-PCS).&#xA;&#xA;Content can be obtained on the CMS hosted page located [here](https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software)"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="US"/>
     </coding>
   </jurisdiction>
-  <copyright value="The Centers for Medicare &amp; Medicaid Services (CMS) maintain the MS-DRGs used throughout the US health care industry."/>
+  <copyright value="The Centers for Medicare &amp; Medicaid Services (CMS) maintain MS-DRGs used throughout the US health care industry. The CMS MS-DRGs are free to use without restriction."/>
   <content value="not-present"/>
 </CodeSystem>

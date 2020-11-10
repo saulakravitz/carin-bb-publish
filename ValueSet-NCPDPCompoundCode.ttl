@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "NCPDPCompoundCode"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-NCPDPCompoundCode.html\"><code>http://www.ncpdp.org/CompoundCode</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-NCPDPCompoundCode.html\"><code>http://terminology.hl7.org/temporary-uri/codeSystem/NCPDP/CompoundCode</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPCompoundCode"];
-  fhir:ValueSet.version [ fhir:value "0.1.4"];
+  fhir:ValueSet.version [ fhir:value "0.1.10"];
   fhir:ValueSet.name [ fhir:value "NCPDPCompoundCode"];
   fhir:ValueSet.title [ fhir:value "NCPDP Compound Code"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-11-10T23:06:02+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-11-10T23:20:04+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Indicates whether or not the prescription is a compound NCPDP field # 406-D6."];
+  fhir:ValueSet.description [ fhir:value "Code indicating whether or not the prescription is a compound. (NCPDP ECL 406-D6)\n\nLink to information about the value set - including how to obtain the content: [https://standards.ncpdp.org/Access-to-Standards.aspx](https://standards.ncpdp.org/Access-to-Standards.aspx)\n\n_**Note: A temporary URL has been defined for this codesystem for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.**_"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -41,11 +41,11 @@
        fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:ValueSet.copyright [ fhir:value "NCPDP codes are available by subscription at ncpdp.org. As HL7 is working with the owning authority to finalize the url, this url is subject to change."];
+  fhir:ValueSet.copyright [ fhir:value "National Council for Prescription Drugs Programs, Inc. (NCPDP) publications are owned by NCPDP, 9240 East Raintree Drive Scottsdale, AZ 85260, and protected by the copyright laws of the United States. 17 U.S.C. §101, et. seq. Permission is given to Council members to copy and use the work or any part thereof in connection with the business purposes of the Council members. The work may not be changed or altered. The work may be shared within the member company but may not be distributed and/or copied for/by others outside of the member’s company. The work may not be sold, used or exploited for commercial purposes. This permission may be revoked by NCPDP at any time. NCPDP is not responsible for any errors or damage as a result of the use of the work.\n\nAll material is provided as is, without warranty of any kind, expressed or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, accuracy, completeness and non-infringement of third party rights. In no event shall NCPDP, its members or its contributors be liable for any claim, or any direct, special, indirect or consequential damages, or any damages whatsoever resulting from loss of use, data or profits, whether in an action of contract, negligence or other tortious action, arising out of or in connection with the use or performance of the material. Revised: September 2016"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://www.ncpdp.org/CompoundCode" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/temporary-uri/codeSystem/NCPDP/CompoundCode" ]
      ]
   ] .
 
