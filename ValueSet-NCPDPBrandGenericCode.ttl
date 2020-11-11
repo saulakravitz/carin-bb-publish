@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "NCPDPBrandGenericCode"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-NCPDPBrandGenericIndicator.html\"><code>http://terminology.hl7.org/temporary-uri/codeSystem/NCPDP/BrandGenericIndicator</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-NCPDPBrandGenericIndicator.html\"><code>http://terminology.hl7.org/CodeSystem/NCPDP/BrandGenericIndicator</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/NCPDPBrandGenericCode"];
   fhir:ValueSet.version [ fhir:value "0.1.10"];
   fhir:ValueSet.name [ fhir:value "NCPDPBrandGenericCode"];
   fhir:ValueSet.title [ fhir:value "NCPDP Brand Generic Indicator"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-11-10T23:34:02+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-11-11T14:20:39+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "fm@lists.HL7.org" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Denotes brand or generic drug dispensed. (NCPDP ECL 686)\n\nLink to information about the code system - including how to obtain the content: [https://standards.ncpdp.org/Access-to-Standards.aspx](https://standards.ncpdp.org/Access-to-Standards.aspx)\n\n_**Note: A temporary URL has been defined for this value set for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.**_"];
+  fhir:ValueSet.description [ fhir:value "Denotes brand or generic drug dispensed. (NCPDP ECL 686)\n\nLink to information about the code system - including how to obtain the content: [https://standards.ncpdp.org/Access-to-Standards.aspx](https://standards.ncpdp.org/Access-to-Standards.aspx)"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -45,7 +45,7 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/temporary-uri/codeSystem/NCPDP/BrandGenericIndicator" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/NCPDP/BrandGenericIndicator" ]
      ]
   ] .
 

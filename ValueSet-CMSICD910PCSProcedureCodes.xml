@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="CMSICD910PCSProcedureCodes"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-ICD10PCS.html"><code>https://www.cms.gov/Medicare/Coding/ICD10</code></a></li><li>Include all codes defined in <a href="CodeSystem-ICD9CM.html"><code>http://hl7.org/fhir/sid/icd-9-cm</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/2.0.0/CodeSystem-icd10PCS.html"><code>http://www.cms.gov/Medicare/Coding/ICD10</code></a></li><li>Include all codes defined in <code>http://www.cms.gov/Medicare/Coding/ICD9</code></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/carin-bb/ValueSet/CMSICD910PCSProcedureCodes"/>
   <version value="0.1.10"/>
   <name value="CMSICD910PCSProcedureCodes"/>
   <title value="Procedure Codes - International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM) - ICD-10 Procedure Coding System"/>
   <status value="active"/>
-  <date value="2020-11-10T23:34:02+00:00"/>
+  <date value="2020-11-11T14:20:39+00:00"/>
   <publisher value="HL7 Financial Management Working Group"/>
   <contact>
     <name value="HL7 Financial Management Working Group"/>
@@ -33,10 +33,10 @@
   <copyright value="ICD-9 copyright:&#xA;&#xA;The following requirements must be followed to utilize CDC&#x2019;s public domain content:&#xA;&#xA;1) Attribution to the agency that developed the material must be provided in your use of the materials. Such attribution should clearly state the materials were developed by CDC ATSDR and/or HHS (e.g., Source: CDC; Materials developed by CDC);&#xA;&#xA;2) You must utilize a disclaimer which clearly indicates that your use of the material, including any links to the materials on the CDC, ATSDR or HHS websites, does not imply endorsement by CDC, ATSDR, HHS or the United States Government of you, your company, product, facility, service or enterprise. All such disclaimers must be prominently and unambiguously displayed (e.g., Reference to specific commercial products, manufacturers, companies, or trademarks does not constitute its endorsement or recommendation by the U.S. Government, Department of Health and Human Services, or Centers for Disease Control and Prevention;&#xA;&#xA;3) You may not change the substantive content of the materials; and&#xA;&#xA;4) You must state that the material is otherwise available on the agency website for no charge.&#xA;&#xA;For information on NCHS agency level use of materials see [here](https://www.cdc.gov/other/agencymaterials.html).&#xA;&#xA;ICD-10-PCS copyright:&#xA;&#xA;The CMS licenses its published material in order to encourage maximum use and dissemination. See  &#xA;the CMS ([https://www.cms.gov/Medicare/Coding/ICD10](https://www.cms.gov/Medicare/Coding/ICD10)) web site for more information."/>
   <compose>
     <include>
-      <system value="https://www.cms.gov/Medicare/Coding/ICD10"/>
+      <system value="http://www.cms.gov/Medicare/Coding/ICD10"/>
     </include>
     <include>
-      <system value="http://hl7.org/fhir/sid/icd-9-cm"/>
+      <system value="http://www.cms.gov/Medicare/Coding/ICD9"/>
     </include>
   </compose>
 </ValueSet>

@@ -887,7 +887,7 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
                <td>
 <p>This value set defines three sets of DRGs, MS-DRGs (Medicare Severity Diagnosis Related Groups), APR-DRGs (All Patient Refined Diagnosis Related Groups) and AP-DRGs (All Patient Diagnosis Related Groups).</p>
 
-<p>MS-DRGs:</p>
+<p><strong>MS-DRGs</strong></p>
 
 <p>Section 1886(d) of the Act specifies that the Secretary shall establish a classification system (referred to as DRGs) for inpatient discharges and adjust payments under the IPPS based on appropriate weighting factors assigned to each DRG.  Therefore, under the IPPS, we pay for inpatient hospital services on a rate per discharge basis that varies according to the DRG to which a beneficiary’s stay is assigned. The formula used to calculate payment for a specific case multiplies an individual hospital’s payment rate per case by the weight of the DRG to which the case is assigned.  Each DRG weight represents the average resources required to care for cases in that particular DRG, relative to the average resources used to treat cases in all DRGs.</p>
 
@@ -897,13 +897,27 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
 
 <p>Content can be obtained on the CMS hosted page located <a href="https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/MS-DRG-Classifications-and-Software">here</a></p>
 
-<p>APR-DRGs:</p>
+<p><strong>APR-DRGs</strong></p>
 
-<p>placeholder</p>
+<p>3M APR DRGs have become the standard across the U.S. for classifying hospital inpatients in non-Medicare populations. As of January 2019, 27 state Medicaid programs use 3M APR DRGs to pay hospitals, as do approximately a dozen commercial payers and Medicaid managed care organizations. Over 2,400 hospitals have licensed 3M APR DRGs to verify payment and analyze their internal operations.</p>
 
-<p>AP-DRGs:</p>
+<p>The 3M APR DRG methodology classifies hospital inpatients according to their reason for admission, severity of illness and risk of mortality.</p>
 
-<p>placeholder</p>
+<p>Each year 3M calculates and releases a set of statistics for each 3M APR DRG based on our analysis of large national data sets. These statistics include a relative weight for each 3M APR DRG. The relative weight reflects the average hospital resource use for a patient in that 3M APR DRG relative to the average hospital resource use of all inpatients. Please note that payers and other users of the 3M APR DRG methodology are responsible for ensuring that they use relative weights that are appropriate for their particular populations. The 3M APR DRG statistics also include data for each 3M APR DRG on relative frequency, average length of stay, average charges and incidence of mortality.</p>
+
+<p>3M APR DRGs can be rolled up into broader categories. The 326 base DRGs roll up into 25 major diagnostic categories (MDCs) plus a pre-MDC category. An example is MDC 04, Diseases and Disorders of the Respiratory System. As well, each 3M APR DRG is assigned to a service line that is consistent with the outpatient service lines that are defined by the 3M™ Enhanced Ambulatory Patient Groups (EAPGs).</p>
+
+<p>A link to information about the code system - including how to obtain the content from 3M is provided <a href="https://www.3m.com/3M/en_US/health-information-systems-us/drive-value-based-care/patient-classification-methodologies/apr-drgs/">here.</a></p>
+
+<p><strong>AP-DRGs</strong></p>
+
+<p>In 1987, the state of New York passed legislation instituting a DRG-based prospective payment system for all non-Medicare patients. The legislation included a requirement that the New York State Department of Health (NYDH) evaluate the applicability of the DRGs to a non-Medicare population. In particular, the legislation required that the DRGs be evaluated with respect to neonates and patients with Human Immunodeficiency Virus (HIV) infections. NYDH entered into an agreement with 3M HIS to assist with the evaluation of the need for DRG modifications as well as to make the necessary changes in the DRG definitions and software. The DRG definitions developed by NYDH and 3M HIS are referred to as the All Patient DRGs (AP-DRGs).</p>
+
+<p>As the AP-DRG code system is no longer in use and little authoratative information is available, the following resources have been used to compile the documented information</p>
+
+<p><a href="https://www.hcup-us.ahrq.gov/db/nation/nis/APR-DRGsV20MethodologyOverviewandBibliography.pdf">https://www.hcup-us.ahrq.gov/db/nation/nis/APR-DRGsV20MethodologyOverviewandBibliography.pdf</a></p>
+
+<p><em><strong>Note: Temporary URLs have been defined for the APR-DRGs and AP-DRGs for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.</strong></em></p>
 </td>
             </tr>
             <tr>
@@ -961,8 +975,6 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
 <p>Denotes brand or generic drug dispensed. (NCPDP ECL 686)</p>
 
 <p>Link to information about the code system - including how to obtain the content: <a href="https://standards.ncpdp.org/Access-to-Standards.aspx">https://standards.ncpdp.org/Access-to-Standards.aspx</a></p>
-
-<p><em><strong>Note: A temporary URL has been defined for this value set for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.</strong></em></p>
 </td>
             </tr>
             <tr>
@@ -973,9 +985,7 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
                <td>
 <p>Code indicating whether or not the prescription is a compound. (NCPDP ECL 406-D6)</p>
 
-<p>Link to information about the value set - including how to obtain the content: <a href="https://standards.ncpdp.org/Access-to-Standards.aspx">https://standards.ncpdp.org/Access-to-Standards.aspx</a></p>
-
-<p><em><strong>Note: A temporary URL has been defined for this codesystem for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.</strong></em></p>
+<p>Link to information about the code system - including how to obtain the content: <a href="https://standards.ncpdp.org/Access-to-Standards.aspx">https://standards.ncpdp.org/Access-to-Standards.aspx</a></p>
 </td>
             </tr>
             <tr>
@@ -987,8 +997,6 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
 <p>Code indicating whether or not the prescriber’s instructions regarding generic substitution were followed. (NCPDP ECL 408-D8)</p>
 
 <p>Link to information about the code system - including how to obtain the content: <a href="https://standards.ncpdp.org/Access-to-Standards.aspx">https://standards.ncpdp.org/Access-to-Standards.aspx</a></p>
-
-<p><em><strong>Note: A temporary URL has been defined for this value set for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.</strong></em></p>
 </td>
             </tr>
             <tr>
@@ -1000,8 +1008,6 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
 <p>Code indicating the origin of the prescription. Indicates whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy. (NCPDP ECL 419-DJ)</p>
 
 <p>Link to information about the code system - including how to obtain the content: <a href="https://standards.ncpdp.org/Access-to-Standards.aspx">https://standards.ncpdp.org/Access-to-Standards.aspx</a></p>
-
-<p><em><strong>Note: A temporary URL has been defined for this value set for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.</strong></em></p>
 </td>
             </tr>
             <tr>
@@ -1012,8 +1018,6 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
 <p>Code indicating the error encountered. Contains exception definitions for use when transaction processing cannot be completed. (NCPDP ECL 511-FB).</p>
 
 <p>Link to information about the code system - including how to obtain the content: <a href="https://standards.ncpdp.org/Access-to-Standards.aspx">https://standards.ncpdp.org/Access-to-Standards.aspx</a></p>
-
-<p><em><strong>Note: A temporary URL has been defined for this value set for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.</strong></em></p>
 </td>
             </tr>
             <tr>
@@ -1164,30 +1168,6 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
 <p>Note that with the advent of UB-04, the matrix methodology of constructing the first component of TOB codes according to digit position was abandoned in favor of specifying valid discrete codes. As a result, the first three digits in TOB have no underlying meaning.</p>
 
 <p>To obtain the underlying code systems, please see information <a href="https://www.nubc.org/subscription-information">here</a></p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-AMACPTCodes.html" title="CodeSystem/AMACPTCodes">Current Procedural Terminology (CPT)</a>
-               </td>
-               <td>
-<p>The Current Procedural Terminology (CPT) code set, created and maintained by the American Medical Association, is the language of medicine today and the code to its future. This system of terminology is the most widely accepted medical nomenclature used to report medical procedures and services under public and private health insurance programs. CPT coding is also used for administrative management purposes such as claims processing and developing guidelines for medical care review. Each year, via a rigorous, evidence-based and transparent process, the independent CPT Editorial Panel revises, creates or deletes hundreds of codes in order to reflect current medical practice.</p>
-
-<p>Designated by the U.S. Department of Health and Human Services under the Health Insurance Portability and Accountability Act (HIPAA) as a national coding set for physician and other health care professional services and procedures, CPT’s evidence-based codes accurately encompass the full range of health care services.</p>
-
-<p>All CPT codes are five-digits and can be either numeric or alphanumeric, depending on the category. CPT code descriptors are clinically focused and utilize common standards so that a diverse set of users can have common understanding across the clinical health care paradigm.</p>
-
-<p>There are various types of CPT codes:</p>
-
-<p><strong>Category I:</strong> These codes have descriptors that correspond to a procedure or service. Codes range from 00100–99499 and are generally ordered into sub-categories based on procedure/service type and anatomy.</p>
-
-<p><strong>Category II:</strong> These alphanumeric tracking codes are supplemental codes used for performance measurement. Using them is optional and not required for correct coding.</p>
-
-<p><strong>Category III:</strong> These are temporary alphanumeric codes for new and developing technology, procedures and services. They were created for data collection, assessment and in some instances, payment of new services and procedures that currently don’t meet the criteria for a Category I code.</p>
-
-<p><strong>Proprietary Laboratory Analyses (PLA) codes:</strong> Recently added to the CPT code set, these codes describe proprietary clinical laboratory analyses and can be either provided by a single (solesource) laboratory or licensed or marketed to multiple providing laboratories that are cleared or approved by the Food and Drug Administration (FDA)). This category includes but is not limited to Advanced Diagnostic Laboratory Tests (ADLTs) and Clinical Diagnostic Laboratory Tests (CDLTs), as defined under the Protecting Access to Medicare Act of 2014 (PAMA).</p>
-
-<p>To obtain CPT, please see the license request form <a href="http://info.commerce.ama-assn.org/ama-data-file-request-2020">here</a>.</p>
 </td>
             </tr>
             <tr>
@@ -1350,59 +1330,6 @@ defined in http://terminology.hl7.org/CodeSystem/adjudication, as well as those 
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-ICD10CM.html" title="CodeSystem/ICD10CM">International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)</a>
-               </td>
-               <td>
-<p>The National Center for Health Statistics (NCHS), the Federal agency responsible for use of the International Statistical Classification of Diseases and Related Health Problems, 10th revision (ICD-10) in the United States, has developed a clinical modification of the classification for morbidity purposes. The ICD-10 is used to code and classify mortality data from death certificates, having replaced ICD-9 for this purpose as of January 1, 1999. ICD-10-CM is the replacement for ICD-9-CM, volumes 1 and 2, effective October 1, 2015.</p>
-
-<p>The clinical modification represents a significant improvement over ICD-9-CM and ICD-10. Specific improvements include: the addition of information relevant to ambulatory and managed care encounters; expanded injury codes; the creation of combination diagnosis/symptom codes to reduce the number of codes needed to fully describe a condition; the addition of sixth and seventh characters; incorporation of common 4th and 5th digit subclassifications; laterality; and greater specificity in code assignment. The new structure will allow further expansion than was possible with ICD-9-CM.</p>
-
-<p>Current and previous releases of ICD-10-CM are available in PDF and XML format here: <a href="https://www.cdc.gov/nchs/icd/icd10cm.htm">https://www.cdc.gov/nchs/icd/icd10cm.htm</a></p>
-
-<p>Most files are provided in compressed zip format for ease in downloading. These files have been created by the National Center for Health Statistics (NCHS), under authorization by the World Health Organization. Any questions regarding typographical or other errors noted on this release may be reported to nchsicd10cm@cdc.gov.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-ICD10PCS.html" title="CodeSystem/ICD10PCS">ICD-10 Procedure Coding System</a>
-               </td>
-               <td>
-<p>The ICD-10-PCS is a procedure classification published by the United States Centers for Medicare &amp; Medicaid Services (CMS) (<a href="https://www.cms.gov/">https://www.cms.gov</a>) for classifying procedures<br />
-performed in hospital inpatient health care settings.</p>
-
-<p>Link to information about the code system - including how to obtain the content:</p>
-
-<p><a href="https://www.cms.gov/Medicare/Coding/ICD10">https://www.cms.gov/Medicare/Coding/ICD10</a></p>
-
-<p>Note: CMS is the owner of the ICD-10-PCS code system. CMS is NOT the owner of ICD-10-CM. CMS republishes the ICD-10-CM codes system on their website for convienence only. For authoratative information on ICD-10-CM, users should refer to the National Center for Health Statistics (NCHS) site located <a href="https://www.cdc.gov/nchs/icd/icd10cm.htm">here</a>.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-ICD9CM.html" title="CodeSystem/ICD9CM">International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM)</a>
-               </td>
-               <td>
-<p>The International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM) is based on the World Health Organization’s Ninth Revision, International Classification of Diseases (ICD-9). ICD-9-CM was the official system of assigning codes to diagnoses and procedures associated with hospital utilization in the United States.</p>
-
-<p>The ICD-9-CM consists of:</p>
-
-<ul>
-  <li>a tabular list containing a numerical list of the disease code numbers in tabular form;</li>
-  <li>an alphabetical index to the disease entries; and</li>
-  <li>a classification system for surgical, diagnostic, and therapeutic procedures (alphabetic index and tabular list).</li>
-</ul>
-
-<p>The National Center for Health Statistics (NCHS) and the <a href="http://www.cms.hhs.gov/">Centers for Medicare and Medicaid Services</a> are the U.S. governmental agencies responsible for overseeing all changes and modifications to the ICD-9-CM.</p>
-
-<p><a href="https://confluence.hl7.org/pages/viewpage.action?pageId=97453674">ICD-10-CM</a> is the replacement for ICD-9-CM, volumes 1 and 2, effective October 1, 2015.</p>
-
-<p>Current and previous releases of ICD-9-CM are available here: <a href="https://www.cdc.gov/nchs/icd/icd9cm.htm">https://www.cdc.gov/nchs/icd/icd9cm.htm</a></p>
-
-<p>Most files are provided in compressed zip format for ease in downloading. These files have been created by the National Center for Health Statistics (NCHS), under authorization by the World Health Organization. Any questions regarding typographical or other errors noted on this release may be reported to <a href="mailto:nchsicd10cm@cdc.gov">nchsicd10cm@cdc.gov</a>.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="CodeSystem-NCPDPBrandGenericIndicator.html"
                      title="CodeSystem/NCPDPBrandGenericIndicator">NCPDP Brand Generic Indicator</a>
                </td>
@@ -1410,8 +1337,6 @@ performed in hospital inpatient health care settings.</p>
 <p>Denotes brand or generic drug dispensed. (NCPDP ECL 686)</p>
 
 <p>Link to information about the code system - including how to obtain the content: <a href="https://standards.ncpdp.org/Access-to-Standards.aspx">https://standards.ncpdp.org/Access-to-Standards.aspx</a></p>
-
-<p><em><strong>Note: A temporary URL has been defined for this codesystem for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.</strong></em></p>
 </td>
             </tr>
             <tr>
@@ -1423,8 +1348,6 @@ performed in hospital inpatient health care settings.</p>
 <p>Code indicating whether or not the prescription is a compound. (NCPDP ECL 406-D6)</p>
 
 <p>Link to information about the code system - including how to obtain the content: <a href="https://standards.ncpdp.org/Access-to-Standards.aspx">https://standards.ncpdp.org/Access-to-Standards.aspx</a></p>
-
-<p><em><strong>Note: A temporary URL has been defined for this codesystem for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.</strong></em></p>
 </td>
             </tr>
             <tr>
@@ -1436,8 +1359,6 @@ performed in hospital inpatient health care settings.</p>
 <p>Code indicating whether or not the prescriber’s instructions regarding generic substitution were followed. (NCPDP ECL 408-D8)</p>
 
 <p>Link to information about the code system - including how to obtain the content: <a href="https://standards.ncpdp.org/Access-to-Standards.aspx">https://standards.ncpdp.org/Access-to-Standards.aspx</a></p>
-
-<p><em><strong>Note: A temporary URL has been defined for this codesystem for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.</strong></em></p>
 </td>
             </tr>
             <tr>
@@ -1449,8 +1370,6 @@ performed in hospital inpatient health care settings.</p>
 <p>Code indicating the origin of the prescription. Indicates whether the prescription was transmitted as an electronic prescription, by phone, by fax, or as a written paper copy. (NCPDP ECL 419-DJ)</p>
 
 <p>Link to information about the code system - including how to obtain the content: <a href="https://standards.ncpdp.org/Access-to-Standards.aspx">https://standards.ncpdp.org/Access-to-Standards.aspx</a></p>
-
-<p><em><strong>Note: A temporary URL has been defined for this codesystem for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.</strong></em></p>
 </td>
             </tr>
             <tr>
@@ -1462,48 +1381,38 @@ performed in hospital inpatient health care settings.</p>
 <p>Code indicating the error encountered. Contains exception definitions for use when transaction processing cannot be completed. (NCPDP ECL 511-FB).</p>
 
 <p>Link to information about the code system - including how to obtain the content: <a href="https://standards.ncpdp.org/Access-to-Standards.aspx">https://standards.ncpdp.org/Access-to-Standards.aspx</a></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-THREEMAPDRG.html" title="CodeSystem/THREEMAPDRG">All Patient Diagnosis Related Groups (APR-DRGs)</a>
+               </td>
+               <td>
+<p>In 1987, the state of New York passed legislation instituting a DRG-based prospective payment system for all non-Medicare patients. The legislation included a requirement that the New York State Department of Health (NYDH) evaluate the applicability of the DRGs to a non-Medicare population. In particular, the legislation required that the DRGs be evaluated with respect to neonates and patients with Human Immunodeficiency Virus (HIV) infections. NYDH entered into an agreement with 3M HIS to assist with the evaluation of the need for DRG modifications as well as to make the necessary changes in the DRG definitions and software. The DRG definitions developed by NYDH and 3M HIS are referred to as the All Patient DRGs (AP-DRGs).</p>
+
+<p>As the AP-DRG code system is no longer in use and little authoratative information is available, the following resources have been used to compile the documented information</p>
+
+<p><a href="https://www.hcup-us.ahrq.gov/db/nation/nis/APR-DRGsV20MethodologyOverviewandBibliography.pdf">https://www.hcup-us.ahrq.gov/db/nation/nis/APR-DRGsV20MethodologyOverviewandBibliography.pdf</a></p>
 
 <p><em><strong>Note: A temporary URL has been defined for this codesystem for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.</strong></em></p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-NDC.html" title="CodeSystem/NDC">National Drug Code (NDC)</a>
+                  <a href="CodeSystem-THREEMAPRDRG.html" title="CodeSystem/THREEMAPRDRG">All Patient Refined Diagnosis Related Groups (APR-DRGs)</a>
                </td>
                <td>
-<p>The Drug Listing Act of 1972 requires registered drug establishments to provide the Food and Drug Administration (FDA) with a current list of all drugs manufactured, prepared, propagated, compounded, or processed by it for commercial distribution.  (See Section 510 of the Federal Food, Drug, and Cosmetic Act (Act) (21 U.S.C. § 360)). Drug products are identified and reported using a unique, three-segment number, called the National Drug Code (NDC), which serves as a universal product identifier for drugs. FDA publishes the listed NDC numbers and the information submitted as part of the listing information in the NDC Directory which is updated daily.</p>
+<p>3M APR DRGs have become the standard across the U.S. for classifying hospital inpatients in non-Medicare populations. As of January 2019, 27 state Medicaid programs use 3M APR DRGs to pay hospitals, as do approximately a dozen commercial payers and Medicaid managed care organizations. Over 2,400 hospitals have licensed 3M APR DRGs to verify payment and analyze their internal operations.</p>
 
-<p>The information submitted as part of the listing process, the NDC number, and the NDC Directory are used in the implementation and enforcement of the Act.</p>
+<p>The 3M APR DRG methodology classifies hospital inpatients according to their reason for admission, severity of illness and risk of mortality.</p>
 
-<p>Users should note:</p>
+<p>Each year 3M calculates and releases a set of statistics for each 3M APR DRG based on our analysis of large national data sets. These statistics include a relative weight for each 3M APR DRG. The relative weight reflects the average hospital resource use for a patient in that 3M APR DRG relative to the average hospital resource use of all inpatients. Please note that payers and other users of the 3M APR DRG methodology are responsible for ensuring that they use relative weights that are appropriate for their particular populations. The 3M APR DRG statistics also include data for each 3M APR DRG on relative frequency, average length of stay, average charges and incidence of mortality.</p>
 
-<p>Starting June 1, 2011, only drugs for which electronic listings (SPL) have been submitted to FDA are included in the NDC Directory. Drugs for which listing information was last submitted to FDA on paper forms, prior to June 2009, are included on a separate file and will not be updated after June 2012.</p>
+<p>3M APR DRGs can be rolled up into broader categories. The 326 base DRGs roll up into 25 major diagnostic categories (MDCs) plus a pre-MDC category. An example is MDC 04, Diseases and Disorders of the Respiratory System. As well, each 3M APR DRG is assigned to a service line that is consistent with the outpatient service lines that are defined by the 3M™ Enhanced Ambulatory Patient Groups (EAPGs).</p>
 
-<p>Information regarding the FDA published NDC Directory can be found <a href="https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory">here</a></p>
+<p>A link to information about the code system - including how to obtain the content from 3M is provided <a href="https://www.3m.com/3M/en_US/health-information-systems-us/drive-value-based-care/patient-classification-methodologies/apr-drgs/">here.</a>. Identifying a DRG code requires a version.</p>
 
-<p>Users should note a few important items</p>
-
-<ul>
-  <li>The NDC Directory is updated daily.</li>
-  <li>The new NDC Directory contains ONLY information on final marketed drugs submitted to FDA in SPL electronic listing files by labelers.</li>
-  <li>The NDC Directory does not contain all listed drugs. The new version includes the final marketed drugs which listing information were submitted electronically. It does not include animal drugs, blood products, or human drugs that are not in final marketed form, such as Active Pharmaceutical Ingredients(APIs), drugs for further processing, drugs manufactured exclusively for a private label distributor, or drugs that are marketed solely as part of a kit or combination product or inner layer of a multi-level packaged product not marketed individually. For more information about how certain kits or multi-level packaged drugs are addressed in the new NDC Directory, see the NDC Directory Package File definitions document. For the FDA Online Label Repository page and additional resources go to: <a href="https://labels.fda.gov/">FDA Online Label Repository</a></li>
-</ul>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-THREEMAPDRG.html" title="CodeSystem/THREEMAPDRG">AP DRG</a>
-               </td>
-               <td>
-<p>AP-DRGs (All Patient Diagnosis Related Groups).  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-THREEMAPRDRG.html" title="CodeSystem/THREEMAPRDRG">APR DRG</a>
-               </td>
-               <td>
-<p>APR-DRGs (All Patient Refined Diagnosis Related Groups).  Assignment of a DRG is defined by a particular set of patient attributes, which include principal diagnosis, specific secondary diagnoses, procedures, sex and discharge status.  Identifying a DRG code requires a version.</p>
+<p><em><strong>Note: A temporary URL has been defined for this codesystem for use in draft implementation guides. It should be noted that the authoritative canonical URL will be different.</strong></em></p>
 </td>
             </tr>
             <tr>
@@ -1761,7 +1670,7 @@ performed in hospital inpatient health care settings.</p>
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.10 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 10, 2020 23:34+0000">2020-11-10</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.10 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 11, 2020 14:20+0000">2020-11-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

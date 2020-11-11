@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "CMSICD910PCSProcedureCodes"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ICD10PCS.html\"><code>https://www.cms.gov/Medicare/Coding/ICD10</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ICD9CM.html\"><code>http://hl7.org/fhir/sid/icd-9-cm</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/2.0.0/CodeSystem-icd10PCS.html\"><code>http://www.cms.gov/Medicare/Coding/ICD10</code></a></li><li>Include all codes defined in <code>http://www.cms.gov/Medicare/Coding/ICD9</code></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/carin-bb/ValueSet/CMSICD910PCSProcedureCodes"];
   fhir:ValueSet.version [ fhir:value "0.1.10"];
   fhir:ValueSet.name [ fhir:value "CMSICD910PCSProcedureCodes"];
   fhir:ValueSet.title [ fhir:value "Procedure Codes - International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM) - ICD-10 Procedure Coding System"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-11-10T23:34:02+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-11-11T14:20:39+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Financial Management Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -45,10 +45,10 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://www.cms.gov/Medicare/Coding/ICD10" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://www.cms.gov/Medicare/Coding/ICD10" ]
      ], [
        fhir:index 1;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/sid/icd-9-cm" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://www.cms.gov/Medicare/Coding/ICD9" ]
      ]
   ] .
 
