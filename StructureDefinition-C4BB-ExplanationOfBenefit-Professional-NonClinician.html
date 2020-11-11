@@ -277,7 +277,7 @@
  <tr><td>Version:</td><td>0.1.10</td></tr>
  <tr><td>Name:</td><td>C4BBExplanationOfBenefitProfessionalNonClinician</td></tr>
  <tr><td>Title:</td><td>C4BB ExplanationOfBenefit Professional NonClinician</td></tr>
- <tr><td>Status:</td><td>Active as of 2020-11-11T14:40:52+00:00</td></tr>
+ <tr><td>Status:</td><td>Active as of 2020-11-11T23:36:16+00:00</td></tr>
  <tr><td>Definition:</td><td><p>This profile is used for Explanation of Benefits (EOBs) based on claims submitted by physicians, suppliers and other non-institutional providers for professional services. These services may be rendered in inpatient or outpatient, including office locations.
 The claims data is based on the professional claim form 1500, submission standards adopted by the Department of Health and Human Services as form CMS-1500.</p>
 </td></tr>
@@ -301,7 +301,7 @@ The claims data is based on the professional claim form 1500, submission standar
 <!-- StructureDefinition-C4BB-ExplanationOfBenefit-Professional-NonClinician-intro.md  -->
 <h4 class="x_MsoNormal">Notes on Fields</h4>
 <ul>
-<li class="x_MsoNormal">The EOB FHIR Resource defines a comprehensive set of data elements.&nbsp; Many of them are not relevant to this use case.&nbsp; When reviewing the Profile Snapshot, several data elements previously hidden are now exposed.&nbsp; Fields intended for consideration to be provided in the API are marked as <a href="General_Guidance.html#must-support">Must Support</a>; i.e., a red <span style="color: #ffffff; background-color: #ff0000;">S</span> or have a minimum cardinality of 1.&nbsp; All other data elements are not expected to be sent by a Requestor; if they are sent a Responder can choose to ignore them.</li>
+<li class="x_MsoNormal">The EOB FHIR Resource defines a comprehensive set of data elements.&nbsp; Many of them are not relevant to this use case.&nbsp; When reviewing the Profile Snapshot, several data elements previously hidden are now exposed.&nbsp; Fields intended for consideration to be provided in the API are marked as <a href="General_Guidance.html#must-support">Must Support</a>; i.e., a red <span style="color: #ffffff; background-color: #ff0000;">S</span> or have a minimum cardinality of 1.&nbsp; All other data elements are not expected to be sent by a Responder; if they are sent a Requestor can choose to ignore them</li>
 <li>
 CPCDS data elements are mapped to EOB header or EOB.item data elements in alignment with claims submission standards.&nbsp; Line item amounts, amount types and the in network or out of network payment status of the line are to be provided in EOB.item.&nbsp; Total amounts, amount types and the in network or out of network payment status of the claim are to be provided in EOB.total If there is a mix of lines paid in network and out of network on a claim, the value of C4BB Payer Benefit Payment Status is &lsquo;Other&rsquo;
 </li>
@@ -2775,7 +2775,7 @@ role.where(coding.where(code in ('site' )).exists()).exists().provider.all(resol
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.10 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 11, 2020 14:40+0000">2020-11-11</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/fm/index.cfm">HL7 Financial Management Working Group</a>.  Package hl7.fhir.us.carin-bb#0.1.10 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 11, 2020 23:36+0000">2020-11-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
